@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<net.kishonti.customcomponents.NavigationBar
+		android:id="@+id/pageHeader"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/header_background"
+		custom:leftButtonColor="@color/header_text"
+		custom:leftButtonVisible="true"
+		custom:titleColor="@color/header_text" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_margin="20dp"
+		android:orientation="vertical">
+
+		<TextView
+			android:id="@+id/textInfo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:text="Please fill the form below"
+			android:textColor="@color/text_main" />
+
+		<EditText
+			android:id="@+id/editName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:ems="10"
+			android:inputType="textNoSuggestions|textVisiblePassword"
+			android:singleLine="true"></EditText>
+
+		<EditText
+			android:id="@+id/editPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:ems="10"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:singleLine="true" />
+
+		<EditText
+			android:id="@+id/editRepassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:ems="10"
+			android:hint="Retype password"
+			android:inputType="textPassword" />
+
+		<EditText
+			android:id="@+id/editEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:ems="10"
+			android:hint="E-mail address"
+			android:inputType="textNoSuggestions|textEmailAddress"
+			android:singleLine="true" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin">
+
+			<Button
+				android:id="@+id/dummy1"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="0.5"
+				android:visibility="invisible" />
+
+			<Button
+				android:id="@+id/btContactUs"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_gravity="right"
+				android:layout_weight="0.5"
+				android:text="Register" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

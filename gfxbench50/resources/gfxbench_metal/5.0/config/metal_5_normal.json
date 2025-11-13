@@ -1,0 +1,54 @@
+{
+	"version": 1,
+	"test_id": "metal_5_normal",
+	"factory_method": "gl_5",
+	"preload_libs": ["gfxb_5"],
+	"env": {
+		"graphics": {
+			"versions": [
+				{
+					"type": "METAL",
+					"major": 1,
+					"minor": 0
+				}
+			],
+			"config": {
+				"red_size": 8,
+				"green_size": 8,
+				"blue_size": 8,
+				"depth_size": 0,
+				"stencil_size": -1,
+				"alpha_size": -1,
+				"samples": 0,
+				"exact": true,
+				"vsync": false
+			},
+			"fullscreen": false
+		}
+	},
+	"raw_config": {
+		"battery": false,
+		"brightness": -1.0,
+		"color_bpp": 24,
+		"depth_bpp": 16,
+		"endless": false,
+		"engine": "Engine4",
+		"fps_limit": -1.0,
+		"frame_step_time": -1,
+		"fsaa": 0,
+		"id": 2700100,
+		"max_rendered_frames": -1,
+		"min_ram_required": 160,
+		"play_time": 64300,
+		"quality": false,
+		"force_highp": false,
+		"scenefile": "scene5_normal/scene_5.xml",
+		"screenmode": 0,
+		"single_frame": -1,
+		"start_animation_time": 0,
+		"stencil_bpp": -1,
+		"texture_type": "Auto",
+		"zprepass": false
+	},
+	"data_prefix": "gfx"
+}

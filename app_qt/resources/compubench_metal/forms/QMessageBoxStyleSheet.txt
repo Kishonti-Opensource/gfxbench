@@ -1,0 +1,28 @@
+QWidget
+{
+	background-color: #FFFFFF;
+	font-family: "Segoe UI";
+}
+
+QPushButton
+{
+	border: none;
+	background: #58AD25;
+	color: #FFFFFF;
+	font-family: "Segoe UI";
+	font-size: 14px;
+	width: 100px;
+	height: 32px;
+}
+
+QLabel
+{
+	border: none;
+	color: #626262;
+	font-size: 18px;
+}
+
+QLabel#description
+{
+	font-size: 14px;
+}

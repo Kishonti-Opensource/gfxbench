@@ -1,0 +1,157 @@
+uniform mat4 mvp;
+uniform mat4 mv;
+uniform mat4 model;
+uniform /*highp*/ vec4 frustum_planes[6];
+uniform vec4 cam_near_far_pid_vpscale;
+uniform vec4 tessellation_factor; //limit, scale, bias, max dist
+uniform float tessellation_multiplier;
+
+bool IsVisible(mat4 mvp_)
+{
+	return true;
+}
+
+struct _bezier_patch
+{
+	mat4 Px;
+	mat4 Py;
+	mat4 Pz;
+};
+
+const mat4 BT = mat4(
+	vec4( -1.0, 3.0,-3.0, 1.0),
+	vec4(  3.0,-6.0, 3.0, 0.0),
+	vec4( -3.0, 3.0, 0.0, 0.0),
+	vec4(  1.0, 0.0, 0.0, 0.0)
+);
+
+layout(vertices = 1) out;
+patch out _bezier_patch bp;
+void main()
+{
+   bool is_visible = IsVisible(mvp);
+   if (!is_visible)
+   {
+		gl_TessLevelInner[0] = 0.0;
+		gl_TessLevelInner[1] = 0.0;
+		gl_TessLevelOuter[0] = 0.0;
+		gl_TessLevelOuter[1] = 0.0;
+		gl_TessLevelOuter[2] = 0.0;
+		gl_TessLevelOuter[3] = 0.0;
+		//return;
+	}
+
+	vec3 v0 = (mv * vec4(gl_in[0].gl_Position.xyz, 1.0)).xyz;
+	vec3 v3 = (mv * vec4(gl_in[3].gl_Position.xyz, 1.0)).xyz;
+	vec3 v12 = (mv * vec4(gl_in[12].gl_Position.xyz, 1.0)).xyz;
+	vec3 v15 = (mv * vec4(gl_in[15].gl_Position.xyz, 1.0)).xyz;
+
+	{
+		vec3 edge0 = v3 - v0;
+		vec3 edge2 = v12 - v0;
+
+		vec3 face_norm = normalize(cross(edge0, edge2));
+		if(dot(normalize(v0),face_norm) > 0.15)
+		{
+			gl_TessLevelInner[0] = 0.0;
+			gl_TessLevelInner[1] = 0.0;
+			gl_TessLevelOuter[0] = 0.0;
+			gl_TessLevelOuter[1] = 0.0;
+			gl_TessLevelOuter[2] = 0.0;
+			gl_TessLevelOuter[3] = 0.0;
+			//return;
+		}
+	}
+
+	float r0 = distance(v0, v12) * 0.5;
+	float r1 = distance(v0, v3) * 0.5;
+	float r2 = distance(v3, v15) * 0.5;
+	float r3 = distance(v12, v15) * 0.5;
+
+	{
+		vec3 wA = (model * vec4(gl_in[0].gl_Position.xyz, 1.0)).xyz;
+		vec3 wB = (model * vec4(gl_in[3].gl_Position.xyz, 1.0)).xyz;
+		vec3 wC = (model * vec4(gl_in[12].gl_Position.xyz, 1.0)).xyz;
+		vec3 wD = (model * vec4(gl_in[15].gl_Position.xyz, 1.0)).xyz;
+
+		vec4 centrojd = vec4(vec3(wA + wB + wC + wD) * 0.25, 1.0);
+		float radius = 1.5 * max(r0, max(r1, max(r2, r3)));
+
+		vec4 dists;
+		dists.x = dot(frustum_planes[0], centrojd);
+		dists.y = dot(frustum_planes[1], centrojd);
+		dists.z = dot(frustum_planes[2], centrojd);
+		dists.w = dot(frustum_planes[3], centrojd);
+
+		bvec4 comp = lessThan(dists, vec4(-radius));
+
+		float dist_near = dot(frustum_planes[5], centrojd);
+
+		if(any(comp) || (dist_near < -radius))
+		{
+			gl_TessLevelInner[0] = 0.0;
+			gl_TessLevelInner[1] = 0.0;
+			gl_TessLevelOuter[0] = 0.0;
+			gl_TessLevelOuter[1] = 0.0;
+			gl_TessLevelOuter[2] = 0.0;
+			gl_TessLevelOuter[3] = 0.0;
+			//return;
+		}
+	}
+
+	vec3 C0 = (v0 + v12) * 0.5;
+	vec3 C1 = (v0 + v3) * 0.5;
+	vec3 C2 = (v3 + v15) * 0.5;
+	vec3 C3 = (v12 + v15) * 0.5;
+
+	float screenSize0 = r0 * cam_near_far_pid_vpscale.x / abs(C0.z);
+	float screenSize1 = r1 * cam_near_far_pid_vpscale.x / abs(C1.z);
+	float screenSize2 = r2 * cam_near_far_pid_vpscale.x / abs(C2.z);
+	float screenSize3 = r3 * cam_near_far_pid_vpscale.x / abs(C3.z);
+
+	float t0 = clamp(screenSize0 * tessellation_multiplier, 1.0, tessellation_factor.x);
+	float t1 = clamp(screenSize1 * tessellation_multiplier, 1.0, tessellation_factor.x);
+	float t2 = clamp(screenSize2 * tessellation_multiplier, 1.0, tessellation_factor.x);
+	float t3 = clamp(screenSize3 * tessellation_multiplier, 1.0, tessellation_factor.x);
+
+	t0 = 8.0;
+	t1 = 8.0;
+	t2 = 8.0;
+	t3 = 8.0;
+
+	float t_inner0 = max(t1, t3);
+	float t_inner1 = max(t0, t2);
+
+	gl_TessLevelInner[0] = t_inner0;
+	gl_TessLevelInner[1] = t_inner1;
+
+	gl_TessLevelOuter[0] = t0;
+	gl_TessLevelOuter[1] = t1;
+	gl_TessLevelOuter[2] = t2;
+	gl_TessLevelOuter[3] = t3;
+
+	bp.Px = mat4(
+	gl_in[0].gl_Position.x, gl_in[1].gl_Position.x, gl_in[2].gl_Position.x, gl_in[3].gl_Position.x,
+	gl_in[4].gl_Position.x, gl_in[5].gl_Position.x, gl_in[6].gl_Position.x, gl_in[7].gl_Position.x,
+	gl_in[8].gl_Position.x, gl_in[9].gl_Position.x, gl_in[10].gl_Position.x, gl_in[11].gl_Position.x,
+	gl_in[12].gl_Position.x, gl_in[13].gl_Position.x, gl_in[14].gl_Position.x, gl_in[15].gl_Position.x
+	);
+
+	bp.Py = mat4(
+	gl_in[0].gl_Position.y, gl_in[1].gl_Position.y, gl_in[2].gl_Position.y, gl_in[3].gl_Position.y,
+	gl_in[4].gl_Position.y, gl_in[5].gl_Position.y, gl_in[6].gl_Position.y, gl_in[7].gl_Position.y,
+	gl_in[8].gl_Position.y, gl_in[9].gl_Position.y, gl_in[10].gl_Position.y, gl_in[11].gl_Position.y,
+	gl_in[12].gl_Position.y, gl_in[13].gl_Position.y, gl_in[14].gl_Position.y, gl_in[15].gl_Position.y
+	);
+
+	bp.Pz = mat4(
+	gl_in[0].gl_Position.z, gl_in[1].gl_Position.z, gl_in[2].gl_Position.z, gl_in[3].gl_Position.z,
+	gl_in[4].gl_Position.z, gl_in[5].gl_Position.z, gl_in[6].gl_Position.z, gl_in[7].gl_Position.z,
+	gl_in[8].gl_Position.z, gl_in[9].gl_Position.z, gl_in[10].gl_Position.z, gl_in[11].gl_Position.z,
+	gl_in[12].gl_Position.z, gl_in[13].gl_Position.z, gl_in[14].gl_Position.z, gl_in[15].gl_Position.z
+	);
+
+	bp.Px = BT * bp.Px * BT;
+	bp.Py = BT * bp.Py * BT;
+	bp.Pz = BT * bp.Pz * BT;
+}

@@ -1,0 +1,52 @@
+GFXBench Metal iOS release
+==========================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build
+3. Important notes
+
+1\. Software requirements
+------------------------
+
+	1. Xcode latest version
+	2. CMake 3.5.0 (http://www.cmake.org/cmake/resources/software.html) or install from brew
+
+2\. Build
+---------
+
+This package contains source code to build Corporate GFXBench Metal on iOS only.
+To build use the following commands from the root of the package:
+
+	PLATFORM=ios CONFIG=Release ./scripts/build-3rdparty.sh
+	PRODUCT_VERSION=5.0 BUNDLE_DATA=false PLATFORM=ios CONFIG=Release APPLICATION_TYPE="gui" ./scripts/build.sh
+
+The above will build a Release ios project. The xcodeproj will be located at: `out/build/ios/app_ios/app_ios.xcodeproj`.
+
+To build a Debug version of the project use `CONFIG=Debug` before the commands.
+
+	PLATFORM=ios CONFIG=Debug ./scripts/build-3rdparty.sh
+	BUNDLE_DATA=false PLATFORM=ios CONFIG=Debug APPLICATION_TYPE="gui" ./scripts/build.sh
+
+To build the testfw app version of the project use the following commands:
+
+	PLATFORM=ios CONFIG=Debug ./scripts/build-3rdparty.sh
+	PLATFORM=ios CONFIG=Debug APPLICATION_TYPE="developer" EXTRA_RESOURCE_DIRS="${PWD}/tfw-pkg/config;${PWD}/tfw-pkg/data" ./scripts/build.sh
+
+In the generated XCode project set the active target to `app_ios`.
+
+Edit the scheme of the `app_ios` target and select the same Build Configuration (Debug/Release) that has been used in the build script.
+
+
+3\. Important notes
+-------------------
+
+If the build is failed on 10.12 Beta, and the note is:
+
+	Check dependencies
+	Signing for app_ios requires a development team. Select a development team in the Target Editor.
+	Code signing is required for product type 'Application' in SDK 'iOS 10.0'
+
+Open the Xcode project and set up the code signing manually.

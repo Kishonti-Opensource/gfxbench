@@ -1,0 +1,16 @@
+{
+ "light_attenuation": 3,
+ "light_cast_shadow": true,
+ "light_color": "#00A5FF",
+ "light_depth": 0,
+ "light_fov": 0,
+ "light_fov_attenuation": 0,
+ "light_glow": true,
+ "light_has_fire": false,
+ "light_height": 0,
+ "light_intensity": 4,
+ "light_radius": 6,
+ "light_shape_name": "TERR_pointLight_crystalShape",
+ "light_type": 1,
+ "light_width": 0
+}

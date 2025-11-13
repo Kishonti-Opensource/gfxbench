@@ -1,0 +1,121 @@
+{
+ "name": "TERR_direct_light_golem_lightshaft",
+ "values":
+ [
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 0
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 1
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 2
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 3
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 4
+  },
+  {
+   "intensity": 0.6678000092506409,
+   "samples": 32,
+   "shot_index": 5
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 6
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 7
+  },
+  {
+   "intensity": 0.4794999957084656,
+   "samples": 32,
+   "shot_index": 8
+  },
+  {
+   "intensity": 0.22259999811649323,
+   "samples": 32,
+   "shot_index": 42
+  },
+  {
+   "intensity": 0.30820000171661377,
+   "samples": 32,
+   "shot_index": 10
+  },
+  {
+   "intensity": 0.13699999451637268,
+   "samples": 32,
+   "shot_index": 11
+  },
+  {
+   "intensity": 0.06849999725818634,
+   "samples": 32,
+   "shot_index": 12
+  },
+  {
+   "intensity": 1.0103000402450562,
+   "samples": 32,
+   "shot_index": 13
+  },
+  {
+   "intensity": 1.0787999629974365,
+   "samples": 32,
+   "shot_index": 14
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 15
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 16
+  },
+  {
+   "intensity": 0.188400000333786,
+   "samples": 32,
+   "shot_index": 17
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 18
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 19
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 20
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 21
+  },
+  {
+   "intensity": 0.4966000020503998,
+   "samples": 32,
+   "shot_index": 22
+  }
+ ]
+}

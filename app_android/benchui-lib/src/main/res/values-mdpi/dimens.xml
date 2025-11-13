@@ -1,0 +1,6 @@
+<resources>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="loadingscreen_desctext">14dp</dimen>
+	<dimen name="loadingscreen_isloadingtext">20dp</dimen>
+	<dimen name="loadingscreen_title">22dp</dimen>
+</resources>

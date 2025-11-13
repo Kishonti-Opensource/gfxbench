@@ -1,0 +1,133 @@
+package testdescriptor;
+
+option java_package = "net.kishonti.testfw";
+option java_outer_classname = "Proto";
+
+message Graphics {
+	message Version {
+		enum Type {
+			GL = 0;
+			ES = 1;
+			DX = 2;
+		}
+		required Type type = 1 [ default = GL ];
+		optional int32 major = 2 [ default = -1 ];
+		optional int32 minor = 3 [ default = -1 ];
+	}
+
+	message Config {
+		optional int32 red_size = 1 [ default = 5 ];
+		optional int32 green_size = 2 [ default = 6 ];
+		optional int32 blue_size = 3 [ default = 5 ];
+		optional int32 depth_size = 4 [ default = 16 ];
+		optional int32 alpha_size = 5 [ default = -1 ];
+		optional int32 stencil_size = 6 [ default = -1 ];
+		optional int32 samples = 7 [ default = -1 ];
+		optional bool exact = 8 [ default = false ];
+	}
+
+	repeated Version versions = 1;
+	optional Config config = 2;
+	optional bool fullscreen = 3 [ default = false ];
+}
+
+message Compute {
+	enum Type {
+		CL = 0;
+	}
+	required Type type = 1 [ default = CL ];
+	optional int32 config_index = 2 [ default = 0 ];
+	optional int32 iter_count = 3 [ default = -1 ];
+	optional bool dump = 4 [ default = false ];
+	optional bool warmup = 5 [ default = true ];
+	optional bool fastmath = 6 [ default = true ];
+	optional int32 wgsX = 7 [ default = -1 ];
+	optional int32 wgsY = 8 [ default = -1 ];
+	optional int32 wgsZ = 9 [ default = -1 ];
+}
+
+message Environment {
+	optional int32 width = 1 [ default = -1 ];
+	optional int32 height = 2 [ default = -1 ];
+	optional string read_path = 3;
+	optional string write_path = 4;
+	optional Graphics graphics = 5;
+	optional Compute compute = 6;
+	optional string locale = 7;
+}
+
+
+message Descriptor {
+	required int32 version = 1 [ default = 1 ];
+	required string test_id = 2;
+	required string factory_method = 3;
+	optional string java_factory = 7;
+	optional Environment env = 4;
+	optional bytes raw_config = 5;
+	optional string data_prefix = 6;
+	repeated string preload_libs = 8;
+}
+
+
+message Result {
+	enum Status {
+		OK = 0;
+		INCOMPATIBLE = 1;
+		CANCELLED = 2;
+		FAILED = 3;
+	}
+
+	required int32 version = 1 [ default = 1 ];
+	required string test_id = 2;
+	required int32 result_id = 3[ default = -1 ];
+	required Status status = 4 [ default = OK ];
+	required string error_string = 5;
+
+	optional double score = 6 [ default = -1.0 ];
+	optional string unit = 7;
+
+	optional int32 load_time = 8 [ default = -1 ];
+	optional int32 elapsed_time = 9 [ default = -1 ];
+	optional int32 measured_time = 10 [ default = -1 ];
+
+	optional GfxResult gfx_result = 11;
+	optional ComputeResult compute_result = 12;
+}
+
+message GfxResult {
+	optional double fps = 1 [ default = -1.0 ];
+	optional int32 frame_count = 2 [ default = -1 ];
+	optional int32 egl_config_id = 3;
+	optional string renderer = 4;
+	optional string graphics_version = 5;
+	optional int32 surface_width = 6[ default = -1 ];
+	optional int32 surface_height = 7[ default = -1 ];
+	repeated string extra_data = 8;
+}
+
+message ComputeResult {
+	required int32 iteration_count = 1;
+	required string device_name = 2;
+	required string device_driver = 3;
+}
+
+message TestResult {
+	repeated Result results = 1;
+}
+
+message TestInfo {
+	required int32 version = 1 [ default = 1 ];
+	required test_id = 2;
+	required title = 3;
+	required group = 4;
+	required description = 5;
+	repeated string subresults = 6;
+	repeated Version minimum_api = 7;
+	required int32 run_order = 8 [ default = -1 ];
+	required bool force_running_alone = 9 [ default = false ]
+}
+
+message TestList {
+	repeated TestInfo test_info_list = 1;
+}
+

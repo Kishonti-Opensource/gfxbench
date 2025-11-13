@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "GFXBench"
+
+include ':testfw', ':systeminfo', ':platform-utils', ':customcomponents', ':benchui-lib'
+include ':benchui-lib-corporate'
+
+project(':testfw').projectDir = new File(settingsDir, '../frameworks/testfw/android/testfw-lib')
+project(':systeminfo').projectDir = new File(settingsDir, '../frameworks/systeminfo/android/systeminfo-lib')
+project(':platform-utils').projectDir = new File(settingsDir, '../frameworks/platform-utils/android/platform-utils-lib')
+
+def netman_lib_folder = '../frameworks/netman/android/netman-lib/src/main/java/net/kishonti/netman/swig'
+if (file(netman_lib_folder).exists()) {
+    include ':benchui-lib-community', ':netman', ':syncdir'
+    project(':syncdir').projectDir = new File(settingsDir, '../frameworks/syncdir/android/syncdir-lib')
+    project(':netman').projectDir = new File(settingsDir, '../frameworks/netman/android/netman-lib')
+}

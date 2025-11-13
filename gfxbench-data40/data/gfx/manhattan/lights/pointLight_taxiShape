@@ -1,0 +1,8 @@
+type omni
+fov 100.000000
+glow 0
+lens_flare 0
+cast_shadow 0
+flicker 0
+color 0.850000 0.940000 0.920000
+intensity 1.000000

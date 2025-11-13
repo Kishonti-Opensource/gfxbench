@@ -1,0 +1,4 @@
+v_animation animations/tank_01_animatik_tank_tracks_mat-fx_translate_v_track
+color tracks.png 1.000000 1.000000 1 1
+normal tracks_normal.png 1.000000 1.000000 1 1
+mask mask_base.png 1.000000 1.000000 1 1

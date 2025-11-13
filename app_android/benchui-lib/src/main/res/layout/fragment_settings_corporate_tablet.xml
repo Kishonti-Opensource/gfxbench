@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/settings_corporateBack"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<TextView
+		android:id="@+id/settings_textViewCorporateFeatures"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:textColor="@color/title_enable_disable"
+		android:textSize="16sp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/settings_textViewSetOnscrResolution"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:textColor="@color/enable_disable"
+			android:textSize="14sp" />
+
+		<net.kishonti.customcomponents.FlipSwitch
+			android:id="@+id/settings_onscreen"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.3"
+			android:gravity="right"
+			custom:knobColor="@color/switch_on_background"
+			custom:textColor="@color/flipsw_enable_disable" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/settings_tvWidth"
+			android:layout_width="200dp"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10dp"
+			android:gravity="center_vertical"
+			android:textColor="@color/enable_disable" />
+
+		<EditText
+			android:id="@+id/settings_onscreenWidth"
+			android:enabled="true"
+			android:selectAllOnFocus="true"
+			android:layout_width="0dp"
+			android:layout_height="32dp"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:layout_weight="1"
+			android:gravity="center_vertical|right"
+			android:inputType="number"
+			android:paddingRight="5dp"
+			android:paddingTop="5dp"
+			android:textAlignment="gravity"
+			android:textColorHint="@color/edittext_hintcolorstates"
+			android:textSize="14sp"
+			android:textCursorDrawable="@null" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/settings_tvHeight"
+			android:layout_width="200dp"
+			android:layout_height="match_parent"
+			android:layout_marginLeft="10dp"
+			android:textColor="@color/enable_disable"
+			android:gravity="center_vertical" />
+
+		<EditText
+			android:id="@+id/settings_onscreenHeight"
+			android:layout_width="0dp"
+			android:layout_height="32dp"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:layout_weight="1"
+			android:selectAllOnFocus="true"
+			android:enabled="true"
+			android:gravity="center_vertical|right"
+			android:inputType="number"
+			android:paddingRight="5dp"
+			android:paddingTop="5dp"
+			android:textAlignment="gravity"
+			android:textColorHint="@color/edittext_hintcolorstates"
+			android:textSize="14sp"
+			android:textCursorDrawable="@null" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/settings_textViewForceDisplayBrightness"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:textColor="@color/enable_disable"
+			android:textSize="14sp" />
+
+		<net.kishonti.customcomponents.FlipSwitch
+			android:id="@+id/settings_forceDisplayBrightness"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.3"
+			android:gravity="right"
+			custom:knobColor="@color/switch_on_background"
+			custom:textColor="@color/flipsw_enable_disable" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/settings_brigthnessButtons"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<ToggleButton
+			android:id="@+id/settings_btBrightness0"
+			style="?android:attr/borderlessButtonStyle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/togglebutton"
+			android:textColor="@color/enable_disable"
+			android:textOff="0%"
+			android:textOn="0%"
+			android:textSize="12sp" />
+
+		<ToggleButton
+			android:id="@+id/settings_btBrightness25"
+			style="?android:attr/borderlessButtonStyle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/togglebutton"
+			android:textColor="@color/enable_disable"
+			android:textOff="25%"
+			android:textOn="25%"
+			android:textSize="12sp" />
+
+		<ToggleButton
+			android:id="@+id/settings_btBrightness50"
+			style="?android:attr/borderlessButtonStyle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/togglebutton"
+			android:textColor="@color/enable_disable"
+			android:textOff="50%"
+			android:textOn="50%"
+			android:textSize="12sp" />
+
+		<ToggleButton
+			android:id="@+id/settings_btBrightness75"
+			style="?android:attr/borderlessButtonStyle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/togglebutton"
+			android:textColor="@color/enable_disable"
+			android:textOff="75%"
+			android:textOn="75%"
+			android:textSize="12sp" />
+
+		<ToggleButton
+			android:id="@+id/settings_btBrightness100"
+			style="?android:attr/borderlessButtonStyle"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:background="@drawable/togglebutton"
+			android:textColor="@color/enable_disable"
+			android:textOff="100%"
+			android:textOn="100%"
+			android:textSize="12sp" />
+	</LinearLayout>
+	
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:background="@color/text_title" />
+
+	<TextView
+		android:id="@+id/settings_textViewCorporateCommercialTitle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:textColor="@color/title_enable_disable"
+		android:textSize="16sp" />
+
+	<TextView
+		android:id="@+id/settings_textViewCorporateCommercial"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:autoLink="web"
+		android:textColor="@color/enable_disable" />
+
+</LinearLayout>

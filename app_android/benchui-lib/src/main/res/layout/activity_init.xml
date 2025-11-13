@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <net.kishonti.customcomponents.CustomProgressbar
+        android:id="@+id/init_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignLeft="@+id/init_progressbar"
+        android:layout_centerVertical="true"
+        custom:backColor="@color/progressbar_background"
+        custom:frontColor="@color/progressbar_foreground"
+        custom:padding="2dp"
+        custom:scrollerWidth="60dp" />
+    
+    <TextView
+        android:id="@+id/init_statusTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/init_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/init_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/init_progressbar"
+        android:layout_alignLeft="@+id/init_progressbar"
+        android:layout_alignRight="@+id/init_progressbar"
+        android:adjustViewBounds="false"
+        android:src="@drawable/app_logo" 
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

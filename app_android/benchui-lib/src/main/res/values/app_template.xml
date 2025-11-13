@@ -1,0 +1,13 @@
+<!-- particular product should override these values -->
+<resources>
+	<string name="app_name">Kishonti Benchmark</string>
+	<string name="app_website_title">kishonti.net</string>
+	<string name="app_website_url">https://kishonti.net</string>
+	<string name="app_email_address">support@kishonti.net</string>
+	<string name="app_product_id"></string>
+	<string name="app_store_name"></string>
+	<string name="app_crash_report_key_testing"></string>
+	<string name="app_crash_report_key_production"></string>
+	<string-array name="app_netman_hosts_testing"></string-array>
+	<string-array name="app_netman_hosts_production"></string-array>
+</resources>

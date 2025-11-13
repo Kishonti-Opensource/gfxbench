@@ -1,0 +1,13 @@
+{
+ "material_alpha_test_threshold": 0.020999999716877937,
+ "material_emissive_intensity": 0,
+ "material_gloss": 0.006000000052154064,
+ "material_has_emissive_channel": false,
+ "material_opacity_mode": 1,
+ "material_shader0": "main",
+ "material_softness": 0.0020000000949949026,
+ "material_two_sided": true,
+ "material_type": 0,
+ "name": "TERR_treeA_leaves_mat",
+ "type": 3
+}

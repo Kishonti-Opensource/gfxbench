@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "tests": [
+        {
+            "test_name": "gl_5_high",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_4k_off",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "gl_5_normal",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        }
+    ]
+}

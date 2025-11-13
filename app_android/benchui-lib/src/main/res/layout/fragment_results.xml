@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	
+    <include
+	    android:id="@+id/results_navbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    layout="@layout/layout_navbar" />
+    
+    <FrameLayout 
+        android:id="@+id/results_listBack"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/results_navbar" >
+		    
+		<LinearLayout
+		        android:id="@+id/results_infoBack"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:padding="5dp"
+		        android:orientation="vertical"
+		        android:weightSum="1" >
+
+            <ImageView
+                android:id="@+id/results_infoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/dummy_loading" />
+
+            <ScrollView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp" >
+                
+                <TextView
+                android:id="@+id/results_infoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This is a really long text... " />
+                
+            </ScrollView>
+        </LinearLayout>
+		
+        <ListView
+            android:id="@+id/results_historyList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:divider="@color/list_separator"
+			android:dividerHeight="1dp"
+			android:drawSelectorOnTop="true" 
+			android:listSelector="@drawable/theme_list_selector">
+        </ListView>
+
+        <net.kishonti.theme.ThemeListView
+            android:id="@+id/results_testList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:divider="@color/list_separator"
+			android:dividerHeight="1dp"
+			android:drawSelectorOnTop="true"
+			android:listSelector="@drawable/theme_list_selector" >
+        </net.kishonti.theme.ThemeListView>
+        
+    </FrameLayout>
+
+</RelativeLayout>

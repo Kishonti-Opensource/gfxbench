@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:tag="xlarge" >
+
+    <!-- Navigation bar -->	
+    <LinearLayout
+	    android:id="@+id/compare_navbarBack"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+	    <include
+		    android:id="@+id/compare_navbar"
+		    android:layout_width="0dp"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="2"
+		    layout="@layout/layout_navbar" />
+	    
+	    <RelativeLayout
+		    android:id="@+id/compare_navbar_extraBack"
+		    android:paddingLeft="1dp"
+		    android:layout_width="0dp"
+		    android:layout_height="50dp"
+		    android:layout_weight="1"
+			android:background="@color/header_background" >
+			
+	        <View
+				android:layout_width="1dp"
+				android:layout_height="match_parent"
+				android:background="@color/list_separator" />
+		    
+	        <Button
+				android:background="@drawable/button_header"
+				android:textColor="@android:color/white"
+				android:id="@+id/compare_navbar_extraRightButton"
+				android:layout_width="70dp"
+				android:layout_height="50dp"
+				android:layout_alignParentRight="true"
+				android:gravity="center"
+				android:singleLine="true"
+				android:text="right"
+				android:textSize="16sp" />
+	        
+	        <Button
+				android:background="@android:color/transparent"
+				android:textColor="@android:color/white"
+				android:id="@+id/compare_navbar_extraLeftButton"
+				android:layout_width="70dp"
+				android:layout_height="50dp"
+				android:layout_alignParentLeft="true"
+				android:gravity="center"
+				android:singleLine="true"
+				android:text="left"
+				android:textSize="16sp" />
+	    	
+	    	<TextView
+		    	android:id="@+id/compare_navbar_extraTitle"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="wrap_content"
+		    	android:layout_toLeftOf="@id/compare_navbar_extraRightButton"
+		    	android:layout_toRightOf="@id/compare_navbar_extraLeftButton"
+		    	android:layout_centerVertical="true"
+				android:gravity="center"
+				android:singleLine="true"
+				android:text="default"
+				android:textColor="@android:color/white"
+				android:textSize="16sp"
+				android:textStyle="bold" />
+	        
+	    </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+    <LinearLayout
+        android:id="@+id/compare_listBack"
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_below="@+id/compare_navbarBack"
+	    android:orientation="horizontal" >
+	    
+        <net.kishonti.theme.ThemeListView
+            android:id="@+id/compare_testSelectorList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+			android:divider="@color/list_separator"
+			android:dividerHeight="1dp" 
+			android:layout_weight="1" 
+			android:drawSelectorOnTop="true"
+			android:listSelector="@drawable/theme_list_selector"
+			android:focusable="true">
+	    	<requestFocus />
+        </net.kishonti.theme.ThemeListView>
+        
+        <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:background="@color/list_separator" />
+        
+        <!-- __________________________________________________________________________________________________ -->
+	    <!-- Device compare -->
+	    <!-- __________________________________________________________________________________________________ -->
+		<LinearLayout
+			android:id="@+id/compare_deviceListBack"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical" 
+			android:layout_weight="2" >
+	
+		    <!-- Own result -->
+		    <include 
+			    layout="@layout/cell_compare_device"
+				android:layout_width="match_parent"
+				android:layout_height="60dp" />
+			
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/list_separator" />
+	
+			<!-- Device List -->
+			<net.kishonti.theme.ThemeListView
+				android:id="@+id/compare_deviceList"
+				android:layout_width="match_parent"
+				android:layout_height="0dp"
+				android:layout_weight="1"
+				android:divider="@color/list_separator"
+				android:drawSelectorOnTop="true"
+				android:listSelector="@drawable/theme_list_selector"	
+				android:dividerHeight="1dp" />
+	
+			<!-- Searchbar -->
+			<EditText
+				android:id="@+id/compare_searchbar"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:paddingLeft="10dp"
+				android:paddingRight="10dp"
+				android:singleLine="true"
+				android:textCursorDrawable="@null"
+				android:drawableRight="@drawable/search_icon" />
+		</LinearLayout>
+		
+        <View
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:background="@color/list_separator" />
+        
+        <!-- __________________________________________________________________________________________________ -->
+	    <!-- Duel -->
+	    <!-- __________________________________________________________________________________________________ -->
+		<LinearLayout
+			android:id="@+id/compare_duelListBack"
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:orientation="vertical" 
+			android:layout_weight="1"
+			android:visibility="gone" >
+	
+		    <!-- Your vs Other Title -->
+			<LinearLayout
+				android:id="@+id/duel_header"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:orientation="horizontal"
+				android:weightSum="2"
+				android:background="@color/compareprogress_own_foreground">
+	
+				<TextView
+					android:id="@+id/duel_ownLabel"
+					android:layout_weight="1"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical|left"
+					android:layout_margin="5dp"
+					android:textColor="@color/text_main" />
+	
+				<TextView
+					android:id="@+id/duel_otherLabel"
+					android:layout_weight="1"
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:gravity="center_vertical|right"
+					android:layout_margin="5dp"
+					android:textColor="@color/text_main" />
+			</LinearLayout>
+			
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="1dp"
+				android:background="@color/list_separator" />
+	
+			<!-- Duel list -->
+			<net.kishonti.theme.ThemeListView
+				android:id="@+id/compare_duelList"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:divider="@color/list_separator"
+				android:dividerHeight="1dp"
+				android:listSelector="@drawable/theme_list_selector" />
+		</LinearLayout>
+        
+    </LinearLayout>
+
+    
+	
+	
+
+</RelativeLayout>

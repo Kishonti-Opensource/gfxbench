@@ -1,0 +1,4 @@
+color tkts_building_1024.png 1.000000 1.000000 1 1
+normal normal_base.png 1.000000 1.000000 1 1
+mask tkts_building_1024_masks.png 1.000000 1.000000 1 1
+emission tkts_building_1024_glow.png 1.000000 1.000000 1 1

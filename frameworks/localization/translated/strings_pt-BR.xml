@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="AboutSectionTitle">Sobre</string>
+  <string name="Accept">Aceitar</string>
+  <string name="AppVersionCorporate">Versão corporativa %s</string>
+  <string name="Back">Volt.</string>
+  <string name="BAD_VERSION">Você está usando uma versão antiga do GFXBench. Atualize seu aplicativo!</string>
+  <string name="BatteryBrightness100">100% de força</string>
+  <string name="BatteryBrightness25">25% de força</string>
+  <string name="BatteryBrightness50">50% de força</string>
+  <string name="BatteryBrightness75">75% de força</string>
+  <string name="BatteryBrightnessDefault">Padrão</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">Carregando</string>
+  <string name="BatteryPageTitle">Diagrama bateria</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">Conectado</string>
+  <string name="BatteryUnplugged">Desconectado</string>
+  <string name="BestResults">Melh. resultados</string>
+  <string name="Camera_Autofocus">Foco auto.</string>
+  <string name="Camera_FaceDetection">Detecção rosto</string>
+  <string name="Camera_Flash">Flash</string>
+  <string name="Camera_GeoTagging">Marc. geográfica</string>
+  <string name="Camera_HDR">Foto HDR</string>
+  <string name="Camera_Picture">Imagem</string>
+  <string name="Camera_TouchFocus">Foco por toque</string>
+  <string name="Camera_Video">Vídeo</string>
+  <string name="Cancel">Cancelar</string>
+  <string name="Cancelled">Cancelado</string>
+  <string name="Chipset">Chipset</string>
+  <string name="ClearAll">Limpar tudo</string>
+  <string name="ClearHistoryDialogBody">Isso limpará todos os dados dos resultados. Você tem certeza?</string>
+  <string name="ClearHistoryDialogTitle">Limpar Histórico</string>
+  <string name="Close">Fechar</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">Conectando ao servidor.</string>
+  <string name="ContactUs">Contate-nos</string>
+  <string name="CorporateCommercialTitle">Sobre o licenciamento</string>
+  <string name="CorporateFeatures">Recursos corporativos</string>
+  <string name="Decline">Recusar</string>
+  <string name="DeviceMayCrashDialogBody">Your device might not have enough memory to run this test. We recommend that you close all other applications and/or restart your device because it may crash due to low memory conditions otherwise.</string>
+  <string name="DeviceMayCrashDialogTitle">High memory consumption</string>
+  <string name="DownloadDatabaseEveryStartup">Baixar banco de dados em cada inicialização</string>
+  <string name="Email">Email</string>
+  <string name="EMAIL_TAKEN">Este endereço de email já está em uso. Escolha outro email.</string>
+  <string name="EmailTakenDialogBody">Este endereço de email já está em uso por outro usuário. Selecione outro nome e tente novamente.</string>
+  <string name="EmailTakenDialogTitle">O email está em uso</string>
+  <string name="EnableExtraBattery">Ativar bateria extra</string>
+  <string name="Error">Erro!</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">Interrompido, brilho alterado</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">Interrompido, carregador desconectado</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">Criado com uma versão do ES incompatível</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">Nível de recursos do DirectX indisponível</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">ES 3 não suportado</string>
+  <string name="ERROR_FILE_NOT_FOUND">Arquivo não encontrado</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">Resolução de tela inválida</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">Seu dispositivo não suporta desfoque de movimento com MSAA</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">Seu dispositivo não suporta o recurso fora da tela</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">Seu dispositivo não suporta o recurso fora da tela com MSAA</string>
+  <string name="ERROR_OUT_OF_MEMORY">Falta de memória</string>
+  <string name="ERROR_OUT_OF_VMEMORY">Falta de memória de vídeo</string>
+  <string name="ERROR_SHADER_ERROR">Erro do sombreador</string>
+  <string name="ERROR_SKIPPED">Ignorado</string>
+  <string name="ERROR_UNDEFINED_ERROR">Erro indefinido</string>
+  <string name="ERROR_UNKNOWNERROR">Erro desconhecido</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">Formato de textura não suportado</string>
+  <string name="ERROR_VBO_ERROR">Erro VBO</string>
+  <string name="FeatureAccelerometer">Acelerômetro</string>
+  <string name="FeatureAltimeter">Altímetro</string>
+  <string name="FeatureBarometer">Barômetro</string>
+  <string name="FeatureBluetooth">Bluetooth</string>
+  <string name="FeatureCompass">Bússola</string>
+  <string name="FeatureCPUCoreCount">Cores</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">Giroscópio</string>
+  <string name="FeatureLevel">Nível de recursos</string>
+  <string name="FeatureLightSensor">Sensor luz</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">Proximidade</string>
+  <string name="FeatureSIMCount">Cartões SIM</string>
+  <string name="FeatureThermometer">Termômetro</string>
+  <string name="FeatureTouchscreenCapacitive">tela sensível ao toque capacitiva</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">tela sensível ao toque capacitiva com suporte a pelo menos 5 gestos</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">tela sensível ao toque capacitiva com suporte a gestos multitoque</string>
+  <string name="FeatureTouchscreenResistive">tela sensível resistiva</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">tela sensível ao toque resistiva com suporte a pelo menos 5 gestos</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">tela sensível ao toque resistiva com suporte a gestos multitoque</string>
+  <string name="FillTheForm">Preencha o formulário abaixo.</string>
+  <string name="FindOutMore">Saiba mais</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">Siga-nos</string>
+  <string name="ForceDisplayBrightness">Brilho da tela de força.</string>
+  <string name="ForgotPasswordSendToEmail">Envie para o meu endereço de email.</string>
+  <string name="ForgotPasswordSentToEmail">Enviamos um email a você. Siga as instruções para redefinir sua senha.</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">Testes de nível alto</string>
+  <string name="group_high_level_desc">Cenários de jogos de alta tecnologia para testar o desempenho geral dos gráficos 3D do seu dispositivo. Os motores de teste apresentam efeitos complexos para acentuar o uso da GPU e fornecer comentários sobre o seu desempenho de gráficos 3D fornecidos quando estiver jogando ou executando tarefas de uso intensivo de GPU (por exemplo, renderização de IU, navegação).</string>
+  <string name="group_low_level">Testes de nível baixo</string>
+  <string name="group_special">Testes especiais</string>
+  <string name="Height">Altura</string>
+  <string name="INTERNAL_ERROR">Erro do servidor. Volte mais tarde.</string>
+  <string name="INVALID_CREDENTIALS">Seu nome de logon ou senha está errado. Digite novamente.</string>
+  <string name="INVALID_EMAIL_ADDRESS">Endereço de email inválido. Digite novamente.</string>
+  <string name="InvalidCredentialsBody">Seu nome de logon ou senha está errado. Digite novamente.</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">O endereço de email fornecido é inválido. Forneça um endereço de email válido e tente novamente.</string>
+  <string name="InvalidEmailDialogTitle">Erro no endereço de email</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">Result. recentes</string>
+  <string name="LicenseDialogTitle">Licença geral</string>
+  <string name="Lifetime">Durabilidade</string>
+  <string name="Loading">Carregando...</string>
+  <string name="LoadingDeviceInfo">Coletando informações do dispositivo.</string>
+  <string name="LoadingDuelInfo">Coletando informações da consulta.</string>
+  <string name="LoadingNextTest">Carregando próximo teste...</string>
+  <string name="LoadingTest">Carregando %s...</string>
+  <string name="Login">Entrar</string>
+  <string name="LoginFailedDialogBody">Nome de usuário ou senha não correspondem. Digite novamente.</string>
+  <string name="LoginFailedDialogTitle">Erro de logon</string>
+  <string name="LoginForgotPassword">Esqueceu a senha?</string>
+  <string name="LoginTitle">Logon</string>
+  <string name="Logout">Finalizar</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="MISSING_PARAMETER">Digite seu nome de logon e senha.</string>
+  <string name="MissingParametersDialogBody">Uma ou mais das informações necessárias estão ausentes. Preencha as informações e tente novamente.</string>
+  <string name="MissingParametersDialogTitle">Parâmetros ausentes</string>
+  <string name="More">Ms+</string>
+  <string name="NetRequirementDialogBody">O GFXBench somente armazena e exibe os resultados se você tiver uma conexão com a Internet ativa.</string>
+  <string name="NetRequirementDialogTitle">Informações</string>
+  <string name="NETWORK_ERROR">Erro de rede. Tente novamente mais tarde.</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">Não</string>
+  <string name="NoFreeSpaceDialogBody">O espaço livre mínimo necessário no cartão SD é: %1$s MB</string>
+  <string name="NoFreeSpaceDialogTitle">Erro</string>
+  <string name="NoInternetDialogBody">Não foi encontrada a conexão com a internet. Conecte-se a uma rede e tente novamente!</string>
+  <string name="NoInternetDialogTitle">Nenhuma rede encontrada</string>
+  <string name="NoServerDialogBody">Ocorreu um erro quando o GFXBench tentou estabelecer conexão com o nosso servidor. Tente novamente mais tarde.</string>
+  <string name="NoServerDialogTitle">Servidor não encontrado</string>
+  <string name="NoTestSelectedDialogBody">Selecione pelo menos um teste para ser executado!</string>
+  <string name="NoTestSelectedDialogTitle">Nenhum teste selecionado</string>
+  <string name="NotRegisteredSectionBody">O GFXBench sempre armazena os resultados de cada execução de teste. Se quiser acessar e navegar pelo restante do seu histórico de resultados, crie uma conta de usuário!</string>
+  <string name="NotRegisteredSectionTitle">Inf.</string>
+  <string name="NotSupported">Sem suporte</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="Offscreen">Fora da tela</string>
+  <string name="OffscreenHeight">Altura fora da tela</string>
+  <string name="OffscreenWidth">Largura fora da tela</string>
+  <string name="OK">OK</string>
+  <string name="Onscreen">Na tela</string>
+  <string name="OperatingSystem">ОС</string>
+  <string name="OperatingSystemFull">Sistema operacional</string>
+  <string name="OutdatedDialogBody">Sua versão do GFXBench está desatualizada. Atualize o aplicativo e inicie novamente.</string>
+  <string name="OutdatedDialogTitle">Versão desatualizada</string>
+  <string name="Password">Senha</string>
+  <string name="PasswordMismatchDialogBody">Senha não corresponde. Digite sua senha novamente.</string>
+  <string name="PasswordMismatchDialogTitle">Erro de senha</string>
+  <string name="Performance">Desempenho</string>
+  <string name="PrimaryScreenDialogBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenDialogTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">Sair</string>
+  <string name="ReadLicense">Ler o EULA</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Register">Registrar</string>
+  <string name="RegisterEmail">Endereço de email</string>
+  <string name="RegisterError">Aceite os termos de privacidade e se inscreva agora.</string>
+  <string name="RegisterErrorEmailNotOK">Escolha outro email.</string>
+  <string name="RegisterErrorLoginNotOK">Escolha outro nome de logon.</string>
+  <string name="RegisterErrorNoEmail">Preencha o campo Endereço de email.</string>
+  <string name="RegisterErrorNoFirstName">Preencha o campo Nome.</string>
+  <string name="RegisterErrorNoLastName">Preencha o campo Sobrenome.</string>
+  <string name="RegisterErrorNoLogin">Preencha o campo Nome de logon.</string>
+  <string name="RegisterErrorNoPassword">Preencha o campo Senha.</string>
+  <string name="RegisterErrorPasswordsNotMatching">As senhas não coincidem. Digite novamente.</string>
+  <string name="RegisterFirstName">Nome</string>
+  <string name="RegisterLastName">Sobrenome</string>
+  <string name="RegisterLogin">Escolha um nome de logon</string>
+  <string name="RegisterPassword">Senha</string>
+  <string name="RegisterPasswordAgain">Digite sua senha novamente</string>
+  <string name="RegistrationFeedbackDialogBody">Você se registrou com sucesso. Enviamos a você um email de notificação no endereço fornecido.</string>
+  <string name="RegistrationFeedbackDialogTitle">Registro bem-sucedido</string>
+  <string name="RegistrationForm">Formulário de registro</string>
+  <string name="RememberMe">Lembrar-me</string>
+  <string name="Requirement">Requisito mínimo de API:</string>
+  <string name="ResetTutorials">Redefinir tutoriais</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">Hist. resultados</string>
+  <string name="Results_BatteryEstimatedTime">Bateria - Tempo estimado</string>
+  <string name="Results_BatteryPerformance">Bateria - Desempenho</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">N/D</string>
+  <string name="Results_NoBatteryResultYet">Sem result. bateria ainda.</string>
+  <string name="Results_NoResultsYet">Sem result. ainda.</string>
+  <string name="Results_RunningTime">Tempo execução</string>
+  <string name="Results_ShowBatteryDiagram">Exibir diagrama bateria</string>
+  <string name="Retry">Repetir</string>
+  <string name="SaveResultsExcel">Salvar resultados</string>
+  <string name="Score">Pontos</string>
+  <string name="Search">Pesquisar</string>
+  <string name="SelectAll">Selec. tudo</string>
+  <string name="SelectTests">Selec. teste</string>
+  <string name="ServerTimeoutDialogBody">O GFXBench não pôde acessar os servidores. Volte mais tarde.</string>
+  <string name="ServerTimeoutDialogTitle">Tempo limite do servidor</string>
+  <string name="SetBatteryBrightness">Lumin. do teste de bateria</string>
+  <string name="SetOffscrResolution">Resolução fora da tela</string>
+  <string name="SetOnscrResolution">Resolução personalizada</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">Exibir FPS</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">Você está prestes a selecionar um teste de bateria.  Isso desmarcará todos os outros testes.  Para executar o teste, verifique se o dispositivo está totalmente carregado e o desconecte.  Observe que o seu dispositivo poderá ser sobreaquecido durante o teste.</string>
+  <string name="StabilityTestTitle">Teste de bateria</string>
+  <string name="Start">Iniciar</string>
+  <string name="StartAll">Iniciar tudo</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">Versão de contexto não suportada</string>
+  <string name="STATUS_CANCELLED">Cancelado</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">Não foi possível criar o teste</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">Configuração inválida</string>
+  <string name="STATUS_NATIVEEXCEPTION">Falha de teste</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">Teste inválido</string>
+  <string name="STATUS_UNKNOWNERR">Erro desconhecido</string>
+  <string name="StorageCheck">Determinig the storage for the huge datasets</string>
+  <string name="Supported">Com suporte</string>
+  <string name="SwitchStateOff">Des.</string>
+  <string name="SwitchStateOn">At.</string>
+  <string name="ShowString">Show</string>
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobil results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>  
+  <string name="SyncErrorDialogBody">O seguinte erro ocorreu durante a sincronização: %s</string>
+  <string name="SyncErrorDialogTitle">Erro de sincronização</string>
+  <string name="Synchronization">Synchronizing...</string>
+  <string name="SyncLotDialogBody">O GFXBench agora sincronizará os dados do aplicativo com o servidor. Isso requer o download do %s. Deseja permitir isso?</string>
+  <string name="SyncLotDialogTitle">Sincronização de dados</string>
+  <string name="SyncronizingChecksum">Verificando arquivos para alterações...</string>
+  <string name="SyncronizingLoadingString">Sincronizando arquivos %1$s%% (%2$s/%3$s MB)</string>
+  <string name="TabCompare">Comparar</string>
+  <string name="TabDuel">Cons.</string>
+  <string name="TabGlInfo">Info. do OpenGL</string>
+  <string name="TabHome">Início</string>
+  <string name="TabInfo">Inf.</string>
+  <string name="TabResults">Resultados</string>
+  <string name="TabSettings">Config.</string>
+  <string name="TestList">Lista testes</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>  
+  <string name="TestSelection">Seleção testes</string>
+  <string name="ThreeDAPI">API 3D</string>
+  <string name="UnkownErrorDialogBody">Erro inesperado durante o registro. Tente novamente mais tarde.</string>
+  <string name="UnkownErrorDialogTitle">Erro</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">Carregar resultados</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">Usuário</string>
+  <string name="USER_NAME_TAKEN">Este nome de usuário já está em uso. Escolha outro nome.</string>
+  <string name="Username">Nome usuário</string>
+  <string name="UsernameTakenDialogBody">O nome de usuário está atualmente sendo usado por outro usuário. Selecione outro nome e tente novamente.</string>
+  <string name="UsernameTakenDialogTitle">O nome de usuário já está em uso</string>
+  <string name="Version">Versão %s</string>
+  <string name="WarningEULA">Leia o contrato de licença de usuário final.</string>
+  <string name="WarningNoInternet">Não há conexão com a Internet. Conecte-se a uma rede para executar os testes.</string>
+  <string name="WarningOutdated">Você está usando um aplicativo desatualizado.  Faça o download da versão mais recente do GFXBench.</string>
+  <string name="WarningTestNotRunNoInternet">O teste falhou porque nenhuma conexão com a internet foi encontrada. Conecte-se a uma rede para executar os testes.</string>
+  <string name="WarningUnregistered">Registre uma conta.</string>
+  <string name="Welcome">Bem-vindo! Você agora está conectado como:</string>
+  <string name="Width">Largura</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">Sim</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">Seu dispos.</string>
+  <string name="AboutSectionBody">O GFXBench é um parâmetro de comparação de gráficos 3D para testar o desempenho dos gráficos do seu dispositivo e comparar os resultados com outros dispositivos por todas as plataformas mais conhecidas. O GFXBench foi desenvolvido pela Kishonti Ltd. Se você estiver interessado em nosso trabalho, visite kishonti.net!</string>
+  <string name="CorporateCommercial">Observe que você agora está usando a edição comunitária do GFXBench. Para propósitos de desenvolvimento, recomendamos a edição corporativa. Se você precisar de mais informações sobre licenciamento, entre em contato conosco em sales@kishonti.net!</string>
+  <string name="FollowUsSectionBody">O GFXBench é um parâmetro de comparação de gráficos 3D multiplataforma utilizado para medir o desempenho do seu dispositivo e compará-lo a outros dispositivos.</string>
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  
+  
+  
+  
+  <!-- System info -->
+  <string name="device">Dispos.</string>
+  <string name="os">OC</string>
+  <string name="display">Tela</string>
+  <string name="cpu">CPU</string>
+  <string name="gpu">GPU</string>
+  <string name="memory">Memória</string>
+  <string name="storage">Armaz.</string>
+  <string name="battery">Bateria</string>
+  <string name="features">Recursos</string>
+  <string name="frontcamera">Câmera frontal</string>
+  <string name="backcamera">Câmera traseira</string>
+  
+  
+  <!-- GFXBench GL -->
+  <string name="gl_blending">Combinação alfa</string>
+  <string name="gl_blending_desc">Mede o desempenho de combinação alfa do dispositivo, renderizando quadrantes alinhados à tela semitransparentes com texturas de alta resolução não compactadas. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off_desc">Mede o desempenho de combinação alfa do dispositivo, renderizando quadrantes alinhados à tela semitransparentes com texturas de alta resolução não compactadas. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">Combinação alfa fora da tela 1080p</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_alu">ALU</string>
+  <string name="gl_alu_desc">Mede o desempenho computacional do sombreador puro do seu dispositivo usando um sombreador de fragmentos complexos e renderizando um único quadrante de tela cheia. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off_desc">Mede o desempenho computacional do sombreador puro do seu dispositivo usando um sombreador de fragmentos complexos e renderizando um único quadrante de tela cheia. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">ALU fora da tela 1080p</string>
+  <string name="gl_alu2">ALU 2</string>
+  <string name="gl_alu2_off">ALU 2 fora da tela 1080p</string>
+  <string name="gl_trex_battery_desc">Este teste combinado mede a vida útil da bateria do seu dispositivo e a estabilidade de FPS em um cenário de jogos, executando o mesmo teste de alto nível por 30 vezes. Ele registra os FPS e a carga da bateria durante o teste e os resultados são exibidos em um gráfico de bateria. O teste produz duas pontuações, uma é a vida útil estimada da bateria em minutos e a outra é o número de quadros renderizados pela execução de teste mais lenta. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">Sobrecarga do driver</string>
+  <string name="gl_driver_desc">Mede a sobrecarga da CPU do driver OpenGL renderizando um grande número de objetos simples, um por um, alterando o estado do dispositivo para cada item. A frequência das alterações de estado se reflete nos aplicativos existentes. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off_desc">Mede a sobrecarga da CPU do driver OpenGL renderizando um grande número de objetos simples, um por um, alterando o estado do dispositivo para cada item. A frequência das alterações de estado se reflete nos aplicativos existentes. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off">Sobrecarga do driver fora da tela 1080p</string>
+  <string name="gl_driver2">Sobrecarga do driver 2</string>
+  <string name="gl_driver2_off">Sobrecarga do driver 2 fora da tela 1080p</string>
+  <string name="gl_fill">Preenchimento</string>
+  <string name="gl_fill_desc">Mede o desempenho de texturização do dispositivo, renderizando quatro camadas de texturas compactadas. Este é um cenário comum em jogos. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar sua pontuação com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off_desc">Mede o desempenho de texturização do dispositivo, renderizando quatro camadas de texturas compactadas. Este é um cenário comum em jogos. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar sua pontuação com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">Preenchimento fora da tela 1080p</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_off">Texturing fora da tela 1080p</string>
+  <string name="gl_manhattan">Manhattan</string>
+  <string name="gl_manhattan31">Manhattan 3.1</string>
+  <string name="gl_manhattan31_off">Manhattan 3.1 fora da tela 1080p</string>
+  <string name="gl_manhattan_off">Manhattan fora da tela 1080p</string>
+  <string name="Test_Offscreen">%s fora da tela</string>
+  <string name="gl_trex">T-Rex</string>
+  <string name="gl_trex_battery">Teste de bateria</string>
+  <string name="gl_trex_battery_diagram">Teste de bateria - Diagrama</string>
+  <string name="gl_trex_battery_lifetime">Teste de bateria - Tempo estimado</string>
+  <string name="gl_trex_battery_performance">Teste de bateria - Desempenho</string>
+  <string name="gl_trex_off">T-Rex fora da tela 1080p</string>
+  <string name="gl_trex_qmatch">Qualidade de renderização</string>
+  <string name="gl_trex_qmatch_highp">Qualidade de renderização (alta precisão)</string>
+
+  <!-- GFXBench METAL -->
+  <string name="metal_blending">Combinação alfa</string>
+  <string name="metal_blending_desc">Mede o desempenho de combinação alfa do dispositivo, renderizando quadrantes alinhados à tela semitransparentes com texturas de alta resolução não compactadas. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_blending_off_desc">Mede o desempenho de combinação alfa do dispositivo, renderizando quadrantes alinhados à tela semitransparentes com texturas de alta resolução não compactadas. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_blending_off">Combinação alfa fora da tela 1080p</string>
+  <string name="metal_diag">GL Diagnostics</string>
+  <string name="metal_alu">ALU</string>
+  <string name="metal_alu_desc">Mede o desempenho computacional do sombreador puro do seu dispositivo usando um sombreador de fragmentos complexos e renderizando um único quadrante de tela cheia. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_alu_off_desc">Mede o desempenho computacional do sombreador puro do seu dispositivo usando um sombreador de fragmentos complexos e renderizando um único quadrante de tela cheia. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_alu_off">ALU fora da tela 1080p</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_off">ALU 2 fora da tela 1080p</string>
+  <string name="metal_trex_battery_desc">Este teste combinado mede a vida útil da bateria do seu dispositivo e a estabilidade de FPS em um cenário de jogos, executando o mesmo teste de alto nível por 30 vezes. Ele registra os FPS e a carga da bateria durante o teste e os resultados são exibidos em um gráfico de bateria. O teste produz duas pontuações, uma é a vida útil estimada da bateria em minutos e a outra é o número de quadros renderizados pela execução de teste mais lenta. API mínima necessária: Metal</string>
+  <string name="metal_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="metal_driver">Sobrecarga do driver</string>
+  <string name="metal_driver_desc">Mede a sobrecarga da CPU do driver Metal renderizando um grande número de objetos simples, um por um, alterando o estado do dispositivo para cada item. A frequência das alterações de estado se reflete nos aplicativos existentes. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_driver_off_desc">Mede a sobrecarga da CPU do driver Metal renderizando um grande número de objetos simples, um por um, alterando o estado do dispositivo para cada item. A frequência das alterações de estado se reflete nos aplicativos existentes. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_driver_off">Sobrecarga do driver fora da tela 1080p</string>
+  <string name="metal_driver2">Driver Overhead 2</string>
+  <string name="metal_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="metal_fill">Preenchimento</string>
+  <string name="metal_fill_desc">Mede o desempenho de texturização do dispositivo, renderizando quatro camadas de texturas compactadas. Este é um cenário comum em jogos. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar sua pontuação com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_fill_off_desc">Mede o desempenho de texturização do dispositivo, renderizando quatro camadas de texturas compactadas. Este é um cenário comum em jogos. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar sua pontuação com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: Metal</string>
+  <string name="metal_fill_off">Preenchimento fora da tela 1080p</string>
+  <string name="metal_fill2">Fill 2</string>
+  <string name="metal_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="metal_manhattan">Manhattan</string>
+  <string name="metal_manhattan31">Manhattan 3.1</string>
+  <string name="metal_manhattan31_off">Manhattan 3.1 fora da tela 1080p</string>
+  <string name="metal_manhattan_off">Manhattan fora da tela 1080p</string>
+  <string name="Test_Offscreen">%s fora da tela</string>
+  <string name="metal_trex_qmatch_desc">Mede a fidelidade visual do seu dispositivo em um cenário de jogos de alta tecnologia. A pontuação é a taxa de pico de sinal/ruído (PSNR) com base no erro médio quadrático (MSE) em comparação com uma imagem de referência pré-renderizada. API mínima necessária: Metal</string>
+  <string name="metal_trex_qmatch_highp_desc">Mede a fidelidade visual do seu dispositivo em um cenário de jogos de alta tecnologia. A pontuação é a taxa de pico de sinal/ruído (PSNR) com base no erro médio quadrático (MSE) em comparação com uma imagem de referência pré-renderizada. API mínima necessária: Metal</string>
+  <string name="metal_trex">T-Rex</string>
+  <string name="metal_trex_battery">Teste de bateria</string>
+  <string name="metal_trex_battery_diagram">Teste de bateria - Diagrama</string>
+  <string name="metal_trex_battery_lifetime">Teste de bateria - Tempo estimado</string>
+  <string name="metal_trex_battery_performance">Teste de bateria - Desempenho</string>
+  <string name="metal_trex_desc">Com base no Metal, o teste T-Rex inclui texturas altamente detalhadas, materiais, geometria complexa, partículas com texturas animadas e um efeito pós-processamento: desfoque de movimento. O pipeline de gráficos também possui efeitos, como por exemplo: reflexão planar, iluminação especular e sombras suaves. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos.  API mínima necessária: Metal</string>
+  <string name="metal_trex_off_desc">Com base no Metal, o teste T-Rex inclui texturas altamente detalhadas, materiais, geometria complexa, partículas com texturas animadas e um efeito pós-processamento: desfoque de movimento. O pipeline de gráficos também possui efeitos, como por exemplo: reflexão planar, iluminação especular e sombras suaves. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos.  API mínima necessária: Metal</string>
+  <string name="metal_trex_off">T-Rex fora da tela 1080p</string>
+  <string name="metal_trex_qmatch">Qualidade de renderização</string>
+  <string name="metal_trex_qmatch_highp">Qualidade de renderização (alta precisão)</string>
+
+  <!-- GFXBench DX -->
+  <string name="dx_blending">Combinação alfa</string>
+  <string name="dx_blending_desc">Mede o desempenho de combinação alfa do dispositivo, renderizando quadrantes alinhados à tela semitransparentes com texturas de alta resolução não compactadas. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_blending_off_desc">Mede o desempenho de combinação alfa do dispositivo, renderizando quadrantes alinhados à tela semitransparentes com texturas de alta resolução não compactadas. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_blending_off">Combinação alfa fora da tela 1080p</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_alu">ALU</string>
+  <string name="dx_alu_desc">Mede o desempenho computacional do sombreador puro do seu dispositivo usando um sombreador de fragmentos complexos e renderizando um único quadrante de tela cheia. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_alu_off_desc">Mede o desempenho computacional do sombreador puro do seu dispositivo usando um sombreador de fragmentos complexos e renderizando um único quadrante de tela cheia. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_alu_off">ALU fora da tela 1080p</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc"></string>
+  <string name="dx_alu2_off">ALU 2 fora da tela 1080p</string>
+  <string name="dx_trex_battery_desc">Este teste combinado mede a vida útil da bateria do seu dispositivo e a estabilidade de FPS em um cenário de jogos, executando o mesmo teste de alto nível por 30 vezes. Ele registra os FPS e a carga da bateria durante o teste e os resultados são exibidos em um gráfico de bateria. O teste produz duas pontuações, uma é a vida útil estimada da bateria em minutos e a outra é o número de quadros renderizados pela execução de teste mais lenta. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">Sobrecarga do driver</string>
+  <string name="dx_driver_desc">Mede a sobrecarga da CPU do driver DirectX renderizando um grande número de objetos simples, um por um, alterando o estado do dispositivo para cada item. A frequência das alterações de estado se reflete nos aplicativos existentes. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_driver_off_desc">Mede a sobrecarga da CPU do driver DirectX renderizando um grande número de objetos simples, um por um, alterando o estado do dispositivo para cada item. A frequência das alterações de estado se reflete nos aplicativos existentes. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_driver_off">Sobrecarga do driver fora da tela 1080p</string>
+  <string name="dx_driver2">Driver Overhead 2</string>
+  <string name="dx_driver2_desc"></string>
+  <string name="dx_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="dx_fill">Preenchimento</string>
+  <string name="dx_fill_desc">Mede o desempenho de texturização do dispositivo, renderizando quatro camadas de texturas compactadas. Este é um cenário comum em jogos. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar sua pontuação com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_fill_off_desc">Mede o desempenho de texturização do dispositivo, renderizando quatro camadas de texturas compactadas. Este é um cenário comum em jogos. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar sua pontuação com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_fill_off">Preenchimento fora da tela 1080p</string>
+  <string name="dx_fill2">Fill 2</string>
+  <string name="dx_fill2_desc"></string>
+  <string name="dx_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="dx_manhattan">Manhattan</string>
+  <string name="dx_manhattan31">Manhattan DirectX 10.0</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in DirectX 10.0 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">Manhattan DirectX 10.0  fora da tela 1080p</string>
+  <string name="dx_manhattan_desc">Nosso primeiro teste para utilizar as capacidades do DirectX 10.0 do seu dispositivo. O cenário do teste é um ambiente noturno de cidade com muitas luzes para iluminar o cenário. Ele usa renderização adiada e múltiplos destinos de renderização (MRT) para a passagem geométrica (quatro anexos de cores como texturas), iluminação difusa e especular e apresenta efeitos complexos, tais como mapeamento de profundidade das sombras, efeito de camuflagem, efeitos de pós-processamento (flor, profundidade de campo), consulta de oclusão e eixos de luz volumétrica animados. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos.  API mínima necessária: DirectX 10.0</string>
+  <string name="dx_manhattan_off_desc">Nosso primeiro teste para utilizar as capacidades do DirectX 10.0 do seu dispositivo. O cenário do teste é um ambiente noturno de cidade com muitas luzes para iluminar o cenário. Ele usa renderização adiada e múltiplos destinos de renderização (MRT) para a passagem geométrica (quatro anexos de cores como texturas), iluminação difusa e especular e apresenta efeitos complexos, tais como mapeamento de profundidade das sombras, efeito de camuflagem, efeitos de pós-processamento (flor, profundidade de campo), consulta de oclusão e eixos de luz volumétrica animados. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos.  API mínima necessária: DirectX 10.0</string>
+  <string name="dx_manhattan_off">Manhattan fora da tela 1080p</string>
+  <string name="Test_Offscreen">%s fora da tela</string>
+  <string name="dx_trex_qmatch_desc">Mede a fidelidade visual do seu dispositivo em um cenário de jogos de alta tecnologia. A pontuação é a taxa de pico de sinal/ruído (PSNR) com base no erro médio quadrático (MSE) em comparação com uma imagem de referência pré-renderizada. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp_desc">Mede a fidelidade visual do seu dispositivo em um cenário de jogos de alta tecnologia. A pontuação é a taxa de pico de sinal/ruído (PSNR) com base no erro médio quadrático (MSE) em comparação com uma imagem de referência pré-renderizada. API mínima necessária: DirectX 9.1</string>
+  <string name="dx_trex">T-Rex</string>
+  <string name="dx_trex_battery">Teste de bateria</string>
+  <string name="dx_trex_battery_diagram">Teste de bateria - Diagrama</string>
+  <string name="dx_trex_battery_lifetime">Teste de bateria - Tempo estimado</string>
+  <string name="dx_trex_battery_performance">Teste de bateria - Desempenho</string>
+  <string name="dx_trex_desc">Com base no DirectX 9.1, o teste T-Rex inclui texturas altamente detalhadas, materiais, geometria complexa, partículas com texturas animadas e um efeito pós-processamento: desfoque de movimento. O pipeline de gráficos também possui efeitos, como por exemplo: reflexão planar, iluminação especular e sombras suaves. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos.  API mínima necessária: DirectX 9.1</string>
+  <string name="dx_trex_off_desc">Com base no DirectX 9.1, o teste T-Rex inclui texturas altamente detalhadas, materiais, geometria complexa, partículas com texturas animadas e um efeito pós-processamento: desfoque de movimento. O pipeline de gráficos também possui efeitos, como por exemplo: reflexão planar, iluminação especular e sombras suaves. Para ver como o dispositivo funciona em sua resolução nativa, execute o teste Na tela. Para comparar suas pontuações com outros dispositivos, use a versão Fora da tela que é executada com resolução de 1080p em todos os dispositivos.  API mínima necessária: DirectX 9.1</string>
+  <string name="dx_trex_off">T-Rex fora da tela 1080p</string>
+  <string name="dx_trex_qmatch">Qualidade de renderização</string>
+  <string name="dx_trex_qmatch_highp">Qualidade de renderização (alta precisão)</string>
+  
+  <string name="LicenseDialogBody">CONTRATO DE LICENÇA DE USUÁRIO FINAL 
+        PARA PRODUTOS DO SOFTWARE DE PARÂMETRO DE COMPARAÇÃO DA KISHONTI KFT 
+         
+         
+        AVISO IMPORTANTE - LEIA COM ATENÇÃO: ESTE CONTRATO DE LICENÇA DE USUÁRIO FINAL DO SOFTWARE É UM ACORDO JURIDICAMENTE VINCULADO ENTRE VOCÊ E A KISHONTI KFT PARA PRODUTOS DO SOFTWARE DE PARÂMETRO DE COMPARAÇÃO DE DESEMPENHO DA KISHONTI KFT. NÃO FAÇA DOWNLOAD, COPIE, INSTALE OU USE O SOFTWARE FORNECIDO SOB ESTE EULA, ATÉ QUE VOCÊ LEIA ATENTAMENTE OS TERMOS E CONDIÇÕES A SEGUIR.  QUALQUER REPRODUÇÃO, REDISTRIBUIÇÃO OU OUTRO USO DO SOFTWARE OU QUALQUER UM DE SEUS COMPONENTES QUE ESTIVER EM DESACORDO COM ESTE EULA É EXPRESSAMENTE PROIBIDO POR LEI E PODE RESULTAR EM GRAVES PUNIÇÕES CIVIS E CRIMINAIS E OUTRAS CONSEQUÊNCIAS. 
+         
+        LICENÇA SOMENTE PARA USO PRIVADO E NÃO COMERCIAL: ESTE SOFTWARE É LICENCIADO PARA O USO PESSOAL E NÃO COMERCIAL DE UM CONSUMIDOR PARA TESTAR O DESEMPENHO DO SEU DISPOSITIVO, COMO UM CONSUMIDOR ENVOLVIDO EM UMA ATIVIDADE PESSOAL E NÃO COMERCIAL.  NENHUMA LICENÇA É CONCEDIDA OU ESTARÁ IMPLÍCITA EM QUAISQUER OUTRAS UTILIZAÇÕES. 
+        SE PRECISAR DE UMA LICENÇA PARA O SOFTWARE PARA USO COMERCIAL, ENTRE EM CONTATO COM A KISHONTI KFT PELO EMAIL SALES@KISHONTI.NET! 
+         
+         
+        1. Definições 
+         
+        "Dispositivo" representa um dispositivo eletrônico que está em conformidade com os requisitos do sistema do Software, conforme especificado na documentação do Software, e que é capaz de se conectar à Internet. 
+        "EULA" representa este contrato de licença de usuário final do software. 
+        "KISHONTI" representa a KISHONTI Kft., uma empresa de responsabilidade limitada constituída sob as leis da Hungria com a sua sede em 1037 Budapeste, Szepvolgyi ut 39., Hungria, registrada sob o nº Cg. 01-09-935577 pelo Tribunal Metropolitano de Budapeste como Tribunal de Registro. 
+        "Recursos desativados" representam as funcionalidades ou recursos ocultos ou que aparecem desativados ou esmaecidos. O Software pode conter Recursos desativados que serão ativados apenas quando estiver utilizando versões de software disponíveis somente pela KISHONTI e mediante o pagamento dos custos da licença. 
+        "Software" representa o software de parâmetros de comparação de testes de desempenho disponibilizado na Internet pela KISHONTI sob este EULA, incluindo (a) todo o conteúdo dos arquivos, o que pode incluir informações de computador ou software da KISHONTI ou de terceiros, os respectivos materiais escritos explicativos ou arquivos e fontes; e (b) upgrades, versões modificadas, atualizações, adições e cópias do referido, fornecidas a Você pela KISHONTI a qualquer momento (coletivamente, "Atualizações"). 
+        "Uso" representa acessar, fazer download, instalar, executar, testar os Dispositivos com ou beneficiar-se, de outra forma, do uso da funcionalidade do Software. 
+         
+         
+        2. Escopo da licença 
+         
+        Esta licença gratuita concedida a Você pela KISHONTI para o Software se limita a uma licença intransferível para usar o Software em qualquer Dispositivo que Você possua ou controle. A licença e a disponibilidade do Software podem ser interrompidas (rescindidas) pela KISHONTI a qualquer momento, conforme estabelecido neste EULA. 
+         
+        Seus direitos e obrigações em relação ao Uso do Software ou qualquer dos seus componentes são os seguintes: 
+         
+        (i) Você pode: 
+        (a) Fazer download, instalar e usar o Software de forma gratuita. O uso do Software exigirá uma conexão com a Internet; 
+        (b) Usar uma cópia do Software ou de qualquer um dos seus componentes e todas as Atualizações em cada um dos seus Dispositivos para seu uso pessoal, por qualquer período durante o qual a KISHONTI (a seu próprio critério) disponibilizar o Software ou até a KISHONTI rescindir este EULA; 
+        (c) Usar o Software apenas para uso pessoal. O Software e quaisquer resultados de testes ou outros dados gerados por meio do uso do Software não podem ser utilizados para fins comerciais (incluindo, sem limitação, uso por organizações governamentais e sem fins lucrativos). 
+         
+        (ii) Você não pode: 
+        (a) Usar, copiar, adaptar, modificar ou transferir cópias do Software (ou autorizar qualquer pessoa a fazê-lo), exceto conforme expressamente previsto no presente EULA; 
+        (b) Instalar ou Usar o Software em um servidor de arquivos para computadores;  
+        (c) Remover quaisquer dos avisos de propriedade ou outros ou etiquetas do Software; 
+        (d) Efetuar engenharia reversa, reconfigurar, modificar, traduzir, descompilar, desmontar ou criar trabalhos derivados com base no Software (exceto e apenas na medida em que tal atividade for expressamente permitida pela legislação aplicável, tendo sempre em atenção a presente limitação);  
+        (e) Vender, distribuir, alugar, arrendar, sublicenciar, transferir ou ceder o Software ou qualquer cópia do mesmo, incluindo qualquer documentação relacionada; 
+        (f) Extrair partes de elementos do Software; 
+        (g) Integrar para usar o Software com qualquer outro software, plug-in ou aperfeiçoamento;  
+        (h) Fazer qualquer tentativa de descobrir o código-fonte do Software, determinar ou tentar determinar o código-fonte do Software ou criar trabalhos derivados com base nos Produtos (exceto e apenas na medida em que tal atividade for expressamente permitida pela legislação aplicável, tendo sempre em atenção a presente limitação); 
+        (i) Acessar ou tentar acessar todos os Recursos desativados, nem se basear no Software para criar um recurso substancialmente semelhante a qualquer Recurso desativado ou não contornar a tecnologia que controla a ativação de tais Recursos desativados. 
+         
+        3. Detenção de propriedade intelectual e direitos reservados. 
+         
+        O Software e quaisquer cópias autorizadas feitas por Você são propriedade intelectual da KISHONTI (e seus fornecedores, conforme aplicável).  A estrutura, a organização e o código do Software são propriedade intelectual valiosa (por exemplo, segredos comerciais e informações confidenciais) da KISHONTI (e seus fornecedores, conforme aplicável). O Software é protegido por lei, incluindo, sem limitação, as leis de direitos autorais da Hungria, dos Estados Unidos e de outros países, e por disposições de tratados internacionais. Exceto como aqui declarado expressamente, este EULA não concede a Você quaisquer direitos de propriedade intelectual sobre o Software e todos os direitos não concedidos expressamente são reservados pela KISHONTI (e seus fornecedores, conforme aplicável). 
+        Conforme descrito neste EULA, os resultados dos testes criados por seu Uso do Software também passarão a ser propriedade da KISHONTI após o carregamento para os servidores da KISHONTI.  
+         
+         
+        4. Conectividade. Carregar e exibir os resultados dos testes 
+         
+        (a) Conexão com a Internet necessária 
+        Você reconhece e concorda que o Software pode ser usado somente se e quando o Dispositivo estiver conectado à Internet (para os servidores de processamento de dados do parâmetro de comparação da KISHONTI). 
+         
+        (b) Carregar e exibir os resultados dos testes 
+        Você reconhece e concorda que quando Você usa o software, os resultados dos testes gerados por tal Uso serão automaticamente, sem aviso prévio, enviados para os servidores da KISHONTI. Você também reconhece e concorda que os resultados carregados passarão a ser propriedade da KISHONTI. Os resultados dos testes serão exibidos no site da KISHONTI a critério de decisão da KISHONTI e a KISHONTI pode exibir, remover ou reposicionar os resultados dos testes, sem dar qualquer aviso ou razão. 
+         
+        (c) Atualização 
+        Se o Dispositivo estiver conectado à Internet, o Software pode, sem aviso prévio adicional, verificar se há Atualizações que estão disponíveis para download e instalação automáticos no seu Dispositivo e informar a KISHONTI que o software foi instalado com sucesso. As atualizações podem ser baixadas e instaladas automaticamente sem aviso prévio adicional. Somente as informações de identificação não pessoais são transmitidas para a KISHONTI quando isso ocorrer, a não ser na medida em que os endereços IP possam ser considerados pessoalmente identificáveis ​​em algumas jurisdições. O uso de tais informações, incluindo o seu endereço IP, tal como previsto no processo de atualização automática é regido pela Política de Privacidade da KISHONTI (que você pode consultar em www.kishonti.net). Além disso, se o Dispositivo estiver conectado à Internet, o Software pode, sem aviso prévio adicional, informar e, de forma intermitente ou regular, facilitar seu acesso ao conteúdo e serviços que estão hospedados em sites mantidos pela KISHONTI. Quando o Software se conecta à Internet, seu endereço IP, nome de usuário e senha podem ser enviados para os servidores da KISHONTI e armazenados pela KISHONTI. Essas informações podem ser utilizadas pela KISHONTI para enviar a Você mensagens transacionais para facilitar o Uso e/ou a funcionalidade do Software. A KISHONTI pode exibir o marketing sobre o produto para fornecer informações sobre o Software e outros produtos e serviços da KISHONTI. Sempre que o Software estabelecer uma conexão com a Internet e se comunicar com o site da KISHONTI, seja automaticamente ou devido à solicitação explícita do usuário, a Política de Privacidade da KISHONTI será aplicada. 
+         
+         
+        5. Interrupção do Uso do Software 
+         
+        A KISHONTI terá o direito de modificar ou Atualizar o Software ou modificar ou remover qualquer parte, elemento e característica da funcionalidade do Software em qualquer momento e sem fornecer qualquer aviso ou motivo. 
+         
+        A KISHONTI terá o direito de suspender (rescindir) a disponibilidade, acessibilidade ou Uso do Software (ou qualquer versão anterior do Software) ou qualquer parte, elemento, característica da funcionalidade do Software em qualquer momento e sem fornecer qualquer aviso ou motivo. 
+         
+        Sua licença para usar o Software é efetiva até que seja rescindida por Você ou pela KISHONTI. Você pode rescindir a licença desinstalando (removendo completamente) todas as cópias do Software do seu Dispositivo. Seus direitos sob esta licença irão rescindir automaticamente sem notificação da KISHONTI se Você deixar de cumprir com qualquer termo desta licença. Após a rescisão da licença, Você deve deixar de utilizar o Software e destruir todas as cópias, completas ou parciais, do Software. A rescisão da licença (a interrupção da disponibilidade do Software) não afetará os direitos de propriedade da KISHONTI aos resultados dos testes carregados para o seu servidor. 
+         
+         
+        6. Não oferece garantias e responsabilidade 
+         
+        VOCÊ RECONHECE E CONCORDA EXPRESSAMENTE QUE O USO DO SOFTWARE (OU IMPOSSIBILIDADE DE USO) É FEITO POR SUA CONTA E RISCO E QUE VOCÊ ASSUME O RISCO INTEGRAL QUANTO AO ESFORÇO, EXATIDÃO, DESEMPENHO E QUALIDADE SATISFATÓRIOS. ATÉ À MÁXIMA EXTENSÃO PERMITIDA PELA LEI APLICÁVEL, O SOFTWARE E QUAISQUER SERVIÇOS EXECUTADOS OU FORNECIDOS PELA KISHONTI SÃO FORNECIDOS "TAL COMO ESTÃO" E "CONFORME DISPONIBILIZADOS", COM TODAS AS FALHAS E SEM GARANTIA DE QUALQUER ESPÉCIE, E A KISHONTI FICA ISENTA DE TODAS AS GARANTIAS E CONDIÇÕES NO QUE DIZ RESPEITO AO SOFTWARE E A QUAISQUER SERVIÇOS, TANTO EXPRESSOS, COMO IMPLÍCITOS OU ESTATUTÁRIOS, INCLUINDO, MAS SEM LIMITAÇÃO, AS GARANTIAS E/OU CONDIÇÕES IMPLÍCITAS DE COMERCIABILIDADE, DE QUALIDADE SATISFATÓRIA, DE ADEQUAÇÃO A UM DETERMINADO FIM, DE PRECISÃO, DE UTILIZAÇÃO DISCRETA E DE NÃO VIOLAÇÃO DOS DIREITOS DE TERCEIROS. A KISHONTI NÃO FORNECE GARANTIA CONTRA INTERFERÊNCIA DE SUA POSSE PACÍFICA DO SOFTWARE, QUE AS FUNÇÕES NELE CONTIDAS OU OS SERVIÇOS PRESTADOS OU FORNECIDOS POR ELE, QUE O SOFTWARE ATENDERÁ ÀS SUAS EXIGÊNCIAS, QUE A OPERAÇÃO DO SOFTWARE OU DOS SERVIÇOS SERÁ ININTERRUPTA OU LIVRE DE ERROS, OU QUE OS DEFEITOS DO SOFTWARE SERÃO CORRIGIDOS. NENHUMA INFORMAÇÃO ORAL OU ESCRITA, OU CONSELHO DADO PELA KISHONTI OU SEUS REPRESENTANTES AUTORIZADOS DEVERÁ CRIAR UMA GARANTIA. SE O SOFTWARE OU OS SERVIÇOS APRESENTAREM DEFEITOS, VOCÊ ASSUME TODOS OS CUSTOS DA ASSISTÊNCIA, CORREÇÃO OU REPAROS NECESSÁRIOS. ALGUMAS JURISDIÇÕES NÃO PERMITEM A EXCLUSÃO DE GARANTIAS IMPLÍCITAS OU LIMITAÇÕES NOS DIREITOS ESTATUTÁRIOS APLICÁVEIS DE UM CONSUMIDOR. NESSE CASO, O LIMITE MÁXIMO (O NÍVEL DE GARANTIA REPRESENTANDO O MENOR NÍVEL (MÍNIMO) DE EXPOSIÇÃO PARA A KISHONTI) PERMITIDO PELA LEI APLICÁVEL SERÁ APLICADO. 
+         
+        ATÉ O LIMITE PERMITIDO POR LEI, EM NENHUM CASO A KISHONTI SERÁ RESPONSÁVEL POR DANOS PESSOAIS, DE PROPRIEDADE OU ECONÔMICOS, PERDAS OU DANOS RELACIONADOS A USO INDEVIDO DO SOFTWARE OU DO DISPOSITIVO NO QUAL O SOFTWARE ESTÁ SENDO UTILIZADO, INCLUINDO, SEM LIMITAÇÃO, LESÃO, DANOS OU PERDAS RESULTANTES DO SUPERAQUECIMENTO DO DISPOSITIVO POR QUALQUER MOTIVO. VOCÊ ASSUME EXPRESSAMENTE O RISCO DE TODOS OS DANOS PESSOAIS, DE PROPRIEDADE E ECONÔMICOS RESULTANTES DE OU RELACIONADOS AO USO DO SOFTWARE. ATÉ O LIMITE PERMITIDO POR LEI, EM NENHUM CASO A KISHONTI SERÁ RESPONSÁVEL POR DANOS PESSOAIS, DE PROPRIEDADE OU ECONÔMICOS, DANOS OU PERDAS, OU QUAISQUER DANOS INCIDENTAIS, ESPECIAIS, INDIRETOS OU CONSEQUENTES, INCLUINDO, SEM LIMITAÇÃO, DANOS POR PERDA DE LUCROS, PERDA DE DADOS, INTERRUPÇÃO DE NEGÓCIOS, PERDA DE NEGÓCIOS, PERDA DE ECONOMIAS OU QUAISQUER OUTROS DANOS OU PERDAS COMERCIAIS OU NÃO COMERCIAIS, DECORRENTES OU RELACIONADAS AO SEU USO OU IMPOSSIBILIDADE DE UTILIZAÇÃO DO SOFTWARE, POR QUALQUER MOTIVO, INDEPENDENTEMENTE DA TEORIA DE RESPONSABILIDADE (CONTRATO, ATO ILÍCITO OU DE OUTRA FORMA), INCLUSIVE SE A KISHONTI TIVER SIDO NOTIFICADA DA POSSIBILIDADE DE TAIS DANOS. ALGUMAS JURISDIÇÕES NÃO PERMITEM A LIMITAÇÃO DE RESPONSABILIDADE PARA DANOS PESSOAIS OU DANOS INCIDENTAIS OU CONSEQUENTES. NESSE CASO, O LIMITE MÁXIMO (O NÍVEL DE RESPONSABILIDADE REPRESENTANDO O MENOR NÍVEL (MÍNIMO) DE EXPOSIÇÃO PARA A KISHONTI) PERMITIDO PELA LEI APLICÁVEL SERÁ APLICADO.  Em nenhuma circunstância, a responsabilidade total da KISHONTI perante Você por todos os danos (exceto conforme possa ser exigido pela lei aplicável em casos de danos pessoais) excederá a quantia de US$ 50,00 (cinquenta dólares). As limitações precedentes serão aplicáveis mesmo se a medida supramencionada não alcançar o seu propósito essencial. 
+         
+        7. Conformidade com a licença 
+        Você concorda que, a pedido da KISHONTI ou de um representante autorizado da KISHONTI, Você deverá, no prazo de 30 (trinta) dias, documentar e certificar plenamente que todo e qualquer Software no momento está de acordo com suas licenças válidas da KISHONTI. 
+         
+         
+        8. Legislação vigente e jurisdição 
+         
+        Este EULA (incluindo, sem limitação, todos os litígios decorrentes de ou vinculados a este EULA, a sua violação, rescisão, validade ou interpretação) serão regidos e interpretados de acordo com as leis substantivas em vigor na Hungria. Não obstante, qualquer cláusula deste EULA, a KISHONTI ou você pode solicitar a qualquer autoridade judicial, administrativa ou outra para solicitar qualquer medida provisória ou interina, incluindo medidas cautelares, de desempenho específico ou outra reparação justa, antes da instauração de um processo judicial ou durante o processo, para preservar seus direitos e interesses ou para garantir o cumprimento dos termos específicos que são adequados para medidas cautelares. A versão em inglês deste EULA será a versão utilizada ao interpretar ou analisar este EULA.  Este EULA não será regido pelo conflito das legislações de qualquer jurisdição ou pela Convenção das Nações Unidas sobre os Contratos para Compra e Venda Internacional de Mercadorias, cuja aplicação está expressamente excluída. 
+         
+         
+        9. Disposições diversas 
+         
+        (a) Este EULA é o acordo integral entre a KISHONTI e Você em relação ao Software e tem precedência sobre quaisquer declarações, discussões, compromissos, comunicações ou publicidade relativa ao Software (exceto para a aplicação da Política de Privacidade da KISHONTI). 
+        (b) Se qualquer cláusula deste EULA (incluindo qualquer seção, cláusula, parágrafo, frase ou palavra nele) seja ou se torne inválida ou inaplicável, que não prejudique a validade e aplicabilidade de qualquer outra disposição deste EULA, salvo se ela precisar ficar evidente a partir da natureza ou do conteúdo deste EULA ou das circunstâncias nas quais este EULA foi firmado para que tal disposição não possa ser separada do resto do EULA. O mesmo se aplica no caso de haver quaisquer erros ou omissões neste EULA, que podem ser resolvidas de forma razoável. Em vez de cláusulas legalmente não executáveis ou para corrigir eventuais erros ou omissões, as partes devem negociar e acordar de forma razoável e de boa fé, e de acordo com os princípios básicos estabelecidos neste EULA, em uma cláusula substituta adequada que, dentro dos limites legais, mais se aproxima ao que este EULA destina-se comercialmente ou teria pretendido, se soubessem da inexigibilidade legal, erro ou omissão (se for o caso). 
+        (c) Este EULA não prejudicará os direitos legais de qualquer parte na qualidade de consumidor, se tais direitos forem obrigatoriamente aplicáveis ​​a este EULA.  
+        (d) Este EULA só pode ser modificado por um documento assinado por um representante autorizado da KISHONTI. As atualizações podem ser licenciadas para Você pela KISHONTI com termos adicionais ou diferentes. 
+        (e) Você concorda em não exportar a partir de qualquer lugar qualquer parte do Software ou quaisquer dados gerados por meio do Uso do Software ou qualquer produto direto dele, exceto se estiver em conformidade e com todas as licenças e aprovações necessárias, sob as leis de exportação aplicáveis​​, regras e regulamentos. 
+         
+        KISHONTI Kft. [*] Setembro de 2013 
+        Todos os direitos reservados. Todos os direitos que não são expressamente concedidos aqui estão reservados.</string>
+  <string name="PrivacyDialogBody"></string>
+</resources>

@@ -1,0 +1,5 @@
+color black.png 1.000000 1.000000 1 1
+normal normal_base.png 1.000000 1.000000 1 1
+mask mask_base.png 1.000000 1.000000 1 1
+emission video_glow.png 1.000000 1.000000 1 1
+theora brickmanta.ogv

@@ -1,0 +1,43 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+        <item name="THChartStyle">@style/THChart</item>
+        <item name="THGridChartStyle">@style/THGridChart</item>
+        <item name="THPieAreaChartStyle">@style/THPieAreaChart</item>
+        
+    </style>
+    
+    <style name="THChart">
+        <item name="android:background">@color/chart_background</item>
+    </style>
+    
+    <style name="THGridChart" parent="THChart">
+        <item name="chartBorderColor">@color/gridchart_border</item>
+        <item name="chartStrokeColor">@color/gridchart_stroke</item>
+        <item name="chartTextColor">@color/gridchart_text</item>
+        <item name="chartLegendColor">@color/chart_background</item>
+        <item name="gridchartAnimDelay">200</item>
+        <item name="gridchartAnimLength">1000</item>
+    </style>
+    
+    <style name="THPieAreaChart" parent="THChart">
+        <item name="pieareachartAnimDelay">150</item>
+        <item name="pieareachartAnimLength">800</item>
+    </style>
+
+</resources>

@@ -1,0 +1,4 @@
+lightmap baked_ground_paralalx6_mat7_lightmap1.png 1.000000 1.000000 1 1
+color ground_parallax.png 1.000000 1.000000 1 1
+normal ground_parallax_normal.png 1.000000 1.000000 1 1
+mask ground_parallax_masks.png 1.000000 1.000000 1 1

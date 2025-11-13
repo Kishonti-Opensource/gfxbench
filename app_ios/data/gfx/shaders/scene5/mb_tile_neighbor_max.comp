@@ -1,0 +1,53 @@
+
+image2D<float> neighbor_max_texture { rgba8, writeonly };
+
+buffer float2 tile_max_buffer[] { ssbo, readonly };
+
+bool is_valid(int2 coords)
+{
+	return (coords.x >=0 ) && (coords.y >= 0) && (coords.x < NEIGHBOR_MAX_TEX_WIDTH) && (coords.y < NEIGHBOR_MAX_TEX_HEIGHT);
+}
+
+numthreads(WORKGROUP_SIZE_X, WORKGROUP_SIZE_Y, WORKGROUP_SIZE_Z);
+void main()
+{
+	int2 g_i = int2(gl_GlobalInvocationID.xy);
+	if (g_i.x >= NEIGHBOR_MAX_TEX_WIDTH || g_i.y >= NEIGHBOR_MAX_TEX_HEIGHT)
+	{
+		return;
+	}
+
+	float max_length = -1.0;
+	float2 max_velocity = float2(0.0, 0.0);
+
+	for (int i = -1; i <= 1; i++)
+	{
+		for (int j = -1; j <= 1; j++)
+		{
+			int2 tc = g_i + int2(i, j);
+			bool valid = is_valid(tc);
+			if (valid)
+			{
+				int buffer_index = tc.y * NEIGHBOR_MAX_TEX_WIDTH + tc.x;
+
+				buffer_index = clamp(buffer_index, 0, NEIGHBOR_MAX_TEX_WIDTH * NEIGHBOR_MAX_TEX_HEIGHT - 1);
+
+				float2 velocity = tile_max_buffer[ buffer_index ];
+
+				float length2 = dot(velocity, velocity);
+
+				if (max_length < length2)
+				{
+					max_length = length2;
+					max_velocity = velocity;
+				}
+			}
+		}
+	}
+
+#ifdef NGL_ORIGIN_UPPER_LEFT_AND_NDC_FLIP
+	g_i.y = NEIGHBOR_MAX_TEX_HEIGHT - g_i.y - 1;
+#endif
+
+	imageStore(neighbor_max_texture, g_i, pack_to_float4(max_velocity));
+}

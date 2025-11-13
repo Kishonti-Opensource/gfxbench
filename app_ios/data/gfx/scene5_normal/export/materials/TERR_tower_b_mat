@@ -1,0 +1,13 @@
+color tower_b_albedo.tga 1.000000 1.000000 1 1 
+lightmap no_texture.png 1.000000 1.000000 1 1 
+specular tower_b_specular.tga 1.000000 1.000000 1 1 
+normal tower_b_normal.tga 1.000000 1.000000 1 1 
+texture4 default_emissive.tga 1.000000 1.000000 1 1 
+texture5 no_texture.png 1.000000 1.000000 1 1 
+texture6 no_texture.png 1.000000 1.000000 1 1 
+texture7 no_texture.png 1.000000 1.000000 1 1 
+texture8 no_texture.png 1.000000 1.000000 1 1 
+texture9 no_texture.png 1.000000 1.000000 1 1 
+texture10 no_texture.png 1.000000 1.000000 1 1 
+texture11 no_texture.png 1.000000 1.000000 1 1 
+texture12 no_texture.png 1.000000 1.000000 1 1 

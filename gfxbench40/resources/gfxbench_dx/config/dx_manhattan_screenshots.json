@@ -1,0 +1,56 @@
+{
+	"version": 1,
+	"test_id": "dx_manhattan",
+	"factory_method": "dx_manhattan",
+	"preload_libs": ["gfxbench30_dx"],
+	"env": {
+		"graphics": {
+			"versions": [
+				{
+					"type": "DX",
+					"major": 10,
+					"minor": 0
+				}
+			],
+			"config": {
+				"red_size": 8,
+				"green_size": 8,
+				"blue_size": 8,
+				"depth_size": 24,
+				"stencil_size": -1,
+				"alpha_size": -1,
+				"samples": -1,
+				"exact": false
+			},
+			"fullscreen": false
+		}
+	},
+	"raw_config": {
+		"battery": false,
+		"brightness": -1.0,
+		"color_bpp": 24,
+		"depth_bpp": 24,
+		"endless": false,
+		"engine": "Engine3",
+		"fps_limit": -1.0,
+		"frame_step_time": 40,
+		"fsaa": 0,
+		"id": 3000104,
+		"max_rendered_frames": -1,
+		"min_ram_required": 315,
+		"test_width": 1920,
+		"test_height": 1080,
+		"play_time": 62000,
+		"quality": false,
+		"screenshot_frames":"250,500,750,1000,1250,1500",
+		"force_highp": false,
+		"scenefile": "manhattan/scene_3.xml",
+		"screenmode": 0,
+		"single_frame": -1,
+		"start_animation_time": 0,
+		"stencil_bpp": -1,
+		"texture_type": "Auto",
+		"zprepass": false
+	},
+	"data_prefix": "gfx"
+}

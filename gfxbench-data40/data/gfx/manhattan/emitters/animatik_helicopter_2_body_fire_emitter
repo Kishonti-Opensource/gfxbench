@@ -1,0 +1,13 @@
+type fire
+rate_track animatik_helicopter_2_body_fire_emitter_rate_track
+accelerationX 0.001
+accelerationY 0.00
+accelerationZ 0.00
+aperture_x 1.50
+aperture_y 1.50
+max_angle 10.00
+max_initial_lifetime 400.00
+max_initial_velocity 20.00
+min_initial_lifetime 150.00
+min_initial_velocity 15.00
+rate 0.00

@@ -1,0 +1,4 @@
+u_animation animations/ms_text_mat_specular_alphatest-fx_translate_u_track
+color ms_texts.png 1.000000 1.000000 1 1
+mask ms_text_alpha.png 1.000000 1.000000 1 1
+emission ms_text_alpha.png 1.000000 1.000000 1 1

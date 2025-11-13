@@ -1,0 +1,102 @@
+# How to build GFXBench Vulkan for Android
+
+## Table Of Contents
+
+1. [Software requirements](#software_requirements)
+2. [Build steps](#build_steps)
+3. [Notes](#notes) 
+
+##<a name="software_requirements"></a> 1. Software requirements
+
+**Building on Windows**
+
+- Android NDK r10c 32-bit  
+   http://developer.android.com/sdk/ndk/index.html
+
+- Android SDK, API Level 18 (Level 21 for 64-bit build)  
+   http://developer.android.com/sdk/index.html)
+
+- Ant  
+   http://ant.apache.org
+
+- CMake 3.3.0  
+   http://www.cmake.org/cmake/resources/software.html
+
+- Swig  
+  http://swig.org/download.html
+
+- Java Development Kit  
+  http://www.oracle.m/technetwork/java/javase/downloads/index.html
+
+- Add the following applications to PATH  
+  ant  
+  cmake  
+  swigwin  
+
+- Set next environment variables to appropriately  
+   `ANDROID_NDK`  
+   `ANDROID_HOME`
+
+##<a name="build_steps"></a> 2. Build Steps
+**Two steps needed to build:**
+
+1. Build thirdparty libraries (`build-3rdparty.sh`)
+2. Build GFXBench (`build.sh`)
+
+**Steps to build an apk**
+  
+    WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release scripts/build-3rdparty.sh
+    WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+The apk file will be placed into the `tfw-pkg` folder.
+
+The environment variables accept the following values:
+
+* `CONFIG`
+	* Debug
+	* Release
+  
+* `PLATFORM`
+	* android-armv7a
+	* android-arm64-v8a
+	* android-x86 
+	* android-x86-64
+   
+* `APPLICATION_TYPE`
+	* developer
+	* gui
+
+**gui**
+
+This application type creates a GUI application with a test selector and result browser.
+The resulting apk file that can be installed in traditional way via adb.
+
+**developer**
+
+The developer application type creates a native `testfw_app` which lists the available test configurations, can select and run a single test, then displays the result.  
+
+The apk can be installed via adb, but the test configuration files and test data must be installed manually. For example:
+    
+	WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+	
+	adb install tfw-apk/apk/testfw_app-release.apk
+	
+	adb push tfw-pkg/config //sdcard/kishonti/tfw/config
+	adb push tfw-pkg/data //sdcard/kishonti/tfw/data
+	
+In subsequent invocations, the build times can be reduced with `BUNDLE_DATA=false`, so the build script does not copy the data into the `tfw-pkg` folder again.
+
+	BUNDLE_DATA=false WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+Starting `testfw_app`:
+
+1. Start `testfw_app` from the Android app list.
+2. Select the test and tap start.
+
+##<a name="notes"></a> 3. Notes
+
+* To link to the Vulkan you have to provide a `libvulkan.so` and put into:  
+	`frameworks/ngl/src/v1.0.1/android/lib/[x86]/libvulkan.so`
+* OR if you have other architecture type:
+	* Set the path of `libvulcan.so` in `frameworks/ngl/src/CMakeLists.txt`
+	* Find and replace the `VULKAN_LIBS` variable.

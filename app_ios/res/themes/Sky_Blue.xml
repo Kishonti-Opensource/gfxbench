@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Colors -->
+    <color name="MainColor" hex="#ff54abe7"/>
+    <color name="BackColor" hex="#ffffffff"/>
+    <color name="SeparatorColor" hex="#ffdddddd"/>
+    <color name="NavBarColor" hex="#ff2a5674"/>
+    <color name="TransparentColor" hex="#00000000"/>
+    <color name="TabBarColor" hex="#ff342f27"/>
+    <color name="TabBarSeparatorColor" hex="#ff000000"/>
+    <color name="TabBarShadowColor" hex="#ff4389b9"/>
+    <color name="ListBackColor" hex="#ffeeeeee"/>
+    <color name="ListDisabledBackColor" hex="#ffeeeeee"/>
+    <color name="ListHighlightBackColor" hex="#ffecf5fc"/>
+    <color name="CellHeaderSeparatorColor" hex="#ffffffff"/>
+    <color name="CompareHighlightValueBackColor" hex="#ffd4eaf9"/>
+    <color name="CompareHighlightBackColor" hex="#ffffffff"/>
+    <color name="CompareValueBackColor" hex="#ffecf5fc"/>
+    <color name="CompareBackColor" hex="#ffffffff"/>
+    <color name="SwitchBorderColor" hex="#ffbbbbbb"/>
+    <color name="SwitchBackColor" hex="#ffffffff"/>
+    <color name="SwitchMainColor" hex="#ff54abe7"/>
+    <color name="BtnDisabledBackColor" hex="#ffcccccc"/>
+    <color name="BtnMainColor" hex="#ff54abe7"/>
+    <color name="BtnPositiveColor" hex="#ff519817"/>
+    <color name="BtnNegativeColor" hex="#ff444444"/>
+    <color name="TextBoxBackColor" hex="#ffffffff"/>
+    <color name="TextBoxBorderColor" hex="#ffcccccc"/>
+    <color name="TextBoxDisabledBackColor" hex="#ffeeeeee"/>
+    <color name="MultiBtnBackColor" hex="#ffecf5fc"/>
+    <color name="MultiBtnDisabledBackColor" hex="#ffdddddd"/>
+    <color name="MultiBtnActiveBackColor" hex="#ff54abe7"/>
+    <color name="LoadingBarBackColor" hex="#ffeeeeee"/>
+    <color name="LoadingBarMainColor" hex="#ff54abe7"/>
+    <color name="BatteryDiagramLineColor" hex="#ffa5a5a5"/>
+    <color name="BatteryDiagramBatteryColor" hex="#ff4f820e"/>
+    <color name="BatteryDiagramFPSColor" hex="#ff6fbddc"/>
+    <color name="PadCompareDeviceHighlightColor" hex="#ffd4eaf9"/>
+    <color name="PadCompareDeviceValueHiglightColor" hex="#ffacd5f1"/>
+    <color name="TickNegativeColor" hex="#ffcd0b0b"/>
+    <color name="TickPositiveColor" hex="#ff43980f"/>
+    <color name="HomeBaseColor" hex="#ffe8e8e8"/>
+    
+    <!-- Text Colors -->
+    <color name="TextHeaderColor" hex="#ffffffff"/>
+    <color name="TextStartBtnColor" hex="#ff444444"/>
+    <color name="TextTestSelectBtnColor" hex="#ffffffff"/>
+    <color name="TextTabBarHighlightColor" hex="#ff342f27"/>
+    <color name="TextTabBarNormalColor" hex="#ffffffff"/>
+    <color name="TextBtnNormalColor" hex="#ffffffff"/>
+    <color name="TextBtnDisabledColor" hex="#ff999999"/>
+    <color name="TextSwicthOnColor" hex="#ffffffff"/>
+    <color name="TextSwitchOffColor" hex="#ffbbbbbb"/>
+    <color name="TextTextBoxNormalColor" hex="#ff444444"/> 
+    <color name="TextTextBoxDisabledColor" hex="#ffcccccc"/>
+    <color name="TextMultiBtnColor" hex="#ff444444"/> 
+    <color name="TextMultiBtnDisabledColor" hex="#ff999999"/>
+    <color name="TextMultiBtnActiveColor" hex="#ffffffff"/>
+    <color name="TextHeaderCellTitleColor" hex="#ff28475c"/>
+    <color name="TextNormalCellTitleColor" hex="#ff444444"/> 
+    <color name="TextNormalCellTitleDisableColor" hex="#ffcccccc"/>
+    <color name="TextNormalCellDescColor" hex="#ff828282"/>
+    <color name="TextNormalCellDescDisableColor" hex="#ffcccccc"/>
+    <color name="TextNormalCellNotSupportedColor" hex="#ff444444"/> 
+    <color name="TextScoreUpperColor" hex="#ff444444"/> 
+    <color name="TextScoreLowerColor" hex="#ff444444"/> 
+    <color name="TextInfoCellTitleColor" hex="#ff54abe7"/>
+    <color name="TextInfoCellMajorColor" hex="#ff28475c"/>
+    <color name="TextInfoCellMinorColor" hex="#ff828282"/>
+    <color name="TextCompareCellHighlightColor" hex="#ff28475c"/>
+    <color name="TextCompareCellNormalColor" hex="#ff444444"/> 
+    <color name="TextCompareCellMinorColor" hex="#ff828282"/>
+    <color name="TextCompareCellRedColor" hex="#ffdc3333"/>
+    <color name="TextCompareCellGreenColor" hex="#ff658103"/>
+    <color name="TextDuelCellTitleColor" hex="#ff28475c"/>
+    <color name="TextDuelCellNameColor" hex="#ff444444"/> 
+    <color name="TextDuelCellScoreColor" hex="#ff777777"/> 
+    <color name="TextDuelCellPercentColor" hex="#ffffffff"/>
+    <color name="TextSearchBarNormalColor" hex="#ff444444"/> 
+    <color name="TextSearchBarDisabledColor" hex="#ffdddddd"/>
+    <color name="TextSettingsTitleColor" hex="#ff54abe7"/> 
+    <color name="TextSettingsBaseColor" hex="#ff444444"/> 
+    <color name="TextSettingsDisbaledColor" hex="#ff999999"/>
+    <color name="TextSettingsSecondaryDisbaledColor" hex="#ffe1e1e1"/>
+    <color name="TextMsgBoxTitleColor" hex="#ff54abe7"/> 
+    <color name="TextMsgBoxColor" hex="#ff444444"/> 
+    <color name="TextLoadingScreenColor" hex="#ff828282"/>
+    <color name="TextLoadingScreenTitleColor" hex="#ff000000"/>
+    
+    
+    
+    <!-- Fonts -->
+    <font name="FontHeaderTitle" type="HelveticaNeue-Bold" size="16"/>
+    <font name="FontHeaderBtn" type="HelveticaNeue" size="16"/>
+    <font name="FontTabBar" type="HelveticaNeue" size="10"/>
+    <font name="FontPadLoadingBar" type="HelveticaNeue" size="15"/>
+    <font name="FontPhoneLoadingBar" type="HelveticaNeue" size="12"/>
+
+    <font name="FontStartBtn" type="HelveticaNeue-Light" size="53"/>
+    <font name="FontTestSelectBtn" type="HelveticaNeue-Light" size="28"/>
+    <font name="FontPhoneStartBtn" type="HelveticaNeue-Light" size="24"/>
+    <font name="FontPhoneTestSelectBtn" type="HelveticaNeue-Light" size="12"/>
+
+
+    <font name="FontBtn" type="HelveticaNeue" size="14"/>
+    <font name="FontSwitch" type="HelveticaNeue" size="14"/>
+    <font name="FontTextBox" type="HelveticaNeue" size="14"/>
+    <font name="FontSearchBar" type="HelveticaNeue" size="14"/>
+    <font name="FontMultiBtn" type="HelveticaNeue-Bold" size="12"/>
+    <font name="FontLoadingBar" type="HelveticaNeue" size="14"/>
+    <font name="FontVersion" type="HelveticaNeue-Light" size="30"/>
+    <font name="FontPhoneVersion" type="HelveticaNeue-Light" size="20"/>
+
+    <font name="FontHeaderCellTitle" type="HelveticaNeue" size="16"/>
+    <font name="FontCellTitle" type="HelveticaNeue" size="16"/>
+    <font name="FontCellBoldTitle" type="HelveticaNeue-Bold" size="14"/>
+    <font name="FontHistoryCellBoldTitle" type="HelveticaNeue-Bold" size="16"/>
+    <font name="FontCellDesc" type="HelveticaNeue-Light" size="14"/>
+    <font name="FontCellScoreUpper" type="HelveticaNeue-Bold" size="14"/>
+    <font name="FontCellScoreLower" type="HelveticaNeue" size="10"/>
+    <font name="FontCellNotSupported" type="HelveticaNeue" size="10"/>
+
+    <font name="FontInfoCellTitle" type="HelveticaNeue" size="14"/>
+    <font name="FontInfoCellMajor" type="HelveticaNeue" size="14"/>
+    <font name="FontInfoCellMinor" type="HelveticaNeue" size="12"/>
+    <font name="FontInfoCellGl" type="HelveticaNeue" size="10"/>
+    <font name="FontPadInfoCellGl" type="HelveticaNeue" size="12"/>
+
+    <font name="FontCompareCellTitle" type="HelveticaNeue" size="12"/>
+    <font name="FontCompareCellScoreUpper" type="HelveticaNeue-Bold" size="12"/>
+    <font name="FontCompareCellScoreLower" type="HelveticaNeue" size="10"/>
+
+    <font name="FontDuelCellName" type="HelveticaNeue" size="12"/>
+    <font name="FontDuelCellScoreUpper" type="HelveticaNeue-Bold" size="14"/>
+    <font name="FontDuelCellScoreLower" type="HelveticaNeue" size="12"/>
+    <font name="FontDuelCellPercent" type="HelveticaNeue" size="10"/>
+
+    <font name="FontSettingsTitle" type="HelveticaNeue" size="16"/>
+    <font name="FontSettingsMain" type="HelveticaNeue" size="14"/>
+    <font name="FontSettingsLogin" type="HelveticaNeue-Bold" size="14"/>
+
+    <font name="FontBatterySmall" type="HelveticaNeue" size="10"/>
+    <font name="FontBatteryMain" type="HelveticaNeue" size="12"/>
+
+    <font name="FontMsgBoxTitle" type="HelveticaNeue-Bold" size="16"/>
+    <font name="FontMsgBoxMain" type="HelveticaNeue" size="12"/>
+
+    <font name="FontLoadingScreenTitle" type="HelveticaNeue-Bold" size="20"/>
+    <font name="FontLoadingScreenMain" type="HelveticaNeue" size="13"/>
+    <font name="FontPadLoadingScreenTitle" type="HelveticaNeue-Bold" size="36"/>
+    <font name="FontPadLoadingScreenMain" type="HelveticaNeue" size="20"/>
+
+
+    <!-- Integers -->
+    <int name="TabBarHeight" value="67"/>
+    <int name="HeaderHeight" value="35"/>
+    <int name="CellHeight" value="61"/>
+    <int name="CellBaseHeight" value="45"/>
+    <int name="GroupSeparatorHeight" value="20"/>
+    <int name="StringSpaceInPhoneCell" value="154"/>
+    <int name="Result_Decimals" value="0"/>
+    <int name="Secondary_Result_Decimals" value="1"/>
+
+    <!-- Floats -->
+    <float name="AnimationTime" value="0.25"/>
+    <float name="DetailCellWidth_Pad" value="0.5"/>
+    <float name="DetailCellWidth" value="0.7"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- THTheme -->
+    <color name="Button_Background_Default" hex="#ff123456"/>
+    <color name="Button_Background_Pressed" hex="#ffff3456"/>
+    <color name="Button_Foreground_Default" hex="#ff54abe7"/>
+    <color name="Button_Foreground_Pressed" hex="#ffffffff"/>
+    
+    <!-- Progressbar Theme -->
+    <color name="Progressbar_Background_Default" hex="#ff123456"/>
+    <color name="Progressbar_Foreground_Default" hex="#ff54abe7"/>
+    <color name="Progressbar_Background_Highlighted" hex="#ff63a65a"/>
+    <color name="Progressbar_Foreground_Highlighted" hex="#ff7bcd74"/>
+    <float name="Progressbar_Padding_Default" value="1"/>
+    
+    
+    <!-- Diagram Theme -->
+    <color name="Diagram_Background" hex="#ffffffff"/>
+    <color name="Diagram_Border" hex="#ff303030"/>
+    <color name="Diagram_Stroke" hex="#88303030"/>
+    <color name="Diagram_Text_Color" hex="#ff505050"/>
+    <font name="Diagram_Text_Font" type="HelveticaNeue" size="12"/>
+    <font name="PieDiagram_Text_Font" type="HelveticaNeue" size="14"/>
+    <float name="Diagram_Padding" value="2.0"/>
+    
+    <color name="Diagram_Values_0" hex="#4699b8"/>
+    <color name="Diagram_Values_1" hex="#8bab4d"/>
+    <color name="Diagram_Values_2" hex="#e4902e"/>
+    <color name="Diagram_Values_3" hex="#977cbd"/>
+    <color name="Diagram_Values_4" hex="#44cecf"/>
+    <color name="Diagram_Values_5" hex="#c2c24e"/>
+    <color name="Diagram_Values_6" hex="#e76735"/>
+    <color name="Diagram_Values_7" hex="#cb91d2"/>
+    <color name="Diagram_Values_8" hex="#41c5a1"/>
+    <color name="Diagram_Values_9" hex="#b8a24a"/>
+    <color name="Diagram_Values_10" hex="#d25444"/>
+    <color name="Diagram_Values_11" hex="#d0a9b5"/>
+    <color name="Diagram_Values_12" hex="#4485cf"/>
+    <color name="Diagram_Values_13" hex="#72c24e"/>
+    <color name="Diagram_Values_14" hex="#ffb607"/>
+    <color name="Diagram_Values_15" hex="#85c4d6"/>
+    <color name="Diagram_Values_16" hex="#415cc5"/>
+    <color name="Diagram_Values_17" hex="#32ad36"/>
+    <color name="Diagram_Values_18" hex="#e8ba1b"/>
+    <color name="Diagram_Values_19" hex="#82c6b4"/>
+    <int name="Diagram_Value_Count" value="20"/>
+    
+    <float name="PolarAreaChart_AnimationTime" value="0.5"/>
+    <float name="PolarAreaChart_AnimationDelay" value="0.1"/>
+    <float name="PolarAreaChart_LabelDistance" value="1.1"/>
+    <float name="PolarAreaChart_SeparatorWidth" value="2.0"/>
+    
+    
+    <float name="LineChart_ValueLineWidth" value="2.0"/>
+    <float name="LineChart_LineWidth" value="0.5"/>
+    <float name="LineChart_BorderWidth" value="1.0"/>
+    <float name="LineChart_LegendColorWidth" value="30"/>
+    <color name="LineChart_LineColor" hex="#88303030"/>
+    <color name="LineChart_BorderColor" hex="#ff303030"/>
+    <color name="LineChart_TextColor" hex="#ff303030"/>
+    <float name="LineChart_AnimationTime" value="0.5"/>
+    <float name="LineChart_AnimationDelay" value="0.1"/>
+    <float name="LineChart_StartAnimationDelay" value="0.0"/>
+    
+    
+    <float name="IconicLabel_IconTextDist" value="8.0"/>
+    <float name="IconicLabel_TextTextDist" value="2.0"/>
+    
+    <color name="Dropdown_SeparatorColor" hex="#ededed"/>
+    <color name="Dropdown_DropColor" hex="#f4f4f4"/>
+    <color name="Dropdown_PagerColor" hex="#a1a1a1"/>
+    <color name="Dropdown_ShadowColor" hex="#000000"/>
+    <color name="Dropdown_BackColor" hex="#ffffff"/>
+    <float name="Dropdown_PagerItemDist" value="20.0"/>
+    <float name="Dropdown_SeparatorHeight" value="1.0"/>
+    <float name="Dropdown_ShadowOffsetX" value="0"/>
+    <float name="Dropdown_ShadowOffsetY" value="0"/>
+    <float name="Dropdown_ShadowOpacity" value="0.2"/>
+    <float name="Dropdown_ShadowRadius" value="5"/>
+    <color name="Dropdown_PagerColor" hex="#ededed"/>
+    <float name="Dropdown_Padding" value="8"/>
+    <float name="Dropdown_CellPadding" value="4"/>
+    <float name="Dropdown_DropSize" value="150"/>
+
+    <!-- Result Detail -->
+    <color name="DataNameColor" hex="#666666"/>
+    <color name="DataValueColor" hex="#4699B8"/>
+    
+
+    <!-- Common -->
+    <color name="MainColorAccent" hex="#ff6fc07b"/>
+    <float name="DefaultPadding" value="2.0"/>
+    <float name="DefaultTappableSize" value="44.0"/>
+    <color name="TextColor" hex="#000000"/>
+    
+    <font name="TitleLFont" type="HelveticaNeue-Bold" size="17"/>
+    <font name="TitleMFont" type="HelveticaNeue-Bold" size="15"/>
+    <font name="TitleSFont" type="HelveticaNeue-Bold" size="12"/>
+    <font name="TextXLFont" type="HelveticaNeue" size="32"/>
+    <font name="TextLFont" type="HelveticaNeue" size="17"/>
+    <font name="TextMFont" type="HelveticaNeue" size="15"/>
+    <font name="TextSFont" type="HelveticaNeue" size="12"/>
+    
+    <color name="IndifferentIconColor" hex="#999999"/>
+    <color name="IndifferentIconColor_Accent" hex="#888888"/>
+
+</resources>

@@ -1,0 +1,121 @@
+{
+ "name": "TERR_direct_light_chamber_exit2_lightshaft",
+ "values":
+ [
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 0
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 1
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 2
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 3
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 4
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 5
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 6
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 7
+  },
+  {
+   "intensity": 0.25679999589920044,
+   "samples": 32,
+   "shot_index": 8
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 9
+  },
+  {
+   "intensity": 0.9075000286102295,
+   "samples": 32,
+   "shot_index": 42
+  },
+  {
+   "intensity": 1.6095999479293823,
+   "samples": 32,
+   "shot_index": 11
+  },
+  {
+   "intensity": 0.3425000011920929,
+   "samples": 32,
+   "shot_index": 12
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 13
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 14
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 15
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 16
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 17
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 18
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 19
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 20
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 21
+  },
+  {
+   "intensity": 0,
+   "samples": 32,
+   "shot_index": 22
+  }
+ ]
+}

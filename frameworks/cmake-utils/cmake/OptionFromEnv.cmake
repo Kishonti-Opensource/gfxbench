@@ -1,0 +1,6 @@
+macro(option_from_env name docstr)
+	if(DEFINED ENV{${name}})
+		unset(${name} CACHE)
+	endif()
+	option(${name} "${docstr}" "$ENV{${name}}")
+endmacro()

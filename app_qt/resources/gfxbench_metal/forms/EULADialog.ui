@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EULADialog</class>
+ <widget class="QDialog" name="EULADialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>760</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>760</width>
+    <height>480</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>EULA</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#mainWidget,#textBox
+{
+	background-color: #fff;
+}
+
+QPushButton
+{
+	border: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+QPushButton#acceptButton
+{
+	background-color: #4389b9;
+}
+
+QPushButton#rejectButton
+{
+	background-color: #342f27;
+}
+
+QTextBrowser
+{
+    color: #444;
+}
+
+
+QLabel
+{
+	color: #626262;
+	font-size: 18px;
+}
+
+QLabel#description
+{
+	font-size: 14px;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="mainWidget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <property name="leftMargin">
+       <number>15</number>
+      </property>
+      <property name="topMargin">
+       <number>15</number>
+      </property>
+      <property name="rightMargin">
+       <number>15</number>
+      </property>
+      <property name="bottomMargin">
+       <number>15</number>
+      </property>
+      <item>
+       <widget class="QTextBrowser" name="textBrowser">
+        <property name="styleSheet">
+         <string notr="true">QScrollBar:vertical
+{
+	border: none;s
+	background: #eee;
+	width: 26px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+QScrollBar::handle:vertical
+{
+	border-radius: 3px;
+	background: #ccc;
+	min-height: 340px;
+}
+
+QScrollBar::add-line:vertical
+{
+	border: none;
+	height: 0px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical
+{
+	border: none;
+	height: 0px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+{
+	border: none;
+	width: 0px;
+	height: 0px;
+	background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+	border: none;
+}
+</string>
+        </property>
+        <property name="verticalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOn</enum>
+        </property>
+        <property name="horizontalScrollBarPolicy">
+         <enum>Qt::ScrollBarAlwaysOff</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="buttonsWidget" native="true">
+        <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="2,0">
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Expanding</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="spacing">
+             <number>16</number>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QPushButton" name="acceptButton">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Accept</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="rejectButton">
+              <property name="minimumSize">
+               <size>
+                <width>100</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Decline</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

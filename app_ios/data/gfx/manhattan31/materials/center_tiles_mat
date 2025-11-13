@@ -1,0 +1,3 @@
+color center_tiles.png 1.000000 1.000000 1 1
+normal center_tiles_normal.png 1.000000 1.000000 1 1
+mask center_tiles_masks.png 1.000000 1.000000 1 1

@@ -1,0 +1,12 @@
+Curve_ShdStr 1.1 0 2 100 20
+Curve_LinStr 1.85 0 5 100 21
+Curve_LinAngle 0.09 0 1 100 22
+Curve_ToeStr 0.06 0 2 100 23
+Curve_ToeNum 0.02 0 0.5 100 24
+Curve_ToeDenom 0.3 0 2 100 25
+Curve_LinWhite 3.2 0 20 100 26
+HDR_AdaptRange 1.55 0 5 100 27
+HDR_Exposure 2.7 0 30 100 28
+HDR_BloomLim 4.1 0 10 100 29
+HDR_Minimal_Lum 0.0361 0.01 0.1 100 30
+HDR_Maximal_Lum 0.0424 0.01 0.1 100 31

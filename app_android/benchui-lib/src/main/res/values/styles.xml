@@ -1,0 +1,101 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<!--
+		Base application theme, dependent on API level. This theme is replaced
+		by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+	-->
+	<style name="AppBaseTheme" parent="android:Theme">
+		<!--
+			Theme customizations available in newer API levels can go in
+			res/values-vXX/styles.xml, while customizations related to
+			backward-compatibility can go here.
+		-->
+	</style>
+
+	<!-- BenchmarkApplication theme. -->
+	<style name="AppTheme" parent="AppBaseTheme">
+		<!-- All customizations that are NOT specific to a particular API-level can go here. -->
+		<item name="android:spinnerStyle">@style/SpinnerStyle</item>
+		<item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+		<item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+		<item name="android:buttonStyle">@style/ThemedButton</item>
+		<item name="android:buttonStyleToggle">@style/ThemedToggleButton</item>
+		<item name="android:editTextStyle">@style/ThemedEditText</item>
+		<item name="android:windowBackground">@color/background</item>
+		<item name="android:listSelector">@drawable/theme_list_selector</item>
+	</style>
+
+	<style name="SpinnerDropDownItem" parent="android:TextAppearance.DeviceDefault.Widget.TextView.SpinnerItem">
+		<item name="android:textColor">@color/text_main</item>
+		<item name="android:background">@color/background</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<style name="SpinnerItem" parent="android:Widget.DeviceDefault.TextView.SpinnerItem">
+		<item name="android:textAppearance">@style/SpinnerDropDownItem</item>
+		<item name="android:gravity">center_vertical|right</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+
+	<style name="SpinnerStyle" parent="android:Widget.DeviceDefault.Light.Spinner">
+	    <item name="android:popupBackground">@drawable/textboxwithborder</item>
+		<item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+		<item name="android:background">@drawable/textboxwithborder</item>
+	</style>
+
+	<style name="ThemedButton" parent="@android:Widget.Button">
+		<item name="android:height">32dp</item>
+		<item name="android:minWidth">70dp</item>
+		<item name="android:minHeight">28dp</item>
+		<item name="android:textColor">@color/enable_disable_white_text</item>
+		<item name="android:background">@drawable/button</item>
+	</style>
+
+	<style name="ThemedToggleButton" parent="@android:Widget.Holo.Button.Borderless">
+		<item name="android:textColor">@color/enable_disable</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">12sp</item>
+		<item name="android:background">@drawable/togglebutton</item>
+	</style>
+
+	<style name="ThemedEditText" parent="@android:Widget.EditText">
+		<item name="android:textColor">@color/enable_disable</item>
+		<item name="android:textColorHint">@color/enable_disable</item>
+		<item name="android:background">@drawable/textboxwithborder</item>
+	</style>
+
+	<style name="ThemedTitleTextView" parent="@android:Widget.TextView">
+		<item name="android:textSize">16sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/title_enable_disable</item>
+		<item name="android:textColorHint">@color/title_enable_disable</item>
+	</style>
+
+	<style name="ThemedDialog" parent="@android:style/Theme.Dialog">
+		<item name="android:paddingTop">10dp</item>
+		<item name="android:paddingBottom">10dp</item>
+		<item name="android:paddingLeft">16dp</item>
+		<item name="android:paddingRight">16dp</item>
+		<item name="android:background">@color/background</item>
+		<item name="android:textColor">@color/text_main</item>
+	</style>
+
+	<style name="ThemedTextView" parent="@android:Widget.TextView">
+		<item name="android:textColor">@color/enable_disable</item>
+		<item name="android:textColorHint">@color/enable_disable</item>
+	</style>
+
+    <style name="Widget.ProgressBar.Horizontal.Tall" parent="@android:Widget.ProgressBar.Horizontal">
+        <item name="android:maxHeight">400dip</item>
+    </style>
+    
+    
+	<style name="BenchmarkCheckboxStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/benchmark_checkbox</item>
+    </style>
+	<style name="BenchmarkHeaderCheckboxStyle" parent="@android:style/Widget.DeviceDefault.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/benchmark_header_checkbox</item>
+    </style>
+
+</resources>

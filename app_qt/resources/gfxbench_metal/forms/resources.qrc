@@ -1,0 +1,128 @@
+<RCC>
+  <qresource benchmark="GfxBench">
+      <!-- Ye old stuff -->
+    <file alias="stop.png">../images/stop.png</file>
+    <file alias="skip.png">../images/skip.png</file>
+    <file alias="loupe.png">../images/loupe.png</file>
+    <file alias="retina_loupe.png">../images/retina/loupe.png</file>
+    <file alias="QMessageBox.css">./QMessageBox.css</file>
+    
+    <!-- HomePage checkboxes, etc. -->
+    <file alias="arrow.png">../images/arrow.png</file>
+    <file alias="logo.png">../images/logo.png</file>
+    <file alias="retina_arrow.png">../images/retina/arrow.png</file>
+    <file alias="retina_logo.png">../images/retina/logo.png</file>
+
+    <!-- HomePage buttons -->
+    <file alias="header_icon.png">../images/header_icon.png</file>
+    <file alias="start_bg.png">../images/start_bg.png</file>
+    <file alias="select.png">../images/select.png</file>
+    <file alias="select_hover.png">../images/select_hover.png</file>
+    <file alias="select_pressed.png">../images/select_pressed.png</file>
+    <file alias="start.png">../images/start.png</file>
+    <file alias="start_hover.png">../images/start_hover.png</file>
+    <file alias="start_pressed.png">../images/start_pressed.png</file>
+    
+    <file alias="retina_start_bg.png">../images/retina/start_bg.png</file>
+    <file alias="retina_select.png">../images/retina/select.png</file>
+    <file alias="retina_select_hover.png">../images/retina/select_hover.png</file>
+    <file alias="retina_select_pressed.png">../images/retina/select_pressed.png</file>
+    <file alias="retina_start.png">../images/retina/start.png</file>
+    <file alias="retina_start_hover.png">../images/retina/start_hover.png</file>
+    <file alias="retina_start_pressed.png">../images/retina/start_pressed.png</file>
+
+    <!-- MainWindow tab buttons-->
+    <file alias="checkbox_check.png">../images/checkbox_check.png</file>
+    <file alias="checkbox_uncheck.png">../images/checkbox_uncheck.png</file>
+    <file alias="group_checkbox_check.png">../images/group_checkbox_check.png</file>
+    <file alias="group_checkbox_uncheck.png">../images/group_checkbox_uncheck.png</file>
+    <file alias="compare_base.png">../images/compare_base.png</file>
+    <file alias="compare_active.png">../images/compare_active.png</file>
+    <file alias="home_base.png">../images/home_base.png</file>
+    <file alias="home_active.png">../images/home_active.png</file>
+    <file alias="info_base.png">../images/info_base.png</file>
+    <file alias="info_active.png">../images/info_active.png</file>
+    <file alias="results_base.png">../images/results_base.png</file>
+    <file alias="results_active.png">../images/results_active.png</file>
+    <file alias="settings_base.png">../images/settings_base.png</file>
+    <file alias="settings_active.png">../images/settings_active.png</file>
+    
+    <file alias="retina_checkbox_check.png">../images/retina/checkbox_check.png</file>
+    <file alias="retina_checkbox_uncheck.png">../images/retina/checkbox_uncheck.png</file>
+    <file alias="retina_group_checkbox_check.png">../images/retina/group_checkbox_check.png</file>
+    <file alias="retina_group_checkbox_uncheck.png">../images/retina/group_checkbox_uncheck.png</file>
+    <file alias="retina_compare_base.png">../images/retina/compare_base.png</file>
+    <file alias="retina_compare_active.png">../images/retina/compare_active.png</file>
+    <file alias="retina_home_base.png">../images/retina/home_base.png</file>
+    <file alias="retina_home_active.png">../images/retina/home_active.png</file>
+    <file alias="retina_info_base.png">../images/retina/info_base.png</file>
+    <file alias="retina_info_active.png">../images/retina/info_active.png</file>
+    <file alias="retina_results_base.png">../images/retina/results_base.png</file>
+    <file alias="retina_results_active.png">../images/retina/results_active.png</file>
+    <file alias="retina_settings_base.png">../images/retina/settings_base.png</file>
+    <file alias="retina_settings_active.png">../images/retina/settings_active.png</file>
+
+    <!-- SystemInfo icons -->
+    <file alias="3d_api.png">../images/3d_api.png</file>
+    <file alias="back_camera.png">../images/back_camera.png</file>
+    <file alias="battery.png">../images/battery.png</file>
+    <file alias="chipset.png">../images/chipset-soc.png</file>
+    <file alias="cpu.png">../images/cpu.png</file>
+    <file alias="device.png">../images/device_pc.png</file>
+    <file alias="display.png">../images/display.png</file>
+    <file alias="features.png">../images/features.png</file>
+    <file alias="front_camera.png">../images/front_camera.png</file>
+    <file alias="gpu.png">../images/gpu.png</file>
+    <file alias="macosx.png">../images/ios-macos.png</file>
+    <file alias="none.png">../images/none.png</file>
+    <file alias="notsupport.png">../images/notsupport.png</file>
+    <file alias="ram.png">../images/ram.png</file>
+    <file alias="storage.png">../images/storage_hdd.png</file>
+    <file alias="support.png">../images/support.png</file>
+    <file alias="windows.png">../images/win.png</file>
+    
+    <file alias="retina_3d_api.png">../images/retina/3d_api.png</file>
+    <file alias="retina_back_camera.png">../images/retina/back_camera.png</file>
+    <file alias="retina_battery.png">../images/retina/battery.png</file>
+    <file alias="retina_chipset.png">../images/retina/chipset-soc.png</file>
+    <file alias="retina_cpu.png">../images/retina/cpu.png</file>
+    <file alias="retina_device.png">../images/retina/device_pc.png</file>
+    <file alias="retina_display.png">../images/retina/display.png</file>
+    <file alias="retina_features.png">../images/retina/features.png</file>
+    <file alias="retina_front_camera.png">../images/retina/front_camera.png</file>
+    <file alias="retina_gpu.png">../images/retina/gpu.png</file>
+    <file alias="retina_macosx.png">../images/retina/ios-macos.png</file>
+    <file alias="retina_none.png">../images/retina/none.png</file>
+    <file alias="retina_ram.png">../images/retina/ram.png</file>
+    <file alias="retina_storage.png">../images/retina/storage_hdd.png</file>
+    <file alias="retina_windows.png">../images/retina/win.png</file>
+    
+    <!-- DuelPage icons -->
+    <file alias="compare_blue.png">../images/retina/compare_blue.png</file>
+    <file alias="compare_green_high.png">../images/retina/compare_green_high.png</file>
+    <file alias="compare_green_mid.png">../images/retina/compare_green_mid.png</file>
+    <file alias="compare_red_high.png">../images/retina/compare_red_high.png</file>
+    <file alias="compare_red_mid.png">../images/retina/compare_red_mid.png</file>
+    <file alias="duel_red_arrow.png">../images/retina/duel_red_arrow.png</file>
+    <file alias="duel_green_arrow.png">../images/retina/duel_green_arrow.png</file>
+    <file alias="duel_blue_arrow_left.png">../images/retina/duel_blue_arrow_left.png</file>
+    <file alias="duel_blue_arrow_right.png">../images/retina/duel_blue_arrow_right.png</file>
+
+    <!-- Settings Page -->
+    <file alias="org_logo.png">../images/org_logo.png</file>
+    <file alias="social_facebook.png">../images/social_facebook.png</file>
+    <file alias="social_vimeo.png">../images/social_vimeo.png</file>
+    <file alias="social_gplus.png">../images/social_gplus.png</file>
+    <file alias="social_linkedin.png">../images/social_linkedin.png</file>
+    <file alias="social_youtube.png">../images/social_youtube.png</file>
+    <file alias="social_twitter.png">../images/social_twitter.png</file>
+    
+    <file alias="retina_org_logo.png">../images/retina/org_logo.png</file>
+    <file alias="retina_social_facebook.png">../images/retina/social_facebook.png</file>
+    <file alias="retina_social_vimeo.png">../images/retina/social_vimeo.png</file>
+    <file alias="retina_social_gplus.png">../images/retina/social_gplus.png</file>
+    <file alias="retina_social_linkedin.png">../images/retina/social_linkedin.png</file>
+    <file alias="retina_social_youtube.png">../images/retina/social_youtube.png</file>
+    <file alias="retina_social_twitter.png">../images/retina/social_twitter.png</file>
+    </qresource>
+</RCC>

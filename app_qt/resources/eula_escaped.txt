@@ -1,0 +1,94 @@
+END USER LICENSE AGREEMENT 
+        FOR KISHONTI KFT'S BENCHMARK SOFTWARE PRODUCTS 
+         
+         
+        IMPORTANT NOTICE - READ CAREFULLY: THIS SOFTWARE END-USER LICENSE AGREEMENT IS A LEGALLY BINDING AGREEMENT BETWEEN YOU AND KISHONTI KFT FOR KISHONTI'S PERFORMANCE BENCHMARK SOFTWARE PRODUCTS. DO NOT DOWNLOAD, COPY, INSTALL, OR USE THE SOFTWARE PROVIDED UNDER THIS EULA, UNTIL YOU HAVE CAREFULLY READ THE FOLLOWING TERMS AND CONDITIONS. ANY REPRODUCTION, REDISTRIBUTION OR OTHER USE OF THE SOFTWARE OR ANY OF ITS COMPONENTS NOT IN ACCORDANCE WITH THIS EULA IS EXPRESSLY PROHIBITED BY LAW, AND MAY RESULT IN SEVERE CIVIL AND CRIMINAL PENALTIES AND OTHER CONSEQUENCES. 
+         
+        LICENSE FOR PRIVATE, NON-COMMERCIAL USE ONLY: THIS SOFTWARE IS LICENSED FOR THE PERSONAL AND NON-COMMERCIAL USE OF A CONSUMER TO TEST THE PERFORMANCE OF HIS/HER DEVICE, AS A CONSUMER ENGAGED IN A PERSONAL AND NON-COMMERCIAL ACTIVITY. NO LICENSE IS GRANTED OR SHALL BE IMPLIED FOR ANY OTHER USE. 
+        IF YOU NEED A LICENSE FOR THE SOFTWARE FOR COMMERCIAL USE, PLEASE CONTACT KISHONTI KFT AT SALES@KISHONTI.NET! 
+         
+         
+        1. Definitions 
+         
+        \"Device\" means an electronic device that conforms to the system requirements of the Software as specified in the Software's documentation and that is capable of connecting to the Internet. 
+        \"EULA\" means this software end-user license agreement. 
+        \"KISHONTI\" means KISHONTI Kft., a limited liability company organized under the laws of Hungary with its registered seat at 1037 Budapest, Szepvolgyi ut 39., Hungary, registered under no. Cg. 01-09-935577 by the Metropolitan Court of Budapest as Court of Registration. 
+        \"Disabled Features\" means features or functionalities that are hidden or appear disabled or \"grayed out\". The Software may contain Disabled Features that will activate only when using software versions available only from KISHONTI against the payment of license fees. 
+        \"Software\" means the performance testing benchmark software made available online (through internet connection) by KISHONTI under this EULA, including (a) all of the contents of the files, which may include KISHONTI or third party computer information or software, related explanatory written materials or files and fonts; and (b) upgrades, modified versions, updates, additions, and copies of the foregoing, provided to You by KISHONTI at any time (collectively, \"Updates\"). 
+        \"Use\" means to access, download, install, run, test Devices with or otherwise benefit from using the functionality of the Software. 
+         
+         
+        2. Scope of License 
+         
+        This free license granted to You for the Software by KISHONTI is limited to a non-transferable license to use the Software on any Device that You own or control. The license and the availability of the Software may be discontinued (terminated) by KISHONTI at any time as set forth in this EULA. 
+         
+        Your rights and obligations with respect to the Use of the Software or any of its components are as follows: 
+         
+        (i) You may: 
+        (a) Download, install and use the Software for free. Use of the Software will require Internet connection; 
+        (b) Use one copy of the Software or any of its components and all Updates on each of your Devices serving your personal use for any period until which the Software is made available by KISHONTI (at its sole discretion) or until KISHONTI otherwise terminates this EULA; 
+        (c) Use the Software for personal purposes only. The Software and any test results or other data generated through the Use of the Software may not be used for commercial purposes (including without limitation use by governmental and not-for-profit organizations). 
+         
+        (ii) You may not: 
+        (a) Use, copy, adapt, modify, or transfer copies of the Software (or authorize any person to do so) except as expressly provided for in this EULA; 
+        (b) Install or Use the Software on a computer file server; 
+        (c) Remove any proprietary or other notices or labels from the Software; 
+        (d) Reverse engineer, re-configure, modify, translate, decompile, disassemble or make derivative works based on the Software (except and only to the extent that such activity is expressly permitted by applicable mandatory law notwithstanding this limitation); 
+        (e) Sell, distribute, rent, lease, sublicense, transfer or assign the Software or any copy thereof, including any related documentation; 
+        (f) Extract portions of the Software's elements; 
+        (g) Integrate to use the Software with any other software, plugin or enhancement; 
+        (h) Make any attempt to discover the source code of the Software, determine or attempt to determine source code from the Software or to create any derivative works based upon the Products (except and only to the extent that such activity is expressly permitted by applicable mandatory law notwithstanding this limitation); 
+        (i) Access, or attempt to access, any Disabled Features, nor will You rely on the Software to create a feature substantially similar to any Disabled Feature or otherwise circumvent the technology that controls activation of any such Disabled Features. 
+         
+        3. Intellectual property ownership and reservation of rights. 
+         
+        The Software and any authorized copies that You make are the intellectual property of KISHONTI (and its suppliers, as applicable). The structure, organization, and code of the Software are the valuable intellectually property (e.g. trade secrets and confidential information) of KISHONTI (and its suppliers, as applicable). The Software is protected by law, including without limitation the copyright laws of Hungary, the United States and other countries, and by international treaty provisions. Except as expressly stated herein, this EULA does not grant You any intellectual property rights in the Software and all rights not expressly granted are reserved by KISHONTI (and its suppliers, as applicable). 
+        As described in this EULA, the test results created by your Use of the Software will also become the property of KISHONTI upon their uploading onto KISHONTI's servers. 
+         
+         
+        4. Connectivity. Uploading and display of test results 
+         
+        (a) Internet connection required 
+        You acknowledge and accept that the Software can only be used if and when your Device is connected to the Internet (to KISHONTI's benchmark data processing servers). 
+         
+        (b) Uploading and display of test results 
+        You acknowledge and accept that when You use the Software, the test results generated by such Use will be automatically, without notice, uploaded to KISHONTI's servers. You also acknowledge and accept that the results so uploaded will become the property of KISHONTI. The test results will be displayed at KISHONTI's website at the sole decision of KISHONTI and KISHONTI may display, remove or relocate the test results without giving any notice or reason. 
+         
+        (c) Updating 
+        If your Device is connected to the Internet, the Software may, without additional notice, check for Updates that are available for automatic download and installation to your Device and let KISHONTI know the Software is successfully installed. Updates may be automatically downloaded and installed without additional notice. Only non-personally identifying information is transmitted to KISHONTI when this happens, except to the extent that IP Addresses may be considered personally identifiable in some jurisdictions. The use of such information, including your IP Address, as provided by the auto update process is governed by the KISHONTI's Privacy Policy (which You can read at www.kishonti.net). Further, if your Device is connected to the Internet, the Software may, without additional notice and on an intermittent or regular basis, facilitate your access to content and services that are hosted on websites maintained by KISHONTI. When the Software connects to the Internet, your IP Address, user name, and password may be sent to KISHONTI's servers and stored by KISHONTI. This information may be used by KISHONTI to send You transactional messages to facilitate the Use and/or functionality of the Software. KISHONTI may display in-product marketing to provide information about the Software and other products and services of KISHONTI. Whenever the Software makes an Internet connection and communicates with KISHONTI's website, whether automatically or due to explicit user request, KISHONTI's Privacy Policy will apply. 
+         
+         
+        5. Discontinuation of the Use of the Software 
+         
+        KISHONTI will be entitled to modify or Update the Software or to modify or remove any part, element, and feature of functionality of the Software at any time and without giving any notice or reason. 
+         
+        KISHONTI will be entitled to discontinue (terminate) the availability, accessibility or Use of the Software (or any earlier version of the Software) or any part, element, feature of functionality of the Software at any time and without giving any notice or reason. 
+         
+        Your license to use the Software is effective until terminated by You or KISHONTI. You may terminate the license by uninstalling (completely removing) all copies of the Software from your Device. Your rights under this license will terminate automatically without notice from the KISHONTI if You fail to comply with any term(s) of this license. Upon termination of the license, You shall cease all use of the Software, and destroy all copies, full or partial, of the Software. Termination of the license (discontinuation of the Software's availability) will not affect KISHONTI's proprietary rights to the test results uploaded to its server. 
+         
+         
+        6. No warranties and liability 
+         
+        YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE SOFTWARE (OR INABILITY TO USE) IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE MANDATORY LAW, THE SOFTWARE AND ANY SERVICES PERFORMED OR PROVIDED BY KISHONTI ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND KISHONTI HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE SOFTWARE AND ANY SERVICES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. KISHONTI DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE SOFTWARE, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR SERVICES WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY KISHONTI OR ITS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE SOFTWARE OR SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER; IN SUCH CASE THE MAXIMUM LIMITATION (THE LEVEL OF WARRANTY REPRESENTING THE LOWEST (MINIMUM) LEVEL OF EXPOSURE TO KISHONTI) ALLOWED BY THE APPLICABLE LAW WILL APPLY. 
+         
+        TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL KISHONTI BE LIABLE FOR PERSONAL, PROPERTY OR ECONOM IC INJURY, DAMAGES OR LOSS RELATING TO THE IMPROPER USE OF THE SOFTWARE OR THE DEVICE ON WHICH THE SOFTWARE IS USED, INCLUDING, WITHOUT LIMITATION, INJURY, DAMAGES OR LOSSES RESULTING FROM THE OVERHEATING OF THE DEVICE DUE TO ANY REASON. YOU EXPRESSLY ASSUME THE RISK OF ALL PERSONAL, PROPERTY OR ECONOMIC INJURY RESULTING FROM OR RELATING TO THE USE OF THE SOFTWARE. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL KISHONTI BE LIABLE FOR PERSONAL, PROPERTY OR ECONOMIC INJURY, DAMAGES OR LOSS, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION, LOSS OF BUSINESS, LOST SAVINGS OR ANY OTHER COMMERCIAL OR NON-COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF KISHONTI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES; IN SUCH CASE THE MAXIMUM LIMITATION (THE LEVEL OF LIABILITY REPRESENTING THE LOWEST (MINIMUM) LEVEL OF EXPOSURE TO KISHONTI) ALLOWED BY THE APPLICABLE LAW WILL APPLY.  In no event shall KISHONTI's total liability to You for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of $50.00 (fifty dollars). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose. 
+         
+        7. Compliance with license 
+        You agree that upon request from KISHONTI or KISHONTI's authorized representative, You will, within 30 (thirty) days, fully document and certify that use of any and all Software at the time of the request is in conformity with your valid licenses from KISHONTI. 
+         
+         
+        8. Governing Law and jurisdiction 
+         
+        This EULA (including without limitation all disputes arising from or in connection with this EULA, its breach, termination, validity or interpretation) will be governed by and construed in accordance with the substantive laws in force in Hungary. Notwithstanding any provision in this EULA, KISHONTI or you may request any judicial, administrative, or other authority to order any provisional or conservatory measure, including injunctive relief, specific performance, or other equitable relief, prior to the institution of legal proceedings, or during the proceedings, for the preservation of its rights and interests or to enforce specific terms that are suitable for provisional remedies. The English version of this EULA will be the version used when interpreting or construing this EULA. This EULA will not be governed by the conflict of law rules of any jurisdiction or the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded. 
+         
+         
+        9. Miscellaneous provisions 
+         
+        (a) This EULA is the entire agreement between KISHONTI and You relating to the Software and it supersedes any prior representations, discussions, undertakings, communications, or advertising relating to the Software (except for the application of KISHONTI's Privacy Policy). 
+        (b) If any provision of this EULA (including any section, clause, paragraph, sentence or word in it) is or becomes invalid or unenforceable, that shall not affect the validity and enforceability of any other provision of this EULA save that it shall be apparent from the nature or the contents of this EULA or the circumstances under which this EULA had been entered into that such provision may not be severed from the rest of the EULA. The same applies if there should be any errors or omissions in this EULA, which can be resolved within reason. In place of the legally unenforceable provisions, or to correct any errors or omissions, the parties shall negotiate and agree reasonably and in good faith and in accordance with the basic principles set forth in this EULA, on an appropriate substitute provision which, as far as legally possible, comes closest to what this EULA commercially intended, or would have intended, had they known of the legal unenforceability, error or omission (as the case may be). 
+        (c) This EULA will not prejudice the statutory rights of any party dealing as a consumer if such rights are mandatorily applicable to this EULA.  
+        (d) This EULA may only be modified by a writing signed by an authorized officer of KISHONTI. Updates may be licensed to You by KISHONTI with additional or different terms. 
+        (e) You agree not to export from anywhere any part of the Software or any data generated through the Use of the Software or any direct product thereof except in compliance with, and with all licenses and approvals required under, applicable export laws, rules and regulations. 
+         
+        KISHONTI Kft. [*] September 2013 
+        All rights reserved. Any rights not expressly granted herein are reserved.

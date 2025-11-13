@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- legujabb szinek -->
+	<!-- TODO remove simple backgrond -->
+	<color name="background">#ffffff</color>
+	<color name="main_back">#ffffff</color>
+	<color name="main_foreground">#a5a5a5</color>
+	
+	<color name="button_ok_background">#519817</color>
+	<color name="button_ok_text">#ffffff</color>
+	<color name="button_cancel_background">#444444</color>
+	<color name="button_cancel_text">#ffffff</color>
+	<color name="button_main_background">#a5a5a5</color>
+	<color name="button_main_focused_background">#bbbbbb</color>
+	<color name="button_pressed_background">#bbbbbb</color>
+	<color name="button_disabled_background">#cccccc</color>
+	<color name="button_disabled_focused_background">#dddddd</color>
+	<color name="button_main_text">#ffffff</color>
+	<color name="button_disabled_text">#828282</color>
+	
+	<!-- test-select lib overrides -->
+    <color name="list_background">#eeeeee</color>
+    <color name="list_header_focused">#3391cc</color>
+    <color name="list_shadow">#dddddd</color>
+    <color name="list_header">#54abe7</color>
+    <color name="list_cell">#ffffff</color>
+    <color name="list_cell_disabled">#eeeeee</color>
+    <color name="list_cell_focused">#d4eaf9</color>
+    
+    <color name="list_header_font">#ffffff</color>
+    <color name="list_cell_font">#444444</color>
+    <color name="list_cell_minor_font">#828282</color>
+    <color name="list_cell_disabled_font">#cccccc</color>
+    <!-- test-select lib overrides end -->
+
+	<color name="list_header_background">#a5a5a5</color>
+	<color name="list_header_text">#3d3d3d</color>
+	<color name="list_separator">#dddddd</color>
+	<color name="list_spacer">#eeeeee</color>
+	<color name="list_title_text">#444444</color>
+	<color name="list_description_text">#828282</color>
+	<color name="list_highlight_background">#f5f5f5</color>
+	<color name="list_disabled_background">#eeeeee</color>
+	<color name="list_disabled_title_text">#cccccc</color>
+	<color name="list_disabled_description_text">#cccccc</color>
+	
+	<color name="theme_list_selector_background_disabled">#33000000</color>
+	<color name="theme_list_selector_background_pressed">#33cccccc</color>
+	<color name="theme_list_selector_background_longpressed">#66cccccc</color>
+	<color name="theme_list_selector_background_focus">#33ffffff</color>
+
+	<color name="text_title">#a5a5a5</color>
+	<color name="text_main">#444444</color>
+
+	<color name="header_background">#525252</color>
+	<color name="header_text">#ffffff</color>
+
+	<color name="menu_item_background">#2d2d2d</color>
+	<color name="menu_item_text">#ffffff</color>
+	<color name="menu_selected_background">#a5a5a5</color>
+	<color name="menu_selected_text">#2d2d2d</color>
+	<color name="menu_border">#848484</color>
+
+	<color name="switch_on_background">#a5a5a5</color>
+	<color name="switch_on_focused_background">#afafaf</color>
+	<color name="switch_on_text">#ffffff</color>
+	<color name="switch_on_border">#a5a5a5</color>
+	<color name="switch_off_background">#ffffff</color>
+	<color name="switch_off_text">#bbbbbb</color>
+	<color name="switch_off_border">#bbbbbb</color>
+
+	<color name="editbox_disabled_border">#cccccc</color>
+	<color name="editbox_disabled_background">#eeeeee</color>
+	<color name="editbox_disabled_text">#cccccc</color>
+	<color name="editbox_border">#cccccc</color>
+	<color name="editbox_background">#ffffff</color>
+	<color name="editbox_text">#444444</color>
+
+	<color name="compareprogress_own_background">#ffffff</color>
+	<color name="compareprogress_own_foreground">#e8e8e8</color>
+	<color name="compareprogress_own_text">#3d3d3d</color>
+	<color name="compareprogress_device_background">#ffffff</color>
+	<color name="compareprogress_device_foreground">#f5f5f5</color>
+	<color name="compareprogress_device_background_focused">#ffeeeeee</color>
+	<color name="compareprogress_device_foreground_focused">#ffe5e5e5</color>
+	<color name="compareprogress_device_text">#444444</color>
+	<color name="compare_left_text">#658103</color>
+	<color name="compare_right_text">#dc3333</color>
+
+	<color name="progressbar_border">#eeeeee</color>
+	<color name="progressbar_background">#eeeeee</color>
+	<color name="progressbar_foreground">#a5a5a5</color>
+	
+	<color name="togglebutton_background">#f5f5f5</color>
+	<color name="togglebutton_selected_background">#a5a5a5</color>
+	<color name="togglebutton_disabled_background">#dddddd</color>
+	<color name="togglebutton_focused_background">#fdfdfd</color>
+	<color name="togglebutton_selected_focused_background">#aaaaaa</color>
+	<color name="togglebutton_disabled_focused_background">#eeeeee</color>
+	<color name="text_disabled">#999999</color>
+	
+	<color name="disable_overlay">#2f000000</color>
+	<color name="descriptor_init">#AA000000</color>
+	
+	<color name="result_detail_title">#666666</color>
+	<color name="result_detail_detail">#666666</color>
+	<color name="result_detail_value">#4699B8</color>
+</resources>

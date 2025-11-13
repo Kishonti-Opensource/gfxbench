@@ -1,0 +1,71 @@
+
+#ifdef KSL_COMPILER
+himage2D writeonly neighbor_max_texture;
+#else
+image vec4 neighbor_max_texture;
+#endif
+
+buffer vec2 tile_max_buffer[];
+
+bool is_valid(ivec2 coords)
+{
+	return (coords.x >=0 ) && (coords.y >= 0) && (coords.x < NEIGHBOR_MAX_TEX_WIDTH) && (coords.y < NEIGHBOR_MAX_TEX_HEIGHT);
+}
+
+#ifdef KSL_COMPILER
+numthreads(WORKGROUP_SIZE_X, WORKGROUP_SIZE_Y, WORKGROUP_SIZE_Z);
+#endif
+void main()
+{
+	ivec2 g_i = ivec2(gl_GlobalInvocationID.xy);
+	if (g_i.x >= NEIGHBOR_MAX_TEX_WIDTH || g_i.y >= NEIGHBOR_MAX_TEX_HEIGHT)
+	{
+		return;
+	}
+
+	float max_length = -1.0;
+	vec2 max_velocity = vec2(0.0, 0.0);
+
+	for (int i = -1; i <= 1; i++)
+	{
+		for (int j = -1; j <= 1; j++)
+		{
+			ivec2 tc = g_i + ivec2(i, j);
+			bool valid = is_valid(tc);
+			if (valid)
+			{
+				int buffer_index = tc.y * NEIGHBOR_MAX_TEX_WIDTH + tc.x;
+
+				buffer_index = clamp(buffer_index, 0, NEIGHBOR_MAX_TEX_WIDTH * NEIGHBOR_MAX_TEX_HEIGHT - 1);
+
+				vec2 velocity = tile_max_buffer[ buffer_index ];
+
+				float length2 = dot(velocity, velocity);
+
+				if (max_length < length2)
+				{
+					max_length = length2;
+					max_velocity = velocity;
+				}
+			}
+		}
+	}
+
+#ifdef NGL_DX_NDC
+	g_i.y = NEIGHBOR_MAX_TEX_HEIGHT - g_i.y - 1;
+#endif
+
+#ifdef KSL_COMPILER
+	imageStore(neighbor_max_texture, g_i, pack_to_vec4( max_velocity ));
+#else
+#if SHADER_GLSL
+	imageStore(neighbor_max_texture, g_i, pack_to_vec4( max_velocity ));
+#elif SHADER_HLSL
+	neighbor_max_texture[g_i] = pack_to_vec4(max_velocity);
+#elif SHADER_METAL
+	neighbor_max_texture.write( pack_to_vec4(max_velocity), uint2(g_i));
+#elif
+	ERROR
+#endif
+#endif
+}

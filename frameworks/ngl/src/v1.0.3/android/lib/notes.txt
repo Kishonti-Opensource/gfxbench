@@ -1,0 +1,1 @@
+vulkan wrapper libraries came from android-ndk-r11b (platforms/android-24)

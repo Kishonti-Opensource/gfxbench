@@ -1,0 +1,8 @@
+type spot
+fov 70.000000
+glow 1
+lens_flare 1
+cast_shadow 0
+flicker 0
+color 1.000000 1.000000 1.000000
+intensity 1.000000

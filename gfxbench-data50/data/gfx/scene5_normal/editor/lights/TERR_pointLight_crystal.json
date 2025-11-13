@@ -1,0 +1,7 @@
+{
+ "light_foreign_shadow_light_name": "",
+ "light_shadow_far": 10,
+ "light_shadow_near": 0.009999999776482582,
+ "name": "TERR_pointLight_crystal",
+ "type": 2
+}

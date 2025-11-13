@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="60dp"
+	android:layout_height="30dp"
+	android:scrollbars="none"
+	android:fadingEdge="none"
+	android:overScrollMode="never"
+	android:id="@+id/switchScroller"
+    android:duplicateParentState="true"
+	android:padding="0dp">
+
+	<LinearLayout
+        android:duplicateParentState="true"
+		android:orientation="horizontal"
+		android:layout_width="wrap_content"
+		android:layout_height="match_parent">
+
+		<TextView
+        	android:duplicateParentState="true"
+			android:background="@drawable/switch_on_stateful"
+			android:textColor="@drawable/switch_on_text_stateful"
+			android:layout_width="60dp"
+			android:layout_gravity="center_vertical"
+			android:gravity="center"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/SwitchStateOn"
+			android:id="@+id/switchOn"
+			android:clickable="false"
+			android:textSize="14sp" />
+
+		<TextView
+        	android:duplicateParentState="true"
+			android:layout_width="60dp"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:layout_height="match_parent"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:text="@string/SwitchStateOff"
+			android:textColor="@drawable/switch_off_text_stateful"
+			android:id="@+id/switchOff"
+			android:clickable="false"
+			android:background="@drawable/switch_off_stateful"
+			android:textSize="14sp" />
+	</LinearLayout>
+</HorizontalScrollView>

@@ -1,0 +1,16 @@
+{
+ "light_attenuation": 1.5,
+ "light_cast_shadow": false,
+ "light_color": "#E15A16",
+ "light_depth": 0,
+ "light_fov": 0,
+ "light_fov_attenuation": 0,
+ "light_glow": false,
+ "light_has_fire": false,
+ "light_height": 0,
+ "light_intensity": 0,
+ "light_radius": 5,
+ "light_shape_name": "TERR_pointLight_torch7Shape",
+ "light_type": 1,
+ "light_width": 0
+}

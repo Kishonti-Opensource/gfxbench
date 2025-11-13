@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@android:color/white">
+
+	<net.kishonti.customcomponents.NavigationBar
+		android:id="@+id/pageHeader"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/header_background"
+		custom:leftButtonColor="@color/header_text"
+		custom:leftButtonVisible="true"
+		custom:leftButtonText="Back"
+		custom:titleColor="@color/header_text"
+		custom:titleText="Battery chart" />
+
+	<ScrollView
+	    android:id="@+id/resultdetail_detailScroller"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+		<LinearLayout
+		    android:id="@+id/resultdetail_detailList"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:padding="8dp"
+		    android:orientation="vertical" >
+		    
+		</LinearLayout>
+	</ScrollView>
+	
+</LinearLayout>

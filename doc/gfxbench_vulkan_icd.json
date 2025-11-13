@@ -1,0 +1,7 @@
+{
+    "file_format_version": "1.0.0",
+    "ICD": {
+        "library_path": "/home/vulkan/mesa_master/lib/libvulkan.so",
+        "abi_versions": "1.0.0"
+    }
+}

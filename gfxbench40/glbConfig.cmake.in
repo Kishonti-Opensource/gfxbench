@@ -1,0 +1,36 @@
+set(MODULES
+	glb_common
+	high_level_tests_3
+	KCL
+	KCL_libraries
+)
+	
+set(DEBUG_POSTFIX "_d")
+
+find_path(GLB_INCLUDE_DIRS glb/test_base0.h)
+foreach(module ${MODULES})
+	find_library(LIB_${module} NAMES ${module})
+	find_library(LIB_${module}_DEBUG NAMES ${module}${DEBUG_POSTFIX})
+	
+	if (LIB_${module} AND LIB_${module}_DEBUG)
+		list(APPEND GLB_LIBRARIES debug ${LIB_${module}_DEBUG} optimized ${LIB_${module}})
+	elseif(LIB_${module} AND NOT LIB_${module}_DEBUG)
+		if (MSVC)
+			message(WARNING "Debug libs not found: ${module}")
+		endif()
+		list(APPEND GLB_LIBRARIES ${LIB_${module}})
+	elseif(LIB_${module}_DEBUG AND NOT LIB_${module})
+		if (MSVC)
+			message(WARNING "Release libs not found: ${module}")
+		endif()
+		list(APPEND GLB_LIBRARIES ${LIB_${module}_DEBUG})
+	else()
+	endif()
+endforeach()
+if (GLB_LIBRARIES AND APPLE)
+	find_library(FOUNDATION_FRAMEWORK Foundation)
+	list(APPEND GLB_LIBRARIES ${FOUNDATION_FRAMEWORK})
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(GLB DEFAULT_MSG GLB_LIBRARIES GLB_INCLUDE_DIRS)

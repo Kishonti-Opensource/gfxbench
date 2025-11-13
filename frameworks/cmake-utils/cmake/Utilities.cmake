@@ -1,0 +1,13 @@
+FUNCTION( show_var name)
+	message(STATUS ${name}=${${name}})
+ENDFUNCTION()
+
+MACRO (TODAY result)
+    if (WIN32 OR WINCE)
+        execute_process(COMMAND "cmd" "/c date /t" OUTPUT_VARIABLE ${result} OUTPUT_STRIP_TRAILING_WHITESPACE)
+    elseif(UNIX)
+        execute_process(COMMAND "date" "+%F" OUTPUT_VARIABLE ${result} OUTPUT_STRIP_TRAILING_WHITESPACE)
+    else()
+        message(FATAL_ERROR "TODAY macro is not implemented on this platform")
+    endif()
+ENDMACRO()

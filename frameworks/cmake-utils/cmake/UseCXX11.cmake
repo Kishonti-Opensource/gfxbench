@@ -1,0 +1,20 @@
+# Try to set compiler flags to support C++11/C++0x features
+
+if(${CMAKE_GENERATOR} MATCHES "Xcode")
+	set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LANGUAGE_STANDARD "c++11")
+	set(CMAKE_XCODE_ATTRIBUTE_CLANG_CXX_LIBRARY "libc++")
+	set(XCODE_GENERATOR 1)
+endif()
+if(${CMAKE_CXX_COMPILER_ID} MATCHES "GNU" AND NOT XCODE_GENERATOR)
+	if (${CMAKE_CXX_COMPILER_VERSION} VERSION_LESS "4.3")
+		message(FATAL_ERROR "GNU c++ compiler version is less than 4.3 (no c++11 nor c++0x support): (" ${CMAKE_CXX_COMPILER_VERSION} ")")
+	else()
+		message("GNU c++ compiler version detected: ${CMAKE_CXX_COMPILER_VERSION}. Using gnu++0x and hope for the best")
+		message("See: http://gcc.gnu.org/projects/cxx0x.html")
+		set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++0x")
+	endif()
+endif()
+if(${CMAKE_CXX_COMPILER_ID} MATCHES "Clang" AND NOT XCODE_GENERATOR)
+	set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -stdlib=libc++")
+endif()
+

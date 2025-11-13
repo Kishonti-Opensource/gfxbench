@@ -1,0 +1,185 @@
+# CONFIG MODULE TEMPLATE V2014-0917
+
+# configure this file with configure_file(... @ONLY) to create a config module.
+
+# The following variables control the configuration of the config module:
+# (Copy this section to your code, uncomment it and change where the default value is not good for you.)
+
+#####################################################################
+# set(CMT_PACKAGE_NAME <must-fill>)
+
+## Prefix of the variables set by this config module
+# Usually the same as the package name or the upper-case package name
+# set(CMT_PREFIX ${CMT_PACKAGE_NAME})
+
+## Relative path from the install location of the config module
+## (e.g ${CMAKE_INSTALL_PREFIX}/cmake) to ${CMAKE_INSTALL_PREFIX}
+# set(CMT_CONFIG_DIR_TO_INSTALL_PREFIX ..)
+
+## Include dir relative to install prefix
+# set(CMT_INCLUDE_DIRS include)
+
+# set(CMT_DEFINITIONS)
+
+# set(CMT_SHARED ${BUILD_SHARED_LIBS})
+
+## Library name for find_library
+## leave empty if this package has no library file
+# set(CMT_LIBRARY_NAME ${CMT_PACKAGE_NAME})
+# set(CMT_LIBRARY_NAME_DEBUG ${CMT_LIBRARY_NAME}_d)
+
+## Library dir, relative to install prefix
+# set(CMT_LIBRARY_PATH lib)
+# set(CMT_LIBRARY_PATH_DEBUG ${CMT_LIBRARY_PATH})
+
+## Dependencies, list of strings <package-name> [COMPONENTS <comp> <comp> ...] [PREFIX <prefix>]
+## examples: "ZLIB", "LibXml2 PREFIX LIBXML2" "ngrtl COMPONENTS core PREFIX NGRTL"
+# set(CMT_PUBLIC_DEPENDENT_PACKAGES)
+# set(CMT_PRIVATE_DEPENDENT_PACKAGES)
+####################################################################
+
+get_filename_component(@CMT_PREFIX@_INSTALL_PREFIX ${CMAKE_CURRENT_LIST_DIR}/@CMT_CONFIG_DIR_TO_INSTALL_PREFIX@ ABSOLUTE)
+
+unset(@CMT_PREFIX@_ERRORS)
+unset(@CMT_PREFIX@_WARNINGS)
+unset(@CMT_PREFIX@_REQUIRED_VARS)
+
+set(@CMT_PREFIX@_INCLUDE_DIRS ${@CMT_PREFIX@_INSTALL_PREFIX}/@CMT_INCLUDE_DIRS@)
+list(APPEND @CMT_PREFIX@_REQUIRED_VARS @CMT_PREFIX@_INCLUDE_DIRS)
+
+if(NOT IS_DIRECTORY "${@CMT_PREFIX@_INCLUDE_DIRS}")
+	list(APPEND @CMT_PREFIX@_ERRORS "Include dir not found ${@CMT_PREFIX@_INCLUDE_DIRS}")
+endif()
+
+if(CMT_DEFINITIONS)
+	set(@CMT_PREFIX@_DEFINITIONS "@CMT_DEFINITIONS@")
+	list(APPEND @CMT_PREFIX@_REQUIRED_VARS @CMT_PREFIX@_DEFINITIONS)
+endif()
+
+set(@CMT_PREFIX@_SHARED @CMT_SHARED@)
+
+set(@CMT_PREFIX@_PUBLIC_DEPENDENT_PACKAGES "@CMT_PUBLIC_DEPENDENT_PACKAGES@")
+set(@CMT_PREFIX@_PRIVATE_DEPENDENT_PACKAGES "@CMT_PRIVATE_DEPENDENT_PACKAGES@")
+
+# to do
+set(@CMT_PREFIX@_PUBLIC_DEPENDENT_LIBRARIES "@CMT_PUBLIC_DEPENDENT_LIBRARIES@")
+set(@CMT_PREFIX@_PRIVATE_DEPENDENT_LIBRARIES "@CMT_PRIVATE_DEPENDENT_LIBRARIES@")
+
+unset(@CMT_PREFIX@_LIBRARIES)
+
+if(NOT "@CMT_LIBRARY_NAME@" MATCHES "^$")
+	list(APPEND @CMT_PREFIX@_REQUIRED_VARS @CMT_PREFIX@_LIBRARIES)
+
+	find_library(@CMT_PREFIX@_LIBRARY_O @CMT_LIBRARY_NAME@ PATHS ${@CMT_PREFIX@_INSTALL_PREFIX}/@CMT_LIBRARY_PATH@ NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+	find_library(@CMT_PREFIX@_LIBRARY_D @CMT_LIBRARY_NAME_DEBUG@ PATHS ${@CMT_PREFIX@_INSTALL_PREFIX}/@CMT_LIBRARY_PATH_DEBUG@ NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+	mark_as_advanced(@CMT_PREFIX@_LIBRARY_O)
+	mark_as_advanced(@CMT_PREFIX@_LIBRARY_D)
+
+	if(@CMT_PREFIX@_LIBRARY_O)
+		if(@CMT_PREFIX@_LIBRARY_D)
+			set(@CMT_PREFIX@_LIBRARIES
+				debug ${@CMT_PREFIX@_LIBRARY_D}
+				optimized ${@CMT_PREFIX@_LIBRARY_O}
+			)
+		else()
+			if(MSVC)
+				list(APPEND @CMT_PREFIX@_WARNINGS "Only optimized libs found.")
+				set(@CMT_PREFIX@_LIBRARIES optimized ${@CMT_PREFIX@_LIBRARY_O})
+			else()
+				set(@CMT_PREFIX@_LIBRARIES ${@CMT_PREFIX@_LIBRARY_O})
+			endif()
+		endif()
+	else()
+		if(@CMT_PREFIX@_LIBRARY_D)
+			list(APPEND @CMT_PREFIX@_WARNINGS "Only debug libs found.")
+			set(@CMT_PREFIX@_LIBRARIES debug ${@CMT_PREFIX@_LIBRARY_D})
+		else()
+			list(APPEND @CMT_PREFIX@_ERRORS "No libraries found (@CMT_LIBRARY_NAME@ or @CMT_LIBRARY_NAME_DEBUG@).")
+		endif()
+	endif()
+endif()
+
+if(@CMT_PACKAGE_NAME@_FIND_QUIETLY)
+	set(@CMT_PACKAGE_NAME@_QUIET_OR_EMPTY QUIET)
+else()
+	unset(@CMT_PACKAGE_NAME@_QUIET_OR_EMPTY)
+endif()
+
+include(CMakeParseArguments)
+
+foreach(@CMT_PREFIX@_i ${@CMT_PREFIX@_PUBLIC_DEPENDENT_PACKAGES} ${@CMT_PREFIX@_PRIVATE_DEPENDENT_PACKAGES})
+
+	# determine if public or private
+	list(FIND @CMT_PREFIX@_PUBLIC_DEPENDENT_PACKAGES "${@CMT_PREFIX@_i}" _idx)
+	if(_idx EQUAL -1)
+		set(@CMT_PREFIX@_PUBLIC 0)
+	else()
+		set(@CMT_PREFIX@_PUBLIC 1)
+	endif()
+
+	# we need all dependecies for static libs, public dependencies for shared libs
+
+	if(NOT @CMT_PREFIX@_SHARED OR @CMT_PREFIX@_PUBLIC)
+		# make list from space-sep strings
+		separate_arguments(@CMT_PREFIX@_i)
+
+		# first item is package name
+		list(GET @CMT_PREFIX@_i 0 @CMT_PREFIX@_PKG)
+		list(REMOVE_AT @CMT_PREFIX@_i 0)
+		
+		# rest is COMPONENTS ... or PREFIX
+		cmake_parse_arguments(@CMT_PREFIX@
+			"" PREFIX COMPONENTS
+			${@CMT_PREFIX@_i}
+			)
+		if(NOT @CMT_PREFIX@_PREFIX)
+			set(@CMT_PREFIX@_PREFIX @CMT_PREFIX@_PKG)
+		endif()
+
+		find_package(${@CMT_PREFIX@_PKG} COMPONENTS ${@CMT_PREFIX@_COMPONENTS} ${@CMT_PACKAGE_NAME@_QUIET_OR_EMPTY})
+		if(NOT ${@CMT_PREFIX@_PREFIX}_FOUND)
+			list(APPEND @CMT_PREFIX@_ERRORS "Dependency ${@CMT_PREFIX@_PKG} not found.")
+		else()
+			if(@CMT_PREFIX@_PKG MATCHES "^Threads$")
+				if(CMAKE_THREAD_LIBS_INIT)
+					list(APPEND @CMT_PREFIX@_LIBRARIES ${CMAKE_THREAD_LIBS_INIT})
+				endif()
+			else()
+				list(APPEND @CMT_PREFIX@_LIBRARIES ${${@CMT_PREFIX@_PREFIX}_LIBRARIES})
+				if(@CMT_PREFIX@_PUBLIC)
+					list(APPEND @CMT_PREFIX@_INCLUDE_DIRS ${${@CMT_PREFIX@_PREFIX}_INCLUDE_DIRS})
+					list(APPEND @CMT_PREFIX@_DEFINITIONS ${${@CMT_PREFIX@_PREFIX}_DEFINITIONS})
+				endif()
+			endif()
+		endif()
+	endif()
+endforeach()
+
+if(NOT @CMT_PACKAGE_NAME@_FIND_QUIETLY AND @CMT_PREFIX@_WARNINGS)
+	message("Warnings from @CMT_PACKAGE_NAME@ config module:")
+	foreach(_i ${@CMT_PREFIX@_WARNINGS})
+		message(STATUS "${_i}")
+	endforeach()
+endif()
+
+if((NOT @CMT_PACKAGE_NAME@_FIND_QUIETLY OR @CMT_PACKAGE_NAME@_FIND_REQUIRED) AND @CMT_PREFIX@_ERRORS)
+	message("Errors from @CMT_PACKAGE_NAME@ config module:")
+	foreach(_i ${@CMT_PREFIX@_ERRORS})
+		message("${_i}")
+	endforeach()
+	list(APPEND @CMT_PREFIX@_REQUIRED_VARS @CMT_PREFIX@_THERE_HAS_BEEN_ERRORS)
+	set(@CMT_PREFIX@_THERE_HAS_BEEN_ERRORS FALSE)
+endif()
+
+include(FindPackageHandleStandardArgs)
+
+find_package_handle_standard_args(@CMT_PACKAGE_NAME@
+	FOUND_VAR @CMT_PREFIX@_FOUND
+	REQUIRED_VARS ${@CMT_PREFIX@_REQUIRED_VARS})
+
+# fix when XXX_FOUND is 0 but CMake sets Xxx_FOUND to 1 because
+# the config module has been found
+if(NOT @CMT_PREFIX@_FOUND)
+	set(@CMT_PACKAGE_NAME@_FOUND 0)
+endif()
+

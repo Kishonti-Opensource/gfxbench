@@ -1,0 +1,36 @@
+set(CUDAW_SHARED @BUILD_SHARED_LIBS@)
+
+find_package(CUDAToolkit)
+find_path(CUDAW_INCLUDE_DIRS cudaw)
+list(APPEND CUDAW_INCLUDE_DIRS ${CUDAW_INCLUDE_DIRS}/cudaw/nvidia ${CUDAToolkit_INCLUDE_DIRS})
+
+find_library(CUDAW_LIBRARY NAMES libcudaw.a cudaw.lib cudaw)
+find_library(CUDAW_LIBRARY_D NAMES libcudaw_d.a cudaw_d.lib cudaw_d)
+
+if(CUDAW_LIBRARY_D)
+  list(APPEND CUDAW_LIBRARIES debug;${CUDAW_LIBRARY_D})
+endif()
+if(CUDAW_LIBRARY)
+  if(CUDAW_LIBRARY_D)
+  	list(APPEND CUDAW_LIBRARIES optimized)
+  endif()
+  list(APPEND CUDAW_LIBRARIES ${CUDAW_LIBRARY})
+endif()
+
+if (NOT CUDAW_SHARED AND (CUDAW_LIBRARY OR CUDAW_LIBRARY_D))
+	set(CUDAW_DEFINITIONS -DCUDAW_STATIC)
+	if(CMAKE_COMPILER_IS_GNUCXX)
+		set(CUDAW_CXX_FLAGS " -std=c++11 -Wno-deprecated-declarations")
+	endif()
+	if (UNIX AND NOT ANDROID AND NOT QNX)
+		list(APPEND CUDAW_LIBRARIES dl)
+	endif()
+endif()
+
+if (CUDAW_SHARED)
+	find_file(CUDAW_BINARIES cudaw.dll ${CMAKE_CURRENT_LIST_DIR}/../../bin)
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(CUDAW REQUIRED_VARS CUDAW_INCLUDE_DIRS CUDAW_LIBRARIES)
+mark_as_advanced(CUDAW_INCLUDE_DIRS CUDAW_LIBRARIES)

@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "tests": [
+        {
+            "test_name": "vulkan_5_high",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_4k_off",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "VULKAN", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "vulkan_5_normal",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "VULKAN", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        }
+    ]
+}

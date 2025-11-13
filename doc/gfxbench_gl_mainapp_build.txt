@@ -1,0 +1,194 @@
+# How to build GFXBench GL for Windows/Linux/MacOSX
+
+
+## Table Of Contents
+
+1. [Software requirements](#software_requirements)
+2. [Build steps](#build_steps)
+3. [Quick steps](#quick_steps)
+4. [Notes](#notes)
+5. [Wayland support](#wayland)
+
+
+##<a name="software_requirements"></a>1. Software requirements
+
+
+* BASH environment (e.g.: Git Bash)
+* CMake 3.4.0
+	http://www.cmake.org/cmake/resources/software.html
+* C++11 compatible compiler
+* Python (for libepoxy)
+
+**Windows**
+
+    - Visual C++ Redistributable for Visual Studio 2012 Update 4 (http://www.microsoft.com/en-us/download/details.aspx?id=30679)
+    - Visual C++ Redistributable Packages for Visual Studio 2013 (http://www.microsoft.com/en-us/download/details.aspx?id=40784)
+    - Microsoft Visual Studio 2010 or newer
+    - To build Qt version:
+        1. Qt 5.6 x86 MSVC 2013 (http://download.qt-project.org)
+        2. Windows SDK (7.1, 8.0, 8.1) (GLU needed)
+
+**Linux**
+
+    You need the following packages installed for the build to succeed:
+	libxinerama-dev
+	libxcursor-dev
+        libxrandr-dev
+        libxi-dev
+        libglu1-mesa-dev
+        xorg-dev
+
+**MacOSX**
+
+##<a name="build_steps"></a>2. Build steps
+
+To build testfw app on Windows/Linux/MacOSX use the following commands from the root of the package:
+
+    WORKSPACE=${PWD} PLATFORM=vs2013 CONFIG=Release scripts/build-3rdparty.sh
+    WORKSPACE=${PWD} PLATFORM=vs2013 CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+The environment variables accept the following values:
+
+* `CONFIG`
+	* Debug
+	* Release
+
+* `PLATFORM`
+	* `vs2015`
+	* `vs2015-x64`
+	* `vs2013`
+	* `vs2013-x64`
+	* `vs2012`
+	* `vs2012-x64`
+	* `vs2010`
+	* `macosx`
+	* `linux`
+	* `linux_arm` (cross compiler, it can be configured in the `frameworks/cmake-utils/cmake/toolchain/linux_arm.cmake`)
+	* `linux_arm64` (cross compiler, it can be configured in the `frameworks/cmake-utils/cmake/toolchain/linux_arm64.cmake`)
+
+* `APPLICATION_TYPE`
+	* developer    - create command line application
+	* gui          - create QT application
+
+The scripts generate projects and starts to compile them.
+
+**Notes**
+
+- [linux_arm] If you need desktop OpenGL support (GLFW) for this platform you have to build glew, glfw and epoxy libraries too:
+
+		PROJECTS+="3rdparty/libepoxy 3rdparty/glew 3rdparty/glfw" CONFIG=Release PLATFORM=linux_arm scripts/build-3rdparty.sh
+
+- The generated project or solution will be placed into the following directory: `out/build/<PLATFORM>`  
+  On Windows, the testfw_app solution can be found in `out/build/vs2013/testfw/testfw.sln`
+
+- Set the environment variables for gui version  
+    `QT5_BIN_PATH`      
+    e.g.: `QT5_BIN_PATH=c:/Qt/Qt5.2.0/5.2.0/msvc2010_opengl/bin` or other directory that contains `qmake.exe`
+
+
+##<a name="quick_steps"></a>3. Quick steps
+
+The binaries and assets will be placed under `<TFW_PACKAGE_DIR>/` folder (this folder can be use as base folder, argument '-b').
+If the application type is 'developer' and `PLATFORM` is Windows:
+  
+    TFW_PACKAGE_DIR=./out/build/<PLATFORM>/testfw/tfw-dev  
+
+otherwise  
+    
+	TFW_PACKAGE_DIR=./tfw-pkg
+
+About `<TFW_PACKAGE_DIR>` folder:  
+
+    bin
+        'testfw_app' placed here that starts tests in console
+    config
+        The config folder contains tests' json file (descriptor)
+    data
+        Data folder contains the tests' data
+    plugins
+        The plugins folder contains the tests (dynamic libraries)
+
+The build system creates the above folder structure on every platform. The `testfw_app` can be compiled on Linux, Android, Windows and MacOSX.  
+
+* Start `gl_alu` test
+
+		./testfw_app.exe -b <TFW_PACKAGE_DIR> --gfx glfw -w 512 -h 512 -t gl_alu
+
+* Start `gl_alu` test with desktop ES3 context
+
+		./testfw_app.exe -b <TFW_PACKAGE_DIR> --gfx glfw -t gl_alu -w 512 -h 512 --gl_api gles
+
+* Custom EGL (Start test with custom `libEGL.dll` and `libGLESv2.dll`)  
+	Copy your vendor specific libraries and headers into
+
+		frameworks/oglx/windows/custom/bin    need to create an empty directory  
+		frameworks/oglx/windows/custom/include/  
+		frameworks/oglx/windows/custom/lib/*.lib|*.dll
+
+	Build the application with "OGLX_VARIANT=custom OGLX_DRIVER=ES3" to linking the appropiate libraries
+
+		OGLX_VARIANT=custom OGLX_DRIVER=ES3 WORKSPACE=${PWD} PLATFORM=vs2013 CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+	
+	Copy vendor specific dll files next to the executable into the Release folder.
+	
+		./testfw_app.exe -b <TFW_PACKAGE_DIR> --gfx egl -w 512 -h 512 -t gl_alu
+
+* Start `gl_alu` test in fullscreen in single frame
+
+		./testfw_app.exe -b <TFW_PACKAGE_DIR> --gfx glfw -t gl_alu --fullscreen --ei -single_frame=500
+
+* Start `gl_alu` test in single frame and loop 5 sec interval
+
+		./testfw_app.exe -b <TFW_PACKAGE_DIR> --gfx glfw -t gl_alu --ez -endless=1 --ei -play_time=5000
+
+The command line options described in the `scripts/doc/common/running_from_command_line.txt`
+
+## <a name="notes"></a>4. Notes
+
+- Default OpenGL version is 0.0. You must declare GL version in `config/*.json` files.
+
+- To avoid build issues/mixing of intermediate files, remove the content of the `$PWD/out/*` folder.
+
+- When you target a multi-configuration (e.g.:Visual Studio, XCode) generators, please always check your appropriate configurations (Debug/Release) has built in command line too.
+
+- Enable multi-process build set the following environment variable `MP_COMPILE=true`.
+
+**Windows**
+
+- Be sure the generated CMake paths' length is **shorter than 260 characters**.
+
+- testfw_app tries to find the DirectX SDK on Windows which is part of the Visual Studio by default. The older DirectX SDKs aren't supported (cause undefined reference linker error).
+
+**Linux**
+
+**MacOSX**
+
+## <a name="wayland"></a>5. Wayland Support
+
+**Build app**
+
+	export CONFIG=Release
+	export PLATFORM=linux
+	export DISPLAY_PROTOCOL=WAYLAND
+	export OGLX_DRIVERS=ES3
+	export OGLX_VARIANT=sys
+
+	# export USE_WAYLAND=true # optional, an alternative for glfw
+
+	scripts/build-3rdparty.sh
+	scripts/build.sh
+
+**Start app**
+
+	tfw-pkg/bin/testfw_app --gfx glfw --gl_api=gles -w 512 -h 512 -t gl_alu
+
+	export WAYLAND_DEBUG=1 # to check it
+	tfw-pkg/bin/testfw_app --gfx egl -w 512 -h 512 -t gl_alu
+
+Now start a subcompositor if you need it for testing:
+
+$ dbus-run-session -- gnome-shell --nested --wayland
+
+or weston compositor:
+
+$ weston &

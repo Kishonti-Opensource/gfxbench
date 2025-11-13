@@ -1,0 +1,47 @@
+# .rst
+# cmake-utils-config
+# ------------------
+#
+# Usage:
+#
+#     find_package(cmake-utils [COMPONENTS append_module_path])
+#
+# This config-module will set the variable ``cmake-utils_INCLUDE_DIRS``
+# to the path of the ``cmake`` subdirectory.
+# Specify the (virtual) component ``append_module_path`` to automatically
+# add this path to ``CMAKE_MODULE_PATH`` (will not add if already contains).
+#
+# WARNING: non-standard behaviour:
+#
+# This config-module will use the source-tree, if it's still available,
+# otherwise use the installed files.
+# Reason:
+# - These files require no building
+# - The changes made to the source tree will be effective immediately.
+#   Traditionally cmake-utils were not installed at all so this behaviour
+#   (changes take effect immediately) is what the least-surprise way of things.
+
+get_filename_component(cmake-utils_INCLUDE_DIRS "@CMAKE_CURRENT_SOURCE_DIR@/cmake" ABSOLUTE)
+if(NOT IS_DIRECTORY "${cmake-utils_INCLUDE_DIRS}")
+  get_filename_component(cmake-utils_INCLUDE_DIRS "${CMAKE_CURRENT_LIST_DIR}/cmake" ABSOLUTE)
+endif()
+
+foreach(_j ${cmake-utils_FIND_COMPONENTS})
+  if("X${_j}X" STREQUAL "Xappend_module_pathX")
+    set(_CMAKE-UTILS_DIR_FOUND 0)
+    foreach(_i ${CMAKE_MODULE_PATH})
+      if("${_i}" STREQUAL "${cmake-utils_INCLUDE_DIRS}")
+        set(_CMAKE-UTILS_DIR_FOUND 1)
+        break()
+      endif()
+    endforeach()
+    if(NOT _CMAKE-UTILS_DIR_FOUND)
+      list(APPEND CMAKE_MODULE_PATH "${cmake-utils_INCLUDE_DIRS}")
+    endif()
+  else()
+    message(FATAL_ERROR "Invalid COMPONENT: \"${_j}\"")
+  endif()
+endforeach()
+
+set(cmake-utils_FOUND 1)
+

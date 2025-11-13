@@ -1,0 +1,45 @@
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/main_full_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:fitsSystemWindows="true">
+    
+    <LinearLayout
+	    android:id="@+id/main_view_back"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+    	android:tag="xlarge"  >
+	
+	    <android.support.v4.view.ViewPager
+	        xmlns:android="http://schemas.android.com/apk/res/android"
+	        android:id="@+id/pager"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1">
+	    </android.support.v4.view.ViewPager>
+	
+	    <View
+	        android:id="@+id/tabbar_separator"
+	        android:layout_width="match_parent"
+	        android:layout_height="1dp"
+	        android:background="@color/tabbar_separator" />
+	
+	    <View
+	        android:id="@+id/tabbar_header"
+	        android:layout_width="match_parent"
+	        android:layout_height="4dp"
+	        android:background="@color/tabbar_btn_selected" />
+	
+	    <LinearLayout
+	        android:id="@+id/tabbar_back"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/tabbar_height"
+	        android:background="@color/tabbar_back"
+	        android:orientation="horizontal" >
+	    </LinearLayout>
+	</LinearLayout>
+    
+</FrameLayout>
+

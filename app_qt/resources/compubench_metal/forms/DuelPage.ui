@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DuelPage</class>
+ <widget class="QWidget" name="DuelPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>647</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>DuelPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background: #ffffff;
+}
+
+QLabel#topLine,#bottomLine
+{
+	background: #4e98b6;
+}
+
+QLabel#verticalLine
+{
+	background: #CCCCCC;
+}
+
+
+QScrollArea QWidget
+{   
+    background: #fff;
+}
+
+QLabel#header
+{
+	background: #ffffff;
+	color: #4e98b6;
+	font-family: &quot;Segoe UI&quot;;
+	font-size: 24px;
+	padding-left: 18px;
+	padding-top: 12px;
+}
+
+QWidget#scrollAreaWidgetContets
+{
+	background: #ffffff;
+}
+
+QListWidget
+{
+	font-size: 14px;
+	font-family: &quot;Segoe UI&quot;;
+	background: #FCFCFC;
+	border: none;
+	outline: none;
+}
+
+QListWidget::item
+{
+	border-bottom: 1px solid #D3D3D3;
+	padding: 10px 10px 10px 25px;
+}
+
+QListWidget::item:hover
+{
+	color: #FFFFFF;
+	background: #f5fcee;
+}
+
+QListWidget::item:selected:active
+{
+	color: #FFFFFF;
+	background: #a4e268;
+}
+
+QListWidget::item:selected:!active
+{
+	color: #FFFFFF;
+	background: #a4e268;
+}
+
+QScrollBar:vertical
+{
+	border: none;
+	background: #EEEEEE;
+	width: 27px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+QScrollBar::handle:vertical
+{
+	border-radius: 3px;
+	background: #CCCCCC;
+	min-height: 340px;
+}
+
+QScrollBar::add-line:vertical
+{
+	border: none;
+	height: 0px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical
+{
+	border: none;
+	height: 0px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::up-arrow:vertical, QScrollBar::down-arrow:vertical
+{
+	border: none;
+	width: 0px;
+	height: 0px;
+	background: none;
+}
+
+QScrollBar::add-page:vertical, QScrollBar::sub-page:vertical
+{
+	border: none;
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QLabel" name="topLine">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>4</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="header">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>58</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>58</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Single Device Run 2013.08.05.</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="bottomLine">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>2</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QListWidget" name="listWidget">
+       <property name="minimumSize">
+        <size>
+         <width>468</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>468</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>AMD A10-4600M</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FirePro V4900</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FirePro V4900</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Athlon™ 64 X2 Dual Core Processor 4600+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Radeon HD 7500M/7600M Series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Radeon HD 7500M/7600M Series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Radeon HD 7500M/7600M Series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Radeon HD 7500M/7600M Series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Radeon HD 7500M/7600M Series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD Radeon HD 7500M/7600M Series</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FX™-8120</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FX™-8120</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FX™-8120</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FX™-8120</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FX™-8120</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>AMD FX™-8120</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="verticalLine">
+       <property name="maximumSize">
+        <size>
+         <width>1</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="lineWidth">
+        <number>0</number>
+       </property>
+       <property name="horizontalScrollBarPolicy">
+        <enum>Qt::ScrollBarAlwaysOff</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>false</bool>
+       </property>
+       <widget class="PointsBarListWidget" name="pointsBarList">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1280</width>
+          <height>583</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>0</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>PointsBarListWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">PointsBarListWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,232 @@
+name: Manual Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      platform:
+        description: 'Target platform'
+        required: true
+        default: 'linux'
+        type: choice
+        options: [linux_wayland, linux_vulkan, linux_gl, windows_x64, windows_arm64, windows_x64_qt, both, android]
+        # TODO: Re-enable windows_arm64_qt in options once Qt ARM64 pipeline stabilizes.
+
+env:
+  CONFIG: 'Release'
+  WORKSPACE: ${{ github.workspace }}
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - platform: linux_wayland
+            os: ubuntu-22.04
+            runner: ubuntu-22.04
+          - platform: linux_vulkan
+            os: ubuntu-22.04
+            runner: ubuntu-22.04
+          - platform: linux_gl
+            os: ubuntu-22.04
+            runner: ubuntu-22.04
+          - platform: windows_x64
+            os: windows-latest
+            runner: windows-latest
+          - platform: windows_arm64
+            os: windows-latest
+            runner: windows-latest
+          - platform: windows_x64_qt
+            os: windows-latest
+            runner: windows-latest
+          # - platform: windows_arm64_qt
+          #   os: windows-latest
+          #   runner: windows-latest  # TODO: Re-enable when Qt ARM64 build path and dependencies are confirmed
+          - platform: android
+            os: ubuntu-22.04
+            runner: ubuntu-22.04
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - name: Checkout code
+        if: ${{ inputs.platform == 'both' || matrix.platform == inputs.platform }}
+        uses: actions/checkout@v4
+
+      - name: Setup Java 17
+        if: ${{ (matrix.platform == 'android' || matrix.platform == 'linux_wayland' || matrix.platform == 'linux_vulkan' || matrix.platform == 'linux_gl') && (inputs.platform == matrix.platform || inputs.platform == 'both') }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
+
+      - name: Setup Linux Wayland Environment
+        if: ${{ matrix.platform == 'linux_wayland' && (inputs.platform == 'linux_wayland' || inputs.platform == 'both') }}
+        run: |
+          echo "PLATFORM=linux" >> $GITHUB_ENV
+          echo "DISPLAY_PROTOCOL=WAYLAND" >> $GITHUB_ENV
+          echo "OGLX_DRIVERS=ES3" >> $GITHUB_ENV
+          echo "OGLX_VARIANT=sys" >> $GITHUB_ENV
+          echo "USE_WAYLAND=true" >> $GITHUB_ENV
+          echo "MAKEFLAGS=-j$(nproc)" >> $GITHUB_ENV
+          sed -i 's/^PRODUCT_ID="gfxbench"/PRODUCT_ID="gfxbench_gl"/' product
+
+      - name: Setup Linux Vulkan Environment
+        if: ${{ matrix.platform == 'linux_vulkan' && (inputs.platform == 'linux_vulkan' || inputs.platform == 'both') }}
+        run: |
+          echo "PLATFORM=linux" >> $GITHUB_ENV
+          echo "APPLICATION_TYPE=developer" >> $GITHUB_ENV
+          echo "MAKEFLAGS=-j$(nproc)" >> $GITHUB_ENV
+          sed -i 's/^PRODUCT_ID="gfxbench"/PRODUCT_ID="gfxbench_vulkan"/' product
+
+      - name: Setup Linux GL Environment
+        if: ${{ matrix.platform == 'linux_gl' && (inputs.platform == 'linux_gl' || inputs.platform == 'both') }}
+        run: |
+          echo "PLATFORM=linux" >> $GITHUB_ENV
+          echo "APPLICATION_TYPE=developer" >> $GITHUB_ENV
+          echo "MAKEFLAGS=-j$(nproc)" >> $GITHUB_ENV
+          sed -i 's/^PRODUCT_ID="gfxbench"/PRODUCT_ID="gfxbench_gl"/' product
+
+      - name: Setup Windows Environment
+        if: ${{ matrix.platform == 'windows_x64' && (inputs.platform == 'windows_x64' || inputs.platform == 'both') }}
+        shell: bash
+        run: |
+          echo "PLATFORM=vs2022-x64" >> $GITHUB_ENV
+          echo "MP_COMPILE=true" >> $GITHUB_ENV
+          echo "APPLICATION_TYPE=developer" >> $GITHUB_ENV
+          echo "PRODUCT_VERSION=5.1.5" >> $GITHUB_ENV
+          echo "PRODUCT_ID=gfxbench_vulkan" >> $GITHUB_ENV
+          echo "MAKEFLAGS=-j$NUMBER_OF_PROCESSORS" >> $GITHUB_ENV
+
+      - name: Setup Windows ARM64 Environment
+        if: ${{ matrix.platform == 'windows_arm64' && (inputs.platform == 'windows_x64' || inputs.platform == 'both') }}
+        shell: bash
+        run: |
+          echo "PRODUCT_ID=gfxbench_dx" >> $GITHUB_ENV
+          echo "MP_COMPILE=true" >> $GITHUB_ENV
+          echo "WORKSPACE=$PWD" >> $GITHUB_ENV
+          echo "PLATFORM=vs2022-arm64" >> $GITHUB_ENV
+          echo "APPLICATION_TYPE=developer" >> $GITHUB_ENV
+          echo "CONFIG=Release" >> $GITHUB_ENV
+          echo "CFLAGS=-wd4244 -wd4996 -wd4267 -wd4838 -wd4311" >> $GITHUB_ENV
+          echo "CXXFLAGS=-wd4244 -wd4996 -wd4267 -wd4838 -wd4311" >> $GITHUB_ENV
+
+      - name: Setup Windows x64 Qt Environment
+        if: ${{ matrix.platform == 'windows_x64_qt' && (inputs.platform == 'windows_x64_qt' || inputs.platform == 'both') }}
+        shell: bash
+        run: |
+          echo "QT5_BIN_PATH=/c/Qt/5.14.2/msvc2017_64/bin/" >> $GITHUB_ENV
+          echo "CONFIG=Release" >> $GITHUB_ENV
+          echo "MP_COMPILE=true" >> $GITHUB_ENV
+          echo "WORKSPACE=$PWD" >> $GITHUB_ENV
+          echo "PLATFORM=vs2022-x64" >> $GITHUB_ENV
+          echo "APPLICATION_TYPE=gui" >> $GITHUB_ENV
+          echo "PRODUCT_ID=gfxbench" >> $GITHUB_ENV
+          echo "PRODUCT_VERSION=5.1.5" >> $GITHUB_ENV
+
+      - name: Setup Windows ARM64 Qt Environment
+        if: ${{ matrix.platform == 'windows_arm64_qt' && (inputs.platform == 'windows_arm64_qt' || inputs.platform == 'both') }}
+        shell: bash
+        run: |
+          echo "QT5_ARM64_PATH=/c/Qt/5.15.2/msvc2019_arm64" >> $GITHUB_ENV
+          echo "QT5_BIN_PATH=/c/Qt/5.15.2/msvc2019_64/bin" >> $GITHUB_ENV
+          echo "ARCHIVE_ROOT=$PWD/archive" >> $GITHUB_ENV
+          echo "MP_COMPILE=true" >> $GITHUB_ENV
+          echo "PRODUCT_ID=gfxbench" >> $GITHUB_ENV
+          echo "PRODUCT_VERSION=5.1.5" >> $GITHUB_ENV
+          echo "CONFIG=Release" >> $GITHUB_ENV
+          echo "PLATFORM=vs2022-arm64" >> $GITHUB_ENV
+          echo "WORKSPACE=$PWD" >> $GITHUB_ENV
+          echo "APPLICATION_TYPE=gui" >> $GITHUB_ENV
+
+      - name: Setup Android Environment
+        if: ${{ matrix.platform == 'android' && (inputs.platform == 'android' || inputs.platform == 'both') }}
+        run: |
+          echo "SDKP=/tmp/android_sdk" >> $GITHUB_ENV
+          echo "ANDROID_NDK=$HOME/android-sdk/ndk/28.0.12674087" >> $GITHUB_ENV
+          echo "ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV
+          echo "NG_CMAKE_TOOLCHAIN_FILE=$HOME/android-sdk/ndk/28.0.12674087/build/cmake/android.toolchain.cmake" >> $GITHUB_ENV
+          echo "CONFIG=Release" >> $GITHUB_ENV
+          echo "WORKSPACE=${{ github.workspace }}" >> $GITHUB_ENV
+          echo "BUNDLE_DATA=false" >> $GITHUB_ENV
+          echo "MAKEFLAGS=-j$(nproc)" >> $GITHUB_ENV
+          echo "ANDROID_SDK_ROOT=/tmp/android_sdk/" >> $GITHUB_ENV
+          echo "PLATFORM=android" >> $GITHUB_ENV
+          echo "PLATFORMS=android-arm64-v8a" >> $GITHUB_ENV
+          echo "CUDAToolkit_ROOT=/usr/local/cuda" >> $GITHUB_ENV
+
+      - name: Install Linux/Android Dependencies
+        if: ${{ (matrix.platform == 'linux_wayland' && (inputs.platform == 'linux_wayland' || inputs.platform == 'both')) || (matrix.platform == 'linux_vulkan' && (inputs.platform == 'linux_vulkan' || inputs.platform == 'both')) || (matrix.platform == 'linux_gl' && (inputs.platform == 'linux_gl' || inputs.platform == 'both')) || (matrix.platform == 'android' && (inputs.platform == 'android' || inputs.platform == 'both')) }}
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y \
+            cmake build-essential ninja-build \
+            libwayland-dev wayland-protocols libxkbcommon-dev libegl1-mesa-dev libgles2-mesa-dev \
+            bison pkg-config libxinerama-dev libxcursor-dev libxrandr-dev libxi-dev libglu1-mesa-dev xorg-dev \
+            curl ca-certificates unzip openjdk-17-jdk swig python-is-python3
+          # Force update-alternatives to use Java 17 if for any reason Java 11 remains default.
+          sudo update-alternatives --set java /usr/lib/jvm/java-17-openjdk-amd64/bin/java || true
+          sudo update-alternatives --set javac /usr/lib/jvm/java-17-openjdk-amd64/bin/javac || true
+          java -version
+
+      - name: Install Android Dependencies
+        if: ${{ matrix.platform == 'android' && (inputs.platform == 'android' || inputs.platform == 'both') }}
+        run: |
+          ./doc/android_deps.sh
+
+      - name: Install Windows Dependencies
+        if: ${{ matrix.platform == 'windows_x64' && (inputs.platform == 'windows_x64' || inputs.platform == 'both') }}
+        shell: bash
+        run: |
+          echo "Windows dependencies setup placeholder. Add Chocolatey installs if needed."
+
+      - name: Install CUDA
+        if: ${{ (startsWith(matrix.platform, 'windows') || startsWith(matrix.platform, 'linux') || matrix.platform == 'android') && (inputs.platform == matrix.platform || inputs.platform == 'both' || (inputs.platform == 'windows_x64' && (matrix.platform == 'windows_x64' || matrix.platform == 'windows_arm64'))) }}
+        uses: Jimver/cuda-toolkit@v0.2.15
+        with:
+          cuda: 11.8.0
+          sub-packages: '["cudart", "nvcc"]'
+          method: network
+
+      - name: Verify CUDA Toolkit
+        if: ${{ (startsWith(matrix.platform, 'windows') || startsWith(matrix.platform, 'linux') || matrix.platform == 'android') && (inputs.platform == matrix.platform || inputs.platform == 'both' || (inputs.platform == 'windows' && (matrix.platform == 'windows' || matrix.platform == 'windows_arm64'))) }}
+        shell: bash
+        run: |
+          echo "CUDA_PATH=$CUDA_PATH"
+          which nvcc || echo "nvcc not in PATH (expected for minimal)." || true
+          ls -1 "$CUDA_PATH" | head -n 20 || true
+
+      - name: Install Qt 5.15.2 x64 (Windows)
+        if: ${{ matrix.platform == 'windows_x64_qt' && (inputs.platform == 'windows_x64_qt' || inputs.platform == 'both') }}
+        shell: pwsh
+        run: |
+          python -m pip install aqtinstall
+          python -m aqt install-qt -O C:\Qt windows desktop 5.15.2 win64_msvc2019_64
+          echo "QT_ROOT=C:\Qt\5.15.2\msvc2019_64" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          echo "QT5_BIN_PATH=C:\Qt\5.15.2\msvc2019_64\bin" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+          echo "C:\Qt\5.15.2\msvc2019_64\bin" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+          Write-Host "Qt 5.15.2 msvc2019_64 installed via aqtinstall."
+
+      - name: Install Windows ARM64 Dependencies
+        if: ${{ matrix.platform == 'windows_arm64' && (inputs.platform == 'windows_x64' || inputs.platform == 'both') }}
+        shell: bash
+        run: |
+          echo "Windows ARM64 dependencies setup placeholder. Add Chocolatey installs if needed."
+
+      - name: Build 3rdparty
+        if: ${{ (inputs.platform == 'both' || matrix.platform == inputs.platform) && matrix.platform != 'android' }}
+        shell: bash
+        run: |
+          echo "Building 3rdparty on ${{ matrix.platform }}..."
+          ./scripts/build-3rdparty.sh
+
+      - name: Build main
+        if: ${{ (inputs.platform == 'both' || matrix.platform == inputs.platform) && matrix.platform != 'android' }}
+        shell: bash
+        run: |
+          echo "Building main on ${{ matrix.platform }}..."
+          ./scripts/build.sh
+
+      - name: Build Android APK
+        if: ${{ matrix.platform == 'android' && (inputs.platform == 'android' || inputs.platform == 'both') }}
+        run: |
+          ./scripts/build-multiarch-apk.sh

@@ -1,0 +1,17 @@
+rate 26000
+
+accelerationX 0.00
+accelerationY 0.00
+accelerationZ 0.00
+aperture_x 6.00
+aperture_y 8.00
+max_angle 20.00
+max_initial_lifetime 2000.00
+max_initial_velocity 0.70
+min_initial_lifetime 1000.00
+min_initial_velocity 0.2
+
+
+type steam
+
+color .75 .75 .88

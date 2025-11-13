@@ -1,0 +1,74 @@
+file(MAKE_DIRECTORY ${TFW_PACKAGE_DIR}/plugins)
+
+function(copy_all_config_jsons)
+	file(MAKE_DIRECTORY ${TFW_PACKAGE_DIR}/config)
+	file(GLOB_RECURSE CONFIGS "${CMAKE_CURRENT_LIST_DIR}/resources/*/*/config/*.json")
+	
+	foreach(config ${CONFIGS})
+		file(COPY "${config}" DESTINATION ${TFW_PACKAGE_DIR}/config NO_SOURCE_PERMISSIONS)
+	endforeach()
+endfunction()
+
+
+function(copy_config_jsons)
+	if( ${PRODUCT_ID} STREQUAL "gfxbench" )
+		copy_all_config_jsons()
+	else()
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/config" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+	endif()
+endfunction()
+
+
+function(copy_shaders)
+	file(MAKE_DIRECTORY ${TFW_PACKAGE_DIR}/data/gfx/shaders)
+	file(COPY "shaders" DESTINATION ${TFW_PACKAGE_DIR}/data/gfx NO_SOURCE_PERMISSIONS)
+endfunction()
+
+
+function(copy_images)
+	if(${CMAKE_SYSTEM_NAME} STREQUAL "WindowsPhone")
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/benchmark_tests.json" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)	
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/wp/images" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/wp/theme" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+	elseif(${CMAKE_SYSTEM_NAME} STREQUAL "WindowsStore")
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/benchmark_tests.json" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/rt/images" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/rt/theme" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+	endif()
+	
+	if(${PRODUCT_ID} STREQUAL "gfxbench")
+		file(GLOB IMAGES "${CMAKE_CURRENT_LIST_DIR}/resources/*/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/images")
+		file(COPY ${IMAGES} DESTINATION "${TFW_PACKAGE_DIR}" NO_SOURCE_PERMISSIONS)
+	else()
+		file(COPY "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/images" DESTINATION ${TFW_PACKAGE_DIR} NO_SOURCE_PERMISSIONS)
+	endif()
+endfunction()
+
+
+file(MAKE_DIRECTORY ${TFW_PACKAGE_DIR}/data/gfx)
+
+if (DEFINED ENV{GFX_TESTS} AND "$ENV{GFX_TESTS}" STREQUAL "all")
+	copy_all_config_jsons()
+else()
+	copy_config_jsons()
+	copy_shaders()
+endif()
+
+if("${APPLICATION_TYPE}" STREQUAL "gui")
+	if(${PRODUCT_ID} STREQUAL "gfxbench")
+        # 5 only build does not have a community build
+		if(NOT OPT_COMMUNITY_BUILD)
+			file(GLOB TESTLISTS "${CMAKE_CURRENT_LIST_DIR}/resources/gfxbench/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/testlist_corporate.json")
+		endif()
+	else()
+		if(OPT_COMMUNITY_BUILD)
+			file(GLOB TESTLISTS "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/testlist_*.*.json")
+		else()
+			file(GLOB TESTLISTS "${CMAKE_CURRENT_LIST_DIR}/resources/${PRODUCT_ID}/${BENCHMARK_VERSION_MAJOR}.${BENCHMARK_VERSION_MINOR}/testlist_corporate.json")
+		endif()
+	endif()
+	
+	file(COPY ${TESTLISTS} DESTINATION "${TFW_PACKAGE_DIR}" NO_SOURCE_PERMISSIONS)
+
+	copy_images()
+endif()

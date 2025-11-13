@@ -1,0 +1,9 @@
+type spot
+fov 120.000000
+glow 0
+lens_flare 0
+cast_shadow 0
+flicker 0
+color 0.259477 0.500000 0.153725
+intensity 5.000000
+radius 10.0

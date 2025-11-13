@@ -1,0 +1,9 @@
+set(SYSINF_INCLUDE_DIRS
+	${CMAKE_CURRENT_LIST_DIR}/../../../include/sysinf
+)
+message(STATUS "###${SYSINF_INCLUDE_DIRS}")
+find_library(SYSINF_LIB systeminfo)
+find_library(SYSINF_LIB_D systeminfo_d)
+set(SYSINF_LIBRARIES debug;${SYSINF_LIB_D} optimized;${SYSINF_LIB})
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(sysinf DEFAULT_MSG SYSINF_LIBRARIES SYSINF_INCLUDE_DIRS)

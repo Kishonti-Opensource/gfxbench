@@ -1,0 +1,1 @@
+# this file is used when debugging with ndk-gdb (APP_ABI variable is set in Application.mk)  

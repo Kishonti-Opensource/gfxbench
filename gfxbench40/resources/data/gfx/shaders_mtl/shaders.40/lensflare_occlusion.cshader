@@ -1,0 +1,30 @@
+kernel void shader_main(uint2				global_id	[[thread_position_in_grid]],
+						depth2d<hfloat>		depth_tex	[[texture(0)]],
+						constant hfloat2 *	offsets		[[buffer(0)]],
+						constant hfloat4 &	sun_pos		[[buffer(1)]],
+						device atomic_uint * visibility	[[buffer(2)]])
+{
+	int idx = int(global_id.x) ;
+	
+	_float sample_region_size = 0.2 ;
+
+	_float2 offset = sample_region_size*_float2(offsets[idx]);
+	
+	_float2 sc = _float2(sun_pos.xy) + offset ;
+	
+	if ( (sc.x < 0.0) || (sc.y < 0.0) || (sc.x > 1.0) || (sc.y > 1.0) || (sun_pos.w > 0.0))
+	{
+		return ;
+	}
+
+	constexpr sampler depth_sampler(coord::normalized, filter::nearest, address::clamp_to_edge);
+
+	sc.y = 1.0 - sc.y; // [AAPL] Y-FLIP
+	hfloat d = depth_tex.sample(depth_sampler, hfloat2(sc));
+
+	if (abs(1.0-d) < 0.0001)
+	{
+		atomic_fetch_add_explicit(visibility, 1u, memory_order::memory_order_relaxed);
+	}
+}
+

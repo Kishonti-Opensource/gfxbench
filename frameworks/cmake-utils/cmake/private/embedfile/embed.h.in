@@ -1,0 +1,10 @@
+//
+// Generated file -- do not modify it, your changes will be lost
+//
+#ifndef INCLUDED_@target_name@_H
+#define INCLUDED_@target_name@_H
+
+namespace @namespace@ {@embed_decl@
+}
+
+#endif

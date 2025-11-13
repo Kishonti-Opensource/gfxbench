@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+	<!-- test-select lib overrides -->
+    <integer name="list_main_column_weight">4</integer>
+    <integer name="list_main_text_weight">2</integer>
+    <integer name="list_main_cb_weight">2</integer>
+    <integer name="list_variant_sum_weight">4</integer>
+	<!-- test-select lib overrides end -->
+	
+</resources>

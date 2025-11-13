@@ -1,0 +1,162 @@
+{
+    "version": 1,
+    "tests": [
+        {
+            "test_name": "metal_4",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+    	{
+            "test_name": "metal_manhattan31",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "metal_manhattan",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "metal_trex",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "metal_alu2",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "metal_driver2",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "metal_fill2",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "MTexel/s"}
+            ]
+        },
+        {
+            "test_name": "metal_manhattan31_battery",
+            "group_name": "group_battery",
+            "run_order": 3,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+                "battery",
+                "runalone"
+            ],
+            "results": [
+                {"result_postfix": "_performance", "unit":"Frame"},
+                {"result_postfix": "_lifetime", "unit":"min"}
+            ]
+        },
+        {
+            "test_name": "metal_trex_battery",
+            "group_name": "group_battery",
+            "run_order": 3,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {"type": "METAL", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+                "battery",
+                "runalone"
+            ],
+            "results": [
+                {"result_postfix": "_performance", "unit":"Frame"},
+                {"result_postfix": "_lifetime", "unit":"min"}
+            ]
+        }
+    ]
+}

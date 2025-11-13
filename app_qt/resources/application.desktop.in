@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=@PRODUCT_VERSION@
+Name=@PRODUCT_NAME@
+GenericName=Benchmark
+Icon=/usr/lib/@PACKAGE_NAME@/images/icon.png
+Exec=/usr/lib/@PACKAGE_NAME@/bin/@PRODUCT_ID@@POSTFIX@
+Categories=Utility

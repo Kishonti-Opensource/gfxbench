@@ -1,0 +1,73 @@
+{
+	"distance_scale": 1.5,
+	"size_scale":     0.8,
+	
+	"sun_dir_x": 0.907,
+	"sun_dir_y": -0.301,
+	"sun_dir_z": -0.295,
+	
+	"flares" : [
+		{
+			"distance": -0.99,
+			"size":      2.0,
+			"texture":  "lensflare_07.png"
+		},
+		{
+			"distance": -1.0,
+			"size":      1.5,
+			"texture":  "lensflare_06.png"
+		},		
+		{
+			"distance": -0.33,
+			"size":      0.1,
+			"texture":  "lensflare_04.png"
+		},
+		{
+			"distance": -0.25,
+			"size":      0.3,
+			"texture":  "lensflare_04.png"
+		},
+		{
+			"distance":  0.18,
+			"size":      0.6,
+			"texture":  "lensflare_07.png"
+		},
+		{
+			"distance":  0.2,
+			"size":      0.2,
+			"texture":  "lensflare_02.png"
+		},
+		{
+			"distance":  0.26,
+			"size":      0.2,
+			"texture":  "lensflare_02.png"
+		},
+		{
+			"distance":  0.28,
+			"size":      0.2,
+			"texture":  "lensflare_05.png"
+		},		
+		{
+			"distance":  0.66,
+			"size":      0.5,
+			"texture":  "lensflare_02.png"
+		
+		},
+		{
+			"distance":  0.87,
+			"size":      0.2,
+			"texture":  "lensflare_03.png"	
+		},
+		{
+			"distance":  0.95,
+			"size":      0.2,
+			"texture":  "lensflare_03.png"	
+		},
+		{
+			"distance":  0.96,
+			"size":      0.1,
+			"texture":  "lensflare_05.png"	
+		}	
+	
+	]
+}

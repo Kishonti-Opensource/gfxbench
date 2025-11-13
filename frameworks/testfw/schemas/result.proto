@@ -1,0 +1,103 @@
+package result;
+
+option java_package = "net.kishonti.schemas";
+option java_outer_classname = "proto";
+
+message Status {
+	enum Code {
+		OK = 0;
+		INCOMPATIBLE = 1;
+		CANCELLED = 2;
+		FAILED = 3;
+	}
+	required Code code = 1;      // hibakod
+	optional string error = 2;   // hiba eseten a hiba szoveges uzenete: lehet exception, vagy id?
+}
+
+message KeyValuePair {
+	optional string key = 1;
+	optional string value = 2;
+}
+
+message Statistic {
+	optional int32 load_time = 1 [ default = -1 ];      // inicializacio ideje
+	optional int32 elapsed_time = 2 [ default = -1 ];   // a teszt futasa alatt eltelt ido
+	optional int32 measured_time = 3 [ default = -1 ];  // a teszt meresenek ideje
+}
+
+message Score {
+	required double value = 1;          // az eredmeny ez alapjan kell rendezni
+	required string unit = 2;           // az eredmeny mertekegyseg azonositoja pl: FRAMES, FPS, MTEXPERSEC, stb... nem kozvetlenul ez lesz megjelenitve a UI-on
+}
+
+message Result {
+	required string test_id = 1;         // a teszt azonositoja
+	required Status status = 2;          // a teszt futasanak statusza
+	required Score score = 3;            // a teszt eredmenye
+
+	optional Descriptor descriptor = 10; // a teszt letrehozasara hasznalt descriptor (JSON); a testfw-s teszteknel kitoltendo
+	optional string version = 11;        // teszt verzioja: git-sha1, stb... Inkrementalis fejlesztesnel lehetne ellenorizni, hogy melyik kod produkalta az eredmenyt
+	optional Statistic stats = 12;
+
+	repeated KeyValuePair extras = 30;   // extra teszt specifikus adatok tarolhatok
+}
+
+// GFXBench Result/extras:
+// "egl_config_id" (a ténylegesen választott, nem amit a descriptorban kértünk)
+// "fps"
+// "frame_count"
+// "graphics_version" (GL_VERSION string), 
+// "renderer" (GL_VENDOR string)
+// "surface_height" (a tényleges futási felbontás)
+// "surface_width" (a tényleges futási felbontás)
+// a battery test produkal 30 db frame mértékegységű float score-t, és 30 db battery charge % mértékegységű float-ot - ezeket 2 db chart-ként kéne felvenni a ResultBundle-be
+
+// CompuBench Result/extras:
+// TODO
+
+// RTRTBench Result/extras:
+// TODO
+
+// ADASBench Result/extras:
+// TODO
+
+message ResultGroup {                    // osszetartozo eredmenyek csoportja, ezt a futtato alkalmazas allitja elo a tesztektol (testfw) visszakapott eredmeyek alapjan
+	repeated Result results = 1;         // egy futtatas soran mert osszetartozo eredmenyek. altalaban egyetlen adat, de pl: ADASBench-nel a parhuzamosan futtatott tesztek eredmenyeit nem lehet osszehasonlitani a kulon-kulon futtatottakkal
+	required Status status = 3;          // a csoport statusza; szamitott ertek: ha minden csoport elemenek statusza OK akkor OK, amugy FAILED
+	optional Score score = 4;            // szamitott ertek. a csoportba tartozo eredmenyek pontszamainak geometriai atlaga.
+	optional string group_id = 5;        // a tesztcsoport neve: pl: gl_alu, cl_fractal_juliaset, adas_composite, ng_map, ...
+	optional int64 timestamp = 6;        // a teszt futasanak idopontja (masodpercek 1970-01-01 ota)
+
+	repeated KeyValuePair extras = 10;   // extra informacio a tesztcsoporthoz
+}
+
+message Samples {
+	repeated double values = 1;
+	optional string name = 2;
+}
+
+message Chart {
+	required Samples domain = 1;         // a grafikon ertelmezesi tartomanya
+	repeated Samples values = 2;         // a mert adatsorok; domain.values elemszama meg kell egyezzen a values.values elemszamaval
+	optional string chart_id = 3;        // a grafikon azonositoja: pl "battery", "cpu"
+	optional string domain_axis = 4;     // a ertelemezesi tartomany neve; 2D-s grafikon reprezentacio eseten a vizszintes tengely neve; TODO: felirat vagy id?
+	optional string sample_axis = 5;     // az ertekkeszlet neve: TODO: felirat vagy id?
+}
+
+message AppDescriptor {
+	required string AppName = 1;         // pl: GFXBench
+	required string AppType = 2;		 // pl: Community, Beta2, RC5 (utóbbiak csak Corporate-ek lehetnek)
+	required string AppVersion = 3;      // pl: 3.0.11
+}
+
+message DeviceInfo {
+	// TODO
+}
+
+message ResultBundle {
+	required int32 version = 1 [ default = 2 ];  // a bundle formatumanak verzioja
+	required AppDescriptor app_desc = 2;         // a benchmark program leírója
+	repeated ResultGroup groups = 3;             // a futas soran mert eredmenyek, ertelmezes szerint csoportositva
+	repeated Chart charts = 5;                   // a futas soran mert grafikonok: TODO: ha itt van nem tudja a teszt gyartani
+	required DeviceInfo device_info = 10;        // a futáshoz tartozó device-infó (pl. 2 futás között valaki kicserélhette a GPU-t, RAM-ot, etc.)
+}

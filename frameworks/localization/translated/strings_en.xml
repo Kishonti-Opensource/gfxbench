@@ -1,0 +1,1288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="DeleteUserDialogBody">This will erase your registered GFXBench account. Are you sure about this?</string>
+  <string name="DeleteUserDialogTitle">Delete my user account</string>
+  <string name="AboutSectionTitle">About</string>
+  <string name="Accept">Accept</string>
+  <string name="AlreadyRunningBody">%s is already running</string>
+  <string name="AlreadyRunningTitle">Error</string>
+  <string name="ApiNotSupported">Not supported API version</string>
+  <string name="AppVersionCorporate">Corporate Version %s</string>
+  <string name="Back">Back</string>
+  <string name="BAD_VERSION">You are using an old version of the application. Please update!</string>
+  <string name="Battery">Battery</string>
+  <string name="BatteryBrightness100">Force 100%</string>
+  <string name="BatteryBrightness25">Force 25%</string>
+  <string name="BatteryBrightness50">Force 50%</string>
+  <string name="BatteryBrightness75">Force 75%</string>
+  <string name="BatteryBrightnessDefault">Default</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">Charging</string>
+  <string name="BatteryConnected">This test cannot be started with the battery charger plugged in.</string>
+  <string name="BatteryConnectedBody">This test cannot be started with the battery charger plugged in.</string>
+  <string name="BatteryConnectedTitle">Unplug charger</string>
+  <string name="BatteryPageTitle">Battery diagram</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">Plugged</string>
+  <string name="BatteryUnplugged">Unplugged</string>
+  <string name="BestResults">Best results</string>
+  <string name="Camera_Autofocus">Autofocus</string>
+  <string name="Camera_FaceDetection">Face detection</string>
+  <string name="Camera_Flash">Flash</string>
+  <string name="Camera_GeoTagging">Geo-tagging</string>
+  <string name="Camera_HDR">HDR photo</string>
+  <string name="Camera_Picture">Picture</string>
+  <string name="Camera_TouchFocus">Touch focus</string>
+  <string name="Camera_Video">Video</string>
+  <string name="Cancel">Cancel</string>
+  <string name="Cancelled">Cancelled</string>
+  <string name="Chipset">Chipset</string>
+  <string name="ClearAll">Clear all</string>
+  <string name="ClearHistoryDialogBody">This will clear all result data. Are you sure about this?</string>
+  <string name="ClearHistoryDialogTitle">Clear History</string>
+  <string name="Close">Close</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">Connecting to server.</string>
+  <string name="ContactUs">Contact us</string>
+  <string name="CorporateCommercialTitle">About licensing</string>
+  <string name="CorporateFeatures">Corporate Features (not available in the Community Edition)</string>
+  <string name="DatabaseErrorBody">Error accessing database: %s</string>
+  <string name="DatabaseErrorTitle">Database error</string>
+  <string name="Decline">Decline</string>
+  <string name="Default">Default</string>
+  <string name="DeviceMayCrashDialogBody">Your device might not have enough memory to run this test. We recommend that you close all other applications and/or restart your device because it may crash due to low memory conditions otherwise.</string>
+  <string name="DeviceMayCrashDialogTitle">High memory consumption</string>
+  <string name="DirFromAssetTask">Copying data from asset</string>
+  <string name="Display">Display</string>
+  <string name="DownloadDatabaseEveryStartup">Download database at every startup</string>
+  <string name="Email">Email</string>
+  <string name="EMAIL_TAKEN">This email address is already in use. Please choose another one.</string>
+  <string name="EmailTakenDialogBody">This email address is already taken by another user. Please select another one and try again.</string>
+  <string name="EmailTakenDialogTitle">Email is in use</string>
+  <string name="EnableExtraBattery">Enable extra battery</string>
+  <string name="Error">Error!</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">Stopped, brightness changed</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">Stopped, charger plugged</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">Built with incompatible ES version</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">DirectX feature level not available</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">ES 3 not supported</string>
+  <string name="ERROR_FILE_NOT_FOUND">File not found</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">Invalid screen resolution</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">Your device does not support motion blur with MSAA</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">Your device does not support offscreen</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">Your device does not support offscreen with MSAA</string>
+  <string name="ERROR_OUT_OF_MEMORY">Out of memory</string>
+  <string name="ERROR_OUT_OF_VMEMORY">Out of video memory</string>
+  <string name="ERROR_SHADER_ERROR">Shader error</string>
+  <string name="ERROR_SKIPPED">Skipped</string>
+  <string name="ERROR_UNDEFINED_ERROR">Undefined error</string>
+  <string name="ERROR_UNKNOWNERROR">Unknown error</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">Unsupported texture format</string>
+  <string name="ERROR_VBO_ERROR">VBO error</string>
+  <string name="FeatureAccelerometer">Accelerometer</string>
+  <string name="FeatureAltimeter">Altimeter</string>
+  <string name="FeatureBarometer">Barometer</string>
+  <string name="FeatureBluetooth">Bluetooth</string>
+  <string name="FeatureCompass">Compass</string>
+  <string name="FeatureCPUCoreCount">Cores</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">Gyroscope</string>
+  <string name="FeatureInclinometer">Inclinometer</string>
+  <string name="FeatureLevel">Feature level</string>
+  <string name="FeatureLightSensor">Light sensor</string>
+  <string name="FeatureMagnetometer">Magnetometer</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">Proximity</string>
+  <string name="Features">Features</string>
+  <string name="FeatureSIMCount">SIM cards</string>
+  <string name="FeatureThermometer">Thermometer</string>
+  <string name="FeatureTouchscreenCapacitive">capacitive touchscreen</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">capacitive touchscreen with at least 5 finger gesture support</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">capacitive touchscreen with multi-touch gesture support</string>
+  <string name="FeatureTouchscreenResistive">resistive touchscreen</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">resistive touchscreen with at least 5 finger gesture support</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">resistive touchscreen with multi-touch gesture support</string>
+  <string name="FillTheForm">Please fill the form below.</string>
+  <string name="FindOutMore">Find out more</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">Follow us</string>
+  <string name="ForceDisplayBrightness">Force display brightness.</string>
+  <string name="ForgotPasswordSendToEmail">Send to my email address.</string>
+  <string name="ForgotPasswordSentToEmail">We have sent you an email. Please follow the instructions to reset your password.</string>
+  <string name="FromAssetDirDialogTitle">Pushed data not found</string>
+  <string name="FromAssetDirDialogBody">We will copy the data to the following path from the assets: %s. If you would like to copy your own data please use: adb push "sourcedir" "targetdir (as above)"</string>
+  <string name="Height">Height</string>
+  <string name="InitializingDatabase">Initializing database...</string>
+  <string name="INTERNAL_ERROR">Server error. Please come back later.</string>
+  <string name="INVALID_CREDENTIALS">Your login name or password is wrong. Please retype.</string>
+  <string name="INVALID_EMAIL_ADDRESS">Invalid email address. Please type again.</string>
+  <string name="InvalidCredentialsBody">Your login name or password is wrong. Please retype.</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">The given email address is invalid. Please give a valid one and try again.</string>
+  <string name="InvalidEmailDialogTitle">Email address error</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">Latest Results</string>
+  <string name="LicenseDialogTitle">General License</string>
+  <string name="Lifetime">Lifetime</string>
+  <string name="Loading">Loading...</string>
+  <string name="LoadingDeviceInfo">Collecting device information.</string>
+  <string name="LoadingDuelInfo">Collecting duel information.</string>
+  <string name="LoadingNextTest">Loading next test...</string>
+  <string name="LoadingTest">Loading %s...</string>
+  <string name="Login">Log in</string>
+  <string name="LoginFailedDialogBody">Username or password mismatch. Please retype.</string>
+  <string name="LoginFailedDialogTitle">Login error</string>
+  <string name="LoginForgotPassword">Forgot your password?</string>
+  <string name="LoginTitle">Login</string>
+  <string name="Logout">Log out</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="Missing_single_context">Multi-GPU not supported</string>
+  <string name="Missing_battery">No battery detected</string>
+  <string name="MISSING_PARAMETER">Please type your login name and password.</string>
+  <string name="MissingParametersDialogBody">One or more of the required information is missing. Please fill them and try again.</string>
+  <string name="MissingParametersDialogTitle">Missing parameters</string>
+  <string name="More">More</string>
+  <string name="NetRequirementDialogBody">The benchmark only stores and displays results if you have an active internet connection.</string>
+  <string name="NetRequirementDialogTitle">Information</string>
+  <string name="NETWORK_ERROR">Network error. Please try again later.</string>
+  <string name="NetworkErrorBody">Network error: %s</string>
+  <string name="NetworkErrorTitle">Network error</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">No</string>
+  <string name="NoFreeSpaceDialogBody">The minimum required free space on SDCard: %1$s MB</string>
+  <string name="NoFreeSpaceDialogTitle">Error</string>
+  <string name="NoInternetDialogBody">Internet connection not found. Please connect to a network and try again!</string>
+  <string name="NoInternetDialogTitle">No net found</string>
+  <string name="NoServerDialogBody">Something went wrong while connecting to our server. Please try again later.</string>
+  <string name="NoServerDialogTitle">Server not found</string>
+  <string name="NoTestSelectedDialogBody">Please select at least one test to run!</string>
+  <string name="NoTestSelectedDialogTitle">No test selected</string>
+  <string name="NotRegisteredSectionBody">The benchmark always stores the results of each testrun. If you would like to access and browse your test results history, please create a user account!</string>
+  <string name="NotRegisteredSectionTitle">Info</string>
+  <string name="NotSupported">Not supported</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="OffscreenHeight">Offscreen height</string>
+  <string name="OffscreenWidth">Offscreen width</string>
+  <string name="OK">OK</string>
+  <string name="OperatingSystem">OS</string>
+  <string name="OperatingSystemFull">Operating System</string>
+  <string name="OutdatedDialogBody">You are using an old version of the application. Please update!</string>
+  <string name="OutdatedDialogTitle">Outdated version</string>
+  <string name="Password">Password</string>
+  <string name="PasswordMismatchDialogBody">Password mismatch. Please retype your password.</string>
+  <string name="PasswordMismatchDialogTitle">Password error</string>
+  <string name="Performance">Performance</string>
+  <string name="PrimaryScreenBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">Quit</string>
+  <string name="ReadLicense">Read EULA</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Ready">Ready</string>
+  <string name="Register">Register</string>
+  <string name="RegisterEmail">Email address</string>
+  <string name="RegisterError">Accept privacy terms and register now.</string>
+  <string name="RegisterErrorEmailNotOK">Please choose another Email address.</string>
+  <string name="RegisterErrorLoginNotOK">Please choose another Login name.</string>
+  <string name="RegisterErrorNoEmail">Fill in the Email address field please.</string>
+  <string name="RegisterErrorNoFirstName">Fill in the First name field please.</string>
+  <string name="RegisterErrorNoLastName">Fill in the Last name field please.</string>
+  <string name="RegisterErrorNoLogin">Fill in the Login name field please.</string>
+  <string name="RegisterErrorNoPassword">Fill in the Password field please.</string>
+  <string name="RegisterErrorPasswordsNotMatching">Passwords do not match. Please retype.</string>
+  <string name="RegisterFirstName">First name</string>
+  <string name="RegisterLastName">Last name</string>
+  <string name="RegisterLogin">Choose a login name</string>
+  <string name="RegisterPassword">Password</string>
+  <string name="RegisterPasswordAgain">Retype your password</string>
+  <string name="RegistrationFeedbackDialogBody">You have registered successfully. We sent you a notification email at the given address.</string>
+  <string name="RegistrationFeedbackDialogTitle">Successful registration</string>
+  <string name="RegistrationForm">Registration form</string>
+  <string name="RememberMe">Remember me</string>
+  <string name="Requirement">Minimum API requirement:</string>
+  <string name="ResetTutorials">Reset Tutorials</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">Result history</string>
+  <string name="Results_BatteryEstimatedTime">Battery - Estimated time</string>
+  <string name="Results_BatteryPerformance">Battery - Performance</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">N/A</string>
+  <string name="Results_NoBatteryResultYet">No battery result yet.</string>
+  <string name="Results_NoResultsYet">No results yet.</string>
+  <string name="Results_RunningTime">Running time</string>
+  <string name="Results_ShowBatteryDiagram">Show Battery Diagram</string>
+  <string name="Retry">Retry</string>
+  <string name="SaveResultsExcel">Save results</string>
+  <string name="Score">Score</string>
+  <string name="Search">Search</string>
+  <string name="SelectAll">Select all</string>
+  <string name="SelectLanguage">Select language</string>
+  <string name="SelectTests">Test select</string>
+  <string name="ServerTimeoutDialogBody">Network timeout. Please come back later.</string>
+  <string name="ServerTimeoutDialogTitle">Server timeout</string>
+  <string name="SetBatteryBrightness">Battery Test brightness</string>
+  <string name="SetOffscrResolution">Offscreen resolution</string>
+  <string name="SetOnscrResolution">Custom resolution</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">Show FPS</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">You are about to select a battery test. This will unselect all other tests.  For this test, make sure that your device is fully charged and unplug your device.  Please note that your device might overheat during testing.</string>
+  <string name="StabilityTestTitle">Battery Test</string>
+  <string name="Start">Start</string>
+  <string name="StartAll">Start all</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">Not supported context version</string>
+  <string name="STATUS_CANCELLED">Cancelled</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">Cannot create test</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">Invalid configuration</string>
+  <string name="STATUS_NATIVEEXCEPTION">Test failure</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">Test not valid</string>
+  <string name="STATUS_UNKNOWNERR">Unknown error</string>
+  <string name="StorageCheck">Determinig the storage for the huge datasets</string>
+  <string name="Supported">Supported</string>
+  <string name="SwitchStateOff">Off</string>
+  <string name="SwitchStateOn">On</string>
+  <string name="ShowString">Show</string>
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobile results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>
+  <string name="SyncErrorDialogBody">The following error occured while synchronizing: %s</string>
+  <string name="SyncErrorDialogTitle">Synchronization error</string>
+  <string name="Synchronization">Synchronizing...</string>
+  <string name="SyncLotDialogBody">The benchmark will now synchronize the application data with the server. This requires downloading %s. Do you allow this?</string>
+  <string name="SyncLotDialogTitle">Data synchronization</string>
+  <string name="SyncronizingChecksum">Checking files for changes...</string>
+  <string name="SyncronizingLoadingString">Synchronizing files %1$s%% (%2$s / %3$s MB)</string>
+  <string name="TabCompare">Compare</string>
+  <string name="TabDuel">Duel</string>
+  <string name="TabGlInfo">OpenGL Information</string>
+  <string name="TabDetailedInfo">3D API Details</string>
+  <string name="TabHome">Home</string>
+  <string name="TabInfo">Info</string>
+  <string name="TabResults">Results</string>
+  <string name="TabSettings">Settings</string>
+  <string name="TestList">Test List</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>
+  <string name="TestSelection">Test selection</string>
+  <string name="ThreeDAPI">3D API</string>
+  <string name="UnkownErrorDialogBody">Unexpected error during registration. Please try again later.</string>
+  <string name="UnkownErrorDialogTitle">Error</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">Upload results</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">User</string>
+  <string name="USER_NAME_TAKEN">This user name is already taken. Please choose another one.</string>
+  <string name="Username">Username</string>
+  <string name="UsernameTakenDialogBody">This username is currently used by another user. Please select another one and try again.</string>
+  <string name="UsernameTakenDialogTitle">Username is already taken</string>
+  <string name="Version">Version %s</string>
+  <string name="VSYNC_LIMITED">Great score achieved! (V-sync reached during the test)</string>
+  <string name="VSYNC_MAXED">Maximum score achieved! (V-sync through the whole test)</string>
+  <string name="WarningEULA">Please read the end-user license agreement.</string>
+  <string name="WarningNoInternet">No internet connection found. Please connect to a network to run the tests.</string>
+  <string name="WarningOutdated">You are using an old version of the application. Please update!</string>
+  <string name="WarningTestNotRunNoInternet">Test failed because no internet connection was found. Please connect to a network to run the tests.</string>
+  <string name="WarningUnregistered">Please register an account.</string>
+  <string name="Welcome">Welcome! You are now logged in as:</string>
+  <string name="Width">Width</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">Yes</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">Your Device</string>
+
+  <!-- System info -->
+  <string name="device">Device</string>
+  <string name="os">Operating system</string>
+  <string name="display">Display</string>
+  <string name="cpu">CPU</string>
+  <string name="gpu">GPU</string>
+  <string name="memory">Memory</string>
+  <string name="storage">Storage</string>
+  <string name="battery">Battery</string>
+  <string name="features">Features</string>
+  <string name="frontcamera">Front camera</string>
+  <string name="backcamera">Back camera</string>
+
+  <!-- APIs -->
+  <string name="gl">OpenGL</string>
+  <string name="cs">OpenGL</string>
+  <string name="gles">OpenGL ES</string>
+  <string name="egl">EGL</string>
+  <string name="dx">DirectX 11</string>
+  <string name="dx12">DirectX 12</string>
+  <string name="vk">Vulkan</string>
+  <string name="vulkan">Vulkan</string>
+  <string name="metal">Metal</string>
+  <string name="mtl">Metal</string>
+  <string name="rs">RenderScript</string>
+  <string name="cl">OpenCL</string>
+  <string name="cuda">Cuda</string>
+  <string name="cu">Cuda</string>
+
+  <!-- Metal system info -->
+  <string name="MTLFeatureSet_iOS_GPUFamily1_v1">Metal GPU Family 1 v1</string>
+  <string name="MTLFeatureSet_iOS_GPUFamily2_v1">Metal GPU Family 2 v1</string>
+  <string name="max_color_attachment_per_passdesc">Maximum number of color attachments per MTLRenderPassDescriptor</string>
+  <string name="max_color_out_per_sample_per_pass">Maximum color data output per sample (across all color attachments) per rendering pass</string>
+  <string name="astc_support">Supports ASTC pixel formats</string>
+  <string name="min_attachment_size">Minimum attachment size (color or depth/stencil), width or height</string>
+  <string name="threadgroup_memory_alloc_size_inc">Threadgroup memory allocation size increment</string>
+  <string name="max_threadgroup_mem_alloc">Maximum total threadgroup memory allocation</string>
+  <string name="max_texture_desc_height_width">Maximum MTLTextureDescriptor height and width</string>
+  <string name="max_texture_desc_depth">Maximum MTLTextureDescriptor depth</string>
+  <string name="max_entries_buffer">Maximum number of entries in argument tables for render and compute command encoders (buffer)</string>
+  <string name="max_entries_texture">Maximum number of entries in argument tables for render and compute command encoders (texture)</string>
+  <string name="max_entries_samplerstate">Maximum number of entries in argument tables for render and compute command encoders (sampler state)</string>
+
+  <string name="opencl device">OpenCL Device</string>
+
+  <!-- CompuBench -->
+  <string product="compubench_cl" name="AboutSectionBody">CompuBench is the first professional OpenCL benchmark to test and compare the parallel compute performance of CPUs, GPUs and accelerators of desktop devices. CompuBench CL is developed by Kishonti Ltd. If you are interested in what we do, please visit our website at kishonti.net!</string>
+  <string product="compubench_cl" name="CorporateCommercial">Please note that you are now using the community edition of CompuBench CL. For development purposes we recommend the corporate edition. If you need information on licensing, please contact us at sales@kishonti.net!</string>
+  <string product="compubench_gl" name="CorporateCommercial">Please note that you are now using the community edition of CompuBench GL. For development purposes we recommend the corporate edition. If you need information on licensing, please contact us at sales@kishonti.net!</string>
+  <string product="compubench_cuda" name="CorporateCommercial">Please note that you are now using the community edition of CompuBench Cuda. For development purposes we recommend the corporate edition. If you need information on licensing, please contact us at sales@kishonti.net!</string>
+  <string product="compubench_metal" name="CorporateCommercial">Please note that you are now using the community edition of CompuBench Metal. For development purposes we recommend the corporate edition. If you need information on licensing, please contact us at sales@kishonti.net!</string>
+  <string product="compubench_cl" name="FollowUsSectionBody">CompuBench CL is a cross-platform 3D graphics benchmark to measure the performance of your device and compare it to other devices.</string>
+  <string product="compubench_gl" name="FollowUsSectionBody">CompuBench GL is a cross-platform 3D graphics benchmark to measure the performance of your device and compare it to other devices.</string>
+  <string product="compubench_cuda" name="FollowUsSectionBody">CompuBench CUDA is a cross-platform 3D graphics benchmark to measure the performance of your device and compare it to other devices.</string>
+  <string product="compubench_metal" name="FollowUsSectionBody">CompuBench Metal is a cross-platform 3D graphics benchmark to measure the performance of your device and compare it to other devices.</string>
+  <string name="CannotLoadOpenCLBody">Failed to load OpenCL.dll.\nPlease reinstall graphics driver or the OpenCL SDK.</string>
+  <string name="CannotLoadOpenCLTitle">OpenCL Error</string>
+  <string name="ERROR_NO_CONTEXT">No context</string>
+  <string name="STATUS_INTEL_ON_AMD">Intel CPUs with AMD APP SDK are not supported</string>
+  <string name="STATUS_NO_ATOMICS_SUPPORT">No atomics support</string>
+  <string name="STATUS_NO_MULTICONTEXT_SUPPORT">No multi-context support</string>
+  <string name="STATUS_OCL_OLDDRIVER">Please update your device drivers</string>
+  <string name="STATUS_OCL10">OpenCL 1.0 devices are not supported</string>
+  <string name="STATUS_SKIPPING_INTEL_OSX">Skipping Intel GPUs on OSX</string>
+  <string name="TabClInfo">OpenCL Information</string>
+
+  <!-- CompuBench common -->
+  <string name="group_computer_vision">Computer Vision</string>
+  <string name="group_physics">Physics</string>
+  <string name="group_throughput">Throughput</string>
+  <string name="group_graphics">Graphics</string>
+  <string name="group_video_processing">Video Processing</string>
+  <string name="group_image_processing">Image Processing</string>
+
+  <string name="advanced_compute">Advanced Compute</string>
+  <string name="game_effects">Game Effects</string>
+  <string name="hqcgi_rendering">Hight Quality Computer Generated Imagery and Rendering</string>
+  <string name="computer_vision">Computer Vision</string>
+
+  <string name="opengl_compute">OpenGL compute</string>
+  <string name="opencl_compute">OpenCL compute</string>
+  <string name="cuda_compute">Cuda compute</string>
+  <string name="metal_compute">Metal compute</string>
+  <string name="renderscript_compute">RenderScript compute</string>
+
+  <!-- CompuBenchCL common -->
+  <string name="cl_diag">CL Diagnostics</string>
+  <string name="cl_diag_desc">Checks if the selected device works correctly with a simple kernel execution.</string>
+  <string product="compubench_cl" name="TestLoading"> </string>
+  <string product="compubench_gl" name="TestLoading"> </string>
+  <string product="compubench_cuda" name="TestLoading"> </string>
+  <string product="compubench_metal" name="TestLoading"> </string>
+  <string product="compubench_cl" name="Offscreen">NoViz</string>
+  <string product="compubench_cl" name="Onscreen">Viz</string>
+  <string product="compubench_gl" name="Offscreen">NoViz</string>
+  <string product="compubench_gl" name="Onscreen">Viz</string>
+  <string product="compubench_cuda" name="Offscreen">NoViz</string>
+  <string product="compubench_cuda" name="Onscreen">Viz</string>
+  <string product="compubench_metal" name="Offscreen">NoViz</string>
+  <string product="compubench_metal" name="Onscreen">Viz</string>
+
+
+  <!-- CompuBenchCL Desktop -->
+  <string name="cl_facedetect">Face detection - Image</string>
+  <string name="cl_facedetect_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cl_opticalflow_tvl1">TV-L1 Optical Flow</string>
+  <string name="cl_opticalflow_tvl1_desc">Test based on dense motion vector calculation using variational method. Optical flow is widely used for video compression and enhancing video quality in computer vision-based use cases such as driver assistance systems or motion detection. Result metrics: mpixel/sec</string>
+
+  <string name="cl_fft">Ocean Surface Simulation</string>
+  <string name="cl_fft_desc">Test of the FFT algorithm based on ocean wave simulation. The fast Fourier transform computes transformations of time or space to frequency and vice versa. FFTs are widely used in engineering, science, and mathematics. Result metrics: frames/sec</string>
+  <string name="cl_fluid_64k">Particle Simulation - 64k</string>
+  <string name="cl_fluid_64k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+
+  <string name="cl_raytrace_kcl">T-Rex</string>
+  <string name="cl_raytrace_kcl_desc">Path tracer featuring dynamically updated acceleration structure and global illumination. Result metrics: frames/sec</string>
+
+  <string name="cl_video_proc">Video Composition</string>
+  <string name="cl_video_proc_desc">This test replicates a typical video composition pipeline with effects such as pixelate, mask, mix and blur. Result metrics: frames/sec</string>
+  <string name="cl_bitcoin">Bitcoin Mining</string>
+  <string name="cl_bitcoin_desc">The popular Bitcoin algorithm tests the integer performance of the device. Result metrics: mhash/sec</string>
+
+  <!-- CompuBenchCL Mobile -->
+  <string name="cl_facedetect_img">Face detection - Image</string>
+  <string name="cl_facedetect_img_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cl_facedetect_buff">Face detection - Buffer</string>
+  <string name="cl_facedetect_buff_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="cl_facedetect_img_off">Face detection - Image (NoViz)</string>
+  <string name="cl_facedetect_img_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cl_facedetect_buff_off">Face detection - Buffer (NoViz)</string>
+  <string name="cl_facedetect_buff_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="cl_fluid_32k">Particle Simulation - 32k</string>
+  <string name="cl_fluid_32k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="cl_fluid_32k_off">Particle Simulation - 32k (NoViz)</string>
+  <string name="cl_fluid_32k_off_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+
+  <string name="cl_fractal_juliaset">Julia Set</string>
+  <string name="cl_fractal_juliaset_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="cl_raytrace_ambocc">Ambient Occlusion</string>
+  <string name="cl_raytrace_ambocc_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="cl_fractal_juliaset_off">Julia Set (NoViz)</string>
+  <string name="cl_fractal_juliaset_off_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="cl_raytrace_ambocc_off">Ambient Occlusion (NoViz)</string>
+  <string name="cl_raytrace_ambocc_off_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="cl_raytrace_raycast">Provence</string>
+  <string name="cl_raytrace_raycast_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+  <string name="cl_raytrace_raycast_off">Provence (NoViz)</string>
+  <string name="cl_raytrace_raycast_off_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+
+  <string name="cl_gauss_img">Gaussian Blur - Image</string>
+  <string name="cl_gauss_img_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="cl_gauss_buff">Gaussian Blur - Buffer</string>
+  <string name="cl_gauss_buff_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="cl_histogram_img">Histogram - Image</string>
+  <string name="cl_histogram_img_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="cl_histogram_buff">Histogram - Buffer</string>
+  <string name="cl_histogram_buff_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <string name="cl_gauss_img_off">Gaussian Blur - Image (NoViz)</string>
+  <string name="cl_gauss_img_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="cl_gauss_buff_off">Gaussian Blur - Buffer (NoViz)</string>
+  <string name="cl_gauss_buff_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="cl_histogram_img_off">Histogram - Image (NoViz)</string>
+  <string name="cl_histogram_img_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="cl_histogram_buff_off">Histogram - Buffer (NoViz)</string>
+  <string name="cl_histogram_buff_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <!-- CompuBenchGL Mobile -->
+  <string name="cs_facedetect_img">Face detection - Image</string>
+  <string name="cs_facedetect_img_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cs_facedetect_buff">Face detection - Buffer</string>
+  <string name="cs_facedetect_buff_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="cs_facedetect_img_off">Face detection - Image (NoViz)</string>
+  <string name="cs_facedetect_img_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cs_facedetect_buff_off">Face detection - Buffer (NoViz)</string>
+  <string name="cs_facedetect_buff_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="cs_fluid_32k">Particle Simulation - 32k</string>
+  <string name="cs_fluid_32k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="cs_fluid_32k_off">Particle Simulation - 32k (NoViz)</string>
+  <string name="cs_fluid_32k_off_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+
+  <string name="cs_fractal_juliaset">Julia Set</string>
+  <string name="cs_fractal_juliaset_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="cs_raytrace_ambocc">Ambient Occlusion</string>
+  <string name="cs_raytrace_ambocc_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="cs_fractal_juliaset_off">Julia Set (NoViz)</string>
+  <string name="cs_fractal_juliaset_off_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="cs_raytrace_ambocc_off">Ambient Occlusion (NoViz)</string>
+  <string name="cs_raytrace_ambocc_off_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="cs_raytrace_raycast">Provence</string>
+  <string name="cs_raytrace_raycast_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+  <string name="cs_raytrace_raycast_off">Provence (NoViz)</string>
+  <string name="cs_raytrace_raycast_off_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+
+  <string name="cs_gauss_img">Gaussian Blur - Image</string>
+  <string name="cs_gauss_img_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="cs_gauss_buff">Gaussian Blur - Buffer</string>
+  <string name="cs_gauss_buff_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="cs_histogram_img">Histogram - Image</string>
+  <string name="cs_histogram_img_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="cs_histogram_buff">Histogram - Buffer</string>
+  <string name="cs_histogram_buff_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <string name="cs_gauss_img_off">Gaussian Blur - Image (NoViz)</string>
+  <string name="cs_gauss_img_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="cs_gauss_buff_off">Gaussian Blur - Buffer (NoViz)</string>
+  <string name="cs_gauss_buff_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="cs_histogram_img_off">Histogram - Image (NoViz)</string>
+  <string name="cs_histogram_img_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="cs_histogram_buff_off">Histogram - Buffer (NoViz)</string>
+  <string name="cs_histogram_buff_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <!-- CompuBenchCUDA Mobile -->
+  <string name="cu_facedetect_img">Face detection - Image</string>
+  <string name="cu_facedetect_img_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cu_facedetect_buff">Face detection - Buffer</string>
+  <string name="cu_facedetect_buff_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="cu_facedetect_img_off">Face detection - Image (NoViz)</string>
+  <string name="cu_facedetect_img_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="cu_facedetect_buff_off">Face detection - Buffer (NoViz)</string>
+  <string name="cu_facedetect_buff_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="cu_fluid_32k">Particle Simulation - 32k</string>
+  <string name="cu_fluid_32k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="cu_fluid_32k_off">Particle Simulation - 32k (NoViz)</string>
+  <string name="cu_fluid_32k_off_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+
+  <string name="cu_fractal_juliaset">Julia Set</string>
+  <string name="cu_fractal_juliaset_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="cu_raytrace_ambocc">Ambient Occlusion</string>
+  <string name="cu_raytrace_ambocc_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="cu_fractal_juliaset_off">Julia Set (NoViz)</string>
+  <string name="cu_fractal_juliaset_off_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="cu_raytrace_ambocc_off">Ambient Occlusion (NoViz)</string>
+  <string name="cu_raytrace_ambocc_off_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="cu_raytrace_raycast">Provence</string>
+  <string name="cu_raytrace_raycast_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+  <string name="cu_raytrace_raycast_off">Provence (NoViz)</string>
+  <string name="cu_raytrace_raycast_off_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+
+  <string name="cu_gauss_img">Gaussian Blur - Image</string>
+  <string name="cu_gauss_img_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="cu_gauss_buff">Gaussian Blur - Buffer</string>
+  <string name="cu_gauss_buff_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="cu_histogram_img">Histogram - Image</string>
+  <string name="cu_histogram_img_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="cu_histogram_buff">Histogram - Buffer</string>
+  <string name="cu_histogram_buff_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <string name="cu_gauss_img_off">Gaussian Blur - Image (NoViz)</string>
+  <string name="cu_gauss_img_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="cu_gauss_buff_off">Gaussian Blur - Buffer (NoViz)</string>
+  <string name="cu_gauss_buff_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="cu_histogram_img_off">Histogram - Image (NoViz)</string>
+  <string name="cu_histogram_img_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="cu_histogram_buff_off">Histogram - Buffer (NoViz)</string>
+  <string name="cu_histogram_buff_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <!-- CompuBenchMETAL Mobile -->
+  <string name="mtl_facedetect_img">Face detection - Image</string>
+  <string name="mtl_facedetect_img_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="mtl_facedetect_buff">Face detection - Buffer</string>
+  <string name="mtl_facedetect_buff_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_facedetect_img_off">Face detection - Image (NoViz)</string>
+  <string name="mtl_facedetect_img_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="mtl_facedetect_buff_off">Face detection - Buffer (NoViz)</string>
+  <string name="mtl_facedetect_buff_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_fluid_32k">Particle Simulation - 32k</string>
+  <string name="mtl_fluid_32k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="mtl_fluid_32k_off">Particle Simulation - 32k (NoViz)</string>
+  <string name="mtl_fluid_32k_off_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+
+  <string name="mtl_fractal_juliaset">Julia Set</string>
+  <string name="mtl_fractal_juliaset_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="mtl_raytrace_ambocc">Ambient Occlusion</string>
+  <string name="mtl_raytrace_ambocc_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_fractal_juliaset_off">Julia Set (NoViz)</string>
+  <string name="mtl_fractal_juliaset_off_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="mtl_raytrace_ambocc_off">Ambient Occlusion (NoViz)</string>
+  <string name="mtl_raytrace_ambocc_off_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_raytrace_raycast">Provence</string>
+  <string name="mtl_raytrace_raycast_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+  <string name="mtl_raytrace_raycast_off">Provence (NoViz)</string>
+  <string name="mtl_raytrace_raycast_off_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_gauss_img">Gaussian Blur - Image</string>
+  <string name="mtl_gauss_img_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="mtl_gauss_buff">Gaussian Blur - Buffer</string>
+  <string name="mtl_gauss_buff_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_histogram_img">Histogram - Image</string>
+  <string name="mtl_histogram_img_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="mtl_histogram_buff">Histogram - Buffer</string>
+  <string name="mtl_histogram_buff_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_gauss_img_off">Gaussian Blur - Image (NoViz)</string>
+  <string name="mtl_gauss_img_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="mtl_gauss_buff_off">Gaussian Blur - Buffer (NoViz)</string>
+  <string name="mtl_gauss_buff_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+
+  <string name="mtl_histogram_img_off">Histogram - Image (NoViz)</string>
+  <string name="mtl_histogram_img_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="mtl_histogram_buff_off">Histogram - Buffer (NoViz)</string>
+  <string name="mtl_histogram_buff_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+
+  <!-- CompuBench RenderScript -->
+  <string name="rs_bitcoin">Bitcoin Mining</string>
+  <string name="rs_bitcoin_desc">The popular Bitcoin algorithm tests the integer performance of the device. Result metrics: mhash/sec</string>
+  <string name="rs_diag">CL Diagnostics</string>
+  <string name="rs_diag_desc">Checks if the selected device works correctly with a simple kernel execution.</string>
+  <string name="rs_facedetect">Face detection</string>
+  <string name="rs_facedetect_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="rs_facedetect_off">(NoViz) Face detection</string>
+  <string name="rs_facedetect_off_desc">Face detector based on the Viola-Jones algorithm. Face detection is extensively used in biometrics and digital image processing to determine locations and sizes of human faces  in digital images. Result metrics: mpixel/sec</string>
+  <string name="rs_fft">Ocean Surface Simulation</string>
+  <string name="rs_fft_desc">Test of the FFT algorithm based on ocean wave simulation. The fast Fourier transform computes transformations of time or space to frequency and vice versa. FFTs are widely used in engineering, science, and mathematics. Result metrics: frames/sec</string>
+  <string name="rs_fluid_4k">Particle Simulation - 4k</string>
+  <string name="rs_fluid_4k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="rs_fluid_4k_off">(NoViz) Particle Simulation - 4k</string>
+  <string name="rs_fluid_4k_off_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="rs_fluid_32k">Particle Simulation - 32k</string>
+  <string name="rs_fluid_32k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="rs_fluid_32k_off">(NoViz) Particle Simulation - 32k</string>
+  <string name="rs_fluid_32k_off_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="rs_fluid_64k">Particle Simulation - 64k</string>
+  <string name="rs_fluid_64k_desc">Particle Simulation in a spatial grid using the discrete element method. The result of the simulation is visualized as shaded point sprite spheres with OpenGL. Result metrics: minteractions/sec</string>
+  <string name="rs_fractal_juliaset">Julia Set</string>
+  <string name="rs_fractal_juliaset_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="rs_fractal_juliaset_off">(NoViz) Julia Set</string>
+  <string name="rs_fractal_juliaset_off_desc">The test computes the image of the Julia set for different complex parameters by interpolating between two complex points. Result metrics: mpixel/sec</string>
+  <string name="rs_gauss">Gaussian Blur</string>
+  <string name="rs_gauss_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="rs_gauss_off">(NoViz) Gaussian Blur</string>
+  <string name="rs_gauss_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="rs_gauss_intr">Gaussian Blur (Intrinsic)</string>
+  <string name="rs_gauss_intr_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="rs_gauss_intr_off">(NoViz) Gaussian Blur (Intrinsic)</string>
+  <string name="rs_gauss_intr_off_desc">Gaussian Blur demonstrated with animated blur radius. Gaussian smoothing is a common image processing technique to remove noise and reduce detail. Result metrics: mpixel/sec</string>
+  <string name="rs_histogram">Histogram</string>
+  <string name="rs_histogram_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="rs_histogram_off">(NoViz) Histogram</string>
+  <string name="rs_histogram_off_desc">Histogram equalization is an image processing method for contrast adjustment using the image's histogram. Equalization usually increases the global contrast of many images, especially when the usable data of the image is represented by close contrast values. Result metrics: mpixel/sec</string>
+  <string name="rs_opticalflow_tvl1">TV-L1 Optical Flow</string>
+  <string name="rs_opticalflow_tvl1_desc">Test based on dense motion vector calculation using variational method. Optical flow is widely used for video compression and enhancing video quality in computer vision-based use cases such as driver assistance systems or motion detection. Result metrics: mpixel/sec</string>
+  <string name="rs_raytrace_kcl">T-Rex</string>
+  <string name="rs_raytrace_kcl_desc">Path tracer featuring dynamically updated acceleration structure and global illumination. Result metrics: frames/sec</string>
+  <string name="rs_raytrace_raycast">Provence</string>
+  <string name="rs_raytrace_raycast_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+  <string name="rs_raytrace_raycast_off">(NoViz) Provence</string>
+  <string name="rs_raytrace_raycast_off_desc">Recursive Whitted-style ray tracer with reflections, refractions and shadows. Result metrics: mpixel/sec</string>
+  <string name="rs_raytrace_ambocc">Ambient Occlusion</string>
+  <string name="rs_raytrace_ambocc_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+  <string name="rs_raytrace_ambocc_off">(NoViz) Ambient Occlusion</string>
+  <string name="rs_raytrace_ambocc_off_desc">Brute force ray primitve intersection test which calculates the ambient term for every visible pixel. Result metrics: mpixel/sec</string>
+  <string name="rs_video_proc">Video Composition</string>
+  <string name="rs_video_proc_desc">This test replicates a typical video composition pipeline with effects such as pixelate, mask, mix and blur. Result metrics: frames/sec</string>
+
+  <!-- CompuBench 20 tests -->
+  <string name="cl_lsseg_128">Level Set Segmentation 128</string>
+  <string name="cl_lsseg_128_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="cl_lsseg_256">Level Set Segmentation 256</string>
+  <string name="cl_lsseg_256_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="cl_cloth_256">Cloth Simulation</string>
+  <string name="cl_cloth_256_desc">Verlet based ball-spring cloth simulation. Result metrics: MKnots/sec.</string>
+  <string name="cl_subdiv_l3">Catmull-Clark Subdivision Level 3</string>
+  <string name="cl_subdiv_l3_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes three subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="cl_subdiv_l5">Catmull-Clark Subdivision Level 5</string>
+  <string name="cl_subdiv_l5_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes five subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="cl_sss_1cam">Subsurface Scattering </string>
+  <string name="cl_sss_1cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="cl_sss_3cam">Subsurface Scattering multiple view</string>
+  <string name="cl_sss_3cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="cl_tone_map_4k">Local Tone Mapping 4K</string>
+  <string name="cl_tone_map_4k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 4096x2048 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="cl_tone_map_2k">Local Tone Mapping 2K</string>
+  <string name="cl_tone_map_2k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 2048x1024 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="cl_vcm">Vertex Connection and Merging</string>
+  <string name="cl_vcm_desc">Global illumination algorithm, which combines bidirection path-tracing with photon mapping through multiple importance sampling. Result metrics: Mpixels/sec.</string>
+  <string name="cl_nbody_128k">N-Body Simulation 128K</string>
+  <string name="cl_nbody_128k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="cl_nbody_1024k">N-Body Simulation 1024K</string>
+  <string name="cl_nbody_1024k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="cl_tvl1">TV-L1 Optical Flow</string>
+  <string name="cl_tvl1_desc">Test based on dense motion vector calculation using variational method. Optical flow is widely used for video compression and enhancing video quality in computer vision-based use cases such as driver assistance systems or motion detection. Result metrics: Mpixels/sec</string>
+  <string name="cl_ocean">Ocean Surface Simulation</string>
+  <string name="cl_ocean_desc">Test of the FFT algorithm based on ocean wave simulation. The fast Fourier transform computes transformations of time or space to frequency and vice versa. FFTs are widely used in engineering, science, and mathematics. Result metrics: Iterations/sec</string>
+
+  <string name="cs_lsseg_128">Level Set Segmentation 128</string>
+  <string name="cs_lsseg_128_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="cs_lsseg_256">Level Set Segmentation 256</string>
+  <string name="cs_lsseg_256_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="cs_cloth_256">Cloth Simulation</string>
+  <string name="cs_cloth_256_desc">Verlet based ball-spring cloth simulation. Result metrics: MKnots/sec.</string>
+  <string name="cs_subdiv_l3">Catmull-Clark Subdivision Level 3</string>
+  <string name="cs_subdiv_l3_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes three subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="cs_subdiv_l5">Catmull-Clark Subdivision Level 5</string>
+  <string name="cs_subdiv_l5_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes five subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="cs_sss_1cam">Subsurface Scattering </string>
+  <string name="cs_sss_1cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="cs_sss_3cam">Subsurface Scattering multiple view</string>
+  <string name="cs_sss_3cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="cs_tone_map_4k">Local Tone Mapping 4K</string>
+  <string name="cs_tone_map_4k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 4096x2048 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="cs_tone_map_2k">Local Tone Mapping 2K</string>
+  <string name="cs_tone_map_2k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 2048x1024 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="cs_vcm">Vertex Connection and Merging</string>
+  <string name="cs_vcm_desc">Global illumination algorithm, which combines bidirection path-tracing with photon mapping through multiple importance sampling. Result metrics: Mpixels/sec.</string>
+  <string name="cs_nbody_128k">N-Body Simulation 128K</string>
+  <string name="cs_nbody_128k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="cs_nbody_1024k">N-Body Simulation 1024K</string>
+  <string name="cs_nbody_1024k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+
+  <string name="cu_lsseg_128">Level Set Segmentation 128</string>
+  <string name="cu_lsseg_128_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="cu_lsseg_256">Level Set Segmentation 256</string>
+  <string name="cu_lsseg_256_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="cu_cloth_256">Cloth Simulation</string>
+  <string name="cu_cloth_256_desc">Verlet based ball-spring cloth simulation. Result metrics: MKnots/sec.</string>
+  <string name="cu_subdiv_l3">Catmull-Clark Subdivision Level 3</string>
+  <string name="cu_subdiv_l3_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes three subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="cu_subdiv_l5">Catmull-Clark Subdivision Level 5</string>
+  <string name="cu_subdiv_l5_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes five subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="cu_sss_1cam">Subsurface Scattering </string>
+  <string name="cu_sss_1cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="cu_sss_3cam">Subsurface Scattering multiple view</string>
+  <string name="cu_sss_3cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="cu_tone_map_4k">Local Tone Mapping 4K</string>
+  <string name="cu_tone_map_4k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 4096x2048 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="cu_tone_map_2k">Local Tone Mapping 2K</string>
+  <string name="cu_tone_map_2k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 2048x1024 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="cu_vcm">Vertex Connection and Merging</string>
+  <string name="cu_vcm_desc">Global illumination algorithm, which combines bidirection path-tracing with photon mapping through multiple importance sampling. Result metrics: Mpixels/sec.</string>
+  <string name="cu_nbody_128k">N-Body Simulation 128K</string>
+  <string name="cu_nbody_128k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="cu_nbody_1024k">N-Body Simulation 1024K</string>
+  <string name="cu_nbody_1024k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="cu_tvl1">TV-L1 Optical Flow</string>
+  <string name="cu_tvl1_desc">Test based on dense motion vector calculation using variational method. Optical flow is widely used for video compression and enhancing video quality in computer vision-based use cases such as driver assistance systems or motion detection. Result metrics: Mpixels/sec</string>
+  <string name="cu_ocean">Ocean Surface Simulation</string>
+  <string name="cu_ocean_desc">Test of the FFT algorithm based on ocean wave simulation. The fast Fourier transform computes transformations of time or space to frequency and vice versa. FFTs are widely used in engineering, science, and mathematics. Result metrics: Iterations/sec</string>
+
+  <string name="mtl_lsseg_128">Level Set Segmentation 128</string>
+  <string name="mtl_lsseg_128_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="mtl_lsseg_256">Level Set Segmentation 256</string>
+  <string name="mtl_lsseg_256_desc">Level Set Segmentation on Biological Volume Dataset. Result metrics: MVoxels/sec.</string>
+  <string name="mtl_cloth_256">Cloth Simulation</string>
+  <string name="mtl_cloth_256_desc">Verlet based ball-spring cloth simulation. Result metrics: MKnots/sec.</string>
+  <string name="mtl_subdiv_l3">Catmull-Clark Subdivision Level 3</string>
+  <string name="mtl_subdiv_l3_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes three subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="mtl_subdiv_l5">Catmull-Clark Subdivision Level 5</string>
+  <string name="mtl_subdiv_l5_desc">Catmull-Clark subdivision is a method to smooth a 3-dimensional polygon mesh surface by dividing the surface's polygons into smaller polygons. The test computes five subdivision level in every frame. Result metrics: Triangle/sec.</string>
+  <string name="mtl_sss_1cam">Subsurface Scattering </string>
+  <string name="mtl_sss_1cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="mtl_sss_3cam">Subsurface Scattering multiple view</string>
+  <string name="mtl_sss_3cam_desc">Subsurface scattering is a rendering technique used to approximate the common tendency for light to penetrate and scatter beneath the surface of translucent or semi-translucent non-metallic objects. Result metrics: MSample/sec </string>
+  <string name="mtl_tone_map_4k">Local Tone Mapping 4K</string>
+  <string name="mtl_tone_map_4k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 4096x2048 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="mtl_tone_map_2k">Local Tone Mapping 2K</string>
+  <string name="mtl_tone_map_2k_desc">The test using Reinhard's algorithm to adaptively mapping a Hight Dynamic Range (HDR) image with 2048x1024 resolution into the monitor's brightness range frame by frame. Result metrics: Mpixels/sec.</string>
+  <string name="mtl_vcm">Vertex Connection and Merging</string>
+  <string name="mtl_vcm_desc">Global illumination algorithm, which combines bidirection path-tracing with photon mapping through multiple importance sampling. Result metrics: Mpixels/sec.</string>
+  <string name="mtl_nbody_128k">N-Body Simulation 128K</string>
+  <string name="mtl_nbody_128k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="mtl_nbody_1024k">N-Body Simulation 1024K</string>
+  <string name="mtl_nbody_1024k_desc">Calculates gravitational forces between N bodies with the Barnes-Hut algorithm. Result metrics: Iterations/sec.</string>
+  <string name="mtl_tvl1">TV-L1 Optical Flow</string>
+  <string name="mtl_tvl1_desc">Test based on dense motion vector calculation using variational method. Optical flow is widely used for video compression and enhancing video quality in computer vision-based use cases such as driver assistance systems or motion detection. Result metrics: Mpixels/sec</string>
+  <string name="mtl_ocean">Ocean Surface Simulation</string>
+  <string name="mtl_ocean_desc">Test of the FFT algorithm based on ocean wave simulation. The fast Fourier transform computes transformations of time or space to frequency and vice versa. FFTs are widely used in engineering, science, and mathematics. Result metrics: Iterations/sec</string>
+
+  <!-- ADASBench 2 tests -->
+  <string name="cl_surround_view_1mp">Surround View 1M pixel</string>
+  <string name="cl_surround_view_1mp_desc"></string>
+  <string name="cl_surround_view_2mp">Surround View 2M pixel</string>
+  <string name="cl_surround_view_2mp_desc"></string>
+  <string name="cl_drowsiness">Drowsiness Detection</string>
+  <string name="cl_drowsiness_desc"></string>
+  <string name="cl_nn_lowres">Pedestrian and Car Detection Lowres</string>
+  <string name="cl_nn_lowres_desc"></string>
+  <string name="cl_nn_midres">Pedestrian and Car Detection Midres</string>
+  <string name="cl_nn_midres_desc"></string>
+  <string name="cl_nn_highres">Pedestrian and Car Detection Highres</string>
+  <string name="cl_nn_highres_desc"></string>
+  <string name="cl_composite">Composite test</string>
+  <string name="cl_composite_desc"></string>
+
+  <string name="cu_surround_view_1mp">Surround View 1M pixel</string>
+  <string name="cu_surround_view_1mp_desc"></string>
+  <string name="cu_surround_view_2mp">Surround View 2M pixel</string>
+  <string name="cu_surround_view_2mp_desc"></string>
+  <string name="cu_drowsiness">Drowsiness Detection</string>
+  <string name="cu_drowsiness_desc"></string>
+  <string name="cu_nn_lowres">Pedestrian and Car Detection Lowres</string>
+  <string name="cu_nn_lowres_desc"></string>
+  <string name="cu_nn_midres">Pedestrian and Car Detection Midres</string>
+  <string name="cu_nn_midres_desc"></string>
+  <string name="cu_nn_highres">Pedestrian and Car Detection Highres</string>
+  <string name="cu_nn_highres_desc"></string>
+  <string name="cu_composite">Composite test</string>
+  <string name="cu_composite_desc"></string>
+
+  <string name="gl_dashboard_on">Dashboard </string>
+  <string name="gl_dashboard_on_desc"></string>
+  <string name="gl_dashboard_off">Dashboard Offscreen </string>
+  <string name="gl_dashboard_off_desc"></string>
+
+  <string name="ui_videowall_720p">Video Wall 720p</string>
+  <string name="ui_videowall_720p_desc"></string>
+  <string name="ui_videowall_1080p">Video Wall 1080p</string>
+  <string name="ui_videowall_1080p_desc"></string>
+  <string name="ui_videowall_4k">Video Wall 4k</string>
+  <string name="ui_videowall_4k_desc"></string>
+  <string name="ui_slideshow_video_720p">Slideshow 720p</string>
+  <string name="ui_slideshow_video_720p_desc"></string>
+  <string name="ui_slideshow_video_1080p">Slideshow 1080p</string>
+  <string name="ui_slideshow_video_1080p_desc"></string>
+  <string name="ui_slideshow_video_4k">Slideshow 4k</string>
+  <string name="ui_slideshow_video_4k_desc"></string>
+  <string name="ui_slideshow_video_4k_h265">Slideshow 4k h.265</string>
+  <string name="ui_slideshow_video_4k_h265_desc"></string>
+
+  <string name="ui_videowall_720p_off">Video Wall 720p Offscreen</string>
+  <string name="ui_videowall_720p_off_desc"></string>
+  <string name="ui_videowall_1080p_off">Video Wall 1080p Offscreen</string>
+  <string name="ui_videowall_1080p_off_desc"></string>
+  <string name="ui_videowall_4k_off">Video Wall 4k Offscreen</string>
+  <string name="ui_videowall_4k_off_desc"></string>
+  <string name="ui_slideshow_video_720p_off">Slideshow 720p Offscreen</string>
+  <string name="ui_slideshow_video_720p_off_desc"></string>
+  <string name="ui_slideshow_video_1080p_off">Slideshow 1080p Offscreen</string>
+  <string name="ui_slideshow_video_1080p_off_desc"></string>
+  <string name="ui_slideshow_video_4k_off">Slideshow 4k Offscreen</string>
+  <string name="ui_slideshow_video_4k_off_desc"></string>
+  <string name="ui_slideshow_video_4k_h265_off">Slideshow 4k h.265 Offscreen</string>
+  <string name="ui_slideshow_video_4k_h265_off_desc"></string>
+
+  <!-- GFXBench -->
+  <string product="gfxbench_gl" name="TestLoading">This test will display a mosaic render of the %s scene while computing high resolution frames offscreen.</string>
+  <string product="gfxbench_gl" name="AboutSectionBody">GFXBench is a 3D graphics benchmark to test the graphics performance of your device and compare the results to other devices across all popular platforms. GFXBench is developed by Kishonti Ltd. If you are interested in what we do, please visit our website at kishonti.net!</string>
+  <string product="gfxbench_gl" name="CorporateCommercial">Please note that you are now using the community edition of GFXBench. For development purposes we recommend the corporate edition. If you need information on licensing, please contact us at sales@kishonti.net!</string>
+  <string product="gfxbench_gl" name="FollowUsSectionBody">GFXBench is a cross-platform 3D graphics benchmark to measure the performance of your device and compare it to other devices.</string>
+  <string product="gfxbench_gl" name="Offscreen">Offscreen</string>
+  <string product="gfxbench_gl" name="Onscreen">Onscreen</string>
+
+  <string product="gfxbench" name="TestLoading">This test will display a mosaic render of the %s scene while computing high resolution frames offscreen.</string>
+  <string product="gfxbench" name="AboutSectionBody">GFXBench is a 3D graphics benchmark to test the graphics performance of your device and compare the results to other devices across all popular platforms. GFXBench is developed by Kishonti Ltd. If you are interested in what we do, please visit our website at kishonti.net!</string>
+  <string product="gfxbench" name="CorporateCommercial">Please note that you are now using the community edition of GFXBench. For development purposes we recommend the corporate edition. If you need information on licensing, please contact us at sales@kishonti.net!</string>
+  <string product="gfxbench" name="FollowUsSectionBody">GFXBench is a cross-platform 3D graphics benchmark to measure the performance of your device and compare it to other devices.</string>
+  <string product="gfxbench" name="Offscreen">Offscreen</string>
+  <string product="gfxbench" name="Onscreen">Onscreen</string>
+
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">High-Level Tests</string>
+  <string name="group_high_level_desc">High-end game-like scenes to test your device’s overall 3D graphics performance. The test engines feature complex effects to stress the GPU and give feedback on its 3D graphics performance delivered when gaming or performing other GPU-intensive tasks (e.g. UI rendering, navigation).</string>
+  <string name="group_low_level">Low-Level Tests</string>
+  <string name="group_special">Special Tests</string>
+  <string name="group_battery">Battery Test</string>
+  <string name="group_fixed">Fixed Time Test</string>
+
+  <!-- GFXBench GL tests -->
+  <string name="gl_alu">ALU</string>
+  <string name="gl_alu_desc">Measures the pure shader compute performance of your device by using a complex fragment shader and rendering a single full-screen quad. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">1080p ALU Offscreen</string>
+  <string name="gl_alu_off_desc">Measures the pure shader compute performance of your device by using a complex fragment shader and rendering a single full-screen quad. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu2">ALU 2</string>
+  <string name="gl_alu2_desc">This is an enhanced version of the original ALU test found in GFXBench 3.0. It approximates the fragment shader computing load of the Manhattan test better, by rendering 64 point lights in multiple passes over a captured Manhattan frame. Emissive and ambient terms are also evaluated along with the diffuse lighting. Required minimum API: OpenGL ES 3.0 / OpenGL 4.1</string>
+  <string name="gl_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="gl_alu2_off_desc">This is an enhanced version of the original ALU Offscreen test found in GFXBench 3.0. It approximates the fragment shader computing load of the Manhattan test better, by rendering 64 point lights in multiple passes over a captured Manhattan frame. Emissive and ambient terms are also evaluated along with the diffuse lighting. Required minimum API: OpenGL ES 3.0 / OpenGL 4.1</string>
+  <string name="gl_blending">Alpha Blending</string>
+  <string name="gl_blending_desc">Measures the device's alpha blending performance by rendering semi-transparent screen-aligned quads with high-resolution uncompressed textures. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">1080p Alpha Blending Offscreen</string>
+  <string name="gl_blending_off_desc">Measures the device's alpha blending performance by rendering semi-transparent screen-aligned quads with high-resolution uncompressed textures. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">Driver Overhead</string>
+  <string name="gl_driver_desc">Measures the OpenGL driver’s CPU overhead by rendering a large number of simple objects one-by-one, changing device state for each item. The frequency of the state changes reflects real-world applications. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off">1080p Driver Overhead Offscreen</string>
+  <string name="gl_driver_off_desc">Measures the OpenGL driver’s CPU overhead by rendering a large number of simple objects one-by-one, changing device state for each item. The frequency of the state changes reflects real-world applications. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver2">Driver Overhead 2</string>
+  <string name="gl_driver2_desc">This is an enhanced version of the original Driver Overhead test found in GFXBench 3.0, and approximates the graphics driver's CPU load when running the Manhattan high-level test. It renders the same amount of geometry twice to add a glow effect, using lots of draw calls, changing rendertargets, vertex formats and shaders as well. The test also alters graphics states like depth-test and blending between blocks of draw calls. Required minimum API: OpenGL ES 3.0 / OpenGL 4.1</string>
+  <string name="gl_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="gl_driver2_off_desc">This is an enhanced version of the original Driver Overhead Offscreen test found in GFXBench 3.0, and approximates the graphics driver's CPU load when running the Manhattan high-level test. It renders the same amount of geometry twice to add a glow effect, using lots of draw calls, changing rendertargets, vertex formats and shaders as well. The test also alters graphics states like depth-test and blending between blocks of draw calls. Required minimum API: OpenGL ES 3.0 / OpenGL 4.1</string>
+  <string name="gl_fill">Fill</string>
+  <string name="gl_fill_desc">Measures the device’s texturing performance by rendering four layers of compressed textures. This is a common scenario in gaming. To see how your device performs at its native resolution, run the Onscreen test. To compare your score to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">1080p Fill Offscreen</string>
+  <string name="gl_fill_off_desc">Measures the device’s texturing performance by rendering four layers of compressed textures. This is a common scenario in gaming. To see how your device performs at its native resolution, run the Onscreen test. To compare your score to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_desc">This is an enhanced version of the original Fill test found in GFXBench 3.0. It approximates the texturing load of the Manhattan high-level test better, by rendering multiple layers of textured planes over each other. The amount of textures and their formats matches those of Manhattan, including uncompressed screen-sized sources, depth-format buffers, and cube-maps. Required minimum API: OpenGL ES 3.0 / OpenGL 4.1. Score: transferred texels, in MTexels/sec</string>
+  <string name="gl_fill2_off">1080p Texturing Offscreen</string>
+  <string name="gl_fill2_off_desc">This is an enhanced version of the original Fill Offscreen test found in GFXBench 3.0. It approximates the texturing load of the Manhattan high-level test better, by rendering multiple layers of textured planes over each other. The amount of textures and their formats matches those of Manhattan, including uncompressed screen-sized sources, depth-format buffers, and cube-maps. Required minimum API: OpenGL ES 3.0 / OpenGL 4.1. Score: transferred texels, in MTexels/sec</string>
+  <string name="gl_manhattan">Manhattan</string>
+  <string name="gl_manhattan_desc">This is the original Manhattan test, first introduced in GFXBench 3.0, which uses the ES 3.0 / GL 4.1 capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 3.0 / GL 4.1</string>
+  <string name="gl_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="gl_manhattan_off_desc">This is the original Manhattan Offscreen test, first introduced in GFXBench 3.0, which uses the ES 3.0 / GL 4.1 capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 3.0 / GL 4.1</string>
+  <string name="gl_manhattan_fixed_off">1080p Manhattan Fixed Time Offscreen</string>
+  <string name="gl_manhattan_fixed_off_desc">This is the original Manhattan Offscreen test, first introduced in GFXBench 3.0, which uses the ES 3.0 / GL 4.1 capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 3.0 / GL 4.1</string>
+  <string name="gl_manhattan_fixed_off_fps">1080p Manhattan Fixed Time Offscreen - Fps</string>
+  <string name="gl_manhattan_fixed_off_time">1080p Manhattan Fixed Time Offscreen - Time</string>
+  <string name="gl_manhattan31">Manhattan 3.1</string>
+  <string name="gl_manhattan31_desc">This is an enhanced version of the original Manhattan test found in GFXBench 3.0, showcasing advanced visual effects achieved with OpenGL ES 3.1 / OpenGL 4.3. Compute shaders and indirect draw calls are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+  <string name="gl_manhattan31_off">1080p Manhattan 3.1 Offscreen</string>
+  <string name="gl_manhattan31_off_desc">This is an enhanced version of the original Manhattan Offscreen test found in GFXBench 3.0, showcasing advanced visual effects achieved with OpenGL ES 3.1 / OpenGL 4.3. Compute shaders and indirect draw calls are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+  <string name="gl_manhattan311_wqhd">1440p Manhattan 3.1.1</string>
+  <string name="gl_manhattan311_wqhd_desc">This is an advanced version of Manhattan 3.1 test, running in 1440p resolution, showcasing advanced visual effects achieved with OpenGL ES 3.1 / OpenGL 4.3. Compute shaders and indirect draw calls are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+   <string name="gl_manhattan311_wqhd_off">1440p Manhattan 3.1.1 Offscreen</string>
+  <string name="gl_manhattan311_wqhd_off_desc">This is an advanced version of Manhattan 3.1 Offscreen test, running in 1440p resolution, showcasing advanced visual effects achieved with OpenGL ES 3.1 / OpenGL 4.3. Compute shaders and indirect draw calls are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+  <string name="gl_manhattan31_fixed_off">1080p Manhattan 3.1 Fixed Time Offscreen</string>
+  <string name="gl_manhattan31_fixed_off_desc">This is an enhanced version of the original Manhattan Offscreen test found in GFXBench 3.0, showcasing advanced visual effects achieved with OpenGL ES 3.1 / OpenGL 4.3. Compute shaders and indirect draw calls are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+  <string name="gl_manhattan31_fixed_off_fps">1080p Manhattan 3.1 Fixed Time Offscreen - Fps</string>
+  <string name="gl_manhattan31_fixed_off_time">1080p Manhattan 3.1 Fixed Time Offscreen - Time</string>
+  <string name="gl_manhattan311_fixed_wqhd_off">1440p Manhattan 3.1.1 Fixed Time Offscreen</string>
+  <string name="gl_manhattan311_fixed_wqhd_off_desc">This is an advanced version of Manhattan 3.1 Offscreen test, running in 1440p resolution, showcasing advanced visual effects achieved with OpenGL ES 3.1 / OpenGL 4.3. Compute shaders and indirect draw calls are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+  <string name="gl_manhattan311_fixed_wqhd_off_fps">1440p Manhattan 3.1.1 Fixed Time Offscreen - Fps</string>
+  <string name="gl_manhattan311_fixed_wqhd_off_time">1440p Manhattan 3.1.1 Fixed Time Offscreen - Time</string>
+  <string name="gl_manhattan31_battery">Battery Test - Manhattan 3.1</string>
+  <string name="gl_manhattan31_battery_desc">This combined test measures your device’s battery life and FPS stability in a gaming scene by running the same high-level test for 30 times. It logs FPS and the battery charge during the test and the results are displayed in a battery graph. The test produces two scores, one is the estimated battery life in minutes while the other is the number of frames rendered by the slowest test run. Required minimum API: OpenGL ES 3.1 / OpenGL 4.3</string>
+  <string name="gl_manhattan31_battery_diagram">Battery diagram - Manhattan 3.1</string>
+  <string name="gl_manhattan31_battery_lifetime">Battery lifetime - Manhattan 3.1</string>
+  <string name="gl_manhattan31_battery_performance">Long term performance - Manhattan 3.1</string>
+  <string name="gl_trex">T-Rex</string>
+  <string name="gl_trex_desc">This is the original T-Rex test, first introduced in GFXBench 2.7. Based on ES 2.0 / GL 3.0, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_trex_off">1080p T-Rex Offscreen</string>
+  <string name="gl_trex_off_desc">This is the original T-Rex Offscreen test, first introduced in GFXBench 2.7. Based on ES 2.0 / GL 3.0, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_trex_fixed_off">1080p T-Rex Fixed Time Offscreen</string>
+  <string name="gl_trex_fixed_off_fps">1080p T-Rex Fixed Time Offscreen - Fps</string>
+  <string name="gl_trex_fixed_off_time">1080p T-Rex Fixed Time Offscreen - Time</string>
+  <string name="gl_trex_fixed_off_desc">This is the original T-Rex Offscreen test, first introduced in GFXBench 2.7. Based on ES 2.0 / GL 3.0, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_trex_battery">Battery Test - T-Rex</string>
+  <string name="gl_trex_battery_desc">This is the original Battery Test, first introduced in GFXBench 3.0. This combined test measures your device’s battery life and FPS stability in a gaming scene by running the same high-level test for 30 times. It logs FPS and the battery charge during the test and the results are displayed in a battery graph. The test produces two scores, one is the estimated battery life in minutes while the other is the number of frames rendered by the slowest test run. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_trex_battery_diagram">Battery diagram - T-Rex</string>
+  <string name="gl_trex_battery_lifetime">Battery lifetime - T-Rex</string>
+  <string name="gl_trex_battery_performance">Long term performance - T-Rex</string>
+  <string name="gl_trex_qmatch">Render Quality</string>
+  <string name="gl_trex_qmatch_desc">This is the original Render Quality test, first introduced in GFXBench 3.0. It measures the visual fidelity of your device in a high-end gaming scene. The score is the peak signal-to-noise ratio (PSNR) based on mean square error (MSE) compared to a pre-rendered reference image. Required minimum API: ES 2.0 / GL 3.0</string>
+  <string name="gl_trex_qmatch_highp">Render Quality (high precision)</string>
+  <string name="gl_trex_qmatch_highp_desc">This is the original Render Quality (high precision) test, first introduced in GFXBench 3.0. It measures the visual fidelity of your device in a high-end gaming scene. The score is the peak signal-to-noise ratio (PSNR) based on mean square error (MSE) compared to a pre-rendered reference image. Required minimum API: ES 2.0 / GL 3.0</string>
+
+  <string name="gl_4">Car Chase</string>
+  <string name="gl_4_desc">Car Chase is our game-like test that fully exploits the capabilities of the Android Extension Pack. It uses deferred shading combined by image-based lighting to render the scene in a full HDR environment. The test uses geometry shaders and tessellation, dynamic reflections, physically-based shading, compute based particles and occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field and lens flare. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 3.1 with AEP / GL 4.3</string>
+  <string name="gl_4_off">1080p Car Chase Offscreen</string>
+  <string name="gl_4_off_desc">Car Chase is our game-like test that fully exploits the capabilities of the Android Extension Pack. It uses deferred shading combined by image-based lighting to render the scene in a full HDR environment. The test uses geometry shaders and tessellation, dynamic reflections, physically-based shading, compute based particles and occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field and lens flare. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 3.1 with AEP / GL 4.3</string>
+  <string name="gl_4_fixed_off">1080p Car Chase Fixed Time Offscreen</string>
+  <string name="gl_4_fixed_off_desc">Car Chase is our game-like test that fully exploits the capabilities of the Android Extension Pack. It uses deferred shading combined by image-based lighting to render the scene in a full HDR environment. The test uses geometry shaders and tessellation, dynamic reflections, physically-based shading, compute based particles and occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field and lens flare. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: ES 3.1 with AEP / GL 4.3</string>
+  <string name="gl_4_fixed_off_fps">1080p Car Chase Fixed Time Offscreen - Fps</string>
+  <string name="gl_4_fixed_off_time">1080p Car Chase Fixed Time Offscreen - Time</string>
+  <string name="gl_tess">Tessellation</string>
+  <string name="gl_tess_desc">Measures the device's tessellation performance by rendering multiple quadratic Bézier surface based torus knot models. To see how your device performs at its native resolution, run the Onscreen
+test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 3.1 with AEP / GL 4.1</string>
+  <string name="gl_tess_off">1080p Tessellation Offscreen</string>
+  <string name="gl_tess_off_desc">Measures the device's tessellation performance by rendering multiple quadratic Bézier surface based torus knot models. To see how your device performs at its native resolution, run the Onscreen
+test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: ES 3.1 with AEP / GL 4.1</string>
+
+  <string name="gl_5_high">Aztec Ruins OpenGL (High Tier)</string>
+  <string name="gl_5_normal">Aztec Ruins OpenGL (Normal Tier)</string>
+  <string name="gl_5_high_off">1440p Aztec Ruins OpenGL (High Tier) Offscreen</string>
+  <string name="gl_5_high_4k_off">4K Aztec Ruins OpenGL (High Tier) Offscreen</string>
+  <string name="gl_5_normal_off">1080p Aztec Ruins OpenGL (Normal Tier) Offscreen</string>
+
+  <string name="gl_5_high_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="gl_5_normal_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="gl_5_high_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="gl_5_high_4k_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="gl_5_normal_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+
+  <!-- GFXBench Vulkan tests -->
+
+  <string name="vulkan_5_high">Aztec Ruins Vulkan (High Tier)</string>
+  <string name="vulkan_5_normal">Aztec Ruins Vulkan (Normal Tier)</string>
+  <string name="vulkan_5_high_off">1440p Aztec Ruins Vulkan (High Tier) Offscreen</string>
+  <string name="vulkan_5_high_4k_off">4K Aztec Ruins Vulkan (High Tier) Offscreen</string>
+  <string name="vulkan_5_normal_off">1080p Aztec Ruins Vulkan (Normal Tier) Offscreen</string>
+
+  <string name="vulkan_5_high_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="vulkan_5_normal_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="vulkan_5_high_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="vulkan_5_high_4k_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="vulkan_5_normal_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+
+  <!-- GFXBench METAL tests -->
+  <string name="metal_alu">ALU</string>
+  <string name="metal_alu_desc">Measures the pure shader compute performance of your device by using a complex fragment shader and rendering a single full-screen quad. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_alu_off">1080p ALU Offscreen</string>
+  <string name="metal_alu_off_desc">Measures the pure shader compute performance of your device by using a complex fragment shader and rendering a single full-screen quad. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_desc">This is an enhanced version of the original ALU test found in GFXBench Metal 3.0. It approximates the fragment shader computing load of the Manhattan test better, by rendering 64 point lights in multiple passes over a captured Manhattan frame. Emissive and ambient terms are also evaluated along with the diffuse lighting.</string>
+  <string name="metal_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="metal_alu2_off_desc">This is an enhanced version of the original ALU Offscreen test found in GFXBench Metal 3.0. It approximates the fragment shader computing load of the Manhattan test better, by rendering 64 point lights in multiple passes over a captured Manhattan frame. Emissive and ambient terms are also evaluated along with the diffuse lighting.</string>
+  <string name="metal_blending">Alpha Blending</string>
+  <string name="metal_blending_desc">Measures the device's alpha blending performance by rendering semi-transparent screen-aligned quads with high-resolution uncompressed textures. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_blending_off">1080p Alpha Blending Offscreen</string>
+  <string name="metal_blending_off_desc">Measures the device's alpha blending performance by rendering semi-transparent screen-aligned quads with high-resolution uncompressed textures. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_driver">Driver Overhead</string>
+  <string name="metal_driver_desc">Measures the Metal driver’s CPU overhead by rendering a large number of simple objects one-by-one, changing device state for each item. The frequency of the state changes reflects real-world applications. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_driver_off">1080p Driver Overhead Offscreen</string>
+  <string name="metal_driver_off_desc">Measures the Metal driver’s CPU overhead by rendering a large number of simple objects one-by-one, changing device state for each item. The frequency of the state changes reflects real-world applications. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_driver2">Driver Overhead 2</string>
+  <string name="metal_driver2_desc">This is an enhanced version of the original Driver Overhead test found in GFXBench Metal 3.0, and approximates the graphics driver's CPU load when running the Manhattan high-level test. It renders the same amount of geometry twice to add a glow effect, using lots of draw calls, changing rendertargets, vertex formats and shaders as well. The test also alters graphics states like depth-test and blending between blocks of draw calls.</string>
+  <string name="metal_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="metal_driver2_off_desc">This is an enhanced version of the original Driver Overhead Offscreen test found in GFXBench Metal 3.0, and approximates the graphics driver's CPU load when running the Manhattan high-level test. It renders the same amount of geometry twice to add a glow effect, using lots of draw calls, changing rendertargets, vertex formats and shaders as well. The test also alters graphics states like depth-test and blending between blocks of draw calls.</string>
+  <string name="metal_fill">Fill</string>
+  <string name="metal_fill_desc">Measures the device’s texturing performance by rendering four layers of compressed textures. This is a common scenario in gaming. To see how your device performs at its native resolution, run the Onscreen test. To compare your score to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_fill_off">1080p Fill Offscreen</string>
+  <string name="metal_fill_off_desc">Measures the device’s texturing performance by rendering four layers of compressed textures. This is a common scenario in gaming. To see how your device performs at its native resolution, run the Onscreen test. To compare your score to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_fill2">Texturing</string>
+  <string name="metal_fill2_desc">This is an enhanced version of the original Fill test found in GFXBench Metal 3.0. It approximates the texturing load of the Manhattan high-level test better, by rendering multiple layers of textured planes over each other. The amount of textures and their formats matches those of Manhattan, including uncompressed screen-sized sources, depth-format buffers, and cube-maps. Score: transferred texels, in MTexels/sec</string>
+  <string name="metal_fill2_off">1080p Texturing Offscreen</string>
+  <string name="metal_fill2_off_desc">This is an enhanced version of the original Fill Offscreen test found in GFXBench Metal 3.0. It approximates the texturing load of the Manhattan high-level test better, by rendering multiple layers of textured planes over each other. The amount of textures and their formats matches those of Manhattan, including uncompressed screen-sized sources, depth-format buffers, and cube-maps. Score: transferred texels, in MTexels/sec</string>
+  <string name="metal_manhattan">Manhattan</string>
+  <string name="metal_manhattan_desc">This is the original Manhattan test modified to utilize the Metal capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="metal_manhattan_off_desc">This is the original Manhattan test modified to utilize the Metal capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_manhattan_fixed_off">1080p Manhattan Fixed Time Offscreen</string>
+  <string name="metal_manhattan_fixed_off_desc">This is the original Manhattan test modified to utilize the Metal capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_manhattan_fixed_off_fps">1080p Manhattan Fixed Time Offscreen - Fps</string>
+  <string name="metal_manhattan_fixed_off_time">1080p Manhattan Fixed Time Offscreen - Time</string>
+  <string name="metal_manhattan31">Manhattan 3.1</string>
+  <string name="metal_manhattan31_desc">This is an enhanced version of the original Manhattan test found in GFXBench Metal 3.0, showcasing advanced visual effects achieved with the device compute capabilities. Compute shaders and indirect draw calls (OS X) are used for the lightning effect, for the HDR with luminance adaptation, and for the bloom thresholding as well. The depth-of-field effect is also enhanced.</string>
+  <string name="metal_manhattan31_off">1080p Manhattan 3.1 Offscreen</string>
+  <string name="metal_manhattan31_off_desc">This is an enhanced version of the original Manhattan test found in GFXBench Metal 3.0, showcasing advanced visual effects achieved with the device compute capabilities. Compute shaders and indirect draw calls (OS X) are used for the lightning effect, for the HDR with luminance adaptation, and for the bloom thresholding as well. The depth-of-field effect is also enhanced.</string>
+  <string name="metal_manhattan311_wqhd">1440p Manhattan 3.1.1</string>
+  <string name="metal_manhattan311_wqhd_desc">This is an advanced version of Manhattan 3.1 test, running in 1440p resolution, showcasing advanced visual effects achieved with the device compute capabilities. Compute shaders and indirect draw calls (OS X) are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced.</string>
+  <string name="metal_manhattan311_wqhd_off">1440p Manhattan 3.1.1 Offscreen</string>
+  <string name="metal_manhattan311_wqhd_off_desc">This is an advanced version of Manhattan 3.1 Offscreen test, running in 1440p resolution, showcasing advanced visual effects achieved with the device compute capabilities. Compute shaders and indirect draw calls (OS X) are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced.</string>
+  <string name="metal_manhattan31_fixed_off">1080p Manhattan 3.1 Fixed Time Offscreen</string>
+  <string name="metal_manhattan31_fixed_off_desc">This is an enhanced version of the original Manhattan test found in GFXBench Metal 3.0, showcasing advanced visual effects achieved with the device compute capabilities. Compute shaders and indirect draw calls (OS X) are used for the lightning effect, for the HDR with luminance adaptation, and for the bloom thresholding as well. The depth-of-field effect is also enhanced.</string>
+  <string name="metal_manhattan31_fixed_off_fps">1080p Manhattan 3.1 Fixed Time Offscreen - Fps</string>
+  <string name="metal_manhattan31_fixed_off_time">1080p Manhattan 3.1 Fixed Time Offscreen - Time</string>
+  <string name="metal_manhattan311_fixed_wqhd_off">1440p Manhattan 3.1.1 Fixed Time Offscreen</string>
+  <string name="metal_manhattan311_fixed_wqhd_off_desc">This is an advanced version of Manhattan 3.1 Offscreen test, running in 1440p resolution, showcasing advanced visual effects achieved with the device compute capabilities. Compute shaders and indirect draw calls (OS X) are used for the lightning effect, for the HDR with luminance adaptation, and the bloom thresholding as well. The depth-of-field effect is also enhanced.</string>
+  <string name="metal_manhattan311_fixed_wqhd_off_fps">1440p Manhattan 3.1.1 Fixed Time Offscreen - Fps</string>
+  <string name="metal_manhattan311_fixed_wqhd_off_time">1440p Manhattan 3.1.1 Fixed Time Offscreen - Time</string>
+  <string name="metal_manhattan31_battery">Battery Test - Manhattan 3.1</string>
+  <string name="metal_manhattan31_battery_desc">This combined test measures your device’s battery life and FPS stability in a gaming scene by running the same high-level test for 30 times. It logs FPS and the battery charge during the test and the results are displayed in a battery graph. The test produces two scores, one is the estimated battery life in minutes while the other is the number of frames rendered by the slowest test run.</string>
+  <string name="metal_manhattan31_battery_diagram">Battery diagram - Manhattan 3.1</string>
+  <string name="metal_manhattan31_battery_lifetime">Battery lifetime - Manhattan 3.1</string>
+  <string name="metal_manhattan31_battery_performance">Long time performance - Manhattan 3.1</string>
+  <string name="metal_trex">T-Rex</string>
+  <string name="metal_trex_desc">Based on Metal, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_trex_off">1080p T-Rex Offscreen</string>
+  <string name="metal_trex_off_desc">Based on Metal, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_trex_fixed_off">1080p T-Rex Fixed Time Offscreen</string>
+  <string name="metal_trex_fixed_off_desc">Based on Metal, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_trex_fixed_off_fps">1080p T-Rex Fixed Time Offscreen - Fps</string>
+  <string name="metal_trex_fixed_off_time">1080p T-Rex Fixed Time Offscreen - Time</string>
+  <string name="metal_trex_battery">Battery Test - T-Rex</string>
+  <string name="metal_trex_battery_desc">This combined test measures your device’s battery life and FPS stability in a gaming scene by running the same high-level test for 30 times. It logs FPS and the battery charge during the test and the results are displayed in a battery graph. The test produces two scores, one is the estimated battery life in minutes while the other is the number of frames rendered by the slowest test run.</string>
+  <string name="metal_trex_battery_diagram">Battery diagram - T-Rex</string>
+  <string name="metal_trex_battery_lifetime">Battery lifetime - T-Rex</string>
+  <string name="metal_trex_battery_performance">Long time performance - T-Rex</string>
+  <string name="metal_trex_qmatch">Render Quality</string>
+  <string name="metal_trex_qmatch_desc">Measures the visual fidelity of your device in a high-end gaming scene. The score is the peak signal-to-noise ratio (PSNR) based on mean square error (MSE) compared to a pre-rendered reference image.</string>
+  <string name="metal_trex_qmatch_highp">Render Quality (high precision)</string>
+  <string name="metal_trex_qmatch_highp_desc">Measures the visual fidelity of your device in a high-end gaming scene. The score is the peak signal-to-noise ratio (PSNR) based on mean square error (MSE) compared to a pre-rendered reference image.</string>
+
+  <string name="metal_4">Car Chase</string>
+  <string name="metal_4_desc">Car Chase is our game-like test that fully exploits the capabilities of the iOS 10 and macOS Sierra. It uses deferred shading combined by image-based lighting to render the scene in a full HDR environment. The test uses tessellation, dynamic reflections, physically-based shading, compute based particles and occlusion culling (macOS only), dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field and lens flare. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_4_off">1080p Car Chase Offscreen</string>
+  <string name="metal_4_off_desc">Car Chase is our game-like test that fully exploits the capabilities of the iOS 10 and macOS Sierra. It uses deferred shading combined by image-based lighting to render the scene in a full HDR environment. The test uses tessellation, dynamic reflections, physically-based shading, compute based particles and occlusion culling (macOS only), dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field and lens flare. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_4_fixed_off">1080p Car Chase Fixed Time Offscreen</string>
+  <string name="metal_4_fixed_off_desc">Car Chase is our game-like test that fully exploits the capabilities of the iOS 10 and macOS Sierra. It uses deferred shading combined by image-based lighting to render the scene in a full HDR environment. The test uses tessellation, dynamic reflections, physically-based shading, compute based particles and occlusion culling (macOS only), dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field and lens flare. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_4_fixed_off_fps">1080p Car Chase Fixed Time Offscreen - Fps</string>
+  <string name="metal_4_fixed_off_time">1080p Car Chase Fixed Time Offscreen - Time</string>
+
+  <string name="metal_5_high">Aztec Ruins (High Tier)</string>
+  <string name="metal_5_normal">Aztec Ruins (Normal Tier)</string>
+  <string name="metal_5_high_off">1440p Aztec Ruins (High Tier) Offscreen</string>
+  <string name="metal_5_high_4k_off">4K Aztec Ruins (High Tier) Offscreen</string>
+  <string name="metal_5_normal_off">1080p Aztec Ruins (Normal Tier) Offscreen</string>
+
+  <string name="metal_5_high_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="metal_5_normal_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="metal_5_high_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="metal_5_high_4k_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="metal_5_normal_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+
+  <!-- GFXBench DX tests -->
+  <string name="dx_alu">ALU</string>
+  <string name="dx_alu_desc">Measures the pure shader compute performance of your device by using a complex fragment shader and rendering a single full-screen quad. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_alu_off">1080p ALU Offscreen</string>
+  <string name="dx_alu_off_desc">Measures the pure shader compute performance of your device by using a complex fragment shader and rendering a single full-screen quad. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc">!!! NOT LOCALIZED !!!</string>
+  <string name="dx_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="dx_blending">Alpha Blending</string>
+  <string name="dx_blending_desc">Measures the device's alpha blending performance by rendering semi-transparent screen-aligned quads with high-resolution uncompressed textures. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_blending_off">1080p Alpha Blending Offscreen</string>
+  <string name="dx_blending_off_desc">Measures the device's alpha blending performance by rendering semi-transparent screen-aligned quads with high-resolution uncompressed textures. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">Driver Overhead</string>
+  <string name="dx_driver_desc">Measures the DirectX driver’s CPU overhead by rendering a large number of simple objects one-by-one, changing device state for each item. The frequency of the state changes reflects real-world applications. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_driver_off">1080p Driver Overhead Offscreen</string>
+  <string name="dx_driver_off_desc">Measures the DirectX driver’s CPU overhead by rendering a large number of simple objects one-by-one, changing device state for each item. The frequency of the state changes reflects real-world applications. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_driver2">Driver Overhead 2</string>
+  <string name="dx_driver2_desc">!!! NOT LOCALIZED !!!</string>
+  <string name="dx_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="dx_fill">Fill</string>
+  <string name="dx_fill_desc">Measures the device’s texturing performance by rendering four layers of compressed textures. This is a common scenario in gaming. To see how your device performs at its native resolution, run the Onscreen test. To compare your score to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_fill_off">1080p Fill Offscreen</string>
+  <string name="dx_fill_off_desc">Measures the device’s texturing performance by rendering four layers of compressed textures. This is a common scenario in gaming. To see how your device performs at its native resolution, run the Onscreen test. To compare your score to other devices, use the Offscreen version that runs at 1080p on all devices. Required minimum API: DirectX 9.1</string>
+  <string name="dx_fill2">Fill 2</string>
+  <string name="dx_fill2_desc">!!! NOT LOCALIZED !!!</string>
+  <string name="dx_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="dx_manhattan">Manhattan</string>
+  <string name="dx_manhattan_desc">Our very first test to utilize the DirectX 10.0 capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: DirectX 10.0</string>
+  <string name="dx_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="dx_manhattan_off_desc">Our very first test to utilize the DirectX 10.0 capabilities of your device. The test scene is a night-time city environment with lots of lights to illuminate the scenery. It uses deferred rendering and multi-render target (MRT) for the geometry pass (four color attachments as textures), diffuse and specular lighting and features complex effects such as depth shadow map, cloaking effect, post-process effects (bloom, depth of field), occlusion query and animated volumetric light shafts. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: DirectX 10.0</string>
+  <string name="dx_manhattan31">Manhattan</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in ES 3.1 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">1080p Manhattan Offscreen</string>
+  <string name="dx_trex">T-Rex</string>
+  <string name="dx_trex_desc">Based on DirectX 9.1, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: DirectX 9.1</string>
+  <string name="dx_trex_off">1080p T-Rex Offscreen</string>
+  <string name="dx_trex_off_desc">Based on DirectX 9.1, the T-Rex test includes highly detailed textures, materials, complex geometry, particles with animated textures and a post-process effect: motion blur. The graphics pipeline also features effects, e.g.: planar reflection, specular highlights and soft-shadows. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.  Required minimum API: DirectX 9.1</string>
+  <string name="dx_trex_battery">Battery Test - T-Rex</string>
+  <string name="dx_trex_battery_desc">This combined test measures your device’s battery life and FPS stability in a gaming scene by running the same high-level test for 30 times. It logs FPS and the battery charge during the test and the results are displayed in a battery graph. The test produces two scores, one is the estimated battery life in minutes while the other is the number of frames rendered by the slowest test run. Required minimum API: DirectX 9.1</string>
+  <string name="dx_trex_battery_diagram">Battery diagram - T-Rex</string>
+  <string name="dx_trex_battery_lifetime">Battery lifetime - T-Rex</string>
+  <string name="dx_trex_battery_performance">Long term performance - T-Rex</string>
+  <string name="dx_trex_qmatch">Render Quality</string>
+  <string name="dx_trex_qmatch_desc">Measures the visual fidelity of your device in a high-end gaming scene. The score is the peak signal-to-noise ratio (PSNR) based on mean square error (MSE) compared to a pre-rendered reference image. Required minimum API: DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp">Render Quality (high precision)</string>
+  <string name="dx_trex_qmatch_highp_desc">Measures the visual fidelity of your device in a high-end gaming scene. The score is the peak signal-to-noise ratio (PSNR) based on mean square error (MSE) compared to a pre-rendered reference image. Required minimum API: DirectX 9.1</string>
+
+  <string name="dx_5_high">Aztec Ruins DirectX 11 (High Tier)</string>
+  <string name="dx_5_normal">Aztec Ruins DirectX 11 (Normal Tier)</string>
+  <string name="dx_5_high_off">1440p Aztec Ruins DirectX 11 (High Tier) Offscreen</string>
+  <string name="dx_5_high_4k_off">4K Aztec Ruins DirectX 11 (High Tier) Offscreen</string>
+  <string name="dx_5_normal_off">1080p Aztec Ruins DirectX 11 (Normal Tier) Offscreen</string>
+
+  <string name="dx_5_high_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="dx_5_normal_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="dx_5_high_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="dx_5_high_4k_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="dx_5_normal_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+
+  <string name="dx12_5_high">Aztec Ruins DirectX 12 (High Tier)</string>
+  <string name="dx12_5_normal">Aztec Ruins DirectX 12 (Normal Tier)</string>
+  <string name="dx12_5_high_off">1440p Aztec Ruins DirectX 12 (High Tier) Offscreen</string>
+  <string name="dx12_5_high_4k_off">4K Aztec Ruins DirectX 12 (High Tier) Offscreen</string>
+  <string name="dx12_5_normal_off">1080p Aztec Ruins DirectX 12 (Normal Tier) Offscreen</string>
+
+  <string name="dx12_5_high_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="dx12_5_normal_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+  <string name="dx12_5_high_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="dx12_5_high_4k_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 4K or 1440p on all devices.</string>
+  <string name="dx12_5_normal_off_desc">Aztec Ruins is our cross API game-like test available for most modern graphics APIs. It features real-time global illumination over deferred rendering combined with physically-based shading. It uses a variety of popular rendering algorithms such as occlusion culling, dynamic cascaded shadows and advanced post-process effects, like motion blur, screen-space ambient occlusion, depth of field. The High Tier version features particle simulation and higher quality illumination and effects over Normal Tier. To see how your device performs at its native resolution, run the Onscreen test. To compare your scores to other devices, use the Offscreen version that runs at 1080p on all devices.</string>
+
+
+  <string name="LicenseDialogBody">END USER LICENSE AGREEMENT
+        FOR KISHONTI KFT'S BENCHMARK SOFTWARE PRODUCTS
+
+
+        IMPORTANT NOTICE - READ CAREFULLY: THIS SOFTWARE END-USER LICENSE AGREEMENT IS A LEGALLY BINDING AGREEMENT BETWEEN YOU AND KISHONTI KFT FOR KISHONTI'S PERFORMANCE BENCHMARK SOFTWARE PRODUCTS. DO NOT DOWNLOAD, COPY, INSTALL, OR USE THE SOFTWARE PROVIDED UNDER THIS EULA, UNTIL YOU HAVE CAREFULLY READ THE FOLLOWING TERMS AND CONDITIONS. ANY REPRODUCTION, REDISTRIBUTION OR OTHER USE OF THE SOFTWARE OR ANY OF ITS COMPONENTS NOT IN ACCORDANCE WITH THIS EULA IS EXPRESSLY PROHIBITED BY LAW, AND MAY RESULT IN SEVERE CIVIL AND CRIMINAL PENALTIES AND OTHER CONSEQUENCES.
+
+        LICENSE FOR PRIVATE, NON-COMMERCIAL USE ONLY: THIS SOFTWARE IS LICENSED FOR THE PERSONAL AND NON-COMMERCIAL USE OF A CONSUMER TO TEST THE PERFORMANCE OF HIS/HER DEVICE, AS A CONSUMER ENGAGED IN A PERSONAL AND NON-COMMERCIAL ACTIVITY. NO LICENSE IS GRANTED OR SHALL BE IMPLIED FOR ANY OTHER USE.
+        IF YOU NEED A LICENSE FOR THE SOFTWARE FOR COMMERCIAL USE, PLEASE CONTACT KISHONTI KFT AT SALES@KISHONTI.NET!
+
+
+        1. Definitions
+
+        "Device" means an electronic device that conforms to the system requirements of the Software as specified in the Software's documentation and that is capable of connecting to the Internet.
+        "EULA" means this software end-user license agreement.
+        "KISHONTI" means KISHONTI Kft., a limited liability company organized under the laws of Hungary with its registered seat at 1037 Budapest, Szepvolgyi ut 39., Hungary, registered under no. Cg. 01-09-935577 by the Metropolitan Court of Budapest as Court of Registration.
+        "Disabled Features" means features or functionalities that are hidden or appear disabled or "grayed out". The Software may contain Disabled Features that will activate only when using software versions available only from KISHONTI against the payment of license fees.
+        "Software" means the performance testing benchmark software made available online (through internet connection) by KISHONTI under this EULA, including (a) all of the contents of the files, which may include KISHONTI or third party computer information or software, related explanatory written materials or files and fonts; and (b) upgrades, modified versions, updates, additions, and copies of the foregoing, provided to You by KISHONTI at any time (collectively, "Updates").
+        "Use" means to access, download, install, run, test Devices with or otherwise benefit from using the functionality of the Software.
+
+
+        2. Scope of License
+
+        This free license granted to You for the Software by KISHONTI is limited to a non-transferable license to use the Software on any Device that You own or control. The license and the availability of the Software may be discontinued (terminated) by KISHONTI at any time as set forth in this EULA.
+
+        Your rights and obligations with respect to the Use of the Software or any of its components are as follows:
+
+        (i) You may:
+        (a) Download, install and use the Software for free. Use of the Software will require Internet connection;
+        (b) Use one copy of the Software or any of its components and all Updates on each of your Devices serving your personal use for any period until which the Software is made available by KISHONTI (at its sole discretion) or until KISHONTI otherwise terminates this EULA;
+        (c) Use the Software for personal purposes only. The Software and any test results or other data generated through the Use of the Software may not be used for commercial purposes (including without limitation use by governmental and not-for-profit organizations).
+
+        (ii) You may not:
+        (a) Use, copy, adapt, modify, or transfer copies of the Software (or authorize any person to do so) except as expressly provided for in this EULA;
+        (b) Install or Use the Software on a computer file server;
+        (c) Remove any proprietary or other notices or labels from the Software;
+        (d) Reverse engineer, re-configure, modify, translate, decompile, disassemble or make derivative works based on the Software (except and only to the extent that such activity is expressly permitted by applicable mandatory law notwithstanding this limitation);
+        (e) Sell, distribute, rent, lease, sublicense, transfer or assign the Software or any copy thereof, including any related documentation;
+        (f) Extract portions of the Software's elements;
+        (g) Integrate to use the Software with any other software, plugin or enhancement;
+        (h) Make any attempt to discover the source code of the Software, determine or attempt to determine source code from the Software or to create any derivative works based upon the Products (except and only to the extent that such activity is expressly permitted by applicable mandatory law notwithstanding this limitation);
+        (i) Access, or attempt to access, any Disabled Features, nor will You rely on the Software to create a feature substantially similar to any Disabled Feature or otherwise circumvent the technology that controls activation of any such Disabled Features.
+
+        3. Intellectual property ownership and reservation of rights.
+
+        The Software and any authorized copies that You make are the intellectual property of KISHONTI (and its suppliers, as applicable). The structure, organization, and code of the Software are the valuable intellectually property (e.g. trade secrets and confidential information) of KISHONTI (and its suppliers, as applicable). The Software is protected by law, including without limitation the copyright laws of Hungary, the United States and other countries, and by international treaty provisions. Except as expressly stated herein, this EULA does not grant You any intellectual property rights in the Software and all rights not expressly granted are reserved by KISHONTI (and its suppliers, as applicable).
+        As described in this EULA, the test results created by your Use of the Software will also become the property of KISHONTI upon their uploading onto KISHONTI's servers.
+
+
+        4. Connectivity. Uploading and display of test results
+
+        (a) Internet connection required
+        You acknowledge and accept that the Software can only be used if and when your Device is connected to the Internet (to KISHONTI's benchmark data processing servers).
+
+        (b) Uploading and display of test results
+        You acknowledge and accept that when You use the Software, the test results generated by such Use will be automatically, without notice, uploaded to KISHONTI's servers. You also acknowledge and accept that the results so uploaded will become the property of KISHONTI. The test results will be displayed at KISHONTI's website at the sole decision of KISHONTI and KISHONTI may display, remove or relocate the test results without giving any notice or reason.
+
+        (c) Updating
+        If your Device is connected to the Internet, the Software may, without additional notice, check for Updates that are available for automatic download and installation to your Device and let KISHONTI know the Software is successfully installed. Updates may be automatically downloaded and installed without additional notice. Only non-personally identifying information is transmitted to KISHONTI when this happens, except to the extent that IP Addresses may be considered personally identifiable in some jurisdictions. The use of such information, including your IP Address, as provided by the auto update process is governed by the KISHONTI's Privacy Policy (which You can read at www.kishonti.net). Further, if your Device is connected to the Internet, the Software may, without additional notice and on an intermittent or regular basis, facilitate your access to content and services that are hosted on websites maintained by KISHONTI. When the Software connects to the Internet, your IP Address, user name, and password may be sent to KISHONTI's servers and stored by KISHONTI. This information may be used by KISHONTI to send You transactional messages to facilitate the Use and/or functionality of the Software. KISHONTI may display in-product marketing to provide information about the Software and other products and services of KISHONTI. Whenever the Software makes an Internet connection and communicates with KISHONTI's website, whether automatically or due to explicit user request, KISHONTI's Privacy Policy will apply.
+
+
+        5. Discontinuation of the Use of the Software
+
+        KISHONTI will be entitled to modify or Update the Software or to modify or remove any part, element, and feature of functionality of the Software at any time and without giving any notice or reason.
+
+        KISHONTI will be entitled to discontinue (terminate) the availability, accessibility or Use of the Software (or any earlier version of the Software) or any part, element, feature of functionality of the Software at any time and without giving any notice or reason.
+
+        Your license to use the Software is effective until terminated by You or KISHONTI. You may terminate the license by uninstalling (completely removing) all copies of the Software from your Device. Your rights under this license will terminate automatically without notice from the KISHONTI if You fail to comply with any term(s) of this license. Upon termination of the license, You shall cease all use of the Software, and destroy all copies, full or partial, of the Software. Termination of the license (discontinuation of the Software's availability) will not affect KISHONTI's proprietary rights to the test results uploaded to its server.
+
+
+        6. No warranties and liability
+
+        YOU EXPRESSLY ACKNOWLEDGE AND AGREE THAT USE OF THE SOFTWARE (OR INABILITY TO USE) IS AT YOUR SOLE RISK AND THAT THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY AND EFFORT IS WITH YOU. TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE MANDATORY LAW, THE SOFTWARE AND ANY SERVICES PERFORMED OR PROVIDED BY KISHONTI ARE PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, AND KISHONTI HEREBY DISCLAIMS ALL WARRANTIES AND CONDITIONS WITH RESPECT TO THE SOFTWARE AND ANY SERVICES, EITHER EXPRESS, IMPLIED OR STATUTORY, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES AND/OR CONDITIONS OF MERCHANTABILITY, OF SATISFACTORY QUALITY, OF FITNESS FOR A PARTICULAR PURPOSE, OF ACCURACY, OF QUIET ENJOYMENT, AND NON-INFRINGEMENT OF THIRD PARTY RIGHTS. KISHONTI DOES NOT WARRANT AGAINST INTERFERENCE WITH YOUR ENJOYMENT OF THE SOFTWARE, THAT THE FUNCTIONS CONTAINED IN, OR SERVICES PERFORMED OR PROVIDED BY, THE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE SOFTWARE OR SERVICES WILL BE UNINTERRUPTED OR ERROR-FREE, OR THAT DEFECTS IN THE SOFTWARE OR SERVICES WILL BE CORRECTED. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY KISHONTI OR ITS AUTHORIZED REPRESENTATIVE SHALL CREATE A WARRANTY. SHOULD THE SOFTWARE OR SERVICES PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION. SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES OR LIMITATIONS ON APPLICABLE STATUTORY RIGHTS OF A CONSUMER; IN SUCH CASE THE MAXIMUM LIMITATION (THE LEVEL OF WARRANTY REPRESENTING THE LOWEST (MINIMUM) LEVEL OF EXPOSURE TO KISHONTI) ALLOWED BY THE APPLICABLE LAW WILL APPLY.
+
+        TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL KISHONTI BE LIABLE FOR PERSONAL, PROPERTY OR ECONOM IC INJURY, DAMAGES OR LOSS RELATING TO THE IMPROPER USE OF THE SOFTWARE OR THE DEVICE ON WHICH THE SOFTWARE IS USED, INCLUDING, WITHOUT LIMITATION, INJURY, DAMAGES OR LOSSES RESULTING FROM THE OVERHEATING OF THE DEVICE DUE TO ANY REASON. YOU EXPRESSLY ASSUME THE RISK OF ALL PERSONAL, PROPERTY OR ECONOMIC INJURY RESULTING FROM OR RELATING TO THE USE OF THE SOFTWARE. TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL KISHONTI BE LIABLE FOR PERSONAL, PROPERTY OR ECONOMIC INJURY, DAMAGES OR LOSS, OR ANY INCIDENTAL, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES WHATSOEVER, INCLUDING, WITHOUT LIMITATION, DAMAGES FOR LOSS OF PROFITS, LOSS OF DATA, BUSINESS INTERRUPTION, LOSS OF BUSINESS, LOST SAVINGS OR ANY OTHER COMMERCIAL OR NON-COMMERCIAL DAMAGES OR LOSSES, ARISING OUT OF OR RELATED TO YOUR USE OR INABILITY TO USE THE SOFTWARE, HOWEVER CAUSED, REGARDLESS OF THE THEORY OF LIABILITY (CONTRACT, TORT OR OTHERWISE) AND EVEN IF KISHONTI HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. SOME JURISDICTIONS DO NOT ALLOW THE LIMITATION OF LIABILITY FOR PERSONAL INJURY, OR OF INCIDENTAL OR CONSEQUENTIAL DAMAGES; IN SUCH CASE THE MAXIMUM LIMITATION (THE LEVEL OF LIABILITY REPRESENTING THE LOWEST (MINIMUM) LEVEL OF EXPOSURE TO KISHONTI) ALLOWED BY THE APPLICABLE LAW WILL APPLY.  In no event shall KISHONTI's total liability to You for all damages (other than as may be required by applicable law in cases involving personal injury) exceed the amount of $50.00 (fifty dollars). The foregoing limitations will apply even if the above stated remedy fails of its essential purpose.
+
+        7. Compliance with license
+        You agree that upon request from KISHONTI or KISHONTI's authorized representative, You will, within 30 (thirty) days, fully document and certify that use of any and all Software at the time of the request is in conformity with your valid licenses from KISHONTI.
+
+
+        8. Governing Law and jurisdiction
+
+        This EULA (including without limitation all disputes arising from or in connection with this EULA, its breach, termination, validity or interpretation) will be governed by and construed in accordance with the substantive laws in force in Hungary. Notwithstanding any provision in this EULA, KISHONTI or you may request any judicial, administrative, or other authority to order any provisional or conservatory measure, including injunctive relief, specific performance, or other equitable relief, prior to the institution of legal proceedings, or during the proceedings, for the preservation of its rights and interests or to enforce specific terms that are suitable for provisional remedies. The English version of this EULA will be the version used when interpreting or construing this EULA. This EULA will not be governed by the conflict of law rules of any jurisdiction or the United Nations Convention on Contracts for the International Sale of Goods, the application of which is expressly excluded.
+
+
+        9. Miscellaneous provisions
+
+        (a) This EULA is the entire agreement between KISHONTI and You relating to the Software and it supersedes any prior representations, discussions, undertakings, communications, or advertising relating to the Software (except for the application of KISHONTI's Privacy Policy).
+        (b) If any provision of this EULA (including any section, clause, paragraph, sentence or word in it) is or becomes invalid or unenforceable, that shall not affect the validity and enforceability of any other provision of this EULA save that it shall be apparent from the nature or the contents of this EULA or the circumstances under which this EULA had been entered into that such provision may not be severed from the rest of the EULA. The same applies if there should be any errors or omissions in this EULA, which can be resolved within reason. In place of the legally unenforceable provisions, or to correct any errors or omissions, the parties shall negotiate and agree reasonably and in good faith and in accordance with the basic principles set forth in this EULA, on an appropriate substitute provision which, as far as legally possible, comes closest to what this EULA commercially intended, or would have intended, had they known of the legal unenforceability, error or omission (as the case may be).
+        (c) This EULA will not prejudice the statutory rights of any party dealing as a consumer if such rights are mandatorily applicable to this EULA.
+        (d) This EULA may only be modified by a writing signed by an authorized officer of KISHONTI. Updates may be licensed to You by KISHONTI with additional or different terms.
+        (e) You agree not to export from anywhere any part of the Software or any data generated through the Use of the Software or any direct product thereof except in compliance with, and with all licenses and approvals required under, applicable export laws, rules and regulations.
+
+        KISHONTI Kft. [*] September 2013
+        All rights reserved. Any rights not expressly granted herein are reserved.</string>
+  <string name="PrivacyDialogBody">Please note that the app requires active internet connection. The application data is downloaded and synchronized at every startup and the results are uploaded to the server. The collected hardware and result data enable us to provide a comprehensive database for comparing devices. Please also note the following:
+
+Outgoing data:
+
+- Crash report: the application log file will be sent to us at the next application startup in case of a crash. Otherwise it will be deleted.
+- The application gathers information on the most important hardware data of your device and uploads it to our website database.
+- The application also uploads every test result to our website database.
+
+Incoming data:
+
+- The application will download test and language files, pictures and a copy of the database.
+
+If you do not allow sending us information or test results you will only be able to run a basic test. You can still browse the result database and check your hardware specifications. Thank you for your understanding.
+
+Do you allow the outgoing traffic?</string>
+</resources>

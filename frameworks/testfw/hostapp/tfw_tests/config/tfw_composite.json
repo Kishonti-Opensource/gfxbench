@@ -1,0 +1,65 @@
+{
+    "test_id": "tfw_composite",
+    "tests": [
+        {
+            "env": {
+                "graphics": {
+                    "versions": [
+                        {
+                            "major": 2,
+                            "minor": 0,
+                            "type": "GL"
+                        },
+                        {
+                            "major": 2,
+                            "minor": 0,
+                            "type": "ES"
+                        }
+                    ]
+                }
+            },
+            "factory_method": "tfw_basic",
+            "preload_libs": [
+                "tfw_tests"
+            ],
+            "raw_config": {
+                "init_step_time": 1.0,
+                "init_steps": 5,
+                "step_time": 0.1,
+                "steps": 50
+            },
+            "test_id": "tfw_basic0",
+            "version": 1
+        },
+        {
+            "env": {
+                "graphics": {
+                    "versions": [
+                        {
+                            "major": 2,
+                            "minor": 0,
+                            "type": "GL"
+                        },
+                        {
+                            "major": 2,
+                            "minor": 0,
+                            "type": "ES"
+                        }
+                    ]
+                }
+            },
+            "factory_method": "tfw_basic",
+            "preload_libs": [
+                "tfw_tests"
+            ],
+            "raw_config": {
+                "init_step_time": 0.2,
+                "init_steps": 20,
+                "step_time": 0.2,
+                "steps": 50
+            },
+            "test_id": "tfw_basic1",
+            "version": 1
+        }
+    ]
+}

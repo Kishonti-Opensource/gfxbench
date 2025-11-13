@@ -1,0 +1,531 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="AboutSectionTitle">Informationen</string>
+  <string name="Accept">Akzeptieren</string>
+  <string name="AppVersionCorporate">Unternehmensversion %s</string>
+  <string name="Back">Zur.</string>
+  <string name="BAD_VERSION">Sie verwenden eine alte Version von GFXBench. Aktualisieren Sie die App!</string>
+  <string name="BatteryBrightness100">100 % erzwingen</string>
+  <string name="BatteryBrightness25">25 % erzwingen</string>
+  <string name="BatteryBrightness50">50 % erzwingen</string>
+  <string name="BatteryBrightness75">75 % erzwingen</string>
+  <string name="BatteryBrightnessDefault">Standard</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">Laden</string>
+  <string name="BatteryPageTitle">Akkudiagramm</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">Akkubetrieb</string>
+  <string name="BatteryUnplugged">Netzkabel getrennt</string>
+  <string name="BestResults">Beste Ergebnisse</string>
+  <string name="Camera_Autofocus">Autofokus</string>
+  <string name="Camera_FaceDetection">Gesichtserkennung</string>
+  <string name="Camera_Flash">Blitz</string>
+  <string name="Camera_GeoTagging">Geotagging</string>
+  <string name="Camera_HDR">HDR-Foto</string>
+  <string name="Camera_Picture">Foto</string>
+  <string name="Camera_TouchFocus">Manueller Fokus</string>
+  <string name="Camera_Video">Video</string>
+  <string name="Cancel">Abbrechen</string>
+  <string name="Cancelled">Abgebrochen</string>
+  <string name="Chipset">Chipsatz</string>
+  <string name="ClearAll">Alle löschen</string>
+  <string name="ClearHistoryDialogBody">Dadurch werden alle Ergebnisdaten gelöscht. Möchten Sie wirklich alle Ergebnisdaten löschen?</string>
+  <string name="ClearHistoryDialogTitle">Verlauf löschen</string>
+  <string name="Close">Schließen</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">Verbindung zum Server wird hergestellt.</string>
+  <string name="ContactUs">Kontakt</string>
+  <string name="CorporateCommercialTitle">Informationen zur Lizenzierung</string>
+  <string name="CorporateFeatures">Unternehmensfunktionen</string>
+  <string name="Decline">Ablehnen</string>
+  <string name="DeviceMayCrashDialogBody">Ihr Gerät verfügt möglicherweise nicht über genügend Speicher, um diesen Test ausführen. Wir empfehlen Ihnen, alle anderen Anwendungen zu schließen und / oder das Gerät neu zu starten, weil es aufgrund der niedrigen Speicherbedingungen sonst abstürzen.</string>
+  <string name="DeviceMayCrashDialogTitle">Hohe Speicherverbrauch</string>
+  <string name="DownloadDatabaseEveryStartup">Datenbank bei jedem Start herunterladen</string>
+  <string name="Email">E-Mail</string>
+  <string name="EMAIL_TAKEN">Diese E-Mail-Adresse wird bereits verwendet. Wählen Sie eine andere.</string>
+  <string name="EmailTakenDialogBody">Diese E-Mail-Adresse wird bereits von einem anderen Benutzer verwendet. Wählen Sie eine andere E-Mail-Adresse und versuchen Sie es erneut.</string>
+  <string name="EmailTakenDialogTitle">E-Mail wird bereits verwendet</string>
+  <string name="EnableExtraBattery">Zusätzlichen Akku aktivieren</string>
+  <string name="Error">Fehler!</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">Angehalten, Helligkeit geändert</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">Angehalten, Ladegerät angeschlossen</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">Mit inkompatibler ES-Version erstellt</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">DirectX-Funktionsstufe nicht verfügbar</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">ES 3 nicht unterstützt</string>
+  <string name="ERROR_FILE_NOT_FOUND">Datei nicht gefunden</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">Ungültige Bildschirmauflösung</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">Ihr Gerät unterstützt Bewegungsunschärfe mit MSAA nicht.</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">Ihr Gerät unterstützt Offscreen nicht.</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">Ihr Gerät unterstützt Offscreen mit MSAA nicht.</string>
+  <string name="ERROR_OUT_OF_MEMORY">Nicht genügend Arbeitsspeicher</string>
+  <string name="ERROR_OUT_OF_VMEMORY">Nicht genügend Videospeicher</string>
+  <string name="ERROR_SHADER_ERROR">Shader-Fehler</string>
+  <string name="ERROR_SKIPPED">Übersprungen</string>
+  <string name="ERROR_UNDEFINED_ERROR">Undefinierter Fehler</string>
+  <string name="ERROR_UNKNOWNERROR">Unbekannter Fehler</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">Nicht unterstütztes Texturformat</string>
+  <string name="ERROR_VBO_ERROR">VBO-Fehler</string>
+  <string name="FeatureAccelerometer">Beschleunigungsmesser</string>
+  <string name="FeatureAltimeter">Höhenmesser</string>
+  <string name="FeatureBarometer">Barometer</string>
+  <string name="FeatureBluetooth">Bluetooth</string>
+  <string name="FeatureCompass">Kompass</string>
+  <string name="FeatureCPUCoreCount">Kerne</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">Gyroskop</string>
+  <string name="FeatureLevel">Funktionsstufe</string>
+  <string name="FeatureLightSensor">Lichtsensor</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">Näherungssensor</string>
+  <string name="FeatureSIMCount">SIM-Karten</string>
+  <string name="FeatureThermometer">Thermometer</string>
+  <string name="FeatureTouchscreenCapacitive">kapazitiver Touchscreen</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">kapazitiver Touchscreen mit Unterstützung für mind. Fünffingerbewegung</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">kapazitiver Touchscreen mit Unterstützung für Mehrfingerbewegung</string>
+  <string name="FeatureTouchscreenResistive">resistiver Tochscreen</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">resistiver Touchscreen mit Unterstützung für mind. Fünffingerbewegung</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">resistiver Touchscreen mit Unterstützung für Mehrfingerbewegung</string>
+  <string name="FillTheForm">Füllen Sie nachstehendes Formular aus.</string>
+  <string name="FindOutMore">Weitere Informationen</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">Folgen Sie uns</string>
+  <string name="ForceDisplayBrightness">Anzeigehelligkeit erzwingen</string>
+  <string name="ForgotPasswordSendToEmail">An meine E-Mail-Adresse senden.</string>
+  <string name="ForgotPasswordSentToEmail">Wir haben Ihnen eine E-Mail gesendet. Folgen Sie den Anweisungen zum Zurücksetzen Ihres Passworts.</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">High-Level-Tests</string>
+  <string name="group_high_level_desc">Spieleähnliche High-End-Szenen, um die insgesamte 3D-Grafikleistung Ihres Geräts zu testen. Die Test-Engines verwenden komplexe Effekte, um die GPU zu beanspruchen und Feedback zur 3D-Grafikleistung abzugeben, die beim Spielen oder bei der Durchführung anderer GPU-intensiver Aufgaben (z. B. UI-Rendering, Navigation) bereitgestellt wird.</string>
+  <string name="group_low_level">Low-Level-Tests</string>
+  <string name="group_special">Spezielle Tests</string>
+  <string name="Height">Höhe</string>
+  <string name="INTERNAL_ERROR">Serverfehler. Versuchen Sie es später erneut.</string>
+  <string name="INVALID_CREDENTIALS">Ihr Anmeldename oder Passwort ist falsch. Erneut eingeben.</string>
+  <string name="INVALID_EMAIL_ADDRESS">Ungültige E-Mail-Adresse. Geben Sie sie erneut ein.</string>
+  <string name="InvalidCredentialsBody">Ihr Anmeldename oder Passwort ist falsch. Erneut eingeben.</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">Die eingegebene E-Mail-Adresse ist ungültig. Geben Sie eine gültige E-Mail-Adresse ein und versuchen Sie es erneut.</string>
+  <string name="InvalidEmailDialogTitle">Fehler bei der E-Mail-Adresse</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">Aktuelle Ergebnisse</string>
+  <string name="LicenseDialogTitle">Allgemeine Lizenz</string>
+  <string name="Lifetime">Lebensdauer</string>
+  <string name="Loading">Laden ...</string>
+  <string name="LoadingDeviceInfo">Geräteinformationen werden erfasst.</string>
+  <string name="LoadingDuelInfo">Duellinformationen werden erfasst.</string>
+  <string name="LoadingNextTest">Nächster Test wird geladen ...</string>
+  <string name="LoadingTest">%s wird geladen ...</string>
+  <string name="Login">Anmelden</string>
+  <string name="LoginFailedDialogBody">Benutzername oder Passwort stimmen nicht überein. Erneut eingeben.</string>
+  <string name="LoginFailedDialogTitle">Anmeldefehler</string>
+  <string name="LoginForgotPassword">Passwort vergessen?</string>
+  <string name="LoginTitle">Anmelden</string>
+  <string name="Logout">Abmelden</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="MISSING_PARAMETER">Geben Sie Ihren Anmeldenamen und das Passwort ein.</string>
+  <string name="MissingParametersDialogBody">Mindestens eine der erforderlichen Informationen fehlt. Geben Sie diese ein und versuchen Sie es erneut.</string>
+  <string name="MissingParametersDialogTitle">Fehlende Parameter</string>
+  <string name="More">Mehr</string>
+  <string name="NetRequirementDialogBody">GFXBench speichert und zeigt Ergebnisse nur an, wenn Sie über eine aktive Internetverbindung verfügen.</string>
+  <string name="NetRequirementDialogTitle">Informationen</string>
+  <string name="NETWORK_ERROR">Netzwerkfehler. Versuchen Sie es später erneut.</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">Nein</string>
+  <string name="NoFreeSpaceDialogBody">Mindestens erforderlicher freier Speicherplatz auf SD-Karte: %1$s MB</string>
+  <string name="NoFreeSpaceDialogTitle">Fehler</string>
+  <string name="NoInternetDialogBody">Intenetverbindung nicht gefunden. Stellen Sie eine Verbindung zu einem Netzwerk her und versuchen Sie es erneut!</string>
+  <string name="NoInternetDialogTitle">Kein Netz gefunden</string>
+  <string name="NoServerDialogBody">Beim Versuch von GFXBench, eine Verbindung mit unserem Server herzustellen, ist ein Fehler aufgetreten. Versuchen Sie es später erneut.</string>
+  <string name="NoServerDialogTitle">Server nicht gefunden</string>
+  <string name="NoTestSelectedDialogBody">Wählen Sie mindestens einen Test aus!</string>
+  <string name="NoTestSelectedDialogTitle">Kein Test ausgewählt</string>
+  <string name="NotRegisteredSectionBody">GFXBench speichert immer die Ergebnisse jedes Testlaufs. Wenn Sie auf den Verlauf der Testergebnisse zugreifen möchten, müssen Sie ein Benutzerkonto erstellen.</string>
+  <string name="NotRegisteredSectionTitle">Info</string>
+  <string name="NotSupported">Nicht unterstützt</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="Offscreen">Offscreen</string>
+  <string name="OffscreenHeight">Offscreen-Höhe</string>
+  <string name="OffscreenWidth">Offscreen-Breite</string>
+  <string name="OK">OK</string>
+  <string name="Onscreen">Onscreen</string>
+  <string name="OperatingSystem">BS</string>
+  <string name="OperatingSystemFull">Betriebssystem</string>
+  <string name="OutdatedDialogBody">Ihre Version von GFXBench ist veraltet. Aktualisieren Sie die App und beginnen Sie erneut.</string>
+  <string name="OutdatedDialogTitle">Veraltete Version</string>
+  <string name="Password">Passwort</string>
+  <string name="PasswordMismatchDialogBody">Passwörter stimmen nicht überein. Geben Sie Ihr Passwort erneut ein.</string>
+  <string name="PasswordMismatchDialogTitle">Passwortfehler</string>
+  <string name="Performance">Leistung</string>
+  <string name="PrimaryScreenDialogBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenDialogTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">Beenden</string>
+  <string name="ReadLicense">EULA lesen</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Register">Registrieren</string>
+  <string name="RegisterEmail">E-Mail-Adresse</string>
+  <string name="RegisterError">Datenschutzbestimmungen akzeptieren und registrieren.</string>
+  <string name="RegisterErrorEmailNotOK">Wählen Sie eine andere E-Mail-Adresse.</string>
+  <string name="RegisterErrorLoginNotOK">Wählen Sie einen anderen Anmeldenamen.</string>
+  <string name="RegisterErrorNoEmail">Füllen Sie das Feld für die E-Mail-Adresse aus.</string>
+  <string name="RegisterErrorNoFirstName">Füllen Sie das Feld für den Vornamen aus.</string>
+  <string name="RegisterErrorNoLastName">Füllen Sie das Feld für den Nachnamen aus.</string>
+  <string name="RegisterErrorNoLogin">Füllen Sie das Feld für den Anmeldenamen aus.</string>
+  <string name="RegisterErrorNoPassword">Füllen Sie das Feld für das Passwort aus.</string>
+  <string name="RegisterErrorPasswordsNotMatching">Passwörter stimmen nicht überein. Erneut eingeben.</string>
+  <string name="RegisterFirstName">Vorname</string>
+  <string name="RegisterLastName">Nachname</string>
+  <string name="RegisterLogin">Anmeldenamen wählen</string>
+  <string name="RegisterPassword">Passwort</string>
+  <string name="RegisterPasswordAgain">Passwort erneut eingeben</string>
+  <string name="RegistrationFeedbackDialogBody">Sie haben sich erfolgreich registriert. Wir haben Ihnen eine Benachrichtigungs-E-Mail an die angegebene Adresse gesendet.</string>
+  <string name="RegistrationFeedbackDialogTitle">Erfolgreiche Registrierung</string>
+  <string name="RegistrationForm">Registrierungsformular</string>
+  <string name="RememberMe">Merken</string>
+  <string name="Requirement">Mindest-API-Anforderung:</string>
+  <string name="ResetTutorials">Lernprogramme zurücksetzen</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">Ergebnisverlauf</string>
+  <string name="Results_BatteryEstimatedTime">Akku – geschätzte Zeit</string>
+  <string name="Results_BatteryPerformance">Akku – Leistung</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">k. A.</string>
+  <string name="Results_NoBatteryResultYet">Noch kein Akkuergebnis</string>
+  <string name="Results_NoResultsYet">Noch keine Ergebnisse</string>
+  <string name="Results_RunningTime">Laufzeit</string>
+  <string name="Results_ShowBatteryDiagram">Akkudiagramm anzeigen</string>
+  <string name="Retry">Wiederholen</string>
+  <string name="SaveResultsExcel">Ergebnisse speichern</string>
+  <string name="Score">Wert</string>
+  <string name="Search">Suchen</string>
+  <string name="SelectAll">Alle auswählen</string>
+  <string name="SelectTests">Testauswahl</string>
+  <string name="ServerTimeoutDialogBody">GFXBench konnte unsere Server nicht erreichen. Versuchen Sie es später erneut.</string>
+  <string name="ServerTimeoutDialogTitle">Server-Timeout</string>
+  <string name="SetBatteryBrightness">Helligkeit für den Akkutest</string>
+  <string name="SetOffscrResolution">Offscreen-Auflösung</string>
+  <string name="SetOnscrResolution">Benutzerdefinierte Auflösung</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">FPS anzeigen</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">Sie wählen einen Akkutest aus. Dadurch wird die Auswahl aller anderen Tests aufgehoben.  Achten Sie bei diesem Test darauf, dass Ihr Gerät vollständig geladen und nicht angeschlossen ist.  Beachten Sie, dass Ihr Gerät während des Tests überhitzen kann.</string>
+  <string name="StabilityTestTitle">Akkutest</string>
+  <string name="Start">Starten</string>
+  <string name="StartAll">Alle starten</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">Nicht unterstützte Kontextversion</string>
+  <string name="STATUS_CANCELLED">Abgebrochen</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">Test kann nicht erstellt werden.</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">Ungültige Konfiguration</string>
+  <string name="STATUS_NATIVEEXCEPTION">Test fehlgeschlagen</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">Test ungültig</string>
+  <string name="STATUS_UNKNOWNERR">Unbekannter Fehler</string>
+  <string name="StorageCheck">Determinig den Speicher für die riesigen Datenmengen</string>
+  <string name="Supported">Unterstützt</string>
+  <string name="SwitchStateOff">Aus</string>
+  <string name="SwitchStateOn">Ein</string>
+  <string name="ShowString">Show</string>  
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobil results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>
+  <string name="SyncErrorDialogBody">Während der Synchronisierung ist folgender Fehler aufgetreten: %s</string>
+  <string name="SyncErrorDialogTitle">Synchronisierungsfehler</string>
+  <string name="Synchronization">Synchronisieren...</string>
+  <string name="SyncLotDialogBody">GFXBench synchronisiert nun die Anwendungsdaten mit dem Server. Dazu muss %s heruntergeladen werden. Möchten Sie dies zulassen?</string>
+  <string name="SyncLotDialogTitle">Datensynchronisierung</string>
+  <string name="SyncronizingChecksum">Dateien werden auf Änderungen überprüft ...</string>
+  <string name="SyncronizingLoadingString">Dateien %1$s%% werden synchronisiert (%2$s/%3$s MB)</string>
+  <string name="TabCompare">Vergleichen</string>
+  <string name="TabDuel">Duell</string>
+  <string name="TabGlInfo">OpenGL-Informationen</string>
+  <string name="TabHome">Start</string>
+  <string name="TabInfo">Info</string>
+  <string name="TabResults">Ergebnisse</string>
+  <string name="TabSettings">Einstellungen</string>
+  <string name="TestList">Testliste</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>  
+  <string name="TestSelection">Testauswahl</string>
+  <string name="ThreeDAPI">3D-API</string>
+  <string name="UnkownErrorDialogBody">Unerwarteter Fehler während der Registrierung. Versuchen Sie es später erneut.</string>
+  <string name="UnkownErrorDialogTitle">Fehler</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">Ergebnisse hochladen</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">Benutzer</string>
+  <string name="USER_NAME_TAKEN">Dieser Benutzername ist bereits vergeben. Wählen Sie einen anderen.</string>
+  <string name="Username">Benutzername</string>
+  <string name="UsernameTakenDialogBody">Dieser Benutzername wird momentan von einem anderen Benutzer verwendet. Wählen Sie einen anderen Benutzernamen und versuchen Sie es erneut.</string>
+  <string name="UsernameTakenDialogTitle">Benutzername ist bereits vergeben</string>
+  <string name="Version">Version %s</string>
+  <string name="WarningEULA">Lesen Sie den Endbenutzer-Lizenzvertrag.</string>
+  <string name="WarningNoInternet">Keine Internetverbindung gefunden. Stellen Sie eine Netzwerkverbindung her, um die Tests auszuführen.</string>
+  <string name="WarningOutdated">Sie verwenden eine veraltete Anwendung. Laden Sie die aktuelle Version von GFXBench herunter.</string>
+  <string name="WarningTestNotRunNoInternet">Test fehlgeschlagen, da keine Internetverbindung gefunden wurde. Stellen Sie eine Verbindung zu einem Netzwerk her, um die Tests auszuführen.</string>
+  <string name="WarningUnregistered">Registrieren Sie ein Konto.</string>
+  <string name="Welcome">Willkommen! Sie sind nun angemeldet als:</string>
+  <string name="Width">Breite</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">Ja</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">Ihr Gerät</string>
+  <string name="AboutSectionBody">GFXBench ist ein 3D-Grafik-Benchmark, mit dem die Grafikleistung Ihres Geräts getestet wird und die Ergebnisse mit anderen Geräten aller gängigen Plattformen vergleichen können. GFXBench wird von Kishonti Ltd. entwickelt. Weitere Informationen zu unserem Unternehmen finden Sie auf unserer Website unter kishonti.net!</string>
+  <string name="CorporateCommercial">Beachten Sie, dass Sie momentan die Community-Version von GFXBench verwenden. Zu Entwicklungszwecken empfehlen wir die Unternehmensversion. Wenn Sie Informationen zur Lizenzierung wünschen, senden Sie uns eine E-Mail an sales@kishonti.net!</string>
+  <string name="FollowUsSectionBody">GFXBench ist ein plattformübergreifender 3D-Grafik-Benchmark, mit dem die Leistung Ihres Geräts gemessen und mit anderen Geräten verglichen wird.</string>
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  
+  <!-- System info -->
+  <string name="device">Gerät</string>
+  <string name="os">BS</string>
+  <string name="display">Anzeige</string>
+  <string name="cpu">CPU</string>
+  <string name="gpu">GPU</string>
+  <string name="memory">Arbeitsspeicher</string>
+  <string name="storage">Speicher</string>
+  <string name="battery">Akku</string>
+  <string name="features">Funktionen</string>
+  <string name="frontcamera">Vordere Kamera</string>
+  <string name="backcamera">Hintere Kamera</string>
+  
+  <!-- GFXBench GL -->
+  <string name="gl_blending">Alpha-Mischleistung</string>
+  <string name="gl_blending_desc">Misst die Alpha-Mischleistung Ihres Geräts durch Rendern von semitransparenten, an dem Bildschirm ausgerichteten Vierfachbildschirmen mit hochauflösenden unkomprimierten Texturen. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">1080p Alpha-Mischleistung Offscreen</string>
+  <string name="gl_blending_off_desc">Misst die Alpha-Mischleistung Ihres Geräts durch Rendern von semitransparenten, an dem Bildschirm ausgerichteten Vierfachbildschirmen mit hochauflösenden unkomprimierten Texturen. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_alu">ALU</string>
+  <string name="gl_alu_desc">Misst die reine Shader-Rechenleistung Ihres Geräts mithilfe eines komplexen Fragment-Shaders und des Renderings eines einzelnen Vollbild-Vierfachbildschirms. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">1080p ALU Offscreen</string>
+  <string name="gl_alu_off_desc">Misst die reine Shader-Rechenleistung Ihres Geräts mithilfe eines komplexen Fragment-Shaders und des Renderings eines einzelnen Vollbild-Vierfachbildschirms. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu2">ALU 2</string>
+  <string name="gl_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="gl_trex_battery_desc">Bei diesem kombinierten Test werden die Akkulebensdauer und FPS-Stabilität des Geräts in einer Gaming-Szene durch 30-maliges Ausführen des gleichen Tests gemessen. Während des Tests werden FPS und der Akkuladestand protokolliert und die Ergebnisse werden in einem Akkudiagramm angezeigt. Beim Test werden zwei Werte ermittelt: einer für die geschätzte Akkulebensdauer in Minuten und einer für die Anzahl der Frames, die durch den langsamsten Testlauf gerendert werden. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">Treiberlast</string>
+  <string name="gl_driver_desc">Misst die CPU-Last des OpenGL-Treibers durch Rendern einer großen Anzahl an einfachen Objekten eins nach dem anderen, wobei der Gerätestatus für jedes Element geändert wird. Die Frequenz der Statusänderungen spiegelt reale Anwendungen wider. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off">1080p Treiberlast Offscreen</string>
+  <string name="gl_driver_off_desc">Misst die CPU-Last des OpenGL-Treibers durch Rendern einer großen Anzahl an einfachen Objekten eins nach dem anderen, wobei der Gerätestatus für jedes Element geändert wird. Die Frequenz der Statusänderungen spiegelt reale Anwendungen wider. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver2">Treiberlast 2</string>
+  <string name="gl_driver2_off">1080p Treiberlast 2 Offscreen</string>
+  <string name="gl_fill">Füllung</string>
+  <string name="gl_fill_desc">Misst die Texturierungsleistung des Geräts durch Rendern von vier Schichten an komprimierten Texturen. Dies ist beim Gaming ein gängiges Szenario. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihren Wert mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">1080p Füllung Offscreen</string>
+  <string name="gl_fill_off_desc">Misst die Texturierungsleistung des Geräts durch Rendern von vier Schichten an komprimierten Texturen. Dies ist beim Gaming ein gängiges Szenario. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihren Wert mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_off">1080p Texturing Offscreen</string>
+  <string name="gl_manhattan">Manhattan</string>
+  <string name="gl_manhattan31">Manhattan 3.1</string>
+  <string name="gl_manhattan31_off">1080p Manhattan 3.1 Offscreen</string>
+  <string name="gl_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="Test_Offscreen">%s Offscreen</string>
+  <string name="gl_trex">T-Rex</string>
+  <string name="gl_trex_battery">Akkutest</string>
+  <string name="gl_trex_battery_diagram">Akkutest - Diagramm</string>
+  <string name="gl_trex_battery_lifetime">Akkutest - geschätzte Zeit</string>
+  <string name="gl_trex_battery_performance">Akkutest - Leistung</string>
+  <string name="gl_trex_off">1080p T-Rex Offscreen</string>
+  <string name="gl_trex_qmatch">Render-Qualität</string>
+  <string name="gl_trex_qmatch_highp">Render-Qualität (hohe Präzision)</string>
+
+  <!-- GFXBench Metal -->
+  <string name="metal_blending">Alpha-Mischleistung</string>
+  <string name="metal_blending_desc">Misst die Alpha-Mischleistung Ihres Geräts durch Rendern von semitransparenten, an dem Bildschirm ausgerichteten Vierfachbildschirmen mit hochauflösenden unkomprimierten Texturen. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_blending_off">1080p Alpha-Mischleistung Offscreen</string>
+  <string name="metal_blending_off_desc">Misst die Alpha-Mischleistung Ihres Geräts durch Rendern von semitransparenten, an dem Bildschirm ausgerichteten Vierfachbildschirmen mit hochauflösenden unkomprimierten Texturen. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_diag">GL Diagnostics</string>
+  <string name="metal_alu">ALU</string>
+  <string name="metal_alu_desc">Misst die reine Shader-Rechenleistung Ihres Geräts mithilfe eines komplexen Fragment-Shaders und des Renderings eines einzelnen Vollbild-Vierfachbildschirms. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_alu_off">1080p ALU Offscreen</string>
+  <string name="metal_alu_off_desc">Misst die reine Shader-Rechenleistung Ihres Geräts mithilfe eines komplexen Fragment-Shaders und des Renderings eines einzelnen Vollbild-Vierfachbildschirms. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="metal_trex_battery_desc">Bei diesem kombinierten Test werden die Akkulebensdauer und FPS-Stabilität des Geräts in einer Gaming-Szene durch 30-maliges Ausführen des gleichen Tests gemessen. Während des Tests werden FPS und der Akkuladestand protokolliert und die Ergebnisse werden in einem Akkudiagramm angezeigt. Beim Test werden zwei Werte ermittelt: einer für die geschätzte Akkulebensdauer in Minuten und einer für die Anzahl der Frames, die durch den langsamsten Testlauf gerendert werden. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="metal_driver">Treiberlast</string>
+  <string name="metal_driver_desc">Misst die CPU-Last des Metal-Treibers durch Rendern einer großen Anzahl an einfachen Objekten eins nach dem anderen, wobei der Gerätestatus für jedes Element geändert wird. Die Frequenz der Statusänderungen spiegelt reale Anwendungen wider. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_driver_off">1080p Treiberlast Offscreen</string>
+  <string name="metal_driver_off_desc">Misst die CPU-Last des Metal-Treibers durch Rendern einer großen Anzahl an einfachen Objekten eins nach dem anderen, wobei der Gerätestatus für jedes Element geändert wird. Die Frequenz der Statusänderungen spiegelt reale Anwendungen wider. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_driver2">Treiberlast 2</string>
+  <string name="metal_driver2_off">1080p Treiberlast 2 Offscreen</string>
+  <string name="metal_fill">Füllung</string>
+  <string name="metal_fill_desc">Misst die Texturierungsleistung des Geräts durch Rendern von vier Schichten an komprimierten Texturen. Dies ist beim Gaming ein gängiges Szenario. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihren Wert mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_fill_off">1080p Füllung Offscreen</string>
+  <string name="metal_fill_off_desc">Misst die Texturierungsleistung des Geräts durch Rendern von vier Schichten an komprimierten Texturen. Dies ist beim Gaming ein gängiges Szenario. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihren Wert mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_fill2">Texturing</string>
+  <string name="metal_fill2_off">1080p Texturing Offscreen</string>
+  <string name="metal_manhattan">Manhattan</string>
+  <string name="metal_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="metal_manhattan31">Manhattan 3.1</string>
+  <string name="metal_manhattan31_off">1080p Manhattan 3.1 Offscreen</string>
+  <string name="metal_trex_qmatch_desc">Misst die visuelle Wiedergabetreue Ihres Geräts in einer High-End-Gaming-Szene. Der Wert ist der Spitzen-Signal-Rauschabstand basierend auf dem mittleren quadratischen Fehler verglichen mit einem zuvor gerenderten Referenzbild. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_trex_qmatch_highp_desc">Misst die visuelle Wiedergabetreue Ihres Geräts in einer High-End-Gaming-Szene. Der Wert ist der Spitzen-Signal-Rauschabstand basierend auf dem mittleren quadratischen Fehler verglichen mit einem zuvor gerenderten Referenzbild. Erforderliche Mindest-API: Metal</string>
+  <string name="metal_trex">T-Rex</string>
+  <string name="metal_trex_battery">Akkutest</string>
+  <string name="metal_trex_battery_diagram">Akkutest - Diagramm</string>
+  <string name="metal_trex_battery_lifetime">Akkutest - geschätzte Zeit</string>
+  <string name="metal_trex_battery_performance">Akkutest - Leistung</string>
+  <string name="metal_trex_desc">Der T-Rex-Test basiert auf Metal und enthält hochdetaillierte Texturen, Materialien, komplexe Geometrie, Komponenten mit animierten Texturen und einen Nachbearbeitungseffekt: Bewegungsunschärfe. Die Grafikpipeline bietet auch Funktionseffekte, z. B.: planare Reflexion, Glanzlichter und weiche Schatten. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen.  Erforderliche Mindest-API: Metal</string>
+  <string name="metal_trex_off_desc">Der T-Rex-Test basiert auf Metal und enthält hochdetaillierte Texturen, Materialien, komplexe Geometrie, Komponenten mit animierten Texturen und einen Nachbearbeitungseffekt: Bewegungsunschärfe. Die Grafikpipeline bietet auch Funktionseffekte, z. B.: planare Reflexion, Glanzlichter und weiche Schatten. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen.  Erforderliche Mindest-API: Metal</string>
+  <string name="metal_trex_off">1080p T-Rex Offscreen</string>
+  <string name="metal_trex_qmatch">Render-Qualität</string>
+  <string name="metal_trex_qmatch_highp">Render-Qualität (hohe Präzision)</string>
+
+  <!-- GFXBench DX -->
+  <string name="dx_blending">Alpha-Mischleistung</string>
+  <string name="dx_blending_desc">Misst die Alpha-Mischleistung Ihres Geräts durch Rendern von semitransparenten, an dem Bildschirm ausgerichteten Vierfachbildschirmen mit hochauflösenden unkomprimierten Texturen. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_blending_off">1080p Alpha-Mischleistung Offscreen</string>
+  <string name="dx_blending_off_desc">Misst die Alpha-Mischleistung Ihres Geräts durch Rendern von semitransparenten, an dem Bildschirm ausgerichteten Vierfachbildschirmen mit hochauflösenden unkomprimierten Texturen. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_alu">ALU</string>
+  <string name="dx_alu_desc">Misst die reine Shader-Rechenleistung Ihres Geräts mithilfe eines komplexen Fragment-Shaders und des Renderings eines einzelnen Vollbild-Vierfachbildschirms. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_alu_off">1080p ALU Offscreen</string>
+  <string name="dx_alu_off_desc">Misst die reine Shader-Rechenleistung Ihres Geräts mithilfe eines komplexen Fragment-Shaders und des Renderings eines einzelnen Vollbild-Vierfachbildschirms. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc"></string>
+  <string name="dx_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="dx_trex_battery_desc">Bei diesem kombinierten Test werden die Akkulebensdauer und FPS-Stabilität des Geräts in einer Gaming-Szene durch 30-maliges Ausführen des gleichen Tests gemessen. Während des Tests werden FPS und der Akkuladestand protokolliert und die Ergebnisse werden in einem Akkudiagramm angezeigt. Beim Test werden zwei Werte ermittelt: einer für die geschätzte Akkulebensdauer in Minuten und einer für die Anzahl der Frames, die durch den langsamsten Testlauf gerendert werden. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">Treiberlast</string>
+  <string name="dx_driver_desc">Misst die CPU-Last des DirectX-Treibers durch Rendern einer großen Anzahl an einfachen Objekten eins nach dem anderen, wobei der Gerätestatus für jedes Element geändert wird. Die Frequenz der Statusänderungen spiegelt reale Anwendungen wider. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_driver_off">1080p Treiberlast Offscreen</string>
+  <string name="dx_driver_off_desc">Misst die CPU-Last des DirectX-Treibers durch Rendern einer großen Anzahl an einfachen Objekten eins nach dem anderen, wobei der Gerätestatus für jedes Element geändert wird. Die Frequenz der Statusänderungen spiegelt reale Anwendungen wider. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Onscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_driver2">Treiberlast 2</string>
+  <string name="dx_driver2_desc"></string>
+  <string name="dx_driver2_off">1080p Treiberlast 2 Offscreen</string>
+  <string name="dx_fill">Füllung</string>
+  <string name="dx_fill_desc">Misst die Texturierungsleistung des Geräts durch Rendern von vier Schichten an komprimierten Texturen. Dies ist beim Gaming ein gängiges Szenario. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihren Wert mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_fill_off">1080p Füllung Offscreen</string>
+  <string name="dx_fill_off_desc">Misst die Texturierungsleistung des Geräts durch Rendern von vier Schichten an komprimierten Texturen. Dies ist beim Gaming ein gängiges Szenario. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihren Wert mit anderen Geräten zu vergleichen. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_fill2">Füllung 2</string>
+  <string name="dx_fill2_desc"></string>
+  <string name="dx_fill2_off">1080p Füllung 2 Offscreen</string>
+  <string name="dx_manhattan">Manhattan</string>
+  <string name="dx_manhattan31">Manhattan</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in ES 3.1 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">1080p Manhattan Offscreen</string>
+  <string name="dx_manhattan_desc">Unser allererster Test, um die DirectX 10.0-Fähigkeiten Ihres Geräts zu nutzen. Bei der Testszene handelt es sich um eine städtische Umgebung bei Nacht mit vielen Lichtern, um die Szenerie zu erhellen. Es werden verzögertes Rendering und Multi Render Target (MRT) für den Geometriedurchlauf (vier Farbanhänge als Textur), diffuse Beleuchtung und Glanzlichter verwendet und der Test bietet komplexe Effekte wie eine Tiefen-Shadow-Map, einen Verhüllungseffekt, einen Nachbearbeitungseffekt (Grauschleier, Tiefenschärfe), eine Okklusionsabfrage und animierte volumetrische Lichtschächte. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen.  Erforderliche Mindest-API: DirectX 10.0</string>
+  <string name="dx_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="dx_manhattan_off_desc">Unser allererster Test, um die DirectX 10.0-Fähigkeiten Ihres Geräts zu nutzen. Bei der Testszene handelt es sich um eine städtische Umgebung bei Nacht mit vielen Lichtern, um die Szenerie zu erhellen. Es werden verzögertes Rendering und Multi Render Target (MRT) für den Geometriedurchlauf (vier Farbanhänge als Textur), diffuse Beleuchtung und Glanzlichter verwendet und der Test bietet komplexe Effekte wie eine Tiefen-Shadow-Map, einen Verhüllungseffekt, einen Nachbearbeitungseffekt (Grauschleier, Tiefenschärfe), eine Okklusionsabfrage und animierte volumetrische Lichtschächte. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen.  Erforderliche Mindest-API: DirectX 10.0</string>
+  <string name="Test_Offscreen">%s Offscreen</string>
+  <string name="dx_trex_qmatch_desc">Misst die visuelle Wiedergabetreue Ihres Geräts in einer High-End-Gaming-Szene. Der Wert ist der Spitzen-Signal-Rauschabstand basierend auf dem mittleren quadratischen Fehler verglichen mit einem zuvor gerenderten Referenzbild. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp_desc">Misst die visuelle Wiedergabetreue Ihres Geräts in einer High-End-Gaming-Szene. Der Wert ist der Spitzen-Signal-Rauschabstand basierend auf dem mittleren quadratischen Fehler verglichen mit einem zuvor gerenderten Referenzbild. Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_trex">T-Rex</string>
+  <string name="dx_trex_battery">Akkutest</string>
+  <string name="dx_trex_battery_diagram">Akkutest - Diagramm</string>
+  <string name="dx_trex_battery_lifetime">Akkutest - geschätzte Zeit</string>
+  <string name="dx_trex_battery_performance">Akkutest - Leistung</string>
+  <string name="dx_trex_desc">Der T-Rex-Test basiert auf DirectX 9.1 und enthält hochdetaillierte Texturen, Materialien, komplexe Geometrie, Komponenten mit animierten Texturen und einen Nachbearbeitungseffekt: Bewegungsunschärfe. Die Grafikpipeline bietet auch Funktionseffekte, z. B.: planare Reflexion, Glanzlichter und weiche Schatten. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen.  Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_trex_off_desc">Der T-Rex-Test basiert auf DirectX 9.1 und enthält hochdetaillierte Texturen, Materialien, komplexe Geometrie, Komponenten mit animierten Texturen und einen Nachbearbeitungseffekt: Bewegungsunschärfe. Die Grafikpipeline bietet auch Funktionseffekte, z. B.: planare Reflexion, Glanzlichter und weiche Schatten. Führen Sie den Onscreen-Test durch, um die Leistung Ihres Geräts bei nativer Auflösung zu sehen. Verwenden Sie die Offscreen-Version, die auf allen Geräten mit 1080p ausgeführt wird, um Ihre Werte mit anderen Geräten zu vergleichen.  Erforderliche Mindest-API: DirectX 9.1</string>
+  <string name="dx_trex_off">1080p T-Rex Offscreen</string>
+  <string name="dx_trex_qmatch">Render-Qualität</string>
+  <string name="dx_trex_qmatch_highp">Render-Qualität (hohe Präzision)</string>
+  
+  <string name="LicenseDialogBody">ENDBENUTZER-LIZENZVERTRAG 
+        FÜR DIE BENCHMARK-SOFTWAREPRODUKTE VON KISHONTI KFT 
+         
+         
+        WICHTIGER HINWEIS – BITTE SORGFÄLTIG LESEN: BEI DIESEM ENDBENUTZER-LIZENZVERTRAG FÜR SOFTWARE HANDELT ES SICH UM EINEN RECHTLICH BINDENDEN VERTRAG ZWISCHEN IHNEN UND KISHONTI KFT FÜR DIE LEISTUNGS-BENCHMARK-SOFTWAREPRODUKTE VON KISHONTI. DIE IM RAHMEN DIESES EULA HERUNTERGELADENE SOFTWARE DARF ERST NACH SORGFÄLTIGEM LESEN DER FOLGENDEN BEDINGUNGEN HERUNTERGELADEN, KOPIERT, INSTALLIERT ODER VERWENDET WERDEN. JEDE ART DER VERVIELFÄLTIGUNG, VERTEILUNG ODER SONSTIGE VERWENDUNG DER SOFTWARE ODER IHRER KOMPONENTEN, DIE NICHT MIT DIESEM EULA ÜBEREINSTIMMT, IST GESETZLICH UNTERSAGT UND KANN ZU SCHWERWIEGENDEN ZIVIL- UND STRAFSANKTIONEN ODER ANDEREN KONSEQUENZEN FÜHREN. 
+         
+        DIE LIZENZ GILT NUR FÜR DIE PRIVATE, NICHT KOMMERZIELLE NUTZUNG: DIESE SOFTWARE IST FÜR DEN PERSÖNLICHEN UND NICHT KOMMERZIELLEN GEBRAUCH DURCH EINEN BENUTZER LIZENZIERT, UM DIE LEISTUNG SEINES/IHRES GERÄTES ALS PERSON, DIE EINE PRIVATE UND NICHT KOMMERZIELLE AKTIVITÄT DURCHFÜHRT, ZU TESTEN. FÜR SÄMTLICHE ANDEREN VERWENDUNGSZWECKE WIRD KEINE LIZENZ ERTEILT ODER IMPLIZIERT. 
+        WENN SIE EINE SOFTWARELIZENZ FÜR EINE KOMMERZIELLE VERWENDUNG BENÖTIGEN, KONTAKTIEREN SIE KISHONTI KFT PER E-MAIL AN SALES@KISHONTI.NET! 
+         
+         
+        1. Definitionen 
+         
+        „Gerät“ steht für ein elektronisches Gerät, das mit den Systemanforderungen der Software, wie sie in der Dokumentation der Software angegeben sind, übereinstimmt und das eine Verbindung zum Internet herstellen kann. 
+        „EULA“ steht für den Endbenutzer-Lizenzvertrag. 
+        „KISHONTI“ steht für KISHONTI Kft., ein Unternehmen mit beschränkter Haftung, das nach dem ungarischen Recht gegründet wurde und den Hauptsitz unter der Adresse 1037 Budapest, Szepvolgyi ut 39., Ungarn, hat. Es ist unter der Nummer Cg. 01-09-935577 vom Hauptstädtischen Gericht Budapest in seiner Funktion als Registergericht registriert. 
+        „Deaktivierte Funktionen“ sind Funktionen oder Funktionalitäten, die ausgeblendet oder als deaktiviert bzw. „ausgegraut“ angezeigt werden. Die Software kann deaktivierte Funktionen enthalten, die nur bei Verwendung von Softwareversionen, die von KISHONTI gegen eine Lizenzgebühr erworben werden können, aktiviert werden. 
+        „Software“ steht für die Leistungstest-Benchmark-Software, die von KISHONTI im Rahmen dieses EULA online zur Verfügung gestellt wird (über eine Internetverbindung). Dazu zählen (a) sämtliche Inhalte der Dateien, die Computerinformationen oder Software, dazugehörige erklärende schriftliche Materialien oder Dateien und Schriftarten von KISHONTI oder Dritten enthalten; und (b) Upgrades, geänderte Versionen,Aktualisierungen, Ergänzungen und Kopien des Vorangehenden, die Ihnen zu einem beliebigen Zeitpunkt von KISHONTI zur Verfügung gestellt wurden (zusammenfassend „Updates“). 
+        „Gebrauch“ bedeutet, auf die Software zuzugreifen, sie herunterzuladen, zu installieren, auszuführen und Geräte zu testen oder anderweitig von ihrem Gebrauch zu profitieren. 
+         
+         
+        2. Umfang der Lizenz 
+         
+        Diese kostenlose Lizenz, die Ihnen von KISHONTI für die Software erteilt wurde, ist eine nicht übertragbare Lizenz für die Nutzung der Software auf einem Gerät, das Sie besitzen oder kontrollieren. Die Lizenz und die Verfügbarkeit der Software können zu jedem beliebigen Zeitpunkt gemäß diesem EULA von KISHONTI eingestellt (beendet) werden. 
+         
+        Ihre Rechte und Verpflichtungen hinsichtlich der Nutzung der Software oder ihrer Komponenten lauten wie folgt: 
+         
+        (i) Ihre Rechte: 
+        (a) Sie dürfen die Software kostenlos herunterladen, installieren und verwenden. Die Nutzung der Software erfordert eine Internetverbindung; 
+        (b) Sie dürfen eine Kopie der Software oder ihrer Komponenten und sämtlicher Updates für private Zwecke auf jedem Ihrer Geräte verwenden, für den Zeitraum, in dem die Software von KISHONTI zur Verfügung gestellt wird (im alleinigen Ermessen), oder bis KISHONTI diesen EULA beendet; 
+        (c) Sie dürfen die Software nur zu privaten Zwecken verwenden. Die Software und sämtliche Testergebnisse oder andere Daten, die durch die Nutzung der Software generiert wurden, dürfen nicht für kommerzielle Zwecke verwendet werden (einschließlich, jedoch nicht beschränkt auf die Nutzung von Regierungs- oder gemeinnützigen Organisationen). 
+         
+        Zu Folgendem sind Sie nicht berechtigt: 
+        (a) Sie dürfen die Software bzw. Kopien der Software nicht auf eine andere Art und Weise als ausdrücklich in dieser EULA zugelassen verwenden, kopieren, anpassen, ändern oder übertragen (oder eine andere Person damit beauftragen);. 
+        (b) Sie dürfen die Software nicht auf einem Computerdateiserver installieren oder verwenden; 
+        (c) Sie dürfen keine herstellerspezifischen Hinweise oder Kennzeichnungen von der Software entfernen; 
+        (d) Sie dürfen die Software nicht rekonstruieren, rekonfigurieren, ändern, übersetzen, dekompilieren, demontieren oder abgeleitete Werke basierend auf der Software erstellen (ausgenommen und nur soweit, wie solche Aktivitäten durch anwendbares Recht, obgleich dieser Einschränkung, ausdrücklich zugelassen sind); 
+        (e) Sie dürfen die Software oder eine Kopie, einschließlich sämtlicher dazugehöriger Dokumente, nicht verkaufen, vertreiben, vermieten, verpachten, sublizenzieren, übertragen oder abtreten; 
+        (f) Sie dürfen keine Teile der Softwareelemente extrahieren; 
+        (g) Sie dürfen die Software nicht integrieren, um sie mit anderer Software, einem Plugin oder einer Verbesserung zu verwenden; 
+        (h) Sie dürfen keinen Versuch unternehmen, den Quellcode der Software herauszufinden, den Quellcode der Software zu ermitteln bzw. versuchen zu ermitteln oder abgeleitete Werke basierend auf den Produkten erstellen (ausgenommen und nur so weit, wie solche Aktivitäten durch anwendbares Recht, obgleich dieser Einschränkung, ausdrücklich zugelassen sind); 
+        (i) Sie dürfen nicht auf deaktivierte Funktionen zugreifen bzw. versuchen, darauf zuzugreifen oder anhand der Software eine Funktion erstellen, die den deaktivierten Funktionen im Wesentlichen entspricht, oder anderweitig die Technologie umgehen, die die Aktivierung dieser deaktivierten Funktionen steuert. 
+         
+        3. Eigentumsrechte am geistigen Eigentum und Rechtsvorbehalt 
+         
+        Die Software und sämtliche autorisierten Kopien, die Sie erstellen, sind geistiges Eigentum von KISHONTI (und ggf. seinen Lieferanten). Die Struktur, Organisation und der Code der Software sind wertvolles geistiges Eigentum (z. B. Betriebsgeheimnisse und vertrauliche Informationen) von KISHONTI (und ggf. seinen Lieferanten). Die Software ist unter anderem durch das Urheberrecht Ungarns, der Vereinigten Staaten und anderer Länder sowie durch internationale Verträge.gesetzlich geschützt. Sofern nicht ausdrücklich in diesem Vertrag festgelegt, gewährt Ihnen dieser EULA keine Eigentumsrechte an der Software und sämtliche Rechte, die nicht ausdrücklich gewährt werden, sind KISHONTI (und ggf. seinen Lieferanten) vorbehalten. 
+        Wie in diesem EULA beschrieben, gehen alle Testergebnisse, die durch die Nutzung der Software erzeugt werden, beim Hochladen auf die Server von KISHONTI in das Eigentum von KISHONTI über. 
+         
+         
+        4. Konnektivität. Hochladen und Anzeigen der Testergebnisse 
+         
+        (a) Internetverbindung erforderlich 
+        Sie erkennen an und akzeptieren, dass die Software nur verwendet werden kann, wenn Ihr Gerät mit dem Internet (mit den Benchmark-Datenverarbeitungsservern von KISHONTI) verbunden ist. 
+         
+        (b) Hochladen und Anzeigen der Testergebnisse 
+        Sie erkennen an und akzeptieren, dass die von der Software generierten Testergebnisse automatisch und ohne Ankündigung auf die Server von KISHONTI hochgeladen werden. Sie erkennen außerdem an und akzeptieren, dass die hochgeladenen Ergebnisse in das Eigentum von KISHONTI übergehen. Die Testergebnisse werden auf der Website von KISHONTI in alleinigem Ermessen von KISHONTI angezeigt und KISHONTI kann die Testergebnisse ohne Ankündigung oder Angabe von Gründen anzeigen, entfernen oder verschieben. 
+         
+        (c) Updates 
+        Wenn Ihr Gerät mit dem Internet verbunden ist, überprüft die Software möglicherweise ohne weitere Ankündigung auf verfügbare Updates, die automatisch heruntergeladen und auf Ihrem Gerät installiert werden. KISHONTI wird über die erfolgreiche Installation informiert. Updates können ohne weitere Ankündigung automatisch heruntergeladen und installiert werden. In diesem Fall werden nur nicht persönliche identifizierbare Informationen an KISHONTI übermittelt, es sei denn, die IP-Adresse wird in einigen Rechtsbereichen als persönlich identifizierbar angesehen. Die Nutzung dieser Informationen, einschließlich Ihrer IP-Adresse, die durch den automatischen Update-Vorgang zur Verfügung gestellt werden, unterliegen den Datenschutzrichtlinien von KISHONTI (einsehbar unter www.kishonti.net). Wenn Ihr Gerät mit dem Internet verbunden ist, kann die Software ohne weitere Ankündung und auf sporadischer oder regelmäßiger Basis den Zugang zu Inhalten oder Diensten, die auf Websites von KISHONTI gehostet werden, ermöglichen. Wenn die Software eine Verbindung zum Internet herstellt, können Ihre IP-Adresse, Ihr Benutzername und Ihr Passwort an die Server von KISHONTI gesendet und darauf gespeichert werden. Diese Informationen können von KISHONTI verwendet werden, um Ihnen Transaktionsnachrichten zu senden, die die Nutzung und/oder Funktionalität der Software ermöglichen. KISHONTI kann Werbung anzeigen, um Informationen über die Software und andere Produkte und Dienste von KISHONTI zu bieten. Sobald die Software eine Verbindung mit dem Internet herstellt und mit der Website von KISHONTI kommuniziert, ob automatisch oder aufgrund einer Benutzeranforderung, gelten die Datenschutzrichtlinien von KISHONTI. 
+         
+         
+        5. Einstellung der Nutzung der Software 
+         
+        KISHONTI ist berechtigt, die Software jederzeit und ohne Ankündigung oder Angabe von Gründen zu aktualisieren oder zu ändern oder Teile, Elemente und Funktionen der Software zu entfernen. 
+         
+        KISHONTI ist berechtigt, die Verfügbarkeit, den Zugriff oder die Nutzung der Software (oder einer früheren Version der Software) oder eines Teils, Elements oder einer Funktion der Software jederzeit und ohne Ankündigung oder Angabe von Gründen einzustellen (zu beenden). 
+         
+        Ihre Lizenz für die Nutzung der Software gilt, bis Sie von Ihnen oder KISHONTI beendet wird. Sie können den Lizenzvertrag durch die Deinstallation (vollständige Entfernung) aller Kopien der Software von Ihrem Gerät kündigen. Ihre Rechte im Rahmen dieser Lizenz werden automatisch ohne Ankündigung von KISHONTI aufgehoben, wenn Sie gegen eine Bestimmung dieser Lizenz verstoßen. Nach Beendigung der Lizenz müssen Sie jegliche Nutzung der Software einstellen und alle Kopien der Software, ob vollständige oder teilweise Kopien, zerstören. Von der Beendigung der Lizenz (Einstellung der Verfügbarkeit der Software) sind die Eigentumsrechte von KISHONTI an den auf den Server hochgeladenen Testergebnissen nicht betroffen. 
+         
+         
+        6. Ausschluss der Garantie und Haftung 
+         
+        SIE ERKLÄREN SICH AUSDRÜCKLICH DAMIT EINVERSTANDEN UND ERKENNEN AN, DASS DIE NUTZUNG (ODER NICHT MÖGLICHE NUTZUNG) DER SOFTWARE AUF IHR EIGENES RISIKO ERFOLGT UND DASS DAS GESAMTE RISIKO HINSICHTLICH ZUFRIEDENSTELLENDER QUALITÄT, LEISTUNG, GENAUIGKEIT UND AUFWAND BEI IHNEN LIEGT. IN DEM NACH GELTENDEM RECHT MAXIMAL ZULÄSSIGEN UMFANG WERDEN DIE SOFTWARE UND SÄMTLICHE DIENSTE, DIE VON KISHONTI DURCHGEFÜHRT ODER ZUR VERFÜGUNG GESTELLT WERDEN, OHNE MÄNGELGEWÄHR UND „WIE VORLIEGEND“ ZUR VERFÜGUNG GESTELLLT, MIT ALLEN FEHLERN UND OHNE GEWÄHRLEISTUNGEN JEGLICHER ART. KISHONTI LEHNT HIERMIT JEGLICHE GEWÄHRLEISTUNGEN UND BEDINGUNGEN IN BEZUG AUF DIE SOFTWARE UND SÄMTLICHE DIENSTE AB, GLEICH OB AUSDRÜCKLICH ODER KONKLUDENT, EINSCHLIESSLICH, ABER NICHT BESCHRÄNKT AUF DIE KONKLUDENTEN GEWÄHRLEISTUNGEN UND/ODER BEDINGUNGEN DER MARKTGÄNGIGKEIT, DIE ZUFRIEDENSTELLENDE QUALITÄT ODER EIGNUNG FÜR EINEN BESTIMMTEN ZWECK, DIE GENAUIGKEIT, DEN UNGESTÖRTEN BESITZ UND DIE NICHTVERLETZUNG DER RECHTE DRITTER. KISHONTI GIBT KEINERLEI GEWÄHRLEISTUNG, DASS SIE DIE SOFTWARE UNEINGESCHRÄNKT GENIESSEN KÖNNEN, DASS DIE DARIN ENTHALTENEN FUNKTIONEN ODER VON DER SOFTWARE DURCHGEFÜHRTEN ODER ZUR VERFÜGUNG GESTELLTEN DIENSTE IHRE ANFORDERUNGEN ERFÜLLEN, DASS DER BETRIEB DER SOFTWARE ODER DER DIENSTE UNTERBRECHUNGS- UND FEHLERFREI VERLÄUFT ODER DASS FEHLER IN DER SOFTWARE ODER DEN DIENSTEN KORRIGIERT WERDEN. KEINERLEI MÜNDLICH ODER SCHRIFTLICH ERTEILTE INFORMATIONEN ODER RATSCHLÄGE VON KISHONTI ODER SEINEN AUTORISIERTEN VERTRETERN STELLEN EINE GEWÄHRLEISTUNG DAR. SOLLTEN SICH DIE SOFTWARE ODER DIE DIENSTE ALS FEHLERHAFT ERWEISEN, ÜBERNEHMEN SIE DIE GESAMTEN KOSTEN FÜR ALLE NOTWENDIGEN SERVICELEISTUNGEN, REPARATURARBEITEN ODER KORREKTUREN. IN EINIGEN GERICHTSBARKEITEN IST DER AUSSCHLUSS IMPLIZIERTER GEWÄHRLEISTUNGEN ODER EINSCHRÄNKUNGEN DER ANWENDBAREN GESETZMÄSSIGEN RECHTE EINES KUNDEN NICHT ZULÄSSIG. IN EINEM SOLCHEN FALL GILT DIE IM RAHMEN DER GELTENDEN GESETZE MÖGLICHE MAXIMALE EINSCHRÄNKUNG (DIE HÖHE DER GEWÄHRLEISTUNG, DIE DIE NIEDRIGSTE (MINIMALE) EXPOSITIONSHÖHE FÜR KISHONTI DARSTELLT). 
+         
+        IN DEM NICHT DURCH GESETZE UNTERSAGTEN AUSMASS HAFTET KISHONTI IN KEINEM FALL FÜR PERSONEN-, SACH- ODER WIRTSCHAFTLICHE SCHÄDEN ODER VERLUSTE, DIE AUF EINEN UNSACHGEMÄSSEN GEBRAUCH DER SOFTWARE ODER DES GERÄTS, AUF DEM DIE SOFTWARE VERWENDET WIRD, ZURÜCKZUFÜHREN IST, EINSCHLIESSLICH, JEDOCH NICHT BESCHRÄNKT AUF SCHÄDEN ODER VERLUSTE AUFGRUND EINER AUS IRGENDEINEM GRUND AUFTRETENDEN ÜBERHITZUNG DES GERÄTS. SIE ÜBERNEHMEN AUSDRÜCKLICH DAS RISIKO FÜR ALLE PERSONEN-, SACH- ODER WIRTSCHAFTLICHEN SCHÄDEN, DIE SICH AUS DER NUTZUNG DER SOFTWARE ERGEBEN ODER DAMIT IN ZUSAMMENHANG STEHEN. IN DEM NICHT DURCH GESETZE UNTERSAGTEN AUSMASS HAFTET KISHONTI IN KEINEM FALL FÜR PERSONEN-, SACH- ODER WIRTSCHAFTLICHE SCHÄDEN ODER VERLUSTE ODER INDIREKTE, SPEZIELLE ODER FOLGESCHÄDEN, EINSCHLIESSLICH, JEDOCH NICHT BESCHRÄNKT AUF SCHÄDEN DURCH ENTGANGENEN GEWINN, DATENVERLUST, GESCHÄFTSUNTERBRECHNUNG, GESCHÄFTSVERLUST, NICHT ERZIELTE ERSPARNISSE ODER ANDERE KOMMERZIELLE ODER NICHTKOMMERZIELLE SCHÄDEN ODER VERLUSTE, DIE DURCH DIE NUTZUNG ODER NICHT MÖGLICHE NUTZUNG DER SOFTWARE ENTSTEHEN ODER DAMIT ZUSAMMENHÄNGEN, UND ZWAR UNABHÄNGIG VON DER RECHTSGRUNDLAGE DER HAFTUNG (VERTRAG, UNERLAUBTE HANDLUNG ODER SONSTIGE), AUCH DANN, WENN KISHONTI AUF DIE MÖGLICHKEIT SOLCHER SCHÄDEN HINGEWIESEN WURDE. IN EINIGEN GERICHTSBARKEITEN IST DIE EINSCHRÄNKUNG DER HAFTUNG FÜR PERSÖNLICHE SCHÄDEN ODER INDIREKTE ODER FOLGESCHÄDEN NICHT ZULÄSSIG. IN EINEM SOLCHEN FALL GILT DIE IM RAHMEN DER GELTENDEN GESETZE MÖGLICHE MAXIMALE EINSCHRÄNKUNG (DIE HÖHE DER GEWÄHRLEISTUNG, DIE DIE NIEDRIGSTE (MINIMALE) EXPOSITIONSHÖHE FÜR KISHONTI DARSTELLT).  Soweit gesetzlich zulässig, übersteigt die Gesamthaftung von KISHONTI für alle Schäden (anders als anwendbares Recht für Fälle persönlicher Verletzungen fordern mag) Ihnen gegenüber keinesfalls den Betrag von 50,00 $ (50 Dollar). Die vorgenannten Beschränkungen gelten auch dann, wenn das obengenannte Rechtsmittel seinen eigentlichen Zweck nicht erfüllt. 
+         
+        7. Einhaltung der Lizenz 
+        Sie verpflichten sich, dass Sie nach Aufforderung von KISHONTI oder seinen autorisierten Vertretern binnen 30 (dreißig) Tagen vollständig dokumentieren und bescheinigen, dass die Software zum Zeitpunkt der Aufforderung im Einklang mit Ihren gültigen Lizenzen von KISHONTI benutzt wurde. 
+         
+         
+        8. Geltendes Recht und Gerichtsbarkeit 
+         
+        Dieser EULA (einschließlich aller Streitigkeiten, die durch diesen EULA, seine Missachtung, Kündigung, Gültigkeit oder Interpretation entstehen oder damit zusammenhängen) unterliegen den geltenden ungarischen Gesetzen und werden in Einklang mit diesen ausgelegt. Unbeschadet aller sonstigen Bestimmungen in diesem EULA kann KISHONTI bzw. können Sie eine beliebige Justiz-, Verwaltungs- oder sonstige Behörde ersuchen, eine einstweilige oder sichernde Maßnahme, einschließlich eines Unterlassungsanspruchs, einer effektiven Vertragserfüllung oder anderer gerechter Entlastungen vor dem Verfahren oder während des Verfahrens für die Wahrung der Rechte und Interessen anzuordnen, oder um bestimmte Bedingungen durchzusetzen, die für einstweilige Rechtsbehelfe geeignet sind. Bei der Interpretation oder Auslegung dieses EULA gilt die englische Version. Die Anwendung der Kollisionsnormen und -grundsätze eines Hoheitsgebiets sowie des Übereinkommens der Vereinten Nationen über den internationalen Warenverkauf wird ausdrücklich ausgeschlossen. 
+         
+         
+        9. Verschiedene Regeln 
+         
+        (a) Dieser EULA stellt die gesamte Vereinbarung zwischen KISHONTI und Ihnen in Bezug auf die Software dar und sie widerruft alle vorhergehenden Repräsentationen, Besprechungen, Zusicherungen oder Werbungen mit Bezug auf die Software (ausgenommen der Anwendung der Datenschutzrichtlinien von KISHONTI). 
+        (b) Sollten einzelne Bestimmungen dieses EULA (einschließlich aller Abschnitte, Klauseln, Paragraphen, Sätze oder Wörter) als ungültig oder nicht durchsetzbar erklärt werden, werden die Gültigkeit und Erzwingbarkeit aller anderen Bestimmungen in diesem EULA nicht beeinträchtigt, mit der Maßgabe, dass aus der Gestaltung oder den Inhalten dieses EULA oder den Umständen, unter denen dieser EULA erteilt wurde, ersichtlich wird, dass eine solche Bestimmung nicht vom Rest des EULA abgetrennt wird. Das Gleiche gilt, wenn dieser EULA Fehler oder Auslassungen enthält, die angemessen gelöst werden können. Anstelle der unwirksamen Bestimmungen oder um Fehler oder Auslassungen zu beheben, müssen die Parteien angemessen und in gutem Glauben und in Übereinstimmung mit den grundlegenden Prinzipien in diesem EULA über eine angemessene Vertragsanpassung verhandeln, die, soweit rechtlich möglich, dem wirtschaftlich gewollten Sinn und Zweck dieses EULA möglichst nahe kommt, hätten sie die Nichtdurchführbarkeit, Fehler oder Auslassung bedacht (wie gegeben). 
+        (c) Dieser EULA hat keinen Einfluss auf die nicht ausschließbaren gesetzlichen Rechte jeglicher Partei, die als Endverbraucher Geschäfte tätigt, sofern solche Rechte auf diesen EULA verpflichtend angewendet werden müssen.  
+        (d) Dieser EULA darf nur von einem schriftlich beauftragten Angestellten von KISHONTI modifiziert werden. Von KISHONTI gewährte Lizenzen für Updates können zusätzliche bzw. andere Bestimmungen enthalten. 
+        (e) Sie verpflichten sich, keine Teile der Software oder Daten, die durch die Nutzung der Software oder eines direkten Produkts dieser generiert wurden, zu exportieren, außer in Übereinstimmung mit allen geltenden Exportgesetzen, -regeln und -richtlinien und den danach vorgeschriebenen Lizenzen und Genehmigungen. 
+         
+        KISHONTI Kft. [*] September 2013 
+        Alle Rechte vorbehalten. Sämtliche Rechte, die hier nicht ausdrücklich gewährt werden, sind vorbehalten.</string>
+  <string name="PrivacyDialogBody"></string>
+</resources>

@@ -1,0 +1,10 @@
+//
+// Generated file -- do not modify it, your changes will be lost
+//
+// Original version: @source_path@
+//
+
+namespace @namespace@ {
+	const char *@source_name@ =
+"@source_content@";
+}

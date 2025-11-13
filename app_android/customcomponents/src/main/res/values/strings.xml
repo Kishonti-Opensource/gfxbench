@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="SwitchStateOn">On</string>
+	<string name="SwitchStateOff">Off</string>
+	<string name="app_product_id">no_id</string>
+</resources>

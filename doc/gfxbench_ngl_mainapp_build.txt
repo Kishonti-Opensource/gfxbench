@@ -1,0 +1,138 @@
+How to build GFXBench Vulkan for Desktop
+========================================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build steps
+3. Running tests
+4. Notes
+5. Technical notes
+
+1\. Software requirements
+------------------------
+
+    1. BASH environment (e.g.: Git Bash)
+    2. CMake 3.0.0 (http://www.cmake.org/cmake/resources/software.html)
+    3. C++11 compatible compiler
+
+    Windows:
+        - Visual C++ Redistributable for Visual Studio 2012 Update 4 (http://www.microsoft.com/en-us/download/details.aspx?id=30679)
+        - Visual C++ Redistributable Packages for Visual Studio 2013 (http://www.microsoft.com/en-us/download/details.aspx?id=40784)
+        - Microsoft Visual Studio 2012 or newer
+
+
+2\. Build steps
+--------------
+
+First execute the 3rdparty build command via Git Bash, then execute the app build command with same `PLATFORM` and `CONFIG` parameters.
+To build testfw app on Windows use the following commands from the root of the package:
+
+	WORKSPACE=${PWD} PLATFORM=vs2013-x64 CONFIG=Release scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=vs2013-x64 CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+The environment variables accept the following values:
+
+* `CONFIG`
+	* Debug
+	* Release
+  
+* `PLATFORM`
+	* vs2013-x64
+
+* `APPLICATION_TYPE`
+	* developer - create command line application
+
+The scripts generate projects and starts to compile them.
+
+**Note:**
+
+- The generated project or solution will be placed into the following directory: `out/build/[platform]`  
+  On Windows, you can use the GFXBench solution for development: `out/build/vs2013-x64/testfw/testfw.sln`
+
+
+3\. Running tests
+----------------
+
+The binaries and assets will be placed under `<TFW_PACKAGE_DIR>/` folder (this will be the base folder, argument `-b`).
+If the application type is `developer` and `PLATFORM` is Windows:
+
+	TFW_PACKAGE_DIR=tfw-dev
+	
+otherwise
+
+	TFW_PACKAGE_DIR=tfw-pkg
+
+**About the `<TFW_PACKAGE_DIR>` folder**
+
+The build system create the following structure on every platform:
+
+	config
+	data
+	plugins
+
+The plugins folder contains the tests (dynamic libraries). Config folder provide the test ids which
+can be used as a command line argument for our applications. Data folder contains the tests' data.
+The most of applications have 'base path' that have to reference the above structure (can be set with command line argument `-b`).
+
+**About the `testfw_app`**
+
+The most simpliest application is the `testfw_app` (this one replaced the mainapp). 
+The `testfw_app` executable loads the tests and parses the command line arguments.
+The executable can be found under `<TFW_PACKAGE_DIR>/testfw_app.exe` on Windows.
+
+Start `vulkan_5_high` test in a window:
+
+	./testfw_app.exe --gfx vulkan -w 1280 -h 720 -t vulkan_5_high
+
+
+**Command line arguments of `testfw_app`**
+
+	--help: print help
+
+	-w <width>:  set the resolution width
+
+	-h <height>:  set the resolution height
+
+	-t <id>: select test that you would like to run. The possible test ids you can find under
+	<TFW_PACKAGE_DIR>/config folder. The test ids the most time same as the file name (eg.: gl_alu, gl_fill...).
+
+	--gfx <type>: Select an API context that would like to create
+	 vulkan     - create a Vulkan context
+
+	--ei <integer value>: override the test's configuration values
+	--ez <boolean value>: override the test's configuration values
+	--es <string value>: override the test's configuration values
+	--ef <float value>: override the test's configuration values
+
+You'll find the possible test ids' under: `<TFW_PACKAGE_DIR>/config/`
+
+The command line options described in the: `scripts/doc/common/running_from_command_line.txt`
+
+4\. Notes
+--------
+
+- To avoid build issues/mixing of intermediate files, remove the content of the `$PWD/out/*` folder.
+
+- When you target a multi-configuration (e.g.:Visual Studio, XCode) generators, please always check your appropriate configurations (Debug/Release) has built in command line too.
+
+- To enable multiprocess build set the following environment variable `MP_COMPILE=true`.
+
+- This package includes the headers and 64 bit library from LunarG Vulkan Software Development Kit (0.1.3).  
+  Please follow the instructions of the LunarG's "Getting Started with the Vulkan SDK" to set-up the runtime environment.
+
+- Only 64 bit build target is tested / supported.
+
+
+**Windows**
+
+- Be sure the generated CMake paths' length is shorter than 260 characters.
+
+5\. Technical notes
+------------------
+
+- The project requires the following VK API version: VK_API_VERSION=0,90,0 (SVN revision:30560)
+- Displaying the result image is performed using VK_WSI_LunarG extension. 
+- SPIRV shaders are generated from GLSL sources on-the-fly using Khronos's OpenGL / OpenGL ES Reference Compiler with SPIRV support (svn rev. 31469).
+

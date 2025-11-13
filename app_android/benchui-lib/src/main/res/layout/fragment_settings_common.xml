@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:custom="http://schemas.android.com/apk/res-auto"
+   	android:id="@+id/settings_commonBack"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical" >
+
+	<LinearLayout
+		android:id="@+id/settings_userBack"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			android:id="@+id/settings_userStatusMessage"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="@color/title_enable_disable"
+			android:textSize="16sp" />
+
+		<EditText
+			android:id="@+id/settings_editableUserName"
+			android:layout_width="match_parent"
+			android:layout_height="32dp"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:background="@drawable/textboxwithborder"
+			android:inputType="textNoSuggestions|textVisiblePassword"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:singleLine="true"
+			android:textColor="@color/enable_disable"
+			android:textColorHint="@color/edittext_hintcolorstates"
+			android:textSize="14sp"
+			android:textCursorDrawable="@null" />
+
+		<EditText
+			android:id="@+id/settings_editableUserPassword"
+			android:layout_width="match_parent"
+			android:layout_height="32dp"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:background="@drawable/textboxwithborder"
+			android:imeOptions="actionDone"
+			android:inputType="textPassword"
+			android:paddingLeft="5dp"
+			android:paddingRight="5dp"
+			android:textColor="@color/enable_disable"
+			android:textColorHint="@color/edittext_hintcolorstates"
+			android:textSize="14sp"
+			android:textCursorDrawable="@null" />
+
+		<TextView
+			android:id="@+id/settings_userWelcome"
+			style="@style/ThemedTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="5dp"
+			android:textSize="14sp"
+			android:visibility="gone" />
+
+		<TextView
+			android:id="@+id/settings_username"
+			style="@style/ThemedTextView"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="5dp"
+			android:textSize="14sp"
+			android:textStyle="bold"
+			android:visibility="gone" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin">
+
+			<Button
+				android:id="@+id/settings_login"
+				android:layout_width="0dp"
+				android:layout_height="32dp"
+				android:layout_marginRight="8dp"
+				android:layout_weight="1"
+				android:background="@drawable/button"
+				android:textColor="@color/enable_disable_white_text"
+				android:textSize="14sp" />
+
+			<Button
+				android:id="@+id/settings_register"
+				android:layout_width="0dp"
+				android:layout_height="32dp"
+				android:layout_marginLeft="8dp"
+				android:layout_weight="1"
+				android:background="@drawable/button"
+				android:textColor="@color/enable_disable_white_text"
+				android:textSize="14sp" />
+
+			<Button
+				android:id="@+id/settings_delete_user"
+				android:layout_width="0dp"
+				android:layout_height="32dp"
+				android:layout_marginLeft="8dp"
+				android:layout_weight="1"
+				android:background="@drawable/button"
+				android:textColor="@color/enable_disable_white_text"
+				android:textSize="14sp" />
+		</LinearLayout>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:background="@color/text_title" />
+
+		<TextView
+			android:id="@+id/settings_whatIsThis"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:textColor="@color/text_title"
+			android:textSize="16sp" />
+
+		<TextView
+			android:id="@+id/settings_whatIsThisContent"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:autoLink="web"
+			android:textColor="@color/text_main" />
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:layout_marginBottom="@dimen/view_margin"
+			android:layout_marginTop="@dimen/view_margin"
+			android:background="@color/text_title" />
+
+	</LinearLayout>
+
+	<Button
+		android:id="@+id/settings_followUs"
+		android:layout_width="match_parent"
+		android:layout_height="32dp"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:background="@drawable/button"
+		android:textColor="@color/enable_disable_white_text"
+		android:textSize="14sp" />
+
+	<Button
+		android:id="@+id/settings_readLicense"
+		android:layout_width="match_parent"
+		android:layout_height="32dp"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:background="@drawable/button"
+		android:textColor="@color/enable_disable_white_text"
+		android:textSize="14sp" />
+
+	<Button
+		android:id="@+id/settings_clearCache"
+		android:layout_width="match_parent"
+		android:layout_height="32dp"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:background="@drawable/button"
+		android:textColor="@color/enable_disable_white_text"
+		android:textSize="14sp" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="@dimen/view_margin"
+		android:layout_marginTop="@dimen/view_margin"
+		android:gravity="center"
+		android:orientation="horizontal">
+
+		<TextView
+			android:id="@+id/settings_textViewDisplayDesktop"
+			android:layout_width="100dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.5"
+			android:textColor="@color/enable_disable"
+			android:textSize="14sp" />
+
+		<net.kishonti.customcomponents.FlipSwitch
+			android:id="@+id/settings_DisplayDesktop"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="0.3"
+			android:gravity="right"
+			custom:knobColor="@color/switch_on_background"
+			custom:textColor="@color/flipsw_enable_disable" />
+	</LinearLayout>
+
+</LinearLayout>

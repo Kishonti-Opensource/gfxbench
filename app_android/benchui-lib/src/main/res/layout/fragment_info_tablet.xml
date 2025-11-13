@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+
+	<!-- Navigation bar -->	
+    <include
+	    android:id="@+id/info_navbar"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    layout="@layout/layout_navbar" />
+
+	<ListView 
+	    android:id="@+id/info_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/info_navbar"
+		android:divider="@color/list_separator"
+		android:dividerHeight="1dp"
+		android:drawSelectorOnTop="true"
+		android:listSelector="@drawable/theme_list_selector" />
+	
+	<ListView 
+	    android:id="@+id/info_detailList"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_below="@id/info_navbar" 
+		android:divider="@color/list_separator"
+		android:dividerHeight="1dp"
+		android:drawSelectorOnTop="true"
+		android:listSelector="@drawable/theme_list_selector" />
+
+</RelativeLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	
+    <RelativeLayout
+        android:id="@+id/main_testSelectorBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include
+            android:id="@+id/main_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/layout_navbar" />
+	        
+		<LinearLayout
+	        android:id="@+id/main_infoBack"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:padding="5dp"
+	        android:orientation="vertical"
+	        android:weightSum="1"
+            android:layout_below="@+id/main_navbar"  >
+
+            <ImageView
+                android:id="@+id/main_infoImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/dummy_loading" />
+            
+            <ScrollView 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp" >
+
+	            <TextView
+	                android:id="@+id/main_infoText"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:text="This is a really long text... " />
+                
+            </ScrollView>
+            
+        </LinearLayout>
+
+		<Spinner
+		    android:id="@+id/main_clDeviceSelector"
+		    android:layout_below="@+id/main_navbar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content" />
+           
+        <net.kishonti.theme.ThemeListView
+            android:id="@+id/main_testSelectListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/main_clDeviceSelector"
+			android:divider="@color/list_separator"
+			android:dividerHeight="1dp" 
+			android:drawSelectorOnTop="true"
+			android:listSelector="@drawable/theme_list_selector" >
+
+        </net.kishonti.theme.ThemeListView>
+
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_homeBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.2"/>
+        
+	    <ImageView
+	        android:id="@+id/main_logo"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.1"
+	        android:layout_margin="5dp"
+	        android:adjustViewBounds="true"
+	        android:contentDescription="MainLogo"
+	        android:src="@drawable/app_logo" />
+	    
+	    <TextView 
+	        android:id="@+id/main_versionText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.05"
+	        android:layout_margin="5dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:text="version 20000.0.1" />
+	                
+        <net.kishonti.customcomponents.CirclesControl
+	        android:id="@+id/main_circleControl"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.45"
+	        custom:CC_main_text="Start"
+	        custom:CC_side_text="Test Select" />
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.2"/>
+        
+    </LinearLayout>
+    
+</FrameLayout>

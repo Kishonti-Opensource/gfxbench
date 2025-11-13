@@ -1,0 +1,37 @@
+# KCL dependencies
+find_package(PNG REQUIRED)
+find_package(ngrtl REQUIRED core)
+
+set(KCL_INCLUDE_DIRS
+	${CMAKE_CURRENT_LIST_DIR}/../../../include/kcl
+	${PNG_INCLUDE_DIRS}
+	${NGRTL_INCLUDE_DIRS}
+)
+
+find_library(KCL_LIB1 KCL)
+find_library(KCL_LIB2 KCL_libraries)
+
+find_library(KCL_LIB1_D KCL_d)
+find_library(KCL_LIB2_D KCL_libraries_d)
+
+if (KCL_LIB1_D AND KCL_LIB2_D)
+  list(APPEND KCL_LIBRARIES debug ${KCL_LIB1_D} debug ${KCL_LIB2_D} ${PNG_LIBRARIES} ${NGRTL_LIBRARIES})
+endif()
+if (KCL_LIB1 AND KCL_LIB2)
+  list(APPEND KCL_LIBRARIES optimized ${KCL_LIB1} optimized ${KCL_LIB2} ${PNG_LIBRARIES} ${NGRTL_LIBRARIES})
+endif()
+if (APPLE)
+	list(APPEND KCL_LIBRARIES "-framework Foundation -framework IOKit")
+endif()
+
+if (UNIX)
+	list(APPEND KCL_LIBRARIES "-pthread") # tinythread
+endif()
+
+if (ANDROID)
+	find_package(platform_utils REQUIRED)
+	list(APPEND KCL_LIBRARIES ${PLATFORM_UTILS_LIBRARIES} -landroid)
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(KCL DEFAULT_MSG KCL_LIBRARIES KCL_INCLUDE_DIRS)

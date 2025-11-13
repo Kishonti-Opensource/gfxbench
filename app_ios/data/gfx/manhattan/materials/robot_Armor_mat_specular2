@@ -1,0 +1,4 @@
+color robot_armor_color2.png 1.000000 1.000000 1 1
+normal robot_armor_normal.png 1.000000 1.000000 1 1
+mask robot_armor_masks.png 1.000000 1.000000 1 1
+array anims/caustic

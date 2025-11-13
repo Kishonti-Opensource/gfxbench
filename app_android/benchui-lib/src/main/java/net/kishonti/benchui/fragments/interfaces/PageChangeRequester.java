@@ -1,0 +1,14 @@
+/*
+ * Copyright (c) 2005-2025, Kishonti Ltd
+ * SPDX-License-Identifier: BSD-3-Clause
+ * This file is part of GFXBench. See the top-level LICENSE file for details.
+ */
+package net.kishonti.benchui.fragments.interfaces;
+
+public interface PageChangeRequester {
+	/**
+	 * Sets the PageChangeRequestListener for later use on the object
+	 * @param listener The PageChangeRequestListener to be set.
+	 */
+	public PageChangeRequestListener getPageChangeRequestListener();
+}

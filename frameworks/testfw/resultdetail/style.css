@@ -1,0 +1,115 @@
+html, body {
+	height: 100% !important;
+}
+
+body {
+    background: white;
+    font-family: sans-serif;
+}
+
+h1 {
+	font: normal 36px/1.5em sans-serif;
+	color: #666;
+}
+
+.container-fluid {
+	padding: 2%;
+}
+
+.score-container {
+	font: normal 16px/1.5em sans-serif;
+	color: #4699B8;
+    margin-bottom: 1em;
+}
+
+.score-container strong {
+    font-weight: normal;
+    color: #666;
+}
+
+.table {
+    font: normal 16px/1.5em sans-serif;
+    width:100%;
+	/*border: 1px solid #333;*/
+	/*border-radius: 4px;*/
+	/*padding: 4px;*/
+	/*background: rgba(0,0,0,0.1);*/
+    margin: 1em 0;
+    opacity: 0;
+  
+    -webkit-transition: 1s;
+    transition: 1s;
+}
+
+.table .score {
+    color: #4699B8;
+}
+
+.drop {
+  max-height: 5em;
+  overflow: hidden;
+  margin: 0 0 1em 0;
+    
+  -webkit-transition: 1s;
+  transition: 1s;
+    font-size: 18px;
+}
+
+.drop h3 {
+
+  -webkit-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select:none; 
+  -o-user-select:none;
+  user-select:none;
+
+  text-align: center;
+  vertical-align: center;
+  cursor: pointer;
+    
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1em;
+    color: #666;
+    border: 1px solid #ccc;
+    border-right: none;
+    border-left: none;
+    margin: 1em 0 0 0;
+    padding: 1em 0;
+}
+
+.drop.dropped {
+  max-height: 800px !important;
+    border-bottom: 1px solid #ccc;
+}
+
+.drop.dropped h3 {
+    border-bottom: none;
+}
+
+.drop.dropped table {
+  opacity: 1;
+}
+
+.loader.hidden {
+  display: none;
+}
+
+.loader{
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*
+  Set the color of the icon
+*/
+svg path,
+svg rect{
+  fill: #4699B8;
+}

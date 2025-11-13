@@ -1,0 +1,75 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+task lintCheck() {
+    getAllTasks(true).each {
+        def lintTasks = it.value.findAll { it.name.contains("lint") }
+        lintTasks.each {
+            it.enabled = false
+        }
+    }
+}
+
+android {
+    signingConfigs {
+        release {
+            def sign_prop_path = "../frameworks/keys/play_signing.properties"
+            if (file(sign_prop_path).exists()) {
+                def props = new Properties()
+                def fileInputStream = new FileInputStream(file(sign_prop_path))
+                props.load(fileInputStream)
+                fileInputStream.close()
+                storeFile = file('../frameworks/keys/' + props['storeFilePath'])
+                storePassword = props['storePassword']
+                keyAlias = props['keyAlias']
+                keyPassword = props['keyPassword']
+            }else {
+                    logger.info("Use Debug Keys from {}", "./debug.jks")
+                    storeFile = file("./debug.jks")
+                    storePassword = "debug1"
+                    keyAlias = "debug1"
+                    keyPassword = "debug1"
+            }
+        }
+    }
+
+    dependenciesInfo {
+        def sign_prop_path = "../frameworks/keys/play_signing.properties"
+        if (file(sign_prop_path).exists()) {
+            // Disables dependency metadata when building APKs.
+            includeInApk = false
+            // Disables dependency metadata when building Android App Bundles.
+            includeInBundle = false
+        }
+    }
+
+    lintOptions {
+        tasks.lint.enabled = false
+        abortOnError false
+    }
+
+    compileSdk libs.versions.compileSdk.get().toInteger()
+    defaultConfig {
+        minSdkVersion libs.versions.minSdk.get().toInteger()
+        targetSdkVersion libs.versions.targetSdk.get().toInteger()
+    }
+
+    buildTypes {
+        release {
+            getIsDefault().set(true)
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    namespace '@PACKAGE_NAME@'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation project(':benchui-lib-@PRODUCT_TYPE@')
+}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="90dp">
+	
+    <!-- Own score -->
+    <LinearLayout
+		android:id="@+id/cell_duel_ownBack"
+		android:orientation="vertical"
+		android:layout_width="50dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="10dp"
+		android:layout_alignParentLeft="true"
+		android:layout_centerVertical="true">
+
+		<TextView
+			android:id="@+id/cell_duel_ownScore"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Score"
+			android:textStyle="bold"
+			android:textColor="@color/text_main"
+			android:textSize="14sp" />
+
+		<TextView
+			android:id="@+id/cell_duel_ownUnit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Unit"
+			android:textSize="10sp"
+			android:textColor="@color/text_main" />
+	</LinearLayout>
+	
+    <!-- Opponent score -->
+    <LinearLayout
+		android:id="@+id/cell_duel_theirBack"
+		android:orientation="vertical"
+		android:layout_width="50dp"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginRight="10dp"
+		android:layout_alignParentRight="true"
+		android:layout_centerVertical="true">
+
+		<TextView
+			android:id="@+id/cell_duel_theirScore"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAlignment="gravity"
+			android:text="Score"
+			android:textStyle="bold"
+			android:textColor="@color/text_main"
+			android:textSize="14sp"
+			android:gravity="right" />
+
+		<TextView
+			android:id="@+id/cell_duel_theirUnit"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:textAlignment="gravity"
+			android:text="Unit"
+			android:textSize="10sp"
+			android:textColor="@color/text_main" 
+			android:gravity="right"/>
+	</LinearLayout>
+	
+    <!-- Middle section -->
+    <LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:layout_toLeftOf="@id/cell_duel_theirBack"
+			android:layout_toRightOf="@id/cell_duel_ownBack"
+			android:layout_centerInParent="true"
+			android:layout_marginTop="5dp"
+			android:layout_marginBottom="5dp"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp">
+
+			<TextView
+				android:id="@+id/cell_duel_testName"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="TestName"
+				android:textSize="12sp"
+				android:textColor="@color/text_main"
+				android:ellipsize="marquee"
+				android:singleLine="true" />
+
+			<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="horizontal"
+				android:id="@+id/duelPercentBlock" >
+				
+			    <ImageView
+			        android:id="@+id/cell_duel_testImage"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:layout_centerHorizontal="true"
+			        android:layout_centerVertical="true"
+					android:adjustViewBounds="true" 
+					android:layout_marginLeft="1dp"
+					android:layout_marginRight="1dp"
+					android:src="@drawable/our_device"/>
+			    
+			    <ImageView
+			        android:id="@+id/cell_duel_leftArrow"
+			        android:layout_width="wrap_content"
+			        android:layout_height="match_parent"
+			        android:layout_toLeftOf="@id/cell_duel_testImage"
+					android:scaleType="fitXY"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentBottom="true" 
+					android:maxWidth="40dp" 
+					android:src="@drawable/duel_arrow_green"/>
+
+				<ImageView
+				    android:id="@+id/cell_duel_rightArrow"
+				    android:layout_width="wrap_content"
+				    android:layout_height="match_parent"
+				    android:layout_toRightOf="@id/cell_duel_testImage"
+					android:scaleType="fitXY"
+					android:layout_alignParentTop="true"
+					android:layout_alignParentBottom="true"
+					android:maxWidth="40dp"
+					android:src="@drawable/duel_arrow_red" />
+				
+				<TextView
+				    android:id="@+id/cell_duel_leftPercent"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_toLeftOf="@id/cell_duel_testImage"
+				    android:padding="4dp"
+				    android:textColor="@color/compare_left_text"
+				    android:textSize="10sp" 
+				    android:text="100%" />
+
+				<TextView
+				    android:id="@+id/cell_duel_rightPercent"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+			        android:layout_centerVertical="true"
+			        android:layout_toRightOf="@id/cell_duel_testImage"
+				    android:padding="4dp"
+				    android:textColor="@color/compare_right_text"
+				    android:textSize="10sp"  
+				    android:text="100%" />
+			</RelativeLayout>
+
+		</LinearLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:tag="xlarge">
+	
+    <!-- The width of the views are set from code in this layout -->
+    
+    <LinearLayout
+        android:id="@+id/main_homeBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_margin="10dp"
+        android:weightSum="1"
+        android:visibility="gone" >
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.2"/>
+        
+	    <ImageView
+	        android:id="@+id/main_logo"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.2"
+	        android:layout_margin="5dp"
+	        android:adjustViewBounds="true"
+	        android:contentDescription="@string/product_logo"
+	        android:src="@drawable/app_logo" />
+	    
+	    <TextView 
+	        android:id="@+id/main_versionText"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.05"
+	        android:layout_margin="5dp"
+	        android:gravity="center"
+	        android:layout_gravity="center"
+	        android:text="@string/app_product_id" />
+	                
+        <net.kishonti.customcomponents.CirclesControl
+            android:id="@+id/main_circleControl"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            custom:CC_main_text="Start"
+            custom:CC_side_text="Test Select" />
+        
+        <View 
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.2"/>
+        
+    </LinearLayout>
+        
+        
+        
+    <LinearLayout 
+    	android:id="@+id/main_testSelectorBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        
+        <RelativeLayout 
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="2">
+       
+			<View
+				android:id="@+id/main_selectorSeparator"
+				android:layout_width="1dp"
+				android:layout_height="match_parent"
+				android:layout_alignParentLeft="true"
+				android:background="@color/list_separator" />
+
+			<include
+			    android:id="@+id/main_navbar"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_toRightOf="@id/main_selectorSeparator"
+			    layout="@layout/layout_navbar"
+			    android:focusable="false"
+			    android:focusableInTouchMode="false" />
+
+			<Spinner
+			    android:id="@+id/main_clDeviceSelector"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@+id/main_navbar"
+			    android:focusable="false"
+			    android:focusableInTouchMode="false" />
+       
+	       <net.kishonti.theme.ThemeListView
+	           android:id="@+id/main_testSelectListView"
+	           android:layout_width="match_parent"
+	           android:layout_height="match_parent"
+	           android:layout_below="@+id/main_clDeviceSelector"
+	           android:layout_toRightOf="@id/main_selectorSeparator"
+	           android:divider="@color/list_separator"
+	           android:dividerHeight="1dp"
+	           android:drawSelectorOnTop="true"
+	           android:listSelector="@drawable/theme_list_selector">
+	           <requestFocus />
+	       </net.kishonti.theme.ThemeListView>
+            
+        </RelativeLayout>
+        
+        <View
+			android:id="@+id/main_infoSeparator"
+			android:layout_width="1dp"
+			android:layout_height="match_parent"
+			android:background="@color/list_separator" />
+        
+        <RelativeLayout 
+	       android:layout_width="0dp"
+	       android:layout_height="match_parent"
+	       android:layout_weight="1">
+	       
+			<LinearLayout
+			    android:id="@+id/main_secondary_navbar"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:background="@color/header_background"
+				android:orientation="horizontal"
+				android:weightSum="1">
+		
+				<TextView
+					android:textColor="@android:color/white"
+					android:id="@+id/main_secondary_navbar_title"
+					android:paddingLeft="70dp"
+					android:layout_width="0dp"
+					android:layout_height="50dp"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:singleLine="true"
+					android:text="@string/hello_world"
+					android:textSize="16sp"
+					android:textStyle="bold" />
+		
+				<Button
+				    android:id="@+id/main_secondary_navbar_right"
+				    android:layout_width="70dp"
+				    android:layout_height="50dp"
+				    android:background="@drawable/button_header"
+				    android:gravity="center"
+				    android:singleLine="true"
+				    android:text="@string/hello_world"
+				    android:textColor="@android:color/white"
+				    android:textSize="16sp" />
+	
+			</LinearLayout>
+      
+			<LinearLayout
+				android:id="@+id/main_infoBack"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical"
+				android:weightSum="1"
+				android:layout_below="@id/main_secondary_navbar"  >
+
+				<ImageView
+					android:id="@+id/main_infoImage"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_margin="10dp"
+					android:adjustViewBounds="true"
+					android:scaleType="centerInside"
+					android:contentDescription="@string/hello_world"
+					android:src="@drawable/dummy_loading" />
+		    
+				<ScrollView
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_margin="10dp" >
+		
+					<TextView
+						android:id="@+id/main_infoText"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/hello_world" />
+		        
+				</ScrollView>
+    
+			</LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+</RelativeLayout>

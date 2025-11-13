@@ -1,0 +1,115 @@
+#define THREAD_COUNT WORKGROUP_SIZE_X
+
+uniform sampler2D gbuffer_velocity_texture;
+
+buffer vec2 tile_max_buffer[];
+
+shared vec3 samples[THREAD_COUNT];
+
+#define PARSER_WORKAROUND 1
+
+#if !PARSER_WORKAROUND
+vec3 fetch_velocity(int index, vec2 tile_corner_uv)
+{
+	ivec2 coords;
+	coords.y = index / K;
+	coords.x = index - coords.y * K;
+	if (coords.x >= K || coords.y >= K)
+	{
+		return vec3(0.0, 0.0, 0.0);
+	}
+
+	vec2 uv = vec2(coords) * STEP_UV + tile_corner_uv;
+	if (uv.x > 1.0 || uv.y > 1.0)
+	{
+		return vec3(0.0, 0.0, 0.0);
+	}
+
+#ifdef NGL_DX_NDC
+	uv.y = 1.0 - uv.y;
+#endif
+
+	vec4 velocity_sample = textureLod(gbuffer_velocity_texture, uv, 0.0);
+	vec2 velocity = unpack_velocity(velocity_sample);
+	return vec3(velocity, dot(velocity, velocity));
+}
+#endif
+
+#ifdef KSL_COMPILER
+numthreads(WORKGROUP_SIZE_X, WORKGROUP_SIZE_Y, WORKGROUP_SIZE_Z);
+#endif
+void main()
+{
+	int invocation_id = int(gl_LocalInvocationIndex);
+
+	vec3 max_velocity = vec3(0.0, 0.0, -1.0);
+
+	vec2 tile_corner_uv = vec2(gl_WorkGroupID.xy) / vec2(gl_NumWorkGroups.xy);
+
+	for (int i = 0; i < PASS_COUNT; i++)
+	{
+#if !PARSER_WORKAROUND
+		samples[invocation_id].xyz = fetch_velocity(invocation_id + i * THREAD_COUNT, tile_corner_uv);
+#else
+		//vec3 fetch_velocity(int index, vec2 tile_corner_uv)
+		{
+			uint index = uint(invocation_id + i * THREAD_COUNT);
+		
+			ivec2 coords;
+			coords.y = int(index / uint(K) );
+			coords.x = int(index - uint(coords.y * K));
+			vec2 uv = vec2(coords) * STEP_UV + tile_corner_uv;
+			if (coords.x >= K || coords.y >= K)
+			{
+				samples[invocation_id].xyz = vec3(0.0, 0.0, 0.0);
+			}	
+			else if (uv.x > 1.0 || uv.y > 1.0)
+			{
+				samples[invocation_id].xyz = vec3(0.0, 0.0, 0.0);
+			}
+			else
+			{
+			#ifdef NGL_DX_NDC
+				uv.y = 1.0 - uv.y;
+			#endif
+
+				vec4 velocity_sample = textureLod(gbuffer_velocity_texture, uv, 0.0);
+				vec2 velocity = unpack_velocity(velocity_sample);
+				samples[invocation_id].xyz = vec3(velocity, dot(velocity, velocity));
+			}
+		}
+#endif
+
+		memoryBarrierShared();
+		barrier();
+
+		// Parallel reduction
+		for(int s = THREAD_COUNT / 2; s > 0; s = s >> 1)
+		{
+			if(invocation_id < s)
+			{
+				vec3 velocity = samples[invocation_id + s];
+				if (velocity.z > samples[invocation_id].z)
+				{
+					samples[invocation_id] = velocity;
+				}
+			}
+			memoryBarrierShared();
+			barrier();
+		}
+
+		if (invocation_id == 0)
+		{
+			if (samples[0].z > max_velocity.z)
+			{
+				max_velocity = samples[0];
+			}
+		}
+		barrier();
+	}
+
+	if (invocation_id == 0)
+	{
+		tile_max_buffer[gl_WorkGroupID.y * gl_NumWorkGroups.x + gl_WorkGroupID.x] = max_velocity.xy;
+	}
+}

@@ -1,0 +1,33 @@
+set(CLEW_SHARED @BUILD_SHARED_LIBS@)
+
+find_path(CLEW_INCLUDE_DIRS CL/clew.h)
+find_library(CLEW_LIBRARY NAMES libclew.a clew.lib clew)
+find_library(CLEW_LIBRARY_D NAMES libclew_d.a clew_d.lib clew_d)
+
+if(CLEW_LIBRARY_D)
+  list(APPEND CLEW_LIBRARIES debug;${CLEW_LIBRARY_D})
+endif()
+if(CLEW_LIBRARY)
+  if(CLEW_LIBRARY_D)
+  	list(APPEND CLEW_LIBRARIES optimized)
+  endif()
+  list(APPEND CLEW_LIBRARIES ${CLEW_LIBRARY})
+endif()
+
+if (NOT CLEW_SHARED AND (CLEW_LIBRARY OR CLEW_LIBRARY_D))
+	set(CLEW_DEFINITIONS -DCLEW_STATIC)
+	if(CMAKE_COMPILER_IS_GNUCXX)
+		set(CLEW_CXX_FLAGS " -std=c++11 -Wno-deprecated-declarations")
+	endif()
+	if (UNIX AND NOT ANDROID AND NOT QNX)
+		list(APPEND CLEW_LIBRARIES dl)
+	endif()
+endif()
+
+if (CLEW_SHARED)
+	find_file(CLEW_BINARIES clew.dll ${CMAKE_CURRENT_LIST_DIR}/../../bin)
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(CLEW REQUIRED_VARS CLEW_INCLUDE_DIRS CLEW_LIBRARIES)
+mark_as_advanced(CLEW_INCLUDE_DIRS CLEW_LIBRARIES)

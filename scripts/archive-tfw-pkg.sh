@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if [ -z "$ARCHIVE_ROOT" ]; then
+    exit
+fi
+mkdir -p $ARCHIVE_ROOT
+
+if [ "$TFW_PACKAGE_DIR" = "" ]; then
+	TFW_PACKAGE_DIR=$WORKSPACE/tfw-dev
+fi
+
+RENAMED_DIR=$WORKSPACE/$PRODUCT_ID-$PLATFORM-$VERSION+corporate
+mv $TFW_PACKAGE_DIR $RENAMED_DIR
+7za a $ARCHIVE_ROOT/$PRODUCT_ID-$PLATFORM-$VERSION+corporate.zip $RENAMED_DIR
+mv $RENAMED_DIR $TFW_PACKAGE_DIR

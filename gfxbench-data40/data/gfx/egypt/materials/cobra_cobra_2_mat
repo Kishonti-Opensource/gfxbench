@@ -1,0 +1,4 @@
+lightmap baked_cobra_3.png 1.000000 1.000000 1 1
+color cobra_color.png 1.000000 1.000000 1 1
+normal normal_base.png 1.000000 1.000000 1 1
+mask cobra_masks.png 1.000000 1.000000 1 1

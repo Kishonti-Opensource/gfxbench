@@ -1,0 +1,38 @@
+<?xml version="1.0" standalone="no" ?>
+<GLB_SCENE_SETTINGS>
+
+
+<background_color>0.68 0.62 0.45</background_color>
+
+<light_dir>0.420 0.876 -0.239</light_dir>
+
+<fog_density>0.0055</fog_density>
+
+<torches_enabled>true</torches_enabled>
+
+<camera_near>0.4</camera_near>
+
+<camera_position>0.0 5.0 0.0</camera_position>
+
+<light_color>1.2 1.1 0.94</light_color>
+
+<fps_cam_fov>50.8</fps_cam_fov>
+
+<shadowmap_size>512</shadowmap_size>
+
+<envmap_size>32</envmap_size>
+
+<shadow_method>simple projective</shadow_method>
+
+<use_normalization_cube_map>false</use_normalization_cube_map>
+<soft_shadow_enabled>true</soft_shadow_enabled>
+
+<play_time>113000</play_time>
+
+<datapath>egypt/</datapath>
+
+<num_shadows>1</num_shadows>
+
+<required_render_api>es2</required_render_api>
+
+</GLB_SCENE_SETTINGS>

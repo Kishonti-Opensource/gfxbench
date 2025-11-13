@@ -1,0 +1,60 @@
+set(SYSINF_SHARED 0) # TODO: update if add_library not explicit set STATIC
+set(SYSINF_INCLUDE_DIRS
+    ${CMAKE_CURRENT_LIST_DIR}/../../../include/sysinf
+)
+
+find_library(SYSINF_LIB systeminfo)
+find_library(SYSINF_LIB_D systeminfo_d)
+
+
+
+if (SYSINF_LIB_D)
+    list(APPEND SYSINF_LIBRARIES debug ${SYSINF_LIB_D})
+endif()
+if (SYSINF_LIB)
+    list(APPEND SYSINF_LIBRARIES optimized ${SYSINF_LIB})
+endif()
+
+find_library(CUDAW_LIB cudaw)
+find_library(CUDAW_LIB_D cudaw_d)
+if (CUDAW_LIB_D)
+    list(APPEND SYSINF_LIBRARIES debug ${CUDAW_LIB_D})
+endif()
+if (CUDAW_LIB)
+    list(APPEND SYSINF_LIBRARIES optimized ${CUDAW_LIB})
+endif()
+
+
+find_library(EPOXY_LIB_D epoxy_d)
+find_library(EPOXY_LIB epoxy)
+if (EPOXY_LIB_D)
+    list(APPEND SYSINF_LIBRARIES debug ${EPOXY_LIB_D})
+endif()
+if (EPOXY_LIB)
+    list(APPEND SYSINF_LIBRARIES optimized ${EPOXY_LIB})
+endif()
+
+find_package(GLFW3)
+if (GLFW3_FOUND)
+    list(APPEND SYSINF_LIBRARIES ${GLFW3_LIBRARIES})
+endif()
+
+if (APPLE AND NOT SYSINF_SHARED)
+    find_package(Poco REQUIRED Foundation)
+    list(APPEND SYSINF_LIBRARIES ${POCO_LIBRARIES})
+endif()
+if (WIN32 AND NOT SYSINF_SHARED)
+    if(NOT @ARM64@)
+        if(CMAKE_CL_64)
+            list(APPEND SYSINF_LIBRARIES ${CMAKE_CURRENT_LIST_DIR}/../../../lib/nvapi64.lib)
+            list(APPEND SYSINF_LIBRARIES ${CMAKE_CURRENT_LIST_DIR}/../../../lib/amd_ags_x64.lib)
+        endif()
+    endif()
+
+endif()
+if (WIN32)
+	find_file(SYSINF_BINARIES amd_ags_x64.dll ${CMAKE_CURRENT_LIST_DIR}/../../bin)
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(sysinf DEFAULT_MSG SYSINF_LIBRARIES SYSINF_INCLUDE_DIRS)

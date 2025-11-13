@@ -1,0 +1,5 @@
+<resources>
+	<dimen name="tabbar_height">70dp</dimen>
+    <dimen name="tabbar_fontsize">9sp</dimen>
+    <dimen name="tabbar_margin">0.5dp</dimen>
+</resources>

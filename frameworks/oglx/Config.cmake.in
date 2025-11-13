@@ -1,0 +1,256 @@
+# Usage:
+# OGLX finds the opengl-related includes and libs for the platform. This means the
+# following libraries: OpenGL, OpenGL ES2, GLEW
+# You can use the libraries found by including "oglx/gl.h"
+# This config module defines the following macros accordingly what have been found:
+#     HAVE_GL, HAVE_EGL, HAVE_GLEW, HAVE_GLES2, HAVE_GLES3
+#
+# Also can find an emulated ES lib. Platform specific notes:
+#
+# - Desktop platforms:
+#       finds the desktop OpenGL driver, with GLEW if available
+# - Windows
+#       additionally, if OGLX was built with -D@OGLX@_VARIANT=powervr_es|vivante_es
+#       then you can set the variable @OGLX@_DRIVER to ES2
+#       to use the emulated ES2
+# - Android
+#       finds ES2 and ES3 if available
+# - iOS
+#       finds ES2
+# - WINCE
+#       finds ES2 (for the dlls installed on the device)
+#
+# Both @OGLX@_VARIANT and @OGLX@_DRIVER can be set from environment variable, too.
+# The CMake variable has priority.
+
+
+if (CMAKE_VERSION VERSION_GREATER "3.13")
+	# CMP0079 exists from 3.13
+	cmake_policy(SET CMP0079 OLD)
+endif()
+
+set(@OGLX@_VARIANT_INSTALLED "@OGLX_VARIANT@")
+set(@OGLX@_LIBRARY_NAMES_ES2 "@OGLX_LIBRARIES_ES2@")
+if(NOT DEFINED @OGLX@_DRIVER)
+	set(@OGLX@_DRIVER $ENV{@OGLX@_DRIVER})
+endif()
+
+get_filename_component(_oglx_install_prefix ${CMAKE_CURRENT_LIST_DIR}/.. ABSOLUTE)
+
+unset(_oglx_errors)
+unset(_oglx_check_incl_lib)
+unset(_oglx_driver_valid)
+unset(_oglx_library_names)
+
+if(NOT TARGET oglx)
+	add_library(oglx INTERFACE)
+endif()
+
+if(OGLX_VARIANT_INSTALLED STREQUAL "sys")
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES3)
+	set(@OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include)
+	find_library(EGL_LIB EGL)
+	find_library(GLESv2_LIB GLESv2)
+	set(@OGLX@_LIBRARIES ${EGL_LIB} ${GLESv2_LIB} )
+	set(_oglx_check_incl_lib 0)
+	set(_oglx_driver_valid 1)
+	message(STATUS "@OGLX@_DEFINITIONS: ${@OGLX@_DEFINITIONS}")
+	set(@OGLX@_FOUND 1)
+
+	list(APPEND @OGLX@_LIBRARIES_ES2 ${@OGLX@_LIBRARIES} )
+	list(APPEND @OGLX@_DEFINITIONS_ES2 ${@OGLX@_DEFINITIONS} )
+
+	list(APPEND @OGLX@_LIBRARIES_ES3 ${@OGLX@_LIBRARIES})
+	list(APPEND @OGLX@_DEFINITIONS_ES3 ${@OGLX@_DEFINITIONS})
+	return()
+endif()
+
+
+if(OGLX_VARIANT_INSTALLED STREQUAL "dummy")
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES3)
+	set(@OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include)
+	set(@OGLX@_LIBRARIES ${_oglx_install_prefix}/lib/libEGL.so ${_oglx_install_prefix}/lib/libGLESv2.so)
+	set(_oglx_check_incl_lib 0)
+	set(_oglx_driver_valid 1)
+	message(STATUS "@OGLX@_DEFINITIONS: ${@OGLX@_DEFINITIONS}")
+	set(@OGLX@_FOUND 1)
+
+	list(APPEND @OGLX@_LIBRARIES_ES2 ${@OGLX@_LIBRARIES} )
+	list(APPEND @OGLX@_DEFINITIONS_ES2 ${@OGLX@_DEFINITIONS} )
+
+	list(APPEND @OGLX@_LIBRARIES_ES3 "-lGLESv3")
+	list(APPEND @OGLX@_DEFINITIONS_ES3 "-DHAVE_GLES3")
+	return()
+endif()
+
+if (ANDROID)
+	message(STATUS "[OGLX] ANDROID_NATIVE_API_LEVEL: ${ANDROID_NATIVE_API_LEVEL}")
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES -DHAVE_GLES2)
+	set(@OGLX@_LIBRARIES -lEGL -lGLESv2)
+
+	list(APPEND @OGLX@_LIBRARIES_ES2 ${@OGLX@_LIBRARIES} )
+	list(APPEND @OGLX@_DEFINITIONS_ES2 ${@OGLX@_DEFINITIONS} )
+
+	if (ANDROID_NATIVE_API_LEVEL AND NOT (ANDROID_NATIVE_API_LEVEL LESS 18))
+		list(APPEND @OGLX@_LIBRARIES "-lGLESv3")
+		list(APPEND @OGLX@_DEFINITIONS "-DHAVE_GLES3")
+
+		list(APPEND @OGLX@_LIBRARIES_ES3 "-lGLESv3")
+		list(APPEND @OGLX@_DEFINITIONS_ES3 "-DHAVE_GLES3")
+
+		target_link_libraries(oglx INTERFACE ${@OGLX@_LIBRARIES})
+
+		if ( ANDROID_NATIVE_API_LEVEL GREATER 20)
+			list(APPEND @OGLX@_DEFINITIONS "-DHAVE_GLES31")
+			list(APPEND @OGLX@_DEFINITIONS_ES3 "-DHAVE_GLES31")
+			message(STATUS "[OGLX] Android: egl, gles, gles2, gles3, gles31")
+		elseif()
+			message(STATUS "[OGLX] Android: egl, gles, gles2, gles3")
+		endif()
+	else()
+		message(STATUS "[OGLX] Android: egl, gles, gles2")
+	endif()
+elseif(EMSCRIPTEN)
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES -DHAVE_GLES2)
+elseif(NACL)
+	set(@OGLX@_DEFINITIONS "-DHAVE_GLES2")
+elseif(IOS)
+	find_path(@OGLX@_GLES2_INCLUDE_DIRS OpenGLES/ES2/gl.h)
+	find_path(@OGLX@_GLES3_INCLUDE_DIRS OpenGLES/ES3/gl.h)
+
+	if(NOT @OGLX@_GLES2_INCLUDE_DIRS)
+		list(APPEND _oglx_errors "OpenGLES/ES2/gl.h not found.")
+	endif()
+	if(NOT _oglx_errors)
+		if(@OGLX@_GLES3_INCLUDE_DIRS)
+			set(@OGLX@_DEFINITIONS -DHAVE_GLES -DHAVE_GLES2 -DHAVE_GLES3)
+			set(@OGLX@_INCLUDE_DIRS ${@OGLX@_GLES2_INCLUDE_DIRS} ${@OGLX@_GLES3_INCLUDE_DIRS})
+		else()
+			set(@OGLX@_DEFINITIONS -DHAVE_GLES -DHAVE_GLES2)
+			set(@OGLX@_INCLUDE_DIRS ${@OGLX@_GLES2_INCLUDE_DIRS})
+		endif()
+		set(@OGLX@_LIBRARIES "-framework OpenGLES")
+	endif()
+elseif(WINCE)
+	# for now don't add libGLES_CM, fix this when we do need GLES1
+	#find_library(@OGLX@_LIBRARY2 libGLES_CM.lib PATHS ${_oglx_install_prefix}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+	set(@OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include)
+	set(_oglx_library_names ${@OGLX@_LIBRARY_NAMES_ES2})
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES2)
+	set(_oglx_check_incl_lib 1)
+elseif( (WIN32 OR UNIX) AND @OGLX@_DRIVER STREQUAL "ES2")
+	set(@OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include)
+	set(_oglx_library_names ${@OGLX@_LIBRARY_NAMES_ES2})
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES2)
+	set(_oglx_check_incl_lib 0)
+	set(_oglx_driver_valid 1)
+elseif( WIN32 AND @OGLX@_DRIVER STREQUAL "ES3")
+
+	find_file(GL31_HEADER NAMES GLES3/gl31.h PATH "${_oglx_install_prefix}/include")
+	if(GL31_HEADER)
+		set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES3 -DHAVE_GLES31)
+	else()
+		set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES3)
+	endif()
+
+	set(@OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include)
+	set(_oglx_library_names ${@OGLX@_LIBRARY_NAMES_ES2})
+	set(_oglx_check_incl_lib 1)
+	set(_oglx_driver_valid 1)
+elseif(UNIX AND @OGLX@_DRIVER STREQUAL "ES3")
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES3)
+	set(_oglx_library_names ${@OGLX@_LIBRARY_NAMES_ES2})
+	if(@OGLX@_VARIANT_INSTALLED MATCHES "^(mali_t604|custom)$")
+		list(APPEND @OGLX@_LIBRARIES "${@OGLX@_LIBRARY_NAMES_ES2}")
+	else()
+		list(APPEND @OGLX@_LIBRARIES -lEGL -lGLESv2) # this one works with Mesa ES(2|3)
+	endif()
+	set(_oglx_check_incl_lib 0)
+	set(_oglx_driver_valid 1)
+elseif(QNX)
+	set(@OGLX@_DEFINITIONS -DHAVE_EGL -DHAVE_GLES2)
+	set(@OGLX@_INCLUDE_DIRS "/usr/include")
+	set(@OGLX@_LIBRARIES -lEGL)
+	set(@OGLX@_LIBRARIES -lEGL -lGLESv2)
+
+	list(APPEND @OGLX@_LIBRARIES_ES2 ${@OGLX@_LIBRARIES} )
+	list(APPEND @OGLX@_DEFINITIONS_ES2 ${@OGLX@_DEFINITIONS} )
+
+	list(APPEND @OGLX@_DEFINITIONS "-DHAVE_GLES3")
+	list(APPEND @OGLX@_DEFINITIONS "-DHAVE_GLES31")
+else()
+	set(@OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include)
+
+	find_package(OpenGL REQUIRED)
+	set(@OGLX@_DEFINITIONS "-DHAVE_GL")
+	set(@OGLX@_LIBRARIES ${OPENGL_gl_LIBRARY})
+	list(APPEND @OGLX@_INCLUDE_DIRS ${OPENGL_INCLUDE_DIR})
+
+	find_package(GLEW QUIET)
+	if (GLEW_FOUND)
+		list(APPEND @OGLX@_DEFINITIONS "-DHAVE_GLEW")
+		if(TARGET GLEW::GLEW)
+			list(APPEND @OGLX@_LIBRARIES GLEW::GLEW)
+		else()
+			list(APPEND @OGLX@_INCLUDE_DIRS ${GLEW_INCLUDE_DIRS})
+			list(APPEND @OGLX@_LIBRARIES ${GLEW_LIBRARIES})
+			list(APPEND @OGLX@_DEFINITIONS ${GLEW_DEFINITIONS})
+		endif()
+	endif()
+	target_link_libraries(oglx INTERFACE ${@OGLX@_LIBRARIES})
+endif()
+
+if(_oglx_library_names)
+	if(_oglx_install_prefix)
+		foreach(_oglx_i ${_oglx_library_names})
+			list(APPEND @OGLX@_LIBRARIES ${_oglx_install_prefix}/lib/${_oglx_i})
+		endforeach()
+	endif()
+endif()
+
+if(_oglx_check_incl_lib)
+	foreach(_oglx_i ${@OGLX@_INCLUDE_DIRS})
+		if(NOT IS_DIRECTORY ${_oglx_i})
+			list(APPEND _oglx_errors "Include dir '${_oglx_i}' not found.")
+		endif()
+	endforeach()
+	foreach(_oglx_i ${@OGLX@_LIBRARIES})
+		if(NOT EXISTS ${_oglx_i})
+			list(APPEND _oglx_errors "Library file ${_oglx_i} not found.")
+		endif()
+	endforeach()
+endif()
+
+list(APPEND @OGLX@_INCLUDE_DIRS ${_oglx_install_prefix}/include) # for @oglx@/gl.h
+list(REMOVE_DUPLICATES @OGLX@_INCLUDE_DIRS)
+
+if(@OGLX@_DRIVER AND NOT _oglx_driver_valid AND NOT @OGLX@_DRIVER STREQUAL default)
+	list(APPEND _oglx_errors "Invalid driver for find_package: ${@OGLX@_DRIVER}")
+endif()
+
+if(_oglx_errors)
+	if(NOT @OGLX@_QUIET)
+		message(STATUS "Errors in OGLX config module:")
+		foreach(i ${_oglx_errors})
+			message(STATUS ${i})
+		endforeach()
+	endif()
+	set(@OGLX@_FOUND 0)
+	unset(@OGLX@_INCLUDE_DIRS)
+	unset(@OGLX@_DEFINITIONS)
+	unset(@OGLX@_LIBRARIES)
+
+else()
+	if(NOT @OGLX@_DEFINITIONS_ES2)
+		set(@OGLX@_DEFINITIONS_ES2 ${@OGLX@_DEFINITIONS})
+	endif()
+	if(NOT @OGLX@_LIBRARIES_ES2)
+		set(@OGLX@_LIBRARIES_ES2 ${@OGLX@_LIBRARIES})
+	endif()
+
+
+	# report about what have been found
+	message(STATUS "@OGLX@_DEFINITIONS: ${@OGLX@_DEFINITIONS}")
+
+	set(@OGLX@_FOUND 1)
+endif()

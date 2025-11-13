@@ -1,0 +1,32 @@
+if ("${OPT_GRAPHICS}" STREQUAL "GL")
+      set(SRC_COMMON31
+            ${CMAKE_CURRENT_LIST_DIR}/gauss_blur_helper.h
+            ${CMAKE_CURRENT_LIST_DIR}/gauss_blur_helper.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/compute_blur.h
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/compute_blur.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/fragment_blur.h
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/fragment_blur.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/glb_shader2.h
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/glb_filter.h
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/glb_filter.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/glb_shader2.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/glb_shader2_init.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/ubo_cpp_defines.h
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/ubo_manager.h
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/ubo_manager.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/opengl/glb_instance_manager.h
+      )
+      include_directories(${CMAKE_CURRENT_LIST_DIR}/../../resources/data/gfx/shaders_40/common.31)
+elseif ("${OPT_GRAPHICS}" STREQUAL "METAL")
+      set(SRC_COMMON31
+            ${CMAKE_CURRENT_LIST_DIR}/gauss_blur_helper.h
+            ${CMAKE_CURRENT_LIST_DIR}/gauss_blur_helper.cpp
+            ${CMAKE_CURRENT_LIST_DIR}/metal/mtl_fragment_blur.h
+            ${CMAKE_CURRENT_LIST_DIR}/metal/mtl_fragment_blur.mm
+            ${CMAKE_CURRENT_LIST_DIR}/metal/mtl_pipeline_builder.h
+            ${CMAKE_CURRENT_LIST_DIR}/metal/mtl_pipeline_builder.mm
+            ${CMAKE_CURRENT_LIST_DIR}/metal/mtl_pipeline_compute.mm
+            ${CMAKE_CURRENT_LIST_DIR}/metal/mtl_types_31.h
+      )
+      include_directories(${CMAKE_CURRENT_LIST_DIR}/../../resources/data/gfx/shaders_mtl/common.31)
+endif()

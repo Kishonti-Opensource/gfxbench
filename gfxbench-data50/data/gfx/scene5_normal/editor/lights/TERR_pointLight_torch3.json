@@ -1,0 +1,9 @@
+{
+ "has_lightshaft": false,
+ "light_foreign_shadow_light_name": "",
+ "light_intensity_multiplier": 1,
+ "light_shadow_far": 10,
+ "light_shadow_near": 0.009999999776482582,
+ "name": "TERR_pointLight_torch3",
+ "type": 2
+}

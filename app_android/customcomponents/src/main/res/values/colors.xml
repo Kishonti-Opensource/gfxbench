@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="menu_separator">#ff101010</color>
+	<!-- dummy colors to override -->
+	<color name="menu_item_background">#ff000000</color>
+	<color name="menu_item_text">#ff000000</color>
+	<color name="menu_selected_background">#ff000000</color>
+	<color name="menu_selected_text">#ff000000</color>
+	
+
+	<color name="startbutton_background">#a5a5a5</color>
+	<color name="startbutton_active_background">#848484</color>
+	<color name="startbutton_text">#3d3d3d</color>
+	<color name="selectbutton_background">#2d2d2d</color>
+	<color name="selectbutton_active_background">#030000</color>
+	<color name="selectbutton_text">#ffffff</color>
+	<color name="mainbuttons_background">#e8e8e8</color>
+	
+	
+	<color name="flipswitch_on_back">#ffdddddd</color>
+	<color name="flipswitch_on_back_focused">#ffbbbbbb</color>
+	<color name="flipswitch_on_back_disabled">#ffcccccc</color>
+	<color name="flipswitch_on_text">#ff000000</color>
+	<color name="flipswitch_on_text_disabled">#ff888888</color>
+	<color name="flipswitch_off_back">#ffffffff</color>
+	<color name="flipswitch_off_back_focused">#ffbbbbbb</color>
+	<color name="flipswitch_off_back_disabled">#ffcccccc</color>
+	<color name="flipswitch_off_border">#ff000000</color>
+	<color name="flipswitch_off_border_disabled">#ff888888</color>
+	<color name="flipswitch_off_text">#ff000000</color>
+	<color name="flipswitch_off_text_disabled">#ff888888</color>
+	
+	
+	<color name="tabbar_back">#ff000000</color>
+    <color name="tabbar_separator">#ffcccccc</color>
+    <color name="tabbar_btn_back">#ff2d2d2d</color>
+    <color name="tabbar_btn_selected">#ffa5a5a5</color>
+    <color name="tabbar_font_normal">#ffffffff</color>
+    <color name="tabbar_font_selected">#ff2d2d2d</color>
+
+    
+	<!-- Chart -->
+	<color name="chart_background">#ffffffff</color>
+    
+    <color name="chart_value_0">#ff4699b8</color>
+    <color name="chart_value_1">#ff8bab4d</color>
+    <color name="chart_value_2">#ffe4902e</color>
+    <color name="chart_value_3">#ff977cbd</color>
+    <color name="chart_value_4">#ff44cecf</color>
+    <color name="chart_value_5">#ffc2c24e</color>
+    <color name="chart_value_6">#ffe76735</color>
+    <color name="chart_value_7">#ffcb91d2</color>
+    <color name="chart_value_8">#ff41c5a1</color>
+    <color name="chart_value_9">#ffb8a24a</color>
+    <color name="chart_value_10">#ffd25444</color>
+    <color name="chart_value_11">#ffd0a9b5</color>
+    <color name="chart_value_12">#ff4485cf</color>
+    <color name="chart_value_13">#ff72c24e</color>
+    <color name="chart_value_14">#ffffb607</color>
+    <color name="chart_value_15">#ff85c4d6</color>
+    <color name="chart_value_16">#ff415cc5</color>
+    <color name="chart_value_17">#ff32ad36</color>
+    <color name="chart_value_18">#ffe8ba1b</color>
+    <color name="chart_value_19">#ff82c6b4</color>
+
+	<array name="chart_values">
+        <item>@color/chart_value_0</item>
+        <item>@color/chart_value_1</item>
+        <item>@color/chart_value_2</item>
+        <item>@color/chart_value_3</item>
+        <item>@color/chart_value_4</item>
+        <item>@color/chart_value_5</item>
+        <item>@color/chart_value_6</item>
+        <item>@color/chart_value_7</item>
+        <item>@color/chart_value_8</item>
+        <item>@color/chart_value_9</item>
+        <item>@color/chart_value_10</item>
+        <item>@color/chart_value_12</item>
+        <item>@color/chart_value_13</item>
+        <item>@color/chart_value_14</item>
+        <item>@color/chart_value_15</item>
+        <item>@color/chart_value_16</item>
+        <item>@color/chart_value_17</item>
+        <item>@color/chart_value_18</item>
+        <item>@color/chart_value_19</item>
+    </array>
+
+	<!-- Grid Chart -->
+	<color name="gridchart_border">#ff303030</color>
+	<color name="gridchart_stroke">#88303030</color>
+	<color name="gridchart_text">#ff505050</color>
+</resources>

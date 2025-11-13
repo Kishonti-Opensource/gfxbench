@@ -1,0 +1,12 @@
+{
+ "material_alpha_test_threshold": 0.5,
+ "material_emissive_intensity": 3.146899938583374,
+ "material_has_emissive_channel": true,
+ "material_gloss": 0.0010000000474974513,
+ "material_opacity_mode": 0,
+ "material_shader0": "main",
+ "material_softness": 0,
+ "material_two_sided": false,
+ "name": "TERR_crystal_mat",
+ "type": 3
+}

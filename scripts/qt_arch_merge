@@ -1,0 +1,73 @@
+#!bash
+
+#
+# This script should be placed and run under "qtbase/out" where arm64 and x86_64 folder exists.
+# Output of the script is a folder "merged" which contains a Qt 5.10 binaries/libs/cmake files that required to build GFXBench on BigSurOS.
+#
+
+set -e
+cd out
+
+#
+# remove unused files
+#
+(
+  cd arm64/lib
+  rm -f *.a *.la *.prl
+)
+(
+  cd x86_64/lib
+  rm -f *.a *.la *.prl
+)
+
+#
+# Create directory structure of merged folder
+#
+rm -rf merged/lib
+mkdir -p merged
+cp -Rf arm64/lib merged
+cp -Rf arm64/include merged
+cp -Rf arm64/doc merged
+cp -Rf arm64/mkspecs merged
+cp -Rf x86_64/bin merged
+
+
+#
+# Use lipo to create Qt libraries
+#
+LIBS="QtPrintSupport QtGui QtCore QtNetwork QtWidgets QtOpenGL QtXml"
+for fr in ${LIBS}; do
+
+  rm -f merged/lib/$fr.framework/Versions/Current/$fr # remove dynlib
+
+
+  lipo -create -output merged/lib/$fr.framework/Versions/Current/$fr \
+                       arm64/lib/$fr.framework/Versions/Current/$fr \
+                       x86_64/lib/$fr.framework/Versions/Current/$fr
+
+#  lipo -archs merged/lib/$fr.framework/Versions/Current/$fr # DEBUG
+done
+
+#
+# Merge plugins of Qt also
+#
+mkdir -p merged/plugins
+DYNLIBS="$(find x86_64/plugins -type f)"
+for LIB in ${DYNLIBS}; do
+ PAT="$(echo $LIB | cut -c 8- )"
+ mkdir -p merged/$(dirname $PAT)
+  lipo -create -output merged/$PAT \
+                       arm64/$PAT \
+                       x86_64/$PAT
+
+done
+
+(
+  rm -rf x86_64
+  rm -rf arm64
+  rm -rf qt510UniversalBinaries
+  rm -f qtbase510.tar.bz2
+  mv merged qt510UniversalBinaries
+  tar -czf qtbase510.tar.bz2 qt510UniversalBinaries
+)
+

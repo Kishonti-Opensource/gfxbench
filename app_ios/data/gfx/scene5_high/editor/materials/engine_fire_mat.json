@@ -1,0 +1,9 @@
+{ 
+ "material_type": 6,
+ "material_opacity_mode": 2,
+ "material_shader0": "fire",
+ "material_two_sided": true,
+ "material_has_emissive_channel": true,
+ "name": "engine_fire_mat", 
+ "type": 3
+}

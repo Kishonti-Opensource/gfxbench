@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="no" ?>
+<GLB_SCENE_SETTINGS>
+
+
+<background_color>0.2745 0.53 0.7686</background_color>
+
+<light_dir>-0.8 0.4 0.3</light_dir>
+
+<fog_density>0.0015</fog_density>
+
+<torches_enabled>false</torches_enabled>
+
+<camera_near>0.1</camera_near>
+
+<camera_position>0.0 5.0 0.0</camera_position>
+
+<light_color>1.0 0.956 0.835</light_color>
+
+<fps_cam_fov>65</fps_cam_fov>
+
+<animation_multiplier>1.0</animation_multiplier>
+
+<shadowmap_size>2048</shadowmap_size>
+
+<envmap_size>32</envmap_size>
+
+<shadow_method>depth map(depth)</shadow_method>
+
+<soft_shadow_enabled>true</soft_shadow_enabled>
+
+<play_time>59100</play_time>
+
+<num_shadows>0</num_shadows>
+
+<required_render_api>es2</required_render_api>
+
+<datapath>car_chase/</datapath>
+
+<color_texture_is_srgb>true</color_texture_is_srgb>
+
+<mblur_enabled>true</mblur_enabled>
+
+<depth_of_field_enabled>true</depth_of_field_enabled>
+
+</GLB_SCENE_SETTINGS>

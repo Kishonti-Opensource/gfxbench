@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="APPTestInfoPage" id="rGe-eb-QQa" customClass="APPLanguageSelectorPage">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-s1-kTl">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jqI-Gs-qoa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3D-Dy-j5b">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9E-15-aLB">
+                    <rect key="frame" x="8" y="170" width="584" height="261"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KdK-Wb-VGl">
+                            <rect key="frame" x="8" y="8" width="568" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cKE-wh-Ozq">
+                            <rect key="frame" x="8" y="37" width="568" height="216"/>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="cKE-wh-Ozq" firstAttribute="top" secondItem="KdK-Wb-VGl" secondAttribute="bottom" constant="8" id="Ghn-9x-eI7"/>
+                        <constraint firstItem="cKE-wh-Ozq" firstAttribute="leading" secondItem="B9E-15-aLB" secondAttribute="leading" constant="8" id="MMM-6Z-G8P"/>
+                        <constraint firstItem="cKE-wh-Ozq" firstAttribute="top" secondItem="KdK-Wb-VGl" secondAttribute="bottom" constant="8" id="Ob1-lh-AN4"/>
+                        <constraint firstAttribute="trailing" secondItem="cKE-wh-Ozq" secondAttribute="trailing" constant="8" id="Sa7-WM-neX"/>
+                        <constraint firstAttribute="bottom" secondItem="cKE-wh-Ozq" secondAttribute="bottom" constant="8" id="WB7-Mq-2Uh"/>
+                        <constraint firstItem="KdK-Wb-VGl" firstAttribute="leading" secondItem="B9E-15-aLB" secondAttribute="leading" constant="8" id="g8o-y4-KgU"/>
+                        <constraint firstItem="KdK-Wb-VGl" firstAttribute="top" secondItem="B9E-15-aLB" secondAttribute="top" constant="8" id="sAw-PR-fZc"/>
+                        <constraint firstAttribute="trailing" secondItem="KdK-Wb-VGl" secondAttribute="trailing" constant="8" id="uwh-d8-Imq"/>
+                    </constraints>
+                    <variation key="widthClass=regular">
+                        <mask key="constraints">
+                            <exclude reference="WB7-Mq-2Uh"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="B9E-15-aLB" secondAttribute="bottom" constant="8" id="0LU-Wy-P49"/>
+                <constraint firstAttribute="bottom" secondItem="B4b-s1-kTl" secondAttribute="bottom" id="4sx-jy-qhN"/>
+                <constraint firstItem="w3D-Dy-j5b" firstAttribute="top" secondItem="rGe-eb-QQa" secondAttribute="top" id="A90-N5-iHU"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="top" relation="greaterThanOrEqual" secondItem="rGe-eb-QQa" secondAttribute="top" constant="8" id="BF8-X2-0rI"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="width" secondItem="rGe-eb-QQa" secondAttribute="width" multiplier="0.5" id="H7b-Si-5QS"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" constant="8" id="M8l-RH-Pua"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="B9E-15-aLB" secondAttribute="bottom" constant="8" id="PYr-M2-3j8"/>
+                <constraint firstItem="w3D-Dy-j5b" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" id="SKw-vu-Gfg"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="centerY" secondItem="rGe-eb-QQa" secondAttribute="centerY" id="aU0-IE-TsC"/>
+                <constraint firstAttribute="trailing" secondItem="B4b-s1-kTl" secondAttribute="trailing" id="bLd-gV-qsj"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="top" secondItem="rGe-eb-QQa" secondAttribute="top" constant="8" id="dR7-Yl-9hW"/>
+                <constraint firstAttribute="trailing" secondItem="w3D-Dy-j5b" secondAttribute="trailing" id="g86-2Y-8si"/>
+                <constraint firstAttribute="trailing" secondItem="B9E-15-aLB" secondAttribute="trailing" constant="8" id="lxJ-5o-bgP"/>
+                <constraint firstAttribute="bottom" secondItem="w3D-Dy-j5b" secondAttribute="bottom" id="odP-Gz-A0v"/>
+                <constraint firstItem="B4b-s1-kTl" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" id="pPX-F2-G45"/>
+                <constraint firstItem="B4b-s1-kTl" firstAttribute="top" secondItem="rGe-eb-QQa" secondAttribute="top" id="x8h-fU-4Ve"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0LU-Wy-P49"/>
+                    <exclude reference="H7b-Si-5QS"/>
+                    <exclude reference="dR7-Yl-9hW"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <include reference="0LU-Wy-P49"/>
+                    <include reference="H7b-Si-5QS"/>
+                    <exclude reference="M8l-RH-Pua"/>
+                    <include reference="dR7-Yl-9hW"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backView" destination="w3D-Dy-j5b" id="vaW-Z9-U3v"/>
+                <outlet property="blurView" destination="B4b-s1-kTl" id="2Pa-sv-59w"/>
+                <outlet property="closeHidingBottomConstraint" destination="PYr-M2-3j8" id="EOl-rY-ZMY"/>
+                <outlet property="languagePicker" destination="cKE-wh-Ozq" id="9m6-83-ub2"/>
+                <outlet property="pageTitle" destination="KdK-Wb-VGl" id="Zux-uD-9wY"/>
+                <outlet property="sheet" destination="B9E-15-aLB" id="6oV-o4-dyM"/>
+                <outlet property="trailingConstraint" destination="lxJ-5o-bgP" id="f1n-Id-2TA"/>
+            </connections>
+            <point key="canvasLocation" x="214" y="345"/>
+        </view>
+    </objects>
+</document>

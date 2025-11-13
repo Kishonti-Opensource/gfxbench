@@ -1,0 +1,98 @@
+#Name	Type	Example	Comment
+api/gl/extensions	string	"GL_AMD_compressed_ATC_texture GL_AMD_performance_monitor..."
+api/gl/renderer	string	"Adreno (TM) 330"
+api/gl/vendor	string	"Qualcomm"
+api/gl/version	string	"OpenGL ES 3.0 V@45.0 AU@04.03.00.125.077..."
+api/gl/features/__comment__	string	"A fenti reszt nem fogom hasznalni semmire, ami ebben a reszben van, az gondolom gl-ben van szabvanyositva, eddig csak ezek az adatok jottek, P.Feri kuldott levelben meg egy adagot, feltetelezem gl3-as dolgok. Ez a features nem volt resze a mintanak, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk."
+api/gl/features/GL_ALIASED_LINE_WIDTH_MAX	string	"8"
+api/gl/features/GL_ALIASED_LINE_WIDTH_MIN	string	"1"
+...
+api/egl/__comment__	string	"A mintaban nem volt egl info, de gondolom nem nagy dolog belerakni"
+api/egl/features/__comment__	string	"Ami ebben a reszben van, az gondolom egl-ben van szabvanyositva, a configs valami hazi szabaly szerint van sorositva, ezt igy is kellene tartani. Ez a features nem volt resze a mintanak, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk."
+api/egl/features/EGL_CONFIGS	string	"1 16 0 5 6 5..."
+api/egl/features/EGL_EXTENSIONS	string	"EGL_KHR_image EGL_KHR_image_base EGL_KHR_lock_surface..."
+api/egl/features/EGL_VENDOR	string	"Android"
+api/egl/features/EGL_VERSION	string	"1.4 Android META-EGL"
+
+os/__comment__	string	"Ezekbol csak a name es build kulcsokat hasznalom fel, azokat osszefuzve kell megkapni a szep os-infot, raktam bele egy rakas tovabbi reszletet, lasd a tobbi comment-et"
+os/build	string	"4.3.0"
+os/name	string	"Android"
+os/build_details/__comment__	string	"Android only? Ez nem volt resze a mintanak viszont szuksegem van ra, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk. Valami rejtelyes oknal fogva a kulcsok nem 100%-ban egyeznek az android konstansaival, szerencsere viszont a  extendUploadableString-ben mar megvan ez a kod"
+os/build_details/GLBPD_OS_BUILD_ABI	string	" armeabi-v7a"
+...
+os/system_properties/__comment__	string	"Android only? Ez nem volt resze a mintanak viszont szuksegem van ra, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk. System.getProperties() hivassal jon ez az info. Tesztelni, hogy mi van ha ujsor van benne (pl line.separator)"
+os/system_properties/java.vm.specification.vendor	string	"The Android Project"
+...
+os/system_env/__comment__	string	"Android only? Ez nem volt resze a mintanak viszont szuksegem van ra, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk. System.getEnv() hivassal jon ez az info."
+os/system_env/ANDROID_SOCKET_zygote	string	"9"
+os/system_env/LD_LIBRARY_PATH	string	"/vendor/lib:/system/lib"
+...
+os/env/__comment__	string	"Android only? Ez nem volt resze a mintanak viszont szuksegem van ra, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk. /system/bin/getprop alkalmazas outputja. Mintha ebben is lenne valahol ujsor"
+os/env/[DEVICE_PROVISIONED]	string	"[1]"
+os/env/[boot.sfbootcomplete]	string	"[1]"
+...
+
+device/__comment__	string	"Az id nem volt resze a mintanak, viszont iOS-en oda kellene rakni pl hogy iPhone6,1. A tobbit most nem hasznalom fel (androidon az os dolgaiban is benne vannak ezek, persze nem baj, ha ki van toltve itt is, GLBPD_OS_BUILD_BRAND/GLBPD_OS_BUILD_MODEL mehetne a manufacturer/name-be), Androidon nem kell: id, a tobbi kell. IOS/en csak az id kell, a tobbi nem"
+device/id	string	""
+device/manufacturer	string	"motorola"
+device/name	string	"ME865"
+device/features/__comment__	string	"Ez nem volt resze a mintanak viszont szuksegem van ra, ha ezt nem igy akarjatok belepakolni, akkor egyeztessunk. Ez most androidos minta alapjan van, lehet, hogy ezt inkabb valami raw-ba kellene rakni, es ez helyett valami kozosebb format valasztani. Felhasznalhato kod: com.kishonti.android.hardware.Features"
+device/features/FEATURE_SENSOR_ACCELEROMETER	string	"true"
+...
+device/features/Context.getSystemService(Context.TELEPHONY_SERVICE).getNetworkType()	string	"0"
+...
+
+mem/__comment__	string	"Ezt most byte-ban varom. A raw-ba androidon mehetne a /proc/meminfo fajl tartalma (ezt most be is raktam ide)"
+mem/raw	string	"MemTotal:        2500020 kB..."
+mem/size	long	1615000000
+display/__comment__	string	"x_dpi es y_dpi nem volt resze a mintanak (csak dpi) viszont ez el szokott terni egymastol, kellene mindketto. Az sem volna ordogtol valo, ha a resolution is kulon x/y lenne. A kepernyore irni landscape formatumban kellene szerintem. Tesztelni, hogy mi van ha tobb kepernyo van (pl telefon tv-re kotve, vagy laptop+monitor)"
+display/x_dpi	int	600
+display/y_dpi	int	600
+display/resolution	string	"640x1136"
+display/x_resolution	string	"1136"
+display/y_resolution	string	"640"
+display/features/__comment__	string	"Androidrol ilyeneket le lehet kerdezni, es ez alapjan talalom ki, hogy mi legyen a minor."
+display/features/FEATURE_TOUCHSCREEN	string	"true"
+...
+
+storage/0/__comment__	string	"A storage nem volt resze a mintanak, csinaltam belole egy mintat. A meret byte-ban jon, az 'is_removeable' nem szamit bele az eszkoz storage-size-jaba. Ez nem ugyanaz mint az is_external, mert csinalnak valami olyasmit, hogy 'beforrasztanak' a telefonba egy memoriakartyat, es akkor az (elvileg) kulso, de nem eltavolithato lesz."
+storage/0/raw	string	""
+storage/0/size	long	1048576000
+storage/0/is_removeable	bool	true
+storage/1/raw	string	""
+storage/1/size	long	524288000
+storage/1/is_removeable	bool	false
+...
+
+cpu/__comment__	string	"A fenti infokat nem hasznalom semmire, csak a lenti 'raw' adatokat, ezekbe egy-egy fajl tartalma megy bele, kiveve az utolsot, ahova /sys/devices/system/cpu/cpu<N>/cpufreq/cpuinfo_max_freq fajlok tartalma megy ujsorokkal elvalasztva"
+cpu/proc_slash_cpuinfo_file_content	string	"Processor	: ARMv7 Processor rev 0 (v7l)..."
+cpu/sys_slash_devices_slash_system_slash_cpu_slash_online_file_content	string	"0-3"
+cpu/sys_slash_devices_slash_system_slash_cpu_slash_offline_file_content	string	""
+cpu/sys_slash_devices_slash_system_slash_cpu_slash_possible_file_content	string	"0-3"
+cpu/sys_slash_devices_slash_system_slash_cpu_slash_present_file_content	string	"0-3"
+cpu/sys_slash_devices_slash_system_slash_cpu_slash_cpu_slash_cpufreq_slash_cpuinfo_max_freq_filelist_content	string	"2265600..."
+
+gpu/0/__comment__	string	"Teljesen mindegy, hogy mi van itt, semmit nem hasznalok fel a gpu infokbol, mindet az api:gl reszbol veszek, ez gondolom maskepp lesz desktop-on"
+gpu/0/device_id	number	0
+gpu/0/driver_version	string	""
+gpu/0/name	string	"blah"
+gpu/0/raw	string	""
+gpu/0/vendor_id	number	0
+
+camera/back/__comment__	string	"A raw adatba menjen bele az androidbol valami raw camera-info. A feature-ok eredetileg nem voltak a 'feature' tag alatt, de atszerveztem. Az autofocus feature-t kivettem, es baraktam 3db ujat. Tisztazni kellene, hogy mi van itt, ha nincs valamelyik kamera. Azok a feature-ok, amiket nem lehet lekerdezni, szerintem ne legyenek felsorolva."
+camera/back/picture_resolution	string	"4128 x 3096"
+camera/back/video_resolution	string	"1920 x 1080"
+camera/back/raw	string	"flat-info:..."
+camera/back/features/flash	string	"true"
+camera/back/features/face_detection	string	"false"
+camera/back/features/touch_focus	string	"false"
+camera/back/features/geo_tagging	string	"false"
+camera/back/features/hdr_photo	string	"false"
+camera/front/picture_resolution	string	"1920 x 1080"
+camera/front/video_resolution	string	"1920 x 1080"
+camera/front/raw	string	"flat-info:..."
+camera/front/features/flash	string	"true"
+camera/front/features/face_detection	string	"false"
+camera/front/features/touch_focus	string	"false"
+camera/front/features/geo_tagging	string	"false"
+camera/front/features/hdr_photo	string	"false"

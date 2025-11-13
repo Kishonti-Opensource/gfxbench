@@ -1,0 +1,38 @@
+Corporate iOS release
+=====================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build
+3. Important notes
+
+1\. Software requirements
+-------------------------
+
+	1. Xcode version 6.1
+	2. iOS SDK 8.0 -- deployment target iOS 7.1
+	3. CMake 3.3.0
+		http://www.cmake.org/cmake/resources/software.html
+
+2\. Build
+---------
+
+This package contains source code to build corporate GFXBench.
+To build use the following commands from the root of the package:
+
+	WORKSPACE=${PWD} PLATFORM=ios CONFIG=Release ./scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=ios CONFIG=Release APPLICATION_TYPE=gui ./scripts/build.sh
+
+The above will build a Release ios project and an installable ipa.  
+The xcodeproj will be located at: `out/build/ios/app_ios/benchmark.xcodeproj`.  
+You can find the ipa under a`pp_ios/com.glbenchmark.glb27-3.0.19.ipa`.
+
+To build a Debug version of the project use `CONFIG=Debug` before the commands.
+
+	WORKSPACE=${PWD} PLATFORM=ios CONFIG=Debug ./scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=ios CONFIG=Debug APPLICATION_TYPE=gui ./scripts/build.sh
+
+3\. Important notes
+-------------------

@@ -1,0 +1,1 @@
+set solib-search-path ./obj/local/@ARM_TARGET@

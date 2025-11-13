@@ -1,0 +1,56 @@
+bool isValid(int2 tc, int2 image_size)
+{
+    return (tc.x >=0 ) && (tc.y >= 0) && (tc.x < image_size.x) && (tc.y < image_size.y);
+}
+
+
+kernel void shader_main(uint2 global_id					[[thread_position_in_grid]],
+						uint2 thread_groups				[[threadgroups_per_grid]],
+						device hfloat2 * max_buffer		[[buffer(0)]],
+						texture2d<hfloat, access::write> out_neighbor_tex [[texture(0)]])
+{
+    int2 g_i = int2(global_id.xy);
+    if (g_i.x >= NEIGHBOR_MAX_TEX_WIDTH || g_i.y > NEIGHBOR_MAX_TEX_HEIGHT)
+    {
+        return;
+    }
+
+    int2 max_image_size = int2(NEIGHBOR_MAX_TEX_WIDTH, NEIGHBOR_MAX_TEX_HEIGHT);
+
+    _float max_length = -1.0;
+    _float2 max_value = _float2(0.0);
+
+    for (int i = -1; i <= 1; i++)
+    {
+        for (int j = -1; j <= 1; j++)
+        {
+            int2 offset = int2(i,j);
+
+            int2 tc = g_i + offset;
+            _float2 s = _float2(0.0);
+            if (isValid(tc,max_image_size))
+            {
+                int b_id = tc.y * max_image_size.x + tc.x;
+
+                s = _float2(max_buffer[ b_id ]);
+
+
+                _float ls = dot(s, s);
+
+                if (max_length < ls)
+                {
+                    max_length = ls;
+                    max_value = s;
+                }
+            }
+        }
+    }
+
+	global_id.y = (NEIGHBOR_MAX_TEX_HEIGHT) - global_id.y; // [AAPL] Y-FLIP
+
+#ifdef NEIGHTBOR_TEXTURE_RGBA8
+	out_neighbor_tex.write(hfloat4(pack2FloatToVec4( max_value )), global_id);
+#else
+    out_neighbor_tex.write(uint4(packHalf2x16( max_value ), global_id));
+#endif
+}

@@ -1,0 +1,7 @@
+type omni
+glow 0
+lens_flare 0
+cast_shadow 0
+color 5.00 2.42 1.26
+intensity 1.50
+radius 1.0

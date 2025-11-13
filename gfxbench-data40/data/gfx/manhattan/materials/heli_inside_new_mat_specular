@@ -1,0 +1,4 @@
+color heli_control_color.png 1.000000 1.000000 1 1
+normal heli_control_normal.png 1.000000 1.000000 1 1
+mask heli_control_masks.png 1.000000 1.000000 1 1
+emission heli_control_glow.png 1.000000 1.000000 1 1

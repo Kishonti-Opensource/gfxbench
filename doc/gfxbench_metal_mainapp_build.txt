@@ -1,0 +1,89 @@
+GFXBench Metal Mac OSX
+======================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build
+3. Notes
+4. Create Universal QT Binaries
+
+1\. Software requirements
+-------------------------
+
+	1. Xcode latest version
+	2. macOS latest version
+	3. CMake 3.5.0 (http://www.cmake.org/cmake/resources/software.html)
+
+2\. Build
+---------
+
+This package contains the source code to build corporate GFXBench Metal for macOS.
+To build use the following commands from the root of the package:
+
+	WORKSPACE=${PWD} PLATFORM=macosx CONFIG=Release ./scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=macosx CONFIG=Release APPLICATION_TYPE="developer" ./scripts/build.sh
+
+The above will build a Release testfw_app project. The xcodeproj will be located at: `out/build/macosx/testfw/testfw.xcodeproj`
+
+To build a Debug version of the project use `CONFIG=Debug` before the commands:
+
+	WORKSPACE=${PWD} PLATFORM=macosx CONFIG=Debug ./scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=macosx CONFIG=Debug APPLICATION_TYPE="developer" ./scripts/build.sh
+
+Set the active target to `testfw_app` in the generated XCode project.
+
+Edit the scheme of the `testfw_app` target and select the same Build Configuration (Debug/Release) that has been used in the build script.
+
+To build gui (QT) version you have to set the `ARCHIVE_ROOT`:
+
+	WORKSPACE=${PWD} PLATFORM=macosx CONFIG=Debug APPLICATION_TYPE="gui" ARCHIVE_ROOT=$PWD/archive ./scripts/build.sh
+
+If the application started outside from XCode the `LD_LIBRARY_PATH` must be set.
+
+	LD_LIBRARY_PATH=$PWD ./testfw_app --gfx mtl -w 1920 -h 1080 -t metal_5 -b <path/to/resources/folder>
+
+To run a test (for example `trex`) please start the testfw_app target and provide the following arguments to it:
+
+	--gfx=mtl -w 512 -h 512 -t metal_trex -b <path_to_the_package>/gfxbench_metal-src-3.0.0-xx-xx-xx+corporate/out/build/macosx/testfw/tfw-dev/
+
+The default texture type can be altered with the texture_type parameter:
+
+	--gfx=mtl -w 512 -h 512 -t metal_trex --es texture_type=888 -b <path_to_the_package>/gfxbench_metal-src-3.0.0-xx-xx-xx+corporate/out/build/macosx/testfw/tfw-dev/
+
+3\. Notes
+---------
+
+- When running from the XCode IDE be sure to go to Product → Scheme → Edit Scheme menu.
+	Select the Run section and uncheck the box labeled "Allow debugging when using document Versions Browser" on
+	the Options tab
+
+4\. Create Universal QT Binaries
+--------------------------------
+
+To create UniversalBinary (arm64 and x86_64) you need the following steps:
+
+1 Get the modified Qt
+git clone https://github.com/kishontikft/qtbase.git
+
+2 Copy helper scripts into qtbase
+cp “qt_build.sh” and “qt_arch_merge“ into “qtbase” folder
+
+3 Build Qt for x86_64 and arm64 arch:
+Execute “./qt_build.sh”
+
+Merge these frameworks into one:
+Execute “./qt_arch_merge”
+
+Merged files will be placed into “qtbase/out/merged”
+
+4 Build GFXBench
+Set up the following environment variables:
+
+export OSX_ARCHS="x86_64;arm64"
+export QT_PLUGINS_DIR=$HOME/Downloads/out/merged/plugins
+export QT5_BIN_PATH=$HOME/Downloads/out/merged/bin
+export CMAKE_PREFIX_PATH=$HOME/Downloads/out/merged/
+./scripts/build.sh
+

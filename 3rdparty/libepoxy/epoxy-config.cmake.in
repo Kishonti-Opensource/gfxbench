@@ -1,0 +1,31 @@
+set(EPOXY_SHARED @BUILD_SHARED_LIBS@)
+if (NOT EPOXY_SHARED)
+	set(epoxy_DEFINITIONS -DEPOXY_STATIC=1)
+endif()
+find_path(epoxy_INCLUDE_DIRS epoxy/gl_generated.h)
+find_library(epoxy_LIBRARY NAMES libepoxy.a epoxy)
+find_library(epoxy_LIBRARY_D NAMES libepoxy_d.a epoxy_d)
+unset(epoxy_LIBRARIES)
+
+if (epoxy_LIBRARY)
+
+  if(epoxy_LIBRARY_D)
+    list(APPEND epoxy_LIBRARIES optimized ${epoxy_LIBRARY} debug ${epoxy_LIBRARY_D} ${CMAKE_DL_LIBS})
+  else()
+    list(APPEND epoxy_LIBRARIES general ${epoxy_LIBRARY} ${CMAKE_DL_LIBS})
+  endif()
+
+else()
+
+  if(epoxy_LIBRARY_D)
+    list(APPEND epoxy_LIBRARIES debug ${epoxy_LIBRARY_D} ${CMAKE_DL_LIBS})
+  else()
+    message(STATUS "No libraries found libepoxy!")
+  endif()
+
+endif()
+ 
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(epoxy REQUIRED_VARS epoxy_INCLUDE_DIRS epoxy_LIBRARIES)
+mark_as_advanced(epoxy_INCLUDE_DIRS epoxy_LIBRARIES)

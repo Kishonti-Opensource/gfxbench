@@ -1,0 +1,3 @@
+color muzzle_flashes.png 1.000000 1.000000 1 1
+mask muzzle_alpha.png 1.000000 1.000000 1 1
+emission muzzle_flashes.png 1.000000 1.000000 1 1

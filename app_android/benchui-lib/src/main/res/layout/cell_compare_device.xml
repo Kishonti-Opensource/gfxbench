@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="60dp">
+
+	<ProgressBar
+	    style="@android:style/Widget.ProgressBar.Horizontal"
+		android:id="@+id/cell_compare_progressBar"
+		android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:progressDrawable="@drawable/compare_device_bar"
+		android:indeterminate="false"
+		android:max="100"
+		android:progress="33" />
+	
+	<ImageView
+		android:id="@+id/cell_compare_deviceImage"
+	    android:layout_width="50dp"
+	    android:layout_height="50dp"
+	    android:layout_marginLeft="5dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_marginBottom="5dp"
+	    android:layout_marginRight="10dp" 
+	    android:src="@drawable/our_device"/>
+	
+	<ImageView
+		android:id="@+id/cell_compare_arrowImage"
+		android:layout_marginRight="10dp"
+		android:layout_height="20dp"
+		android:layout_width="20dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+		android:src="@drawable/arrow" />
+	
+	<LinearLayout
+    	android:id="@+id/cell_compare_resultBack"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerVertical="true"
+	    android:layout_toLeftOf="@id/cell_compare_arrowImage"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/cell_compare_resultScore"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal" 
+			android:text="Score"
+			android:textStyle="bold"
+			android:textColor="@color/text_main"/>
+
+		<TextView
+			android:id="@+id/cell_compare_resultUnit"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:layout_gravity="center_horizontal" 
+			android:text="Unit"
+			android:textColor="@color/text_main" />
+	</LinearLayout>
+	
+	<LinearLayout
+    	android:id="@+id/cell_compare_textBack"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerVertical="true"
+		android:layout_toRightOf="@id/cell_compare_deviceImage"
+		android:layout_toLeftOf="@id/cell_compare_resultBack"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="5dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:orientation="vertical" >
+
+		<TextView
+			android:id="@+id/cell_compare_deviceName"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+            android:maxLines="2"
+			android:text="DeviceName"
+			android:textColor="@color/list_cell_font"/>
+
+		<TextView
+			android:id="@+id/cell_compare_deviceDesc"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+            android:maxLines="2"
+			android:text="DeviceDesc"
+			android:textColor="@color/list_cell_minor_font" />
+	</LinearLayout>
+    
+    
+</RelativeLayout>

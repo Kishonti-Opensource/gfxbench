@@ -1,0 +1,5 @@
+<RCC>
+    <qresource>
+        <file alias="@QRC_FILE_NAME@">@QRC_FILE_DIR@/@QRC_FILE_NAME@</file>
+    </qresource>
+</RCC>

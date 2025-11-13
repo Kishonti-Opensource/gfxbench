@@ -1,0 +1,5 @@
+/*
+ * Generated file DO NOT EDIT!
+ */
+const char* GITREV_SHA1 = "@GITREV_SHA1@";
+const char* GITREV_REFSPEC = "@GITREV_REFSPEC@";

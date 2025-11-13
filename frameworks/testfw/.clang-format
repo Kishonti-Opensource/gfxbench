@@ -1,0 +1,40 @@
+BasedOnStyle:  Chromium
+Standard:        c++17
+IndentWidth:     4
+AccessModifierOffset: -4
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterControlStatement: true
+  AfterStruct: true
+  AfterEnum: true
+  AfterClass: true
+  AfterFunction: true
+  AfterNamespace: false
+  BeforeElse: true
+  AfterCaseLabel: true
+  AfterUnion:      true
+
+ColumnLimit: 160
+MaxEmptyLinesToKeep: 2
+BreakConstructorInitializersBeforeComma: true
+ConstructorInitializerAllOnOneLineOrOnePerLine: false
+AlignAfterOpenBracket: AlwaysBreak
+Cpp11BracedListStyle: false
+BreakBeforeBinaryOperators: NonAssignment
+AllowShortFunctionsOnASingleLine: false
+SortIncludes: false
+ReflowComments: false
+FixNamespaceComments: false
+SpacesInConditionalStatement: false
+SpacesInSquareBrackets: false
+AllowShortIfStatementsOnASingleLine: false
+
+AllowShortLambdasOnASingleLine: All
+SpaceBeforeRangeBasedForLoopColon: true
+StatementMacros:
+  - NLOHMANN_JSON_FROM
+  - NLOHMANN_JSON_TO
+  - AIM_NLOHMANN_JSON_FROM_DEFAULT_VALUE
+  - NLOHMANN_DEFINE_TYPE_NON_INTRUSIVE
+  - AIM_NLOHMANN_JSON_FROM_OPTIONAL

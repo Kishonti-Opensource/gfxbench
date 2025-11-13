@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">testfw-app</string>
+    <string name="btn_start">Start</string>
+    <string name="info_text">Select and run test</string>
+</resources>

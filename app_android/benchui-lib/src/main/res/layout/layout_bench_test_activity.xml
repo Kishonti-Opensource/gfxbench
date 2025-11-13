@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tfw_root_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <SurfaceView
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" /><RelativeLayout
+        android:id="@+id/bench_test_activity_init"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff847456" >
+
+        <ImageView
+            android:id="@+id/loadingscreen_backimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/dummy_loading" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="350" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="150"
+                android:background="@color/background"
+                android:orientation="horizontal" >
+
+                <!-- Nested weights... i know but here it's not that a big deal -->
+
+                <TextView
+                    android:id="@+id/loadingscreen_testinfo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="4"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:text="This test will display a mosaic render of the Manhattan scene while computing 1080p frames offscreen."
+                    android:textAlignment="gravity"
+                    android:textColor="@color/list_description_text"
+                    android:textSize="@dimen/loadingscreen_desctext" />
+
+                <View
+                    android:id="@+id/loadingscreen_separator"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@color/list_separator" />
+
+                <RelativeLayout
+                    android:id="@+id/loadingscreen_right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_weight="6" >
+
+                    <TextView
+                        android:id="@+id/loadingscreen_loadingtext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitEnd"
+                        android:text="Your test is now loading" />
+
+                    <TextView
+                        android:id="@+id/loadingscreen_testname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/loadingscreen_loadingtext"
+                        android:gravity="right"
+                        android:text="1080p Driver Overhead Offscreen"
+                        android:textAlignment="gravity"
+                        android:textColor="#ff000000"
+                        android:textSize="@dimen/loadingscreen_title"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <net.kishonti.customcomponents.CustomProgressbar
+                android:id="@+id/loadingscreen_progress"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                custom:backColor="@android:color/transparent"
+                custom:frontColor="@color/progressbar_foreground"
+                custom:padding="0dp"
+                custom:scrollerWidth="60dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="132" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

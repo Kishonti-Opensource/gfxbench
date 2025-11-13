@@ -1,0 +1,203 @@
+How to build GFXBench Vulkan for Desktop
+========================================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build steps
+3. Running tests
+4. Notes
+5. Technical notes
+6. Wayland support - Experimental
+7. VK_KHR_display support - Experimental
+
+1\. Software requirements
+-------------------------
+
+    1. BASH environment (e.g.: Git Bash)
+    2. CMake 3.5.0 (http://www.cmake.org/cmake/resources/software.html)
+    3. C++11 compatible compiler
+    4. For glfw you need: wayland-protocols libxkbcommon-x11-dev
+
+    For Windows (recommended/tested version):
+        - Microsoft Visual Studio 2022
+
+
+2\. Build steps
+---------------
+
+First execute the 3rdparty build command via Git bash. Secondly execute the app build command with same PLATFORM and CONFIG parameters.
+To build testfw-app (a commandline version without gui) on Windows use the following commands from the root of the package:
+
+	WORKSPACE=${PWD} PLATFORM=vs2022-x64 CONFIG=Release scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=vs2022-x64 CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+The environment variables accept the following values:
+
+* `CONFIG`
+	* Debug
+	* Release
+	* RelWithDebInfo
+
+* `PLATFORM`
+	* `vs2022-x64`
+	* `linux`
+
+* `APPLICATION_TYPE`
+	* developer - create command line application
+
+These scripts generate solutions/projects and start to build those.
+
+**Note:**
+
+* The generated project or solution will be placed into the following directory: `out/build/[platform]`
+  On Windows, you can use the GFXBench solution for development: `out/build/vs2022-x64/testfw/testfw.sln`
+
+
+3\. Running tests
+-----------------
+
+The binaries and assets will be placed under `<TFW_PACKAGE_DIR>/` folder (this will be the base folder, argument '-b' ).
+If the application type is `developer` and `PLATFORM` is Windows:
+
+    TFW_PACKAGE_DIR=tfw-dev
+
+otherwise
+
+    TFW_PACKAGE_DIR=tfw-pkg
+
+**About the `<TFW_PACKAGE_DIR>` folder**
+
+The build system create the following structure on every platform:
+
+	config
+	data
+	plugins
+
+The plugins folder contains the tests (dynamic libraries). Config folder provide the test ids which
+can be used as a command line argument for our applications. Data folder contains the tests' data.
+The most of applications have 'base path' that have to reference the above structure (can be set with command line argument `-b`).
+
+**About the `testfw_app`**
+
+The most simpliest application is the `testfw_app` (this one replaced the mainapp).
+The `testfw_app` executable loads the tests and parses the command line arguments.
+The executable can be found under `<TFW_PACKAGE_DIR>/testfw_app.exe` on Windows.
+
+Start `vulkan_5_high` test in a window:
+
+	./testfw_app.exe --gfx vulkan -w 1280 -h 720 -t vulkan_5_high
+
+
+**Command line arguments of `testfw_app`**
+
+	--help: print help
+
+	-w <width>:  set the resolution width
+
+	-h <height>:  set the resolution height
+
+	-t <id>: select test that you would like to run. The possible test ids you can find under
+	<TFW_PACKAGE_DIR>/config folder. The test ids the most time same as the file name (eg.: gl_alu, gl_fill...).
+
+	--gfx <type>: Select an API context that would like to create
+	 vulkan     - create a Vulkan context
+
+	--ei <integer value>: override the test's configuration values
+	--ez <boolean value>: override the test's configuration values
+	--es <string value>: override the test's configuration values
+	--ef <float value>: override the test's configuration values
+
+You'll find the possible test ids' under: `<TFW_PACKAGE_DIR>/config/`
+
+The command line options described in the: `scripts/doc/common/running_from_command_line.txt`
+
+4\. Notes
+---------
+
+- On Linux the default windowing system is XCB. Alternate can be the WAYLAND (export DISPLAY_PROTOCOL=WAYLAND)
+
+- To avoid build issues/mixing of intermediate files, remove the content of the `$PWD/out/*` folder.
+
+- When you target a multi-configuration (e.g.:Visual Studio, XCode) generators, please always check your appropriate configurations (Debug/Release) has built in command line too.
+
+- To enable multiprocess build set the following environment variable `MP_COMPILE=true`.
+
+
+- Tested:
+
+```
+  Windows:
+	export PLATFORM=vs2022-x64
+	export CONFIG=Release
+	scripts/build-3rdparty.sh
+	scripts/build.sh
+	tfw-pkg/bin/testfw_app --gfx vulkan -w 512 -h 512 -t vulkan_5_normal
+	tfw-pkg/bin/testfw_app --gfx glfw -w 512 -h 512 -t gl_trex
+	tfw-pkg/bin/testfw_app --gfx glfw --gl_api gles -w 512 -h 512 -t gl_manhattan31
+
+  Linux:
+  	export DISPLAY_PROTOCOL=XCB
+	export PLATFORM=linux
+	export CONFIG=Release
+	scripts/build-3rdparty.sh
+	scripts/build.sh
+	tfw-pkg/bin/testfw_app --gfx xcb_vulkan -w 512 -h 512 -t vulkan_5_normal
+	tfw-pkg/bin/testfw_app --gfx glfw -w 512 -h 512 -t gl_trex
+	tfw-pkg/bin/testfw_app --gfx egl -w 512 -h 512 -t gl_trex
+
+  	export DISPLAY_PROTOCOL=WAYLAND
+	scripts/build.sh
+	tfw-pkg/bin/testfw_app --gfx egl -w 512 -h 512 -t gl_manhattan
+```
+
+Here is a sample script to start a test:
+
+	export VK_ICD_FILENAMES=icd.json
+	export LD_LIBRARY_PATH=$PWD:$PWD/../VulkanSDK/1.0.13.0/x86_64/lib
+	out/build/linux/testfw_debug/tfw-dev/testfw_app  --gfx xcb_vulkan  -t vulkan_5_normal -w 1280 -h 720
+
+It's important on Linux link to the VulkanSDK's `libvulkan.so` to be able to use the validation layers.
+
+**Windows:**
+
+- Be sure the generated CMake paths' length is **shorter than 260 characters**.
+
+5\. Technical notes
+-------------------
+
+6\. Wayland support - Experimental
+----------------------------------
+
+Wayland with GLFW:
+
+Build:
+$ export USE_WAYLAND=1
+$ export MAKEFLAGS=-j32
+$ WORKSPACE=${PWD} PLATFORM=linux CONFIG=Release scripts/build-3rdparty.sh
+$ WORKSPACE=${PWD} PLATFORM=linux CONFIG=Release scripts/build.sh
+Now start a subcompositor if you need it for testing:
+$ dbus-run-session -- gnome-shell --nested --wayland
+Open terminal in gnome-shell:
+$ cd into tfw-pkg/bin
+$ ./testfw_app --gfx glfw -w 1280 -h 720 -t gl_manhattan
+
+An example for building and running the `testfw_app` with Wayland:
+
+	export CONFIG=Release
+	export PLATFORM=linux
+	export DISPLAY_PROTOCOL=WAYLAND
+	scripts/build-3rdparty.sh
+	scripts/build.sh
+	tfw-pkg/bin/testfw_app --gfx vulkan -w 512 -h 512 -t vulkan_5_normal
+
+7\. VK_KHR_display support - Experimental
+-----------------------------------------
+
+	export CONFIG=Release
+	export PLATFORM=linux
+	export DISPLAY_PROTOCOL=NONE
+	scripts/build-3rdparty.sh
+	scripts/build.sh
+	tfw-pkg/bin/testfw_app --gfx null -w 512 -h 512 -t vulkan_5_normal

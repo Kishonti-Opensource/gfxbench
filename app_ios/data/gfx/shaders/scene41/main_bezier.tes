@@ -1,0 +1,63 @@
+uniform mat4 mvp;
+uniform mat4 model;
+uniform mat4 inv_model;
+
+struct _bezier_patch
+{
+	mat4 Px;
+	mat4 Py;
+	mat4 Pz;
+};
+
+patch in _bezier_patch bp;
+
+out vec3 out_normal;
+out vec3 out_tangent;
+out vec3 out_worldpos;
+
+layout(quads, fractional_odd_spacing, ccw) in;
+void main()
+{
+	vec3 position;
+	vec3 tangent;
+	vec3 bitangent;
+
+	float u = gl_TessCoord.x;
+	float v = gl_TessCoord.y;
+
+	vec4 U = vec4( u*u*u, u*u, u, 1.0);
+	vec4 V = vec4( v*v*v, v*v, v, 1.0);
+	vec4 dU = vec4( 3.0 * u * u, 2.0 * u, 1.0, 0.0);
+	vec4 dV = vec4( 3.0 * v * v, 2.0 * v, 1.0, 0.0);
+
+	position.x = dot( U * bp.Px, V);
+	position.y = dot( U * bp.Py, V);
+	position.z = dot( U * bp.Pz, V);
+
+	tangent.x = dot( dU * bp.Px, V);
+	tangent.y = dot( dU * bp.Py, V);
+	tangent.z = dot( dU * bp.Pz, V);
+
+	bitangent.x = dot( U * bp.Px, dV );
+	bitangent.y = dot( U * bp.Py, dV );
+	bitangent.z = dot( U * bp.Pz, dV );
+
+	vec3 p2 = position;
+	out_normal = normalize( cross( tangent, bitangent));
+
+	out_tangent = tangent;
+	vec4 tmp;
+
+	tmp = vec4( out_normal, 0.0) * inv_model;
+	out_normal = tmp.xyz;
+
+	tmp = vec4( out_tangent, 0.0) * inv_model;
+	out_tangent = tmp.xyz;
+
+	vec4 _scPos = mvp * vec4( p2, 1.0);
+
+	vec4 world_position = model * vec4( p2, 1.0);
+
+	out_worldpos = world_position.xyz;
+    gl_Position = _scPos;
+}

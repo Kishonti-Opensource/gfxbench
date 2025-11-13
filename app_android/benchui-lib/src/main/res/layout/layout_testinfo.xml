@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<net.kishonti.customcomponents.NavigationBar xmlns:custom="http://schemas.android.com/apk/res-auto"
+		android:id="@+id/testInfoHeader"
+		android:layout_width="match_parent"
+		android:layout_height="50dp"
+		android:background="@color/header_background"
+		custom:leftButtonColor="@color/header_text"
+		custom:leftButtonText="Back"
+		custom:leftButtonVisible="true"
+		custom:titleColor="@color/header_text"
+		custom:titleText="Test name" />
+
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/background"
+			android:orientation="vertical"
+			android:padding="15dp">
+
+			<ImageView
+				android:id="@+id/testInfoImage"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center_horizontal"
+				android:adjustViewBounds="true" />
+
+			<TextView
+				android:id="@+id/testInfoDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="20dp"
+				android:text="Dummy"
+				android:textColor="@color/text_main"
+				android:textSize="14dp" />
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

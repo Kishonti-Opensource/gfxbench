@@ -1,0 +1,57 @@
+if(OPT_TEST_FP)
+	function(add_header_CreateTest file)
+		file(WRITE  "${file}" )
+		file(APPEND "${file}" "TestBase0* CreateTest( const TestDescriptor& ts)\n" )
+		file(APPEND "${file}" "{\n" )
+		file(APPEND "${file}" "TestBase* e = 0;\n" )
+	endfunction()
+
+	function(add_conditional file frame)
+		message(STATUS "frame=${frame}")
+		file(APPEND "${file}" "if(ts.m_engine==\"${frame}\")\n")
+		file(APPEND "${file}" "{\n")
+		file(APPEND "${file}" "e = new FramePlayerGLB<${frame}>(ts);\n")
+		file(APPEND "${file}" "return e;\n")
+		file(APPEND "${file}" "}\n\n")
+	endfunction()
+
+	function(add_footer_CreateTest file)
+		file(APPEND "${file}" "return e;\n" )
+		file(APPEND "${file}" "}\n" )
+	endfunction()
+
+	file(GLOB_RECURSE headers RELATIVE "${CMAKE_CURRENT_LIST_DIR}/../../../tools/gfx_frameplayer/frames/" "${CMAKE_CURRENT_LIST_DIR}/../../../tools/gfx_frameplayer/frames/*.h")
+	file(WRITE "frame_includes" "")
+	add_header_CreateTest("frame_create_test")
+	set(FRAMES "")
+	set(REGISTER_TESTS "")
+	foreach( header ${headers})
+		get_filename_component( frame ${header} NAME_WE )
+		file( GLOB_RECURSE frames "${CMAKE_CURRENT_LIST_DIR}/../../../tools/gfx_frameplayer/frames/${frame}_*.cpp" )
+		list(APPEND FRAMES ${frames})
+		list(APPEND REGISTER_TESTS  "create_test_${frame}")
+		add_conditional(frame_create_test "${frame}")
+		file(APPEND "frame_includes" "#include \"../../tools/gfx_frameplayer/frames/${header}\"\n" )
+	endforeach(header)
+	add_footer_CreateTest("frame_create_test")
+
+	list(APPEND	SOURCES "../../frame_player/kcl_glb_init.cpp" ${FRAMES})
+	list(APPEND EXTERNAL_LIBS frameplayer_core)
+endif()
+
+
+set(target_name "fp_egypt")
+
+add_library(${target_name} ${SHARED_GFXSOURCES} ${SOURCES})
+target_link_libraries(${target_name} ${ALL_LIBS} frameplayer_core)
+
+register_testfw_module(${target_name} "${REGISTER_TESTS}")
+install(TARGETS ${target_name} DESTINATION lib)
+if(NOT "${TFW_PACKAGE_DIR}" STREQUAL "")
+    install(TARGETS ${target_name}
+            RUNTIME DESTINATION ${TFW_PACKAGE_DIR}/plugins
+            LIBRARY DESTINATION ${TFW_PACKAGE_DIR}/plugins
+            ARCHIVE DESTINATION ${TFW_PACKAGE_DIR}/plugins)
+endif()
+
+include("${CMAKE_CURRENT_LIST_DIR}/../../../setup_importlib_properties")

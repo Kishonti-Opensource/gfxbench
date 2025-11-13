@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BenchmarkPage</class>
+ <widget class="QWidget" name="BenchmarkPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>BenchmarkPage</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background: #000000;
+}
+
+QWidget#contentWidget
+{
+	background: #000000;
+}
+
+QWidget#controlPanel
+{
+	background: #000000;
+}
+
+QLabel#topLine
+{
+	background: #58AD25;
+}
+
+QProgressBar
+{
+	border: none;
+	text-align: left;
+	background-color:#3d5624;
+	color: #FFFFFF;
+	font-size: 14px;
+}
+
+QProgressBar::chunk
+{
+	background-color: #83b553;
+}
+
+QLabel#logoLabel
+{
+	border-image: url(:/logo.png) 0 0 0 0 stetch stretch;
+}
+
+QPushButton#skipButton
+{
+	border-image: url(:/skip.png) 0 0 0 0 stetch stretch;
+}
+
+QPushButton#skipButton:hover
+{
+	border-image: url(:/skip_hover.png) 0 0 0 0 stetch stretch;
+}
+
+QPushButton#stopButton
+{
+	border-image: url(:/stop.png) 0 0 0 0 stetch stretch;
+}
+
+QPushButton#stopButton:hover
+{
+	border-image: url(:/stop_hover.png) 0 0 0 0 stetch stretch;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="controlPanel" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <property name="spacing">
+         <number>20</number>
+        </property>
+        <property name="leftMargin">
+         <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>10</number>
+        </property>
+        <property name="rightMargin">
+         <number>10</number>
+        </property>
+        <property name="bottomMargin">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QProgressBar" name="progressBar">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="value">
+           <number>50</number>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="format">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="skipButton">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>90</width>
+            <height>33</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="stopButton">
+          <property name="minimumSize">
+           <size>
+            <width>90</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>90</width>
+            <height>33</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>90</width>
+            <height>33</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="logoLabel">
+          <property name="minimumSize">
+           <size>
+            <width>244</width>
+            <height>44</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>244</width>
+            <height>44</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QLabel" name="topLine">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>4</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>4</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="LoadingScreen" name="loadingScreen"/>
+    </widget>
+   </item>
+  </layout>
+  <action name="stopAction">
+   <property name="text">
+    <string>stopTests</string>
+   </property>
+   <property name="shortcut">
+    <string>Esc</string>
+   </property>
+  </action>
+  <action name="skipAction">
+   <property name="text">
+    <string>skipTest</string>
+   </property>
+   <property name="shortcut">
+    <string>Space</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>LoadingScreen</class>
+   <extends>QWidget</extends>
+   <header>LoadingScreen.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>skipButton</sender>
+   <signal>clicked()</signal>
+   <receiver>skipAction</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>850</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>stopButton</sender>
+   <signal>clicked()</signal>
+   <receiver>stopAction</receiver>
+   <slot>trigger()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>960</x>
+     <y>31</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

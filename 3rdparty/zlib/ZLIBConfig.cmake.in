@@ -1,0 +1,45 @@
+set(ZLIB_INCLUDE_DIRS
+	${CMAKE_CURRENT_LIST_DIR}/include
+)
+
+set(ZLIB_NAME @ZLIB_NAME@)
+set(ZLIB_DEFINITIONS @ZLIB_DEFINITIONS@)
+
+find_library(ZLIB_LIBRARY_O ${ZLIB_NAME} PATHS ${CMAKE_CURRENT_LIST_DIR}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+find_library(ZLIB_LIBRARY_D ${ZLIB_NAME}_d PATHS ${CMAKE_CURRENT_LIST_DIR}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+
+unset(ZLIB_LIBRARIES)
+if(ZLIB_LIBRARY_O)
+	if(ZLIB_LIBRARY_D)
+		set(ZLIB_LIBRARIES
+			debug ${ZLIB_LIBRARY_D}
+			optimized ${ZLIB_LIBRARY_O}
+		)
+	else()
+		if(MSVC)
+			list(APPEND ZLIB_WARNINGS "Only optimized libs found.")
+			set(ZLIB_LIBRARIES optimized ${ZLIB_LIBRARY_O})
+		else()
+			set(ZLIB_LIBRARIES ${ZLIB_LIBRARY_O})
+		endif()
+	endif()
+else()
+	if(ZLIB_LIBRARY_D)
+		list(APPEND ZLIB_WARNINGS "Only debug libs found.")
+		set(ZLIB_LIBRARIES debug ${ZLIB_LIBRARY_D})
+	else()
+		list(APPEND ZLIB_ERRORS "No libraries found (${ZLIB_NAME} or ${ZLIB_NAME_D}).")
+	endif()
+endif()
+
+if(ZLIB_ERRORS)
+	message(STATUS ${ZLIB_ERRORS})
+	unset(ZLIB_INCLUDE_DIRS)
+	unset(ZLIB_INCLUDE_DIR)
+	set(ZLIB_FOUND 0)
+else()
+	set(ZLIB_FOUND 1)
+	set(ZLIB_INCLUDE_DIR ${ZLIB_INCLUDE_DIRS})
+endif()	
+
+

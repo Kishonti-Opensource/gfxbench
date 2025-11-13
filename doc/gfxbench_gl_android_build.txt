@@ -1,0 +1,169 @@
+# How to build GFXBench GL for Android
+
+## Table Of Contents
+
+1. [Software requirements](#software_requirements)
+2. [Build steps](#build_steps)
+3. [Notes](#notes)
+
+##<a name="software_requirements"></a> 1. Software requirements
+
+**Build**
+
+```
+./sdkmanager  "ndk;28.0.12674087" "build-tools;35.0.0" "platforms;android-35" "platform-tools" "cmdline-tools;latest"
+
+  Path                 | Version           | Description                             | Location
+  -------              | -------           | -------                                 | -------
+  build-tools;35.0.0   | 35.0.0            | Android SDK Build-Tools 35              | build-tools/35.0.0
+  cmdline-tools;latest | 16.0              | Android SDK Command-line Tools (latest) | cmdline-tools/latest
+  ndk;28.0.12674087    | 28.0.12674087 rc2 | NDK (Side by side) 28.0.12674087        | ndk/28.0.12674087
+  platform-tools       | 35.0.2            | Android SDK Platform-Tools              | platform-tools
+  platforms;android-35 | 1                 | Android SDK Platform 35                 | platforms/android-35
+```
+
+- On Windows suggested shell is Git Bash (Cygwin nor WSL is not supported)
+   https://git-scm.com/downloads
+
+- Android NDK 28.0.12674087 (tested version), GCC is no longer supported
+   http://developer.android.com/sdk/ndk/index.html
+
+- Android SDK, API Level 35 (recommended versions, store version built with API 35)
+   http://developer.android.com/sdk/index.html
+
+- CMake 3.5.0 or newer (tested with CMake 3.21)
+   http://www.cmake.org/cmake/resources/software.html
+
+- Swig 3.0.12 or 4.0.2 (tested with 3.0.12 and 4.0.2)
+  http://swig.org/download.html
+
+- Java Development Kit (e.g.: openjdk17)
+
+- Add cmake and swigwin applications to `PATH` (on Windows)
+
+- Set next environment variables to appropriately
+   `ANDROID_NDK`
+   `ANDROID_HOME`
+   `NG_CMAKE_TOOLCHAIN_FILE`
+
+    e.g.(On Windows):
+
+        export ANDROID_NDK="$HOME/AppData/Local/Android/Sdk/ndk/24.0.8215888/"
+        export ANDROID_HOME="$HOME/AppData/Local/Android/Sdk"
+        export NG_CMAKE_TOOLCHAIN_FILE="$HOME/AppData/Local/Android/Sdk/ndk/24.0.8215888/build/cmake/android.toolchain.cmake"
+
+   On Windows you may set up manually path of make.exe
+
+       export CMAKE_MAKE_PROGRAM="$HOME/AppData/Local/Android/Sdk/ndk/24.0.8215888/prebuilt/windows-x86_64/bin/make.exe"
+
+##<a name="build_steps"></a> 2. Build Steps
+
+**Two steps needed to build:**
+
+1. Build thirdparty libraries (`build-3rdparty.sh`)
+2. Build GFXBench (`build.sh`)
+
+**Steps to build an apk**
+
+    export WORKSPACE=$PWD
+    export PLATFORM=android-arm64-v8a
+    export CONFIG=Release
+    export APPLICATION_TYPE=gui
+
+    scripts/build-3rdparty.sh
+    scripts/build.sh
+
+By default we provide a debug keys for signing: app_android/debug.jks
+The final apk file will be placed into the `tfw-pkg` folder.
+
+The environment variables accept the following values:
+
+* `CONFIG`
+	* Debug
+	* Release
+
+* `PLATFORM`
+	* android-armv7a
+	* android-arm64-v8a
+	* android-x86
+	* android-x86-64
+
+* `APPLICATION_TYPE`
+	* developer
+	* gui
+
+**gui**
+
+This application type creates a GUI application with a test selector and result browser.
+The resulting apk file that can be installed in traditional way via adb.
+
+**developer**
+
+The developer application type creates a native `testfw_app` which lists the available test configurations, can select and run a single test, then displays the result.
+
+The apk can be installed via adb, but the test configuration files and test data must be installed manually. For example:
+
+    WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+	adb install tfw-apk/apk/testfw_app-release.apk
+
+	adb push tfw-pkg/config /sdcard/kishonti/tfw/config
+	adb push tfw-pkg/data /sdcard/kishonti/tfw/data
+
+In subsequent invocations, the build times can be reduced with `BUNDLE_DATA=false`, so the build script does not copy the data into the `tfw-pkg` folder again.
+
+	BUNDLE_DATA=false WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+Starting `testfw_app`:
+
+1. Start `testfw_app` from the Android app list.
+2. Select the test and tap start.
+
+***Legacy install process for developer app (not supported)***
+
+Use the following commands to build the `testfw_app` and copy the data and executable to the device:
+
+    This (developer) testfw_app mode is an experimental, based on Android Nougat and 4.4.4_r1. These strongly linked to these versions.
+    The latest Android (Nougat) tested with NDK_VERSION='24.0.8215888'. Other NDK version unreliable and not tested.
+    Basically armeabi-v7a and x86 supported.
+    Dependents dynamic libs can be fetched from device or emulator filesystem:
+    adb pull /system/lib/libutils.so
+    adb pull /system/lib/libgui.so
+    Should be placed under 'frameworks/testfw/android/aosp/nougat/lib/x86/lib*.so'
+    "Nougat" version based on nougat-mr2.3-release:
+    https://android.googlesource.com/platform/frameworks/native/+/refs/heads/nougat-mr2.3-release
+    https://android.googlesource.com/platform/system/core/+/refs/heads/nougat-mr2.3-release
+    https://android.googlesource.com/platform/hardware/libhardware/+/refs/heads/nougat-mr2.3-release
+
+    By default Nougat, to select 4.4.1_r1 replace OS_ANDROID_VERSION in frameworks/testfw/CMakeLists.txt.
+
+    WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release scripts/build-3rdparty.sh
+    WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+    adb push tfw-pkg/bin/testfw_app //data/local/tmp/bin/testfw_app (alternate path: out/install/android-x86/bin/testfw_app)
+    adb push tfw-pkg/plugins //data/local/tmp/plugins (alternate path: adb push tfw-pkg/libs/x86 //data/local/tmp/plugins, be sure plugins contains only so files not any folders)
+    adb push tfw-pkg/config //data/local/tmp/config
+    adb push tfw-pkg/data //data/local/tmp/data
+
+    Next steps only do when missing from "tfw-pkg/libs/x86":
+    adb push tfw-pkg/libs/armeabi-v7a/libgnustl_shared.so //data/local/tmp/bin/libgnustl_shared.so
+    adb push tfw-pkg/libs/armeabi-v7a/libplatform_utils.so //data/local/tmp/bin/libplatform_utils.so
+
+Starting testfw_app:
+
+    adb shell
+    cd /data/local/tmp/bin
+    chmod 777 testfw_app
+
+    LD_LIBRARY_PATH=. ./testfw_app --gfx egl -t gl_alu2
+
+Next time, it's enough to rebuild only the test and update it on the device.
+
+    WORKSPACE=$PWD PLATFORM=android-armv7a CONFIG=Release APPLICATION_TYPE=developer scripts/build.sh
+
+	adb push tfw-pkg/plugins //data/local/tmp/plugins
+    LD_LIBRARY_PATH=. ./testfw_app --gfx egl -t gl_alu2
+
+##<a name="notes"></a> 3. Notes
+
+* Android toolchain uses the ccache, if you set the `NDK_CCACHE` to the ccache executable

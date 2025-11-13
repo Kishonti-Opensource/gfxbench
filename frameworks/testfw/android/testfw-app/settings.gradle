@@ -1,0 +1,20 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "testfw_app"
+include ':testfw', ':platform-utils'
+
+project(':testfw').projectDir = new File(settingsDir, '../testfw-lib')
+project(':platform-utils').projectDir = new File(settingsDir, '../../../platform-utils/android/platform-utils-lib')

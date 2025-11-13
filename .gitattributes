@@ -1,0 +1,27 @@
+**/*.pvr binary
+**/*.raw binary
+**/*.png binary
+**/*.jpg binary
+**/*.jar binary
+**/*.jpeg binary
+**/*.bin binary
+**/*.dat binary
+**/*.zip binary
+**/*.tar binary
+**/*.gz binary
+**/*.7z binary
+**/*.bmp binary
+**/*.tga binary
+**/*.dds binary
+**/*.astc binary
+**/*.ico binary
+**/*.sqlite binary
+**/*.mesh binary
+**/*.dll binary
+**/*.exe binary
+**/*.pdb binary
+**/*.so binary
+**/*.nupkg binary
+gfxbench-data40/** binary -delta
+gfxbench-data50/** binary -delta
+app_ios/data/** binary -delta

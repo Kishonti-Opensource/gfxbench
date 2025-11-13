@@ -1,0 +1,8 @@
+<resources>
+	<string name="NS">http://schemas.android.com/apk/res-auto</string>
+	<string name="kishontiWebsiteTitle">kishonti.net</string>
+	<string name="kishontiWebsiteURL">https://kishonti.net</string>
+	<string name="app_version">Version: 0.0.0</string>
+
+	<string name="hello_world">dummy</string>
+</resources>

@@ -1,0 +1,55 @@
+#/bin/bash
+
+test $# -ne 3 && {
+cat >&2 <<-__END_HELP__
+
+Usage: $(basename $0) <dir1> <dir2> <outdir>
+
+What it does:
+ - dir1 and dir2 expected to contain the same files, except dir1 contains *.a files for
+   one arch (like ios) and dir2 for another arch (like ios sim)
+ - this tool will create the same tree at outdir with the
+   libs from dir1 and dir2 combined using the lipo tool
+
+ How it works:
+ - copies dir1 to outdir (overwrites if exists)
+ - takes all *.a files from dir1
+ - finds the corresponding *.a file in dir2
+ - combines them to outdir
+__END_HELP__
+}
+
+set -e
+#set -x
+
+dir1=$1
+dir2=$2
+outdir=$3
+
+check_dir_exist()
+{
+	if ! test -d $1
+	then
+		echo "$1: directory missing"
+		exit
+	fi
+}
+
+check_dir_exist "$dir1"
+check_dir_exist "$dir2"
+
+rm -rf $outdir
+mkdir $outdir
+cp -r $dir1/* $outdir
+echo "Make fat combined dir (using lipo)"
+echo "Input dir#1: $dir1"
+echo "Input dir#2: $dir2"
+echo "Output dir : $outdir"
+for lib in $(cd $dir1; find * -name '*.a')
+do
+	# http://stackoverflow.com/questions/12549489/compile-library-for-armv7s-cputype-12-and-cpusubtype-11
+	echo "- $lib"
+	xcrun -sdk iphoneos lipo -info $dir1/$lib
+	xcrun -sdk iphoneos lipo -info $dir2/$lib
+	xcrun -sdk iphoneos lipo -create $dir1/$lib $dir2/$lib -output $outdir/$lib || echo "Failed to lipo $lib (probably already fat)"
+done

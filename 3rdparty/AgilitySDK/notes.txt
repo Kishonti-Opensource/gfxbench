@@ -1,0 +1,4 @@
+https://devblogs.microsoft.com/directx/directx12agility
+
+https://www.nuget.org/packages/Microsoft.Direct3D.D3D12/1.610.1
+microsoft.direct3d.d3d12.1.610.1.nupkg

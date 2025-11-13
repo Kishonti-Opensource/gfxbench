@@ -1,0 +1,367 @@
+#!/bin/bash
+
+driveletter_to_path()
+{
+	echo $1 | sed 's/\(.\):/\/\1/'
+}
+
+
+script_name=$0
+
+help()
+{
+	[[ -n $1 ]] && echo >&2 -e "\n[ERROR] $1\n"
+	cat <<__HELP_END__
+Usage: $(basename $script_name) platform
+Sets up environment for building (not only navi) projects.
+
+    platform               Target platform for subsequent builds.
+
+        For windows and custom you can override the generator by exporting NG_CMAKE_GENERATOR variable before calling $(basename ${BASH_SOURCE[0]}).
+        Its value must be the name of the selected generator.
+
+    When "custom" platform is used NG_CMAKE_TOOLCHAIN_FILE and NG_CMAKE_PLATFORM_OPT must be set.
+__HELP_END__
+	unset help
+}
+
+if [[ -z $1 ]]
+then
+	help "Platform not set"
+else
+	platform=$1
+
+	my_script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+	export NG_TARGET_PLATFORM=$platform
+	thirdparty_sysroot=$(driveletter_to_path $NG_THIRDPARTY_ROOT)/$platform
+	if [ "$platform" == "ios" -o "$platform" == "iossim" ]; then
+		# ios should use Fat libraries.
+        thirdparty_sysroot="${NG_THIRDPARTY_ROOT}/ios/fat;${NG_THIRDPARTY_ROOT}/$platform"
+	fi
+
+	# workaround magic that happens with path in msys bash
+	separator=";"
+	if [ "$OSTYPE" == "msys" ]; then
+		separator=":"
+	fi
+	if [[ -n $NG_EXTRA_CMAKE_PREFIX_PATH ]]; then
+		extra_cmake_prefix_path=${separator}$(driveletter_to_path $NG_EXTRA_CMAKE_PREFIX_PATH)
+	fi
+	export NG_CMAKE_PREFIX_PATH="$(driveletter_to_path $NG_INSTALL_ROOT)/$platform$extra_cmake_prefix_path${separator}${thirdparty_sysroot}"
+	export NG_CMAKE_MODULE_PATH=${my_script_dir}/../cmake
+	export NG_TOOLCHAIN=
+
+	case $platform in
+		(vs2022-arm64)
+			export NG_CMAKE_GENERATOR="Visual Studio 17"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT="-A ARM64"
+			;;
+		(vs2022-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 17"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT="-A x64"
+			;;
+		(vs2019-arm64)
+			export NG_CMAKE_GENERATOR="Visual Studio 16"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT="-A ARM64"
+			;;
+		(vs2019-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 16"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT="-A x64"
+			;;
+		(vs2015)
+			export NG_CMAKE_GENERATOR="Visual Studio 14"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2015-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 14 Win64"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2013|v120)
+			export NG_CMAKE_GENERATOR="Visual Studio 12"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2013-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 12 Win64"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2012)
+			export NG_CMAKE_GENERATOR="Visual Studio 11"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2012-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 11 Win64"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2008)
+			export NG_CMAKE_GENERATOR="Visual Studio 9 2008"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2008-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 9 2008 Win64"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2010)
+			export NG_CMAKE_GENERATOR="Visual Studio 10"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2010-x64|windows64)
+			export NG_CMAKE_GENERATOR="Visual Studio 10 Win64"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(vs2008)
+			export NG_CMAKE_GENERATOR="Visual Studio 9 2008"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(windows)
+			: ${NG_CMAKE_GENERATOR:="Visual Studio 10"}
+			export NG_CMAKE_GENERATOR
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(wince)
+			export NG_CMAKE_GENERATOR="Visual Studio 9 2008 Windows Mobile 5.0 Pocket PC SDK (ARMV4I)"
+			export PATH="/c/Program Files (x86)/Microsoft Visual Studio 9.0/VC/ce/bin/x86_arm:/c/Program Files (x86)/Microsoft Visual Studio 9.0/VC/bin:/c/Program Files (x86)/Microsoft Visual Studio 9.0/Common7/Tools:/c/Program Files (x86)/Microsoft Visual Studio 9.0/Common7/IDE:/c/Program Files (x86)/Microsoft Visual Studio 9.0/Common/Tools:/c/Program Files (x86)/Microsoft Visual Studio 9.0/Common/IDE:/c/Program Files (x86)/Microsoft Visual Studio 9.0/:$PATH"
+			export INCLUDE="c:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\include;C:\\Program Files (x86)\\Windows Mobile 5.0 SDK R2\\PocketPC\\include\\ARMV4I;C:\\Program Files (x86)\\Windows Mobile 5.0 SDK R2\\PocketPC\\include;c:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\atlmfc\\include;C:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\SmartDevices\\SDK\\SQL Server\\Mobile\\v3.0"
+			export LIB="C:\\Program Files (x86)\\Windows Mobile 5.0 SDK R2\\PocketPC\\lib\\ARMV4I;c:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\atlmfc\\lib\\ARMV4I;c:\\Program Files (x86)\\Microsoft Visual Studio 9.0\\VC\\ce\\lib\\ARMV4I;"
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(mingw)
+			export NG_CMAKE_GENERATOR="MinGW Makefiles"
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(ios)
+			export NG_CMAKE_GENERATOR="Xcode"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/ios.cmake"
+			unset NG_CMAKE_PLATFORM_OPT
+			export NG_TOOLCHAIN=ios
+			;;
+		(ios.libstdc++)
+			export NG_CMAKE_GENERATOR="Xcode"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/ios.cmake"
+			export NG_CMAKE_PLATFORM_OPT="-DIOS_STL=libstdc++"
+			export NG_TOOLCHAIN=ios
+			;;
+		(iossim)
+			export NG_CMAKE_GENERATOR="Xcode"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/ios.cmake"
+			export NG_CMAKE_PLATFORM_OPT="-DIOS_PLATFORM=SIMULATOR"
+			export NG_TOOLCHAIN=ios
+			;;
+		(iossim.libstdc++)
+			export NG_CMAKE_GENERATOR="Xcode"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/ios.cmake"
+			export NG_CMAKE_PLATFORM_OPT="-DIOS_PLATFORM=SIMULATOR -DIOS_STL=libstdc++"
+			export NG_TOOLCHAIN=ios
+			;;
+		(android|android-armv7a)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			[ -z "$NG_CMAKE_TOOLCHAIN_FILE" ] && export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/android.cmake"
+			[ -z "$NG_CMAKE_PLATFORM_OPT" ] && export NG_CMAKE_PLATFORM_OPT="-DANDROID_ABI=armeabi-v7a"
+			export NG_TOOLCHAIN=android
+			;;
+		(android-arm64-v8a)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			[ -z "$NG_CMAKE_TOOLCHAIN_FILE" ] && export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/android.cmake"
+			[ -z "$NG_CMAKE_PLATFORM_OPT" ] && export NG_CMAKE_PLATFORM_OPT="-DANDROID_ABI=arm64-v8a"
+			export NG_TOOLCHAIN=android
+			;;
+		(android-x86)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			[ -z "$NG_CMAKE_TOOLCHAIN_FILE" ] && export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/android.cmake"
+			[ -z "$NG_CMAKE_PLATFORM_OPT" ] && export NG_CMAKE_PLATFORM_OPT="-DANDROID_ABI=x86"
+			export NG_TOOLCHAIN=android
+			;;
+		(android-x86-64)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			[ -z "$NG_CMAKE_TOOLCHAIN_FILE" ] && export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/android.cmake"
+			[ -z "$NG_CMAKE_PLATFORM_OPT" ] && export NG_CMAKE_PLATFORM_OPT="-DANDROID_ABI=x86_64"
+			export NG_TOOLCHAIN=android
+			;;
+		(android-neon)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/android.cmake"
+			export NG_CMAKE_PLATFORM_OPT="-DANDROID_ABI=armeabi-v7a-NEON"
+			export NG_TOOLCHAIN=android
+			;;
+		(linux)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/linux.cmake"
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(linux_arm)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/linux_arm.cmake"
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(linux_arm64)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/linux_arm64.cmake"
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(qnx-armv7|qnx-aarch64|qnx-x86_64)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/qnx-common.cmake"
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(linux_cross)
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/linux_cross.cmake"
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(macosx)
+			#export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_GENERATOR="Xcode"
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			unset NG_CMAKE_PLATFORM_OPT
+			;;
+		(v120_wp81-arm)
+			export NG_CMAKE_GENERATOR="Visual Studio 12 2013 ARM"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT=" -T v120_wp81 -DCMAKE_SYSTEM_NAME=WindowsPhone -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(v120_wp81-win32)
+			export NG_CMAKE_GENERATOR="Visual Studio 12 2013"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT=" -T v120_wp81 -DCMAKE_SYSTEM_NAME=WindowsPhone -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(v140_wp81-arm)
+			export NG_CMAKE_GENERATOR="Visual Studio 14 2015 ARM"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT=" -T v120_wp81 -DCMAKE_SYSTEM_NAME=WindowsPhone -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(v140_wp81-win32)
+			export NG_CMAKE_GENERATOR="Visual Studio 14 2015"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			unset NG_CMAKE_TOOLCHAIN_FILE
+			export NG_CMAKE_PLATFORM_OPT=" -T v120_wp81 -DCMAKE_SYSTEM_NAME=WindowsPhone -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(v120_rt81-arm)
+			export NG_CMAKE_GENERATOR="Visual Studio 12 2013 ARM"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			export NG_CMAKE_PLATFORM_OPT=" -T v120 -DCMAKE_SYSTEM_NAME=WindowsStore -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(v120_rt81-x86)
+			export NG_CMAKE_GENERATOR="Visual Studio 12 2013"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			export NG_CMAKE_PLATFORM_OPT=" -T v120 -DCMAKE_SYSTEM_NAME=WindowsStore -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(v120_rt81-x64)
+			export NG_CMAKE_GENERATOR="Visual Studio 12 2013 Win64"
+			export NG_CMAKE_MODULE_PATH=$NG_CMAKE_MODULE_PATH
+			export NG_CMAKE_PLATFORM_OPT=" -T v120 -DCMAKE_SYSTEM_NAME=WindowsStore -DCMAKE_SYSTEM_VERSION=8.1"
+			;;
+		(nacl|nacl64)
+			if [[ -z $NACL_SDK_ROOT ]]
+			then
+				echo "Error: Set NACL_SDK_ROOT to the root of the Native Client SDK"
+				return 1
+			fi
+			export NACL_SDK_ROOT=$(driveletter_to_path $NACL_SDK_ROOT)
+
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/toolchain/nacl.cmake"
+
+			if [ "$platform" == "nacl" ]; then
+				TOOLCHAINPREFIX="i686-nacl"
+				_ARCH="x86_32"
+			else
+				TOOLCHAINPREFIX="x86_64-nacl"
+				_ARCH="x86_64"
+			fi
+
+			if [ $OS == "Windows_NT" ]; then
+				TOOLCHAINDIR="win_x86_glibc"
+				TOOLCHAINPOSTFIX=".exe"
+				_CMAKE_MAKE_PROGRAM="$NACL_SDK_ROOT/tools/make"
+			else
+				TOOLCHAINDIR="linux_x86_glibc"
+				TOOLCHAINPOSTFIX=""
+				_CMAKE_MAKE_PROGRAM="make"
+			fi
+
+			PLATFORMSPECIFIC="-DCMAKE_SYSTEM_INCLUDE_PATH=$NACL_SDK_ROOT/include -DCMAKE_SYSTEM_LIBRARY_PATH=$NACL_SDK_ROOT/lib -DCMAKE_EXE_LINKER_FLAGS_DEBUG=-L$NACL_SDK_ROOT/lib/glibc_$_ARCH/Debug -DCMAKE_EXE_LINKER_FLAGS_RELEASE=-L$NACL_SDK_ROOT/lib/glibc_$_ARCH/Release"
+			_CMAKE_C_COMPILER="$NACL_SDK_ROOT/toolchain/$TOOLCHAINDIR/bin/$TOOLCHAINPREFIX-gcc$TOOLCHAINPOSTFIX"
+			_CMAKE_CXX_COMPILER="$NACL_SDK_ROOT/toolchain/$TOOLCHAINDIR/bin/$TOOLCHAINPREFIX-g++$TOOLCHAINPOSTFIX"
+			_CMAKE_AR="$NACL_SDK_ROOT/toolchain/$TOOLCHAINDIR/bin/$TOOLCHAINPREFIX-ar$TOOLCHAINPOSTFIX"
+			_CMAKE_RANLIB="$NACL_SDK_ROOT/toolchain/$TOOLCHAINDIR/bin/$TOOLCHAINPREFIX-ranlib$TOOLCHAINPOSTFIX"
+			export NG_CMAKE_PLATFORM_OPT="-DNACL=1 -DARCH=$_ARCH -DCMAKE_MAKE_PROGRAM=$_CMAKE_MAKE_PROGRAM -DCMAKE_C_COMPILER=$_CMAKE_C_COMPILER -DCMAKE_CXX_COMPILER=$_CMAKE_CXX_COMPILER -DCMAKE_AR=$_CMAKE_AR -DCMAKE_RANLIB=$_CMAKE_RANLIB -DCMAKE_EXECUTABLE_SUFFIX=.nexe -DCMAKE_EXECUTABLE_SUFFIX_C=.nexe -DCMAKE_EXECUTABLE_SUFFIX_CXX=.nexe $PLATFORMSPECIFIC"
+
+			if [ -z ${CYGWIN} ]; then
+				export CYGWIN=nodosfilewarning
+			fi
+			;;
+		(emscripten)
+			if [[ -z $EMSCRIPTEN ]]
+			then
+				echo "Error: Set EMSCRIPTEN to the Emscripten directory (the one that contains emcc and em++)"
+				echo "For more info see doc/emscripten.md"
+				return 1
+			fi
+			export EMSCRIPTEN=$(driveletter_to_path $EMSCRIPTEN)
+
+			export NG_CMAKE_GENERATOR="Unix Makefiles"
+			#export NG_CMAKE_TOOLCHAIN_FILE="$EMSCRIPTEN/cmake/Platform/Emscripten.cmake"
+			export NG_CMAKE_TOOLCHAIN_FILE="$my_script_dir/../cmake/Platform/Emscripten.cmake"
+
+			_CMAKE_C_COMPILER="${EMSCRIPTEN}/emcc"
+			_CMAKE_CXX_COMPILER="${EMSCRIPTEN}/em++"
+			_CMAKE_AR="${EMSCRIPTEN}/emar"
+			_CMAKE_RANLIB="${EMSCRIPTEN}/emranlib"
+
+			export NG_CMAKE_PLATFORM_OPT="-DEMSCRIPTEN=1 -DCMAKE_C_COMPILER=$_CMAKE_C_COMPILER -DCMAKE_CXX_COMPILER=$_CMAKE_CXX_COMPILER -DCMAKE_AR=$_CMAKE_AR -DCMAKE_RANLIB=$_CMAKE_RANLIB"
+
+			export NG_CMAKE_MODULE_PATH="$NG_CMAKE_MODULE_PATH;$EMSCRIPTEN/cmake"
+			;;
+		(custom)
+			: ${NG_CMAKE_GENERATOR:=$custom_cmake_generator_default}
+			export NG_CMAKE_GENERATOR
+			: ${NG_CMAKE_TOOLCHAIN_FILE:?Error NG_CMAKE_TOOLCHAIN_FILE is not defined}
+			: ${NG_CMAKE_PLATFORM_OPT:?Error NG_CMAKE_PLATFORM_OPT is not defined}
+			;;
+		(*)
+			help "Unknown platform: $platform"
+			false
+			;;
+	esac
+		: ${NG_INSTALL_ROOT:?Error NG_INSTALL_ROOT is not defined}
+		: ${NG_BUILD_ROOT:?Error NG_BUILD_ROOT is not defined}
+		: ${NG_THIRDPARTY_ROOT:?Error NG_THIRDPARTY_ROOT is not defined}
+		env|grep ^NG_
+	fi

@@ -1,0 +1,151 @@
+
+////former version////////////////////
+//message SystemInfo {
+//	message Group {
+//		required string group_id = 1;
+//		required string name = 2;
+//		optional string icon = 3;
+//		optional string description = 4;
+//	}
+//	required string name = 1;
+//	required string value = 2;
+//	optional string group_id = 3;
+//}
+///////////////////////////////////////
+
+message SystemInfo {
+	optional DeviceInfo = 0;
+	optional OSInfo os = 1;
+	optional DisplayInfo display = 2;
+	optional ChipsetInfo chipset = 3;
+	optional CPUInfo cpu = 4;
+	optional GPUInfo gpu = 5;
+	optional APIInfo api = 6;
+	optional MemInfo mem = 7;
+	optional StorageInfo = 8;
+	optional CameraInfo = 9;
+	optional BatteryInfo = 10;
+	optional FeatureList = 11;
+} 
+
+message DeviceInfo {
+	optional string name = 0;
+	optional string vendor = 1;
+}
+
+message OSInfo {
+	optional string vendor = 0;
+	optional string name = 1;
+	optional string short_name = 2;
+	optional string arch = 3;
+	optional int32 build = 4;
+}
+
+message DisplayInfo {
+	//TODO
+}
+
+message ChipsetInfo {
+	//TODO
+}
+
+message CPUInfo {
+	optional string vendor = 0;
+	optional string name = 1;
+	optional uint64 frequency = 2;
+	optional int32 cores = 3;
+	optional int32 threads = 4;
+}
+
+message GPUDevice {
+	optional string name = 0;
+	optional string driver_version = 1;
+	optional uint32 vendor_id = 2;
+	optional uint32 device_id = 3;
+}
+
+message GPUInfo {
+	repeated GPUDevice gpu_list = 0;
+}
+
+message GLInfo {
+	optional string vendor = 0;
+	optional string renderer = 1;
+	optional string version = 2;
+	optional string shader_version = 3;
+	optional string extensions = 4;
+}
+
+message EGLInfo {
+	optional string vendor = 0;
+	optional string client_apis = 1;
+	optional string version = 2;
+	optional string extensions = 3;
+}
+
+message CLDevice {
+	enum Type {
+		CPU = 0,
+		GPU = 1,
+		ACCELERATOR = 2,
+		DEFAULT = 3, 
+		CUSTOM = 4 
+	}
+	optional string vendor = 0;
+	optional string name = 1;
+	optional string version = 2;
+	optional string profile = 3;
+	optional string extensions = 4;
+	optional Type type = 5;
+}
+
+message CLPlatform {
+	optional string vendor = 0;
+	optional string name = 1;
+	optional string version = 2;
+	optional string profile = 3;
+	optional string extensions = 4;
+	repeated CLDevice device_list = 5;
+}
+
+message CLInfo {
+	repeated Platform platform_list = 0;
+}
+
+message APIInfo {
+	optional GLInfo gl= 0;
+	optional EGLInfo egl= 1;
+	optional CLInfo cl= 2;
+	//TODO
+	//RS, DX, EGL
+}
+
+message MemInfo {
+	optional uint64 size = 0;
+}
+
+message Storage {
+	optional string name = 0;
+	optional uint64 size = 1;
+}
+message StorageInfo {
+	repeated Storage storage_list = 0;
+}
+
+message Camera {
+	//TODO
+}
+
+message CameraInfo {
+	repeated Camera camera_list = 0;
+}
+
+message BatteryInfo {
+	optional bool is_connected = 0;
+	optional bool is_charging = 1;
+	optional double current_level = 2;
+}
+
+message Features {
+	repeated string feature_list = 0;
+}

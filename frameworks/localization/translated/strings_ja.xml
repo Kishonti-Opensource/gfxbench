@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="AboutSectionTitle">プログラム情報</string>
+  <string name="Accept">同意</string>
+  <string name="AppVersionCorporate">コーポレート バージョン %s</string>
+  <string name="Back">戻る</string>
+  <string name="BAD_VERSION">お使いの GFXBench は古いバージョンです。アプリをアップデートしてください。</string>
+  <string name="Battery">バッテリー</string>
+  <string name="BatteryBrightness100">100% 強制</string>
+  <string name="BatteryBrightness25">25% 強制</string>
+  <string name="BatteryBrightness50">50% 強制</string>
+  <string name="BatteryBrightness75">75% 強制</string>
+  <string name="BatteryBrightnessDefault">デフォルト</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">充電中</string>
+  <string name="BatteryPageTitle">バッテリー グラフ</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">電源接続済み</string>
+  <string name="BatteryUnplugged">電源接続なし</string>
+  <string name="BestResults">最高の結果</string>
+  <string name="Camera_Autofocus">オートフォーカス</string>
+  <string name="Camera_FaceDetection">顔認識</string>
+  <string name="Camera_Flash">フラッシュ</string>
+  <string name="Camera_GeoTagging">位置情報タグ</string>
+  <string name="Camera_HDR">HDR 撮影</string>
+  <string name="Camera_Picture">写真</string>
+  <string name="Camera_TouchFocus">タッチ フォーカス</string>
+  <string name="Camera_Video">動画</string>
+  <string name="Cancel">キャンセル</string>
+  <string name="Cancelled">キャンセルされました</string>
+  <string name="Chipset">チップセット</string>
+  <string name="ClearAll">すべてクリア</string>
+  <string name="ClearHistoryDialogBody">結果のデータをすべて消去します。この操作を実行してもよろしいですか?</string>
+  <string name="ClearHistoryDialogTitle">履歴を消去</string>
+  <string name="Close">閉じる</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">サーバーに接続しています。</string>
+  <string name="ContactUs">お問い合わせ</string>
+  <string name="CorporateCommercialTitle">ライセンスについて</string>
+  <string name="CorporateFeatures">コーポレート版の機能</string>
+  <string name="Decline">拒否</string>
+  <string name="DeviceMayCrashDialogBody">Your device might not have enough memory to run this test. We recommend that you close all other applications and/or restart your device because it may crash due to low memory conditions otherwise.</string>
+  <string name="DeviceMayCrashDialogTitle">High memory consumption</string>
+  <string name="DownloadDatabaseEveryStartup">起動のたびにデータベースをダウンロードする</string>
+  <string name="Email">メール</string>
+  <string name="EMAIL_TAKEN">このメール アドレスは既に使用されています。別のものを選択してください。</string>
+  <string name="EmailTakenDialogBody">このメール アドレスは既に他のユーザーが使用しています。別のものを選択してから、もう一度試してください。</string>
+  <string name="EmailTakenDialogTitle">メール アドレスは使用されています</string>
+  <string name="EnableExtraBattery">追加バッテリーの有効化</string>
+  <string name="Error">エラー!</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">停止しました: 輝度が変更されました</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">停止しました: 充電器が電源に接続済み</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">互換性のない ES バージョンでビルドされています</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">DirectX 機能レベルが使用不可</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">ES 3 はサポートされていません</string>
+  <string name="ERROR_FILE_NOT_FOUND">ファイルが見つかりません</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">無効なスクリーン解像度</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">デバイスが MSAA を含むモーション ブラーをサポートしていません</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">このデバイスはオフスクリーンをサポートしていません</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">このデバイスはオフスクリーンと MSAA の組み合わせをサポートしていません。</string>
+  <string name="ERROR_OUT_OF_MEMORY">メモリ不足</string>
+  <string name="ERROR_OUT_OF_VMEMORY">ビデオ メモリ不足</string>
+  <string name="ERROR_SHADER_ERROR">シェーダー エラー</string>
+  <string name="ERROR_SKIPPED">スキップされました</string>
+  <string name="ERROR_UNDEFINED_ERROR">未定義のエラー</string>
+  <string name="ERROR_UNKNOWNERROR">不明なエラー</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">サポートされないテクスチャ形式</string>
+  <string name="ERROR_VBO_ERROR">VBO エラー</string>
+  <string name="FeatureAccelerometer">加速度計</string>
+  <string name="FeatureAltimeter">高度計</string>
+  <string name="FeatureBarometer">気圧計</string>
+  <string name="FeatureBluetooth">Bluetooth</string>
+  <string name="FeatureCompass">コンパス</string>
+  <string name="FeatureCPUCoreCount">コア</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">ジャイロスコープ</string>
+  <string name="FeatureLevel">機能レベル</string>
+  <string name="FeatureLightSensor">光センサー</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">近接センサー</string>
+  <string name="FeatureSIMCount">SIM カード</string>
+  <string name="FeatureThermometer">温度計</string>
+  <string name="FeatureTouchscreenCapacitive">静電容量方式タッチパネル</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">静電容量方式タッチパネル (5 点以上のジェスチャ対応)</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">静電容量方式タッチパネル (マルチタッチ ジェスチャ対応)</string>
+  <string name="FeatureTouchscreenResistive">抵抗膜方式タッチパネル</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">抵抗膜方式タッチパネル (5 点以上のジェスチャ対応)</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">抵抗膜方式タッチパネル (マルチタッチ ジェスチャ対応)</string>
+  <string name="FillTheForm">以下のフォームに入力してください。</string>
+  <string name="FindOutMore">詳細</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">フォローしてください</string>
+  <string name="ForceDisplayBrightness">ディスプレイ輝度を強制的に設定します。</string>
+  <string name="ForgotPasswordSendToEmail">自分のメール アドレスに送信します。</string>
+  <string name="ForgotPasswordSentToEmail">メールを送信しました。指示に従ってパスワードをリセットしてください。</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">高レベル テスト</string>
+  <string name="group_high_level_desc">ハイエンド ゲームを模したシーンを使用して、デバイスの全体的な 3D グラフィックス性能をテストします。GPU に負荷を与える複雑な効果を処理し、ゲームや GPU に負荷のかかる他のタスク (UI レンダリング、ナビゲーションなど) の実行時の 3D グラフィックス性能に関するフィードバックを提供します。</string>
+  <string name="group_low_level">低レベル テスト</string>
+  <string name="group_special">特殊テスト</string>
+  <string name="Height">高さ</string>
+  <string name="INTERNAL_ERROR">サーバー エラー。後でもう一度試してください。</string>
+  <string name="INVALID_CREDENTIALS">ログイン名またはパスワードが正しくありません。再入力してください。</string>
+  <string name="INVALID_EMAIL_ADDRESS">無効なメール アドレスです。入力し直してください。</string>
+  <string name="InvalidCredentialsBody">ログイン名またはパスワードが正しくありません。再入力してください。</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">指定されたメール アドレスは無効です。有効なものを指定してから、もう一度試してください。</string>
+  <string name="InvalidEmailDialogTitle">メール アドレス エラー</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">最新の結果</string>
+  <string name="LicenseDialogTitle">一般ライセンス</string>
+  <string name="Lifetime">寿命</string>
+  <string name="Loading">ロード中...</string>
+  <string name="LoadingDeviceInfo">デバイス情報を収集しています。</string>
+  <string name="LoadingDuelInfo">二者間の比較情報を収集しています。</string>
+  <string name="LoadingNextTest">次のテストをロード中...</string>
+  <string name="LoadingTest">%s をロード中...</string>
+  <string name="Login">ログイン</string>
+  <string name="LoginFailedDialogBody">ユーザーまたはパスワードが一致しません。再入力してください。</string>
+  <string name="LoginFailedDialogTitle">ログイン エラー</string>
+  <string name="LoginForgotPassword">パスワードが不明なので</string>
+  <string name="LoginTitle">ログイン</string>
+  <string name="Logout">ログアウト</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="MISSING_PARAMETER">ログイン名とパスワードを入力してください。</string>
+  <string name="MissingParametersDialogBody">必須の情報が未入力です。入力してから、もう一度試してください。</string>
+  <string name="MissingParametersDialogTitle">パラメータ未入力</string>
+  <string name="More">その他</string>
+  <string name="NetRequirementDialogBody">GFXBench の結果が保存されて表示されるのは、インターネットに接続している場合に限られます。</string>
+  <string name="NetRequirementDialogTitle">情報</string>
+  <string name="NETWORK_ERROR">ネットワーク エラー。後でもう一度試してください。</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">いいえ</string>
+  <string name="NoFreeSpaceDialogBody">The minimum required free space on SDCard: %1$s MB</string>
+  <string name="NoFreeSpaceDialogTitle">Error</string>
+  <string name="NoInternetDialogBody">インターネットに接続されていません。ネットワークに接続してから、もう一度試してください。</string>
+  <string name="NoInternetDialogTitle">インターネット未接続</string>
+  <string name="NoServerDialogBody">GFXBench がサーバーに接続する際に何らかの問題が発生しました。後でもう一度試してください。</string>
+  <string name="NoServerDialogTitle">サーバーが見つかりません</string>
+  <string name="NoTestSelectedDialogBody">実行するテストを 1 つ以上選択してください。</string>
+  <string name="NoTestSelectedDialogTitle">テストが選択されていません</string>
+  <string name="NotRegisteredSectionBody">GFXBench は各テストの実行結果を毎回保存します。テスト結果の履歴にアクセスして参照するには、ユーザー アカウントを作成してください。</string>
+  <string name="NotRegisteredSectionTitle">情報</string>
+  <string name="NotSupported">非サポート</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="Offscreen">オフスクリーン</string>
+  <string name="OffscreenHeight">オフスクリーン高さ</string>
+  <string name="OffscreenWidth">オフスクリーン幅</string>
+  <string name="OK">OK</string>
+  <string name="Onscreen">オンスクリーン</string>
+  <string name="OperatingSystem">SO</string>
+  <string name="OperatingSystemFull">オペレーティング システム</string>
+  <string name="OutdatedDialogBody">お使いの GFXBench は古いバージョンです。アプリをアップデートしてください。</string>
+  <string name="OutdatedDialogTitle">古いバージョン</string>
+  <string name="Password">パスワード</string>
+  <string name="PasswordMismatchDialogBody">パスワードが一致しません。パスワードを再入力してください。</string>
+  <string name="PasswordMismatchDialogTitle">パスワード エラー</string>
+  <string name="Performance">性能</string>
+  <string name="PrimaryScreenDialogBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenDialogTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">終了</string>
+  <string name="ReadLicense">EULA を読む</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Register">登録</string>
+  <string name="RegisterEmail">メール アドレス</string>
+  <string name="RegisterError">プライバシー条項に同意して登録します。</string>
+  <string name="RegisterErrorEmailNotOK">別のメール アドレスを選択してください。</string>
+  <string name="RegisterErrorLoginNotOK">別のログイン名を選択してください。</string>
+  <string name="RegisterErrorNoEmail">[メール アドレス] フィールドに入力してください。</string>
+  <string name="RegisterErrorNoFirstName">[名] フィールドに入力してください。</string>
+  <string name="RegisterErrorNoLastName">[氏] フィールドに入力してください。</string>
+  <string name="RegisterErrorNoLogin">[ログイン名] フィールドに入力してください。</string>
+  <string name="RegisterErrorNoPassword">[パスワード] フィールドに入力してください。</string>
+  <string name="RegisterErrorPasswordsNotMatching">パスワードが一致していません。再入力してください。</string>
+  <string name="RegisterFirstName">名</string>
+  <string name="RegisterLastName">氏</string>
+  <string name="RegisterLogin">ログイン名の選択</string>
+  <string name="RegisterPassword">パスワード</string>
+  <string name="RegisterPasswordAgain">パスワードの再入力</string>
+  <string name="RegistrationFeedbackDialogBody">登録が正常に完了しました。通知のメールを指定のアドレスに送信しました。</string>
+  <string name="RegistrationFeedbackDialogTitle">正常に登録されました</string>
+  <string name="RegistrationForm">登録フォーム</string>
+  <string name="RememberMe">このアカウントを記憶する</string>
+  <string name="Requirement">API 最小要件:</string>
+  <string name="ResetTutorials">チュートリアルのリセット</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">結果の履歴</string>
+  <string name="Results_BatteryEstimatedTime">バッテリー - 推定時間</string>
+  <string name="Results_BatteryPerformance">バッテリー - 性能</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">該当なし</string>
+  <string name="Results_NoBatteryResultYet">バッテリーの結果はありません。</string>
+  <string name="Results_NoResultsYet">結果はありません。</string>
+  <string name="Results_RunningTime">実行時間</string>
+  <string name="Results_ShowBatteryDiagram">バッテリー グラフの表示</string>
+  <string name="Retry">再試行</string>
+  <string name="SaveResultsExcel">結果の保存</string>
+  <string name="Score">スコア</string>
+  <string name="Search">検索</string>
+  <string name="SelectAll">すべて選択</string>
+  <string name="SelectTests">テストの選択</string>
+  <string name="ServerTimeoutDialogBody">GFXBench からサーバーに到達できませんでした。後でもう一度試してください。</string>
+  <string name="ServerTimeoutDialogTitle">サーバー タイムアウト</string>
+  <string name="SetBatteryBrightness">バッテリー テストの輝度</string>
+  <string name="SetOffscrResolution">オフスクリーン解像度</string>
+  <string name="SetOnscrResolution">カスタム解像度</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">FPS の表示</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">バッテリー テストを選択しようとしています。これを選択すると、他のすべてのテストの選択が解除されます。このテストを実行するには、デバイスがフル充電されていて電源に接続されていないことを確認してください。テスト中はデバイスが過熱することがあります。</string>
+  <string name="StabilityTestTitle">バッテリー テスト</string>
+  <string name="Start">開始</string>
+  <string name="StartAll">すべて開始</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">サポートされないコンテキスト バージョン</string>
+  <string name="STATUS_CANCELLED">キャンセルされました</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">テストを作成できません</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">無効な構成</string>
+  <string name="STATUS_NATIVEEXCEPTION">テストの失敗</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">テストが無効です</string>
+  <string name="STATUS_UNKNOWNERR">不明なエラー</string>
+  <string name="StorageCheck">Determinig the storage for the huge datasets</string>
+  <string name="Supported">サポート</string>
+  <string name="SwitchStateOff">オフ</string>
+  <string name="SwitchStateOn">オン</string>
+  <string name="ShowString">Show</string>
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobil results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>  
+  <string name="SyncErrorDialogBody">同期中に次のエラーが発生しました: %s</string>
+  <string name="SyncErrorDialogTitle">同期エラー</string>
+  <string name="Synchronization">Synchronizing...</string>
+  <string name="SyncLotDialogBody">GFXBench によってアプリケーション データがサーバーと同期されます。これには %s のダウンロードが必要です。許可しますか?</string>
+  <string name="SyncLotDialogTitle">データの同期</string>
+  <string name="SyncronizingChecksum">ファイルの変更内容を確認しています...</string>
+  <string name="SyncronizingLoadingString">ファイルの同期中 %1$s%% (%2$s / %3$s MB)</string>
+  <string name="TabCompare">比較</string>
+  <string name="TabDuel">二者間</string>
+  <string name="TabGlInfo">OpenGL 情報</string>
+  <string name="TabHome">ホーム</string>
+  <string name="TabInfo">情報</string>
+  <string name="TabResults">結果</string>
+  <string name="TabSettings">設定</string>
+  <string name="TestList">テスト一覧</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>  
+  <string name="TestSelection">テスト選択</string>
+  <string name="ThreeDAPI">3D API</string>
+  <string name="UnkownErrorDialogBody">登録中に予期しないエラーが発生しました。後でもう一度試してください。</string>
+  <string name="UnkownErrorDialogTitle">エラー</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">結果のアップロード</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">ユーザー</string>
+  <string name="USER_NAME_TAKEN">このユーザー名は既に使用されています。別のものを選択してください。</string>
+  <string name="Username">ユーザー名</string>
+  <string name="UsernameTakenDialogBody">このユーザー名は現在、他のユーザーが使用しています。別のものを選択してから、もう一度試してください。</string>
+  <string name="UsernameTakenDialogTitle">ユーザー名は既に使用されています</string>
+  <string name="Version">バージョン %s</string>
+  <string name="WarningEULA">エンドユーザー ライセンス契約をお読みください。</string>
+  <string name="WarningNoInternet">インターネットに接続されていません。テストを実行するにはネットワークに接続してください。</string>
+  <string name="WarningOutdated">最新のアプリケーションが使用されていません。GFXBench の最新版をダウンロードしてください。</string>
+  <string name="WarningTestNotRunNoInternet">インターネットに接続されていないため、テストに失敗しました。テストを実行するにはネットワークに接続してください。</string>
+  <string name="WarningUnregistered">アカウントを登録してください。</string>
+  <string name="Welcome">ようこそ。次のユーザーとしてログインしました:</string>
+  <string name="Width">幅</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">はい</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">ユーザーのデバイス</string>
+  <string name="AboutSectionBody">GFXBench は、ご使用のデバイスのグラフィックス性能をテストし、その結果を主要プラットフォームの他のデバイスと比較する 3D グラフィックス ベンチマークです。GFXBench は Kishonti Ltd. が開発しました。弊社の事業に関心をお持ちの場合は、kishonti.net にアクセスしてください。</string>
+  <string name="CorporateCommercial">現在、GFXBench の コミュニティ 版をご利用になっています。開発の用途には、コーポレート 版が推奨されます。ライセンスに関する情報については、sales@kishonti.net までお問い合わせください。</string>
+  <string name="FollowUsSectionBody">GFXBench は、ご使用のデバイスの性能を測定して他のデバイスと比較する、クロスプラットフォームの 3D グラフィックス ベンチマークです。</string>
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  
+  
+  <!-- System info -->
+  <string name="device">デバイス</string>
+  <string name="os">SO</string>
+  <string name="display">ディスプレイ</string>
+  <string name="cpu">CPU</string>
+  <string name="gpu">GPU</string>
+  <string name="memory">メモリ</string>
+  <string name="storage">ストレージ</string>
+  <string name="battery">バッテリー</string>
+  <string name="features">機能</string>
+  <string name="frontcamera">前面カメラ</string>
+  <string name="backcamera">背面カメラ</string>
+  
+  
+  <!-- GFXBench GL -->
+  <string name="gl_blending">アルファ ブレンド</string>
+  <string name="gl_blending_desc">デバイスのアルファ ブレンド性能を測定するために、画面に揃えた半透明のクアッドを、高解像度非圧縮テクスチャを使用してレンダリングします。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off_desc">デバイスのアルファ ブレンド性能を測定するために、画面に揃えた半透明のクアッドを、高解像度非圧縮テクスチャを使用してレンダリングします。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">1080p アルファ ブレンド オフスクリーン</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_alu">算術論理装置</string>
+  <string name="gl_alu_desc">複雑なフラグメント シェーダーを使用し、単一のフルスクリーン クワッドをレンダリングすることで、デバイスのシェーダーの純粋な計算能力を測定します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off_desc">複雑なフラグメント シェーダーを使用し、単一のフルスクリーン クワッドをレンダリングすることで、デバイスのシェーダーの純粋な計算能力を測定します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">1080p 算術論理装置オフスクリーン</string>
+  <string name="gl_alu2">算術論理装置 2</string>
+  <string name="gl_alu2_off">1080p 算術論理装置 2 オフスクリーン</string>
+  <string name="gl_trex_battery_desc">この複合テストは、同じ高レベル テストを 30 回実行することで、デバイスのバッテリー寿命とゲーム シーンでの FPS の安定性を測定します。テスト時の FPS とバッテリー残量が記録され、結果がバッテリー グラフに表示されます。このテストでは、分単位の推定バッテリー寿命と、最低速で実行されたテストでレンダリングされたフレーム数という 2 種類のスコアが作成されます。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">ドライバー オーバーヘッド</string>
+  <string name="gl_driver_desc">アイテムごとにデバイスの状態を変えながら、多数の単純なオブジェクトを 1 つずつレンダリングすることで、OpenGL ドライバーの CPU オーバーヘッドを測定します。状態を変える頻度は実際のアプリケーションを反映しています。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off_desc">アイテムごとにデバイスの状態を変えながら、多数の単純なオブジェクトを 1 つずつレンダリングすることで、OpenGL ドライバーの CPU オーバーヘッドを測定します。状態を変える頻度は実際のアプリケーションを反映しています。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off">1080p ドライバー オーバーヘッド オフスクリーン</string>
+  <string name="gl_driver2">ドライバー オーバーヘッド 2</string>
+  <string name="gl_driver2_off">1080p ドライバー オーバーヘッド 2 オフスクリーン</string>
+  <string name="gl_fill">フィル</string>
+  <string name="gl_fill_desc">4 層の圧縮されたテクスチャをレンダリングすることで、デバイスのテクスチャ処理性能を測定します。これはゲームにおける一般的なシナリオです。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off_desc">4 層の圧縮されたテクスチャをレンダリングすることで、デバイスのテクスチャ処理性能を測定します。これはゲームにおける一般的なシナリオです。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">1080p フィル オフスクリーン</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_off">1080p Texturing オフスクリーン</string>
+  <string name="gl_manhattan">マンハッタン</string>
+  <string name="gl_manhattan31">マンハッタン 3.1</string>
+  <string name="gl_manhattan31_off">1080p マンハッタン 3.1 オフスクリーン </string>
+  <string name="gl_manhattan_off">1080p マンハッタンオフスクリーン</string>
+  <string name="Test_Offscreen">%s オフスクリーン</string>
+  <string name="gl_trex">ティラノサウルス レックス</string>
+  <string name="gl_trex_battery">バッテリー テスト</string>
+  <string name="gl_trex_battery_diagram">バッテリー グラフ</string>
+  <string name="gl_trex_battery_lifetime">バッテリー テスト - 推定時間</string>
+  <string name="gl_trex_battery_performance">バッテリー テスト - 性能</string>
+  <string name="gl_trex_off">1080p ティラノサウルスレックス オフスクリーン</string>
+  <string name="gl_trex_qmatch">品質のレンダリング</string>
+  <string name="gl_trex_qmatch_highp">品質のレンダリング (高精度)</string>
+
+  <!-- GFXBench METAL -->
+  <string name="metal_blending">アルファ ブレンド</string>
+  <string name="metal_blending_desc">デバイスのアルファ ブレンド性能を測定するために、画面に揃えた半透明のクアッドを、高解像度非圧縮テクスチャを使用してレンダリングします。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_blending_off_desc">デバイスのアルファ ブレンド性能を測定するために、画面に揃えた半透明のクアッドを、高解像度非圧縮テクスチャを使用してレンダリングします。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_blending_off">1080p アルファ ブレンド オフスクリーン</string>
+  <string name="metal_diag">GL Diagnostics</string>
+  <string name="metal_alu">算術論理装置</string>
+  <string name="metal_alu_desc">複雑なフラグメント シェーダーを使用し、単一のフルスクリーン クワッドをレンダリングすることで、デバイスのシェーダーの純粋な計算能力を測定します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_alu_off_desc">複雑なフラグメント シェーダーを使用し、単一のフルスクリーン クワッドをレンダリングすることで、デバイスのシェーダーの純粋な計算能力を測定します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_alu_off">1080p 算術論理装置オフスクリーン</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="metal_trex_battery_desc">この複合テストは、同じ高レベル テストを 30 回実行することで、デバイスのバッテリー寿命とゲーム シーンでの FPS の安定性を測定します。テスト時の FPS とバッテリー残量が記録され、結果がバッテリー グラフに表示されます。このテストでは、分単位の推定バッテリー寿命と、最低速で実行されたテストでレンダリングされたフレーム数という 2 種類のスコアが作成されます。API 最小要件:Metal</string>
+  <string name="metal_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="metal_driver">ドライバー オーバーヘッド</string>
+  <string name="metal_driver_desc">アイテムごとにデバイスの状態を変えながら、多数の単純なオブジェクトを 1 つずつレンダリングすることで、Metal ドライバーの CPU オーバーヘッドを測定します。状態を変える頻度は実際のアプリケーションを反映しています。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_driver_off_desc">アイテムごとにデバイスの状態を変えながら、多数の単純なオブジェクトを 1 つずつレンダリングすることで、Metal ドライバーの CPU オーバーヘッドを測定します。状態を変える頻度は実際のアプリケーションを反映しています。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_driver_off">1080p ドライバー オーバーヘッド オフスクリーン</string>
+  <string name="metal_driver2">Driver Overhead 2</string>
+  <string name="metal_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="metal_fill">フィル</string>
+  <string name="metal_fill_desc">4 層の圧縮されたテクスチャをレンダリングすることで、デバイスのテクスチャ処理性能を測定します。これはゲームにおける一般的なシナリオです。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_fill_off_desc">4 層の圧縮されたテクスチャをレンダリングすることで、デバイスのテクスチャ処理性能を測定します。これはゲームにおける一般的なシナリオです。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_fill_off">1080p フィル オフスクリーン</string>
+  <string name="metal_fill2">Fill 2</string>
+  <string name="metal_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="metal_manhattan">マンハッタン</string>
+  <string name="metal_manhattan31">マンハッタン</string>
+  <string name="metal_manhattan31_off">1080p マンハッタン オフスクリーン </string>
+  <string name="metal_manhattan_off">1080p マンハッタンオフスクリーン</string>
+  <string name="Test_Offscreen">%s オフスクリーン</string>
+  <string name="metal_trex_qmatch_desc">デバイスのハイエンド ゲーム シーンでの視覚的忠実度を測定します。スコアは、平均二乗誤差 (MSE) とプリレンダリングされたリファレンス イメージの比較に基づくピーク信号対雑音比 (PSNR) です。API 最小要件:Metal</string>
+  <string name="metal_trex_qmatch_highp_desc">デバイスのハイエンド ゲーム シーンでの視覚的忠実度を測定します。スコアは、平均二乗誤差 (MSE) とプリレンダリングされたリファレンス イメージの比較に基づくピーク信号対雑音比 (PSNR) です。API 最小要件:Metal</string>
+  <string name="metal_trex">ティラノサウルス レックス</string>
+  <string name="metal_trex_battery">バッテリー テスト</string>
+  <string name="metal_trex_battery_diagram">バッテリー グラフ</string>
+  <string name="metal_trex_battery_lifetime">バッテリー テスト - 推定時間</string>
+  <string name="metal_trex_battery_performance">バッテリー テスト - 性能</string>
+  <string name="metal_trex_desc">Metal がベースの ティラノサウルス レックス テストでは、細密なテクスチャ、マテリアル、複雑なジオメトリ、アニメーション テクスチャを適用したパーティクル、ポスト プロセス効果 (モーション ブラー) をテストします。このグラフィックス パイプラインでは、平面反射、鏡面反射ハイライト、ソフトシャドウなどの効果も処理します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_trex_off_desc">Metal がベースの ティラノサウルス レックス テストでは、細密なテクスチャ、マテリアル、複雑なジオメトリ、アニメーション テクスチャを適用したパーティクル、ポスト プロセス効果 (モーション ブラー) をテストします。このグラフィックス パイプラインでは、平面反射、鏡面反射ハイライト、ソフトシャドウなどの効果も処理します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:Metal</string>
+  <string name="metal_trex_off">1080p ティラノサウルスレックス オフスクリーン</string>
+  <string name="metal_trex_qmatch">品質のレンダリング</string>
+  <string name="metal_trex_qmatch_highp">品質のレンダリング (高精度)</string>
+
+  <!-- GFXBench DX -->
+  <string name="dx_blending">アルファ ブレンド</string>
+  <string name="dx_blending_desc">デバイスのアルファ ブレンド性能を測定するために、画面に揃えた半透明のクアッドを、高解像度非圧縮テクスチャを使用してレンダリングします。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_blending_off_desc">デバイスのアルファ ブレンド性能を測定するために、画面に揃えた半透明のクアッドを、高解像度非圧縮テクスチャを使用してレンダリングします。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_blending_off">1080p アルファ ブレンド オフスクリーン</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_alu">算術論理装置</string>
+  <string name="dx_alu_desc">複雑なフラグメント シェーダーを使用し、単一のフルスクリーン クワッドをレンダリングすることで、デバイスのシェーダーの純粋な計算能力を測定します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_alu_off_desc">複雑なフラグメント シェーダーを使用し、単一のフルスクリーン クワッドをレンダリングすることで、デバイスのシェーダーの純粋な計算能力を測定します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_alu_off">1080p 算術論理装置オフスクリーン</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc"></string>
+  <string name="dx_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="dx_trex_battery_desc">この複合テストは、同じ高レベル テストを 30 回実行することで、デバイスのバッテリー寿命とゲーム シーンでの FPS の安定性を測定します。テスト時の FPS とバッテリー残量が記録され、結果がバッテリー グラフに表示されます。このテストでは、分単位の推定バッテリー寿命と、最低速で実行されたテストでレンダリングされたフレーム数という 2 種類のスコアが作成されます。API 最小要件:DirectX 9.1</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">ドライバー オーバーヘッド</string>
+  <string name="dx_driver_desc">アイテムごとにデバイスの状態を変えながら、多数の単純なオブジェクトを 1 つずつレンダリングすることで、DirectX ドライバーの CPU オーバーヘッドを測定します。状態を変える頻度は実際のアプリケーションを反映しています。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_driver_off_desc">アイテムごとにデバイスの状態を変えながら、多数の単純なオブジェクトを 1 つずつレンダリングすることで、DirectX ドライバーの CPU オーバーヘッドを測定します。状態を変える頻度は実際のアプリケーションを反映しています。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_driver_off">1080p ドライバー オーバーヘッド オフスクリーン</string>
+  <string name="dx_driver2">Driver Overhead 2</string>
+  <string name="dx_driver2_desc"></string>
+  <string name="dx_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="dx_fill">フィル</string>
+  <string name="dx_fill_desc">4 層の圧縮されたテクスチャをレンダリングすることで、デバイスのテクスチャ処理性能を測定します。これはゲームにおける一般的なシナリオです。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_fill_off_desc">4 層の圧縮されたテクスチャをレンダリングすることで、デバイスのテクスチャ処理性能を測定します。これはゲームにおける一般的なシナリオです。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_fill_off">1080p フィル オフスクリーン</string>
+  <string name="dx_fill2">Fill 2</string>
+  <string name="dx_fill2_desc"></string>
+  <string name="dx_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="dx_manhattan">マンハッタン</string>
+  <string name="dx_manhattan31">マンハッタン DirectX 10.0</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in DirectX 10.0 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">1080p マンハッタン DirectX 10.0 オフスクリーン </string>
+  <string name="dx_manhattan_desc">デバイスの DirectX 10.0 機能を利用する初めてのテストです。大都市の光あふれる夜景をテスト シーンとして使用します。ジオメトリ パス (テクスチャとして 4 つのカラー アタッチメント)、散光、反射光で遅延レンダリングとマルチレンダリング ターゲット (MRT) を使用し、デプス シャドウ マップ、クローキング効果、ポストプロセス効果 (ブルーム、被写界深度)、オクルージョン クエリ、アニメーション ボリューム ライト シャフトなどの複雑な効果を処理します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 10.0</string>
+  <string name="dx_manhattan_off_desc">デバイスの DirectX 10.0 機能を利用する初めてのテストです。大都市の光あふれる夜景をテスト シーンとして使用します。ジオメトリ パス (テクスチャとして 4 つのカラー アタッチメント)、散光、反射光で遅延レンダリングとマルチレンダリング ターゲット (MRT) を使用し、デプス シャドウ マップ、クローキング効果、ポストプロセス効果 (ブルーム、被写界深度)、オクルージョン クエリ、アニメーション ボリューム ライト シャフトなどの複雑な効果を処理します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 10.0</string>
+  <string name="dx_manhattan_off">1080p マンハッタンオフスクリーン</string>
+  <string name="Test_Offscreen">%s オフスクリーン</string>
+  <string name="dx_trex_qmatch_desc">デバイスのハイエンド ゲーム シーンでの視覚的忠実度を測定します。スコアは、平均二乗誤差 (MSE) とプリレンダリングされたリファレンス イメージの比較に基づくピーク信号対雑音比 (PSNR) です。API 最小要件:DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp_desc">デバイスのハイエンド ゲーム シーンでの視覚的忠実度を測定します。スコアは、平均二乗誤差 (MSE) とプリレンダリングされたリファレンス イメージの比較に基づくピーク信号対雑音比 (PSNR) です。API 最小要件:DirectX 9.1</string>
+  <string name="dx_trex">ティラノサウルス レックス</string>
+  <string name="dx_trex_battery">バッテリー テスト</string>
+  <string name="dx_trex_battery_diagram">バッテリー グラフ</string>
+  <string name="dx_trex_battery_lifetime">バッテリー テスト - 推定時間</string>
+  <string name="dx_trex_battery_performance">バッテリー テスト - 性能</string>
+  <string name="dx_trex_desc">DirectX 9.1 がベースの ティラノサウルス レックス テストでは、細密なテクスチャ、マテリアル、複雑なジオメトリ、アニメーション テクスチャを適用したパーティクル、ポスト プロセス効果 (モーション ブラー) をテストします。このグラフィックス パイプラインでは、平面反射、鏡面反射ハイライト、ソフトシャドウなどの効果も処理します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_trex_off_desc">DirectX 9.1 がベースの ティラノサウルス レックス テストでは、細密なテクスチャ、マテリアル、複雑なジオメトリ、アニメーション テクスチャを適用したパーティクル、ポスト プロセス効果 (モーション ブラー) をテストします。このグラフィックス パイプラインでは、平面反射、鏡面反射ハイライト、ソフトシャドウなどの効果も処理します。ネイティブ解像度でのデバイスのパフォーマンスを確認するには、オンスクリーン テストを実行してください。他のデバイスとスコアを比較するには、すべてのデバイスで 1080p で実行されるオフスクリーン バージョンを使用してください。API 最小要件:DirectX 9.1</string>
+  <string name="dx_trex_off">1080p ティラノサウルスレックス オフスクリーン</string>
+  <string name="dx_trex_qmatch">品質のレンダリング</string>
+  <string name="dx_trex_qmatch_highp">品質のレンダリング (高精度)</string>
+  
+  <string name="LicenseDialogBody">エンドユーザー ライセンス契約
+KISHONTI KFT ベンチマーク ソフトウェア製品
+
+
+重要な注意 - よくお読みください: このソフトウェア エンドユーザー ライセンス契約は、ユーザーと KISHONTI KFT の間の KISHONTI のパフォーマンス ベンチマーク ソフトウェア製品に関する法的拘束力のある契約です。以下の使用条件をよくお読みになってから、この EULA に基づいて提供される本ソフトウェアをダウンロード、コピー、インストール、または使用してください。本ソフトウェアまたはそのあらゆるコンポーネントの複製、再配布、または本 EULA に従っていない他の使用方法はすべて法律で明示的に禁止されており、重大な民事または刑事的罰則およびその他の影響の対象となる可能性があります。
+
+私的/非営利的な用途のみを対象としたライセンス: 本ソフトウェアは、私的および非営利的な活動に従事しているコンシューマーが自身のデバイスのパフォーマンスをテストする、私的および非営利的用途に対してライセンスが供与されます。その他のあらゆる用途に対してはライセンスが供与または暗示されないものとします。
+本ソフトウェアの商用ライセンスが必要な場合は、KISHONTI KFT (SALES@KISHONTI.NET) にご連絡ください。
+
+
+1. 定義
+
+\"デバイス\" は、本ソフトウェアのドキュメントで指定された本ソフトウェアのシステム要件に適合する、インターネットに接続できる電子デバイスを指します。
+\"EULA\" は、本ソフトウェア エンドユーザー ライセンス契約を指します。
+\"KISHONTI\" は、ハンガリーの法律に基づいて設立された有限責任会社 (登録所在地は 1037 Budapest, Szepvolgyi ut 39., Hungary、Metropolitan Court of Budapest as Court of Registration での登録番号は Cg. 01-09-935577) である KISHONTI Kft. を指します。
+\"無効な機能\" は、非表示になっているか、無効または \"灰色表示\" になっている機能を指します。本ソフトウェアには、ライセンス料金を支払うことによって KISHONTI のみから提供されるソフトウェア バージョンを使用している場合にのみアクティブになる無効な機能が含まれています。
+\"本ソフトウェア\" は、本 EULA に基づいて KISHONTI から (インターネットを通じて) オンラインで提供されるパフォーマンス テスト ベンチマーク ソフトウェアを指します。これには、(a) KISHONTI またはサードパーティのコンピューター情報またはソフトウェア、関連する説明資料またはファイル、およびフォントを含む、ファイルのすべてのコンテンツ、(b) 時間を問わず KISHONTI からユーザーに提供されるアップグレード、修正版、アップデート、追加、およびこれらのコピー (総称して \"アップデート\") が含まれます。
+\"使用\" とは、本ソフトウェアへのアクセス、本ソフトウェアのダウンロード、インストール、実行、本ソフトウェアによるデバイスのテストを行うこと、または本ソフトウェアの機能の使用によってその他の利益を得ることを指します。
+
+
+2. ライセンスの範囲
+
+本ソフトウェアについて KISHONTI によってユーザーに供与されるこの無償ライセンスは、ユーザーが所有または制御するあらゆるデバイスで本ソフトウェアを使用するための譲渡不可能なライセンスに限定されます。本ソフトウェアのライセンスと提供は、本 EULA で規定されているとおり、いつでも KISHONTI が中止 (終了) する可能性があります。
+
+本ソフトウェアまたはそのあらゆるコンポーネントの使用に関するユーザーの権利および義務は次のとおりです。
+
+(i)以下は許可されます:
+(a) 本ソフトウェアを無償でダウンロード、インストール、および使用すること。本ソフトウェアを使用するにはインターネット接続が必要です。
+(b) 本ソフトウェアの 1 つのコピーまたはそのコンポーネントのいずれかおよびすべてのアップデートを、本ソフトウェアが KISHONTI により提供されている期間 (独自の裁量による) または KISHONTI が本 EULA を終了するまで、ユーザーの各私用デバイスで使用する。
+(c) 本ソフトウェアを私的用途のみに使用する。本ソフトウェアおよびすべてのテスト結果または本ソフトウェアの使用により生成された他のデータは、営利目的で使用してはいけません (政府機関および非営利組織による使用を含むがこれに限定されない)。
+
+(ii)以下は許可されません:
+(a) 本 EULA で明示的に規定されている場合を除き、本ソフトウェアの使用、コピー、改作、修正、またはコピーの譲渡を行う (または誰かがこれらを行うことを許可する)。
+(b) コンピューター ファイル サーバーで本ソフトウェアをインストールまたは使用する。
+(c) 本ソフトウェアから著作権のある、またはその他の通知またはラベルを削除する。
+(d) 本ソフトウェアを基にリバース エンジニアリング、再構成、修正、翻訳、逆コンパイル、逆アセンブル、または派生物の作成を行う (この制限にかかわらず該当する義務的法令によって明示的に認められた範囲内の作業を除く)。
+(e) 本ソフトウェアまたはそのすべてのコピー (すべての関連ドキュメントを含む) の販売、配布、賃貸、リース、サブライセンス、または譲渡を行う。
+(f) 本ソフトウェアの要素の一部を抽出する。
+(g) 本ソフトウェアを他のあらゆるソフトウェア、プラグイン、または拡張機能と統合して使用する。
+(h) 本ソフトウェアのソース コードを見つけるために何らかを試みる、本ソフトウェアからソース コードの特定を行うか特定を試みる、または製品を基に何らかの派生物を作成する (この制限にかかわらず該当する義務的法令によって明示的に認められた範囲内の作業を除く)。
+(i) いずれかの無効な機能にアクセスするかアクセスを試みる、本ソフトウェアを使用していずれかの無効な機能に実質的に類似した機能を作成する、またはそのような無効な機能のアクティブ化を制御する技術を回避する。
+
+3. 知的財産所有権および権利の留保
+
+本ソフトウェアおよびユーザーによる作成が許可されたコピーは、KISHONTI (および該当する場合はそのサプライヤー) の知的財産です。本ソフトウェアの構造、構成、およびコードは、KISHONTI (および該当する場合はそのサプライヤー) の貴重な知的財産 (企業秘密および機密情報など) です。本ソフトウェアは、法律によって保護されています (ハンガリー、アメリカ合衆国、およびその他の国の著作権法、および国際協定の条項を含むがこれらに限定されない)。ここで明記されている場合を除き、本 EULA は本ソフトウェアの何らかの知的財産権をユーザーに付与するものではなく、明示的に付与されていないすべての権利は KISHONTI (および該当する場合はそのサプライヤー) が留保するものとします。
+本 EULA で説明されているように、本ソフトウェアをユーザーが使用することによって作成されたテスト結果も、KISHONTI のサーバーにアップロードされると KISHONTI の財産となります。
+
+
+4. 接続、テスト結果のアップロードおよび表示
+
+(a) インターネット接続の必要性
+ユーザーは、ユーザー デバイスがインターネット (KISHONTI のベンチマーク データ処理サーバー) に接続されている場合にのみ本ソフトウェアを使用できることを了解および承認するものとします。
+
+(b) テスト結果のアップロードおよび表示
+ユーザーは、ユーザーが本ソフトウェアを使用した時に生成されるテスト結果が通知なしで KISHONTI のサーバーに自動的にアップロードされることを了解および承認するものとします。またユーザーは、そのようにアップロードされた結果が KISHONTI の財産となることを了解および承認するものとします。テスト結果は KISHONTI 独自の裁量により KISHONTI の Web サイトに表示され、KISHONTI は一切の通知または理由を示さずにテスト結果を表示、削除、または移動する場合があります。
+
+(c) アップデート
+ユーザー デバイスがインターネットに接続されていると、本ソフトウェアは、追加の通知なしで、ユーザー デバイスに自動でダウンロードおよびインストールできるアップデートの確認を行い、本ソフトウェアが正常にインストールされたことを KISHONTI に知らせる場合があります。アップデートは追加の通知なしで自動的にダウンロードおよびインストールされる場合があります。これが行われる場合、個人を特定できない情報のみが KISHONTI に送信されますが、一部の法的管轄では IP アドレスが個人を特定できると見なされます。自動アップデート プロセスによって提供される、ユーザーの IP アドレスを含むそのような情報の使用には、KISHONTI のプライバシー ポリシー (www.kishonti.net で参照可能) が提供されます。また、ユーザー デバイスがインターネットに接続されていると、本ソフトウェアは、追加の通知なしで、断続的または定期的に、KISHONTI が保守する Web サイトでホストされるコンテンツおよびサービスへのアクセスを円滑化する場合があります。本ソフトウェアがインターネットに接続すると、ユーザーの IP アドレス、ユーザー名、およびパスワードが KISHONTI のサーバーに送信されて KISHONTI によって保存される場合があります。この情報は、ユーザーにトランザクション メッセージを送信して本ソフトウェアの使用および/または機能を円滑化するために、KISHONTI によって使用される場合があります。KISHONTI は、本ソフトウェアおよび KISHONTI の他の製品およびサービスに関する情報を提供するために製品内マーケティングを表示する場合があります。自動またはユーザーによる明示的な要求によるかを問わず、本ソフトウェアがインターネットに接続して KISHONTI の Web サイトと通信する場合は必ず、KISHONTI のプライバシー ポリシーが適用されます。
+
+
+5. 本ソフトウェアの使用の中止
+
+KISHONTI は、いつでも、一切の通知または理由を示さずに、本ソフトウェアを修正またはアップデートする、または本ソフトウェアのあらゆる部分、要素、および機能を修正または削除する権限を有しています。
+
+KISHONTI は、いつでも、一切の通知または理由を示さずに、本ソフトウェア (または本ソフトウェアのすべての旧バージョン) または本ソフトウェアのあらゆる部分、要素、および機能の提供、アクセス、または使用を中止 (終了) する権限を有しています。
+
+本ソフトウェアを使用するためのユーザー ライセンスは、ユーザーまたは KISHONTI が終了させるまで有効です。ユーザーは、ユーザー デバイスから本ソフトウェアのすべてのコピーをアンインストール (完全に削除) することで、ライセンスを終了させることができます。ユーザーがこのライセンスのいずれかの条項に従わない場合、このライセンスによるユーザーの権利は KISHONTI からの通知なしで自動的に終了します。ライセンスの終了時には、ユーザーは本ソフトウェアのすべての使用を止め、全体または部分を問わず、本ソフトウェアのすべてのコピーを破棄する必要があります。ライセンスの終了 (本ソフトウェアの提供の中止) は、KISHONTI のサーバーにアップロードされたテスト結果に対する KISHONTI の所有権には影響しません。
+
+
+6. 保証および責任の放棄
+
+ユーザーは、本ソフトウェアの使用 (または使用できないこと) はユーザー自身の責任であり、満足いく品質、パフォーマンス、正確性、および成果に関するすべての責任はユーザーにあることを明示的に了解および承認するものとします。該当する義務的法令で最大限認められる範囲内において、本ソフトウェアおよび KISHONTI が実行または提供するすべてのサービスは、瑕疵の有無を問わずかつ一切の保証を伴わずに \"現状のまま\" \"提供可能な範囲で\" 提供され、明示的、暗黙的、または法令によるかを問わず、商品性、満足いく品質、特定目的への適合性、正確性、平穏享有、および第三者の権利を侵害しないことの暗黙的保証および/または条件を含む (ただしこれらに限定されない)、本ソフトウェアおよびすべてのサービスに関する一切の保証および条件を KISHONTI はここに否認するものとします。KISHONTI は、本サービスに含まれる機能または本サービスが実行または提供するサービスがユーザーの要件を満たす、本ソフトウェアまたはサービスの運用に中断またはエラーがない、または本ソフトウェアまたはサービスの不備が修正されるといった、ユーザーによる本ソフトウェアの享受が妨げられないことを保証しないものとします。KISHONTI またはその認可された代理人による口頭または書面での情報または助言は一切保証とは認めません。本ソフトウェアまたはサービスに不備があることが判明しても、必要なすべての保守、修復、または修正のためのあらゆるコストはユーザーが負担するものとします。法的管轄によっては、暗黙的保証の除外または消費者に適用される法的権利の制限が認められていません。その場合、該当する法律で認められる最大限の制限 (KISHONTI の損害が最低 (最小) になる保証のレベル) が適用されます。
+
+法律で禁止されていない範囲内で、KISHONTI はいかなる場合も、理由を問わずデバイスの過熱による損傷、損害、または損失を含む (ただしこれらに限定されない)、本ソフトウェアまたは本ソフトウェアが使用されたデバイスの不適切な使用に関連する身体的、財産的、または経済的な損傷、損害、または損失の責任を負わないものとします。ユーザーは、本ソフトウェアの使用による、または使用に関連するすべての身体的、財産的、または経済的な損害の責任を明示的に負うものとします。法律で禁止されていない範囲内で、原因の如何にかかわらず、責任の根拠が何であれ (契約、不法行為を問わず)、KISHONTI がそのような損害の可能性を知らされていたとしても、KISHONTI はいかなる場合も、本ソフトウェアの使用または本ソフトウェアを使用できないことによるかそれらに関連する利益の喪失、データの損失、事業の中断、事業の損失、貯蓄の喪失による損害、またはその他の商業的または非商業的損害または損失を含む (ただしこれらに限定されない)、身体的、財産的、または経済的な損傷、損害、または損失、あるいはいかなる偶発的、特別の、間接的、または結果的な損害の責任を負わないものとします。法的管轄によっては、身体的損傷の責任の制限、あるいは偶発的または結果的損害の制限が認められていません。その場合、該当する法律で認められる最大限の制限 (KISHONTI の損害が最低 (最小) になる責任のレベル) が適用されます。いかなる場合も、すべての損害についての KISHONTI のユーザーに対する責任の総額 (身体的損傷を含む場合に該当する法律で求められる可能性があるものを除く) は 50 米ドルを超えないものとします。上記の救済策がその本来の目的を達成できない場合でも、前述の制限は適用されます。
+
+7. ライセンスの順守
+ユーザーは、KISHONTI または KISHONTI が認可した代理人からの要求に応じて、要求時点での本ソフトウェアのすべての使用が KISHONTI からの有効なユーザー ライセンスに準拠していることを、30 日以内に完全に文書化および証明することに同意するものとします。
+
+
+8. 準拠法および法的管轄
+
+本 EULA (本 EULA に起因または関連するすべての争議、本 EULA の不履行、終了、有効性、または解釈を含むがこれに限定されない) は、ハンガリーの現行の実体法に準拠し、これに従って解釈されるものとします。本 EULA のいかなる規定にかかわらず、KISHONTI またはユーザーは、法的手続きの開始前、または手続きの最中に、権利と利益の保全のため、または保全処分に適した特定の条項を行使するために、差止め救済、特定履行、または他の衡平法上の救済方法を含む何らかの暫定または保全措置を命じるよう、あらゆる司法当局、行政官庁、または他の機関に要求できます。本 EULA を解釈する際に使用するのは本 EULA の英語版となります。本 EULA は、すべての法的管轄における法律の抵触のルールまたは国連国際物品売買条約に準拠しないものとし、その適用は明示的に除外されます。
+
+
+9. その他の規定
+
+(a) 本 EULA は、本ソフトウェアに関する KISHONTI およびユーザーの間の完全合意であり、本ソフトウェアに関連する事前の説明、討議、約束、情報交換、または広告のすべてに優先するものです (KISHONTI のプライバシー ポリシーの適用を除く)。
+(b) 本 EULA のいずれかの規定 (EULA 内のあらゆる条、節、段落、文、または単語を含む) が無効か法的強制力がない、またはそのような状態になる場合も、本 EULA の他のすべての規定の有効性および法的強制力には影響しないものとし、本 EULA の特性または内容、または本 EULA が締結された状況から明らかなように、係る規定は本 EULA の残りの部分から切り離されることはありません。本 EULA に何らかの誤りまたは欠落があった場合も同様で、理にかなった範囲で解決できます。法的強制力のない規定の代わりに、または何らかの誤りまたは欠落を修正するために、当事者は、本 EULA が商業的に意図したものに、または当事者が法的強制力がないこと、誤りまたは欠落について知っていた場合は意図したであろうものに、法的に可能な限り近い適切な代替規定について、合理的に、誠意を持って、本 EULA に記載された基本原則に従って交渉および合意を行うものとします。
+(c) コンシューマーである当事者の法的権利が本 EULA に強制的に適用される場合、本 EULA は係る権利を侵害しないものとします。
+(d) 本 EULA は、KISHONTI の権限のある役員が署名した書面によってのみ変更されます。追加または別の規定を含むアップデートのライセンスは KISHONTI によってユーザーに供与されます。
+(e) ユーザーは、本ソフトウェアのあらゆる部分、本ソフトウェアの使用によって生成されたあらゆるデータ、またはそのすべての直接製品をどこからも輸出しないことに同意するものとします。ただし、該当する貿易に関する法律、規制、および規則に従っていて、それらで求められるライセンスおよび承認がすべて揃っている場合は除きます。
+
+KISHONTI Kft. [*] 2013 年 9 月
+All rights reserved. ここで明示的に付与されたもの以外のあらゆる権利は留保されます。</string>
+  <string name="PrivacyDialogBody"></string>
+</resources>

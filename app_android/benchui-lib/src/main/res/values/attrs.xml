@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="CustomParams">
+		<attr name="arrowVisible" format="boolean" />
+		<attr name="maxScore" format="float" />
+		<attr name="currentScore" format="float" />
+		<attr name="scoreColor" format="color" />
+		<attr name="backgroundColor" format="color" />
+		<attr name="testName" format="string" />
+		<attr name="scoreUom" format="string" />
+		<attr name="mainText" format="string" />
+		<attr name="descriptionText" format="string" />
+		<attr name="iconImage" format="reference" />
+	</declare-styleable>
+</resources>

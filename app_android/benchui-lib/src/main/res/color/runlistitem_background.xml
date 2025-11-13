@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:color="@color/list_highlight_background" android:state_activated="true" android:drawable="@color/list_highlight_background" />
+	<item android:color="#00000000" android:drawable="@android:color/transparent" />
+</selector>

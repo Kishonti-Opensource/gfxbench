@@ -1,0 +1,70 @@
+How to build GFXBench DX for Windows
+====================================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build steps
+3. How to use the solution
+
+1\. Software requirements
+-------------------------
+
+* BASH environment (e.g.: Git Bash)
+* CMake 3.5.0
+* Microsoft Visual Studio 2019 or 2022 (tested on VS2022)
+
+2\. Build steps
+---------------
+
+This package contains source code to build Corporate GFXBenchDX.
+
+First execute the 3rdParty build command via Git bash, then execute the app build command with same `PLATFORM` and `CONFIG` parameters.
+To build use the following commands from the root of the package:
+
+	WORKSPACE=${PWD} PLATFORM=vs2022-x64 CONFIG=Release ./scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=vs2022-x64 CONFIG=Release APPLICATION_TYPE=developer ./scripts/build.sh
+
+This scripts generate an MSVC solution and starts to compile it.
+
+The environment variables accept the following values:
+
+* `CONFIG`
+	* Debug
+	* Release
+
+* `PLATFORM`
+	* vs2022-arm64
+	* vs2022-x64
+	* vs2019-x64
+
+* `APPLICATION_TYPE`
+	* 'developer' - create command line application ('testfw_app')
+	* 'gui' - create GUI application
+
+**Note:**
+
+* The generated Visual Studio solution will be placed into the following directory: `"out/build/[platform]/testfw/testfw.sln"`
+
+3\. How to use the MSVC solution
+--------------------------------
+
+1. In VS set the 'testfw_app' as a StartUp Project.
+2. Set the VS's configuration "Properties/Debugging/Command Arguments"
+
+```
+	-b: set the base path (containing both "config" and "data" subfolders)
+	-w: screen width
+	-h: screen height
+	-t: test id - name of a .json file in the "config" folder without extension
+	example: -b c:\dev\glb273\ -w 800 -h 600 -t gl_alu gl_fill_off
+
+	--gfx <type>: Select an API context that would like to create
+	              dx11 - DirectX
+	              dx12 - DirectX 12
+```
+Start gl_5 test in window:
+
+* DX11: `./testfw_app.exe --gfx dx11 -w 1280 -h 720 -t dx_5_high`
+* DX12: `./testfw_app.exe --gfx dx12 -w 1280 -h 720 -t dx_5_normal`

@@ -1,0 +1,16 @@
+{
+ "material_alpha_test_threshold": 0.2150000035762787,
+ "material_dither_interval": 1.5,
+ "material_dither_start_distance": 10,
+ "material_dithered": false,
+ "material_emissive_intensity": 0,
+ "material_gloss": 0.0010000000474974513,
+ "material_has_emissive_channel": false,
+ "material_opacity_mode": 1,
+ "material_shader0": "main",
+ "material_softness": 0,
+ "material_two_sided": true,
+ "material_type": 0,
+ "name": "HERO_tanya_eyelashes_mat",
+ "type": 3
+}

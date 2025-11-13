@@ -1,0 +1,5 @@
+function(cmake_path_to_windows cpath wpath)
+	string(REGEX REPLACE "^/(.)(.*$)" "\\1:\\2" path "${cpath}")
+	file(TO_NATIVE_PATH "${path}" res)
+	set(${wpath} ${res} PARENT_SCOPE)
+endfunction()

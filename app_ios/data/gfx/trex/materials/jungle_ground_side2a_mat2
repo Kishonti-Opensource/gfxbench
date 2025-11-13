@@ -1,0 +1,4 @@
+lightmap baked_jungle_ground_side2a_mat2_lightmap1.png 1.000000 1.000000 1 1
+color ground_trunks_2048.png 1.000000 1.000000 1 1
+normal ground_trunks_normal.png 1.000000 1.000000 1 1
+mask ground_masks.png 1.000000 1.000000 1 1

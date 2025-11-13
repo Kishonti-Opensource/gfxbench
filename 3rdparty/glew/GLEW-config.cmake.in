@@ -1,0 +1,32 @@
+set(GLEW_SHARED @BUILD_SHARED_LIBS@)
+
+find_path(GLEW_INCLUDE_DIRS GL/glew.h)
+find_library(GLEW_LIBRARY NAMES libGLEW.a GLEW.lib GLEW)
+find_library(GLEW_LIBRARY_D NAMES libGLEW_d.a GLEW_d.lib GLEW_d)
+
+if(GLEW_LIBRARY_D)
+  list(APPEND GLEW_LIBRARIES debug;${GLEW_LIBRARY_D})
+endif()
+if(GLEW_LIBRARY)
+  if(GLEW_LIBRARY_D)
+  	list(APPEND GLEW_LIBRARIES optimized)
+  endif()
+  list(APPEND GLEW_LIBRARIES ${GLEW_LIBRARY})
+endif()
+
+if (NOT GLEW_SHARED AND (GLEW_LIBRARY OR GLEW_LIBRARY_D))
+	find_package(OpenGL REQUIRED)
+	list(APPEND GLEW_LIBRARIES ${OPENGL_gl_LIBRARY})
+	set(GLEW_DEFINITIONS -DGLEW_STATIC)
+endif()
+
+
+set(GLEW_DEFINITIONS -DGLEW_STATIC -DGLEW_NO_GLU)
+
+if (GLEW_SHARED)
+	find_file(GLEW_BINARIES glew32.dll ${CMAKE_CURRENT_LIST_DIR}/../../bin)
+endif()
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(GLEW REQUIRED_VARS GLEW_INCLUDE_DIRS GLEW_LIBRARIES)
+mark_as_advanced(GLEW_INCLUDE_DIRS GLEW_LIBRARIES)

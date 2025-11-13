@@ -1,0 +1,12 @@
+type fire
+accelerationX 0.001
+accelerationY 0.00
+accelerationZ 0.00
+aperture_x 1.50
+aperture_y 1.50
+max_angle 10.00
+max_initial_lifetime 2000.00
+max_initial_velocity 5.00
+min_initial_lifetime 1000.00
+min_initial_velocity 3.00
+rate 4000.00

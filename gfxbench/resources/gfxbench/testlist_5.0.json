@@ -1,0 +1,606 @@
+{
+    "version": 1,
+    "tests": [
+        {
+            "test_name": "gl_5_high",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_4k_off",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "gl_5_normal",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "vulkan_5_high",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_4k_off",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "VULKAN", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "vulkan_5_normal",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "VULKAN", "major": 1, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "dx_5_high",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_4k_off",
+                "_off"
+            ],
+            "minimum_api": [
+                {
+                    "type": "DX",
+                    "major": 11,
+                    "minor": 0
+                }
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "dx_5_normal",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {
+                    "type": "DX",
+                    "major": 11,
+                    "minor": 0
+                }
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "dx12_5_high",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_4k_off",
+                "_off"
+            ],
+            "minimum_api": [
+                {
+                    "type": "DX12",
+                    "major": 11,
+                    "minor": 0
+                }
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+        {
+            "test_name": "dx12_5_normal",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {
+                    "type": "DX12",
+                    "major": 11,
+                    "minor": 0
+                }
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{
+            "test_name": "gl_4",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_manhattan311_wqhd",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_manhattan31",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_manhattan",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 1},
+                {"type": "ES", "major": 3, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_trex",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 2, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_tess",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 0},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_alu2",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 3, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_driver2",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 3, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        },
+        {
+            "test_name": "gl_fill2",
+            "group_name": "group_low_level",
+            "run_order": 0,
+            "variant_postfixes": [
+                "",
+                "_off"
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 3, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "MTexel/s"}
+            ]
+        },
+        {
+            "test_name": "gl_trex_qmatch",
+            "group_name": "group_special",
+            "run_order": 2,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 2, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "mB PSNR"}
+            ]
+        },
+        {
+            "test_name": "gl_trex_qmatch_highp",
+            "group_name": "group_special",
+            "run_order": 2,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 2, "minor" : 0}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "mB PSNR"}
+            ]
+        },
+		{
+            "test_name": "gl_manhattan31_battery",
+            "group_name": "group_battery",
+            "run_order": 3,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 4, "minor" : 3},
+                {"type": "ES", "major": 3, "minor" : 1}
+            ],
+            "requirements": [
+                "battery",
+                "runalone"
+            ],
+            "results": [
+                {"result_postfix": "_performance", "unit":"Frame"},
+                {"result_postfix": "_lifetime", "unit":"min"}
+            ]
+        },
+        {
+            "test_name": "gl_trex_battery",
+            "group_name": "group_battery",
+            "run_order": 3,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {"type": "GL", "major": 3, "minor" : 0},
+                {"type": "ES", "major": 2, "minor" : 0}
+            ],
+            "requirements": [
+                "battery",
+                "runalone"
+            ],
+            "results": [
+                {"result_postfix": "_performance", "unit":"Frame"},
+                {"result_postfix": "_lifetime", "unit":"min"}
+            ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		{
+		    "test_name": "dx_manhattan",
+		    "group_name": "group_high_level",
+		    "run_order": 1,
+		    "variant_postfixes": [
+		        "",
+		        "_off"
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 10, "minor" : 0}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "Frames"}
+		    ]
+		},
+		{
+		    "test_name": "dx_trex",
+		    "group_name": "group_high_level",
+		    "run_order": 1,
+		    "variant_postfixes": [
+		        "",
+		        "_off"
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "Frames"}
+		    ]
+		},
+		{
+		    "test_name": "dx_alu",
+		    "group_name": "group_low_level",
+		    "run_order": 0,
+		    "variant_postfixes": [
+		        "",
+		        "_off"
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "Frames"}
+		    ]
+		},
+		{
+		    "test_name": "dx_blending",
+		    "group_name": "group_low_level",
+		    "run_order": 0,
+		    "variant_postfixes": [
+		        "",
+		        "_off"
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "Frames"}
+		    ]
+		},
+		{
+		    "test_name": "dx_driver",
+		    "group_name": "group_low_level",
+		    "run_order": 0,
+		    "variant_postfixes": [
+		        "",
+		        "_off"
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "Frames"}
+		    ]
+		},
+		{
+		    "test_name": "dx_fill",
+		    "group_name": "group_low_level",
+		    "run_order": 0,
+		    "variant_postfixes": [
+		        "",
+		        "_off"
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "MTexel/s"}
+		    ]
+		},
+		{
+		    "test_name": "dx_trex_qmatch",
+		    "group_name": "group_special",
+		    "run_order": 2,
+		    "variant_postfixes": [
+		        ""
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "mB PSNR"}
+		    ]
+		},
+		{
+		    "test_name": "dx_trex_qmatch_highp",
+		    "group_name": "group_special",
+		    "run_order": 2,
+		    "variant_postfixes": [
+		        ""
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		    ],
+		    "results": [
+		        {"result_postfix": "", "unit": "mB PSNR"}
+		    ]
+		},
+		{
+		    "test_name": "dx_trex_battery",
+		    "group_name": "group_battery",
+		    "run_order": 3,
+		    "variant_postfixes": [
+		        ""
+		    ],
+		    "minimum_api": [
+		        {"type": "DX", "major": 9, "minor" : 1}
+		    ],
+		    "requirements": [
+		        "battery",
+		        "runalone"
+		    ],
+		    "results": [
+		        {"result_postfix": "_performance", "unit":"Frame"},
+		        {"result_postfix": "_lifetime", "unit":"min"},
+				{"result_postfix": "_diagram", "unit":"chart"}
+		    ]
+		}
+    ]
+}

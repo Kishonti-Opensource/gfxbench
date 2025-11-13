@@ -1,0 +1,116 @@
+#define THREAD_COUNT WORKGROUP_SIZE_X
+
+uniform sampler2D<float> gbuffer_velocity_texture;
+
+uniform uint4 NumWorkGroups;
+
+buffer float2 tile_max_buffer[] { ssbo };
+
+shared float3 samples[THREAD_COUNT];
+
+#define invocation_id gl_LocalInvocationIndex
+
+
+#ifdef DEBUG_MB_TILE_MAX_UV
+image2D<float> mb_uv_test_texture { rgba8, writeonly };
+
+void storeCross(int2 p, float4 color)
+{
+	imageStore(mb_uv_test_texture, p + int2(-1, 0) , color);
+	imageStore(mb_uv_test_texture, p + int2( 1, 0) , color);
+	imageStore(mb_uv_test_texture, p + int2( 0, 0) , color);
+	imageStore(mb_uv_test_texture, p + int2( 0,-1) , color);
+	imageStore(mb_uv_test_texture, p + int2( 0, 1) , color);
+}
+#endif
+
+
+float3 fetch_velocity(uint index, uint2 tile_corner_uv)
+{
+	if (index >= SAMPLE_COUNT)
+	{
+		return float3(0.0, 0.0, 0.0);
+	}
+	
+	uint2 coords;
+	coords.y = index / K_PER_DS;
+	coords.x = index - coords.y * K_PER_DS;
+	
+	if (coords.x >= K_PER_DS || coords.y >= K_PER_DS)
+	{
+		return float3(0.0, 0.0, 0.0);
+	}
+	
+	coords *= VELOCITY_DOWNSAMPLE;
+
+	uint2 uv = coords + tile_corner_uv;
+	if (uv.x > GBUFFER_WIDTH || uv.y > GBUFFER_HEIGHT)
+	{
+		return float3(0.0, 0.0, 0.0);
+	}
+
+#ifdef NGL_ORIGIN_UPPER_LEFT_AND_NDC_FLIP
+	uv.y = GBUFFER_HEIGHT - uv.y - 1u;
+#endif
+
+	float4 velocity_sample = texelFetch(gbuffer_velocity_texture, int2(uv), 0);
+	float2 velocity = unpack_velocity(velocity_sample);
+	
+#ifdef DEBUG_MB_TILE_MAX_UV
+	float2 gbuffer_size = float2(float(GBUFFER_WIDTH), float(GBUFFER_HEIGHT));
+	
+	//if ((gl_WorkGroupID.x == 5u) && (gl_WorkGroupID.y == 5u))
+	{
+		float4 uv_color = float4(0.0,1.0,0.0,1.0);
+		imageStore(mb_uv_test_texture, uv, uv_color);
+	}
+	
+	{
+		float4 tile_corner_color = float4(1.0,0.0,1.0,0.0);
+		storeCross(tile_corner_uv, tile_corner_color);
+	}
+#endif
+	
+	return float3(velocity, dot(velocity, velocity));
+}
+
+
+numthreads(WORKGROUP_SIZE_X, WORKGROUP_SIZE_Y, WORKGROUP_SIZE_Z);
+void main()
+{
+	samples[invocation_id] = float3(0.0, 0.0, -1.0);
+
+	uint2 tile_corner_uv = uint2(GBUFFER_WIDTH,GBUFFER_HEIGHT)*gl_WorkGroupID.xy/NumWorkGroups.xy;
+
+	for (uint i = 0u; i < PASS_COUNT; i++)
+	{
+		uint sample_index = invocation_id + i * THREAD_COUNT;
+		float3 v = fetch_velocity(sample_index, tile_corner_uv);
+
+		if (v.z > samples[invocation_id].z)
+		{
+			samples[invocation_id] = v;
+		}
+	}
+
+	workgroupMemoryBarrierShared();
+
+	// Parallel reduction
+	for(uint s = THREAD_COUNT / 2u; s > 0u; s = s >> 1u)
+	{
+		if(invocation_id < s)
+		{
+			float3 velocity = samples[invocation_id + s];
+			if (velocity.z > samples[invocation_id].z)
+			{
+				samples[invocation_id] = velocity;
+			}
+		}
+		workgroupMemoryBarrierShared();
+	}
+
+	if (invocation_id == 0u)
+	{
+		tile_max_buffer[gl_WorkGroupID.y * NumWorkGroups.x + gl_WorkGroupID.x] = samples[0].xy;
+	}
+}

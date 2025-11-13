@@ -1,0 +1,7 @@
+type omni
+glow 0
+lens_flare 0
+cast_shadow 0
+color 1.00 0.42 0.26
+intensity 0.00
+intensity_track animatik_helicopter_2_body_pointLight1_pointLightShape1_intensity_track

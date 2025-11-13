@@ -1,0 +1,4 @@
+lightmap baked-WHITE_nagyter_floor1SG-nagyter_nagyter_floor.png 1.000000 1.000000 1 1
+color second_room_floor.png 16.000000 16.000000 1 1
+normal second_room_floor_normal.png 1.000000 1.000000 1 1
+mask second_room_floor_masks.png 1.000000 1.000000 1 1

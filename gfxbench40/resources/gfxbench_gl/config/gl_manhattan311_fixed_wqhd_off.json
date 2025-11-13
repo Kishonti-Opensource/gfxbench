@@ -1,0 +1,68 @@
+{
+	"version": 1,
+	"test_id": "gl_manhattan311_fixed_wqhd_off",
+	"factory_method": "gl_manhattan31_off",
+	"preload_libs": ["gfxbench40_gl"],
+	"env": {
+		"graphics": {
+			"versions": [
+				{
+					"type": "GL",
+					"major": 4,
+					"minor": 3
+				},
+				{
+					"type": "ES",
+					"major": 3,
+					"minor": 1
+				},
+				{
+					"type": "DX",
+					"major": 10,
+					"minor": 0
+				}
+			],
+			"config": {
+				"red_size": 8,
+				"green_size": 8,
+				"blue_size": 8,
+				"depth_size": 24,
+				"stencil_size": -1,
+				"alpha_size": -1,
+				"samples": -1,
+				"exact": false
+			},
+			"fullscreen": false
+		}
+	},
+	"raw_config": {
+		"battery": false,
+		"brightness": -1.0,
+		"color_bpp": 24,
+		"depth_bpp": 24,
+		"endless": false,
+		"engine": "Engine31",
+		"fps_limit": -1.0,
+		"frame_step_time": 40,
+		"fsaa": 0,
+		"id": 3000105,
+		"max_rendered_frames": -1,
+		"min_ram_required": 315,
+		"offscreen_width": 2560,
+		"offscreen_height": 1440,
+		"test_width": 2560,
+		"test_height": 1440,
+		"play_time": 62000,
+		"quality": false,
+		"force_highp": false,
+		"scenefile": "manhattan31/scene_31.xml",
+		"screenmode": 1,
+		"single_frame": -1,
+		"start_animation_time": 0,
+		"stencil_bpp": -1,
+		"texture_type": "Auto",
+		"zprepass": false,
+		"qm_compare_frame": 26340
+	},
+	"data_prefix": "gfx"
+}

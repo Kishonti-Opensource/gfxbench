@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html ng-app="resultApp">
+<head>  
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- <body onLoad="javascript:updateResult('', 'dummy name', true, 'dummy flagged reason');"> -->
+<body>
+	<div id="result" class="container-fluid" ng-controller="baseController">
+        <div id="result-header" ng-controller="resultHeaderController">
+            <h1>{{resultName}}</h1>
+            <div class="score-container">
+                <div class="label"><strong>Score: </strong>{{ result.score.toPrecision(5) }} {{ result.unit }}<strong ng-if="flagged">*</strong></div>
+				<div class="label"><strong>FPS: </strong>{{result.gfx_result.fps}}</div>
+                <div class="label"><strong>Renderer: </strong>{{result.gfx_result.renderer}}</div>
+                <div class="label"><strong>Graphics Version: </strong>{{result.gfx_result.graphics_version}}</div>
+                <div class="label"><strong>Surface Width: </strong>{{result.gfx_result.surface_width}}</div>
+                <div class="label"><strong>Surface Height: </strong>{{result.gfx_result.surface_height}}</div>
+                <div class="label"><strong>Benchmark version: </strong>{{result.benchmark_version}}</div>
+                <div class="label" ng-if="flagged"><strong>* </strong>{{flagged_reason}}</div>
+            </div>
+        </div>
+        <div id="result-diagrams" ng-controller="resultDiagramController">
+            <div class="slow-data" ng-repeat="chart in charts">
+               <flot dataset="chart.flot.data" options="chart.flot.options" width="100%" height="300"></flot>
+            </div> 
+
+
+            <div class="loader" title="0">
+                <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="40px" viewBox="0 0 40 40" enable-background="new 0 0 40 40" xml:space="preserve">
+                    <path opacity="0.2" fill="#000" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946 s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634 c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
+                    <path fill="#000" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0 C22.32,8.481,24.301,9.057,26.013,10.047z">
+                        <animateTransform attributeType="xml"
+                          attributeName="transform"
+                          type="rotate"
+                          from="0 20 20"
+                          to="360 20 20"
+                          dur="0.5s"
+                          repeatCount="indefinite"/>
+                    </path>
+                </svg>
+            </div>
+
+
+        </div>
+    </div>
+</body>
+<script src="jquery.min.js"></script>
+<script src="angular.min.js"></script>
+<script src="jquery.flot.min.js"></script>
+<script src="jquery.flot.canvas.min.js"></script>
+<script src="jquery.flot.legendoncanvas.min.js"></script>
+<script src="jquery.flot.resize.min.js"></script>
+<script src="jquery.flot.axislabels.min.js"></script>
+<script src="angular-flot.js"></script>
+
+<script async type="text/javascript">
+
+    var getColor = function(i) {
+        var colorPalette = [
+            "#4699b8","#8bab4d","#e4902e","#977cbd",
+            "#44cecf","#c2c24e","#e76735","#cb91d2",
+            "#41c5a1","#b8a24a","#d25444","#d0a9b5",
+            "#4485cf","#72c24e","#ffb607","#85c4d6",
+            "#415cc5","#32ad36","#e8ba1b","#82c6b4", 
+        ];
+
+        var index = i % 16;
+
+        return colorPalette[index];
+    }
+
+    angular.module('resultApp', ['angular-flot'])
+    .controller('baseController', ['$scope', '$rootScope', '$q', '$http', function($scope, $rootScope, $q, $http) {
+        $scope.getJson = function(url, callback) {
+            if(url == '') {
+                $rootScope.json = JSON.parse('{"charts": [{"chart_id": "Rendertimes", "domain": {"name": "Time (ms)", "values": [ 559, 1605, 2743, 3858, 4914, 5971, 7037, 8102, 9237, 10293, 11350, 12434, 13548, 14604, 15730, 16798, 17873, 18937, 19995, 21048, 22112, 23174, 24233, 25361, 26416, 27610, 28679, 29749 ] }, "domain_axis": "", "sample_axis": "Rendertimes", "values": [{"name": "Min rendertime (ms)", "values": [ 0, 226, 213, 212, 210, 210, 210, 210, 211, 210, 210, 209, 211, 209, 210, 210, 209, 210, 211, 210, 209, 209, 211, 211, 224, 212, 211, 211 ] }, {"name": "Max rendertime (ms)", "values": [ 559, 317, 250, 242, 213, 213, 219, 215, 276, 213, 213, 229, 236, 213, 271, 218, 224, 216, 212, 211, 219, 218, 213, 255, 290, 290, 218, 218 ] }, {"name": "Avg rendertime (ms)", "values": [ 559, 261, 227, 223, 211, 211, 213, 213, 227, 211, 211, 216, 222, 211, 225, 213, 215, 212, 211, 210, 212, 212, 211, 225, 263, 238, 213, 214 ] } ] }, {"chart_id": "Temperature", "domain": {"name": "Time (ms)", "values": [ 559, 1605, 2743, 3858, 4914, 5971, 7037, 8102, 9237, 10293, 11350, 12434, 13548, 14604, 15730, 16798, 17873, 18937, 19995, 21048, 22112, 23174, 24233, 25361, 26416, 27610, 28679, 29749 ] }, "domain_axis": "", "sample_axis": "Temperature (C)", "values": [{"name": "Temperature (C)", "values": [ 15, 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16 ] } ] }, {"chart_id": "Performance", "domain": {"name": "Time (ms)", "values": [ 559, 1605, 2743, 3858, 4914, 5971, 7037, 8102, 9237, 10293, 11350, 12434, 13548, 14604, 15730, 16798, 17873, 18937, 19995, 21048, 22112, 23174, 24233, 25361, 26416, 27610, 28679, 29749 ] }, "domain_axis": "", "sample_axis": "Clock speed (MHz)", "values": [{"name": "CPU1", "values": [ 1890, 918, 1674, 918, 918, 918, 918, 918, 918, 918, 918, 1674, 918, 918, 918, 1566, 918, 918, 918, 918, 918, 918, 918, 1890, 1674, 384, 384, 918 ] }, {"name": "CPU2", "values": [ 1890, 1890, 918, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 918, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 1890, 918, 918, 1890, 1890, 1890 ] }, {"name": "CPU3", "values": [ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ] }, {"name": "CPU4", "values": [ -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1 ] }, {"name": "GPU", "values": [ 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320, 320 ] } ] } ], "configuration": "", "results": [{"elapsed_time": 30257, "error_string": "", "gfx_result": {"egl_config_id": 10, "fps": 4.494827643190005, "frame_count": 136, "graphics_version": "OpenGL ES 3.0 V@45.0 AU@  (CL@3869936)", "is_vsync_limited": false, "renderer": "Adreno (TM) 320", "surface_height": 1080, "surface_width": 1920, "vendor": "Qualcomm"}, "load_time": 235, "measured_time": 30257, "result_id": "gl_driver2", "score": 134.84483337402344, "status": "OK", "test_id": "gl_driver2", "unit": "frames", "version": 1 } ] }');
+                callback();
+            } else {
+                $http.get(url + "?" + (new Date().getTime()), {
+                    cache: false
+                })
+                .success(function(r) {
+                    $rootScope.json = r;
+                    callback();
+                })
+                .error(function(data, status, headers, config) {
+                    alert('Error loading result: ' + status);
+                    $rootScope.json = "{}";
+                    $('.loader').addClass('hidden');
+                    callback();
+                });
+            } 
+        };   
+    }])
+    .controller('resultHeaderController', ['$scope', '$rootScope', function($scope, $rootScope) {
+        $scope.updateResult = function() {
+            $scope.result = $rootScope.json.results[0];
+        };   
+    }])
+    .controller('resultDiagramController', ['$scope', '$rootScope', '$q', function($scope, $rootScope, $q) {
+        $scope.charts = [];
+        $scope.pre_load_charts = [];
+
+        $scope.updateDiagrams = function() {
+            $scope.getDiagrams(function(){
+                $scope.AddDiagram();
+            });
+        };
+
+        $scope.AddDiagram = function() {
+            setTimeout(function(){
+                $scope.$apply(
+                    $scope.charts.push($scope.pre_load_charts.pop())
+                );
+                if($scope.pre_load_charts.length > 0) {
+                    $scope.AddDiagram();
+                } else {
+                    $('.loader').addClass('hidden');
+                }
+                    
+            },500);
+        }  
+
+
+        $scope.getDiagrams = function(callback) {
+            var deferred = $q.defer();
+            var promise = deferred.promise;
+            promise.then(function () {
+                for(var i = 0; i < $rootScope.json.charts.length; ++i) {
+                    var chart = $rootScope.json.charts[i];
+                    var f = flot(chart);
+                    $scope.pre_load_charts.push({ flot: f });
+                }  
+            }).then(function () {
+                callback();
+            });
+            deferred.resolve();
+        };
+
+    }]);
+
+    function onDropClicked() {
+        var drop = $(".drop");
+        var dropheader = $(".drop h3");
+        
+        drop.toggleClass('dropped');
+        if(drop.hasClass("dropped")) {
+            dropheader.text("Detailed information (Press to close)");
+        } else {
+            dropheader.text("Press for more information");
+        }
+    }
+
+    function flot(chart) {
+
+        var len = chart.domain.values.length;
+        var data_set = [];
+        var y_axes = [];
+        for(var i = 0; i < chart.values.length; ++i) {
+            if(chart.values[i].values.length > 0) {
+                var raw_data = [];
+                var y = chart.values[i];
+                for (var j = 0; j < len; j++) {
+                    raw_data.push([ chart.domain.values[j], chart.values[i].values[j] ]);
+                }
+                    
+                data_set.push({ label: chart.values[i].name, data: raw_data, color: getColor(i) });
+                y_axes.push({ axisLabel: chart.sample_axis, position: 'left' });
+
+            } else {
+               console.log("error in chart data");
+            }
+        }
+        var options = {
+            legend: {
+                labelFormatter: null,
+                backgroundOpacity: 0.5,
+                shadowSize: 0
+            },
+            xaxes: [
+                { axisLabel: chart.domain.name, position: 'bottom' }
+            ],
+            yaxes: y_axes
+        };
+        return { data: data_set, options: options };
+    }
+
+    function updateResult(url, name, flagged, flagged_reason) {
+        
+        
+        var $scope = angular.element($("#result")).scope();
+        $scope.getJson(url, function() {
+
+            if(name == null || name == '')
+                $scope.resultName = $scope.json.results[0].result_id;
+            else
+                $scope.resultName = name;
+
+            $scope.flagged = flagged;
+            $scope.flagged_reason = flagged_reason;
+
+            var $resultscope = angular.element($("#result-header")).scope();
+            $resultscope.updateResult();
+            var $diagramscope = angular.element($("#result-diagrams")).scope();
+            $diagramscope.updateDiagrams();
+        });
+        
+
+    }
+</script>
+</html>

@@ -1,0 +1,1348 @@
+{
+ "global_values":
+ {
+  "is_per_shot_mode": true,
+  "sky_values":
+  {
+   "sky_format": 2,
+   "sky_texture": ""
+  }
+ },
+ "shot_values":
+ [
+  {
+   "_shot_index": 0,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 5.993299961090088,
+    "dof_function": 1.529099941253662,
+    "dof_range": 9.968799591064453,
+    "dof_strength": 8
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.16060000658035278,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.4641000032424927,
+    "exposure": 0,
+    "exposure_bias": -0.8014000058174133,
+    "exposure_max": 3.937299966812134,
+    "exposure_min": -7.282199859619141,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 5.895699977874756,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.0472999811172485
+   }
+  },
+  {
+   "_shot_index": 1,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 5.198800086975098,
+    "dof_function": 5.1682000160217285,
+    "dof_range": 5.296000003814697,
+    "dof_strength": 7
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.011500000022351742, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.08760000020265579,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.4641000032424927,
+    "exposure": 0,
+    "exposure_bias": -0.17419999837875366,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.7770000100135803
+   }
+  },
+  {
+   "_shot_index": 2,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 3.2109999656677246,
+    "dof_function": 0.3057999908924103,
+    "dof_range": 4.672900199890137,
+    "dof_strength": 19
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.06199999898672104,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 2.823499917984009,
+    "exposure": 0,
+    "exposure_bias": -0.24390000104904175,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.3716000020503998
+   }
+  },
+  {
+   "_shot_index": 3,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0.24459999799728394,
+    "dof_function": 4.34250020980835,
+    "dof_range": 0.9345999956130981,
+    "dof_strength": 10
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00860000029206276, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 3.660099983215332,
+    "exposure": 0,
+    "exposure_bias": 0.17419999837875366,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.5742999911308289
+   }
+  },
+  {
+   "_shot_index": 4,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 17.134000778198242,
+    "dof_strength": 9
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.011500000022351742, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 2.928100109100342,
+    "exposure": 0,
+    "exposure_bias": -0.6620000004768372,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.7432000041007996
+   }
+  },
+  {
+   "_shot_index": 5,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 5.3516998291015625,
+    "dof_function": 0.9174000024795532,
+    "dof_range": 6.230500221252441,
+    "dof_strength": 9
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.045799970626831,
+    "exposure": 0,
+    "exposure_bias": -0.03480000048875809,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 29.7052001953125,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.5541000366210938
+   }
+  },
+  {
+   "_shot_index": 6,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.49729999899864197,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 4.709499835968018,
+    "dof_function": 0.3057999908924103,
+    "dof_range": 5.296000003814697,
+    "dof_strength": 6
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00860000029206276, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.6578999757766724,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": 0,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 50,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.0134999752044678
+   }
+  },
+  {
+   "_shot_index": 7,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 1.5576000213623047,
+    "dof_strength": 1
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 1.3157999515533447,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": -0.17419999837875366,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 18.367300033569336,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.7095000147819519
+   }
+  },
+  {
+   "_shot_index": 8,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 2.140700101852417,
+    "dof_function": 0.5809999704360962,
+    "dof_range": 4.984399795532227,
+    "dof_strength": 9
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.09849999845027924,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.986899971961975,
+    "exposure": 0,
+    "exposure_bias": 0.3833000063896179,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 31.065799713134766,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.2305999994277954,
+    "sharpen_strength": 0.7095000147819519
+   }
+  },
+  {
+   "_shot_index": 9,
+   "color_correction_values":
+   {
+    "contrast": 1,
+    "contrast_center": 0,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 4.556600093841553,
+    "dof_function": 2.477099895477295,
+    "dof_range": 12.149499893188477,
+    "dof_strength": 9
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0.0007999999797903001, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 9.999999747378752e-05,
+    "gi_ibl_reflection_intensity": 0.6021999716758728,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 19.99970054626465
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.6578999757766724,
+    "bloom_threshold": 1.499400019645691,
+    "exposure": 0,
+    "exposure_bias": 0.17419999837875366,
+    "exposure_max": 5.5005998611450195,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.21809999644756317,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.6419000029563904
+   }
+  },
+  {
+   "_shot_index": 10,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 5.6269001960754395,
+    "dof_function": 0.1835000067949295,
+    "dof_range": 4.049799919128418,
+    "dof_strength": 7
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00860000029206276, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.5,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 0.7319999933242798,
+    "exposure": 0,
+    "exposure_bias": 0.3833000063896179,
+    "exposure_max": 5.4994001388549805,
+    "exposure_min": -9.99779987335205,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 21.08839988708496,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.5404999852180481
+   }
+  },
+  {
+   "_shot_index": 11,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 0,
+    "dof_strength": 1
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00860000029206276, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.3174999952316284,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.6578999757766724,
+    "bloom_threshold": 1.568600058555603,
+    "exposure": 0,
+    "exposure_bias": 0.31360000371932983,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.7770000100135803
+   }
+  },
+  {
+   "_shot_index": 12,
+   "color_correction_values":
+   {
+    "contrast": 1,
+    "contrast_center": 0,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 3.7614998817443848,
+    "dof_range": 15.576299667358398,
+    "dof_strength": 8
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00860000029206276, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.015200000256299973,
+    "gi_indirect_lighting_factor": 0,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20.763399124145508
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.6578999757766724,
+    "bloom_threshold": 3.5555999279022217,
+    "exposure": 0,
+    "exposure_bias": 0.5922999978065491,
+    "exposure_max": 6.794400215148926,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 15.873000144958496,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.25
+   }
+  },
+  {
+   "_shot_index": 13,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 1.6820000410079956,
+    "dof_function": 0.886900007724762,
+    "dof_range": 0,
+    "dof_strength": 8
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.48539999127388,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": -0.10450000315904617,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 17.68709945678711,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.0134999752044678
+   }
+  },
+  {
+   "_shot_index": 14,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 15.264800071716309,
+    "dof_strength": 8
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": -0.10450000315904617,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 13.151900291442871,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.3514000177383423
+   }
+  },
+  {
+   "_shot_index": 15,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 4.026800155639648,
+    "dof_strength": 8
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.012299999594688416, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": 0.5303000211715698,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.7325999736785889
+   }
+  },
+  {
+   "_shot_index": 16,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 0,
+    "dof_range": 0,
+    "dof_strength": 1
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.012299999594688416, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": 0.07580000162124634,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.9121999740600586
+   }
+  },
+  {
+   "_shot_index": 17,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 0,
+    "dof_strength": 1
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.08389999717473984,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": 0.24390000104904175,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.11489999294281
+   }
+  },
+  {
+   "_shot_index": 18,
+   "color_correction_values":
+   {
+    "contrast": 1,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 0,
+    "dof_strength": 1
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00570000009611249, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.6578999757766724,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": -0.522599995136261,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0
+   }
+  },
+  {
+   "_shot_index": 19,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 11.838000297546387,
+    "dof_strength": 7
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.00860000029206276, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 0.9412000179290771,
+    "exposure": 0,
+    "exposure_bias": 0.31360000371932983,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.1485999822616577
+   }
+  },
+  {
+   "_shot_index": 20,
+   "color_correction_values":
+   {
+    "contrast": 1,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 47.975101470947266,
+    "dof_strength": 5
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.020099999383091927, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.6578999757766724,
+    "bloom_threshold": 0.9412000179290771,
+    "exposure": 0,
+    "exposure_bias": 0.453000009059906,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.5878000259399414
+   }
+  },
+  {
+   "_shot_index": 21,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 0.7950999736785889,
+    "dof_range": 0,
+    "dof_strength": 6
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.014399999752640724, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": 0.7317000031471252,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 0.6757000088691711
+   }
+  },
+  {
+   "_shot_index": 22,
+   "color_correction_values":
+   {
+    "contrast": 1.000599980354309,
+    "contrast_center": 0.5,
+    "saturation": 0.8999999761581421
+   },
+   "dof_values":
+   {
+    "dof_focus_range": 0,
+    "dof_function": 1,
+    "dof_range": 0,
+    "dof_strength": 1
+   },
+   "fog_values":
+   {
+    "fog_color": [ 0.4000000059604645, 0.5, 0.699999988079071, 1 ],
+    "fog_parameters1": [ 1, 0.02590000070631504, 0, 1 ],
+    "fog_parameters2": [ 1, 0, 0, 1 ]
+   },
+   "gi_values":
+   {
+    "gi_ibl_diffuse_intensity": 0,
+    "gi_ibl_reflection_intensity": 0.10949999839067459,
+    "gi_indirect_lighting_factor": 1,
+    "gi_sky_color": [ 0.5803921818733215, 0.6431372761726379, 0.7529411911964417 ],
+    "gi_sky_intensity": 20
+   },
+   "hdr_values":
+   {
+    "adaptation_speed": 0.800000011920929,
+    "bloom_intensity": 0.328900009393692,
+    "bloom_threshold": 1.5,
+    "exposure": 0,
+    "exposure_bias": 0.10450000315904617,
+    "exposure_max": 2.5,
+    "exposure_min": -10,
+    "exposure_mode": 2,
+    "linear_angle": 0.10000000149011612,
+    "linear_strength": 0.30000001192092896,
+    "linear_white": 7,
+    "shoulder_strength": 0.2199999988079071,
+    "toe_denominator": 0.30000001192092896,
+    "toe_numerator": 0.009999999776482582,
+    "toe_strength": 0.20000000298023224
+   },
+   "lod_values":
+   {
+    "lod1_distance": 0,
+    "lod2_distance": 100
+   },
+   "sharpen_values":
+   {
+    "sharpen_limit": 0.23000000417232513,
+    "sharpen_strength": 1.11489999294281
+   }
+  }
+ ]
+}

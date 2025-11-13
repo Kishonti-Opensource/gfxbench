@@ -1,0 +1,16 @@
+{
+ "light_attenuation": 0,
+ "light_cast_shadow": true,
+ "light_color": "#FFC97C",
+ "light_depth": 12,
+ "light_fov": 0,
+ "light_fov_attenuation": 0,
+ "light_glow": false,
+ "light_has_fire": false,
+ "light_height": 7,
+ "light_intensity": 25,
+ "light_radius": 0,
+ "light_shape_name": "TERR_direct_light_chamberShape",
+ "light_type": 0,
+ "light_width": 12
+}

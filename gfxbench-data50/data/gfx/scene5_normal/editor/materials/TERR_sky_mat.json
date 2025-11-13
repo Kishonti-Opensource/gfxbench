@@ -1,0 +1,11 @@
+{
+ "material_alpha_test_threshold": 0.5,
+ "material_emissive_intensity": 14.800000190734863,
+ "material_gloss": 6.630000114440918,
+ "material_opacity_mode": 0,
+ "material_shader0": "sky",
+ "material_softness": 7.139999866485596,
+ "material_two_sided": false,
+ "name": "TERR_sky_mat",
+ "type": 3
+}

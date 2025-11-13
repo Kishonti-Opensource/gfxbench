@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">@PRODUCT_NAME@</string>
+    <string name="app_version">Version: @PRODUCT_VERSION@</string>
+    <string name="app_product_id">@PRODUCT_ID@</string>
+    <string name="app_website_title">gfxbench.com</string>
+    <string name="app_website_url">http://gfxbench.com</string>
+    <string name="app_email_address">support@gfxbench.com</string>
+    <!-- community -->
+    <string name="app_store_name">@STORE_NAME@</string>
+    <string name="app_kii_distribution_id">@KII_DISTRIBUTION_ID@</string>
+    <string name="app_crash_report_key_testing">bee2e4f9ca4afb0654261d3ddb5576ce</string>
+    <string name="app_crash_report_key_production">bee2e4f9ca4afb0654261d3ddb5576ce</string>
+</resources>

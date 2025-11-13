@@ -1,0 +1,11 @@
+{
+ "material_alpha_test_threshold": 0.49900001287460327,
+ "material_emissive_intensity": 0,
+ "material_gloss": 0.0020000000949949026,
+ "material_opacity_mode": 0,
+ "material_shader0": "main",
+ "material_softness": 0,
+ "material_two_sided": true,
+ "name": "TERR_rocks_mat",
+ "type": 3
+}

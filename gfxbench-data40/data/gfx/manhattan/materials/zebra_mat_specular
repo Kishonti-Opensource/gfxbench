@@ -1,0 +1,3 @@
+color zebra.png 1.000000 1.000000 1 1
+normal normal_base.png 1.000000 1.000000 1 1
+mask zebra_masks.png 1.000000 1.000000 1 1

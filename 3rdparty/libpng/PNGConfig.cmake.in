@@ -1,0 +1,59 @@
+unset(PNG_LIBRARIES)
+
+set(PNG_BUILD_SHARED @BUILD_SHARED@)
+set(PNG_M_LIBRARY_NEEDED @PNG_M_LIBRARY_NEEDED@)
+set(PNG_LIB_NAME @PNG_LIB_NAME@)
+set(PNG_DEFINITIONS @PNG_DEFINITIONS@)
+
+set(PNG_INCLUDE_DIRS
+	${CMAKE_CURRENT_LIST_DIR}/include
+)
+
+find_library(PNG_LIBRARY ${PNG_LIB_NAME} PATHS ${CMAKE_CURRENT_LIST_DIR}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+find_library(PNG_LIBRARY_D ${PNG_LIB_NAME}_d PATHS ${CMAKE_CURRENT_LIST_DIR}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+mark_as_advanced(PNG_LIBRARY)
+mark_as_advanced(PNG_LIBRARY_D)
+
+if(CMAKE_SIZEOF_VOID_P EQUAL 8)
+	set_property(GLOBAL PROPERTY FIND_LIBRARY_USE_LIB64_PATHS TRUE)
+endif()
+if(IS_DIRECTORY ${PNG_INCLUDE_DIRS} AND (PNG_LIBRARY OR PNG_LIBRARY_D))
+	if(PNG_LIBRARY)
+		if(PNG_LIBRARY_D)
+			list(APPEND PNG_LIBRARIES optimized ${PNG_LIBRARY} debug ${PNG_LIBRARY_D})
+		else()
+			message(STATUS "Only optimized libs found.")
+			if(WIN32)
+				list(APPEND PNG_LIBRARIES optimized ${PNG_LIBRARY})
+			else()
+				list(APPEND PNG_LIBRARIES ${PNG_LIBRARY})
+			endif()
+		endif()
+	else()
+		message(STATUS "Only debug libs found.")
+		list(APPEND PNG_LIBRARIES debug ${PNG_LIBRARY_D})
+	endif()
+
+
+	# check for dependencies if PNG was built as static lib
+	if(NOT PNG_BUILD_SHARED)
+		find_package(ZLIB REQUIRED)
+		list(APPEND PNG_LIBRARIES ${ZLIB_LIBRARIES})
+
+		if(PNG_M_LIBRARY_NEEDED AND NOT WIN32)
+			find_library(M_LIBRARY
+				NAMES m
+				PATHS /usr/lib /usr/local/lib
+			)
+			if(NOT M_LIBRARY)
+				message(FATAL_ERROR "math library 'libm' not found but libpng was build with it")
+			endif()
+			list(APPEND PNG_LIBRARIES ${M_LIBRARY})
+		endif()
+	endif()
+	set(PNG_FOUND 1)
+else()
+	unset(PNG_INCLUDE_DIRS)
+	set(PNG_FOUND 0)
+	unset(PNG_LIBRARIES)
+endif()

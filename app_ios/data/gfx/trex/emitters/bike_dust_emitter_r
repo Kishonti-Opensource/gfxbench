@@ -1,0 +1,16 @@
+rate_track bike_dust_emitter_r_rate_track
+
+accelerationX 0.00
+accelerationY 0.05
+accelerationZ 0.00
+aperture_x 1.00
+aperture_y 1.00
+max_angle 80.00
+max_initial_lifetime 1950.00
+max_initial_velocity 2.50
+min_initial_lifetime 1850.00
+min_initial_velocity 0.10
+
+
+color 0.722 0.655 0.475
+type smoke

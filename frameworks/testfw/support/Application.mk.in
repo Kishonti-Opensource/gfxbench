@@ -1,0 +1,2 @@
+# when debugging with ndk-gdb this file is used to determine actual ABI
+APP_ABI := @ANDROID_NDK_ABI_NAME@

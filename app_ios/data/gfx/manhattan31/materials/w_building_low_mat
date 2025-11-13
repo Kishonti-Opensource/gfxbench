@@ -1,0 +1,4 @@
+color w_building_color.png 1.000000 1.000000 1 1
+normal normal_base.png 1.000000 1.000000 1 1
+mask w_building_masks.png 1.000000 1.000000 1 1
+emission black.png 1.000000 1.000000 1 1 

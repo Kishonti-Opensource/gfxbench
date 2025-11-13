@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="brightness_list">
+		<item>Default</item>
+		<item>Force 25%</item>
+		<item>Force 50%</item>
+		<item>Force 75%</item>
+		<item>Force 100%</item>
+	</string-array>
+</resources>

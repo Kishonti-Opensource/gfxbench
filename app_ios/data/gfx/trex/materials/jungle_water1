@@ -1,0 +1,4 @@
+u_animation animations/jungle_water1-fx_translate_u_track
+color jungle_water.png 7.000000 1.000000 1 1
+normal jungle_water_normal.png 1.000000 1.000000 1 1
+mask jungle_water_masks.png 1.000000 1.000000 1 1

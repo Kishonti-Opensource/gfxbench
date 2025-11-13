@@ -1,0 +1,18 @@
+/*
+ * Copyright (c) 2005-2025, Kishonti Ltd
+ * SPDX-License-Identifier: BSD-3-Clause
+ * This file is part of GFXBench. See the top-level LICENSE file for details.
+ */
+#ifndef CLINFOCOLLECTOR_H
+#define CLINFOCOLLECTOR_H
+
+#include "systeminfo.h"
+
+namespace sysinf
+{
+
+void collectClInfo(SystemInfo& systemInfo);
+
+}
+
+#endif  // CLINFOCOLLECTOR_H

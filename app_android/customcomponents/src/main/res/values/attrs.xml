@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="THChart">
+    </declare-styleable>
+    
+    <declare-styleable name="THGridChart">
+        <attr name="chartBorderColor" format="color" />
+        <attr name="chartStrokeColor" format="color" />
+        <attr name="chartTextColor" format="color" />
+        <attr name="chartLegendColor" format="color" />
+        <attr name="gridchartAnimDelay" format="integer" />
+        <attr name="gridchartAnimLength" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="THPieAreaChart">
+        <attr name="pieareachartAnimDelay" format="integer" />
+        <attr name="pieareachartAnimLength" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="AppTheme">
+        <attr name="THChartStyle" format="reference"/>
+        <attr name="THGridChartStyle" format="reference"/>
+        <attr name="THPieAreaChartStyle" format="reference"/>
+    </declare-styleable>
+    
+	<declare-styleable name="CustomParams">
+		<attr name="orientation" format="enum">
+			<enum name="top" value="0" />
+			<enum name="left" value="1" />
+			<enum name="bottom" value="2" />
+			<enum name="right" value="3" />
+		</attr>
+		<attr name="aspectX" format="integer" />
+		<attr name="aspectY" format="integer" />
+		<attr name="inactiveColor" format="color" />
+		<attr name="activeColor" format="color" />
+		<attr name="text" format="string" />
+		<attr name="image" format="reference" />
+		<attr name="activeImage" format="reference" />
+		<attr name="knobColor" format="color" />
+		<attr name="state" format="boolean" />
+		<attr name="fill" format="boolean" />
+		<attr name="enabled" format="boolean" />
+		<attr name="borderWidth" format="dimension" />
+		<attr name="borderColor" format="color" />
+		<attr name="fillColor" format="color" />
+		<attr name="textColor" format="color" />
+		<attr name="titleText" format="string" />
+		<attr name="leftButtonText" format="string" />
+		<attr name="rightButtonText" format="string" />
+		<attr name="leftButtonEnabled" format="boolean" />
+		<attr name="rightButtonEnabled" format="boolean" />
+		<attr name="leftButtonVisible" format="boolean" />
+		<attr name="rightButtonVisible" format="boolean" />
+		<attr name="titleColor" format="reference" />
+		<attr name="leftButtonColor" format="reference" />
+		<attr name="rightButtonColor" format="reference" />
+	</declare-styleable>
+	<declare-styleable name="CustomProgressbar">
+		<attr name="backColor" format="color" />
+		<attr name="frontColor" format="color" />
+		<attr name="padding" format="dimension" />
+		<attr name="scrollerWidth" format="dimension" />
+	</declare-styleable>
+	<declare-styleable name="TabbarBtn">
+        <attr name="TB_text" format="string"/>
+        <attr name="TB_picture" format="reference"/>
+        <attr name="TB_selectedPicture" format="reference"/>
+        <attr name="TB_btnPosition" format="enum">
+            <enum name="TB_only" value="0"/>
+            <enum name="TB_leftEnd" value="1"/>
+            <enum name="TB_rightEnd" value="2"/>
+            <enum name="TB_center" value="3"/>
+        </attr>
+        <attr name="TB_selected" format="boolean"/>
+        <attr name="TB_index" format="integer"/>
+    </declare-styleable>
+	<declare-styleable name="CirclesControl">
+        <attr name="CC_main_text" format="string"/>
+        <attr name="CC_side_text" format="string"/>
+        <attr name="CC_main_color" format="color"/>
+        <attr name="CC_side_color" format="color"/>
+        <attr name="CC_main_active_color" format="color"/>
+        <attr name="CC_side_active_color" format="color"/>
+        <attr name="CC_padding_color" format="color"/>
+        <attr name="CC_main_text_color" format="color"/>
+        <attr name="CC_side_text_color" format="color"/>
+        <attr name="CC_angle" format="float"/>
+    </declare-styleable>
+</resources>

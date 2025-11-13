@@ -1,0 +1,51 @@
+How to build GFXBench DX for Windows Phone 8.1 / Windows 10 Mobile
+==================================================================
+
+Table Of Contents
+-----------------
+
+1. Software requirements
+2. Build steps
+3. How to use the MSVC solution
+
+1\. Software requirements
+-------------------------
+
+    1. BASH environment (e.g.: Git Bash)
+    2. Microsoft Visual Studio 2013 Update 3 / Microsoft Visual Studio 2015
+    3. SQLite for Windows Phone 8.1 v3.12.2
+			https://sqlite.org/2016/sqlite-wp81-winrt-3120200.vsix
+	4. CMake 3.4.0
+
+2\. Build steps
+---------------
+
+This package contains source code to build Corporate GFXBenchDX.
+
+First execute the 3rdParty build command via Git Bash, then execute the app build command with same `PLATFORM` and `CONFIG` parameters.
+To build use the following commands from the root of the package:
+
+Check the swig is added to `PATH`:  
+e.g.: `export PATH=/c/tools/swigwin3:$PATH`
+
+Build Windows Phone 8.1 with Visual Studio 2015:
+
+	WORKSPACE=${PWD} PLATFORM=v140_wp81-arm CONFIG=Release APPLICATION_TYPE=gui ./scripts/build-3rdparty.sh
+	WORKSPACE=${PWD} PLATFORM=v140_wp81-arm CONFIG=Release APPLICATION_TYPE=gui ./scripts/build.sh
+
+These scripts generate a Microsoft Visual Studio 2015 solution for x86/ARM platform and starts to compile it.
+
+To build a Debug version of the project use the commands with `CONFIG=Debug` parameter.
+To generate a Visual Studio 2013 solution use `v120_wp81-arm`/`v120_wp81-win32` for PLATFORM
+
+**Note:**
+
+* The generated Visual Studio solution will be placed into the following directory: "out/build/[platform]/app_winstore/StoreApp.sln"
+* The build script may fail at the end, but the generated Visual Studio solution works fine
+* Do NOT run two buildscripts at the same time for the Windows Store and Windows Phone platform using the same source directory. Doing this might result in one or more of the builds failing as they use the same working directories relative to the source root!
+* The developer application may not work
+
+3\. How to use the MSVC solution
+--------------------------------
+
+In VS set WindowsPhoneApp as a StartUp Project before running.

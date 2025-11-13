@@ -1,0 +1,32 @@
+plugins {
+    id 'com.android.library' apply true
+}
+
+android {
+    compileSdk libs.versions.compileSdk.get().toInteger()
+    defaultConfig {
+        minSdkVersion libs.versions.minSdk.get().toInteger()
+        targetSdkVersion libs.versions.targetSdk.get().toInteger()
+    }
+    buildFeatures {
+        buildConfig = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    namespace 'net.kishonti.benchui.corporate'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation project(':benchui-lib')
+    implementation project(':customcomponents')
+    implementation project(':testfw')
+    implementation libs.support.v19
+}

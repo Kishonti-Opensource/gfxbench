@@ -1,0 +1,8 @@
+extern const char* const organizationName = "Kishonti Ltd"; // Needed by Qt
+extern const char* const organizationDomain = "osx.kishonti.net"; // Needed by Qt
+extern const char* const productName = "@PRODUCT_NAME@"; // Needed by Qt, shown on UI
+extern const char* const productId = "@PRODUCT_ID@"; // Needed by netman
+extern const char* const productVersion = "@PRODUCT_VERSION@"; // Needed by Qt and netman, shown on UI
+extern const char* const crashReporterToken = "@CRASH_REPORTER_TOKEN@"; // Needed by HockeyApp
+extern const char* const contactDomain = "@CONTACT_DOMAIN@"; // shown on UI
+extern const char* const packageName = "@PACKAGE_NAME@"; // Needed by server

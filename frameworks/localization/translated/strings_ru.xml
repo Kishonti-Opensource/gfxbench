@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="AboutSectionTitle">О программе</string>
+  <string name="Accept">Принять</string>
+  <string name="AppVersionCorporate">Корпоративная версия %s</string>
+  <string name="Back">Назад</string>
+  <string name="BAD_VERSION">Вы используете устаревшую версию GFXBench. Обновите приложение.</string>
+  <string name="BatteryBrightness100">Принудительно 100 %</string>
+  <string name="BatteryBrightness25">Принудительно 25 %</string>
+  <string name="BatteryBrightness50">Принудительно 50 %</string>
+  <string name="BatteryBrightness75">Принудительно 75%</string>
+  <string name="BatteryBrightnessDefault">По умолчанию</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">Заряжается</string>
+  <string name="BatteryPageTitle">График батареи</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">Подключена</string>
+  <string name="BatteryUnplugged">Не подключено</string>
+  <string name="BestResults">Лучшие результаты</string>
+  <string name="Camera_Autofocus">Автофокус</string>
+  <string name="Camera_FaceDetection">Распознавание лиц</string>
+  <string name="Camera_Flash">Вспышка</string>
+  <string name="Camera_GeoTagging">Геотеги</string>
+  <string name="Camera_HDR">HDR</string>
+  <string name="Camera_Picture">Фото</string>
+  <string name="Camera_TouchFocus">Сенсорный фокус</string>
+  <string name="Camera_Video">Видео</string>
+  <string name="Cancel">Отмена</string>
+  <string name="Cancelled">Отменено</string>
+  <string name="Chipset">Чипсет</string>
+  <string name="ClearAll">Удалить все</string>
+  <string name="ClearHistoryDialogBody">Все результаты будут удалены. Выполнить очистку?</string>
+  <string name="ClearHistoryDialogTitle">Очистить историю</string>
+  <string name="Close">Закрыть</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">Подключение к серверу.</string>
+  <string name="ContactUs">Контакты</string>
+  <string name="CorporateCommercialTitle">О лицензии</string>
+  <string name="CorporateFeatures">Корпоративные функции</string>
+  <string name="Decline">Отклонить</string>
+  <string name="DeviceMayCrashDialogBody">Your device might not have enough memory to run this test. We recommend that you close all other applications and/or restart your device because it may crash due to low memory conditions otherwise.</string>
+  <string name="DeviceMayCrashDialogTitle">High memory consumption</string>
+  <string name="DownloadDatabaseEveryStartup">Загружать базу данных при запуске</string>
+  <string name="Email">Эл. почта</string>
+  <string name="EMAIL_TAKEN">Этот адрес уже используется. Выберите другой адрес.</string>
+  <string name="EmailTakenDialogBody">Этот адрес уже используется. Введите другой адрес и попробуйте еще раз.</string>
+  <string name="EmailTakenDialogTitle">Адрес уже используется</string>
+  <string name="EnableExtraBattery">Включить доп. батарею</string>
+  <string name="Error">Ошибка!</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">Остановка, изменена яркость</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">Остановка, включена зарядка</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">Несовместимая версия ES</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">Недоступен уровень DirectX</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">ES 3 не поддерживается</string>
+  <string name="ERROR_FILE_NOT_FOUND">Файл не найден</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">Неправильное разрешение</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">Устройство не поддерживает размытие с MSAA</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">Устройство не поддерживает режим «вне экрана»</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">Устройство не поддерживает режим «вне экрана» с MSAA</string>
+  <string name="ERROR_OUT_OF_MEMORY">Не хватает памяти</string>
+  <string name="ERROR_OUT_OF_VMEMORY">Не хватает видеопамяти</string>
+  <string name="ERROR_SHADER_ERROR">Ошибка шейдера</string>
+  <string name="ERROR_SKIPPED">Пропущено</string>
+  <string name="ERROR_UNDEFINED_ERROR">Неопределенная ошибка</string>
+  <string name="ERROR_UNKNOWNERROR">Неизвестная ошибка</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">Неподдерживаемый формат текстуры</string>
+  <string name="ERROR_VBO_ERROR">Ошибка VBO</string>
+  <string name="FeatureAccelerometer">Акселерометр</string>
+  <string name="FeatureAltimeter">Альтиметр</string>
+  <string name="FeatureBarometer">Барометр</string>
+  <string name="FeatureBluetooth">Bluetooth</string>
+  <string name="FeatureCompass">Компас</string>
+  <string name="FeatureCPUCoreCount">Ядра</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">Гироскоп</string>
+  <string name="FeatureLevel">Уровень</string>
+  <string name="FeatureLightSensor">Освещенность</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">Приближение</string>
+  <string name="FeatureSIMCount">SIM-карты</string>
+  <string name="FeatureThermometer">Термометр</string>
+  <string name="FeatureTouchscreenCapacitive">емкостный сенсорный экран</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">емкостный сенсорный экран, мультитач, 5 точек</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">емкостный сенсорный экран, мультитач</string>
+  <string name="FeatureTouchscreenResistive">резистивный сенсорный экран</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">резистивный сенсорный экран, мультитач, 5 точек</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">резистивный сенсорный экран, мультитач</string>
+  <string name="FillTheForm">Заполните форму ниже.</string>
+  <string name="FindOutMore">Узнать больше</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">Подписаться</string>
+  <string name="ForceDisplayBrightness">Принудительная яркость дисплея.</string>
+  <string name="ForgotPasswordSendToEmail">Отправить пароль на мой адрес электронной почты.</string>
+  <string name="ForgotPasswordSentToEmail">Мы отправили вам сообщение. Следуйте инструкциям для сброса пароля.</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">Тесты высокого уровня</string>
+  <string name="group_high_level_desc">Для проверки графических характеристик устройства используется компьютерная графика высокого класса. Тест использует сложные эффекты для нагрузки графического процессора и измерения графических характеристик во время игры или выполнения сложных задач (визуализация интерфейса, навигация).</string>
+  <string name="group_low_level">Тесты низкого уровня</string>
+  <string name="group_special">Специальные тесты</string>
+  <string name="Height">Высота</string>
+  <string name="INTERNAL_ERROR">Ошибка сервера. Попробуйте позднее.</string>
+  <string name="INVALID_CREDENTIALS">Неправильный логин или пароль. Введите повторно.</string>
+  <string name="INVALID_EMAIL_ADDRESS">Неправильный адрес. Введите повторно.</string>
+  <string name="InvalidCredentialsBody">Неправильный логин или пароль. Введите повторно.</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">Указанный адрес недействителен. Укажите правильный адрес и попробуйте еще раз.</string>
+  <string name="InvalidEmailDialogTitle">Ошибка электронной почты</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">Последние результаты</string>
+  <string name="LicenseDialogTitle">Общая лицензия</string>
+  <string name="Lifetime">Срок службы</string>
+  <string name="Loading">Загрузка...</string>
+  <string name="LoadingDeviceInfo">Сбор данных об устройстве.</string>
+  <string name="LoadingDuelInfo">Сбор данных о дуэли.</string>
+  <string name="LoadingNextTest">Загрузка нового теста...</string>
+  <string name="LoadingTest">%s: загрузка %s...</string>
+  <string name="Login">Войти</string>
+  <string name="LoginFailedDialogBody">Неправильный логин или пароль. Введите повторно.</string>
+  <string name="LoginFailedDialogTitle">Ошибка входа</string>
+  <string name="LoginForgotPassword">Забыли пароль?</string>
+  <string name="LoginTitle">Вход</string>
+  <string name="Logout">Выйти</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="MISSING_PARAMETER">Введите имя пользователя и пароль.</string>
+  <string name="MissingParametersDialogBody">Отсутствует один или несколько параметров. Введите их и попробуйте еще раз.</string>
+  <string name="MissingParametersDialogTitle">Отсутствуют параметры</string>
+  <string name="More">Далее</string>
+  <string name="NetRequirementDialogBody">GFXBench сохраняет и отображает результаты только при наличии подключения к Интернету.</string>
+  <string name="NetRequirementDialogTitle">Информация</string>
+  <string name="NETWORK_ERROR">Ошибка сети. Попробуйте позднее.</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">Нет</string>
+  <string name="NoFreeSpaceDialogBody">Минимальный объем пустого места на SD-карте: %1$s МБ</string>
+  <string name="NoFreeSpaceDialogTitle">Ошибка</string>
+  <string name="NoInternetDialogBody">Подключение к Интернету не найдено. Подключитесь к Интернету и повторите попытку.</string>
+  <string name="NoInternetDialogTitle">Сеть не найдена</string>
+  <string name="NoServerDialogBody">Произошла ошибка при подключении GFXBench к нашему серверу. Попробуйте позднее.</string>
+  <string name="NoServerDialogTitle">Сервер не найден</string>
+  <string name="NoTestSelectedDialogBody">Выберите хотя бы один тест.</string>
+  <string name="NoTestSelectedDialogTitle">Тест не выбран</string>
+  <string name="NotRegisteredSectionBody">GFXBench сохраняет результат каждого теста. Для просмотра результатов предыдущих тестов необходимо создать пользовательский аккаунт.</string>
+  <string name="NotRegisteredSectionTitle">Данные</string>
+  <string name="NotSupported">Не поддерживается</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="Offscreen">Вне экрана</string>
+  <string name="OffscreenHeight">Высота вне экрана</string>
+  <string name="OffscreenWidth">Ширина вне экрана</string>
+  <string name="OK">ОК</string>
+  <string name="Onscreen">На экране</string>
+  <string name="OperatingSystem">OS</string>
+  <string name="OperatingSystemFull">Операционная система</string>
+  <string name="OutdatedDialogBody">Ваша версия GFXBench устарела. Обновите приложение и перезапустите его.</string>
+  <string name="OutdatedDialogTitle">Устаревшая версия</string>
+  <string name="Password">Пароль</string>
+  <string name="PasswordMismatchDialogBody">Неправильный пароль. Введите пароль повторно.</string>
+  <string name="PasswordMismatchDialogTitle">Ошибка пароля</string>
+  <string name="Performance">Производительность</string>
+  <string name="PrimaryScreenDialogBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenDialogTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">Выход</string>
+  <string name="ReadLicense">Лицензионное соглашение</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Register">Регистрация</string>
+  <string name="RegisterEmail">Адрес эл. почты</string>
+  <string name="RegisterError">Принять условия конфиденциальности и зарегистрироваться.</string>
+  <string name="RegisterErrorEmailNotOK">Выберите другой адрес электронной почты.</string>
+  <string name="RegisterErrorLoginNotOK">Выберите другой логин.</string>
+  <string name="RegisterErrorNoEmail">Заполните поле «Адрес эл. почты».</string>
+  <string name="RegisterErrorNoFirstName">Заполните поле «Имя».</string>
+  <string name="RegisterErrorNoLastName">Заполните поле «Фамилия».</string>
+  <string name="RegisterErrorNoLogin">Заполните поле «Логин».</string>
+  <string name="RegisterErrorNoPassword">Заполните поле «Пароль».</string>
+  <string name="RegisterErrorPasswordsNotMatching">Пароли не совпадают. Введите пароль повторно.</string>
+  <string name="RegisterFirstName">Имя</string>
+  <string name="RegisterLastName">Фамилия</string>
+  <string name="RegisterLogin">Выберите логин</string>
+  <string name="RegisterPassword">Пароль</string>
+  <string name="RegisterPasswordAgain">Повторите пароль</string>
+  <string name="RegistrationFeedbackDialogBody">Регистрация завершена. Мы отправили сообщение на указанный адрес.</string>
+  <string name="RegistrationFeedbackDialogTitle">Успешная регистрация</string>
+  <string name="RegistrationForm">Форма регистрации</string>
+  <string name="RememberMe">Запомнить меня</string>
+  <string name="Requirement">Минимальные требования к API:</string>
+  <string name="ResetTutorials">Сброс обучения</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">История результатов</string>
+  <string name="Results_BatteryEstimatedTime">Батарея — время работы</string>
+  <string name="Results_BatteryPerformance">Батарея — производительность</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">Н/П</string>
+  <string name="Results_NoBatteryResultYet">Еще нет результатов для батареи.</string>
+  <string name="Results_NoResultsYet">Еще нет результатов.</string>
+  <string name="Results_RunningTime">Время работы</string>
+  <string name="Results_ShowBatteryDiagram">Показать график батареи</string>
+  <string name="Retry">Повтор</string>
+  <string name="SaveResultsExcel">Сохранить результаты</string>
+  <string name="Score">Счет</string>
+  <string name="Search">Поиск</string>
+  <string name="SelectAll">Выбрать все</string>
+  <string name="SelectTests">Выбор теста</string>
+  <string name="ServerTimeoutDialogBody">GFXBench не удается подключиться к серверу. Попробуйте позднее.</string>
+  <string name="ServerTimeoutDialogTitle">Превышено время ожидания</string>
+  <string name="SetBatteryBrightness">Тест батареи — яркость</string>
+  <string name="SetOffscrResolution">Разрешение вне экрана</string>
+  <string name="SetOnscrResolution">Польз. разрешение</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">Показать FPS</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">Выбор теста для батареи отменяет выбор других тестов.  Перед тестированием полностью зарядите устройство и отключите его от сети.  Устройство может перегреться во время тестирования.</string>
+  <string name="StabilityTestTitle">Тест батареи</string>
+  <string name="Start">Начать</string>
+  <string name="StartAll">Начать все</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">Неподдерживаемая версия контента</string>
+  <string name="STATUS_CANCELLED">Отменено</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">Не удается создать тест</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">Неправильная конфигурация</string>
+  <string name="STATUS_NATIVEEXCEPTION">Сбой теста</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">Тест не действителен</string>
+  <string name="STATUS_UNKNOWNERR">Неизвестная ошибка</string>
+  <string name="StorageCheck">Determinig the storage for the huge datasets</string>
+  <string name="Supported">Поддерживается</string>
+  <string name="SwitchStateOff">Выкл.</string>
+  <string name="SwitchStateOn">Вкл.</string>
+  <string name="ShowString">Show</string>
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobil results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>
+  <string name="SyncErrorDialogBody">Во время синхронизации произошла ошибка: %s</string>
+  <string name="SyncErrorDialogTitle">Ошибка синхронизации</string>
+  <string name="Synchronization">Synchronizing...</string>
+  <string name="SyncLotDialogBody">GFXBench синхронизирует данные приложения с сервером. Вы разрешаете загрузить %s?</string>
+  <string name="SyncLotDialogTitle">Синхронизация данных</string>
+  <string name="SyncronizingChecksum">Проверка файлов на изменения...</string>
+  <string name="SyncronizingLoadingString">Синхронизация файлов %1$s %% (%2$s/%3$s МБ)</string>
+  <string name="TabCompare">Сравнение</string>
+  <string name="TabDuel">Дуэль</string>
+  <string name="TabGlInfo">Данные OpenGL</string>
+  <string name="TabHome">Главная</string>
+  <string name="TabInfo">Данные</string>
+  <string name="TabResults">Результаты</string>
+  <string name="TabSettings">Настройки</string>
+  <string name="TestList">Список тестов</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>  
+  <string name="TestSelection">Выбор теста</string>
+  <string name="ThreeDAPI">3D API</string>
+  <string name="UnkownErrorDialogBody">Неожиданная ошибка при регистрации. Попробуйте позднее.</string>
+  <string name="UnkownErrorDialogTitle">Ошибка</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">Отправить результаты</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">Пользователь</string>
+  <string name="USER_NAME_TAKEN">Имя пользователя занято. Выберите другое имя.</string>
+  <string name="Username">Имя пользователя</string>
+  <string name="UsernameTakenDialogBody">Это имя пользователя уже используется. Введите другое имя и попробуйте еще раз.</string>
+  <string name="UsernameTakenDialogTitle">Имя пользователя занято</string>
+  <string name="Version">Версия %s</string>
+  <string name="WarningEULA">Прочтите лицензионное соглашение с конечным пользователем.</string>
+  <string name="WarningNoInternet">Подключение к Интернету не найдено. Подключитесь к Интернету для выполнения тестов.</string>
+  <string name="WarningOutdated">Вы используете устаревшее приложение. Загрузите последнюю версию GFXBench.</string>
+  <string name="WarningTestNotRunNoInternet">Не удалось выполнить тест из-за отсутствия подключения. Подключитесь к Интернету для выполнения тестов.</string>
+  <string name="WarningUnregistered">Зарегистрируйте аккаунт.</string>
+  <string name="Welcome">Добро пожаловать! Вы вошли как</string>
+  <string name="Width">Ширина</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">Да</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">Ваше устройство</string>
+  <string name="AboutSectionBody">Программа GFXBench позволяет тестировать графические характеристики вашего устройства и сравнивать полученные результаты с другими устройствами на различных популярных платформах. Программа GFXBench разработана компанией Kishonti Ltd. Чтобы узнать больше о нас, посетите наш веб-сайт kishonti.net.</string>
+  <string name="CorporateCommercial">Вы используете стандартную версию GFXBench. Для разработки приложений мы рекомендуем использовать корпоративную версию. Чтобы получить подробные сведения о лицензии, обращайтесь по адресу sales@gfxbench.com</string>
+  <string name="FollowUsSectionBody">Межплатформенная программа GFXBench позволяет тестировать графические характеристики вашего устройства и сравнивать его с другими устройствами.</string>
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  
+  
+  
+  <!-- System info -->
+  <string name="device">Устройство</string>
+  <string name="os">OS</string>
+  <string name="display">Дисплей</string>
+  <string name="cpu">ЦПУ</string>
+  <string name="gpu">ГПУ</string>
+  <string name="memory">Память</string>
+  <string name="storage">Хранилище</string>
+  <string name="battery">Батарея</string>
+  <string name="features">Функции</string>
+  <string name="frontcamera">Передняя камера</string>
+  <string name="backcamera">Задняя камера</string>
+  
+  <!-- GFXBench GL -->
+  <string name="gl_blending">Альфа-смешивание</string>
+  <string name="gl_blending_desc">Измеряет производительность альфа-смешивания с помощью визуализации выровненных на экране полупрозрачных квадрантов с несжатыми текстурами высокого разрешения. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off_desc">Измеряет производительность альфа-смешивания с помощью визуализации выровненных на экране полупрозрачных квадрантов с несжатыми текстурами высокого разрешения. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">1080p Альфа-смешивание, вне экрана</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_alu">ALU</string>
+  <string name="gl_alu_desc">Измеряет чистую производительность шейдеров вашего устройства с помощью затемнения сложных фрагментов и визуализации одного квадранта в полноэкранном режиме. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off_desc">Измеряет чистую производительность шейдеров вашего устройства с помощью затемнения сложных фрагментов и визуализации одного квадранта в полноэкранном режиме. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">1080p ALU, вне экрана</string>
+  <string name="gl_alu2">ALU 2</string>
+  <string name="gl_alu2_off">1080p ALU 2, вне экрана</string>
+  <string name="gl_trex_battery_desc">Этот комбинированный тест измеряет время работы вашего устройства от батареи и стабильность FPS в игровых сценах с помощью 30-кратного выполнения одного теста высокого уровня. Он регистрирует FPS и заряд аккумулятора во время испытания. Результаты отображаются в графике работы батареи. Результатами теста являются ожидаемое время работы от батареи в минутах и количество кадров, визуализированных в ходе самого медленного теста. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">Потери драйвера</string>
+  <string name="gl_driver_desc">Измеряет потери ЦПУ для драйвера OpenGL с помощью визуализации большого количества простых объектов по очереди и смены статуса устройства для каждого элемента. Частота смены статуса соответствует реальным приложениям. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off_desc">Измеряет потери ЦПУ для драйвера OpenGL с помощью визуализации большого количества простых объектов по очереди и смены статуса устройства для каждого элемента. Частота смены статуса соответствует реальным приложениям. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off">1080p Потери драйвера, вне экрана</string>
+  <string name="gl_driver2">Потери драйвера 2</string>
+  <string name="gl_driver2_off">1080p Потери драйвера 2, вне экрана</string>
+  <string name="gl_fill">Заполнение</string>
+  <string name="gl_fill_desc">Измеряет производительность текстурирования с помощью визуализации четырех слоев сжатых текстур. Это обычный сценарий в играх. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off_desc">Измеряет производительность текстурирования с помощью визуализации четырех слоев сжатых текстур. Это обычный сценарий в играх. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">1080p Заполнение, вне экрана</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_off">1080p Texturing, вне экрана</string>
+  <string name="gl_manhattan">Manhattan</string>
+  <string name="gl_manhattan31">Manhattan 3.1</string>
+  <string name="gl_manhattan31_off">1080p Manhattan 3.1, вне экрана</string>
+  <string name="gl_manhattan_off">1080p Manhattan, вне экрана</string>
+  <string name="Test_Offscreen">%s вне экрана</string>
+  <string name="gl_trex">T-Rex</string>
+  <string name="gl_trex_battery">Тест батареи</string>
+  <string name="gl_trex_battery_diagram">Производительность - График</string>
+  <string name="gl_trex_battery_lifetime">Производительность - время работы</string>
+  <string name="gl_trex_battery_performance">Производительность - Тест батареи</string>
+  <string name="gl_trex_off">1080p T-Rex, вне экрана</string>
+  <string name="gl_trex_qmatch">Качество визуализации</string>
+  <string name="gl_trex_qmatch_highp">Качество визуализации (высокая точность)</string>
+
+  <!-- GFXBench METAL -->
+  <string name="metal_blending">Альфа-смешивание</string>
+  <string name="metal_blending_desc">Измеряет производительность альфа-смешивания с помощью визуализации выровненных на экране полупрозрачных квадрантов с несжатыми текстурами высокого разрешения. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_blending_off_desc">Измеряет производительность альфа-смешивания с помощью визуализации выровненных на экране полупрозрачных квадрантов с несжатыми текстурами высокого разрешения. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_blending_off">1080p Альфа-смешивание, вне экрана</string>
+  <string name="metal_diag">GL Diagnostics</string>
+  <string name="metal_alu">ALU</string>
+  <string name="metal_alu_desc">Измеряет чистую производительность шейдеров вашего устройства с помощью затемнения сложных фрагментов и визуализации одного квадранта в полноэкранном режиме. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_alu_off_desc">Измеряет чистую производительность шейдеров вашего устройства с помощью затемнения сложных фрагментов и визуализации одного квадранта в полноэкранном режиме. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_alu_off">1080p ALU, вне экрана</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_off">1080p ALU 2, вне экрана</string>
+  <string name="metal_trex_battery_desc">Этот комбинированный тест измеряет время работы вашего устройства от батареи и стабильность FPS в игровых сценах с помощью 30-кратного выполнения одного теста высокого уровня. Он регистрирует FPS и заряд аккумулятора во время испытания. Результаты отображаются в графике работы батареи. Результатами теста являются ожидаемое время работы от батареи в минутах и количество кадров, визуализированных в ходе самого медленного теста. Минимальные требования к API: Metal</string>
+  <string name="metal_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="metal_driver">Потери драйвера</string>
+  <string name="metal_driver_desc">Измеряет потери ЦПУ для драйвера Metal с помощью визуализации большого количества простых объектов по очереди и смены статуса устройства для каждого элемента. Частота смены статуса соответствует реальным приложениям. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_driver_off_desc">Измеряет потери ЦПУ для драйвера Metal с помощью визуализации большого количества простых объектов по очереди и смены статуса устройства для каждого элемента. Частота смены статуса соответствует реальным приложениям. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_driver_off">1080p Потери драйвера, вне экрана</string>
+  <string name="metal_driver2">Driver Overhead 2</string>
+  <string name="metal_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="metal_fill">Заполнение</string>
+  <string name="metal_fill_desc">Измеряет производительность текстурирования с помощью визуализации четырех слоев сжатых текстур. Это обычный сценарий в играх. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_fill_off_desc">Измеряет производительность текстурирования с помощью визуализации четырех слоев сжатых текстур. Это обычный сценарий в играх. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: Metal</string>
+  <string name="metal_fill_off">1080p Заполнение, вне экрана</string>
+  <string name="metal_fill2">Fill 2</string>
+  <string name="metal_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="metal_manhattan">Manhattan</string>
+  <string name="metal_manhattan31">Manhattan 3.1</string>
+  <string name="metal_manhattan31_off">1080p Manhattan 3.1, вне экрана</string>
+  <string name="metal_manhattan_off">1080p Manhattan, вне экрана</string>
+  <string name="Test_Offscreen">%s вне экрана</string>
+  <string name="metal_trex_qmatch_desc">Измеряет точность воспроизведения роликов с компьютерной графикой высокого класса. Результатом является пиковое соотношение «сигнал-шум» (PSNR) на основании средней квадратической погрешности (MSE) по сравнению с эталонным изображением. Минимальные требования к API: Metal</string>
+  <string name="metal_trex_qmatch_highp_desc">Измеряет точность воспроизведения роликов с компьютерной графикой высокого класса. Результатом является пиковое соотношение «сигнал-шум» (PSNR) на основании средней квадратической погрешности (MSE) по сравнению с эталонным изображением. Минимальные требования к API: Metal</string>
+  <string name="metal_trex">T-Rex</string>
+  <string name="metal_trex_battery">Тест батареи</string>
+  <string name="metal_trex_battery_diagram">Производительность - График</string>
+  <string name="metal_trex_battery_lifetime">Производительность - время работы</string>
+  <string name="metal_trex_battery_performance">Производительность - Тест батареи</string>
+  <string name="metal_trex_desc">Тест T-Rex на основе Metal включает высокодетализированные текстуры, материалы, сложную геометрию, частицы с анимированными текстурами и эффект постобработки «размытие». Графический конвейер также создает эффекты, а именно: плоское отражение, зеркальные блики и мягкие тени. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах.  Минимальные требования к API: Metal</string>
+  <string name="metal_trex_off_desc">Тест T-Rex на основе Metal включает высокодетализированные текстуры, материалы, сложную геометрию, частицы с анимированными текстурами и эффект постобработки «размытие». Графический конвейер также создает эффекты, а именно: плоское отражение, зеркальные блики и мягкие тени. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах.  Минимальные требования к API: Metal</string>
+  <string name="metal_trex_off">1080p T-Rex, вне экрана</string>
+  <string name="metal_trex_qmatch">Качество визуализации</string>
+  <string name="metal_trex_qmatch_highp">Качество визуализации (высокая точность)</string>
+
+  <!-- GFXBench DX -->
+  <string name="dx_blending">Альфа-смешивание</string>
+  <string name="dx_blending_desc">Измеряет производительность альфа-смешивания с помощью визуализации выровненных на экране полупрозрачных квадрантов с несжатыми текстурами высокого разрешения. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_blending_off_desc">Измеряет производительность альфа-смешивания с помощью визуализации выровненных на экране полупрозрачных квадрантов с несжатыми текстурами высокого разрешения. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_blending_off">1080p Альфа-смешивание, вне экрана</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_alu">ALU</string>
+  <string name="dx_alu_desc">Измеряет чистую производительность шейдеров вашего устройства с помощью затемнения сложных фрагментов и визуализации одного квадранта в полноэкранном режиме. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_alu_off_desc">Измеряет чистую производительность шейдеров вашего устройства с помощью затемнения сложных фрагментов и визуализации одного квадранта в полноэкранном режиме. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_alu_off">1080p ALU, вне экрана</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc"></string>
+  <string name="dx_alu2_off">1080p ALU 2, вне экрана</string>
+  <string name="dx_trex_battery_desc">Этот комбинированный тест измеряет время работы вашего устройства от батареи и стабильность FPS в игровых сценах с помощью 30-кратного выполнения одного теста высокого уровня. Он регистрирует FPS и заряд аккумулятора во время испытания. Результаты отображаются в графике работы батареи. Результатами теста являются ожидаемое время работы от батареи в минутах и количество кадров, визуализированных в ходе самого медленного теста. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">Потери драйвера</string>
+  <string name="dx_driver_desc">Измеряет потери ЦПУ для драйвера DirectX с помощью визуализации большого количества простых объектов по очереди и смены статуса устройства для каждого элемента. Частота смены статуса соответствует реальным приложениям. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_driver_off_desc">Измеряет потери ЦПУ для драйвера DirectX с помощью визуализации большого количества простых объектов по очереди и смены статуса устройства для каждого элемента. Частота смены статуса соответствует реальным приложениям. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_driver_off">1080p Потери драйвера, вне экрана</string>
+  <string name="dx_driver2">Driver Overhead 2</string>
+  <string name="dx_driver2_desc"></string>
+  <string name="dx_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="dx_fill">Заполнение</string>
+  <string name="dx_fill_desc">Измеряет производительность текстурирования с помощью визуализации четырех слоев сжатых текстур. Это обычный сценарий в играх. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_fill_off_desc">Измеряет производительность текстурирования с помощью визуализации четырех слоев сжатых текстур. Это обычный сценарий в играх. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_fill_off">1080p Заполнение, вне экрана</string>
+  <string name="dx_fill2">Fill 2</string>
+  <string name="dx_fill2_desc"></string>
+  <string name="dx_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="dx_manhattan">Manhattan</string>
+  <string name="dx_manhattan31">Manhattan DirectX 10.0</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in DirectX 10.0 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">1080p Manhattan DirectX 10.0 , вне экрана</string>
+  <string name="dx_manhattan_desc">Наш первый тест, который использует функции DirectX 10.0 на вашем устройстве. Воспроизводится сюжет с ночным городом и множеством источников света. Используется замедленный рендеринг и визуализация нескольких целей для прохождения геометрии (четыре цветовых вложения в виде текстур), рассеянное и зеркальное освещение, а также такие сложные эффекты, как карта глубины теней, эффект маскировки, эффекты постобработки (ореол, глубина поля), запрос видимости и анимированные объемные световые валы. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах.  Минимальные требования к API: DirectX 10.0</string>
+  <string name="dx_manhattan_off_desc">Наш первый тест, который использует функции DirectX 10.0 на вашем устройстве. Воспроизводится сюжет с ночным городом и множеством источников света. Используется замедленный рендеринг и визуализация нескольких целей для прохождения геометрии (четыре цветовых вложения в виде текстур), рассеянное и зеркальное освещение, а также такие сложные эффекты, как карта глубины теней, эффект маскировки, эффекты постобработки (ореол, глубина поля), запрос видимости и анимированные объемные световые валы. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах.  Минимальные требования к API: DirectX 10.0</string>
+  <string name="dx_manhattan_off">1080p Manhattan, вне экрана</string>
+  <string name="Test_Offscreen">%s вне экрана</string>
+  <string name="dx_trex_qmatch_desc">Измеряет точность воспроизведения роликов с компьютерной графикой высокого класса. Результатом является пиковое соотношение «сигнал-шум» (PSNR) на основании средней квадратической погрешности (MSE) по сравнению с эталонным изображением. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp_desc">Измеряет точность воспроизведения роликов с компьютерной графикой высокого класса. Результатом является пиковое соотношение «сигнал-шум» (PSNR) на основании средней квадратической погрешности (MSE) по сравнению с эталонным изображением. Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_trex">T-Rex</string>
+  <string name="dx_trex_battery">Тест батареи</string>
+  <string name="dx_trex_battery_diagram">Производительность - График</string>
+  <string name="dx_trex_battery_lifetime">Производительность - время работы</string>
+  <string name="dx_trex_battery_performance">Производительность - Тест батареи</string>
+  <string name="dx_trex_desc">Тест T-Rex на основе DirectX 9.1 включает высокодетализированные текстуры, материалы, сложную геометрию, частицы с анимированными текстурами и эффект постобработки «размытие». Графический конвейер также создает эффекты, а именно: плоское отражение, зеркальные блики и мягкие тени. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах.  Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_trex_off_desc">Тест T-Rex на основе DirectX 9.1 включает высокодетализированные текстуры, материалы, сложную геометрию, частицы с анимированными текстурами и эффект постобработки «размытие». Графический конвейер также создает эффекты, а именно: плоское отражение, зеркальные блики и мягкие тени. Чтобы увидеть, как устройство работает при собственном разрешении, запустите тест на экране. Для сравнения с другими устройствами используйте версию «вне экрана», которая работает в разрешении 1080p на всех устройствах.  Минимальные требования к API: DirectX 9.1</string>
+  <string name="dx_trex_off">1080p T-Rex, вне экрана</string>
+  <string name="dx_trex_qmatch">Качество визуализации</string>
+  <string name="dx_trex_qmatch_highp">Качество визуализации (высокая точность)</string>
+  
+  <string name="LicenseDialogBody">ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ С КОНЕЧНЫМ ПОЛЬЗОВАТЕЛЕМ 
+        ДЛЯ ПРОГРАММНЫХ ПРОДУКТОВ KISHONTI KFT ДЛЯ ТЕСТИРОВАНИЯ 
+         
+         
+        ВНИМАТЕЛЬНО ПРОЧТИТЕ ЭТО ВАЖНОЕ ПРИМЕЧАНИЕ: НАСТОЯЩЕЕ ЛИЦЕНЗИОННОЕ СОГЛАШЕНИЕ С КОНЕЧНЫМ ПОЛЬЗОВАТЕЛЕМ ПРЕДСТАВЛЯЕТ СОБОЙ ЮРИДИЧЕСКИ ОБЯЗАТЕЛЬНЫЙ ДОГОВОР МЕЖДУ ВАМИ И КОМПАНИЕЙ KISHONTI KFT В ОТНОШЕНИИ ПРОГРАММНЫХ ПРОДУКТОВ КОМПАНИИ KISHONTI. ВНИМАТЕЛЬНО ПРОЧТИТЕ СЛЕДУЮЩИЕ УСЛОВИЯ И ПОЛОЖЕНИЯ ПЕРЕД ЗАГРУЗКОЙ, КОПИРОВАНИЕМ, УСТАНОВКОЙ ИЛИ ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ, ПРЕДОСТАВЛЯЕМОГО В РАМКАХ НАСТОЯЩЕГО СОГЛАШЕНИЯ. ЛЮБОЕ ВОСПРОИЗВЕДЕНИЕ, РАСПРОСТРАНЕНИЕ ИЛИ ДРУГИЕ СПОСОБЫ ИСПОЛЬЗОВАНИЯ ДАННОГО ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ ЕГО КОМПОНЕНТОВ, КОТОРЫЕ НАРУШАЮТ УСЛОВИЯ ДАННОГО СОГЛАШЕНИЯ, ЗАПРЕЩЕНЫ ЗАКОНОМ И МОГУТ ПОВЛЕЧЬ ЗА СОБОЙ ГРАЖДАНСКУЮ И УГОЛОВНУЮ ОТВЕТСТВЕННОСТЬ И ДРУГИЕ ПОСЛЕДСТВИЯ. 
+         
+        ЛИЦЕНЗИЯ РАСПРОСТРАНЯЕТСЯ ТОЛЬКО НА ЧАСТНОЕ, НЕКОММЕРЧЕСКОЕ ИСПОЛЬЗОВАНИЕ: ДАННОЕ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ЛИЦЕНЗИРУЕТСЯ ДЛЯ ЛИЧНОГО, НЕКОММЕРЧЕСКОГО ИСПОЛЬЗОВАНИЯ С ЦЕЛЬЮ ПРОВЕРКИ ПРОИЗВОДИТЕЛЬНОСТИ УСТРОЙСТВ В РАМКАХ ЛИЧНОЙ, НЕКОММЕРЧЕСКОЙ ДЕЯТЕЛЬНОСТИ. ЛИЦЕНЗИЯ НЕ ПРЕДОСТАВЛЯЕТСЯ ДЛЯ ИНЫХ ЦЕЛЕЙ ИСПОЛЬЗОВАНИЯ. 
+        ЧТОБЫ ПОЛУЧИТЬ ЛИЦЕНЗИЮ НА ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ ДЛЯ КОММЕРЧЕСКОГО ИСПОЛЬЗОВАНИЯ, ОБРАТИТЕСЬ В КОМПАНИЮ KISHONTI KFT ПО АДРЕСУ SALES@KISHONTI.NET. 
+         
+         
+        1. Определения 
+         
+        «Устройство» означает электронное устройство, которое соответствует системным требованиям для Программного обеспечения, указанным в документации по Программному обеспечению, и которое может подключаться к Интернету. 
+        «Соглашение» означает лицензионное соглашение с конечным пользователем. 
+        «KISHONTI» означает компанию с ограниченной ответственностью KISHONTI Kft., зарегистрированную Городским судом Будапешта по адресу 1037 г. Будапешт, ул. Щепвольгий, д. 39, Венгрия в соответствии с законодательством Венгрии, регистрационный номер — 01-09-935577. 
+        «Отключенные функции» означают скрытые или неактивные функции. Программное обеспечение может содержать Отключенные функции, которые активируются только после уплаты лицензионных сборов компании KISHONTI. 
+        «Программное обеспечение» означает программное обеспечение KISHONTI для проверки производительности устройств, доступное при наличии подключения к Интернету, в рамках настоящего Соглашения, в том числе (а) все содержимое файлов, которые могут включать информацию или программное обеспечение компании KISHONTI или других производителей, сопроводительные материалы и шрифты, а также (б) модифицированные версии, обновления, дополнения и копии вышеперечисленного, предоставляемые компанией KISHONTI в любое время (далее «Обновления»). 
+        «Использование» означает доступ, загрузку, установку, запуск, тестирование Устройств или извлечение иной выгоды от использования функциональных возможностей Программного обеспечения. 
+         
+         
+        2. Объем лицензии 
+         
+        Настоящая бесплатная лицензия, предоставляемая вам для Программного обеспечения KISHONTI, ограничивается непередаваемой лицензией на использование Программного обеспечения на любом Устройстве, которым вы владеете или управляете. Компания KISHONTI в любое время может аннулировать лицензию и ограничить доступ к Программному обеспечению в соответствии с данным Соглашением. 
+         
+        Ваши права и обязанности по отношению к Использованию Программного обеспечения или любого из его компонентов заключаются в следующем: 
+         
+        (i) Вы можете: 
+        (a) бесплатно загружать, устанавливать и использовать Программное обеспечение при наличии подключения к Интернету; 
+        (б) использовать одну копию Программного обеспечения или любого из его компонентов и все Обновления на любых устройствах, используемых для личных целей, на протяжении всего времени, пока компания KISHONTI предоставляет доступ к этому Программному обеспечению (по собственному усмотрению KISHONTI) и пока компания KISHONTI не аннулирует данное Соглашение; 
+        (в) использовать Программное обеспечение только для личных целей. Программное обеспечение и любые результаты тестов или другие данные, полученные в результате Использования Программного обеспечения, не могут быть использованы в коммерческих целях (в том числе государственными и некоммерческими организациями). 
+         
+        (ii) Запрещается: 
+        (a) использовать, копировать, адаптировать, изменять или передавать копии Программного обеспечения (или разрешать любому лицу такие действия), за исключением случаев, прямо предусмотренных в настоящем Соглашении; 
+        (б) устанавливать и использовать Программное обеспечение на файловом сервере; 
+        (в) удалять любые уведомления о правах на интеллектуальную собственность, другие уведомления или ярлыки из Программного обеспечения; 
+        (г) выполнять обратное проектирование, переконфигурировать, изменять, переводить, декомпилировать, разбирать Программное обеспечение или создавать производные работы на его основе (кроме тех случаев и только в той мере, в которой такие действия прямо разрешены применимым обязательным законодательством, несмотря на данное ограничение); 
+        (д) продавать, распространять, сдавать в аренду, лицензировать, передавать или присваивать Программное обеспечение или любые его копии, в том числе связанную с ним документацию; 
+        (е) извлекать части элементов Программного обеспечения; 
+        (ж) встраивать Программное обеспечение в любое другое программное обеспечение, плагин или расширение; 
+        (з) пытаться раскрыть исходный код Программного обеспечения, выделить или пытаться выделить исходный код из Программного обеспечения или создавать производные работы на основе Продуктов (кроме тех случаев и только в той мере, в которой такие действия прямо разрешены применимым обязательным законодательством, несмотря на данное ограничение); 
+        (и) открывать доступ или пытаться открыть доступ к Отключенным функциям, а также использовать Программное обеспечение для создания функции, по существу аналогичной любой из Отключенных функций, или иным образом обходить технологию, которая управляет активацией Отключенных функций. 
+         
+        3. Права на интеллектуальную собственность и сохранение таких прав 
+         
+        Программное обеспечение и созданные вами копии являются интеллектуальной собственностью компании KISHONTI (и ее поставщиков, соответственно). Структура, организация и код Программного обеспечения являются ценной интеллектуальной собственностью (коммерческой тайной и конфиденциальной информацией) компании KISHONTI (и ее поставщиков, соответственно). Программное обеспечение защищено законом, в том числе, без ограничений, законами об авторском праве Венгрии, Соединенных Штатов и ​​других стран, а также положениями международных договоров. За исключением случаев, описанных в настоящем документе, данное Соглашение не предоставляет вам никаких прав на интеллектуальную собственность в отношении Программного обеспечения, и все права, не предоставленные явно, сохраняются за компанией KISHONTI (и ее поставщиками, соответственно). 
+        Как указано в настоящем Соглашении, результаты тестов, полученные в ходе Использования Программного обеспечения, также станут собственностью компании KISHONTI после их отправки на серверы KISHONTI. 
+         
+         
+        4. Подключение к Интернету. Отправка и отображение результатов тестов 
+         
+        (a) Наличие подключения к Интернету 
+        Вы признаете и соглашаетесь, что Программное обеспечение может использоваться только при наличии подключения устройства к Интернету (для подключения к серверам обработки данных KISHONTI). 
+         
+        (б) Отправка и отображение результатов тестов 
+        Вы признаете и соглашаетесь, что при использовании Программного обеспечения полученные результаты тестов будут автоматически и без предварительного уведомления отправляться на серверы KISHONTI. Вы также признаете и соглашаетесь, что такие отправленные результаты становятся собственностью компании KISHONTI. Результаты тестов будут представлены на веб-сайте KISHONTI по собственному усмотрению компании KISHONTI, которая может показывать, удалять или перемещать результаты тестов без предварительного уведомления или объяснения причин. 
+         
+        (в) Обновления 
+        Если Устройство подключено к Интернету, Программное обеспечение может без дополнительного уведомления проверять наличие Обновлений, которые доступны для автоматической загрузки и установки на устройство, а также уведомлять компанию KISHONTI об успешной установке Программного обеспечения. Обновления могут автоматически загружаться и устанавливаться без дополнительного уведомления. В этом случае компания KISHONTI получает обезличенные данные, если не считать того, что IP-адреса могут рассматриваться в качестве личных данных в некоторых юрисдикциях. Использование такой информации, в том числе вашего IP-адреса, в процессе автоматического обновления регулируется Политикой конфиденциальности KISHONTI (см. веб-сайт www.kishonti.net). Кроме того, если Устройство подключено к Интернету, Программное обеспечение может без дополнительного уведомления периодически предоставлять доступ вам к контенту и службам, которые размещаются на веб-сайтах, поддерживаемых компанией KISHONTI. При подключении Программного обеспечения к Интернету ваш IP-адрес, имя пользователя и пароль могут отправляться на сервера KISHONTI и храниться в компании KISHONTI. Компания KISHONTI может использовать эту информацию для отправки сообщений о действиях, которые упрощают Использование и/или расширяют функциональность Программного обеспечения. Компания KISHONTI может отображать встроенную рекламу для предоставления информации о Программном обеспечении и других продуктах и услугах компании KISHONTI. При каждом подключении программного обеспечения к Интернету и веб-сайту KISHONTI, которое выполняется автоматически или по запросу пользователя, применяется Политика конфиденциальности KISHONTI. 
+         
+         
+        5. Прекращение использования Программного обеспечения 
+         
+        Компания KISHONTI имеет право изменить или Обновить Программное обеспечение, изменить или удалить любую его часть, элемент и функцию в любое время, без предварительного уведомления или указания причины. 
+         
+        Компания KISHONTI имеет право отменить или аннулировать доступ к Программному обеспечению (или предыдущей версии Программного обеспечения), любой его части, элементу и функции в любое время, без предварительного уведомления или указания причины. 
+         
+        Ваша лицензия на использование Программного обеспечения остается в силе до ее аннуляции вами или компанией KISHONTI. Вы можете прекратить действие лицензии путем полного удаления всех копий Программного обеспечения со своего Устройства. Ваши права в рамках этой лицензии будут автоматически аннулированы без предварительного уведомления от компании KISHONTI, если вы нарушите любое из условий этой лицензии. По окончании действия лицензии вы должны прекратить любое использование Программного обеспечения и уничтожить все его копии, полные или частичные. Прекращение действия лицензии (отмена доступа к Программному обеспечению) не повлияет на права компании KISHONTI в отношении результатов тестов, отправленных на ее сервер. 
+         
+         
+        6. Отказ от гарантий и ответственности 
+         
+        ВЫ ПРИЗНАЕТЕ И СОГЛАШАЕТЕСЬ, ЧТО ВЫ ПРИНИМАЕТЕ НА СЕБЯ ВСЕ РИСКИ, СВЯЗАННЫЕ С ИСПОЛЬЗОВАНИЕМ (ИЛИ НЕВОЗМОЖНОСТЬЮ ИСПОЛЬЗОВАНИЯ) ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ, УДОВЛЕТВОРИТЕЛЬНЫМ КАЧЕСТВОМ, ПРОИЗВОДИТЕЛЬНОСТЬЮ, ТОЧНОСТЬЮ И УСИЛИЯМИ. ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ И УСЛУГИ КОМПАНИИ KISHONTI ПРЕДОСТАВЛЯЮТСЯ НА УСЛОВИЯХ «КАК ЕСТЬ» И «КАК ДОСТУПНО» СО ВСЕМИ НЕДОСТАТКАМИ И БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ, И КОМПАНИЯ KISHONTI ОТКАЗЫВАЕТСЯ ОТ КАКИХ-ЛИБО ИНЫХ ГАРАНТИЙНЫХ ОБЯЗАТЕЛЬСТВ, ДАННЫХ В ЯВНОЙ ФОРМЕ, ПОДРАЗУМЕВАЕМЫХ ИЛИ НЕОБХОДИМЫХ ПО ЗАКОНУ, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, ЛЮБЫЕ ПОДРАЗУМЕВАЕМЫЕ ГАРАНТИИ В ОТНОШЕНИЯ ТОВАРНОГО СОСТОЯНИЯ, УДОВЛЕТВОРИТЕЛЬНОГО КАЧЕСТВА, ПРИГОДНОСТИ ДЛЯ КАКОЙ-ЛИБО КОНКРЕТНОЙ ЦЕЛИ, ТОЧНОСТИ, СПОКОЙНОГО ПОЛЬЗОВАНИЯ ИЛИ НЕНАРУШЕНИЯ ПРАВ ТРЕТЬИХ ЛИЦ, В ТОМ МАКСИМАЛЬНОМ ОБЪЕМЕ, В КОТОРОМ ЭТО ДОПУСКАЕТСЯ ПРИМЕНИМЫМ ОБЯЗАТЕЛЬНЫМ ЗАКОНОДАТЕЛЬСТВОМ. КОМПАНИЯ KISHONTI НЕ ГАРАНТИРУЕТ ОТСУТСТВИЕ ПОМЕХ ДЛЯ СПОКОЙНОГО ПОЛЬЗОВАНИЯ И ТОГО, ЧТО ФУНКЦИИ ИЛИ УСЛУГИ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ БУДУТ СООТВЕТСТВОВАТЬ ВАШИМ ТРЕБОВАНИЯМ, ЭКСПЛУАТАЦИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ И УСЛУГ БУДЕТ НЕПРЕРЫВНОЙ И ОНИ НЕ БУДУТ СОДЕРЖАТЬ ОШИБОК, А ДЕФЕКТЫ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ УСЛУГ БУДУТ ИСПРАВЛЕНЫ. ИНФОРМАЦИЯ И РЕКОМЕНДАЦИИ КОМПАНИИ KISHONTI ИЛИ ЕЕ УПОЛНОМОЧЕННЫХ ПРЕДСТАВИТЕЛЕЙ В УСТНОЙ ИЛИ ПИСЬМЕННОЙ ФОРМЕ НЕ ЯВЛЯЮТСЯ ГАРАНТИЕЙ. ЕСЛИ В ПРОГРАММНОМ ОБЕСПЕЧЕНИИ ИЛИ УСЛУГАХ БУДУТ ОБНАРУЖЕНЫ ДЕФЕКТЫ, ВЫ ПРИНИМАЕТЕ НА СЕБЯ ВСЕ РАСХОДЫ, СВЯЗАННЫЕ С ТЕХНИЧЕСКИМ ОБСЛУЖИВАНИЕМ, РЕМОНТОМ ИЛИ ИСПРАВЛЕНИЯМИ. В НЕКОТОРЫХ ЮРИСДИКЦИЯХ НЕ ДОПУСКАЕТСЯ ИСКЛЮЧЕНИЕ ГАРАНТИЙНЫХ ОБЯЗАТЕЛЬСТВ ИЛИ ОГРАНИЧЕНИЕ ЗАКОННЫХ ПРАВ ПОТРЕБИТЕЛЯ, И В ТАКИХ СЛУЧАЯХ ИСКЛЮЧЕНИЕ И ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ БУДУТ ПОДЛЕЖАТЬ ПРИМЕНЕНИЮ В ТОМ МАКСИМАЛЬНОМ ОБЪЕМЕ, В КОТОРОМ ОНИ МОГУТ БЫТЬ ЮРИДИЧЕСКИ ДЕЙСТВИТЕЛЬНЫ В СООТВЕТСТВИИ С ПРИМЕНИМЫМ ЗАКОНОДАТЕЛЬСТВОМ. 
+         
+        В ПРЕДЕЛАХ, НЕ ЗАПРЕЩЕННЫХ ЗАКОНОМ, КОМПАНИЯ KISHONTI НЕ НЕСЕТ ОТВЕТСТВЕННОСТИ ЗА ЛИЧНЫЙ, ИМУЩЕСТВЕННЫЙ ИЛИ ЭКОНОМИЧЕСКИЙ УЩЕРБ ИЛИ УБЫТКИ, СВЯЗАННЫЕ С НЕПРАВИЛЬНЫМ ИСПОЛЬЗОВАНИЕМ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ УСТРОЙСТВА, НА КОТОРОМ ИСПОЛЬЗУЕТСЯ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ, ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, ТРАВМЫ, ПОВРЕЖДЕНИЯ И УБЫТКИ В РЕЗУЛЬТАТЕ ПЕРЕГРЕВА УСТРОЙСТВА ПО ЛЮБОЙ ПРИЧИНЕ. ВЫ ПРИНИМАЕТЕ НА СЕБЯ РИСКИ, СВЯЗАННЫЕ С ЛИЧНЫМ, ИМУЩЕСТВЕННЫМ ИЛИ ЭКОНОМИЧЕСКИМ УЩЕРБОМ, КОТОРЫЙ МОЖЕТ ВОЗНИКНУТЬ В РЕЗУЛЬТАТЕ ИСПОЛЬЗОВАНИЯ ПРОГРАММНОГО ОБЕСПЕЧЕНИЯ ИЛИ В СВЯЗИ С НИМ. В ПРЕДЕЛАХ, НЕ ЗАПРЕЩЕННЫХ ЗАКОНОМ, КОМПАНИЯ KISHONTI НИ ПРИ КАКИХ УСЛОВИЯХ НЕ НЕСЕТ ОТВЕТСТВЕННОСТИ ЗА ЛИЧНЫЙ, ИМУЩЕСТВЕННЫЙ ИЛИ ЭКОНОМИЧЕСКИЙ УЩЕРБ, ПОВРЕЖДЕНИЯ ИЛИ УБЫТКИ, А ТАКЖЕ НЕПРЯМЫЕ, СЛУЧАЙНЫЕ, КОСВЕННЫЕ И СПЕЦИАЛЬНЫЕ УБЫТКИ (ВКЛЮЧАЯ, БЕЗ ОГРАНИЧЕНИЯ, УБЫТКИ В СВЯЗИ С ПОТЕРЕЙ ПРИБЫЛИ ПРЕДПРИЯТИЯ, ВРЕМЕННЫМ ПРЕКРАЩЕНИЕМ ДЕЯТЕЛЬНОСТИ, УТРАТОЙ КОММЕРЧЕСКОЙ ИНФОРМАЦИИ, УТРАТОЙ ДАННЫХ ИЛИ ИНЫМИ ПОДОБНЫМИ УБЫТКАМИ В ДЕНЕЖНОЙ ФОРМЕ, СВЯЗАННЫМИ С ИСПОЛЬЗОВАНИЕМ ИЛИ НЕВОЗМОЖНОСТЬЮ ИСПОЛЬЗОВАТЬ ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ), ВНЕ ЗАВИСИМОСТИ ОТ ИХ ПРИЧИНЫ, В СООТВЕТСТВИИ С ПРИНЦИПАМИ ДОГОВОРНОГО ПРАВА, В СВЯЗИ С ГРАЖДАНСКИМ ПРАВОНАРУШЕНИЕМ ИЛИ НА ИНЫХ ОСНОВАНИЯХ, ДАЖЕ В ТОМ СЛУЧАЕ, ЕСЛИ КОМПАНИЯ KISHONTI БЫЛА УВЕДОМЛЕНА О ВОЗМОЖНОСТИ ВОЗНИКНОВЕНИЯ ТАКИХ УБЫТКОВ. В НЕКОТОРЫХ ЮРИСДИКЦИЯХ НЕ ДОПУСКАЕТСЯ ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ ЗА ЛИЧНЫЙ УЩЕРБ ИЛИ ЗА СЛУЧАЙНЫЙ И КОСВЕННЫЙ УЩЕРБ, И В ТАКИХ СЛУЧАЯХ ОГРАНИЧЕНИЕ ОТВЕТСТВЕННОСТИ БУДЕТ ПОДЛЕЖАТЬ ПРИМЕНЕНИЮ В ТОМ МАКСИМАЛЬНОМ ОБЪЕМЕ, В КОТОРОМ ОНО МОЖЕТ БЫТЬ ЮРИДИЧЕСКИ ДЕЙСТВИТЕЛЬНО В СООТВЕТСТВИИ С ПРИМЕНИМЫМ ЗАКОНОДАТЕЛЬСТВОМ.  Ни при каких обстоятельствах полная ответственность KISHONTI перед вами за все убытки (кроме предусмотренных применимыми законами в отношении травм) не может превышать 50,00 $ (пятьдесят долларов США). Вышеуказанные ограничения будут применяться, даже если указанное выше средство правовой защиты не соответствует его основной цели. 
+         
+        7. Соблюдение лицензии 
+        Вы соглашаетесь по просьбе компании KISHONTI или ее уполномоченного представителя в течение 30 (тридцати) дней предоставить документальное подтверждение того, что использование Программного обеспечения на момент запроса производится в соответствии с действующей лицензией компании KISHONTI. 
+         
+         
+        8. Действующее законодательство и юрисдикция 
+         
+        Настоящее Соглашение (включая, без ограничения, все споры, возникающие в связи с этим Соглашением, его нарушением, расторжением, действительностью или толкованием) регулируются и толкуются в соответствии с материальным правом, действующим в Венгрии. Несмотря на положения настоящего Соглашения, компания KISHONTI или вы можете обратиться в любой судебный, административный или иной орган власти и потребовать предоставления предварительных или охранительных мер, в том числе судебного запрета, реального исполнения или других справедливых средств правовой защиты, до возбуждения судопроизводства или во время производства по делу, чтобы защитить свои права и интересы или обеспечить соблюдение конкретных условий, которые подходят для предварительных мер. Для интерпретации или толкования настоящего Соглашения следует использовать английскую версию Соглашения. Настоящее Соглашение не будет регулироваться конфликтом правовых норм любой юрисдикции или Конвенцией Организации Объединенных Наций о договорах международной купли-продажи товаров, применение которой явно исключается. 
+         
+         
+        9. Прочие положения 
+         
+        (a) Настоящее Соглашение является полным соглашением между KISHONTI и вами относительно Программного обеспечения и замещает все предыдущие заявления, обсуждения, обязательства, сообщения или рекламу в отношении Программного обеспечения (за исключением применимости Политики конфиденциальности KISHONTI). 
+        (б) Если какое-либо положение настоящего Соглашения (в том числе любой раздел, статья, пункт, предложение или слова в нем) является или становится недействительным или неисполнимым, это не влияет на действительность и силу любого другого положения настоящего Соглашения, за исключением того, что в соответствии с характером или содержанием данного Соглашения или обстоятельствами, при которых это Соглашение было заключено, такое положение не может быть отделено от остальной части Соглашения. Тот же принцип применяется в случае любых ошибок или упущений в данном Соглашении, которые могут быть решены в пределах разумного. Для замены не имеющих законной силы положений или исправления ошибок или пропусков стороны должны провести переговоры и прийти к разумному и добросовестному соглашению в соответствии с основными принципами, изложенными в настоящем Соглашении, относительно соответствующей замены положения, которая должна быть максимально близка к тому, что подразумевалось в настоящем Соглашении, в максимальном объеме, разрешенном законодательством, если стороны знали об отсутствии законной силы, ошибке или пропуске соответственно. 
+        (в) Настоящее Соглашение не ущемляет законные права любой стороны, выступающей в качестве потребителя, если эти права в обязательном порядке применяются к условиям данного Соглашения.  
+        (г) Настоящее Соглашение может быть изменено только при наличии подписи уполномоченного должностного лица KISHONTI. Предоставляемые компанией KISHONTI Обновления могут сопровождаться дополнительными или другими условиями лицензии. 
+        (д) Вы соглашаетесь не экспортировать любую часть Программного обеспечения и любые данные, полученные в результате Использования Программного обеспечения или любого прямого продукта, кроме тех случаев, когда такой экспорт соответствует всем необходимым лицензиям и разрешениям в рамках применимых законов и правил в отношении экспорта. 
+         
+        KISHONTI Kft. [*] Сентябрь 2013 г. 
+        Все права защищены. Все права, не указанные явно в настоящем документе, защищены.</string>
+  <string name="PrivacyDialogBody"></string>
+</resources>

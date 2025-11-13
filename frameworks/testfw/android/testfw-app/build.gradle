@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.application' apply true
+    id 'com.android.library' apply false
+}
+
+task lintCheck() {
+    getAllTasks(true).each {
+        def lintTasks = it.value.findAll { it.name.contains("lint") }
+        lintTasks.each {
+            it.enabled = false
+        }
+    }
+}
+
+android {
+    signingConfigs {
+        release {
+                    logger.info("Use Debug Keys from {}", "./debug.jks")
+                    storeFile = file("./debug.jks")
+                    storePassword = "debug1"
+                    keyAlias = "debug1"
+                    keyPassword = "debug1"
+            }
+        }
+
+    lintOptions {
+        tasks.lint.enabled = false
+        abortOnError false
+    }
+
+    compileSdkVersion 35
+
+    defaultConfig {
+        targetSdkVersion 35
+    }
+
+    buildTypes {
+        release {
+            getIsDefault().set(true)
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation("commons-io:commons-io:2.11.0")
+
+    implementation project(':testfw')
+    implementation project(':platform-utils')
+
+    implementation 'com.android.support:support-v4:19.0.0'
+    implementation 'com.android.support:support-v13:19.0.0'
+}

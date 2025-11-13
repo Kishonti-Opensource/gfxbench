@@ -1,0 +1,289 @@
+[
+	{
+		"version": 1,
+		"test_id": "dx_5_high",
+		"title": "dx_5_high",
+		"group": "group_high_level",
+		"description": "dx_5_high_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 10, "minor" : 0}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_5_high", "name": "5_high", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_5_high_off",
+		"title": "dx_5_high_off",
+		"group": "group_high_level",
+		"description": "dx_5_high_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 10, "minor" : 0}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_5_high_off", "name": "5_high_off", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_5_normal",
+		"title": "dx_5_normal",
+		"group": "group_high_level",
+		"description": "dx_5_normal_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 10, "minor" : 0}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_5_normal", "name": "5_normal", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_5_normal_off",
+		"title": "dx_5_normal_off",
+		"group": "group_high_level",
+		"description": "dx_5_normal_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 10, "minor" : 0}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_5_normal_off", "name": "5_normal_off", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_manhattan",
+		"title": "dx_manhattan",
+		"group": "group_high_level",
+		"description": "dx_manhattan_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 10, "minor" : 0}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_manhattan", "name": "dx_manhattan", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_manhattan_off",
+		"title": "dx_manhattan_off",
+		"group": "group_high_level",
+		"description": "dx_manhattan_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 10, "minor" : 0}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_manhattan_off", "name": "dx_manhattan_off", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_trex",
+		"title": "dx_trex",
+		"group": "group_high_level",
+		"description": "dx_trex_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_trex", "name": "dx_trex", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_trex_off",
+		"title": "dx_trex_off",
+		"group": "group_high_level",
+		"description": "dx_trex_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 1,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_trex_off", "name": "dx_trex_off", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_alu",
+		"title": "dx_alu",
+		"group": "group_low_level",
+		"description": "dx_alu_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_alu", "name": "dx_alu", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_alu_off",
+		"title": "dx_alu_off",
+		"group": "group_low_level",
+		"description": "dx_alu_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_alu_off", "name": "dx_alu_off", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_blending",
+		"title": "dx_blending",
+		"group": "group_low_level",
+		"description": "dx_blending_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_blending", "name": "dx_blending", "metric": "MB/s"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_blending_off",
+		"title": "dx_blending_off",
+		"group": "group_low_level",
+		"description": "dx_blending_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_blending_off", "name": "dx_blending_off", "metric": "MB/s"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_driver",
+		"title": "dx_driver",
+		"group": "group_low_level",
+		"description": "dx_driver_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_driver", "name": "dx_driver", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_driver_off",
+		"title": "dx_driver_off",
+		"group": "group_low_level",
+		"description": "dx_driver_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_driver_off", "name": "dx_driver_off", "metric": "Frames"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_fill",
+		"title": "dx_fill",
+		"group": "group_low_level",
+		"description": "dx_fill_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_fill", "name": "dx_fill", "metric": "MTexel/s"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_fill_off",
+		"title": "dx_fill_off",
+		"group": "group_low_level",
+		"description": "dx_fill_off_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 0,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_fill_off", "name": "dx_fill_off", "metric": "MTexel/s"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_trex_qmatch",
+		"title": "dx_trex_qmatch",
+		"group": "group_special",
+		"description": "dx_trex_qmatch_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 2,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_trex_qmatch", "name": "dx_trex_qmatch", "metric": "mB PSNR"}
+		]
+	},
+	{
+		"version": 1,
+		"test_id": "dx_trex_qmatch_highp",
+		"title": "dx_trex_qmatch_highp",
+		"group": "group_special",
+		"description": "dx_trex_qmatch_highp_desc",
+		"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+		],
+		"run_order": 2,
+		"force_running_alone": false,
+		"results": [
+			{"result_id": "r_trex_qmatch_highp", "name": "dx_trex_qmatch_highp", "metric": "mB PSNR"}
+		]
+	},
+	{
+    	"version": 1,
+    	"test_id": "dx_trex_battery",
+    	"title": "dx_trex_battery",
+    	"group": "group_battery",
+    	"description": "dx_trex_battery_desc",
+    	"minimum_api": [
+			{"type": "DX", "major": 9, "minor" : 1}
+    	],
+    	"run_order": 3,
+    	"force_running_alone": true,
+		"results": [
+			{"result_id": "r_trex_battery_performance", "name":"dx_trex_battery_performance", "metric":"Frame"},
+			{"result_id": "r_trex_battery_lifetime", "name":"dx_trex_battery_lifetime", "metric":"min"},
+			{"result_id": "r_trex_battery_diagram", "name":"dx_trex_battery_diagram", "metric":"chart"}
+		]
+    }	
+]

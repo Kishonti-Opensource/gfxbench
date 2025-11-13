@@ -1,0 +1,13 @@
+color road_02_center_albedo.png 1.000000 1.000000 1 1 
+lightmap white.png 1.000000 1.000000 1 1 
+specular road_02_center_specular.png 1.000000 1.000000 1 1 
+normal road_02_center_kcl_normal.png 1.000000 1.000000 1 1 
+texture4 car_ao_mask.png 1.000000 1.000000 1 1 srgb
+texture5 black.png 1.000000 1.000000 1 1 
+texture6 black.png 1.000000 1.000000 1 1 
+texture7 black.png 1.000000 1.000000 1 1 
+texture8 black.png 1.000000 1.000000 1 1 
+texture9 black.png 1.000000 1.000000 1 1 
+texture10 black.png 1.000000 1.000000 1 1 
+texture11 black.png 1.000000 1.000000 1 1 
+texture12 black.png 1.000000 1.000000 1 1 

@@ -1,0 +1,25 @@
+{
+    "version": 1,
+    "tests": [
+        {
+            "test_name": "metal_41",
+            "group_name": "group_high_level",
+            "run_order": 1,
+            "variant_postfixes": [
+                ""
+            ],
+            "minimum_api": [
+                {
+					"type": "METAL",
+					"major": 1,
+					"minor": 0
+				}
+            ],
+            "requirements": [
+            ],
+            "results": [
+                {"result_postfix": "", "unit": "Frames"}
+            ]
+        }
+    ]
+}

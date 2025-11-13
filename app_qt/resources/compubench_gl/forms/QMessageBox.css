@@ -1,0 +1,51 @@
+QWidget
+{
+	background-color: #fff;
+	font-family: "Sans-serif";
+}
+
+QPushButton
+{
+	border: none;
+	color: #fff;
+	font-size: 14px;
+	width: 100px;
+	height: 32px;
+}
+
+QPushButton#acceptButton,#okButton
+{
+	background-color: #83b553;
+}
+
+QPushButton#acceptButton:hover,#okButton:hover
+{
+	background-color: #8cc158;
+}
+
+QPushButton#acceptButton:pressed,#okButton:pressed
+{
+	background-color: #7ba94e;
+}
+
+QPushButton#rejectButton
+{
+	background-color: #342f27;
+}
+
+QPushButton#rejectButton:hover
+{
+	background-color: #3b352c;
+}
+
+QPushButton#rejectButton:pressed
+{
+	background-color: #2e2922;
+}
+
+QLabel
+{
+	border: none;
+	color: #626262;
+	font-size: 14px;
+}

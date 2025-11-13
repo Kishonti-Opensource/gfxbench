@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "env": {
+        "graphics": {
+            "versions": [
+                {
+                    "type": "GL",
+                    "major": 2,
+                    "minor": 0
+                },
+                {
+                    "type": "ES",
+                    "major": 2,
+                    "minor": 0
+                }
+            ]
+        }
+    },
+    "test_id": "tfw_basic",
+    "factory_method": "tfw_basic",
+    "preload_libs": [ "tfw_tests" ],
+    "raw_config":
+    {
+        "init_steps": 30,
+        "init_step_time": 0.1,
+        "steps": 50,
+        "step_time": 0.2
+    }
+}

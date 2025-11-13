@@ -1,0 +1,4 @@
+color tank_color_2048.png 1.000000 1.000000 1 1
+normal tank_normal_4096.png 1.000000 1.000000 1 1
+mask tank_masks.png 1.000000 1.000000 1 1
+emission tank_color_glow.png 1.000000 1.000000 1 1

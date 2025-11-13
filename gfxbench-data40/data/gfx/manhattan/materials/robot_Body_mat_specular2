@@ -1,0 +1,5 @@
+color robot_body_color2.png 1.000000 1.000000 1 1
+normal robot_body_color2_2048_normal.png 1.000000 1.000000 1 1
+mask robot_body_masks.png 1.000000 1.000000 1 1
+emission robot_body_glow.png 1.000000 1.000000 1 1
+array anims/caustic

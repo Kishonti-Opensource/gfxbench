@@ -1,0 +1,71 @@
+_float3 fetchVelocity(texture2d<_float> velocity_texture, sampler tex_sampler, int index, _float2 tile_corner_uv)
+{
+    int2 coords;
+    coords.y = index / K;
+    coords.x = index - coords.y * K;
+    if (coords.x >= K || coords.y >= K)
+    {
+        return _float3(0.0);
+    }
+    
+    _float2 uv = _float2(coords) * STEP_UV + tile_corner_uv;
+    if (uv.x > 1.0 || uv.y > 1.0)
+    {
+        return _float3(0.0);
+    }
+    
+    //_float2 velocity = unpackVec2FFromVec4(texture(velocity_texture, uv));
+	uv.y = 1.0 - uv.y; // [AAPL] Y-FLIP
+    _float2 velocity = _float2(unpack_velocity(velocity_texture, tex_sampler, hfloat2(uv)));
+    return _float3(velocity, dot(velocity, velocity));
+}
+
+kernel void shader_main(uint2 group_id					[[threadgroup_position_in_grid]],
+						uint2 local_id					[[thread_position_in_threadgroup]],
+						uint2 global_id					[[thread_position_in_grid]],
+						uint2 thread_groups				[[threadgroups_per_grid]],
+						device hfloat2 * max_buffer		[[buffer(0)]],
+						texture2d<_float> texture_unit0	[[texture(0)]],
+						sampler sampler0				[[sampler(0)]])
+{
+	threadgroup _float3 samples[THREAD_COUNT];
+
+    _float3 max_velocity = _float3(0.0, 0.0, -1.0);
+
+    _float2 tile_corner_uv = _float2(group_id.xy) / _float2(thread_groups.xy);
+    
+    for (int i = 0; i < PASS_COUNT; i++)
+    {
+        samples[local_id.x].xyz = fetchVelocity(texture_unit0, sampler0, int(local_id.x) + i * THREAD_COUNT, tile_corner_uv);
+		threadgroup_barrier(mem_flags::mem_threadgroup);
+
+        // Parallel reduction
+        for(uint s = uint(THREAD_COUNT) / 2u; s > 0u; s >>= 1u)
+        {
+            if(local_id.x < s)
+            {
+                _float3 velocity = samples[local_id.x + s];
+                if (velocity.z > samples[local_id.x].z)
+                {
+                    samples[local_id.x] = velocity;
+                }
+            }
+			threadgroup_barrier(mem_flags::mem_threadgroup);
+        }
+
+        if (local_id.x == 0u)
+        {
+            if (samples[0].z > max_velocity.z)
+            {
+                max_velocity = samples[0];
+            }
+        }
+
+		threadgroup_barrier(mem_flags::mem_none);
+    }
+
+    if (local_id.x == 0u)
+    {
+        max_buffer[group_id.y * thread_groups.x + group_id.x] = hfloat2(max_velocity.xy);
+    }
+}

@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="AboutSectionTitle">Acerca de</string>
+  <string name="Accept">Aceptar</string>
+  <string name="AppVersionCorporate">Versión corporativa %s</string>
+  <string name="Back">Atr.</string>
+  <string name="BAD_VERSION">Está usando una versión antigua de GFXBench. Actualice la aplicación.</string>
+  <string name="BatteryBrightness100">Forzar 100%</string>
+  <string name="BatteryBrightness25">Forzar 25%</string>
+  <string name="BatteryBrightness50">Forzar 50%</string>
+  <string name="BatteryBrightness75">Forzar 75%</string>
+  <string name="BatteryBrightnessDefault">Predeterminado</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">Cargando</string>
+  <string name="BatteryPageTitle">Diagrama de batería</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">Conectada</string>
+  <string name="BatteryUnplugged">Desconectada</string>
+  <string name="BestResults">Mejores resultados</string>
+  <string name="Camera_Autofocus">Autoenfoque</string>
+  <string name="Camera_FaceDetection">Detección de rostro</string>
+  <string name="Camera_Flash">Flash</string>
+  <string name="Camera_GeoTagging">Geoetiquetado</string>
+  <string name="Camera_HDR">Foto HDR</string>
+  <string name="Camera_Picture">Imagen</string>
+  <string name="Camera_TouchFocus">Foco táctil</string>
+  <string name="Camera_Video">Video</string>
+  <string name="Cancel">Cancelar</string>
+  <string name="Cancelled">Cancelado</string>
+  <string name="Chipset">Conjunto de chips</string>
+  <string name="ClearAll">Borrar todo</string>
+  <string name="ClearHistoryDialogBody">Esto borrará los datos de resultados. ¿Desea continuar?</string>
+  <string name="ClearHistoryDialogTitle">Borrar historial</string>
+  <string name="Close">Cerrar</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">Conectando con el servidor.</string>
+  <string name="ContactUs">Contacto</string>
+  <string name="CorporateCommercialTitle">Acerca de las licencias</string>
+  <string name="CorporateFeatures">Funciones corporativas</string>
+  <string name="CPU">CPU</string>
+  <string name="Decline">Rechazar</string>
+  <string name="DeviceMayCrashDialogBody">Your device might not have enough memory to run this test. We recommend that you close all other applications and/or restart your device because it may crash due to low memory conditions otherwise.</string>
+  <string name="DeviceMayCrashDialogTitle">High memory consumption</string>
+  <string name="DownloadDatabaseEveryStartup">Descargar base de datos en cada inicio</string>
+  <string name="Email">Correo electrónico</string>
+  <string name="EMAIL_TAKEN">Está dirección de correo electrónico ya está en uso. Elija otra.</string>
+  <string name="EmailTakenDialogBody">Otro usuario ya está usando esta dirección de correo electrónico. Seleccione otra e inténtelo de nuevo.</string>
+  <string name="EmailTakenDialogTitle">El correo electrónico está en uso</string>
+  <string name="EnableExtraBattery">Habilitar batería extra</string>
+  <string name="Error">¡Error!</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">Detenido, brillo modificado</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">Detenido, cargador conectado</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">Creado con versión ES incompatible</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">Nivel de función DirectX no disponible</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">ES 3 no compatible</string>
+  <string name="ERROR_FILE_NOT_FOUND">Archivo no encontrado</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">Resolución de pantalla no válida</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">El dispositivo no admite desenfoque de movimiento con MSAA</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">El dispositivo no admite fuera de pantalla</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">El dispositivo no admite fuera de pantalla con MSAA</string>
+  <string name="ERROR_OUT_OF_MEMORY">Sin memoria</string>
+  <string name="ERROR_OUT_OF_VMEMORY">Sin memoria de video</string>
+  <string name="ERROR_SHADER_ERROR">Error de sombreador</string>
+  <string name="ERROR_SKIPPED">Omitido</string>
+  <string name="ERROR_UNDEFINED_ERROR">Error no definido</string>
+  <string name="ERROR_UNKNOWNERROR">Error desconocido</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">Formato de textura no compatible</string>
+  <string name="ERROR_VBO_ERROR">Error de VBO</string>
+  <string name="FeatureAccelerometer">Acelerómetro</string>
+  <string name="FeatureAltimeter">Altímetro</string>
+  <string name="FeatureBarometer">Barómetro</string>
+  <string name="FeatureBluetooth">Bluetooth</string>
+  <string name="FeatureCompass">Brújula</string>
+  <string name="FeatureCPUCoreCount">Núcleos</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">Giroscopio</string>
+  <string name="FeatureLevel">Nivel de funciones</string>
+  <string name="FeatureLightSensor">Sensor de luz</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">Proximidad</string>
+  <string name="FeatureSIMCount">Tarjetas SIM</string>
+  <string name="FeatureThermometer">Termómetro</string>
+  <string name="FeatureTouchscreenCapacitive">pantalla táctil capacitiva</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">pantalla táctil capacitiva con tecnología de gestos de al menos 5 dedos</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">pantalla táctil capacitiva con tecnología de gestos multitáctiles</string>
+  <string name="FeatureTouchscreenResistive">pantalla táctil resistiva</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">pantalla táctil resistiva con tecnología de gestos de al menos 5 dedos</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">pantalla táctil resistiva con tecnología de gestos multitáctiles</string>
+  <string name="FillTheForm">Rellene el siguiente formulario.</string>
+  <string name="FindOutMore">Más información</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">Síganos</string>
+  <string name="ForceDisplayBrightness">Forzar brillo de pantalla.</string>
+  <string name="ForgotPasswordSendToEmail">Enviarla a mi dirección de correo electrónico.</string>
+  <string name="ForgotPasswordSentToEmail">Le hemos enviado un correo electrónico. Siga las instrucciones para restablecer su contraseña.</string>
+  <string name="GPU">GPU</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">Pruebas de alto nivel</string>
+  <string name="group_high_level_desc">Escenas de juegos de gama alta para probar el rendimiento global de gráficos 3D del dispositivo. Los motores de las pruebas presentan efectos complejos para sobrecargar la GPU y proporcionar comentarios sobre el rendimiento de sus gráficos 3D durante los juegos u otras tareas con gran consumo de GPU (p. ej., representación de IU, navegación).</string>
+  <string name="group_low_level">Pruebas de bajo nivel</string>
+  <string name="group_special">Pruebas especiales</string>
+  <string name="Height">Alto</string>
+  <string name="INTERNAL_ERROR">Error de servidor. Vuelva más tarde.</string>
+  <string name="INVALID_CREDENTIALS">El nombre de inicio de sesión o contraseña son incorrectos. Escríbalos de nuevo.</string>
+  <string name="INVALID_EMAIL_ADDRESS">Dirección de correo electrónico no válida. Escríbala de nuevo.</string>
+  <string name="InvalidCredentialsBody">El nombre de inicio de sesión o contraseña son incorrectos. Escríbalos de nuevo.</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">La dirección indicada no es válida. Proporcione una válida e inténtelo de nuevo.</string>
+  <string name="InvalidEmailDialogTitle">Error de dirección de correo electrónico</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">Últimos resultados</string>
+  <string name="LicenseDialogTitle">Licencia general</string>
+  <string name="Lifetime">Duración</string>
+  <string name="Loading">Cargando...</string>
+  <string name="LoadingDeviceInfo">Recopilando información del dispositivo.</string>
+  <string name="LoadingDuelInfo">Recopilando información de duelo.</string>
+  <string name="LoadingNextTest">Cargando prueba siguiente...</string>
+  <string name="LoadingTest">Cargando %s...</string>
+  <string name="Login">Iniciar sesión</string>
+  <string name="LoginFailedDialogBody">El nombre de usuario y contraseña no coinciden. Escríbalos de nuevo.</string>
+  <string name="LoginFailedDialogTitle">Error de inicio de sesión</string>
+  <string name="LoginForgotPassword">¿Olvidó su contraseña?</string>
+  <string name="LoginTitle">Inicio de sesión</string>
+  <string name="Logout">Cerrar sesión</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="MISSING_PARAMETER">Escriba su nombre de inicio de sesión y contraseña.</string>
+  <string name="MissingParametersDialogBody">Falta uno o varios datos obligatorios. Complételos e inténtelo de nuevo.</string>
+  <string name="MissingParametersDialogTitle">Faltan parámetros</string>
+  <string name="More">Más</string>
+  <string name="NetRequirementDialogBody">GFXBench solo almacena y muestra resultados si tiene una conexión activa a Internet.</string>
+  <string name="NetRequirementDialogTitle">Información</string>
+  <string name="NETWORK_ERROR">Error de red. Inténtelo de nuevo más tarde.</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">No</string>
+  <string name="NoFreeSpaceDialogBody">El requisito mínimo de espacio disponible en la SDCard: %1$s MB</string>
+  <string name="NoFreeSpaceDialogTitle">Error</string>
+  <string name="NoInternetDialogBody">No se encontró conexión a Internet. Conéctese a una red e inténtelo de nuevo.</string>
+  <string name="NoInternetDialogTitle">No se encontró red</string>
+  <string name="NoServerDialogBody">Se produjo un error cuando GFXBench intentó conectarse a nuestro servidor. Inténtelo de nuevo más tarde.</string>
+  <string name="NoServerDialogTitle">No se encontró el servidor</string>
+  <string name="NoTestSelectedDialogBody">Seleccione al menos una prueba para ejecutar.</string>
+  <string name="NoTestSelectedDialogTitle">No hay pruebas seleccionadas</string>
+  <string name="NotRegisteredSectionBody">GFXBench siempre almacena los resultados de cada ejecución de pruebas. Si quiere acceder a su historial de resultados de pruebas y navegar por él, cree una cuenta de usuario.</string>
+  <string name="NotRegisteredSectionTitle">Información</string>
+  <string name="NotSupported">No compatible</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="Offscreen">Fuera de pantalla</string>
+  <string name="OffscreenHeight">Alto fuera de pantalla</string>
+  <string name="OffscreenWidth">Ancho fuera de pantalla</string>
+  <string name="OK">Aceptar</string>
+  <string name="Onscreen">En pantalla</string>
+  <string name="OperatingSystem">SO</string>
+  <string name="OperatingSystemFull">Sistema operativo</string>
+  <string name="OutdatedDialogBody">Su versión de GFXBench está obsoleta. Actualice la aplicación y reiníciela.</string>
+  <string name="OutdatedDialogTitle">Versión obsoleta</string>
+  <string name="Password">Contraseña</string>
+  <string name="PasswordMismatchDialogBody">La contraseña no coincide. Vuelva a escribir la contraseña.</string>
+  <string name="PasswordMismatchDialogTitle">Error de contraseña</string>
+  <string name="Performance">Rendimiento</string>
+  <string name="PrimaryScreenDialogBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenDialogTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">Salir</string>
+  <string name="ReadLicense">Leer CLUF</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Register">Registrarse</string>
+  <string name="RegisterEmail">Dirección de correo electrónico</string>
+  <string name="RegisterError">Acepte los términos de privacidad y regístrese ahora.</string>
+  <string name="RegisterErrorEmailNotOK">Elija otra dirección de correo electrónico.</string>
+  <string name="RegisterErrorLoginNotOK">Elija otro nombre de inicio de sesión.</string>
+  <string name="RegisterErrorNoEmail">Rellene el campo Dirección de correo electrónico.</string>
+  <string name="RegisterErrorNoFirstName">Rellene el campo Nombre.</string>
+  <string name="RegisterErrorNoLastName">Rellene el campo Apellidos.</string>
+  <string name="RegisterErrorNoLogin">Rellene el campo Nombre de inicio de sesión.</string>
+  <string name="RegisterErrorNoPassword">Rellene el campo Contraseña.</string>
+  <string name="RegisterErrorPasswordsNotMatching">Las contraseñas no coinciden. Escríbalas de nuevo.</string>
+  <string name="RegisterFirstName">Nombre</string>
+  <string name="RegisterLastName">Apellidos</string>
+  <string name="RegisterLogin">Elija un nombre de inicio de sesión</string>
+  <string name="RegisterPassword">Contraseña</string>
+  <string name="RegisterPasswordAgain">Escriba de nuevo su contraseña</string>
+  <string name="RegistrationFeedbackDialogBody">Se ha registrado correctamente. Le enviamos una notificación por correo electrónico a la dirección indicada.</string>
+  <string name="RegistrationFeedbackDialogTitle">Registro correcto</string>
+  <string name="RegistrationForm">Formulario de registro</string>
+  <string name="RememberMe">Recordarme</string>
+  <string name="Requirement">Requisito mínimo de API:</string>
+  <string name="ResetTutorials">Restablecer tutoriales</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">Historial de resultados</string>
+  <string name="Results_BatteryEstimatedTime">Batería: tiempo estimado</string>
+  <string name="Results_BatteryPerformance">Batería: rendimiento</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">N/D</string>
+  <string name="Results_NoBatteryResultYet">Sin resultado de batería aún.</string>
+  <string name="Results_NoResultsYet">Sin resultados aún.</string>
+  <string name="Results_RunningTime">Tiempo de ejecución</string>
+  <string name="Results_ShowBatteryDiagram">Mostrar diagrama de batería</string>
+  <string name="Retry">Reintentar</string>
+  <string name="SaveResultsExcel">Guardar resultados</string>
+  <string name="Score">Resultado</string>
+  <string name="Search">Buscar</string>
+  <string name="SelectAll">Seleccionar todo</string>
+  <string name="SelectTests">Selección de prueba</string>
+  <string name="ServerTimeoutDialogBody">GFXBench no pudo acceder a nuestros servidores. Vuelva más tarde.</string>
+  <string name="ServerTimeoutDialogTitle">Tiempo de espera de servidor agotado</string>
+  <string name="SetBatteryBrightness">Brillo de prueba de batería</string>
+  <string name="SetOffscrResolution">Resolución fuera de pantalla</string>
+  <string name="SetOnscrResolution">Resolución personalizada</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">Mostrar FPS</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">Está a punto de seleccionar una prueba de batería. Esto anulará la selección de las demás pruebas.  Para esta prueba, asegúrese de que el dispositivo está completamente cargado y desconéctelo.  Tenga en cuenta que el dispositivo se puede sobrecalentar durante las pruebas.</string>
+  <string name="StabilityTestTitle">Prueba de batería</string>
+  <string name="Start">Iniciar</string>
+  <string name="StartAll">Iniciar todo</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">Versión contextual no compatible</string>
+  <string name="STATUS_CANCELLED">Cancelado</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">No se puede crear prueba</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">Configuración no válida</string>
+  <string name="STATUS_NATIVEEXCEPTION">Error de prueba</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">Prueba no válida</string>
+  <string name="STATUS_UNKNOWNERR">Error desconocido</string>
+  <string name="StorageCheck">Determinig the storage for the huge datasets</string>
+  <string name="Supported">Compatible</string>
+  <string name="SwitchStateOff">Des.</string>
+  <string name="SwitchStateOn">Act.</string>
+  <string name="ShowString">Show</string>
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobil results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>
+  <string name="SyncErrorDialogBody">Se produjo el siguiente error durante la sincronización: %s</string>
+  <string name="SyncErrorDialogTitle">Error de sincronización</string>
+  <string name="Synchronization">Synchronizing...</string>
+  <string name="SyncLotDialogBody">GFXBench ahora sincronizará los datos de la aplicación con el servidor. Esto requiere descargar %s. ¿Lo autoriza?</string>
+  <string name="SyncLotDialogTitle">Sincronización de datos</string>
+  <string name="SyncronizingChecksum">Buscando cambios en archivos...</string>
+  <string name="SyncronizingLoadingString">Sincronizando archivos %1$s%% (%2$s / %3$s MB)</string>
+  <string name="TabCompare">Comparar</string>
+  <string name="TabDuel">Duelo</string>
+  <string name="TabGlInfo">Información de OpenGL</string>
+  <string name="TabHome">Inicio</string>
+  <string name="TabInfo">Información</string>
+  <string name="TabResults">Resultados</string>
+  <string name="TabSettings">Ajustes</string>
+  <string name="TestList">Lista de pruebas</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>  
+  <string name="TestSelection">Selección de prueba</string>
+  <string name="ThreeDAPI">API 3D</string>
+  <string name="UnkownErrorDialogBody">Error inesperado durante el registro. Inténtelo de nuevo más tarde.</string>
+  <string name="UnkownErrorDialogTitle">Error</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">Cargar resultados</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">Usuario</string>
+  <string name="USER_NAME_TAKEN">Este nombre de usuario ya existe. Elija otro.</string>
+  <string name="Username">Nombre de usuario</string>
+  <string name="UsernameTakenDialogBody">Otro usuario está usando este nombre de usuario. Seleccione otro e inténtelo de nuevo.</string>
+  <string name="UsernameTakenDialogTitle">El nombre de usuario ya existe</string>
+  <string name="Version">Versión %s</string>
+  <string name="WarningEULA">Lea el contrato de licencia para el usuario final.</string>
+  <string name="WarningNoInternet">No se encontró ninguna conexión a Internet. Conéctese a una red para ejecutar las pruebas.</string>
+  <string name="WarningOutdated">Está usando una aplicación obsoleta. Descargue la versión más reciente de GFXBench.</string>
+  <string name="WarningTestNotRunNoInternet">La prueba falló porque no se encontró ninguna conexión a Internet. Conéctese a una red para ejecutar las pruebas.</string>
+  <string name="WarningUnregistered">Registre una cuenta.</string>
+  <string name="Welcome">¡Bienvenido! Ha iniciado sesión como:</string>
+  <string name="Width">Ancho</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">Sí</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">Su dispositivo</string>
+  <string name="AboutSectionBody">GFXBench es un banco de pruebas de gráficos 3D para probar el rendimiento de los gráficos del dispositivo y comparar los resultados con otros dispositivos en todas las plataformas populares. GFXBench está desarrollado por Kishonti Ltd. Si le interesa lo que hacemos, visite nuestro sitio web en kishonti.net.</string>
+  <string name="CorporateCommercial">Tenga en cuenta que ahora usa la edición comunitaria de GFXBench. Para fines de desarrollo recomendamos la edición corporativa. Si necesita información sobre las licencias, póngase en contacto con nosotros en sales@kishonti.net.</string>
+  <string name="FollowUsSectionBody">GFXBench es un banco de pruebas de gráficos 3D entre plataformas para medir el rendimiento de un dispositivo y compararlo con otros dispositivos.</string>
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  
+  
+  <!-- System info -->
+  <string name="device">Dispositivo</string>
+  <string name="os">SO</string>
+  <string name="display">Pantalla</string>
+  <string name="cpu">CPU</string>
+  <string name="gpu">GPU</string>
+  <string name="memory">Memoria</string>
+  <string name="storage">Almacenamiento</string>
+  <string name="battery">Batería</string>
+  <string name="features">Funciones</string>
+  <string name="frontcamera">Cámara delantera</string>
+  <string name="backcamera">Cámara trasera</string>
+  
+  <!-- GFXBench GL -->
+  <string name="gl_blending">Mezcla alfa</string>
+  <string name="gl_blending_desc">Mide el rendimiento de la mezcla alfa del dispositivo representando cuádruplos alineados de pantalla semitransparentes con texturas de alta resolución sin comprimir. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">1080p Mezcla alfa Fuera de pantalla</string>
+  <string name="gl_blending_off_desc">Mide el rendimiento de la mezcla alfa del dispositivo representando cuádruplos alineados de pantalla semitransparentes con texturas de alta resolución sin comprimir. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_alu">ALU</string>
+  <string name="gl_alu_desc">Mide el rendimiento de cálculo del sombreador puro del dispositivo mediante un sombreador de fragmento complejo y la representación de un solo cuádruplo de pantalla completa. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">1080p ALU Fuera de pantalla</string>
+  <string name="gl_alu_off_desc">Mide el rendimiento de cálculo del sombreador puro del dispositivo mediante un sombreador de fragmento complejo y la representación de un solo cuádruplo de pantalla completa. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_alu2">ALU 2</string>
+  <string name="gl_alu2_off">1080p ALU 2 Fuera de pantalla</string>
+  <string name="gl_trex_battery_desc">Esta prueba combinada mide la duración de la batería del dispositivo y estabilidad de FPS en una escena de juegos ejecutando la misma prueba de alto nivel 30 veces. Registra FPS y carga de batería durante la prueba y los resultados se muestran en un gráfico de batería. La prueba produce dos resultados, uno es la duración estimada de la batería en minutos mientras que el otro es el número de cuadros representados por la ejecución de pruebas más lenta. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">Transparencia de controlador</string>
+  <string name="gl_driver_desc">Mide la transparencia de CPU del controlador de OpenGL representando un gran número de objetos simples uno por uno, cambiando el estado del dispositivo para cada elemento. La frecuencia de los cambios de estado refleja las aplicaciones del mundo real. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off">1080p Transparencia de controlador Fuera de pantalla</string>
+  <string name="gl_driver_off_desc">Mide la transparencia de CPU del controlador de OpenGL representando un gran número de objetos simples uno por uno, cambiando el estado del dispositivo para cada elemento. La frecuencia de los cambios de estado refleja las aplicaciones del mundo real. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_driver2">Transparencia de controlador 2</string>
+  <string name="gl_driver2_off">1080p Transparencia de controlador 2 Fuera de pantalla</string>
+  <string name="gl_fill">Relleno</string>
+  <string name="gl_fill_desc">Mide el rendimiento de textura del dispositivo representando cuatro capas de texturas comprimidas. Este es un escenario común en los juegos. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar el resultado con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">1080p Relleno Fuera de pantalla</string>
+  <string name="gl_fill_off_desc">Mide el rendimiento de textura del dispositivo representando cuatro capas de texturas comprimidas. Este es un escenario común en los juegos. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar el resultado con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: ES 2.0 / GL 3.0</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_off">1080p Texturing Fuera de pantalla</string>
+  <string name="gl_manhattan">Manhattan</string>
+  <string name="gl_manhattan31">Manhattan 3.1</string>
+  <string name="gl_manhattan31_off">1080p Manhattan 3.1 Fuera de pantalla</string>
+  <string name="gl_manhattan_off">1080p Manhattan Fuera de pantalla</string>
+  <string name="Test_Offscreen">%s Fuera de pantalla</string>
+  <string name="gl_trex">T-Rex</string>
+  <string name="gl_trex_battery">Prueba de batería</string>
+  <string name="gl_trex_battery_diagram">Prueba de batería - Diagrama</string>
+  <string name="gl_trex_battery_lifetime">Prueba de batería - tiempo estimado</string>
+  <string name="gl_trex_battery_performance">Prueba de batería - Rendimiento</string>
+  <string name="gl_trex_off">1080p T-Rex Fuera de pantalla</string>
+  <string name="gl_trex_qmatch">Calidad de representación</string>
+  <string name="gl_trex_qmatch_highp">Calidad de representación (alta precisión)</string>
+
+  <!-- GFXBench METAL -->
+
+  <string name="metal_blending">Mezcla alfa</string>
+  <string name="metal_blending_desc">Mide el rendimiento de la mezcla alfa del dispositivo representando cuádruplos alineados de pantalla semitransparentes con texturas de alta resolución sin comprimir. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_blending_off">1080p Mezcla alfa Fuera de pantalla</string>
+  <string name="metal_blending_off_desc">Mide el rendimiento de la mezcla alfa del dispositivo representando cuádruplos alineados de pantalla semitransparentes con texturas de alta resolución sin comprimir. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_diag">GL Diagnostics</string>
+  <string name="metal_alu">ALU</string>
+  <string name="metal_alu_desc">Mide el rendimiento de cálculo del sombreador puro del dispositivo mediante un sombreador de fragmento complejo y la representación de un solo cuádruplo de pantalla completa. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_alu_off">1080p ALU Fuera de pantalla</string>
+  <string name="metal_alu_off_desc">Mide el rendimiento de cálculo del sombreador puro del dispositivo mediante un sombreador de fragmento complejo y la representación de un solo cuádruplo de pantalla completa. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_off">1080p ALU 2 Fuera de pantalla</string>
+  <string name="metal_trex_battery_desc">Esta prueba combinada mide la duración de la batería del dispositivo y estabilidad de FPS en una escena de juegos ejecutando la misma prueba de alto nivel 30 veces. Registra FPS y carga de batería durante la prueba y los resultados se muestran en un gráfico de batería. La prueba produce dos resultados, uno es la duración estimada de la batería en minutos mientras que el otro es el número de cuadros representados por la ejecución de pruebas más lenta. API mínima requerida: Metal</string>
+  <string name="metal_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="metal_driver">Transparencia de controlador</string>
+  <string name="metal_driver_desc">Mide la transparencia de CPU del controlador de Metal representando un gran número de objetos simples uno por uno, cambiando el estado del dispositivo para cada elemento. La frecuencia de los cambios de estado refleja las aplicaciones del mundo real. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_driver_off">1080p Transparencia de controlador Fuera de pantalla</string>
+  <string name="metal_driver_off_desc">Mide la transparencia de CPU del controlador de Metal representando un gran número de objetos simples uno por uno, cambiando el estado del dispositivo para cada elemento. La frecuencia de los cambios de estado refleja las aplicaciones del mundo real. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_driver2">Transparencia de controlador 2</string>
+  <string name="metal_driver2_off">1080p Transparencia de controlador 2 Fuera de pantalla</string>
+  <string name="metal_fill">Relleno</string>
+  <string name="metal_fill_desc">Mide el rendimiento de textura del dispositivo representando cuatro capas de texturas comprimidas. Este es un escenario común en los juegos. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar el resultado con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_fill_off">1080p Relleno Fuera de pantalla</string>
+  <string name="metal_fill_off_desc">Mide el rendimiento de textura del dispositivo representando cuatro capas de texturas comprimidas. Este es un escenario común en los juegos. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar el resultado con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: Metal</string>
+  <string name="metal_fill2">Texturing</string>
+  <string name="metal_fill2_off">1080p Texturing Fuera de pantalla</string>
+  <string name="metal_manhattan">Manhattan</string>
+  <string name="metal_manhattan_off">1080p Manhattan Fuera de pantalla</string>
+  <string name="metal_manhattan31">Manhattan 3.1</string>
+  <string name="metal_manhattan31_off">1080p Manhattan 3.1 Fuera de pantalla</string>
+  <string name="Test_Offscreen">%s Fuera de pantalla</string>
+  <string name="metal_trex_qmatch_desc">Mide la fidelidad visual del dispositivo en una escena de juegos de gama alta. El resultado es la relación señal/ruido de cresta (PSNR) basado en el error cuadrático medio (MSE) comparado con una imagen de referencia representada previamente. API mínima requerida: Metal</string>
+  <string name="metal_trex_qmatch_highp_desc">Mide la fidelidad visual del dispositivo en una escena de juegos de gama alta. El resultado es la relación señal/ruido de cresta (PSNR) basado en el error cuadrático medio (MSE) comparado con una imagen de referencia representada previamente. API mínima requerida: Metal</string>
+  <string name="metal_trex">T-Rex</string>
+  <string name="metal_trex_battery">Prueba de batería</string>
+  <string name="metal_trex_battery_diagram">Prueba de batería - Diagrama</string>
+  <string name="metal_trex_battery_lifetime">Prueba de batería - tiempo estimado</string>
+  <string name="metal_trex_battery_performance">Prueba de batería - Rendimiento</string>
+  <string name="metal_trex_desc">Basada en Metal, la prueba T-Rex incluye texturas altamente detalladas, materiales, geometría compleja, partículas con texturas animadas y un efecto posprocesamiento: desenfoque de movimiento. La canalización de gráficos también presenta efectos, p. ej.: reflejo planar, resaltados especulares y sombras suaves. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos.  API mínima requerida: Metal</string>
+  <string name="metal_trex_off_desc">Basada en Metal, la prueba T-Rex incluye texturas altamente detalladas, materiales, geometría compleja, partículas con texturas animadas y un efecto posprocesamiento: desenfoque de movimiento. La canalización de gráficos también presenta efectos, p. ej.: reflejo planar, resaltados especulares y sombras suaves. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos.  API mínima requerida: Metal</string>
+  <string name="metal_trex_off">1080p T-Rex Fuera de pantalla</string>
+  <string name="metal_trex_qmatch">Calidad de representación</string>
+  <string name="metal_trex_qmatch_highp">Calidad de representación (alta precisión)</string>
+
+  <!-- GFXBench DX -->
+  <string name="dx_blending">Mezcla alfa</string>
+  <string name="dx_blending_desc">Mide el rendimiento de la mezcla alfa del dispositivo representando cuádruplos alineados de pantalla semitransparentes con texturas de alta resolución sin comprimir. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_blending_off">1080p Mezcla alfa Fuera de pantalla</string>
+  <string name="dx_blending_off_desc">Mide el rendimiento de la mezcla alfa del dispositivo representando cuádruplos alineados de pantalla semitransparentes con texturas de alta resolución sin comprimir. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_alu">ALU</string>
+  <string name="dx_alu_desc">Mide el rendimiento de cálculo del sombreador puro del dispositivo mediante un sombreador de fragmento complejo y la representación de un solo cuádruplo de pantalla completa. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_alu_off">1080p ALU Fuera de pantalla</string>
+  <string name="dx_alu_off_desc">Mide el rendimiento de cálculo del sombreador puro del dispositivo mediante un sombreador de fragmento complejo y la representación de un solo cuádruplo de pantalla completa. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc"></string>
+  <string name="dx_alu2_off">1080p ALU 2 Fuera de pantalla</string>
+  <string name="dx_trex_battery_desc">Esta prueba combinada mide la duración de la batería del dispositivo y estabilidad de FPS en una escena de juegos ejecutando la misma prueba de alto nivel 30 veces. Registra FPS y carga de batería durante la prueba y los resultados se muestran en un gráfico de batería. La prueba produce dos resultados, uno es la duración estimada de la batería en minutos mientras que el otro es el número de cuadros representados por la ejecución de pruebas más lenta. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">Transparencia de controlador</string>
+  <string name="dx_driver_desc">Mide la transparencia de CPU del controlador de DirectX representando un gran número de objetos simples uno por uno, cambiando el estado del dispositivo para cada elemento. La frecuencia de los cambios de estado refleja las aplicaciones del mundo real. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_driver_off">1080p Transparencia de controlador Fuera de pantalla</string>
+  <string name="dx_driver_off_desc">Mide la transparencia de CPU del controlador de DirectX representando un gran número de objetos simples uno por uno, cambiando el estado del dispositivo para cada elemento. La frecuencia de los cambios de estado refleja las aplicaciones del mundo real. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_driver2">Driver Overhead 2</string>
+  <string name="dx_driver2_desc"></string>
+  <string name="dx_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="dx_fill">Relleno</string>
+  <string name="dx_fill_desc">Mide el rendimiento de textura del dispositivo representando cuatro capas de texturas comprimidas. Este es un escenario común en los juegos. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar el resultado con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_fill_off">1080p Relleno Fuera de pantalla</string>
+  <string name="dx_fill_off_desc">Mide el rendimiento de textura del dispositivo representando cuatro capas de texturas comprimidas. Este es un escenario común en los juegos. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar el resultado con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_fill2">Fill 2</string>
+  <string name="dx_fill2_desc"></string>
+  <string name="dx_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="dx_manhattan">Manhattan</string>
+  <string name="dx_manhattan31">Manhattan</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in ES 3.1 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">1080p Manhattan Fuera de pantalla</string>
+  <string name="dx_manhattan_desc">Nuestra primera prueba que usa el DirectX 10.0 de capacidades del dispositivo. La escena de la prueba es un entorno de noche urbana con muchas luces que iluminan el paisaje. Utiliza representación diferida y destino de representación múltiple (MRT) para instanciación de geometría (cuatro accesorios de colores como texturas), iluminación difusa y especular, y además presenta efectos complejos como mapa de sombras en profundidad, efecto de ocultamiento, efectos de posprocesamiento (florecimiento, profundidad de campo), consulta de oclusión y compartimientos de luz volumétricos y animados. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos.  API mínima requerida: DirectX 10.0</string>
+  <string name="dx_manhattan_off">1080p Manhattan Fuera de pantalla</string>
+  <string name="dx_manhattan_off_desc">Nuestra primera prueba que usa el DirectX 10.0 de capacidades del dispositivo. La escena de la prueba es un entorno de noche urbana con muchas luces que iluminan el paisaje. Utiliza representación diferida y destino de representación múltiple (MRT) para instanciación de geometría (cuatro accesorios de colores como texturas), iluminación difusa y especular, y además presenta efectos complejos como mapa de sombras en profundidad, efecto de ocultamiento, efectos de posprocesamiento (florecimiento, profundidad de campo), consulta de oclusión y compartimientos de luz volumétricos y animados. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos.  API mínima requerida: DirectX 10.0</string>
+  <string name="Test_Offscreen">%s Fuera de pantalla</string>
+  <string name="dx_trex_qmatch_desc">Mide la fidelidad visual del dispositivo en una escena de juegos de gama alta. El resultado es la relación señal/ruido de cresta (PSNR) basado en el error cuadrático medio (MSE) comparado con una imagen de referencia representada previamente. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp_desc">Mide la fidelidad visual del dispositivo en una escena de juegos de gama alta. El resultado es la relación señal/ruido de cresta (PSNR) basado en el error cuadrático medio (MSE) comparado con una imagen de referencia representada previamente. API mínima requerida: DirectX 9.1</string>
+  <string name="dx_trex">T-Rex</string>
+  <string name="dx_trex_battery">Prueba de batería</string>
+  <string name="dx_trex_battery_diagram">Prueba de batería - Diagrama</string>
+  <string name="dx_trex_battery_lifetime">Prueba de batería - tiempo estimado</string>
+  <string name="dx_trex_battery_performance">Prueba de batería - Rendimiento</string>
+  <string name="dx_trex_desc">Basada en DirectX 9.1, la prueba T-Rex incluye texturas altamente detalladas, materiales, geometría compleja, partículas con texturas animadas y un efecto posprocesamiento: desenfoque de movimiento. La canalización de gráficos también presenta efectos, p. ej.: reflejo planar, resaltados especulares y sombras suaves. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos.  API mínima requerida: DirectX 9.1</string>
+  <string name="dx_trex_off_desc">Basada en DirectX 9.1, la prueba T-Rex incluye texturas altamente detalladas, materiales, geometría compleja, partículas con texturas animadas y un efecto posprocesamiento: desenfoque de movimiento. La canalización de gráficos también presenta efectos, p. ej.: reflejo planar, resaltados especulares y sombras suaves. Para ver cómo se desempeña el dispositivo en su resolución nativa, ejecute la prueba En pantalla. Para comparar los resultados con los de otros dispositivos, use la versión Fuera de pantalla que se ejecuta a 1080p en todos los dispositivos.  API mínima requerida: DirectX 9.1</string>
+  <string name="dx_trex_off">1080p T-Rex Fuera de pantalla</string>
+  <string name="dx_trex_qmatch">Calidad de representación</string>
+  <string name="dx_trex_qmatch_highp">Calidad de representación (alta precisión)</string>
+  
+  <string name="LicenseDialogBody">CONTRATO DE LICENCIA PARA EL USUARIO FINAL
+        PARA LOS PRODUCTOS DE SOFTWARE DE PRUEBAS COMPARATIVAS DE KISHONTI KFT.
+         
+         
+        AVISO IMPORTANTE - LEER DETENIDAMENTE: ESTE CONTRATO DE LICENCIA PARA EL USUARIO FINAL DEL SOFTWARE ES UN ACUERDO LEGALMENTE VINCULANTE ENTRE USTED Y KISHONTI KFT PARA LOS PRODUCTOS DE SOFTWARE DE PRUEBAS COMPARATIVAS DE RENDIMIENTO DE KISHONTI. NO DESCARGUE, COPIE, INSTALE NI UTILICE EL SOFTWARE SUMINISTRADO JUNTO A ESTE CLUF HASTA QUE HAYA LEÍDO DETENIDAMENTE LOS SIGUIENTES TÉRMINOS Y CONDICIONES. CUALQUIER REPRODUCCIÓN, REDISTRIBUCIÓN U OTRO USO DEL SOFTWARE O DE CUALQUIERA DE SUS COMPONENTES QUE NO SE HAGA DE ACUERDO CON ESTE CLUF QUEDA TERMINANTEMENTE PROHIBIDO POR LA LEY Y PUEDE ACARREAR GRAVES CONDENAS CIVILES Y PENALES Y OTRAS CONSECUENCIAS. 
+         
+        LICENCIA PARA USO PRIVADO Y NO COMERCIAL ÚNICAMENTE: ESTE SOFTWARE TIENE LICENCIA PARA EL USO PERSONAL Y NO COMERCIAL DE UN CONSUMIDOR PARA PROBAR EL RENDIMIENTO DE SU DISPOSITIVO, EN TANTO CONSUMIDOR QUE REALIZA UNA ACTIVIDAD PERSONAL Y NO COMERCIAL. NO SE OTORGARÁ NI PRESUMIRÁ LICENCIA ALGUNA PARA NINGÚN OTRO USO. 
+        SI NECESITA UNA LICENCIA PARA EL USO COMERCIAL DEL SOFTWARE, PÓNGASE EN CONTACTO CON KISHONTI KFT EN SALES@KISHONTI.NET. 
+         
+         
+        1. Definiciones
+         
+        "Dispositivo" se refiere a un dispositivo electrónico que cumple con los requisitos del sistema del Software tal como se especifica en la documentación del Software y que es capaz de conectarse a Internet. 
+        "CLUF" se refiere a este contrato de licencia para el usuario final del software. 
+        "KISHONTI" se refiere a KISHONTI Kft., que es una sociedad de responsabilidad limitada organizada bajo la legislación húngara con domicilio social en 1037 Budapest, Szepvolgyi ut 39., Hungría, registrada bajo el N.° Cg. 01-09-935577 por el Tribunal Metropolitano de Budapest como Tribunal de Registro. 
+        "Funciones deshabilitadas" se refiere a las funciones o características que están ocultas o que aparecen deshabilitadas o "en gris". El Software puede contener Funciones deshabilitadas que se activarán solo cuando se usen versiones del software disponibles únicamente en KISHONTI contra pago de derechos de licencia. 
+        "Software" se refiere al software de banco de pruebas comparativas de rendimiento disponible en línea (a través de una conexión a Internet) en el sitio web de KISHONTI en virtud de este CLUF, incluido (a) todo el contenido de los archivos, que pueden incluir software o información informática de KISHONTI o de un tercero, materiales escritos explicativos relacionados o archivos y fuentes; y (b) actualizaciones, versiones modificadas, mejoras, adiciones y copias de lo anterior, proporcionadas por KISHONTI en cualquier momento (colectivamente, "Actualizaciones"). 
+        "Uso" significa acceder, descargar, instalar, ejecutar, probar Dispositivos con el beneficio de usar la funcionalidad del Software. 
+         
+         
+        2. Alcance de la licencia
+         
+        Esta licencia gratuita que KISHONTI le concede para el Software está limitada a una licencia no transferible para usar el Software en cualquier Dispositivo que usted posea o controle. KISHONTI puede interrumpir (terminar) la licencia y la disponibilidad del Software en cualquier momento según lo establecido en este CLUF. 
+         
+        Sus derechos y obligaciones con respecto al Uso del Software o de cualquiera de sus componentes son los siguientes: 
+         
+        (i) Usted puede: 
+        (a) Descargar, instalar y usar el Software de manera gratuita. El Uso del Software requiere una conexión a Internet;
+        (b) Utilizar una copia del Software o cualquiera de sus componentes y todas las Actualizaciones en cada uno de sus Dispositivos para su uso personal durante cualquier período hasta que el Software esté disponible en línea en el sitio de KISHONTI (según su criterio) o hasta que KISHONTI termine este CLUF;
+        (c) Utilizar el Software solo con fines personales. El Software y los resultados de las pruebas o cualquier otro dato generado mediante el Uso del Software no pueden usarse con fines comerciales (lo que incluye, entre otros, el uso por parte de organizaciones gubernamentales y sin ánimo de lucro). 
+         
+        (ii) Usted no puede: 
+        (a) Utilizar, copiar, adaptar, modificar o transferir copias del Software (ni autorizar a ninguna persona para hacerlo) excepto cuando se indique expresamente en el presente CLUF;
+        (b) Instalar o utilizar el Software en un servidor de archivos informáticos;
+        (c) Eliminar cualquier etiqueta o aviso de propiedad del Software; 
+        (d) Aplicar ingeniería inversa, volver a configurar, modificar, traducir, descompilar, desensamblar o hacer obras derivadas del Software (salvo en la medida en que dicha actividad esté expresamente permitida por cualquier ley aplicable a pesar de esta limitación);
+        (e) Vender, distribuir, alquilar, arrendar, sublicenciar, transferir o asignar el Software ni ninguna copia de este, incluidos todos los documentos relacionados;
+        (f) Extraer partes de los elementos del Software;
+        (g) Integrar el uso del Software con cualquier otro software, complemento o mejora;
+        (h) Hacer ningún intento para descubrir el código fuente del Software, determinar o intentar determinar el código fuente a partir del Software o crear ningún trabajo derivado basado en los Productos (excepto y solo en la medida en que dicha actividad esté expresamente permitida por cualquier ley aplicable a pesar de esta limitación);
+        (i) Acceder o intentar acceder a cualquier Función deshabilitada, basarse en el Software para crear ninguna función sustancialmente similar a una Función deshabilitada, o bien burlar la tecnología que controla la activación de dichas Funciones deshabilitadas. 
+         
+        3. Derechos de la propiedad intelectual y derechos reservados. 
+         
+        El Software y cualquier copia autorizada que usted haga son propiedad intelectual de KISHONTI (y sus proveedores, según proceda). La estructura, la organización y el código del Software son propiedad intelectual valiosa (p. ej., secretos comerciales e información confidencial) de KISHONTI (y sus proveedores, según proceda). El Software está protegido por la ley, incluidas, aunque sin limitación, las leyes de derechos de autor de Hungría, los Estados Unidos y otros países, además de las disposiciones de tratados internacionales. A menos que se indique expresamente lo contrario en el presente, este CLUF no le concede ningún derecho de propiedad intelectual sobre el Software, y todos los derechos no otorgados en forma expresa están reservados para KISHONTI (y sus proveedores, según proceda). 
+        Tal como se describe en este CLUF, los resultados de las pruebas creadas a través del Uso que hace del Software también se volverán propiedad de KISHONTI cuando se carguen a los servidores de KISHONTI. 
+         
+         
+        4. Conectividad. Carga y presentación de los resultados de las pruebas
+         
+        (a) Se requiere una conexión a Internet
+        Usted reconoce y acepta que el Software solo se puede usar cuando el Dispositivo esté conectado a Internet (a los servidores de procesamiento de datos de pruebas comparativas de KISHONTI). 
+         
+        (b) Carga y presentación de los resultados de las pruebas
+        Usted reconoce y acepta que cuando usa el Software, los resultados de las pruebas generadas por dicho Uso se cargarán automáticamente y sin previo aviso a los servidores de KISHONTI. También reconoce y acepta que los resultados cargados se volverán propiedad de KISHONTI. Los resultados de las pruebas se mostrarán en el sitio web de KISHONTI, a su exclusivo criterio, y KISHONTI puede mostrar, eliminar o reubicar los resultados de las pruebas sin dar previo aviso o razón. 
+         
+        (c) Actualización
+        Si el Dispositivo está conectado a Internet, el Software puede, sin un aviso adicional, buscar Actualizaciones que estén disponibles para su descarga e instalación automática en el Dispositivo, así como informar a KISHONTI de que el Software se ha instalado correctamente. Las actualizaciones pueden descargarse e instalarse automáticamente sin un aviso adicional. Cuando esto sucede solo se transmite a KISHONTI información que no es de carácter personal, salvo en la medida en que las direcciones IP puedan considerarse de carácter personal en algunas jurisdicciones. El uso de dicha información, incluida la dirección IP, facilitada por el proceso de actualización automática se rige por la Política de Privacidad de KISHONTI (la cual puede leer en www.kishonti.net). Además, si el Dispositivo está conectado a Internet, el Software puede, sin ningún aviso adicional y de forma intermitente o periódica, facilitar el acceso al contenido y los servicios que se hospedan en los sitios web mantenidos por KISHONTI. Cuando el Software se conecta a Internet, la dirección IP, el nombre de usuario y la contraseña pueden enviarse a los servidores de KISHONTI y almacenarse en ellos. KISHONTI puede usar estar información para enviarle mensajes de transacciones con el fin de facilitar el Uso y/o la funcionalidad del Software. KISHONTI puede exhibir marketing de producto para proporcionar información sobre el Software y otros productos y servicios de KISHONTI. Cada vez que el Software establezca una conexión a Internet y se comunique con el sitio web de KISHONTI, ya sea de forma automática o por petición expresa del usuario, se aplicará la Política de Privacidad de KISHONTI. 
+         
+         
+        5. Interrupción del uso del Software
+         
+        KISHONTI se reserva el derecho a modificar o actualizar el Software o a modificar o eliminar cualquier parte, elemento y función del Software en cualquier momento y sin dar previo aviso o razón. 
+         
+        KISHONTI se reserva el derecho a interrumpir (terminar) la disponibilidad, accesibilidad o uso del Software (o cualquier versión anterior del Software) o cualquier parte, elemento o función del Software en cualquier momento sin dar previo aviso o razón. 
+         
+        Su licencia para usar el Software está vigente hasta que usted o KISHONTI la den por terminada. Puede dar por terminada la licencia desinstalando (eliminando por completo) todas las copias del Software de su Dispositivo. Los derechos que adquiere gracias a esta licencia quedarán rescindidos automáticamente sin previo aviso de KISHONTI si usted incumple con alguno de los términos de esta licencia. A la terminación de la licencia, deberá dejar de utilizar el Software y destruir todas las copias, totales o parciales, del Software. La terminación de la licencia (la interrupción de la disponibilidad del Software) no afectará a los derechos de propiedad de KISHONTI sobre los resultados de las pruebas cargados en su servidor. 
+         
+         
+        6. No hay garantías ni responsabilidad
+         
+        USTED ACEPTA Y RECONOCE EXPRESAMENTE QUE EL USO DEL SOFTWARE (O LA INCAPACIDAD DE USARLO) SE REALIZA BAJO SU PROPIO RIESGO Y QUE EL RIESGO COMPLETO EN RELACIÓN CON LA CALIDAD SATISFACTORIA, EL RENDIMIENTO, LA PRECISIÓN Y EL ESFUERZO ES DE IGUAL MANERA SUYO. HASTA DONDE LO PERMITA LA LEGISLACIÓN APLICABLE, EL SOFTWARE Y LOS SERVICIOS REALIZADOS O PROPORCIONADOS POR KISHONTI SE PROPORCIONAN "TAL CUAL" Y "SEGÚN ESTÉN DISPONIBLES", CON TODOS LOS ERRORES QUE PUEDAN CONTENER Y SIN GARANTÍA DE NINGÚN TIPO. POR TANTO, KISHONTI NIEGA TODA GARANTÍA Y CONDICIÓN CON RESPECTO AL SOFTWARE Y CUALQUIER SERVICIO, YA SEA EXPLÍCITA, IMPLÍCITA O JURADA, INCLUIDAS SIN LIMITACIÓN LAS GARANTÍAS Y/O CONDICIONES IMPLÍCITAS DE COMERCIABILIDAD, DE CALIDAD SATISFACTORIA, DE UTILIDAD PARA UN FIN CONCRETO, DE PRECISIÓN, DE GOZO RESERVADO Y NO INFRACCIÓN DE LOS DERECHOS DE TERCEROS. KISHONTI NO OFRECE GARANTÍA SOBRE LA INTERFERENCIA CON SU DISFRUTE DEL SOFTWARE, QUE LAS FUNCIONES CONTENIDAS EN EL SOFTWARE, O LOS SERVICIOS PROPORCIONADOS POR EL MISMO, SE ADECUARÁN A SUS NECESIDADES, QUE EL FUNCIONAMIENTO DEL SOFTWARE O LOS SERVICIOS SERÁ ININTERRUMPIDO O LIBRE DE ERRORES, O QUE SE CORREGIRÁN LOS DEFECTOS EN EL SOFTWARE O SERVICIOS. NINGUNA INFORMACIÓN O CONSEJO ORAL O ESCRITO POR PARTE DE KISHONTI O SU REPRESENTANTE AUTORIZADO SE CONSIDERARÁ COMO UNA GARANTÍA. EN CASO DE QUE EL SOFTWARE O LOS SERVICIOS RESULTASEN DEFECTUOSOS, USTED ASUMIRÁ EL COSTO TOTAL DE MANTENIMIENTO, REPARACIÓN O CORRECCIÓN NECESARIOS. ALGUNAS JURISDICCIONES NO PERMITEN LA EXCLUSIÓN DE GARANTÍAS IMPLÍCITAS O LIMITACIONES DE LOS DERECHOS LEGALES APLICABLES DE UN CONSUMIDOR; EN DICHO CASO SE APLICARÁ EL LÍMITE MÁXIMO (EL NIVEL DE GARANTÍA QUE REPRESENTA EL NIVEL MÁS BAJO (MÍNIMO) DE EXPOSICIÓN A KISHONTI) PERMITIDO POR LA LEGISLACIÓN APLICABLE. 
+         
+        EN LA MEDIDA EN QUE NO ESTÉ PROHIBIDO POR LA LEY, BAJO NINGUNA CIRCUNSTANCIA KISHONTI SERÁ RESPONSABLE DE DAÑO PERSONAL, A LA PROPIEDAD O ECONÓMICO, DAÑO O PÉRDIDA EN RELACIÓN CON EL USO INADECUADO DEL SOFTWARE O DEL DISPOSITIVO EN EL QUE SE USA EL SOFTWARE, INCLUIDOS, ENTRE OTROS, DAÑOS O PÉRDIDAS COMO RESULTADO DEL SOBRECALENTAMIENTO DEL DISPOSITIVO POR CUALQUIER MOTIVO. USTED ASUME DE FORMA EXPRESA EL RIESGO DE TODOS LOS DAÑOS PERSONALES, ECONÓMICOS O A LA PROPIEDAD QUE SEAN RESULTADO O ESTÉN RELACIONADOS CON EL USO DEL SOFTWARE. EN LA MEDIDA EN QUE NO ESTÉ PROHIBIDO POR LA LEY, BAJO NINGUNA CIRCUNSTANCIA KISHONTI SERÁ RESPONSABLE DE DAÑOS, PERJUICIOS O PÉRDIDAS PERSONALES, ECONÓMICAS O A LA PROPIEDAD, O NINGÚN DAÑO INCIDENTAL, ESPECIAL, INDIRECTO O CONSECUENTE DE NINGÚN TIPO, INCLUIDOS, ENTRE OTROS, DAÑOS POR PÉRDIDA DE BENEFICIOS, PÉRDIDA DE DATOS, INTERRUPCIÓN DE LA ACTIVIDAD COMERCIAL, PÉRDIDA DE LA ACTIVIDAD COMERCIAL, PÉRDIDA DE AHORROS O CUALQUIER OTRO DAÑO O PÉRDIDA COMERCIAL O NO COMERCIAL, QUE SURJA O ESTÉ RELACIONADO CON EL USO O LA INCAPACIDAD DE USAR EL SOFTWARE, SIN IMPORTAR LA CAUSA, INDEPENDIENTEMENTE DE LA TEORÍA DE RESPONSABILIDAD (CONTRATO, AGRAVIO Y OTRO) Y AUN CUANDO SE HUBIERA ADVERTIDO A KISHONTI DE LA POSIBILIDAD DE TALES DAÑOS. ALGUNAS JURISDICCIONES NO PERMITEN LA LIMITACIÓN DE LA RESPONSABILIDAD POR LESIONES PERSONALES, O POR DAÑOS ACCIDENTALES O EMERGENTES; EN DICHOS CASOS SE APLICARÁ EL LÍMITE MÁXIMO (EL NIVEL DE RESPONSABILIDAD QUE REPRESENTA EL NIVEL MÁS BAJO (MÍNIMO) DE EXPOSICIÓN A KISHONTI) PERMITIDO POR LA LEGISLACIÓN APLICABLE.  Bajo ninguna circunstancia la responsabilidad absoluta de KISHONTI ante usted por los daños (excepto en el caso que lo disponga una ley aplicable en los casos en los que hay una lesión personal) superará la cantidad de 50,00 $ (cincuenta dólares). Las limitaciones anteriores se aplicarán incluso en aquellos casos en los que la antedicha garantía falte a su propósito fundamental. 
+         
+        7. Cumplimiento de la licencia
+        Usted acepta presentar, si KISHONTI o un representante autorizado de KISHONTI lo solicita, en un plazo de 30 (treinta) días, toda la documentación que certifique el uso del Software en el momento de dicha solicitud conforme a sus licencias válidas de KISHONTI. 
+         
+         
+        8. Legislación aplicable y jurisdicción
+         
+        Este CLUF (incluidas, aunque sin limitación, todas las controversias resultantes de o en relación con este CLUF, su incumplimiento, terminación, validez o interpretación) se regirán e interpretarán de acuerdo con la legislación sustancial vigente en Hungría. No obstante cualquier disposición contraria en este CLUF, KISHONTI o usted pueden solicitar a cualquier autoridad judicial, administrativa o de otro tipo que dicte medidas provisionales o precautorias, incluido desagravio judicial, cumplimiento específico o cualquier otro tipo de desagravio equitativo, como paso previo a la incoación de acciones judiciales, o durante las acciones, para salvaguardar sus derechos e intereses o para aplicar términos específicos que son adecuados para los remedios provisionales. Cuando se interprete este CLUF se usará su versión en inglés. Este CLUF no se regirá por el conflicto de las reglas de la ley de ninguna jurisdicción o por la Convención de las Naciones Unidas sobre Contratos para la Venta Internacional de Bienes, cuya aplicación se excluye expresamente. 
+         
+         
+        9. Disposiciones diversas
+         
+        (a) Este CLUF es el acuerdo integral entre KISHONTI y usted en relación con el Software y anula cualquier representación, discusión, emprendimiento, comunicación o publicidad anterior relacionada con el Software (excepto por lo que se refiere a la aplicación de la Política de Privacidad de KISHONTI). 
+        (b) Si cualquier disposición de este CLUF (incluida cualquier sección, cláusula, párrafo, oración o palabra contenida en él) es o se vuelve inválida o inejecutable, no afectará a la validez y el cumplimiento de ninguna otra disposición de este CLUF, con la salvedad de que debe ser aparente según la naturaleza o el contenido de este CLUF o las circunstancias bajo las cuales dicha disposición pudiera considerarse eliminada del resto de este CLUF. Lo mismo vale en caso de que hubiera cualquier error u omisión en este CLUF, lo que puede resolverse dentro de los límites de lo razonable. En lugar de las disposiciones legalmente inaplicables, o para corregir cualquier error u omisión, las partes negociarán y acordarán razonablemente y de buena fe, de acuerdo con los principios básicos establecidos en este CLUF, sobre una disposición sustituta adecuada que, en la medida de lo jurídicamente posible, se acerque más a la intención comercial que tiene, o podría tener, este CLUF de haber sabido de la no aplicabilidad jurídica, el error o la omisión (según el caso). 
+        (c) Este CLUF no perjudicará los derechos estatutarios de ninguna parte que actúe como consumidor si dichos derechos son obligatoriamente aplicables para este CLUF.  
+        (d) Este CLUF solo puede modificarse previa autorización escrita de un delegado autorizado de KISHONTI. KISHONTI puede otorgarle licencias de las actualizaciones con términos distintos o adicionales. 
+        (e) Usted acepta no exportar desde cualquier parte alguna del Software o cualquier dato generado gracias al uso del Software o de cualquier producto directo a menos que cumpla y cuente con todas las licencias y aprobaciones necesarias bajo las leyes y normativas de exportación aplicables. 
+         
+        KISHONTI Kft. [*] Septiembre de 2013 
+        Todos los derechos reservados. Cualquier derecho que no se encuentre expresamente cedido en el presente queda reservado.</string>
+  <string name="PrivacyDialogBody"></string>
+</resources>

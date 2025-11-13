@@ -1,0 +1,4 @@
+color siren_color_red.png 1.000000 1.000000 1 1
+normal normal_base.png 1.000000 1.000000 1 1
+mask siren_masks.png 1.000000 1.000000 1 1
+emission siren_glow.png 1.000000 1.000000 1 1

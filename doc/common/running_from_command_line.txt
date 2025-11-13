@@ -1,0 +1,333 @@
+# Command Line Arguments
+
+## Table Of Contents
+
+1. [General Arguments](#general_arguments)
+2. [Override Test Configuration Values](#override_test_configuration_values)
+3. [Available test ids](#available_test_ids)
+4. [Desktop specific arguments](#desktop_specific_arguments)
+5. [Android specific](#android_specific)
+6. [iOS specific](#ios_specific)
+
+##<a name="general_arguments"></a> General Arguments
+
+The next arguments handled by the host application
+
+    -w <integer>                        Screen width
+
+    -h <integer>                        Screen height
+
+    -b <path>                           Set the base path (that containing both "config", "data" and "plugins" subfolders)
+
+    -t <testid1>                        List of test ids
+                                        The test list can be found under <TFW_PACKAGE_DIR>/config folder.
+                                        e.g.: -t gl_alu2 -t gl_fill2
+
+    --help                              Print help
+
+    --fullscreen <boolean>              Only works on Windows platform
+
+    --gfx <type>                        Select render API context
+                                            glfw           - Use GLFW (create desktop GL context.  This command can be combined with --gl_api)
+                                            egl            - EGL Android
+                                            eglpb          - EGL Android Pixel Buffer
+                                            eglfbdev       - Works on Mali Linux dev. board
+                                            wgl            - Windows API
+                                            dx11           - DirectX 11
+                                            dx12           - DirectX 12 To support you need GFXBench with VS2015
+                                            vulkan         - Vulkan
+                                            wayland_vulkan - Vulkan
+                                            xcb_vulkan     - Vulkan
+                                            null           - Context and Window creating are passed
+
+    --gl_api <API>                      Select the context type
+                                            desktop_core        - desktop core profile OpenGL
+                                            desktop_compat      - desktop compatible profile OpenGL
+                                            gles                - desktop OpenGL ES
+                                        The default value is desktop_core.
+
+##<a name="override_test_configuration_values"></a> Override Test Configuration Values
+
+All time values must be given in milliseconds.  
+Boolean values must be 0 or 1.  
+To override test specific parameters you have to use a prefix before each command:
+
+    --ei <integer value>                override the test's configuration integer values
+
+    --ez <boolean value>                override the test's configuration boolean values
+
+    --es <string value>                 override the test's configuration string values
+
+    --ef <float value>                  override the test's configuration float values
+
+### Test arguments
+
+    -brightness <float>                     Set display brightness for battery test
+
+    -endless <boolean>                      Looping mode (never quits if true)
+                                            You can combine with endless by the following form:
+                                            --ez raw_config.endless true
+
+    -fps_limit <float>                      Limit the maximum rendered frames per seconds 
+
+    -frame_step_time <integer>              Set the duration time between frames  
+                                            e.g.: 62 second the test length and set the frame_step_time to 40msec
+                                            then the rendered frame number is 1550 frames
+
+    -fsaa <integer>                         Number of samples
+
+    -max_rendered_frames <integer>          Set how many frames can be rendered before finish the test  
+    
+    -play_time <integer>                    Set the test length
+    
+    -screenmode <integer>                   Set rendering mode
+                                            0: for onscreen
+                                            1: for offscreen
+    
+    -single_frame <integer>                 Animate and render at the specified time
+    
+    -start_animation_time <integer>         Set the test's start time
+    
+    -test_width <integer>                   Set the width of the test. Both on- and off-screen uses it.
+    
+    -test_height <integer>                  Set the height of the test. Both on- and off-screen uses it.
+    
+    -screenshot_frames <string>             Example: "10, 50, 60 - 65"
+                                            Default case: the values mean animation track milliseconds.
+                                            Fixed time mode: the values mean the frame index.
+                                            You can define also ranges.
+                                            Usage on Android:
+                                                --es -screenshot_frames 10,15,20-30
+
+    -force_highp <boolean>                  Force highp precision modifier across all shaders.
+    
+    -disabled_render_bits <integer>         Disable the specified render effects in gl_manhattan test.
+                                            List of bitfield values specified in the 'glb_scene_opengl.h'
+                                                ERB_ShadowDepthRender   = 1,
+                                                ERB_GBufferSolids       = 2,
+                                                ERB_LensFlareQuery      = 4,
+                                                ERB_Lighting            = 8,
+                                                ERB_Sky                 = 16,
+                                                ERB_ShadowDecal         = 32,
+                                                ERB_Decals              = 64,
+                                                ERB_Particles           = 128,
+                                                ERB_LightShafts         = 256,
+                                                ERB_Transparents        = 512,
+                                                ERB_LensFlares          = 1024,
+                                                ERB_Post                = 2048,
+                                                ERB_Compute_Lightning   = 4096, //manhattan31 only
+                                                ERB_Compute_DOF         = 8192  //manhattan31 only
+                                            e.g.:
+                                                To disable lightshafts and particles in the Manhattan test, use 384 (256 + 128)
+    
+    -texture_type <string>                  Overrides the texture type specified in the test descriptor json file.
+                                                "ASTC"
+                                                "ETC2"
+                                                "ETC1"
+                                                "PVRTC4"
+                                                "DXT1"
+                                                "DXT5"
+                                                "888"
+    
+    -fps_log_window <integer>               Enables fps logging to console/logcat. Fps is calculated by frames rendered in the specified time.
+                                            Must be greater than 0.
+                                            e.g.: Print avarage fps every second:
+                                                --ei -fps_log_window=1000
+    
+    -adaptation_mode <integer>              Set the HDR adaptation mode.
+                                            0: Enabled
+                                            1: Disabled
+                                            2: Use predefined values
+                                            Default value is 0.
+    
+    -warmup_frames <integer>                Animate and render the specified number of frames before starting the test.
+                                            Default value is 0.
+    
+
+    -wg_sizes <string>                      [Does NOT apply to Aztec Ruins. See the Aztec Ruins specific arguments section for details.]
+	                                        Specifies the compute workgroup sizes. If a workgroup size is specified the test will skip the compute shader's warm up process.
+                                            Possible compute shaders:
+                                            occ              - Occlusion cull
+                                            mb_tile_max      - Motion blur tile max shader
+                                            mb_tile_neighbor - Motion blur neighbor max shader.
+                                                ps_emit     - Particle system emit shader
+                                                ps_simulate - Particle system simulation shader
+                                            e.g.:
+                                                -wg_sizes="occ 16, mb_tile_neighbor 32".
+    
+    -particle_save_frames <integer>         Save a particle system state at specified frames. Works only in fixed step time mode. The saved states will be used in single frame mode.
+                                            An appropriate frame_step_time has to be provided to reach the desired moment.
+                                            e.g.:
+                                                --ei frame_step_time=50 --es particle_save_frames=16000,47700
+    
+
+
+### GFXBench 4 Car Chase specific arguments
+
+    -tessellation_enabled <boolean>         Set the tessellation shader stages during the vertex processing.
+                                            0: Disabled
+                                            1: Enabled
+                                            Default value is 1.
+
+### GFXBench 5 Aztec Ruins specific arguments
+    
+    -wg_sizes <string>                      Specifies the compute workgroup sizes. If a workgroup size is specified the test will skip the compute shader's warm up process.
+                                            Possible compute shaders:
+                                            gi_gen_sh        - GI SH coefficient computation shader
+                                            mb_tile_max      - Motion blur tile max shader
+                                            mb_neighbor_max  - Motion blur neighbor max shader.
+                                            e.g.:
+                                                --es -wg_sizes="mb_tile_max 16 16 1, mb_neighbor_max 16 16 1, gi_gen_sh 16 16 1".
+
+    -virtual_resolution <boolean>           Virtual resolution mode. Only has effect in onscreen screenmode.
+                                            Renders the image into an offscreen rendertarget first, then draws that rendertarget onscreen.
+                                            The offscreen rendertarget size is controlled by "test_width" and "test_height" arguments.
+
+    -metal_macos_use_subpass <boolean>      Enables textureBarrier based subpassing in GFXBench Metal on macOS.
+
+### Examples
+
+You can pass the command line arguments via 'raw_config' (this is the preferred) on Android (apk version).  
+e.g.:
+
+    $ adb shell am broadcast -a net.kishonti.testfw.ACTION_RUN_TESTS -n net.kishonti.gfxbench.vulkan.v50000.corporate/net.kishonti.benchui.corporate.CommandLineSession -e test_ids "vulkan_5_high" --ei raw_config.frame_step_time 40
+    $ adb shell am broadcast -a net.kishonti.testfw.ACTION_RUN_TESTS -n net.kishonti.gfxbench.gl.v40000.corporate/net.kishonti.benchui.corporate.CommandLineSession -e test_ids "gl_alu2" --ei raw_config.play_time 1000
+    $ adb shell am broadcast -a net.kishonti.testfw.ACTION_RUN_TESTS -n net.kishonti.gfxbench.gl.v40000.corporate/net.kishonti.benchui.corporate.CommandLineSession -e test_ids "gl_trex_battery" --ez raw_config.endless true 
+
+Following arguments are kept for backward compatibility
+
+`offscreen_width`  
+`offscreen_height`  
+`frame_step_time`    
+`max_rendered_frames`  
+`screenmode`  
+`play_time`  
+`start_animation_time`  
+`single_frame`  
+`disabled_render_bits`  
+`fps_log_window`  
+`endless`  
+`force_highp`  
+`tessellation_enabled`  
+`fps_limit`  
+`brightness`  
+`screenshot_frames`  
+`texture_type`
+
+The arguments that is not part of this list those must be passed via 'raw_config' on Android (apk). 
+
+##<a name="available_test_ids"></a> Available test ids
+
+**GFXBench 3.0**
+
+- `gl_alu`
+- `gl_alu_off`
+- `gl_blending`
+- `gl_blending_off`
+- `gl_driver`
+- `gl_driver_off`
+- `gl_fill`
+- `gl_fill_off`
+
+**GFXBench 3.1**
+
+- `gl_alu2`
+- `gl_alu2_off`
+- `gl_driver2`
+- `gl_driver2_off`
+- `gl_fill2`
+- `gl_fill2_off`
+- `gl_manhattan31`
+- `gl_manhattan31_off`
+
+**Both GFXBench 3.0 and 3.1**
+
+- `gl_manhattan`
+- `gl_manhattan_off`
+- `gl_trex`
+- `gl_trex_off`
+- `gl_trex_qmatch`
+- `gl_trex_qmatch_highp`
+- `gl_trex_battery`
+
+**GFXBench 4.0**
+
+- `gl_4`
+- `gl_4_off`
+- `gl_tess`
+- `gl_tess_off`
+
+**GFXBench 5.0**
+
+- `gl_5_high`
+- `gl_5_high_off`
+- `gl_5_normal`
+- `gl_5_normal_off`
+
+##<a name="desktop_specific_arguments"></a> Desktop specific arguments
+
+Desktop CLI (non-GUI) version uses the `testfw_app` to launch the benchmark tests.  
+It must be put "=" token between the key and value of the supported command-line arguments.
+
+Example: `--ei -play_time=5000`
+
+##<a name="android_specific"></a> Android specific
+
+### Package names
+
+**GFXBench 3.0**   
+
+    com.glbenchmark.glbenchmark27.corporate
+
+**GFXBench 3.1 and above**
+
+    net.kishonti.gfxbench.gl.v30000.corporate
+    net.kishonti.gfxbench.gl.v30100.corporate
+    net.kishonti.gfxbench.gl.v40000.corporate
+    net.kishonti.gfxbench.gl.v50000.corporate
+    net.kishonti.gfxbench.vulkan.v50000.corporate
+
+The version number in the package name should match the APK version. For example, 4.0.13 becomes v40013 in the package name. 
+
+### Command line
+
+Command line (APK) version saves the test results into files. Pulling the results to the host:
+
+    adb pull /mnt/sdcard/Android/data/PACKAGE_NAME/files/results/ .
+
+Command line (APK) examples:
+
+    adb shell am broadcast -a net.kishonti.testfw.ACTION_RUN_TESTS -n PACKAGE_NAME/net.kishonti.benchui.corporate.CommandLineSession -e test_ids "gl_alu,gl_driver" --ei -play_time 5000 --ef -brightness 10
+
+    adb shell am broadcast -a net.kishonti.testfw.ACTION_RUN_TESTS -n PACKAGE_NAME/net.kishonti.benchui.corporate.CommandLineSession -e test_ids "gl_alu2" --es -screenshot_frames 10,15,20-30
+
+General arguments are not applicable, you can pass test ids and test configuration arguments to Android binary in a slightly different way:
+
+The test ids should be passed as comma-separated list of test file names like this:
+
+    -e test_ids "gl_alu,gl_fill"
+
+You have to insert `--ei` or `--ef` before the configuration key token to pass integer (`--ei`) or float (`--ef`) value like this:
+
+    --ei -fsaa 4 --ei -endless 1 --ef -brightness 10
+
+These arguments have effect on all the selected tests.
+
+Grab the screenshots to the current folder (that saved with argument `--es screenshot_frames`):
+
+    adb pull /mnt/sdcard/Android/data/PACKAGE_NAME/files/tmp/ .
+
+
+##<a name="ios_specific"></a> iOS specific
+
+You can pass test ids to iOS project a slightly different way
+
+- The argument are passed in the Xcode projects Scheme/Arguments option
+
+- The test ids must be written between quotes and must be separated by ", " strings if multiple tests are given.
+
+- Examples:
+
+    `-t "gl_alu, gl_fill"`
+
+    `-w 1280 -h 720 -ei play_time=2000`

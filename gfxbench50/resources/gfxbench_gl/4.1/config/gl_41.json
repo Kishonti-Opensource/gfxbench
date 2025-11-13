@@ -1,0 +1,60 @@
+{
+	"version": 1,
+	"test_id": "gl_41",
+	"factory_method": "gl_41",
+	"preload_libs": ["gfxb_41"],
+	"env": {
+		"graphics": {
+			"versions": [
+				{
+					"type": "GL",
+					"major": 4,
+					"minor": 3
+				},
+				{
+					"type": "ES",
+					"major": 3,
+					"minor": 1
+				}
+			],
+			"config": {
+				"red_size": 8,
+				"green_size": 8,
+				"blue_size": 8,
+				"depth_size": 16,
+				"stencil_size": -1,
+				"alpha_size": -1,
+				"samples": 0,
+				"exact": false
+			},
+			"fullscreen": false
+		}
+	},
+	"raw_config": {
+		"battery": false,
+		"brightness": -1.0,
+		"color_bpp": 24,
+		"depth_bpp": 16,
+		"endless": false,
+		"engine": "Engine4",
+		"fps_limit": -1.0,
+		"frame_step_time": -1,
+		"fsaa": 0,
+		"id": 2700100,
+		"max_rendered_frames": -1,
+		"min_ram_required": 160,
+		"offscreen_width": 1920,
+		"offscreen_height": 1080,
+		"play_time": 63300,
+		"quality": false,
+		"force_highp": false,
+		"scenefile": "scene41/scene_41.xml",
+		"screenmode": 0,
+		"single_frame": -1,
+		"start_animation_time": 0,
+		"stencil_bpp": -1,
+		"texture_type": "Auto",
+		"zprepass": false
+	},
+	"data_prefix": "gfx"
+}

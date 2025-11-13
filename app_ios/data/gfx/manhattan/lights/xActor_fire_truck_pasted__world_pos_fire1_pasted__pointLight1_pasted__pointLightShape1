@@ -1,0 +1,10 @@
+type omni
+fov 180.000000
+glow 0
+lens_flare 0
+cast_shadow 1
+flicker 0
+color 0.900000 0.30000 0.00000
+intensity 15.000000
+intensity_track xActor_fire_truck_pasted__world_pos_fire1_pasted__pointLight1_pasted__pointLightShape1_intensity_track
+radius 15.0

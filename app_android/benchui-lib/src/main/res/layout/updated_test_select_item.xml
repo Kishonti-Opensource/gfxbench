@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    
+    <View
+        android:id="@+id/updated_test_select_item_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_separator_height"
+        android:background="@color/list_background"/>
+    
+    <LinearLayout 
+        android:id="@+id/updated_test_select_item_header"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+	    android:background="@color/list_header"
+    	android:duplicateParentState="true">
+        
+        <TextView 
+	        android:id="@+id/updated_test_select_item_group_title"
+            android:layout_width="0dp"
+            android:layout_weight="@integer/list_main_text_weight"
+	        android:layout_height="match_parent"
+        	android:padding="4dp"
+        	android:gravity="center_vertical"
+        	android:textColor="@color/list_header_font" 
+	        android:text="@string/hello_world"/>
+        
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_weight="@integer/list_main_cb_weight"
+	        android:layout_height="match_parent">
+	        <CheckBox
+	            android:id="@+id/updated_test_select_item_group_checkbox"
+	            android:layout_width="@dimen/list_tick_size"
+	            android:layout_height="@dimen/list_tick_size"
+	        	android:textColor="@color/list_header_font"
+	        	android:layout_centerInParent="true"
+	        	style="@style/BenchmarkHeaderCheckboxStyle"
+			    android:focusable="false"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/updated_test_select_item_body"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+	    android:background="@color/list_cell"
+    	android:duplicateParentState="true" >
+         
+        <RelativeLayout
+        	android:orientation="horizontal"
+	        android:layout_width="0dp"
+	        android:layout_weight="@integer/list_main_column_weight"
+		    android:layout_height="wrap_content"
+			android:padding="4dp"
+        	android:baselineAligned="false">
+            
+            <ImageView 
+				android:id="@+id/updated_test_select_item_testicon"
+				android:layout_width="@dimen/list_icon_size"
+				android:layout_height="@dimen/list_icon_size"
+    			android:layout_centerVertical="true"
+				android:layout_marginRight="4dp"
+				android:src="@drawable/dummy_icon" />
+            
+            <LinearLayout
+      			android:orientation="vertical"
+    			android:layout_height="wrap_content"
+    			android:layout_width ="match_parent"
+    			android:layout_toRightOf="@id/updated_test_select_item_testicon"
+    			android:layout_centerVertical="true"
+				android:gravity="center_vertical"
+      			android:baselineAligned="false"
+      			android:focusable="false">
+      	
+                <TextView
+                    android:id="@+id/updated_test_select_item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text="@string/hello_world"
+                    android:textColor="@color/list_cell_font" />
+
+			    <TextView
+			        android:id="@+id/updated_test_select_item_desc"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:maxLines="2"
+			        android:text="@string/hello_world"
+			        android:textColor="@color/list_cell_minor_font" />
+
+            </LinearLayout>
+               
+		</RelativeLayout>
+		
+        <RelativeLayout 
+            android:layout_width="0dp"
+            android:layout_weight="@integer/list_variant_sum_weight"
+	        android:layout_height="match_parent">
+	        <CheckBox
+	            android:id="@+id/updated_test_select_item_checkbox"
+	            android:layout_width="@dimen/list_tick_size"
+	            android:layout_height="@dimen/list_tick_size"
+	        	android:textColor="@color/list_header_font"
+	        	android:layout_centerInParent="true"
+	        	style="@style/BenchmarkCheckboxStyle"
+			    android:focusable="false"/>
+
+		    <TextView
+		        android:id="@+id/updated_test_select_item_disable_reason"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:maxLines="2"
+		        android:text="@string/hello_world"
+		        android:textColor="@color/list_cell_minor_font"
+	        	android:layout_centerInParent="true" />
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">@PRODUCT_NAME@</string>
+    <string name="app_version">Version: @PRODUCT_VERSION@</string>
+    <string name="app_product_id">@PRODUCT_ID@</string>
+    <string name="app_website_title">compubench.com</string>
+    <string name="app_website_url">http://compubench.com</string>
+    <string name="app_email_address">support@compubench.com</string>
+    <!-- community -->
+    <string name="app_store_name">@STORE_NAME@</string>
+    <string name="app_kii_distribution_id">@KII_DISTRIBUTION_ID@</string>
+    <string name="app_crash_report_key_testing">c4eccb4ff41422ad0b27b0f213677a32</string>
+    <string name="app_crash_report_key_production">c4eccb4ff41422ad0b27b0f213677a32</string>
+</resources>

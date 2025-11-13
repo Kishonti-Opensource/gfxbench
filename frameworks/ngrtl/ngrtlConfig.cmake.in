@@ -1,0 +1,125 @@
+# Usage:
+# 
+#     find_package(ngrtl REQUIRED <components>)
+# sets
+#     NGRTL_INCLUDE_DIRS
+#     NGRTL_LIBRARIES
+#     NGRTL_FOUND
+#
+# Also set:
+# NGRTL_${COMPONENT}_INCLUDE_DIRS
+# NGRTL_${COMPONENT}_LIBRARIES
+
+
+@NGRTL_DEPENDENCY_LISTING@
+
+set(NGRTL_SHARED @BUILD_SHARED_LIBS@)
+set(NGRTL_FOUND 0)
+set(NGRTL_HAS_MISSING_COMPONENTS FALSE)
+
+if (NOT ngrtl_FIND_COMPONENTS)
+	message(FATAL_ERROR "Component list must not be empty.")
+endif()
+
+if (NOT NGRTL_SHARED)
+    set(NGRTL_DEFINITIONS -DNGRTL_STATIC)
+endif()
+
+get_filename_component(SYSROOT ${CMAKE_CURRENT_LIST_DIR}/../../.. ABSOLUTE)
+foreach(comp ${ngrtl_FIND_COMPONENTS})
+	string(TOUPPER ${comp} COMP)
+	
+	# set include dirs
+	if(NOT NGRTL_${COMP}_INCLUDE_DIRS)
+		set(d ${SYSROOT}/include/ngrtl/${comp})
+		if(IS_DIRECTORY ${d})
+			set(NGRTL_${COMP}_INCLUDE_DIRS ${d} CACHE PATH "")
+			mark_as_advanced(NGRTL_${COMP}_INCLUDE_DIRS)
+		endif()
+	endif()
+	
+	# find debug/optimized libraries
+	find_library(NGRTL_${COMP}_LIBRARY_DEBUG NAMES ngrtl_${comp}_d PATHS ${SYSROOT}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+	find_library(NGRTL_${COMP}_LIBRARY NAMES ngrtl_${comp} PATHS ${SYSROOT}/lib NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
+	
+	mark_as_advanced(NGRTL_${COMP}_LIBRARY_DEBUG)
+	mark_as_advanced(NGRTL_${COMP}_LIBRARY)
+	
+	# assemble the *_LIBRARIES list
+	unset(NGRTL_${COMP}_LIBRARIES)
+	
+	# add debug library
+	if (NGRTL_${COMP}_LIBRARY_DEBUG)
+		list(APPEND NGRTL_${COMP}_LIBRARIES debug ${NGRTL_${COMP}_LIBRARY_DEBUG})
+	endif()
+	
+	# add optimized library
+	if (NGRTL_${COMP}_LIBRARY)
+		list(APPEND NGRTL_${COMP}_LIBRARIES optimized ${NGRTL_${COMP}_LIBRARY})
+	endif()
+	
+	# set *_FOUND
+	if((NO_INCLUDE_DIRS OR NGRTL_${COMP}_INCLUDE_DIRS ) AND ( NGRTL_${COMP}_LIBRARY_DEBUG OR NGRTL_${COMP}_LIBRARY ) )
+		set(NGRTL_${COMP}_FOUND 1)
+		if (NOT NGRTL_${COMP}_LIBRARY)
+			#message(WARNING "ngrtl: release libs not found for ${COMP}")
+		endif()
+		if (NOT NGRTL_${COMP}_LIBRARY_DEBUG)
+			#message(WARNING "ngrtl: debug libs not found for ${COMP}")
+		endif()
+	else()
+		set(NGRTL_${COMP}_FOUND 0)
+		set(NGRTL_HAS_MISSING_COMPONENTS 1)
+	endif()
+	
+	# find dependent libraries and packages
+	if(NGRTL_${COMP}_FOUND)
+		list(APPEND NGRTL_${COMP}_LIBRARIES ${NGRTL_${COMP}_DEPENDENT_LIBRARIES})
+		foreach(ndfp ${NGRTL_${COMP}_DEPENDENT_FIND_PACKAGES})
+			separate_arguments(ndfp)
+			list(GET ndfp 0 NGRTL_DEPENDENCY_NAME_ORIG)
+			string(TOUPPER ${NGRTL_DEPENDENCY_NAME_ORIG} NGRTL_DEPENDENCY_NAME)
+			find_package(${ndfp})
+			if(${NGRTL_DEPENDENCY_NAME}_FOUND)
+				list(APPEND NGRTL_${COMP}_LIBRARIES ${${NGRTL_DEPENDENCY_NAME}_LIBRARIES})
+			elseif(${NGRTL_DEPENDENCY_NAME_ORIG}_FOUND)
+				list(APPEND NGRTL_${COMP}_LIBRARIES ${${NGRTL_DEPENDENCY_NAME_ORIG}_LIBRARIES})
+			else()
+				set(NGRTL_${COMP}_FOUND 0)
+				message("NGRTL/${COMP} dependency not found: ${NGRTL_DEPENDENCY_NAME} (${ndfp})")
+				break()
+			endif()
+		endforeach()
+		foreach(ndfp ${NGRTL_${COMP}_DEPENDENT_FIND_PACKAGES_WITH_INCLUDE_DIRS})
+			separate_arguments(ndfp)
+			list(GET ndfp 0 NGRTL_DEPENDENCY_NAME)
+			string(TOUPPER ${NGRTL_DEPENDENCY_NAME} NGRTL_DEPENDENCY_NAME)
+			find_package(${ndfp})
+			if(${NGRTL_DEPENDENCY_NAME}_FOUND)
+				list(APPEND NGRTL_${COMP}_INCLUDE_DIRS ${${NGRTL_DEPENDENCY_NAME}_INCLUDE_DIRS})
+				list(APPEND NGRTL_${COMP}_LIBRARIES ${${NGRTL_DEPENDENCY_NAME}_LIBRARIES})
+			elseif(${NGRTL_DEPENDENCY_NAME_ORIG}_FOUND)
+				list(APPEND NGRTL_${COMP}_INCLUDE_DIRS ${${NGRTL_DEPENDENCY_NAME_ORIG}_INCLUDE_DIRS})
+				list(APPEND NGRTL_${COMP}_LIBRARIES ${${NGRTL_DEPENDENCY_NAME_ORIG}_LIBRARIES})
+			else()
+				set(NGRTL_${COMP}_FOUND 0)
+				message("NGRTL/${COMP} dependency not found: ${NGRTL_DEPENDENCY_NAME} (${ndfp})")
+				break()
+			endif()
+		endforeach()
+	endif()
+	
+	# handle REQUIRED
+	if (ngrtl_FIND_REQUIRED AND NOT NGRTL_${COMP}_FOUND)
+		message(FATAL_ERROR "NGRTL component not found: ${COMP}")
+	endif()
+	
+	# append to main INCLUDE_DIRS and LIBRARIES lists
+	list(APPEND NGRTL_INCLUDE_DIRS ${NGRTL_${COMP}_INCLUDE_DIRS})
+	list(APPEND NGRTL_LIBRARIES ${NGRTL_${COMP}_LIBRARIES})
+
+endforeach(comp)
+
+if (NOT NGRTL_HAS_MISSING_COMPONENTS)
+	set(NGRTL_FOUND 1)
+endif()

@@ -1,0 +1,26 @@
+//valid commands:
+//connect all
+//disconnect all
+//reset (reset PVS to identity)
+//connect TERR_xRoom1 TERR_xRoom2
+//disconnect TERR_xRoom1 TERR_xRoom2
+
+connect all
+
+// Chamber
+disconnect TERR_xRoom1 TERR_xRoom8
+disconnect TERR_xRoom1 TERR_xRoom9
+disconnect TERR_xRoom1 TERR_xRoom3
+disconnect TERR_xRoom1 TERR_xRoom4
+disconnect TERR_xRoom1 TERR_xRoom5
+disconnect TERR_xRoom1 TERR_xRoom6
+
+// Outside right
+disconnect TERR_xRoom9 TERR_xRoom4
+disconnect TERR_xRoom9 TERR_xRoom5
+disconnect TERR_xRoom9 TERR_xRoom6
+
+// Outside left
+disconnect TERR_xRoom8 TERR_xRoom3
+disconnect TERR_xRoom8 TERR_xRoom6
+disconnect TERR_xRoom8 TERR_xRoom7

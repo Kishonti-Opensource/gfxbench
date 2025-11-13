@@ -1,0 +1,10 @@
+{ 
+ "material_type": 18,
+ "material_opacity_mode": 2,
+ "material_shader0": "glow",
+ "material_two_sided": true,
+ "material_has_emissive_channel": true,
+ "material_emissive_intensity": 2.0,
+ "name": "engine_glow_mat", 
+ "type": 3
+}

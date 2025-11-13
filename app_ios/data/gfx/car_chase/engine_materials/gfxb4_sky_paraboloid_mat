@@ -1,0 +1,12 @@
+color skydome_hdr2.png 1 1 1 1 RGB
+lightmap white.png 1 1 1 1
+specular black.png 1 1 1 1
+normal normal_base.png 1 1 1 1
+aux0 black.png 1 1 1 1
+aux1 black.png 1 1 1 1
+aux2 black.png 1 1 1 1
+aux3 black.png 1 1 1 1
+aux4 black.png 1 1 1 1
+aux5 black.png 1 1 1 1
+aux6 black.png 1 1 1 1
+aux7 black.png 1 1 1 1

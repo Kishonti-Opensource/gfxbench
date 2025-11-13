@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="50dp"
+	android:background="@color/header_background"
+	android:id="@+id/headerBar">
+
+	<Button
+	    android:id="@+id/headerButtonLeft"
+	    android:layout_width="70dp"
+	    android:layout_height="50dp"
+	    android:layout_alignParentLeft="true"
+	    android:background="@drawable/button_header"
+	    android:gravity="center"
+	    android:singleLine="true"
+	    android:text="@string/hello_world"
+	    android:textColor="@android:color/white"
+	    android:textSize="16sp" />
+	
+	<LinearLayout 
+	    android:layout_centerInParent="true"
+		android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+		android:layout_gravity="center_vertical"
+		android:layout_marginLeft="70dp"
+		android:layout_marginRight="70dp"
+		android:background="@color/header_background"
+		android:orientation="vertical">
+
+		<TextView
+			android:textColor="@android:color/white"
+			android:id="@+id/headerTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center"
+			android:singleLine="true"
+			android:text="@string/hello_world"
+			android:textSize="14sp"
+			android:textStyle="bold" />
+		    
+		<TextView 
+			android:textColor="@android:color/white"
+			android:id="@+id/headerVersion"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:gravity="center"
+			android:text="@string/app_version"
+			android:alpha="0.8"
+			android:textSize="10sp" />  
+	    
+	</LinearLayout>  
+
+	<Button
+	    android:id="@+id/headerButtonRight"
+	    android:layout_width="70dp"
+	    android:layout_height="50dp"
+	    android:layout_alignParentRight="true"
+	    android:background="@drawable/button_header"
+	    android:gravity="center"
+	    android:singleLine="true"
+	    android:text="@string/hello_world"
+	    android:textColor="@android:color/white"
+	    android:textSize="16sp" />
+
+</RelativeLayout>

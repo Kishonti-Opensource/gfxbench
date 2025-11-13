@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="AboutSectionTitle">關於</string>
+  <string name="Accept">接受</string>
+  <string name="AppVersionCorporate">公司版本 %s</string>
+  <string name="Back">上一頁</string>
+  <string name="BAD_VERSION">您使用的是舊版 GFXBench。請更新此應用程式！</string>
+  <string name="BatteryBrightness100">強制 100%</string>
+  <string name="BatteryBrightness25">強制 25%</string>
+  <string name="BatteryBrightness50">強制 50%</string>
+  <string name="BatteryBrightness75">強制 75%</string>
+  <string name="BatteryBrightnessDefault">預設值</string>
+  <string name="BatteryNotPresent">Battery not present</string>
+  <string name="BatteryCharging">充電中</string>
+  <string name="BatteryPageTitle">電池圖表</string>
+  <string name="ResultDetailPageTitle">Results Detail</string>
+  <string name="BatteryPlugged">插入電源</string>
+  <string name="BatteryUnplugged">拔掉電源</string>
+  <string name="BestResults">最佳結果</string>
+  <string name="Camera_Autofocus">自動對焦</string>
+  <string name="Camera_FaceDetection">臉部偵測</string>
+  <string name="Camera_Flash">閃光燈</string>
+  <string name="Camera_GeoTagging">地理標記</string>
+  <string name="Camera_HDR">HDR 照片</string>
+  <string name="Camera_Picture">照片</string>
+  <string name="Camera_TouchFocus">觸控對焦</string>
+  <string name="Camera_Video">影片</string>
+  <string name="Cancel">取消</string>
+  <string name="Cancelled">已取消</string>
+  <string name="Chipset">晶片組</string>
+  <string name="ClearAll">全部清除</string>
+  <string name="ClearHistoryDialogBody">這會清除所有結果資料。確定要進行嗎？</string>
+  <string name="ClearHistoryDialogTitle">清除歷史記錄</string>
+  <string name="Close">關閉</string>
+  <string name="CloseConfirmDialogBody">Are you sure you want to close?</string>
+  <string name="CompareDataFailBody">Failed to load database.</string>
+  <string name="CompareDataFailTitle">Database error</string>
+  <string name="ConfirmDialogBody">Are you sure?</string>
+  <string name="ConnectingToServer">連接至伺服器。</string>
+  <string name="ContactUs">聯絡我們</string>
+  <string name="CorporateCommercialTitle">關於授權</string>
+  <string name="CorporateFeatures">公司版功能</string>
+  <string name="Decline">拒絕</string>
+  <string name="DeviceMayCrashDialogBody">Your device might not have enough memory to run this test. We recommend that you close all other applications and/or restart your device because it may crash due to low memory conditions otherwise.</string>
+  <string name="DeviceMayCrashDialogTitle">High memory consumption</string>
+  <string name="DownloadDatabaseEveryStartup">每次啟動時下載資料庫</string>
+  <string name="Email">電子郵件</string>
+  <string name="EMAIL_TAKEN">這個電子郵件地址已經有人使用。請選擇另一個。</string>
+  <string name="EmailTakenDialogBody">這個電子郵件地址已經有其他用戶使用。請另外選取然後再試一次。</string>
+  <string name="EmailTakenDialogTitle">電子郵件已經有人使用</string>
+  <string name="EnableExtraBattery">啟用額外電池</string>
+  <string name="Error">錯誤！</string>
+  <string name="ERROR_BATTERYTEST_BRIGHTNESS_CHANGED">已停止、亮度已變更</string>
+  <string name="ERROR_BATTERYTEST_PLUGGED_ON_CHARGER">已停止、充電器已插電</string>
+  <string name="ERROR_BUILT_WITH_INCOMPATIBLE_ES_VERSION">以不相容的 ES 版本建立</string>
+  <string name="ERROR_DX_FEATURE_LEVEL">無法取得 DirectX 功能水準</string>
+  <string name="ERROR_ES3_NOT_SUPPORTED">不支援 ES 3</string>
+  <string name="ERROR_FILE_NOT_FOUND">找不到檔案</string>
+  <string name="ERROR_INVALID_SCREEN_RESOLUTION">無效的螢幕解析度</string>
+  <string name="ERROR_MOTIONBLUR_WITH_MSAA_NOT_SUPPORTED">裝置不支援 MSAA 動態模糊效果</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED">裝置不支援 offscreen 功能</string>
+  <string name="ERROR_OFFSCREEN_NOT_SUPPORTED_IN_MSAA">裝置不支援 MSAA offscreen 功能</string>
+  <string name="ERROR_OUT_OF_MEMORY">缺少記憶體</string>
+  <string name="ERROR_OUT_OF_VMEMORY">缺少視訊記憶體</string>
+  <string name="ERROR_SHADER_ERROR">著色器錯誤</string>
+  <string name="ERROR_SKIPPED">已略過</string>
+  <string name="ERROR_UNDEFINED_ERROR">未定義的錯誤</string>
+  <string name="ERROR_UNKNOWNERROR">未知錯誤</string>
+  <string name="ERROR_UNSUPPORTED_TC_TYPE">未支援的紋理格式</string>
+  <string name="ERROR_VBO_ERROR">VBO 錯誤</string>
+  <string name="FeatureAccelerometer">加速計</string>
+  <string name="FeatureAltimeter">高度計</string>
+  <string name="FeatureBarometer">氣壓計</string>
+  <string name="FeatureBluetooth">藍芽</string>
+  <string name="FeatureCompass">指南針</string>
+  <string name="FeatureCPUCoreCount">核心</string>
+  <string name="FeatureGPS">GPS</string>
+  <string name="FeatureGyroscope">陀螺儀</string>
+  <string name="FeatureLevel">功能水準</string>
+  <string name="FeatureLightSensor">光感應器</string>
+  <string name="FeatureNFC">NFC</string>
+  <string name="FeatureProximitySensor">距離感應器</string>
+  <string name="FeatureSIMCount">SIM 卡</string>
+  <string name="FeatureThermometer">溫度計</string>
+  <string name="FeatureTouchscreenCapacitive">電容式觸控螢幕</string>
+  <string name="FeatureTouchscreenCapacitiveJazzhand">支援至少 5 指手勢的電容式觸控螢幕</string>
+  <string name="FeatureTouchscreenCapacitiveMultitouch">支援多點觸控手勢的電容式觸控螢幕</string>
+  <string name="FeatureTouchscreenResistive">電阻式觸控螢幕</string>
+  <string name="FeatureTouchscreenResistiveJazzhand">支援至少 5 指手勢的電阻式觸控螢幕</string>
+  <string name="FeatureTouchscreenResistiveMultitouch">支援多點觸控手勢的電阻式觸控螢幕</string>
+  <string name="FillTheForm">請填寫下方表格。</string>
+  <string name="FindOutMore">進一步瞭解</string>
+  <string name="FocusLostBody">You have switched to another window, therefore benchmarking is cancelled. Please avoid multitasking during the benchmark is running.</string>
+  <string name="FocusLostTitle">Focus lost</string>
+  <string name="FollowUs">掌握我們的動態</string>
+  <string name="ForceDisplayBrightness">強制顯示器亮度。</string>
+  <string name="ForgotPasswordSendToEmail">傳送到我的電子郵件地址。</string>
+  <string name="ForgotPasswordSentToEmail">我們已經傳送電子郵件給您。請依照指示重設您的密碼。</string>
+  <string name="group_diagnostics">Diagostics</string>
+  <string name="group_high_level">高階測試</string>
+  <string name="group_high_level_desc">以高階遊戲般的場景來測試裝置整體的 3D 圖形效能。測試引擎具有複雜的效果來強調 GPU，以及在遊戲或執行其他 GPU 密集運算任務所實現的 3D 圖形效能回饋。</string>
+  <string name="group_low_level">低階測試</string>
+  <string name="group_special">特殊測試</string>
+  <string name="Height">高度</string>
+  <string name="INTERNAL_ERROR">伺服器錯誤。請稍候再試。</string>
+  <string name="INVALID_CREDENTIALS">登入名稱或密碼錯誤。請重新輸入。</string>
+  <string name="INVALID_EMAIL_ADDRESS">無效的電子郵件地址。請再輸入一次。</string>
+  <string name="InvalidCredentialsBody">登入名稱或密碼錯誤。請重新輸入。</string>
+  <string name="InvalidCredentialsTitle">Login error</string>
+  <string name="InvalidEmailDialogBody">所提供的電子郵件地址無效。請選取有效的電子郵件然後再試一次。</string>
+  <string name="InvalidEmailDialogTitle">電子郵件地址錯誤</string>
+  <string name="IsLoading">%s is loading</string>
+  <string name="LatestResults">最新結果</string>
+  <string name="LicenseDialogTitle">一般授權</string>
+  <string name="Lifetime">續航力</string>
+  <string name="Loading">正在載入...</string>
+  <string name="LoadingDeviceInfo">收集裝置資訊。</string>
+  <string name="LoadingDuelInfo">收集對決資訊。</string>
+  <string name="LoadingNextTest">載入下一項測試...</string>
+  <string name="LoadingTest">載入 %s...</string>
+  <string name="Login">登入</string>
+  <string name="LoginFailedDialogBody">使用者名稱或密碼不符。請重新輸入。</string>
+  <string name="LoginFailedDialogTitle">登入錯誤</string>
+  <string name="LoginForgotPassword">忘記密碼？</string>
+  <string name="LoginTitle">登入</string>
+  <string name="Logout">登出</string>
+  <string name="LOW_BATTERY">Battery charge was low during the test</string>
+  <string name="MISSING_PARAMETER">請輸入登入名稱和密碼。</string>
+  <string name="MissingParametersDialogBody">遺漏一或多個必填欄位。請填入並再試一次。</string>
+  <string name="MissingParametersDialogTitle">遺漏參數</string>
+  <string name="More">詳細資訊</string>
+  <string name="NetRequirementDialogBody">GFXBench 只會在有效網際網路連線的情況下儲存和顯示結果。</string>
+  <string name="NetRequirementDialogTitle">資訊</string>
+  <string name="NETWORK_ERROR">網路錯誤。請稍後再試。</string>
+  <string name="Never_run">Not started</string>
+  <string name="No">否</string>
+  <string name="NoFreeSpaceDialogBody">SD 卡最低可用空間需求：%1$s MB</string>
+  <string name="NoFreeSpaceDialogTitle">錯誤</string>
+  <string name="NoInternetDialogBody">找不到網際網路連線。請連線到網路然後再試一次！</string>
+  <string name="NoInternetDialogTitle">找不到網路</string>
+  <string name="NoServerDialogBody">GFXBench 嘗試連線到我們的伺服器時出現問題。請稍後再試。</string>
+  <string name="NoServerDialogTitle">找不到伺服器</string>
+  <string name="NoTestSelectedDialogBody">請至少選取一項測試執行！</string>
+  <string name="NoTestSelectedDialogTitle">未選取測試</string>
+  <string name="NotRegisteredSectionBody">GFXBench 總是儲存每次執行測試的結果。若您想要存取和瀏覽測試結果歷史記錄，請建立一個使用者帳號。</string>
+  <string name="NotRegisteredSectionTitle">簡介</string>
+  <string name="NotSupported">不支援</string>
+  <string name="NotEnoughMemory">Not enough memory</string>
+  <string name="Offscreen">Offscreen</string>
+  <string name="OffscreenHeight">Offscreen 高度</string>
+  <string name="OffscreenWidth">Offscreen 寬度</string>
+  <string name="OK">好</string>
+  <string name="Onscreen">Onscreen</string>
+  <string name="OperatingSystem">OS</string>
+  <string name="OperatingSystemFull">作業系統</string>
+  <string name="OutdatedDialogBody">您的 GFXBench 版本已過時。請重新整理應用程式然後重新啟動。</string>
+  <string name="OutdatedDialogTitle">過時版本</string>
+  <string name="Password">密碼</string>
+  <string name="PasswordMismatchDialogBody">密碼不符。請重新輸入密碼。</string>
+  <string name="PasswordMismatchDialogTitle">密碼錯誤</string>
+  <string name="Performance">效能</string>
+  <string name="PrimaryScreenDialogBody">The program has detected that you are using external monitor(s). The Battery Test needs to run on the laptop's built-in monitor to be accurate. Please unplug the external monitors and try again.</string>
+  <string name="PrimaryScreenDialogTitle">Screen detection</string>
+  <string name="PrivacyDialogTitle">Terms of Use</string>
+  <string name="PrivacyNotAcceptedBodyWin">Please allow sending data to us, otherwise you will not be able to run any tests. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedBody">Please allow sending data to us, otherwise you will be only able to run this basic diagnostics test. You can allow this at the bottom of the Settings Page.</string>
+  <string name="PrivacyNotAcceptedTitle">Outgoing traffic</string>
+  <string name="Quit">退出</string>
+  <string name="ReadLicense">閱讀 EULA (終端使用者授權合約，以下稱授權合約)</string>
+  <string name="ReadPrivacy">Read Terms of Use</string>
+  <string name="Register">註冊</string>
+  <string name="RegisterEmail">電子郵件地址</string>
+  <string name="RegisterError">接受隱私條款並立即註冊。</string>
+  <string name="RegisterErrorEmailNotOK">請選擇其他電子郵件地址。</string>
+  <string name="RegisterErrorLoginNotOK">請選擇其他登入名稱。</string>
+  <string name="RegisterErrorNoEmail">請填寫電子郵件地址欄位。</string>
+  <string name="RegisterErrorNoFirstName">請填寫名字欄位。</string>
+  <string name="RegisterErrorNoLastName">請填寫姓氏欄位。</string>
+  <string name="RegisterErrorNoLogin">請填寫登入名稱欄位。</string>
+  <string name="RegisterErrorNoPassword">請填寫密碼欄位。</string>
+  <string name="RegisterErrorPasswordsNotMatching">密碼不符。請重新輸入。</string>
+  <string name="RegisterFirstName">名字</string>
+  <string name="RegisterLastName">姓氏</string>
+  <string name="RegisterLogin">選擇登入名稱</string>
+  <string name="RegisterPassword">密碼</string>
+  <string name="RegisterPasswordAgain">重新輸入密碼</string>
+  <string name="RegistrationFeedbackDialogBody">您已經成功註冊。我們已經傳送一封通知的電子郵件到您提供的郵件地址。</string>
+  <string name="RegistrationFeedbackDialogTitle">成功註冊</string>
+  <string name="RegistrationForm">註冊表格</string>
+  <string name="RememberMe">記住我</string>
+  <string name="Requirement">最低 API 需求：</string>
+  <string name="ResetTutorials">重設教學指南</string>
+  <string name="RestartDialogBody">Thank you for allowing outgoing traffic. Now the program is going to restart.</string>
+  <string name="RestartDialogTitle">Restart</string>
+  <string name="ResultHistory">結果歷史記錄</string>
+  <string name="Results_BatteryEstimatedTime">電池 - 預估時間</string>
+  <string name="Results_BatteryPerformance">電池 - 效能</string>
+  <string name="Results_FPS">FPS</string>
+  <string name="Results_NA">無</string>
+  <string name="Results_NoBatteryResultYet">尚未有電池結果。</string>
+  <string name="Results_NoResultsYet">尚未有結果。</string>
+  <string name="Results_RunningTime">執行時間</string>
+  <string name="Results_ShowBatteryDiagram">顯示電池圖表</string>
+  <string name="Retry">重試</string>
+  <string name="SaveResultsExcel">儲存結果</string>
+  <string name="Score">分數</string>
+  <string name="Search">搜尋</string>
+  <string name="SelectAll">選取全部</string>
+  <string name="SelectTests">測試選取</string>
+  <string name="ServerTimeoutDialogBody">GFXBench 無法連結到我們的伺服器。請稍候再試。</string>
+  <string name="ServerTimeoutDialogTitle">伺服器逾時</string>
+  <string name="SetBatteryBrightness">電池測試亮度</string>
+  <string name="SetOffscrResolution">Offscreen 解析度</string>
+  <string name="SetOnscrResolution">自訂解析度</string>
+  <string name="ShowDesktop">Show desktop results on compare page</string>
+  <string name="ShowFPSCounter">顯示 FPS</string>
+  <string name="SnappedTestStartedDialogBody">To run the tests please resize the app to fullscreen.</string>
+  <string name="SnappedTestStartedDialogTitle">Can't run tests in snapped mode</string>
+  <string name="StabilityTestBody">您即將選取電池測試。這會取消選取其他所有測試。針對此測試，請確定裝置已完全充電然後拔掉裝置的電源。請注意測試期間裝置可能過熱。</string>
+  <string name="StabilityTestTitle">電池測試</string>
+  <string name="Start">開始</string>
+  <string name="StartAll">開始全部</string>
+  <string name="STATUS_ALLOW_OUT_TRAFFIC">Please allow outgoing traffic at the bottom of the Settings Page</string>
+  <string name="STATUS_BADCONTEXT">不支援的背景資訊版本</string>
+  <string name="STATUS_CANCELLED">已取消</string>
+  <string name="STATUS_CANNOT_CREATE_TEST">無法建立測試</string>
+  <string name="STATUS_FAILED">Failed</string>
+  <string name="STATUS_INCOMPATIBLE">Incompatible</string>
+  <string name="STATUS_INVALID_CONFIGURATION">無效配置</string>
+  <string name="STATUS_NATIVEEXCEPTION">測試失敗</string>
+  <string name="STATUS_OK">Status: OK</string>
+  <string name="STATUS_TEST_NOT_VALID">測試無效</string>
+  <string name="STATUS_UNKNOWNERR">未知錯誤</string>
+  <string name="StorageCheck">Determinig the storage for the huge datasets</string>
+  <string name="Supported">支援</string>
+  <string name="SwitchStateOff">關閉</string>
+  <string name="SwitchStateOn">開啟</string>
+  <string name="ShowString">Show</string>
+  <string name="HideString">Hide</string>
+  <string name="MobilResultsString">Mobil results</string>
+  <string name="DesktopResultsString">Desktop results</string>
+  <string name="PowerSaveWarningDialogTitle">Warning</string>
+  <string name="PowerSaveWarningDialogBody">Your phone is in power saving mode. For the best results turn it off.</string>  
+  <string name="SyncErrorDialogBody">同步時發生以下錯誤：%s</string>
+  <string name="SyncErrorDialogTitle">同步錯誤</string>
+  <string name="Synchronization">Synchronizing...</string>
+  <string name="SyncLotDialogBody">GFXBench 目前將與伺服器同步應用程式資料。這需要下載 %s。您同意這麼做嗎？</string>
+  <string name="SyncLotDialogTitle">資料同步</string>
+  <string name="SyncronizingChecksum">檢查檔案的變更...</string>
+  <string name="SyncronizingLoadingString">同步檔案 %1$s%% (%2$s / %3$s MB)</string>
+  <string name="TabCompare">比較</string>
+  <string name="TabDuel">對決</string>
+  <string name="TabGlInfo">OpenGL 資訊</string>
+  <string name="TabHome">首頁</string>
+  <string name="TabInfo">簡介</string>
+  <string name="TabResults">結果</string>
+  <string name="TabSettings">設定</string>
+  <string name="TestList">測試清單</string>
+  <string name="testListFile">gl_testlist_EN.tlst</string>  
+  <string name="TestSelection">測試選擇</string>
+  <string name="ThreeDAPI">3D API</string>
+  <string name="UnkownErrorDialogBody">註冊期間未預期的錯誤。請稍後再試。</string>
+  <string name="UnkownErrorDialogTitle">錯誤</string>
+  <string name="UploadingDeviceInfo">Uploading device information.</string>
+  <string name="UploadResults">上傳結果</string>
+  <string name="UpToDate">Up to date</string>
+  <string name="User">使用者</string>
+  <string name="USER_NAME_TAKEN">這個使用者名稱已經有人使用。請選擇另一個。</string>
+  <string name="Username">使用者名稱</string>
+  <string name="UsernameTakenDialogBody">這個使用者名稱目前已有其他用戶使用。請另外選取然後再試一次。</string>
+  <string name="UsernameTakenDialogTitle">使用者名稱已經有人使用</string>
+  <string name="Version">版本 %s</string>
+  <string name="WarningEULA">請閱讀終端使用者授權合約。</string>
+  <string name="WarningNoInternet">找不到網際網路連線。請連線至網路以執行測試。</string>
+  <string name="WarningOutdated">您所使用的是過時的應用程式。請下載 GFXBench 最新版本。</string>
+  <string name="WarningTestNotRunNoInternet">測試失敗，因為找不到網際網路連線。請連線至網路以執行測試。</string>
+  <string name="WarningUnregistered">請註冊帳號。</string>
+  <string name="Welcome">歡迎！您已登入為：</string>
+  <string name="Width">寬度</string>
+  <string name="WmiErrorBody">Enabling Windows Management Instrumentation is required to run this program.</string>
+  <string name="WmiErrorTitle">WMI Error</string>
+  <string name="Yes">是</string>
+  <string name="YourBestScore">Your Device's Best Score</string>
+  <string name="YourDevice">您的裝置</string>
+  <string name="AboutSectionBody">GFXBench 是一款 3D 圖形的基準測試軟體，用於測試裝置的圖形效能，以及跨平台與其他熱門裝置比較的結果。GFXBench 由 Kishonti 公司開發。如果您對我們的公司感興趣，請造訪我們的網站 kishonti.net！</string>
+  <string name="CorporateCommercial">請注意您目前使用的是 GFXBench 社群版。 針對開發目的，我們建議您使用公司授權版。若需要授權資訊，請透過 sales@kishonti.net 聯絡我們！</string>
+  <string name="FollowUsSectionBody">GFXBench 是一款跨平台的 3D 圖形基準測試軟體，用於衡量裝置的表現，並與其他裝置效能進行比較。</string>
+  <string name="STATUS_VIEW_INFO_PAGE">Device is working correctly. View OpenGL details on InfoPage.</string>
+  
+  
+  
+  <!-- System info -->
+  <string name="device">裝置</string>
+  <string name="os">OS</string>
+  <string name="display">顯示</string>
+  <string name="cpu">CPU</string>
+  <string name="gpu">GPU</string>
+  <string name="memory">記憶體</string>
+  <string name="storage">儲存裝置</string>
+  <string name="battery">電池</string>
+  <string name="features">功能</string>
+  <string name="frontcamera">前端相機</string>
+  <string name="backcamera">後端相機</string>
+  
+  <!-- GFXBench GL -->
+  <string name="gl_blending">Alpha Blending</string>
+  <string name="gl_blending_desc">透過渲染半透明的螢幕對齊嵌條搭配高解析度未壓縮紋理，來衡量裝置的 alpha 混合效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off_desc">透過渲染半透明的螢幕對齊嵌條搭配高解析度未壓縮紋理，來衡量裝置的 alpha 混合效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_blending_off">1080p Alpha Blending Offscreen</string>
+  <string name="gl_diag">GL Diagnostics</string>
+  <string name="gl_alu">ALU</string>
+  <string name="gl_alu_desc">使用複雜的片段著色器並渲染單一全螢幕嵌條，來衡量純著色器算圖效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off_desc">使用複雜的片段著色器並渲染單一全螢幕嵌條，來衡量純著色器算圖效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_alu_off">1080p ALU Offscreen</string>
+  <string name="gl_alu2">ALU 2</string>
+  <string name="gl_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="gl_trex_battery_desc">此組合測試透過執行相同的高階測試 30 次，來衡量裝置在遊戲場景中的電池續航力和 FPS 穩定度。它會記錄在測試期間的 FPS 和電池電力，且其結果會顯示在電池圖表中。該測試會產生兩個分數，一個是預估的電池續航力分鐘數，另一個是根據最慢測試運轉的渲染幀數。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="gl_driver">Driver Overhead</string>
+  <string name="gl_driver_desc">透過依序渲染大量的簡單物件、改變每個項目的裝置狀態，來衡量 OpenGL 驅動程式 CPU 的額外負荷。狀態變更的頻率會反映真實世界的應用。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_driver_off_desc">透過依序渲染大量的簡單物件、改變每個項目的裝置狀態，來衡量 OpenGL 驅動程式 CPU 的額外負荷。狀態變更的頻率會反映真實世界的應用。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求ž</string>
+  <string name="gl_driver_off">1080p Driver Overhead Offscreen</string>
+  <string name="gl_driver2">Driver Overhead 2</string>
+  <string name="gl_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="gl_fill">Fill</string>
+  <string name="gl_fill_desc">透過渲染四層的壓縮紋理來衡量裝置的紋理效能。這是遊戲中常見的情節。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off_desc">透過渲染四層的壓縮紋理來衡量裝置的紋理效能。這是遊戲中常見的情節。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：ES 2.0 / GL 3.0</string>
+  <string name="gl_fill_off">1080p Fill Offscreen</string>
+  <string name="gl_fill2">Texturing</string>
+  <string name="gl_fill2_off">1080p Texturing Offscreen</string>
+  <string name="gl_manhattan">Manhattan</string>
+  <string name="gl_manhattan31">Manhattan 3.1</string>
+  <string name="gl_manhattan31_off">1080p Manhattan 3.1 Offscreen</string>
+  <string name="gl_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="Test_Offscreen">%s Offscreen</string>
+  <string name="gl_trex">T-Rex</string>
+  <string name="gl_trex_battery">電池測試</string>
+  <string name="gl_trex_battery_diagram">電池測試 - 圖表</string>
+  <string name="gl_trex_battery_lifetime">電池測試 - 預估時間</string>
+  <string name="gl_trex_battery_performance">電池測試 - 效能</string>
+  <string name="gl_trex_off">1080p T-Rex Offscreen</string>
+  <string name="gl_trex_qmatch">渲染品質</string>
+  <string name="gl_trex_qmatch_highp">渲染品質 (高準確度)</string>
+
+  <!-- GFXBench METAL -->
+  <string name="metal_blending">Alpha Blending</string>
+  <string name="metal_blending_desc">透過渲染半透明的螢幕對齊嵌條搭配高解析度未壓縮紋理，來衡量裝置的 alpha 混合效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_blending_off_desc">透過渲染半透明的螢幕對齊嵌條搭配高解析度未壓縮紋理，來衡量裝置的 alpha 混合效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_blending_off">1080p Alpha Blending Offscreen</string>
+  <string name="metal_diag">GL Diagnostics</string>
+  <string name="metal_alu">ALU</string>
+  <string name="metal_alu_desc">使用複雜的片段著色器並渲染單一全螢幕嵌條，來衡量純著色器算圖效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_alu_off_desc">使用複雜的片段著色器並渲染單一全螢幕嵌條，來衡量純著色器算圖效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_alu_off">1080p ALU Offscreen</string>
+  <string name="metal_alu2">ALU 2</string>
+  <string name="metal_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="metal_trex_battery_desc">此組合測試透過執行相同的高階測試 30 次，來衡量裝置在遊戲場景中的電池續航力和 FPS 穩定度。它會記錄在測試期間的 FPS 和電池電力，且其結果會顯示在電池圖表中。該測試會產生兩個分數，一個是預估的電池續航力分鐘數，另一個是根據最慢測試運轉的渲染幀數。最小 API 需求：metal</string>
+  <string name="metal_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="metal_driver">Driver Overhead</string>
+  <string name="metal_driver_desc">透過依序渲染大量的簡單物件、改變每個項目的裝置狀態，來衡量 Metal 驅動程式 CPU 的額外負荷。狀態變更的頻率會反映真實世界的應用。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_driver_off_desc">透過依序渲染大量的簡單物件、改變每個項目的裝置狀態，來衡量 Metal 驅動程式 CPU 的額外負荷。狀態變更的頻率會反映真實世界的應用。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_driver_off">1080p Driver Overhead Offscreen</string>
+  <string name="metal_driver2">Driver Overhead 2</string>
+  <string name="metal_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="metal_fill">Fill</string>
+  <string name="metal_fill_desc">透過渲染四層的壓縮紋理來衡量裝置的紋理效能。這是遊戲中常見的情節。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_fill_off_desc">透過渲染四層的壓縮紋理來衡量裝置的紋理效能。這是遊戲中常見的情節。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_fill_off">1080p Fill Offscreen</string>
+  <string name="metal_fill2">Fill 2</string>
+  <string name="metal_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="metal_manhattan">Manhattan</string>
+  <string name="metal_manhattan31">Manhattan 3.1</string>
+  <string name="metal_manhattan31_off">1080p Manhattan 3.1 Offscreen</string>
+  <string name="metal_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="Test_Offscreen">%s Offscreen</string>
+  <string name="metal_trex_qmatch_desc">在高階遊戲場景中衡量裝置的視覺保真度。其得分是相較於預渲染的參考圖像，根據均方差 (MSE) 而得的訊噪比峰值 (PSNR)。最小 API 需求：metal</string>
+  <string name="metal_trex_qmatch_highp_desc">在高階遊戲場景中衡量裝置的視覺保真度。其得分是相較於預渲染的參考圖像，根據均方差 (MSE) 而得的訊噪比峰值 (PSNR)。最小 API 需求：metal</string>
+  <string name="metal_trex">T-Rex</string>
+  <string name="metal_trex_battery">電池測試</string>
+  <string name="metal_trex_battery_diagram">電池測試 - 圖表</string>
+  <string name="metal_trex_battery_lifetime">電池測試 - 預估時間</string>
+  <string name="metal_trex_battery_performance">電池測試 - 效能</string>
+  <string name="metal_trex_desc">以 Metal 為基礎，T-Rex 測試包括非常詳細的紋理、材質、複雜幾何、含動畫紋理的粒子以及後處理效果：動態模糊。圖形管道也具有特效，例如：平面反射、鏡射亮點和柔和陰影。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_trex_off_desc">以 Metal 為基礎，T-Rex 測試包括非常詳細的紋理、材質、複雜幾何、含動畫紋理的粒子以及後處理效果：動態模糊。圖形管道也具有特效，例如：平面反射、鏡射亮點和柔和陰影。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：metal</string>
+  <string name="metal_trex_off">1080p T-Rex Offscreen</string>
+  <string name="metal_trex_qmatch">渲染品質</string>
+  <string name="metal_trex_qmatch_highp">渲染品質 (高準確度)</string>
+
+  <!-- GFXBench DX -->
+  <string name="dx_blending">Alpha Blending</string>
+  <string name="dx_blending_desc">透過渲染半透明的螢幕對齊嵌條搭配高解析度未壓縮紋理，來衡量裝置的 alpha 混合效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_blending_off_desc">透過渲染半透明的螢幕對齊嵌條搭配高解析度未壓縮紋理，來衡量裝置的 alpha 混合效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_blending_off">1080p Alpha Blending Offscreen</string>
+  <string name="dx_diag">DX Diagnostics</string>
+  <string name="dx_alu">ALU</string>
+  <string name="dx_alu_desc">使用複雜的片段著色器並渲染單一全螢幕嵌條，來衡量純著色器算圖效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_alu_off_desc">使用複雜的片段著色器並渲染單一全螢幕嵌條，來衡量純著色器算圖效能。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_alu_off">1080p ALU Offscreen</string>
+  <string name="dx_alu2">ALU 2</string>
+  <string name="dx_alu2_desc"></string>
+  <string name="dx_alu2_off">1080p ALU 2 Offscreen</string>
+  <string name="dx_trex_battery_desc">此組合測試透過執行相同的高階測試 30 次，來衡量裝置在遊戲場景中的電池續航力和 FPS 穩定度。它會記錄在測試期間的 FPS 和電池電力，且其結果會顯示在電池圖表中。該測試會產生兩個分數，一個是預估的電池續航力分鐘數，另一個是根據最慢測試運轉的渲染幀數。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_diag_desc">Checks if your device works correctly with shader compile and rendering.</string>
+  <string name="dx_driver">Driver Overhead</string>
+  <string name="dx_driver_desc">透過依序渲染大量的簡單物件、改變每個項目的裝置狀態，來衡量 DirectX 驅動程式 CPU 的額外負荷。狀態變更的頻率會反映真實世界的應用。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_driver_off_desc">透過依序渲染大量的簡單物件、改變每個項目的裝置狀態，來衡量 DirectX 驅動程式 CPU 的額外負荷。狀態變更的頻率會反映真實世界的應用。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_driver_off">1080p Driver Overhead Offscreen</string>
+  <string name="dx_driver2">Driver Overhead 2</string>
+  <string name="dx_driver2_desc"></string>
+  <string name="dx_driver2_off">1080p Driver Overhead 2 Offscreen</string>
+  <string name="dx_fill">Fill</string>
+  <string name="dx_fill_desc">透過渲染四層的壓縮紋理來衡量裝置的紋理效能。這是遊戲中常見的情節。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_fill_off_desc">透過渲染四層的壓縮紋理來衡量裝置的紋理效能。這是遊戲中常見的情節。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_fill_off">1080p Fill Offscreen</string>
+  <string name="dx_fill2">Fill 2</string>
+  <string name="dx_fill2_desc"></string>
+  <string name="dx_fill2_off">1080p Fill 2 Offscreen</string>
+  <string name="dx_manhattan">Manhattan</string>
+  <string name="dx_manhattan31">Manhattan</string>
+  <string name="dx_manhattan31_desc">Modified Manhattan scene using compute shaders in ES 3.1 of the following effects: DoF, robot lightning effect, tile-based lighting.</string>
+  <string name="dx_manhattan31_off">1080p Manhattan Offscreen</string>
+  <string name="dx_manhattan_desc">我們的第一個測試是裝置利用 DirectX 10.0 的能力。測試場景為夜晚的城市環境，有許多燈光照亮布景。對於幾何圖層 (四色附件作為紋理) 它採用遞延渲染和多渲染目標 (MRT)、漫射和鏡射打光和功能複雜的效果，例如：深度貼圖陰影、隱形效果、後處理效果 (光暈、景深)、遮蔽查詢和動畫體積光柵效果。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 10.0</string>
+  <string name="dx_manhattan_off_desc">我們的第一個測試是裝置利用 DirectX 10.0 的能力。測試場景為夜晚的城市環境，有許多燈光照亮布景。對於幾何圖層 (四色附件作為紋理) 它採用遞延渲染和多渲染目標 (MRT)、漫射和鏡射打光和功能複雜的效果，例如：深度貼圖陰影、隱形效果、後處理效果 (光暈、景深)、遮蔽查詢和動畫體積光柵效果。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 10.0</string>
+  <string name="dx_manhattan_off">1080p Manhattan Offscreen</string>
+  <string name="Test_Offscreen">%s Offscreen</string>
+  <string name="dx_trex_qmatch_desc">在高階遊戲場景中衡量裝置的視覺保真度。其得分是相較於預渲染的參考圖像，根據均方差 (MSE) 而得的訊噪比峰值 (PSNR)。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_trex_qmatch_highp_desc">在高階遊戲場景中衡量裝置的視覺保真度。其得分是相較於預渲染的參考圖像，根據均方差 (MSE) 而得的訊噪比峰值 (PSNR)。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_trex">T-Rex</string>
+  <string name="dx_trex_battery">電池測試</string>
+  <string name="dx_trex_battery_diagram">電池測試 - 圖表</string>
+  <string name="dx_trex_battery_lifetime">電池測試 - 預估時間</string>
+  <string name="dx_trex_battery_performance">電池測試 - 效能</string>
+  <string name="dx_trex_desc">以 DirectX 9.1 為基礎，T-Rex 測試包括非常詳細的紋理、材質、複雜幾何、含動畫紋理的粒子以及後處理效果：動態模糊。圖形管道也具有特效，例如：平面反射、鏡射亮點和柔和陰影。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_trex_off_desc">以 DirectX 9.1 為基礎，T-Rex 測試包括非常詳細的紋理、材質、複雜幾何、含動畫紋理的粒子以及後處理效果：動態模糊。圖形管道也具有特效，例如：平面反射、鏡射亮點和柔和陰影。若要查看裝置在其原生解析度下表現如何，請執行 Onscreen 測試。若要與其他裝置比較您的分數，請使用在所有裝置上都以 1080p 執行的 Offscreen 版本。最小 API 需求：DirectX 9.1</string>
+  <string name="dx_trex_off">1080p T-Rex Offscreen</string>
+  <string name="dx_trex_qmatch">渲染品質</string>
+  <string name="dx_trex_qmatch_highp">渲染品質 (高準確度)</string>
+  
+  <string name="LicenseDialogBody">終端使用者授權合約 
+關於 KISHONTI KFT 的基準測試軟體產品 
+         
+         
+重要通知 - 請仔細閱讀：本軟體終端使用者授權合約係一份具法律效力，約束貴用戶與 KISHONTI KFT 之間對 KISHONTI 的效能基準測試軟體產品的協議。貴用戶仔細閱讀以下條款和條件前，請勿下載、複製、安裝或使用依本授權合約所提供的軟體。任何未遵守此授權合約的規範，對軟體或其構成要素進行重製、重分配者，為法律明文禁止。同時可能引發嚴重的民事和刑事懲罰以及其他後果。 
+         
+僅供私人、非商業用途授權：本軟體授權個人及非商業使用的消費者使用，讓消費者在從事個人和非商業活動時，測試他 / 她的裝置效能。其他用途未獲授權且不得適用。 
+若貴用戶需要此軟體商業利用的授權，請透過 SALES@KISHONTI.NET 聯絡 KISHONTI KFT！ 
+         
+         
+1.定義 
+         
+「裝置」係指符合在軟體文件中所述之軟體系統要求，以及能夠連線到網際網路的電子設備。 
+「EULA」係指本軟體的終端使用者授權合約 (以下稱授權合約)。 
+「KISHONTI」係指 KISHONTI Kft.，一家根據匈牙利法律組織的有限責任公司，註冊地址在 1037 Budapest, Szepvolgyi ut 39., Hungary (匈牙利布達佩斯)，註冊號為登記法院布達佩斯都市法院 Cg. 01-09-935577。 
+「停用的功能」係指隱藏或顯示停用或「變灰」的特性或功能。此軟體可能包含停用的功能，這些功能只會在所使用的軟體版本係從 KISHONTI 取得，且支付授權費用的前提下才能啟用。 
+「軟體」係指根據本授權合約，KISHONTI 在線上 (透過網際網路連線) 提供的效能測試基準軟體，包含 (a) 這些檔案的所有內容，也許包括 KISHONTI 或第三方廠商的電腦資訊或軟體，相關的解釋書面資料或檔案和字型；以及 (b) KISHONTI 於任何時間提供的升級程式、修正版本、更新程式、新增功能以及上述項目的拷貝 (統稱「更新程式」)。 
+「使用」係指存取、下載、安裝、執行、以軟體測試裝置或其他透過使用軟體功能獲致的利益。 
+         
+         
+2.授權範圍 
+         
+KISHONTI 授予此軟體的免費授權為不可轉讓授權，僅限在貴用戶所擁有或控制的裝置上使用此軟體。如本授權合約所述 KISHONTI 得隨時中止 (終止) 此軟體的授權與提供。 
+         
+有關使用此軟體或其任何元件的權利和義務如下： 
+         
+(i) 貴用戶可以： 
+(a) 免費下載、安裝和使用軟體。使用此軟體需要網際網路連線； 
+(b) 貴用戶可隨時依個人使用需要，在每台裝置上使用此軟體的拷貝或其任何元件以及所有更新，直到 KISHONTI (自行決定) 提供該軟體或直到 KISHONTI 終止本授權合約為止； 
+(c) 此軟體僅供個人用途使用。此軟體和任何測試結果或透過使用此軟體產生的其他資料，無法用於商業用途 (包括但不限於政府或非營利組織的使用)。 
+         
+(ii) 貴用戶不得： 
+(a) 使用、複製、改寫、修改或轉讓軟體拷貝 (或授權其他人執行)，本授權合約明確提供者除外； 
+(b) 在電腦檔案伺服器安裝或使用此軟體； 
+(c) 從軟體移除任何專屬或其他通知或標籤； 
+(d) 進行還原工程、重新配置、修改、轉譯、解編、反向組譯或根據此軟體製作衍生著作 (但適用法律明文允許此類活動者，不在此限)； 
+(e) 銷售、散布、出租、租賃、再授權、轉讓或讓渡軟體或其拷貝，包括所有相關文件； 
+(f) 擷取軟體部份的元素； 
+(g) 將軟體與其他軟體、外掛程式或增補程式整合使用； 
+(h) 企圖找到軟體的程式源碼，判定或嘗試判定軟體的程式源碼，或根據產品創作任何衍生著作 (但適用法律明文允許此類活動者，不在此限)； 
+(i) 存取、或嘗試存取任何停用的功能，也不得根據此軟體創作與停用功能大致相似的功能，或以其他方式規避控制此類停用功能之啟用的科技。 
+         
+3.智慧財產權與保留權利。 
+         
+此軟體及任何貴用戶製作的授權拷貝皆為 KISHONTI (及其供應商，如適用) 的智慧財產。此軟體的結構、組織和程式碼為 KISHONTI (及其供應商，如適用) 之有價智慧財產 (例如：交易秘密及機密資訊)。此軟體受法律保障，包括但不限於匈牙利、美國和其他國家的著作權法，同時受國際公約條款的保護。除了此處明確提及者，本授權合約並未授予貴用戶任何此軟體的智慧財產權，且 KISHONTI (及其供應商，如適用) 保留所有未明確賦予的權利。 
+如本授權合約所述，透過使用此軟體建立的測試結果，一旦上傳至 KISHONTI 的伺服器將成為 KISHONTI 的財產。 
+         
+         
+4.連線。上傳及顯示測試結果 
+         
+(a) 需要網際網路連線 
+貴用戶理解並同意此軟體僅能在裝置連線到網際網路 (連線至 KISHONTI 的基準資料處理伺服器) 時使用。 
+         
+(b) 上傳及顯示測試結果 
+貴用戶理解並同意當您使用此軟體時，透過如此使用之測試結果將不另行通知，自動上傳至 KISHONTI 的伺服器。貴用戶亦理解並同意因此上傳的結果將成為 KISHONTI 的財產。KISHONTI 得自行決定將此測試結果顯示在 KISHONTI 的網站，且 KISHONTI 得顯示、移除或重新安置測試結果，不需另行通知或解釋。 
+         
+(c) 更新 
+如果裝置連線至網際網路，軟體 (不另行通知) 可能檢查可用的更新程式，進而自動下載並安裝到裝置，並回報 KISHONTI 該軟體已成功安裝。更新程式可能自動下載並安裝，而不另行通知。發生此情形時，只有非個人的識別資訊會傳送到 KISHONTI，惟在某些司法管轄區可能認定 IP 位址為個人識別資料。此類資訊的使用，包括經由自動更新流程提供的 IP 位址等，受 KISHONTI 的隱私權政策 (可於 www.kishonti.net 閱讀) 所規範。再者，如果裝置連線至網際網路，軟體可能 (不另行通知，依週期性或規律基礎) 加速您存取由 KISHONTI 維護在網站上主持的內容和服務。當軟體連線至網際網路，您的 IP 位址、使用者名稱和密碼可能傳送到 KISHONTI 的伺服器並由 KISHONTI 儲存。KISHONTI 可能利用此資訊傳送交易訊息給貴用戶，促進軟體的使用和/或功能。KISHIONTI 可能展示產品內行銷，以提供有關此軟體和 KISHONTI 其他產品及服務的資訊。每當軟體進行網際網路連線並與 KISHONTI 網站進行溝通時，無論自動或因明確的使用者請求，都適用 KISHONTI 的隱私權政策。 
+         
+         
+5.中止使用此軟體 
+         
+KISHONTI 隨時有權修改或更新此軟體，或修改或移除此軟體的任何部分、元素和功能特性，毋須提出通知或解釋。 
+         
+KISHONTI 隨時有權中止 (終止) 此軟體 (或此軟體之前版本)，或者此軟體的任何部分、元素和功能特性之提供、存取或使用，毋須提出通知或解釋。 
+         
+貴用戶使用此軟體之授權持續有效，直到由貴用戶或 KISHONTI 提出終止為止。貴用戶可以藉由從裝置上解除安裝 (完全移除) 此軟體的所有拷貝來終止授權。若貴用戶無法遵守本授權之所有條款，根據此使用授權您的權利將自動終止，KISHONTI 毋須另行通知。在授權終止後，貴用戶應立即提止所有軟體的使用，並銷毀所有軟體全部或部份的拷貝。授權之終止 (中止軟體的提供) 不會影響 KISHONTI 對上傳至其伺服器測試結果的專屬權利。 
+         
+         
+6.無責任擔保 
+         
+貴用戶明確理解並同意此軟體使用 (或無法使用) 之風險由用戶自行承擔，且有關品質滿意度、性能表現、準確度和努力等整體風險皆由貴用戶承擔。在適用的強制法律允許的最大範圍內，此軟體及 KISHONTI 執行或提供的任何服務皆依「現狀」和「原樣且可提供」來提供，含一切瑕疵但不附任何形式的擔保，KISHONTI 特此聲明我們不為所有有關此軟體和其他服務提供擔保及條件，不論明示、默示或法令，包括但不限於商業適售性、品質滿意度、特定用途之適用性、準確性、平靜享用和未侵犯其他第三方權利之默示擔保和 / 或條件。KISHONTI 不對以下項目進行擔保：對享用軟體的干擾、內建功能、或所執行或提供之服務、軟體符合用戶需求、軟體或服務之運作不會中斷或出錯、或軟體或服務瑕疵獲得修正。KISHONTI 或其授權代表不得提供口頭或書面資訊或建議，構成擔保條件。若經證明為軟體或服務瑕疵，貴用戶應承擔所有必要服務、維修或修正的全部費用。某些管轄法院不允許排除適用消費者法規權利默示擔保或限制責任；若發生此種情況，將實施根據適用法律允許的最大限制責任 (擔保的程度相當於 KISHONTI 所受最低 (最小) 程度的危害)。 
+         
+在法律未禁止的範圍內，無論發生何種情況，對於和軟體的不當使用有關的個人、財產或經濟傷害、破壞或損失，或者包括但不限於執行軟體所使用的裝置，因任何因素使裝置過熱造成之傷害、破壞或損失，KISHONTI 毋須對此負有法律責任。貴用戶明確承擔使用此軟體相關或引起的所有個人、財產或經濟傷害的風險。在法律未禁止的範圍內，無論發生何種情況，對於因使用或無法使用軟體引起或相關的個人、財產或經濟傷害、破壞或損失，或舉凡任何伴隨、特疏、間接或必然的損壞，包括但不限於：利潤損失破壞、資料損失、業務中斷、商業損失、喪失儲蓄或其他商業或非商業破壞或損失，無論如何造成，不計責任理論 (契約、侵權或其他)，甚至 KISHONTI 已被告知這些損害的可能性，KISHONTI 皆毋須對此負有法律責任。某些管轄法院不允許針對個人傷害、或伴隨或必然的損害進行限制責任；若發生此種情況，將實施根據適用法律允許的最大限制責任 (擔保的程度相當於 KISHONTI 所受最低 (最小) 程度的危害)。無論發生何種情況，KISHONTI 對貴用戶所有損失 (除了涉及個人傷害的情況下，適用法律可能要求外) 的總賠償責任都不應超過 $50.00 (五十美元)。即使上述的救濟措試失去其主要作用，仍適用前述的限制。 
+         
+7.遵守授權 
+貴用戶同意當 KISHONTI 或 KISHONTI 之授權代表提出要求時，將在 30 (三十) 天內，備妥完整文件並證明在請求提出的時點，貴用戶所使用的任何和所有軟體符合來自 KISHONTI 的有效授權。 
+         
+         
+8.管轄法律及管轄權 
+         
+本授權合約 (包括但不限於因本授權合約引起或有關的所有爭議、違反、終止、有限性或解釋) 受匈牙利法律約束並按照該國獨立法律進行解釋。無論本授權合約是否有其他規定，KISHONTI 或貴用戶得要求任何司法、行政或其他權責機構頒布任何臨時或保全性措施，包括禁制令救濟、強制履行、或其他衡平救濟，在開始法律訴訟之前，或在訴訟期間，對其權利和利益進行保護，或強制履行適用於臨時救濟措施的特殊條款。本授權合約的英文版本將作為解釋或解讀此合約的版本。本授權合約不受任何衝突的司法法律條文或《聯合國國際貨物買賣公約》所約束，其適用性已明確排除。 
+         
+         
+9.其他細則 
+         
+(a) 本授權合約是 KISHONTI 與貴用戶之間有關此軟體的完整協議，它將取代先前任何有關此軟體的陳述、討論、承諾、溝通或廣告 (KISHONTI 隱私權政策的應用除外)。 
+(b) 若本授權合約中的任何細則 (包括當中所有章節、條文、段落、句子或文字) 係或變為無效或無法執行，惟從本合約的本質或內容，或依本合約簽訂之情況，明顯不能從本授權合約其餘部分分離者，不應影響本授權合約中任何其他細則的有效性和強制性。本授權合約中如出現任何錯誤或遺漏，可合理解決者，此原則同樣適用。對於要取代法律無法執行的細則，或修正錯誤或遺漏，雙方應根據本授權合約所述的基本原則，以合理真誠態度進行協商並同意，法律允許的適當替代條款，以及如果他們知道法律無法執行、錯誤或遺漏時，最接近本授權合約的商業意圖或打算 (視情況而定)。 
+(c) 如果該種權利是強制適用於本授權合約的法定權利，本授權合約不會剝奪作為消費者一方的權利。  
+(d) 本授權合約僅可經由 KISHONTI 授權的高階主管書面簽署進行修改。KISHONTI 可能配合額外或不同的條款授權更新程式給貴用戶。 
+(e) 貴用戶同意不輸出來自軟體的任何部份，或任何透過使用軟體產生的資料或其直接產品，除非符合適用的輸出法律、規定和規則且持有所有授權和所需批准。 
+         
+KISHONTI Kft.[*] 2013 年 9 月 
+版權所有。保留任何在此未明確賦予之權利。</string>
+  <string name="PrivacyDialogBody"></string>
+</resources>

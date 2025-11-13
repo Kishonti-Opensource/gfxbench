@@ -1,0 +1,65 @@
+{
+	"version": 1,
+	"test_id": "gl_blending_off",
+	"factory_method": "gl_blending_off",
+	"preload_libs": ["gfxbench40_gl"],
+	"env": {
+		"graphics": {
+			"versions": [
+				{
+					"type": "GL",
+					"major": 3,
+					"minor": 0
+				},
+				{
+					"type": "ES",
+					"major": 2,
+					"minor": 0
+				},
+				{
+					"type": "DX",
+					"major": 9,
+					"minor": 3
+				}
+			],
+			"config": {
+				"red_size": 8,
+				"green_size": 8,
+				"blue_size": 8,
+				"depth_size": 16,
+				"stencil_size": -1,
+				"alpha_size": -1,
+				"samples": -1,
+				"exact": false
+			},
+			"fullscreen": false
+		}
+	},
+	"raw_config": {
+		"battery": false,
+		"brightness": -1.0,
+		"color_bpp": 24,
+		"depth_bpp": 16,
+		"endless": false,
+		"engine": "ui_test",
+		"fps_limit": -1.0,
+		"frame_step_time": -1,
+		"fsaa": 0,
+		"id": 1229197312,
+		"max_rendered_frames": -1,
+		"min_ram_required": 100,
+		"offscreen_width": 1920,
+		"offscreen_height": 1080,
+		"play_time": 60000,
+		"quality": false,
+		"force_highp": false,
+		"scenefile": "",
+		"screenmode": 1,
+		"single_frame": -1,
+		"start_animation_time": 0,
+		"stencil_bpp": -1,
+		"texture_type": "888",
+		"zprepass": false
+	},
+	"data_prefix": "gfx"
+}

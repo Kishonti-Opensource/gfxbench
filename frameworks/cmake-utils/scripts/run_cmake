@@ -1,0 +1,346 @@
+#!/bin/bash
+
+if [ "$DEBUG" = "1"  ];then
+  set -x
+fi
+
+function get_executable_dir {
+	echo "$(dirname "$(which "$1")")"
+}
+
+main()
+{
+	check_ng_env_vars
+	args_set_default
+	args_parse "$@"
+	args_validate
+
+	listdir=$(cd $listdir && pwd)
+	if [[ -z $listdir ]]
+	then
+		exit -1
+	fi
+
+	project=$(basename $listdir)
+
+	# builddir will be decorated with config for makefiles
+	if [[ -n $builddir ]]; then
+		builddir=$buildroot/$builddir
+	else
+		builddir=$buildroot/$project
+	fi
+	if [[ $generator != Ninja && $generator != *Makefile* ]]
+	then
+		ide_generator=1
+	fi
+	installdir=$NG_INSTALL_ROOT/$NG_TARGET_PLATFORM
+
+	# Find optional parameters for cmake
+	while [[ $1 != -- ]]; do shift || break; done; shift
+
+	echo "[INFO] project: $project"
+	echo "[INFO] cmake generator: $generator"
+	echo "[INFO] cmake source directory: $listdir"
+
+	# override configs if --cdr is specified
+	if [[ -n $cdr ]]
+	then
+		configs=(Debug Release)
+	else
+		configs=($config)
+	fi
+
+	# display build dirs of each config or one for ide generator
+	if [[ -z $ide_generator ]]
+	then
+		for c in ${configs[@]}
+		do
+			echo "[INFO] cmake binary directory (makefile): ${builddir}_${c}"
+		done
+	else
+		echo "[INFO] cmake binary directory (ide): $builddir"
+	fi
+
+	echo "[INFO] cmake install directory: $installdir"
+	echo "[INFO] build config(s): ${configs[@]}"
+	echo "[INFO] build target: $target"
+
+	# clean if needed
+	if [[ -n $clean_set ]]
+	then
+		if [[ -z $ide_generator ]]
+		then
+			for c in ${configs[@]}
+			do
+				echo "Cleaning ${builddir}_${c}"
+				rm -rf "${builddir}_${c}"
+			done
+		else
+			echo "Cleaning $builddir"
+			rm -rf "$builddir"
+		fi
+	fi
+
+	# if --gui, launch cmake-gui (for makefiles take the the first config)
+	if [[ -n $gui ]]
+	then
+		if [[ -z $ide_generator ]]
+		then
+			builddir+="_${configs[0]}"
+		fi
+		cmake-gui "$builddir"
+		exit
+	fi
+
+	set -e
+
+	if [[ -n $NG_CMAKE_TOOLCHAIN_FILE ]]
+	then
+		toolchain_opt=-DCMAKE_TOOLCHAIN_FILE="$NG_CMAKE_TOOLCHAIN_FILE"
+	fi
+
+	export CLEAN_PATH=$PATH
+	if [[ "$NG_TARGET_PLATFORM" = android* && "$OSTYPE" = "msys" ]] ; then
+		: ${ANDROID_NDK:?Error ANDROID_NDK environment variable is not defined}
+		echo "[INFO] Cross compiling $NG_TARGET_PLATFORM on Windows/msys; PATH must not contain 'sh'"
+		CMAKE_DIR=$(get_executable_dir cmake)
+		SWIG_DIR=$(get_executable_dir swig)
+		PYTHON_DIR=$(get_executable_dir python)
+		export CLEAN_PATH=$CMAKE_DIR:$SWIG_DIR:$PYTHON_DIR
+		echo "[INFO] CLEAN_PATH=$CLEAN_PATH"
+	fi
+
+	mcd()
+	{
+		mkdir -p "$1"
+		cd "$1"
+	}
+
+	# call the generator always (otherwise we should test if this is the first run)
+	if [[ -n $ide_generator ]]
+	then
+	{
+		mcd $builddir
+		cmake $listdir\
+			-DCMAKE_INSTALL_PREFIX:PATH="$installdir"\
+			-DCMAKE_PREFIX_PATH:PATH="$NG_CMAKE_PREFIX_PATH"\
+			-DCMAKE_MODULE_PATH:PATH="$NG_CMAKE_MODULE_PATH"\
+			-G"$generator"\
+			$toolchain_opt\
+			$NG_CMAKE_PLATFORM_OPT\
+			"$@"
+		cd -
+	}
+	else
+		for c in ${configs[@]}
+		do
+		{
+			mcd ${builddir}_$c
+			PATH=$CLEAN_PATH cmake $listdir\
+				-DCMAKE_BUILD_TYPE=$c\
+				-DCMAKE_INSTALL_PREFIX:PATH="$installdir"\
+				-DCMAKE_PREFIX_PATH:PATH="$NG_CMAKE_PREFIX_PATH"\
+				-DCMAKE_MODULE_PATH:PATH="$NG_CMAKE_MODULE_PATH"\
+				-G"$generator"\
+				$toolchain_opt\
+				$NG_CMAKE_PLATFORM_OPT\
+				"$@"
+			cd -
+		}
+		done
+	fi
+
+	if [[ -n $ide ]]
+	then
+		if [[ -z $ide_generator ]]; then
+			echo "--ide specified for non-ide-generator ($generator)"
+			exit
+		fi
+		slnfile="$(ls $builddir/*.sln)"
+		start $slnfile
+		exit
+	fi
+
+	# building some target
+
+	if [[ -n $generate_set ]]
+	then
+		exit
+	fi
+
+	for c in ${configs[@]}
+	do
+		if [[ $target == ALL_BUILD ]]
+		then
+			unset targetopt
+		else
+			targetopt="$target"
+		fi
+
+		color_cmake()
+		{
+			cmake "$@" | sed 's/\(.* error .*\)/\x1b[31;1m\1\x1b[0m/;s/\(.* warning .*\)/\x1b[33;1m\1\x1b[0m/'
+			(exit ${PIPESTATUS[0]})
+		}
+
+		if [[ -z $ide_generator ]]
+		then
+		( # open new subshell with own environment
+			# makefile
+			PATH="$CLEAN_PATH" $cmake --build ${builddir}_$c --target $targetopt
+		)
+		else
+			# ide generator
+			cmake --build $builddir --config $c --target $targetopt
+		fi
+	done
+}
+
+# Check NG_xxx variables used by this script
+check_ng_env_vars()
+{
+	error_suffix="is not defined, maybe you forgot to call set_env"
+	: ${NG_TARGET_PLATFORM:?Error NG_TARGET_PLATFORM $error_suffix}
+	: ${NG_CMAKE_GENERATOR:?Error NG_CMAKE_GENERATOR $error_suffix}
+
+}
+
+# Default values for command line arguments
+args_set_default()
+{
+	: ${config:=Release}
+	: ${target=install}
+	: ${buildroot:=$NG_BUILD_ROOT/$NG_TARGET_PLATFORM}
+	: ${generator:=$NG_CMAKE_GENERATOR}
+	: ${cmake:=cmake}
+}
+
+# Get command line arguments
+args_parse()
+{
+	while [[ -n $1 ]]
+	do
+		case $1 in
+			(--ide)
+				ide=1
+				;;
+			(--gui)
+				gui=1
+				;;
+			(--cdr)
+				cdr=1
+				;;
+			(--clean)
+				clean_set=1
+				;;
+			(-g|--generate)
+				unset target
+				generate_set=1
+				;;
+			(-b|--build)
+				target=ALL_BUILD
+				build_set=1
+				;;
+			(-t|--target)
+				shift
+				target=$1
+				target_set=1
+				;;
+			(-G|--generator)
+				shift
+				generator=$1
+				generator_set=1
+				;;
+			(-c|--config)
+				shift
+				config=$1
+				;;
+			(-r|--buildroot)
+				shift
+				buildroot=$1
+				;;
+			(-d|--builddir)
+				shift
+				builddir=$1
+				;;
+			(-h|--help)
+				help_and_exit
+				;;
+			(--color)
+				cmake=color_cmake
+				;;
+			(--)
+				shift
+				break
+				;;
+			(-*)
+				help_and_exit "Unknown switch: $1"
+				;;
+			(*)
+				listdir=$1
+				listdir_set+=1
+				;;
+		esac
+		shift
+	done
+}
+
+args_validate()
+{
+	[ ! $((listdir_set+0)) -eq 1 ] && help_and_exit "Source directory must be given exactly once."
+	[ $((generate_set + build_set + target_set)) -gt 1 ] && help_and_exit "-g, -b and -t options are mutually exclusive."
+}
+
+help_and_exit()
+{
+	[[ -n $1 ]] && echo >&2 -e "\n[ERROR] $1\n"
+	args_set_default
+	cat <<__HELP_END__
+Simple usage:
+                 Call cmake: '$script_name -g sourcedir'
+           Build with cmake: '$script_name -b sourcedir' (build tgt ALL_BUILD)
+                    Install: '$script_name sourcedir' (build tgt ${target})
+    Build a specific target: '$script_name -t sourcedir'
+
+Parameters:
+    sourcedir          Location of CMakeLists.txt file. Required.
+    (-g|--generate)    Run cmake (config + generate)
+    (-b|--build)       Build target ALL_BUILD
+    (no -g|-b|-t)      Build default target ${install} (can be overriden, see below)
+	-r
+	-d
+
+A CMake build have these variables:
+    - Target to build, default: ${target} or if -b given, ALL_BUILD
+    - Config to build, default: Release
+    - CMake generator, default: \$NG_DEFAULT_CMAKE_GENERATOR
+    - Cmake binary dir, default: \$NG_BUILD_ROOT/\$NG_TARGET_PLATFORM}
+
+You can override the default values either on command line or with a variable
+
+     (Build variable)   (command-line par)      (override variable)
+    ----------------------------------------------------------------
+    | Target to build  | (-t|--target) target  | \$target           |
+    | Config to build  | (-c|--config) config  | \$config           |
+    | CMake generator  | (-G|--generator) gen  | \$generator        |
+    | Cmake binary dir | (-r|--buildroot) path | \$buildroot        |
+    ----------------------------------------------------------------
+
+	$config can also be a list of configs to generate or build
+	For makefile generators, the project dir will be appended with the config
+	    (e.g. myproject_Relase)
+
+Addition parameters:
+
+    (--cdr)       Builds Debug + Release
+    (--ide)       Implies -g then starts the IDE (implemented only for windows)
+    (--gui)       Invoke cmake-gui
+    (--clean)     Removes the project build dir(s) first (the 'install' not)
+    -- options    'options' will be passed through to cmake
+    (-h|--help)   Print this help.
+__HELP_END__
+	exit
+}
+
+script_name=$(basename $0)
+main "$@"

@@ -1,0 +1,18 @@
+{
+    "version": 1,
+    "env": {
+        "graphics": {
+            "versions": [
+                {
+                    "type": "ES",
+                    "major": 2,
+                    "minor": 0
+                }
+            ]
+        }
+    },
+    "test_id": "tfw_cl_basic",
+    "factory_method": "tfw_cl_basic",
+    "preload_libs": [ "tfw_tests" ],
+    "raw_config": {}
+}

@@ -1,0 +1,13 @@
+unset(PLATFORM_UTILS_LIBRARIES)
+unset(PLATFORM_UTILS_INCLUDE_DIRS)
+
+find_library(PLATFORM_UTILS_LIBRARY platform_utils)
+find_path(PLATFORM_UTILS_INCLUDE_DIR platform/platform_android.h)
+
+set(PLATFORM_UTILS_INCLUDE_DIRS ${PLATFORM_UTILS_INCLUDE_DIR})
+set(PLATFORM_UTILS_LIBRARIES ${PLATFORM_UTILS_LIBRARY})
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(platform_utils
+                                  REQUIRED_VARS PLATFORM_UTILS_LIBRARIES PLATFORM_UTILS_INCLUDE_DIRS)
+mark_as_advanced(PLATFORM_UTILS_INCLUDE_DIRS PLATFORM_UTILS_LIBRARIES)

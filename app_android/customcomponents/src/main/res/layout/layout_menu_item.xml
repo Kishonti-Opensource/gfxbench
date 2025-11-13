@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	android:id="@+id/btnBackground"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:gravity="bottom"
+	android:background="@drawable/menu_item_top_border_stateful"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<net.kishonti.customcomponents.SquareView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_marginTop="1dp"
+		android:layout_marginLeft="0.5dp"
+		android:layout_marginRight="0.5dp"
+		android:background="@drawable/menu_item_background_stateful">
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+			<ImageView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scaleType="fitCenter"
+				android:src="@android:drawable/star_big_off"
+				android:id="@+id/btnImage" />
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_marginBottom="5dp"
+				android:text="default"
+				android:textSize="10sp"
+				android:id="@+id/btnText"
+				android:textColor="@color/menu_item_text_stateful"
+				android:gravity="center_horizontal|bottom" />
+		</FrameLayout>
+	</net.kishonti.customcomponents.SquareView>
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="no" ?>
+<GLB_SCENE_SETTINGS>
+
+
+<background_color>0.02745 0.053 0.07686</background_color>
+
+<light_dir>-0.767 0.515 0.381</light_dir>
+
+<fog_density>0.0015</fog_density>
+
+<torches_enabled>true</torches_enabled>
+
+<camera_near>0.25</camera_near>
+
+<camera_position>0.0 5.0 0.0</camera_position>
+
+<light_color>2.7 2.5 2.4</light_color>
+
+<fps_cam_fov>50</fps_cam_fov>
+
+<animation_multiplier>1.0</animation_multiplier>
+
+<shadowmap_size>1024</shadowmap_size>
+
+<envmap_size>32</envmap_size>
+
+<shadow_method>depth map(depth)</shadow_method>
+
+<soft_shadow_enabled>true</soft_shadow_enabled>
+
+<play_time>62000</play_time>
+
+<datapath>manhattan/</datapath>
+
+<num_shadows>1</num_shadows>
+
+</GLB_SCENE_SETTINGS>

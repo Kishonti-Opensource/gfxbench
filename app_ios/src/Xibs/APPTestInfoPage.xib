@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="APPTestInfoPage" id="rGe-eb-QQa" customClass="APPTestInfoPage">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4b-s1-kTl">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jqI-Gs-qoa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    </view>
+                    <blurEffect style="light"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3D-Dy-j5b">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                </view>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBx-nB-Rpu">
+                    <rect key="frame" x="8" y="592" width="584" height="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="closeBtnClick:" destination="rGe-eb-QQa" eventType="touchUpInside" id="oxP-wI-kqz"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B9E-15-aLB">
+                    <rect key="frame" x="8" y="8" width="584" height="584"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xMO-eg-7OG" userLabel="Info List">
+                            <rect key="frame" x="8" y="8" width="568" height="568"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="xMO-eg-7OG" secondAttribute="trailing" constant="8" id="2HY-cH-0hc"/>
+                        <constraint firstAttribute="bottom" secondItem="xMO-eg-7OG" secondAttribute="bottom" constant="8" id="6XG-6C-m7a"/>
+                        <constraint firstItem="xMO-eg-7OG" firstAttribute="top" secondItem="B9E-15-aLB" secondAttribute="top" constant="8" id="Ggw-yT-N0l"/>
+                        <constraint firstItem="xMO-eg-7OG" firstAttribute="leading" secondItem="B9E-15-aLB" secondAttribute="leading" constant="8" id="iwh-Dg-2y0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="B4b-s1-kTl" secondAttribute="bottom" id="4sx-jy-qhN"/>
+                <constraint firstItem="w3D-Dy-j5b" firstAttribute="top" secondItem="rGe-eb-QQa" secondAttribute="top" id="A90-N5-iHU"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="top" secondItem="rGe-eb-QQa" secondAttribute="top" constant="8" id="BF8-X2-0rI"/>
+                <constraint firstItem="dBx-nB-Rpu" firstAttribute="top" relation="greaterThanOrEqual" secondItem="B9E-15-aLB" secondAttribute="bottom" priority="999" constant="8" id="GjJ-om-vbj"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="width" secondItem="rGe-eb-QQa" secondAttribute="width" multiplier="0.5" id="H7b-Si-5QS"/>
+                <constraint firstItem="B9E-15-aLB" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" constant="8" id="M8l-RH-Pua"/>
+                <constraint firstAttribute="bottom" secondItem="B9E-15-aLB" secondAttribute="bottom" constant="8" id="PYr-M2-3j8"/>
+                <constraint firstItem="w3D-Dy-j5b" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" id="SKw-vu-Gfg"/>
+                <constraint firstAttribute="trailing" secondItem="dBx-nB-Rpu" secondAttribute="trailing" constant="8" id="Srs-h4-w4N"/>
+                <constraint firstItem="dBx-nB-Rpu" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" constant="8" id="V3X-xd-LjZ"/>
+                <constraint firstAttribute="trailing" secondItem="B4b-s1-kTl" secondAttribute="trailing" id="bLd-gV-qsj"/>
+                <constraint firstAttribute="trailing" secondItem="w3D-Dy-j5b" secondAttribute="trailing" id="g86-2Y-8si"/>
+                <constraint firstAttribute="bottom" secondItem="dBx-nB-Rpu" secondAttribute="bottom" constant="8" id="gXO-d8-aAe"/>
+                <constraint firstAttribute="trailing" secondItem="B9E-15-aLB" secondAttribute="trailing" constant="8" id="lxJ-5o-bgP"/>
+                <constraint firstAttribute="bottom" secondItem="w3D-Dy-j5b" secondAttribute="bottom" id="odP-Gz-A0v"/>
+                <constraint firstItem="B4b-s1-kTl" firstAttribute="leading" secondItem="rGe-eb-QQa" secondAttribute="leading" id="pPX-F2-G45"/>
+                <constraint firstItem="B4b-s1-kTl" firstAttribute="top" secondItem="rGe-eb-QQa" secondAttribute="top" id="x8h-fU-4Ve"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="H7b-Si-5QS"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=regular">
+                <mask key="constraints">
+                    <include reference="H7b-Si-5QS"/>
+                    <exclude reference="M8l-RH-Pua"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="backView" destination="w3D-Dy-j5b" id="vaW-Z9-U3v"/>
+                <outlet property="blurView" destination="B4b-s1-kTl" id="2Pa-sv-59w"/>
+                <outlet property="bottomConstraint" destination="PYr-M2-3j8" id="6B6-PB-E9a"/>
+                <outlet property="closeBtn" destination="dBx-nB-Rpu" id="pkx-wS-Zbf"/>
+                <outlet property="closeHidingBottomConstraint" destination="PYr-M2-3j8" id="EOl-rY-ZMY"/>
+                <outlet property="infoTable" destination="xMO-eg-7OG" id="y60-KL-jmZ"/>
+                <outlet property="sheet" destination="B9E-15-aLB" id="6oV-o4-dyM"/>
+                <outlet property="trailingConstraint" destination="lxJ-5o-bgP" id="f1n-Id-2TA"/>
+            </connections>
+            <point key="canvasLocation" x="214" y="345"/>
+        </view>
+    </objects>
+</document>
